@@ -1,0 +1,81 @@
+\hypertarget{_device_builder_8h_source}{}\doxysection{Device\+Builder.\+h}
+\label{_device_builder_8h_source}\index{DeviceBuilder.h@{DeviceBuilder.h}}
+\mbox{\hyperlink{_device_builder_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00001}00001 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ DeviceBuilder -\/ JVH Systems -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00008}00008 \textcolor{comment}{}\textcolor{preprocessor}{\#ifndef DEVICEBUILDER\_H}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00009}00009 \textcolor{preprocessor}{\#define DEVICEBUILDER\_H}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00010}00010 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{lib_8h}{lib.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00011}00011 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_data_device_8h}{DataDevice.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00012}00012 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_kernel_device_8h}{KernelDevice.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00034}\mbox{\hyperlink{class_device_builder}{00034}} \textcolor{keyword}{class }\mbox{\hyperlink{class_device_builder}{DeviceBuilder}} \{}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00036}00036 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00037}00037 \textcolor{comment}{//                    PUBLIC                     |}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00038}00038 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00039}00039 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00041}00041     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  DYNAMIC  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00047}00047     \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(std::string \mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}} = \textcolor{stringliteral}{"{}STD\_DEVICE"{}});}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00053}00053     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}{setSkill}}(\textcolor{keywordtype}{void}(*skill)(), std::string skillName);}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00059}00059     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_builder_a97e1c662cbee5e3e23b4b41b0d300a6f}{setLimit}}(\textcolor{keywordtype}{int}* newLimit);}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00062}00062     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_builder_a54ac8bbaa057ca01a0067429b05ae01c}{setAsDataDevice}}();}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00065}00065     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_builder_a80c1e37a4f5ed9d6417d368f05f1e57d}{setAsKernelDevice}}();}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00071}00071     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_builder_a660593f04dacdaecde2f1654c43eb646}{setDataGenerator}}(\textcolor{keywordtype}{int}(*\mbox{\hyperlink{class_device_builder_a89d07a87c64358f95a2679d150e876c7}{dataGenerator}})());}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00077}00077     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_builder_ae090a3296c74c945a17595828e416c73}{setSecurityGenerator}}(\textcolor{keywordtype}{bool}(*\mbox{\hyperlink{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}{securityGenerator}})());}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00079}00079     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  STATIC  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00083}00083     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{buildAllDevices}}();}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00089}00089     \textcolor{keyword}{static} \mbox{\hyperlink{class_simple_display}{SimpleDisplay}}* \mbox{\hyperlink{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}{buildDisplay}}();}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00093}00093     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_builder_a5eb22cda3529194fb6e5adce9489ded1}{clearAll}}();}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00095}00095 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00096}00096 \textcolor{comment}{//                   PRIVATE                     |}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00097}00097 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00098}00098 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00100}00100     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  DYNAMIC  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00102}00102     \textcolor{comment}{// [Methods]}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00108}00108     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{buildDKDevice}}();}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00110}00110     \textcolor{comment}{// [Variables]}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00111}00111 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00113}\mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{00113}}     std::string \mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}} = \textcolor{stringliteral}{"{}STD Device"{}};}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00115}\mbox{\hyperlink{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}{00115}}     std::vector<void(*)()> \mbox{\hyperlink{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}{skillVector}};}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00117}\mbox{\hyperlink{class_device_builder_a78f48ff40d5b4eadd7bbba9292c0e0e2}{00117}}     std::vector<std::string> \mbox{\hyperlink{class_device_builder_a78f48ff40d5b4eadd7bbba9292c0e0e2}{skillNamesVector}};}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00119}\mbox{\hyperlink{class_device_builder_a89d07a87c64358f95a2679d150e876c7}{00119}}     int (*\mbox{\hyperlink{class_device_builder_a89d07a87c64358f95a2679d150e876c7}{dataGenerator}})();}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00121}\mbox{\hyperlink{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}{00121}}     bool (*\mbox{\hyperlink{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}{securityGenerator}})();}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00123}\mbox{\hyperlink{class_device_builder_aefe6c5cd8de0982beef7da176cf44425}{00123}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_device_builder_aefe6c5cd8de0982beef7da176cf44425}{id}};}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00125}\mbox{\hyperlink{class_device_builder_a7e756eacdd43c1f4034af34bec3b5e5c}{00125}}     \textcolor{keywordtype}{int}* \mbox{\hyperlink{class_device_builder_a7e756eacdd43c1f4034af34bec3b5e5c}{limit}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00127}\mbox{\hyperlink{class_device_builder_a3a4197871683ec63171c544177a122cb}{00127}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_device_builder_a3a4197871683ec63171c544177a122cb}{isDataDevice}};}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00128}00128 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00129}00129     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  STATIC  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00130}00130 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00131}00131     \textcolor{comment}{// [Variables]}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00132}00132 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00134}\mbox{\hyperlink{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}{00134}}     \textcolor{keyword}{static} std::vector<DeviceBuilder*> \mbox{\hyperlink{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}{allBuilders}};}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00136}\mbox{\hyperlink{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}{00136}}     \textcolor{keyword}{static} std::vector<Device> \mbox{\hyperlink{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}{allDevices}};}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00138}\mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{00138}}     \textcolor{keyword}{static} std::vector<DataDevice> \mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{allDataDevices}};}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00140}\mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{00140}}     \textcolor{keyword}{static} std::vector<KernelDevice> \mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{allKernelDevices}};}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00142}\mbox{\hyperlink{class_device_builder_a6984754a6e92de4cd6ed1bad8c06a0aa}{00142}}     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_device_builder_a6984754a6e92de4cd6ed1bad8c06a0aa}{deviceCounter}};}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00145}00145 \};}
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00146}00146 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00147}00147 }
+\DoxyCodeLine{\Hypertarget{_device_builder_8h_source_l00148}00148 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//DEVICEBUILDER\_H}}
+
+\end{DoxyCode}

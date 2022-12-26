@@ -1,0 +1,285 @@
+\hypertarget{_user_8cpp_source}{}\doxysection{User.\+cpp}
+\label{_user_8cpp_source}\index{User.cpp@{User.cpp}}
+\mbox{\hyperlink{_user_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00001}00001 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ User -\/ JVH Systems -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00008}00008 \textcolor{comment}{}\textcolor{preprocessor}{\#include "{}../headers/User.h"{}}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00010}00010 \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00011}00011 std::set<int*> \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{User::allUsers}};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00012}00012 \textcolor{keywordtype}{char} \mbox{\hyperlink{class_user_a3d595223d88c86a28aecf557347a9d54}{User::SEPARATOR}} = \textcolor{charliteral}{','};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00013}00013 std::string \mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{User::TAG}} = \textcolor{stringliteral}{"{}User"{}};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00015}00015 \textcolor{comment}{//File for retrieving user info.}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00016}00016 std::string \mbox{\hyperlink{class_user_ab167913883c55da15137eefedb6f0863}{User::DATAFILE}} = \textcolor{stringliteral}{"{}data/userdata.txt"{}};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00017}00017 std::string \mbox{\hyperlink{class_user_a942375334862b953b0471435b70f8fb7}{User::USERFILE}} = \textcolor{stringliteral}{"{}data/userdata.dat"{}};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00019}00019 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00020}00020 \textcolor{comment}{//                  PUBLIC FUNCTIONALITIES              |}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00021}00021 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00023}00023 \textcolor{comment}{// -\/-\/-\/ [Empty Constructor] User() -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00024}\mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{00024}} \mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{User::User}}() : id(INVALID\_USER), isAdmin(false) \{\};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00027}00027 \textcolor{comment}{// -\/-\/-\/ [Constructor] User() -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00028}\mbox{\hyperlink{class_user_a6e84637389bc36a13300df82a7387bb0}{00028}} \mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{User::User}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}) : id(id)\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00030}00030     \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} == \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}{DEVELOPER\_USER}} )\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00031}00031         this-\/>\mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}} = 0;}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00032}00032         this-\/>\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00033}00033         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00034}00034     \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00036}00036     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing User info -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00037}00037     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00039}00039         \textcolor{comment}{//  Find and Set admin status from data}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00040}00040         \textcolor{keywordtype}{int}* userData = \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00041}00041         this-\/>\mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}} = userData[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\_COLUMN}}];}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00042}00042         this-\/>\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}} = userData[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\_COLUMN}}];}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00045}00045     \textcolor{comment}{// -\/-\/-\/-\/-\/ Catching invalid users -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00046}00046     \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_invalid_user_exception}{InvalidUserException}} \&e)\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00048}00048         this-\/>\textcolor{keywordtype}{id} = \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{INVALID\_USER}};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00049}00049         this-\/>\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}} = 0;}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00051}00051     \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00052}00052 \};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00056}00056 \textcolor{comment}{// -\/-\/-\/ [Getter] getUser() -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00057}\mbox{\hyperlink{class_user_a19c51c10009a056caac5053717eb8b89}{00057}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_user_a19c51c10009a056caac5053717eb8b89}{User::getUser}}()\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00058}00058     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00059}00059 \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00061}00061 \textcolor{comment}{// -\/-\/-\/ [Getter] getAdminStatus() -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00062}\mbox{\hyperlink{class_user_aa374b1065ea942d3d2d46085539c257e}{00062}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_user_aa374b1065ea942d3d2d46085539c257e}{User::getAdminStatus}}()\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00063}00063     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00064}00064 \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00067}00067 \textcolor{comment}{// -\/-\/-\/ [Static] check() -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00068}\mbox{\hyperlink{class_user_a3dd5f61e8f0172573a6ab6f73505cb2c}{00068}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_user_a3dd5f61e8f0172573a6ab6f73505cb2c}{User::check}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, \textcolor{keywordtype}{int} pass)\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00069}00069     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00070}00070         \textcolor{keywordtype}{int}* userData = \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00071}00071         \textcolor{keywordflow}{return} (userData[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\_COLUMN}}] == \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}});}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00073}00073     \textcolor{comment}{// User not found}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00074}00074     \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_user_not_found_exception}{UserNotFoundException}} \&e)\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00075}00075         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00076}00076     \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00077}00077 \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00078}00078 \textcolor{comment}{// -\/-\/-\/ [Static] updateUserData() -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00079}\mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{00079}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{User::updateUserData}}() \{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00081}00081     \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00082}00082     \mbox{\hyperlink{class_user}{User}} user;}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00084}00084     \textcolor{comment}{// -\/-\/-\/-\/ Opening file -\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00085}00085     std::ifstream file (\mbox{\hyperlink{class_user_a942375334862b953b0471435b70f8fb7}{USERFILE}});}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00087}00087     \textcolor{comment}{// -\/-\/-\/-\/ Testing if file is correct -\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00088}00088     \textcolor{keywordflow}{if} (!file)}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00089}00089         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_invalid_file_exception}{InvalidFileException}}(\mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{TAG}});}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00091}00091     \textcolor{comment}{// -\/-\/-\/-\/-\/ Reading every user in file -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00092}00092     \textcolor{keywordflow}{while} (file.read(\textcolor{keyword}{reinterpret\_cast <}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(\&user),sizeof (\mbox{\hyperlink{class_user}{User}})))\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00094}00094         \textcolor{keywordtype}{int}* newEntry = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c}{TOTAL\_COLUMNS}}];}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00095}00095         newEntry[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\_COLUMN}}] = user.\mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00096}00096         newEntry[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\_COLUMN}}] = user.\mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00097}00097         newEntry[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\_COLUMN}}] = user.\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00099}00099         \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.insert(newEntry);}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00100}00100     \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00101}00101     \textcolor{comment}{// -\/-\/-\/-\/-\/ Closing file -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00102}00102     file.close();}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00103}00103 \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00104}00104 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00105}00105 \textcolor{comment}{// -\/-\/-\/ [Static] updateUserData() -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00106}00106 \textcolor{comment}{void User::updateUserData() \{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00107}00107 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00108}00108 \textcolor{comment}{    // -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00109}00109 \textcolor{comment}{    std::ifstream file(User::DATAFILE);}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00110}00110 \textcolor{comment}{    std::string word;}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00111}00111 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00112}00112 \textcolor{comment}{    int line = 0; // Info for exception}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00113}00113 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00114}00114 \textcolor{comment}{    // -\/-\/-\/-\/-\/ Reading File -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00115}00115 \textcolor{comment}{    try \{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00116}00116 \textcolor{comment}{        while (file.good()) \{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00117}00117 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00118}00118 \textcolor{comment}{            try \{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00119}00119 \textcolor{comment}{                int *userdata = new int(TOTAL\_COLUMNS);}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00120}00120 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00121}00121 \textcolor{comment}{                // Get user data delimited by commas}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00122}00122 \textcolor{comment}{                for (int i = 0; i < TOTAL\_COLUMNS -\/ 1; i++) \{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00123}00123 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00124}00124 \textcolor{comment}{                    getline(file, word, SEPARATOR);}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00125}00125 \textcolor{comment}{                    userdata[i] = std::stoi(word);}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00126}00126 \textcolor{comment}{                \}}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00127}00127 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00128}00128 \textcolor{comment}{                // Get last user element}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00129}00129 \textcolor{comment}{                getline(file, word);}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00130}00130 \textcolor{comment}{                userdata[TOTAL\_COLUMNS -\/ 1] = std::stoi(word);}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00131}00131 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00132}00132 \textcolor{comment}{                // Store user data}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00133}00133 \textcolor{comment}{                allUsers.insert(userdata);}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00134}00134 \textcolor{comment}{                line++;}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00135}00135 \textcolor{comment}{            \}catch (std::exception \&e)\{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00136}00136 \textcolor{comment}{                std::cout << "{}\(\backslash\)n[User] User in line "{} + std::to\_string(line) + "{} is NOT valid,"{};}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00137}00137 \textcolor{comment}{                std::cout << "{}\(\backslash\)n[Info] Make sure there are no spaces or ENTER between or after the data."{};}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00138}00138 \textcolor{comment}{                throw InvalidUserException(TAG);}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00139}00139 \textcolor{comment}{            \}}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00140}00140 \textcolor{comment}{        \}}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00141}00141 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00142}00142 \textcolor{comment}{        // -\/-\/-\/-\/-\/ Close file -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00143}00143 \textcolor{comment}{        file.close();}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00144}00144 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00145}00145 \textcolor{comment}{        // -\/-\/-\/-\/-\/ Sort Users -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00146}00146 \textcolor{comment}{        // [DEPRECATED] std::sort(data.begin(), data.end());}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00147}00147 \textcolor{comment}{    \}catch (std::exception \&e)\{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00148}00148 \textcolor{comment}{        std::cout << "{}\(\backslash\)n[User] File located in "{} + DATAFILE + "{} is not valid as an User list."{};}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00149}00149 \textcolor{comment}{        throw InvalidFileException(TAG);}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00150}00150 \textcolor{comment}{    \}}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00151}00151 \textcolor{comment}{\}}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00152}00152 \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00153}00153 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00154}00154 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00155}00155 \textcolor{comment}{//                  PRIVATE FUNCTIONALITIES             |}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00156}00156 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00157}00157 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00158}00158 \textcolor{comment}{// -\/-\/-\/ [Static] find()}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00159}00159 \textcolor{comment}{// Usage: Find a user by giving the id as a key}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00160}00160 \textcolor{comment}{// Maximum complexity of O(n)}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00161}00161 \textcolor{comment}{// Note: Complexity of O(log(n)) is possible, not}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00162}00162 \textcolor{comment}{// implemented yet.}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00163}\mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{00163}} \textcolor{keywordtype}{int}* \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{User::find}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id})\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00164}00164 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00165}00165     \textcolor{comment}{// -\/-\/-\/-\/-\/ Creates iterator}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00166}00166     std::set<int*>::iterator it;}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00167}00167 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00168}00168     \textcolor{comment}{// -\/-\/-\/-\/-\/ Travel the set until find}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00169}00169     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} iterator = \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.begin(); iterator != \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.end(); ++iterator)\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00170}00170 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00171}00171         \textcolor{keywordflow}{if} ((*iterator)[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\_COLUMN}}] == \textcolor{keywordtype}{id})}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00172}00172             \textcolor{keywordflow}{return} *iterator;}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00173}00173     \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00174}00174 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00175}00175     \textcolor{comment}{// -\/-\/-\/-\/-\/ User not found, send error}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00176}00176 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00177}00177     \textcolor{comment}{// [DEPRECADTED] throw std::runtime\_error("{}User not Found"{});}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00178}00178     \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_user_not_found_exception}{UserNotFoundException}}(\mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{TAG}});}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00179}00179 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00180}00180 \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00181}00181 \textcolor{comment}{// -\/-\/-\/ [Function] addUser()}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00182}\mbox{\hyperlink{class_user_a932abf8dc4bdbdef3dbd05c3d3852c99}{00182}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_a932abf8dc4bdbdef3dbd05c3d3852c99}{User::addUser}}(\textcolor{keywordtype}{int} user, \textcolor{keywordtype}{int} pass, \textcolor{keywordtype}{bool} isAdmin) \{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00183}00183 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00184}00184     \textcolor{keywordtype}{int}* newUser = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c}{TOTAL\_COLUMNS}}];}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00185}00185     newUser[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\_COLUMN}}] = user;}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00186}00186     newUser[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\_COLUMN}}] = \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00187}00187     newUser[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\_COLUMN}}] = (\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}}) ? \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa43960f9c6bdbdff4e01d8c642bb618ca}{ADMIN\_IDENTIFIER}} : 0;}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00188}00188 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00189}00189     \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.insert(newUser);}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00190}00190 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00191}00191 \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00192}00192 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00193}00193 \textcolor{comment}{// -\/-\/-\/ [Function] rmUser()}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00194}\mbox{\hyperlink{class_user_a68388c89a91732660b3fb4c602fa55c0}{00194}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_a68388c89a91732660b3fb4c602fa55c0}{User::rmUser}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}) \{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00195}00195 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00196}00196     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00197}00197 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00198}00198         \textcolor{keywordtype}{int} *user = \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00199}00199         \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.erase(user);}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00200}00200 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00201}00201     \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_invalid_user_exception}{InvalidUserException}} \&e)\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00202}00202 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00203}00203         \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00204}00204 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00205}00205     \};}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00206}00206 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00207}00207 \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00208}00208 \textcolor{comment}{// -\/-\/-\/ [Function] printUsers()}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00209}\mbox{\hyperlink{class_user_aba09368b2af61c833490ff95aff4e9c2}{00209}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_aba09368b2af61c833490ff95aff4e9c2}{User::printUsers}}() \{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00210}00210 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00211}00211     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} iterator = \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.begin(); iterator != \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.end(); ++iterator)\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00212}00212 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00213}00213             std::cout << ((*iterator)[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\_COLUMN}}] == 0 ? \textcolor{stringliteral}{"{}User: "{}} : \textcolor{stringliteral}{"{}Admin: "{}});}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00214}00214             std::cout << (*iterator)[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\_COLUMN}}] << std::endl;}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00215}00215 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00216}00216     \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00217}00217 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00218}00218 \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00219}00219 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00220}\mbox{\hyperlink{class_user_abe917daaebdfb170900ae513c9289a66}{00220}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_abe917daaebdfb170900ae513c9289a66}{User::saveUserData}}() \{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00221}00221 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00222}00222     \textcolor{comment}{// -\/-\/-\/-\/ Opening file -\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00223}00223     std::ofstream file (\mbox{\hyperlink{class_user_a942375334862b953b0471435b70f8fb7}{USERFILE}});}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00224}00224 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00225}00225     \textcolor{comment}{// -\/-\/-\/-\/ Testing if file is correct -\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00226}00226     \textcolor{keywordflow}{if} (!file)}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00227}00227         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_invalid_file_exception}{InvalidFileException}}(\mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{TAG}});}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00228}00228 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00229}00229     \textcolor{comment}{// -\/-\/-\/-\/-\/ Creates iterator -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00230}00230     std::set<int*>::iterator it;}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00231}00231 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00232}00232     \textcolor{comment}{// -\/-\/-\/-\/-\/ Saves all user data in allUsers to file  -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00233}00233     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} iterator = \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.begin(); iterator != \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.end(); ++iterator)\{}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00234}00234 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00235}00235         \mbox{\hyperlink{class_user}{User}} newUser = \mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{User}}((*iterator)[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\_COLUMN}}]);}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00236}00236         file.write(\textcolor{keyword}{reinterpret\_cast <}\textcolor{keyword}{const }\textcolor{keywordtype}{char} *\textcolor{keyword}{>} (\&newUser),\textcolor{keyword}{sizeof} (\mbox{\hyperlink{class_user}{User}}));}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00237}00237 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00238}00238     \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00239}00239 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00240}00240     \textcolor{comment}{// -\/-\/-\/-\/-\/ Close the file -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00241}00241     file.close();}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00242}00242 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00243}00243 \}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00244}00244 }
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00245}00245 \textcolor{comment}{// -\/-\/-\/ [Static] find() [DEPRECATED] -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00246}00246 \textcolor{comment}{// Usage: Finds a user from the data array using}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00247}00247 \textcolor{comment}{// binary search. Throws a running\_time exception}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00248}00248 \textcolor{comment}{// if user doesn't exist.}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00249}00249 \textcolor{comment}{// Note: This method can be used only with data}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00250}00250 \textcolor{comment}{// contained into a double vector}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00251}00251 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00252}00252 \textcolor{comment}{ std::vector<int> User::find(int id) \{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00253}00253 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00254}00254 \textcolor{comment}{    // -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00255}00255 \textcolor{comment}{    int begin = 0;}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00256}00256 \textcolor{comment}{    int end = data.size() -\/ 1;}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00257}00257 \textcolor{comment}{    int mid;}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00258}00258 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00259}00259 \textcolor{comment}{    // -\/-\/-\/-\/-\/ Searching -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00260}00260 \textcolor{comment}{    while (begin < end)\{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00261}00261 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00262}00262 \textcolor{comment}{        //  Fix for odd positions}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00263}00263 \textcolor{comment}{        if (mid == (begin + end) / 2)}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00264}00264 \textcolor{comment}{            begin++;}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00265}00265 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00266}00266 \textcolor{comment}{        //  Pointer to next analysis}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00267}00267 \textcolor{comment}{        mid = (begin + end) / 2;}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00268}00268 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00269}00269 \textcolor{comment}{        //  Check if target is lower}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00270}00270 \textcolor{comment}{        if (id < data[mid][USER\_COLUMN])}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00271}00271 \textcolor{comment}{            end = mid;}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00272}00272 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00273}00273 \textcolor{comment}{        //  Check if target is higher}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00274}00274 \textcolor{comment}{        else if (id > data[mid][USER\_COLUMN])}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00275}00275 \textcolor{comment}{            begin = mid;}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00276}00276 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00277}00277 \textcolor{comment}{        //  Else, it is the target}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00278}00278 \textcolor{comment}{        else}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00279}00279 \textcolor{comment}{            return data[mid];}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00280}00280 \textcolor{comment}{    \};}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00281}00281 \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00282}00282 \textcolor{comment}{    //  Throw exception if user is not found}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00283}00283 \textcolor{comment}{    throw std::runtime\_error("{}Not Valid User"{});}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00284}00284 \textcolor{comment}{\}}}
+\DoxyCodeLine{\Hypertarget{_user_8cpp_source_l00285}00285 \textcolor{comment}{*/}}
+
+\end{DoxyCode}

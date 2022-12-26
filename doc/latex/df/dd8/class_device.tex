@@ -1,0 +1,671 @@
+\hypertarget{class_device}{}\doxysection{Device Class Reference}
+\label{class_device}\index{Device@{Device}}
+
+
+This class will contain every device as a general low-\/level definition, containing the skills, properties and a set of functionalities for managing all devices or modifying them individually. Every device will be built from the builder and the data managed will be managed from \mbox{\hyperlink{class_a_i}{AI}} and \mbox{\hyperlink{class_i_o_di}{IODi}}. This class will also be the base for constructing Data\+Devices and Kernel\+Devices.  
+
+
+
+
+{\ttfamily \#include $<$Device.\+h$>$}
+
+Inheritance diagram for Device\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{df/dd8/class_device}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_device_a64ba12dcc5f4267486c5d545d04dcf68}{Device}} ()
+\begin{DoxyCompactList}\small\item\em Builds a New \mbox{\hyperlink{class_device}{Device}}. Sets Invalid properties by default. Not recommended. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_device_ad689f911c5f2395a1116a625113e5392}{Device}} (std\+::string device\+Name, int device\+Id)
+\begin{DoxyCompactList}\small\item\em Creates a New \mbox{\hyperlink{class_device}{Device}} and assign a identifier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_device_a24cdf263bfc82ebcdb63cb507d583f70}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\begin{DoxyCompactList}\small\item\em Uses a built-\/in device-\/skill calling it by its name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_device_ac98ecb9f1f9009e2d55c59d60942332f}{operator\mbox{[}$\,$\mbox{]}}} (std\+::string skill\+Name)
+\begin{DoxyCompactList}\small\item\em Uses a built-\/in device-\/skill calling it by its position. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_device_abc03a7e8cf8ed04b7906cf434510ec1b}{operator$\sim$}} ()
+\begin{DoxyCompactList}\small\item\em Checks if device is active. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the name of the device. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_device_a3582cb23e9b9b33087f88385ef5eca27}{get\+Num\+Skills}} ()
+\begin{DoxyCompactList}\small\item\em Returns number of skills of the device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_device}{Device}} $\ast$ \mbox{\hyperlink{class_device_a48e91eea6919c638b7951e2246a738a0}{all\+Devices}}
+\begin{DoxyCompactList}\small\item\em Pointer to array with all Devices built. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{class_device_a19a8076136a46828cd8d033aa6484f62a0003173c43d43bad9adae885a4049437}{INVALID\+\_\+\+DEVICE}} = -\/1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_device_ac4ed6d5c75b13d8095157c0c0a5e268c}{is\+Data\+Device}}
+\begin{DoxyCompactList}\small\item\em Distinguish between Data Devices and other Devices. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}{is\+Active}}
+\begin{DoxyCompactList}\small\item\em (True). Is turned ON. (False). Is turned OFF. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_device_acba8d88e9870a9c9e034c4e438264655}{id}}
+\begin{DoxyCompactList}\small\item\em Kernel number of identification. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_device_a530825dc9a5ac9b4491308d6e1ac9ffc}{num\+Skills}}
+\begin{DoxyCompactList}\small\item\em Number of skills detected for the device. \end{DoxyCompactList}\item 
+std\+::string $\ast$ \mbox{\hyperlink{class_device_aaccdf897fbb200f562df5f9637a5ca6c}{skill\+Names}}
+\begin{DoxyCompactList}\small\item\em Pointers to names of each skill. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}}
+\begin{DoxyCompactList}\small\item\em Name of the device. \end{DoxyCompactList}\item 
+std\+::vector$<$ void($\ast$)()$>$ $\ast$ \mbox{\hyperlink{class_device_ac7f6e68d79802b6ea86735c70a92c4f7}{skills}}
+\begin{DoxyCompactList}\small\item\em Pointer to all functions (skills) build. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_device_a33d29d035c971f5c49e5a60d9720b201}{set\+All\+Devices}} (\mbox{\hyperlink{class_device}{Device}} $\ast$all\+New\+Devices, std\+::string $\ast$all\+New\+Device\+Names, int \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{num\+Devices}})
+\begin{DoxyCompactList}\small\item\em Sets all pointers to Devices. Used to general device control, recommended only for \mbox{\hyperlink{class_device_builder}{Device\+Builder}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_device_ab9ed0324f1d481e7aca9cf14ead2c2f4}{set\+Device\+Counter}} (int num)
+\begin{DoxyCompactList}\small\item\em Sets number of Detected Devices. Used to general device control, recommended only for \mbox{\hyperlink{class_device_builder}{Device\+Builder}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_device_aebd38e00abc6091626f986ab8c5697b7}{TAG}} = \char`\"{}Device\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of class (for exception throwing) \end{DoxyCompactList}\item 
+static std\+::string $\ast$ \mbox{\hyperlink{class_device_a736701986d6f35d72c9f4c60823234c1}{all\+Device\+Names}}
+\begin{DoxyCompactList}\small\item\em Pointers to every \mbox{\hyperlink{class_device}{Device}} built. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{num\+Devices}}
+\begin{DoxyCompactList}\small\item\em Number of Devices built. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_device_a8132d1c426012ad32810a5a191d8a8a2}{Device\+Builder}}
+\item 
+class \mbox{\hyperlink{class_device_ad4487c6c0c4eab52bf30d029d9194f53}{IODi}}
+\item 
+class \mbox{\hyperlink{class_device_a30f980cd5a3847c1fc8b9c49c84af74a}{AI}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class will contain every device as a general low-\/level definition, containing the skills, properties and a set of functionalities for managing all devices or modifying them individually. Every device will be built from the builder and the data managed will be managed from \mbox{\hyperlink{class_a_i}{AI}} and \mbox{\hyperlink{class_i_o_di}{IODi}}. This class will also be the base for constructing Data\+Devices and Kernel\+Devices. 
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00020}{20}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_device_a19a8076136a46828cd8d033aa6484f62}\label{class_device_a19a8076136a46828cd8d033aa6484f62}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVALID\_DEVICE@{INVALID\_DEVICE}!Device@{Device}}\index{Device@{Device}!INVALID\_DEVICE@{INVALID\_DEVICE}}}\mbox{\Hypertarget{class_device_a19a8076136a46828cd8d033aa6484f62a0003173c43d43bad9adae885a4049437}\label{class_device_a19a8076136a46828cd8d033aa6484f62a0003173c43d43bad9adae885a4049437}} 
+INVALID\+\_\+\+DEVICE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00112}{112}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00112         \{}
+\DoxyCodeLine{00113         \mbox{\hyperlink{class_device_a19a8076136a46828cd8d033aa6484f62a0003173c43d43bad9adae885a4049437}{INVALID\_DEVICE}} = -\/1  \textcolor{comment}{// Change to set invalid ID of devices}}
+\DoxyCodeLine{00114     \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_device_a64ba12dcc5f4267486c5d545d04dcf68}\label{class_device_a64ba12dcc5f4267486c5d545d04dcf68}} 
+\index{Device@{Device}!Device@{Device}}
+\index{Device@{Device}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{Device()}{Device()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Device\+::\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Builds a New \mbox{\hyperlink{class_device}{Device}}. Sets Invalid properties by default. Not recommended. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_8cpp_source_l00022}{22}} of file \mbox{\hyperlink{_device_8cpp_source}{Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022 : \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}}(\textcolor{stringliteral}{"{}"{}}),\mbox{\hyperlink{class_device_acba8d88e9870a9c9e034c4e438264655}{id}}(\mbox{\hyperlink{class_device_a19a8076136a46828cd8d033aa6484f62a0003173c43d43bad9adae885a4049437}{INVALID\_DEVICE}})\{\};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{class_device_ad689f911c5f2395a1116a625113e5392}\label{class_device_ad689f911c5f2395a1116a625113e5392}} 
+\index{Device@{Device}!Device@{Device}}
+\index{Device@{Device}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{Device()}{Device()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Device\+::\+Device (\begin{DoxyParamCaption}\item[{std\+::string}]{device\+Name,  }\item[{int}]{device\+Id }\end{DoxyParamCaption})}
+
+
+
+Creates a New \mbox{\hyperlink{class_device}{Device}} and assign a identifier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Public name for device \\
+\hline
+{\em id} & Private identifier for device \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_device_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{_device_8cpp_source}{Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025 : \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}}(deviceName),\mbox{\hyperlink{class_device_acba8d88e9870a9c9e034c4e438264655}{id}}(deviceId)\{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_device_a7e27b36eae579176707a47b682d84a22}\label{class_device_a7e27b36eae579176707a47b682d84a22}} 
+\index{Device@{Device}!getName@{getName}}
+\index{getName@{getName}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Device\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the name of the device. 
+
+\begin{DoxyReturn}{Returns}
+Name of device 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_device_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{_device_8cpp_source}{Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029                           \{}
+\DoxyCodeLine{00030     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}};}
+\DoxyCodeLine{00031 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_addd22a78b4ec596e5ae9554113c6a2d1}{AI\+::check\+Security()}}, \mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{IODi\+::request\+Skill()}}, \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{Data\+Device\+::set\+All\+Data\+Devices()}}, and \mbox{\hyperlink{class_a_i_aab98da3e33b41549ee49ba3d7a1acc43}{AI\+::turn\+Security()}}.
+
+\mbox{\Hypertarget{class_device_a3582cb23e9b9b33087f88385ef5eca27}\label{class_device_a3582cb23e9b9b33087f88385ef5eca27}} 
+\index{Device@{Device}!getNumSkills@{getNumSkills}}
+\index{getNumSkills@{getNumSkills}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{getNumSkills()}{getNumSkills()}}
+{\footnotesize\ttfamily int Device\+::get\+Num\+Skills (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns number of skills of the device. 
+
+\begin{DoxyReturn}{Returns}
+Number of skills 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_device_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{_device_8cpp_source}{Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033                         \{}
+\DoxyCodeLine{00034     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_device_a530825dc9a5ac9b4491308d6e1ac9ffc}{numSkills}};}
+\DoxyCodeLine{00035 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_a530825dc9a5ac9b4491308d6e1ac9ffc}{num\+Skills}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_i_o_di_ae3d98013800c88fec47012ec3c814d8f}{IODi\+::request\+Device\+Skills()}}, and \mbox{\hyperlink{class_i_o_di_ac3e76c3309b3b98e9e7125e6e2dce79a}{IODi\+::request\+Number\+Of\+Skills()}}.
+
+\mbox{\Hypertarget{class_device_a24cdf263bfc82ebcdb63cb507d583f70}\label{class_device_a24cdf263bfc82ebcdb63cb507d583f70}} 
+\index{Device@{Device}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Device\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Uses a built-\/in device-\/skill calling it by its name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em skill\+Name} & Name of the skill \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_invalid_skill_exception}{Invalid\+Skill\+Exception}}} & Skill-\/index not valid/found \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_device_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{_device_8cpp_source}{Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00038                                 \{}
+\DoxyCodeLine{00039     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{00040         (*this-\/>\mbox{\hyperlink{class_device_ac7f6e68d79802b6ea86735c70a92c4f7}{skills}})[index]();}
+\DoxyCodeLine{00041 }
+\DoxyCodeLine{00042     \}\textcolor{keywordflow}{catch} (std::exception)\{}
+\DoxyCodeLine{00043         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_invalid_skill_exception}{InvalidSkillException}}(\mbox{\hyperlink{class_device_aebd38e00abc6091626f986ab8c5697b7}{TAG}});}
+\DoxyCodeLine{00044     \}}
+\DoxyCodeLine{00045 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_ac7f6e68d79802b6ea86735c70a92c4f7}{skills}}, and \mbox{\hyperlink{class_device_aebd38e00abc6091626f986ab8c5697b7}{TAG}}.
+
+\mbox{\Hypertarget{class_device_ac98ecb9f1f9009e2d55c59d60942332f}\label{class_device_ac98ecb9f1f9009e2d55c59d60942332f}} 
+\index{Device@{Device}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Device\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::string}]{skill\+Name }\end{DoxyParamCaption})}
+
+
+
+Uses a built-\/in device-\/skill calling it by its position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Position of the skill (order of implementation) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_invalid_skill_exception}{Invalid\+Skill\+Exception}}} & Skill-\/name not valid \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_device_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{_device_8cpp_source}{Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00048                                           \{}
+\DoxyCodeLine{00049     \textcolor{comment}{// -\/-\/-\/-\/-\/ Set number of skills -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00050     \textcolor{keywordtype}{int} skillSize = this-\/>\mbox{\hyperlink{class_device_a530825dc9a5ac9b4491308d6e1ac9ffc}{numSkills}};}
+\DoxyCodeLine{00051 }
+\DoxyCodeLine{00052     \textcolor{comment}{// -\/-\/-\/-\/-\/ Find and use Skill -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00053     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < skillSize; i++)\{}
+\DoxyCodeLine{00054         \textcolor{keywordflow}{if} (skillName == \mbox{\hyperlink{class_device_aaccdf897fbb200f562df5f9637a5ca6c}{skillNames}}[i])}
+\DoxyCodeLine{00055             \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{00056                 (*this-\/>\mbox{\hyperlink{class_device_ac7f6e68d79802b6ea86735c70a92c4f7}{skills}})[i]();}
+\DoxyCodeLine{00057                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00058             \}\textcolor{keywordflow}{catch} (std::exception)\{}
+\DoxyCodeLine{00059                 \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_invalid_skill_exception}{InvalidSkillException}}(\mbox{\hyperlink{class_device_aebd38e00abc6091626f986ab8c5697b7}{TAG}});}
+\DoxyCodeLine{00060             \}}
+\DoxyCodeLine{00061 }
+\DoxyCodeLine{00062     \}}
+\DoxyCodeLine{00063 \};}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_a530825dc9a5ac9b4491308d6e1ac9ffc}{num\+Skills}}, \mbox{\hyperlink{class_device_aaccdf897fbb200f562df5f9637a5ca6c}{skill\+Names}}, \mbox{\hyperlink{class_device_ac7f6e68d79802b6ea86735c70a92c4f7}{skills}}, and \mbox{\hyperlink{class_device_aebd38e00abc6091626f986ab8c5697b7}{TAG}}.
+
+\mbox{\Hypertarget{class_device_abc03a7e8cf8ed04b7906cf434510ec1b}\label{class_device_abc03a7e8cf8ed04b7906cf434510ec1b}} 
+\index{Device@{Device}!operator$\sim$@{operator$\sim$}}
+\index{operator$\sim$@{operator$\sim$}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{operator$\sim$()}{operator~()}}
+{\footnotesize\ttfamily bool Device\+::operator$\sim$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if device is active. 
+
+\begin{DoxyReturn}{Returns}
+Status of the device. (True) Active. (False) Inactive. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_device_8cpp_source_l00066}{66}} of file \mbox{\hyperlink{_device_8cpp_source}{Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00066                        \{}
+\DoxyCodeLine{00067     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}{isActive}};}
+\DoxyCodeLine{00068 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}{is\+Active}}.
+
+\mbox{\Hypertarget{class_device_a33d29d035c971f5c49e5a60d9720b201}\label{class_device_a33d29d035c971f5c49e5a60d9720b201}} 
+\index{Device@{Device}!setAllDevices@{setAllDevices}}
+\index{setAllDevices@{setAllDevices}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{setAllDevices()}{setAllDevices()}}
+{\footnotesize\ttfamily void Device\+::set\+All\+Devices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_device}{Device}} $\ast$}]{all\+New\+Devices,  }\item[{std\+::string $\ast$}]{all\+New\+Device\+Names,  }\item[{int}]{num\+Devices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Sets all pointers to Devices. Used to general device control, recommended only for \mbox{\hyperlink{class_device_builder}{Device\+Builder}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em all\+New\+Devices} & Array with pointers to all Devices \\
+\hline
+{\em Array} & with names for each \mbox{\hyperlink{class_device}{Device}} \\
+\hline
+{\em num\+Devices} & Number of devices to be setted \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_device_8cpp_source_l00076}{76}} of file \mbox{\hyperlink{_device_8cpp_source}{Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00076                                                                                               \{}
+\DoxyCodeLine{00077 }
+\DoxyCodeLine{00078     \textcolor{comment}{// -\/-\/-\/-\/-\/ Setting Device pointers and names -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00079     std::cout << \textcolor{stringliteral}{"{}[DEVICES] Collecting all devices: "{}} << std::endl;}
+\DoxyCodeLine{00080     \mbox{\hyperlink{class_device_a48e91eea6919c638b7951e2246a738a0}{Device::allDevices}} = allNewDevices;}
+\DoxyCodeLine{00081     \mbox{\hyperlink{class_device_a736701986d6f35d72c9f4c60823234c1}{Device::allDeviceNames}} = allNewDeviceNames;}
+\DoxyCodeLine{00082     \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{Device::numDevices}} = \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{numDevices}};}
+\DoxyCodeLine{00083 }
+\DoxyCodeLine{00084     \textcolor{comment}{// -\/-\/-\/-\/-\/ Log Success Device -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00085     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{numDevices}}; i++)\{}
+\DoxyCodeLine{00086         std::cout << \textcolor{stringliteral}{"{}-\/> (SUCCESS) "{}} << allNewDeviceNames[i] << std::endl;}
+\DoxyCodeLine{00087     \}}
+\DoxyCodeLine{00088 }
+\DoxyCodeLine{00089 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_a736701986d6f35d72c9f4c60823234c1}{all\+Device\+Names}}, \mbox{\hyperlink{class_device_a48e91eea6919c638b7951e2246a738a0}{all\+Devices}}, and \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{num\+Devices}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{Device\+Builder\+::build\+All\+Devices()}}.
+
+\mbox{\Hypertarget{class_device_ab9ed0324f1d481e7aca9cf14ead2c2f4}\label{class_device_ab9ed0324f1d481e7aca9cf14ead2c2f4}} 
+\index{Device@{Device}!setDeviceCounter@{setDeviceCounter}}
+\index{setDeviceCounter@{setDeviceCounter}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{setDeviceCounter()}{setDeviceCounter()}}
+{\footnotesize\ttfamily void Device\+::set\+Device\+Counter (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Sets number of Detected Devices. Used to general device control, recommended only for \mbox{\hyperlink{class_device_builder}{Device\+Builder}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Number of devices (total) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_device_8cpp_source_l00092}{92}} of file \mbox{\hyperlink{_device_8cpp_source}{Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00092                                      \{}
+\DoxyCodeLine{00093     \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{Device::numDevices}} = num;}
+\DoxyCodeLine{00094 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{num\+Devices}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_device_a30f980cd5a3847c1fc8b9c49c84af74a}\label{class_device_a30f980cd5a3847c1fc8b9c49c84af74a}} 
+\index{Device@{Device}!AI@{AI}}
+\index{AI@{AI}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{AI}{AI}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_a_i}{AI}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00024}{24}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+\mbox{\Hypertarget{class_device_a8132d1c426012ad32810a5a191d8a8a2}\label{class_device_a8132d1c426012ad32810a5a191d8a8a2}} 
+\index{Device@{Device}!DeviceBuilder@{DeviceBuilder}}
+\index{DeviceBuilder@{DeviceBuilder}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{DeviceBuilder}{DeviceBuilder}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_device_builder}{Device\+Builder}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00022}{22}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+\mbox{\Hypertarget{class_device_ad4487c6c0c4eab52bf30d029d9194f53}\label{class_device_ad4487c6c0c4eab52bf30d029d9194f53}} 
+\index{Device@{Device}!IODi@{IODi}}
+\index{IODi@{IODi}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{IODi}{IODi}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_i_o_di}{IODi}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00023}{23}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_device_a736701986d6f35d72c9f4c60823234c1}\label{class_device_a736701986d6f35d72c9f4c60823234c1}} 
+\index{Device@{Device}!allDeviceNames@{allDeviceNames}}
+\index{allDeviceNames@{allDeviceNames}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{allDeviceNames}{allDeviceNames}}
+{\footnotesize\ttfamily std\+::string $\ast$ Device\+::all\+Device\+Names\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Pointers to every \mbox{\hyperlink{class_device}{Device}} built. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00087}{87}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_a33d29d035c971f5c49e5a60d9720b201}{set\+All\+Devices()}}.
+
+\mbox{\Hypertarget{class_device_a48e91eea6919c638b7951e2246a738a0}\label{class_device_a48e91eea6919c638b7951e2246a738a0}} 
+\index{Device@{Device}!allDevices@{allDevices}}
+\index{allDevices@{allDevices}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{allDevices}{allDevices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_device}{Device}} $\ast$ Device\+::all\+Devices\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pointer to array with all Devices built. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00073}{73}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{Data\+Device\+::set\+All\+Data\+Devices()}}, \mbox{\hyperlink{class_device_a33d29d035c971f5c49e5a60d9720b201}{set\+All\+Devices()}}, and \mbox{\hyperlink{class_kernel_device_a60b837caf6adf7b1003e469d921d0407}{Kernel\+Device\+::set\+All\+Kernel\+Devices()}}.
+
+\mbox{\Hypertarget{class_device_acba8d88e9870a9c9e034c4e438264655}\label{class_device_acba8d88e9870a9c9e034c4e438264655}} 
+\index{Device@{Device}!id@{id}}
+\index{id@{id}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Device\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Kernel number of identification. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00123}{123}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}{Data\+Device\+::\+Data\+Device()}}, and \mbox{\hyperlink{class_kernel_device_aa74483987a8e2e50ef32840556759fbc}{Kernel\+Device\+::\+Kernel\+Device()}}.
+
+\mbox{\Hypertarget{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}\label{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}} 
+\index{Device@{Device}!isActive@{isActive}}
+\index{isActive@{isActive}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{isActive}{isActive}}
+{\footnotesize\ttfamily bool Device\+::is\+Active\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+(True). Is turned ON. (False). Is turned OFF. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00121}{121}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}{Data\+Device\+::\+Data\+Device()}}, \mbox{\hyperlink{class_kernel_device_ae5e577dcdaece5f904780eae1d171ba3}{Kernel\+Device\+::\+Kernel\+Device()}}, \mbox{\hyperlink{class_device_abc03a7e8cf8ed04b7906cf434510ec1b}{operator$\sim$()}}, \mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{IODi\+::request\+Skill()}}, and \mbox{\hyperlink{class_a_i_aab98da3e33b41549ee49ba3d7a1acc43}{AI\+::turn\+Security()}}.
+
+\mbox{\Hypertarget{class_device_ac4ed6d5c75b13d8095157c0c0a5e268c}\label{class_device_ac4ed6d5c75b13d8095157c0c0a5e268c}} 
+\index{Device@{Device}!isDataDevice@{isDataDevice}}
+\index{isDataDevice@{isDataDevice}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{isDataDevice}{isDataDevice}}
+{\footnotesize\ttfamily bool Device\+::is\+Data\+Device\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Distinguish between Data Devices and other Devices. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00119}{119}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_a462db6e238eaabb44993fcc14a033fe5}{Data\+Device\+::\+Data\+Device()}}, and \mbox{\hyperlink{class_kernel_device_ae5e577dcdaece5f904780eae1d171ba3}{Kernel\+Device\+::\+Kernel\+Device()}}.
+
+\mbox{\Hypertarget{class_device_ae779f5ee618677629b71287f3f77f8e8}\label{class_device_ae779f5ee618677629b71287f3f77f8e8}} 
+\index{Device@{Device}!name@{name}}
+\index{name@{name}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Device\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Name of the device. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00130}{130}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_a462db6e238eaabb44993fcc14a033fe5}{Data\+Device\+::\+Data\+Device()}}, \mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{get\+Name()}}, and \mbox{\hyperlink{class_kernel_device_ae5e577dcdaece5f904780eae1d171ba3}{Kernel\+Device\+::\+Kernel\+Device()}}.
+
+\mbox{\Hypertarget{class_device_a74302904617c3868c4aa9ad4b9958a9a}\label{class_device_a74302904617c3868c4aa9ad4b9958a9a}} 
+\index{Device@{Device}!numDevices@{numDevices}}
+\index{numDevices@{numDevices}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{numDevices}{numDevices}}
+{\footnotesize\ttfamily int Device\+::num\+Devices\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Number of Devices built. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00089}{89}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_aeafba0fc07e4e9672930aa3341619679}{AI\+::build\+Device()}}, \mbox{\hyperlink{class_device_a33d29d035c971f5c49e5a60d9720b201}{set\+All\+Devices()}}, and \mbox{\hyperlink{class_device_ab9ed0324f1d481e7aca9cf14ead2c2f4}{set\+Device\+Counter()}}.
+
+\mbox{\Hypertarget{class_device_a530825dc9a5ac9b4491308d6e1ac9ffc}\label{class_device_a530825dc9a5ac9b4491308d6e1ac9ffc}} 
+\index{Device@{Device}!numSkills@{numSkills}}
+\index{numSkills@{numSkills}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{numSkills}{numSkills}}
+{\footnotesize\ttfamily int Device\+::num\+Skills\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Number of skills detected for the device. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00125}{125}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}{Data\+Device\+::\+Data\+Device()}}, \mbox{\hyperlink{class_device_a3582cb23e9b9b33087f88385ef5eca27}{get\+Num\+Skills()}}, and \mbox{\hyperlink{class_device_ac98ecb9f1f9009e2d55c59d60942332f}{operator\mbox{[}$\,$\mbox{]}()}}.
+
+\mbox{\Hypertarget{class_device_aaccdf897fbb200f562df5f9637a5ca6c}\label{class_device_aaccdf897fbb200f562df5f9637a5ca6c}} 
+\index{Device@{Device}!skillNames@{skillNames}}
+\index{skillNames@{skillNames}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{skillNames}{skillNames}}
+{\footnotesize\ttfamily std\+::string$\ast$ Device\+::skill\+Names\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pointers to names of each skill. 
+
+\begin{DoxyWarning}{Warning}
+Must have the same order that num\+Skills 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00128}{128}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}{Data\+Device\+::\+Data\+Device()}}, \mbox{\hyperlink{class_device_ac98ecb9f1f9009e2d55c59d60942332f}{operator\mbox{[}$\,$\mbox{]}()}}, \mbox{\hyperlink{class_i_o_di_ae3d98013800c88fec47012ec3c814d8f}{IODi\+::request\+Device\+Skills()}}, and \mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{IODi\+::request\+Skill()}}.
+
+\mbox{\Hypertarget{class_device_ac7f6e68d79802b6ea86735c70a92c4f7}\label{class_device_ac7f6e68d79802b6ea86735c70a92c4f7}} 
+\index{Device@{Device}!skills@{skills}}
+\index{skills@{skills}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{skills}{skills}}
+{\footnotesize\ttfamily std\+::vector$<$void($\ast$)()$>$$\ast$ Device\+::skills\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Pointer to all functions (skills) build. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00132}{132}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}{Data\+Device\+::\+Data\+Device()}}, and \mbox{\hyperlink{class_device_a24cdf263bfc82ebcdb63cb507d583f70}{operator\mbox{[}$\,$\mbox{]}()}}.
+
+\mbox{\Hypertarget{class_device_aebd38e00abc6091626f986ab8c5697b7}\label{class_device_aebd38e00abc6091626f986ab8c5697b7}} 
+\index{Device@{Device}!TAG@{TAG}}
+\index{TAG@{TAG}!Device@{Device}}
+\doxysubsubsection{\texorpdfstring{TAG}{TAG}}
+{\footnotesize\ttfamily std\+::string Device\+::\+TAG = \char`\"{}Device\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Name of class (for exception throwing) 
+
+
+
+Definition at line \mbox{\hyperlink{_device_8h_source_l00085}{85}} of file \mbox{\hyperlink{_device_8h_source}{Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_a24cdf263bfc82ebcdb63cb507d583f70}{operator\mbox{[}$\,$\mbox{]}()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_device_8h}{Device.\+h}}\item 
+\mbox{\hyperlink{_device_8cpp}{Device.\+cpp}}\end{DoxyCompactItemize}

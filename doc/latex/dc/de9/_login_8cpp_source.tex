@@ -1,0 +1,79 @@
+\hypertarget{_login_8cpp_source}{}\doxysection{Login.\+cpp}
+\label{_login_8cpp_source}\index{Login.cpp@{Login.cpp}}
+\mbox{\hyperlink{_login_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00001}00001 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ Login -\/ JVH Systems -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00009}00009 \textcolor{comment}{}\textcolor{preprocessor}{\#include "{}../headers/Login.h"{}}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00010}00010 \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00011}00011 \textcolor{keywordtype}{int} \mbox{\hyperlink{class_login_a80e7b8f4454820168eccc59d7eb0bfc2}{Login::SLEEP\_TIME}} = 1;}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00012}00012 \textcolor{keywordtype}{int} \mbox{\hyperlink{class_login_a6da591322432c2c43dcacc541aaae0be}{Login::EXIT\_REQUEST}} = -\/1;}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00014}00014 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00015}00015 \textcolor{comment}{//                  PUBLIC FUNCTIONALITIES              |}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00016}00016 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00018}00018 \textcolor{comment}{// -\/-\/-\/ [Constructor] Login() -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00019}\mbox{\hyperlink{class_login_a4847f3e07e43b540d3339392346f87ff}{00019}} \mbox{\hyperlink{class_login_a4847f3e07e43b540d3339392346f87ff}{Login::Login}}() \{\};}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00023}00023 \textcolor{comment}{// -\/-\/-\/ [Method] startLogin() -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00024}\mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{00024}} \mbox{\hyperlink{class_user}{User}} \mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{Login::startLogin}}() \{}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00027}00027     \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00028}00028     \textcolor{keywordtype}{bool} badAccess = \textcolor{keyword}{false};          \textcolor{comment}{// Bool to detect if input is not correct.}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00030}00030     \textcolor{comment}{// -\/-\/-\/-\/-\/ Logger Bucle -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00031}00031     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00033}00033         \textcolor{comment}{//  Checking Bad Inputs}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00034}00034         \textcolor{keywordflow}{if} (badAccess) \{}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00035}00035             \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Bad Access"{}});}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00036}00036             sleep(\mbox{\hyperlink{class_login_a80e7b8f4454820168eccc59d7eb0bfc2}{SLEEP\_TIME}});}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00037}00037         \}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00039}00039         \textcolor{comment}{//  Reset Variables}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00040}00040         \mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}} = \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{User::INVALID\_USER}};}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00041}00041         \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}} = \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}{User::INVALID\_PASS}};}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00043}00043         \textcolor{comment}{//  Prompt user}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00044}00044         \mbox{\hyperlink{class_simple_display_ab1d7ccdbdf671ce70c383332632ebbf7}{SimpleDisplay::printLoginInterface}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}}, \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{User::INVALID\_USER}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}{User::INVALID\_PASS}});}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00045}00045         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)nKeyboard: "{}});}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00046}00046         std::cin >> \mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}};}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00048}00048         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}} == \mbox{\hyperlink{class_login_a6da591322432c2c43dcacc541aaae0be}{EXIT\_REQUEST}}) raise(SIGINT);}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00050}00050         \textcolor{comment}{//  Prompt password}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00051}00051         \mbox{\hyperlink{class_simple_display_ab1d7ccdbdf671ce70c383332632ebbf7}{SimpleDisplay::printLoginInterface}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}}, \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{User::INVALID\_USER}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}{User::INVALID\_PASS}});}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00052}00052         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)nKeyboard: "{}});}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00053}00053         std::cin >> \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}};}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00055}00055         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}} == \mbox{\hyperlink{class_login_a6da591322432c2c43dcacc541aaae0be}{EXIT\_REQUEST}}) raise(SIGINT);}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00057}00057         \textcolor{comment}{//  Print checking interface}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00058}00058         \mbox{\hyperlink{class_simple_display_ab1d7ccdbdf671ce70c383332632ebbf7}{SimpleDisplay::printLoginInterface}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}}, \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{User::INVALID\_USER}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}{User::INVALID\_PASS}});}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00059}00059         \mbox{\hyperlink{class_simple_display_aadc86b7c13f2c426981d118923b6fe29}{SimpleDisplay::printChecking}}();}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00061}00061         \textcolor{comment}{//  Prepare next logger (if needed)}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00062}00062         badAccess = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00063}00063         sleep(\mbox{\hyperlink{class_login_a80e7b8f4454820168eccc59d7eb0bfc2}{SLEEP\_TIME}});}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00065}00065         \textcolor{comment}{//  Clear bad inputs}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00066}00066         std::cin.clear();}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00067}00067         std::cin.ignore(std::numeric\_limits<std::streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00069}00069         \textcolor{comment}{//  Loop until the user and password are valid}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00070}00070     \} \textcolor{keywordflow}{while} (!\mbox{\hyperlink{class_user_a3dd5f61e8f0172573a6ab6f73505cb2c}{User::check}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}}, \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}}));}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00072}00072     \textcolor{comment}{// Return Admin (If needed)}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00073}00073     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_admin_a5a8f948cd91984ba4005ce9443776847}{Admin::adminStatus}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}}))}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00074}00074         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_admin}{Admin}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}});}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00076}00076     \textcolor{comment}{// -\/-\/-\/-\/-\/ Returning User -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00077}00077     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_user}{User}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}});}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00078}00078 \};}
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{_login_8cpp_source_l00080}00080 }
+
+\end{DoxyCode}

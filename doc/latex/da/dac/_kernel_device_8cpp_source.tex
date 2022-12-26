@@ -1,0 +1,50 @@
+\hypertarget{_kernel_device_8cpp_source}{}\doxysection{Kernel\+Device.\+cpp}
+\label{_kernel_device_8cpp_source}\index{KernelDevice.cpp@{KernelDevice.cpp}}
+\mbox{\hyperlink{_kernel_device_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00001}00001 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ KernelDevice -\/ JVH Systems -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00009}00009 \textcolor{comment}{}\textcolor{preprocessor}{\#include "{}../headers/KernelDevice.h"{}}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00012}00012 \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00013}00013 \mbox{\hyperlink{class_kernel_device}{KernelDevice}}* \mbox{\hyperlink{class_kernel_device_a31294b124e12af14435dc0a2c5b8d168}{KernelDevice::allKernelDevices}};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00014}00014 \textcolor{keywordtype}{int} \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{KernelDevice::numKerns}} = 0;}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00016}00016 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00017}00017 \textcolor{comment}{//                  PUBLIC FUNCTIONALITIES              |}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00018}00018 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00020}00020 \textcolor{comment}{// -\/-\/-\/ [Empty Constructor] KernelDevice -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00021}\mbox{\hyperlink{class_kernel_device_ae5e577dcdaece5f904780eae1d171ba3}{00021}} \mbox{\hyperlink{class_kernel_device_ae5e577dcdaece5f904780eae1d171ba3}{KernelDevice::KernelDevice}}() \{}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00022}00022     this-\/>\mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00023}00023     this-\/>\mbox{\hyperlink{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}{isActive}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00024}00024     this-\/>\textcolor{keywordtype}{id} = \mbox{\hyperlink{class_device_a19a8076136a46828cd8d033aa6484f62a0003173c43d43bad9adae885a4049437}{INVALID\_DEVICE}};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00025}00025     this-\/>\mbox{\hyperlink{class_device_ac4ed6d5c75b13d8095157c0c0a5e268c}{isDataDevice}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00026}00026     this-\/>\mbox{\hyperlink{class_kernel_device_abed622ff7f34cfef1084789717783382}{securityHasBeenBroken}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00027}00027 \};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00029}00029 \textcolor{comment}{// -\/-\/-\/ [Constructor] KernelDevice -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00030}\mbox{\hyperlink{class_kernel_device_aa74483987a8e2e50ef32840556759fbc}{00030}} \mbox{\hyperlink{class_kernel_device_ae5e577dcdaece5f904780eae1d171ba3}{KernelDevice::KernelDevice}}(std::string name, \textcolor{keywordtype}{int} \textcolor{keywordtype}{id}) \{}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00032}00032     std::cout << \textcolor{stringliteral}{"{}[KernelDevice] New Device Detected: 0x"{}} << \textcolor{keywordtype}{id} << std::endl;}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00034}00034     \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{numKerns}}++;}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00036}00036     this-\/>name = \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00037}00037     this-\/>\textcolor{keywordtype}{id} = \mbox{\hyperlink{class_device_acba8d88e9870a9c9e034c4e438264655}{id}};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00038}00038     this-\/>\mbox{\hyperlink{class_device_ac4ed6d5c75b13d8095157c0c0a5e268c}{isDataDevice}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00039}00039     this-\/>\mbox{\hyperlink{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}{isActive}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00040}00040     this-\/>\mbox{\hyperlink{class_kernel_device_abed622ff7f34cfef1084789717783382}{securityHasBeenBroken}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00041}00041 \}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00043}00043 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00044}00044 \textcolor{comment}{//                  PRIVATE FUNCTIONALITIES             |}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00045}00045 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00047}00047 \textcolor{comment}{// -\/-\/-\/ [Setter] setAllKernelDevices -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00048}\mbox{\hyperlink{class_kernel_device_a60b837caf6adf7b1003e469d921d0407}{00048}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_kernel_device_a60b837caf6adf7b1003e469d921d0407}{KernelDevice::setAllKernelDevices}}(\mbox{\hyperlink{class_kernel_device}{KernelDevice}}* allDevices)\{}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00049}00049     \mbox{\hyperlink{class_kernel_device_a31294b124e12af14435dc0a2c5b8d168}{allKernelDevices}} = \mbox{\hyperlink{class_device_a48e91eea6919c638b7951e2246a738a0}{allDevices}};}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00050}00050 \}}
+\DoxyCodeLine{\Hypertarget{_kernel_device_8cpp_source_l00051}00051 }
+
+\end{DoxyCode}

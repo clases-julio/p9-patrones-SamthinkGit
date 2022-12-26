@@ -1,0 +1,325 @@
+\hypertarget{class_device_composite}{}\doxysection{Device\+Composite Class Reference}
+\label{class_device_composite}\index{DeviceComposite@{DeviceComposite}}
+
+
+This class is the responsible of managing multiple orders to devices simultaneously. It will offer a easy interface to compose devices and send orders to them.  
+
+
+
+
+{\ttfamily \#include $<$Device\+Composite.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_device_composite_a13527510f33f2ed9a1b8e113d0c39a88}{Device\+Composite}} ()
+\begin{DoxyCompactList}\small\item\em Simple Composite construction. Empty as default. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_device_composite_a91ccb722e7b877b19fedc54c74ff590b}{add}} (std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Adds a new device to composite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_device_composite_a2a2a36e184e1a4c55166bd5482f4a807}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Pops last device stacked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_device_composite_af488cef31a43646732d6b8565a532088}{request\+Skill}} (std\+::string skill)
+\begin{DoxyCompactList}\small\item\em Request a skill to all devices appended to the composite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_device_composite_af0cdd8b375cdfe71ca37b1fc5aa8f8fb}{clear}} ()
+\begin{DoxyCompactList}\small\item\em clears all devices inside the composite \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_device_composite_a7c08e19a008f322c07503e6e885854fb}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Search and find all device names inside the composite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_i_o_di}{IODi}} $>$ \mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{all\+IODis}}
+\begin{DoxyCompactList}\small\item\em Vector with all \mbox{\hyperlink{class_device}{Device}} Managers (\mbox{\hyperlink{class_i_o_di}{IODi}}\textquotesingle{}s) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_device_composite_aaa3c6765de954494133621c5260a06c6}{CALL\+\_\+\+KEYWORD}}
+\begin{DoxyCompactList}\small\item\em Keyword for adding more devices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is the responsible of managing multiple orders to devices simultaneously. It will offer a easy interface to compose devices and send orders to them. 
+
+Definition at line \mbox{\hyperlink{_device_composite_8h_source_l00015}{15}} of file \mbox{\hyperlink{_device_composite_8h_source}{Device\+Composite.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_device_composite_a13527510f33f2ed9a1b8e113d0c39a88}\label{class_device_composite_a13527510f33f2ed9a1b8e113d0c39a88}} 
+\index{DeviceComposite@{DeviceComposite}!DeviceComposite@{DeviceComposite}}
+\index{DeviceComposite@{DeviceComposite}!DeviceComposite@{DeviceComposite}}
+\doxysubsubsection{\texorpdfstring{DeviceComposite()}{DeviceComposite()}}
+{\footnotesize\ttfamily Device\+Composite\+::\+Device\+Composite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Simple Composite construction. Empty as default. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_composite_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{_device_composite_8cpp_source}{Device\+Composite.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_device_composite_a91ccb722e7b877b19fedc54c74ff590b}\label{class_device_composite_a91ccb722e7b877b19fedc54c74ff590b}} 
+\index{DeviceComposite@{DeviceComposite}!add@{add}}
+\index{add@{add}!DeviceComposite@{DeviceComposite}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Device\+Composite\+::add (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Adds a new device to composite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of device to search \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_invalid_device_exception}{Invalid\+Device\+Exception}}} & If device not found \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_device_composite_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{_device_composite_8cpp_source}{Device\+Composite.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008                                          \{}
+\DoxyCodeLine{00009 }
+\DoxyCodeLine{00010     \textcolor{comment}{// -\/-\/-\/-\/-\/  Intantiating new IODi -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00011     \mbox{\hyperlink{class_i_o_di}{IODi}} iodi;}
+\DoxyCodeLine{00012 }
+\DoxyCodeLine{00013     \textcolor{comment}{// -\/-\/-\/-\/-\/  Adding device to IODi -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00014     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{00015         iodi.\mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{setCurrentDevice}}(name);}
+\DoxyCodeLine{00016     \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_invalid_device_exception}{InvalidDeviceException}} \&e)\{}
+\DoxyCodeLine{00017         \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{00018         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00019     \}}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00021     \textcolor{comment}{// -\/-\/-\/-\/-\/  Saving IODi -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00022     this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}.push\_back(iodi);}
+\DoxyCodeLine{00023 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{all\+IODis}}, and \mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{IODi\+::set\+Current\+Device()}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}, and \mbox{\hyperlink{class_device_composite_af488cef31a43646732d6b8565a532088}{request\+Skill()}}.
+
+\mbox{\Hypertarget{class_device_composite_af0cdd8b375cdfe71ca37b1fc5aa8f8fb}\label{class_device_composite_af0cdd8b375cdfe71ca37b1fc5aa8f8fb}} 
+\index{DeviceComposite@{DeviceComposite}!clear@{clear}}
+\index{clear@{clear}!DeviceComposite@{DeviceComposite}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Device\+Composite\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+clears all devices inside the composite 
+
+
+
+Definition at line \mbox{\hyperlink{_device_composite_8cpp_source_l00052}{52}} of file \mbox{\hyperlink{_device_composite_8cpp_source}{Device\+Composite.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00052                             \{}
+\DoxyCodeLine{00053 }
+\DoxyCodeLine{00054     this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}.clear();}
+\DoxyCodeLine{00055 }
+\DoxyCodeLine{00056 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{all\+IODis}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+\mbox{\Hypertarget{class_device_composite_a2a2a36e184e1a4c55166bd5482f4a807}\label{class_device_composite_a2a2a36e184e1a4c55166bd5482f4a807}} 
+\index{DeviceComposite@{DeviceComposite}!pop@{pop}}
+\index{pop@{pop}!DeviceComposite@{DeviceComposite}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily void Device\+Composite\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pops last device stacked. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_composite_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{_device_composite_8cpp_source}{Device\+Composite.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024                           \{}
+\DoxyCodeLine{00025     this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}.pop\_back();}
+\DoxyCodeLine{00026 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{all\+IODis}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+\mbox{\Hypertarget{class_device_composite_af488cef31a43646732d6b8565a532088}\label{class_device_composite_af488cef31a43646732d6b8565a532088}} 
+\index{DeviceComposite@{DeviceComposite}!requestSkill@{requestSkill}}
+\index{requestSkill@{requestSkill}!DeviceComposite@{DeviceComposite}}
+\doxysubsubsection{\texorpdfstring{requestSkill()}{requestSkill()}}
+{\footnotesize\ttfamily void Device\+Composite\+::request\+Skill (\begin{DoxyParamCaption}\item[{std\+::string}]{skill }\end{DoxyParamCaption})}
+
+
+
+Request a skill to all devices appended to the composite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em skill} & Name of skill to use; \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_device_composite_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{_device_composite_8cpp_source}{Device\+Composite.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029                                                   \{}
+\DoxyCodeLine{00030 }
+\DoxyCodeLine{00031     \textcolor{comment}{// -\/-\/-\/-\/-\/  Check if skill is a keyword to add to composite -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00032     \textcolor{keywordflow}{if} (skill == \mbox{\hyperlink{class_device_composite_aaa3c6765de954494133621c5260a06c6}{::CALL\_KEYWORD}})\{}
+\DoxyCodeLine{00033 }
+\DoxyCodeLine{00034         std::string answer;}
+\DoxyCodeLine{00035         \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}Device Name: "{}});}
+\DoxyCodeLine{00036         std::getline(std::cin,answer);}
+\DoxyCodeLine{00037         \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{00038             this-\/>\mbox{\hyperlink{class_device_composite_a91ccb722e7b877b19fedc54c74ff590b}{add}}(answer);}
+\DoxyCodeLine{00039             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00040         \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_invalid_device_exception}{InvalidDeviceException}} \&e)\{}
+\DoxyCodeLine{00041             \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}Invalid Device"{}});}
+\DoxyCodeLine{00042             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00043         \}}
+\DoxyCodeLine{00044     \}}
+\DoxyCodeLine{00045 }
+\DoxyCodeLine{00046     \textcolor{comment}{// -\/-\/-\/-\/-\/  Else the keyword is for IODIs -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00047     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}.size(); i++)}
+\DoxyCodeLine{00048         this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}[i].\mbox{\hyperlink{class_device_composite_af488cef31a43646732d6b8565a532088}{requestSkill}}(skill);}
+\DoxyCodeLine{00049 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_composite_a91ccb722e7b877b19fedc54c74ff590b}{add()}}, \mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{all\+IODis}}, \mbox{\hyperlink{class_device_composite_aaa3c6765de954494133621c5260a06c6}{CALL\+\_\+\+KEYWORD}}, \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{Simple\+Display\+::devi\+Cout()}}, and \mbox{\hyperlink{class_device_composite_af488cef31a43646732d6b8565a532088}{request\+Skill()}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}, and \mbox{\hyperlink{class_device_composite_af488cef31a43646732d6b8565a532088}{request\+Skill()}}.
+
+\mbox{\Hypertarget{class_device_composite_a7c08e19a008f322c07503e6e885854fb}\label{class_device_composite_a7c08e19a008f322c07503e6e885854fb}} 
+\index{DeviceComposite@{DeviceComposite}!toString@{toString}}
+\index{toString@{toString}!DeviceComposite@{DeviceComposite}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Device\+Composite\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Search and find all device names inside the composite. 
+
+\begin{DoxyReturn}{Returns}
+String with the composite as a string 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_device_composite_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{_device_composite_8cpp_source}{Device\+Composite.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00058                                     \{}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{00060     \textcolor{comment}{// -\/-\/-\/-\/-\/  Declarations -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00061     std::string stringBuilder = \textcolor{stringliteral}{"{}[ "{}};}
+\DoxyCodeLine{00062 }
+\DoxyCodeLine{00063     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}.size(); i++)\{}
+\DoxyCodeLine{00064 }
+\DoxyCodeLine{00065         \textcolor{comment}{// -\/-\/-\/-\/-\/  Replacing name spaces with underscores. -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00066         std::string name = \mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}[i].requestCurrentDeviceName();}
+\DoxyCodeLine{00067         std::replace(name.begin(), name.end(), \textcolor{charliteral}{' '}, \textcolor{charliteral}{'\_'});}
+\DoxyCodeLine{00068 }
+\DoxyCodeLine{00069         \textcolor{comment}{// -\/-\/-\/-\/-\/  Appending name -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00070         stringBuilder += name + \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{00071     \}}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073     \textcolor{comment}{// -\/-\/-\/-\/-\/  Finishing string -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00074     stringBuilder += \textcolor{stringliteral}{"{}]"{}};}
+\DoxyCodeLine{00075     \textcolor{keywordflow}{return} stringBuilder;}
+\DoxyCodeLine{00076 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{all\+IODis}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_device_composite_a813b7260904087e57f68f72835a34f26}\label{class_device_composite_a813b7260904087e57f68f72835a34f26}} 
+\index{DeviceComposite@{DeviceComposite}!allIODis@{allIODis}}
+\index{allIODis@{allIODis}!DeviceComposite@{DeviceComposite}}
+\doxysubsubsection{\texorpdfstring{allIODis}{allIODis}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_i_o_di}{IODi}}$>$ Device\+Composite\+::all\+IODis\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector with all \mbox{\hyperlink{class_device}{Device}} Managers (\mbox{\hyperlink{class_i_o_di}{IODi}}\textquotesingle{}s) 
+
+
+
+Definition at line \mbox{\hyperlink{_device_composite_8h_source_l00056}{56}} of file \mbox{\hyperlink{_device_composite_8h_source}{Device\+Composite.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_composite_a91ccb722e7b877b19fedc54c74ff590b}{add()}}, \mbox{\hyperlink{class_device_composite_af0cdd8b375cdfe71ca37b1fc5aa8f8fb}{clear()}}, \mbox{\hyperlink{class_device_composite_a2a2a36e184e1a4c55166bd5482f4a807}{pop()}}, \mbox{\hyperlink{class_device_composite_af488cef31a43646732d6b8565a532088}{request\+Skill()}}, and \mbox{\hyperlink{class_device_composite_a7c08e19a008f322c07503e6e885854fb}{to\+String()}}.
+
+\mbox{\Hypertarget{class_device_composite_aaa3c6765de954494133621c5260a06c6}\label{class_device_composite_aaa3c6765de954494133621c5260a06c6}} 
+\index{DeviceComposite@{DeviceComposite}!CALL\_KEYWORD@{CALL\_KEYWORD}}
+\index{CALL\_KEYWORD@{CALL\_KEYWORD}!DeviceComposite@{DeviceComposite}}
+\doxysubsubsection{\texorpdfstring{CALL\_KEYWORD}{CALL\_KEYWORD}}
+{\footnotesize\ttfamily std\+::string Device\+Composite\+::\+CALL\+\_\+\+KEYWORD\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Keyword for adding more devices. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_composite_8h_source_l00062}{62}} of file \mbox{\hyperlink{_device_composite_8h_source}{Device\+Composite.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_composite_af488cef31a43646732d6b8565a532088}{request\+Skill()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_device_composite_8h}{Device\+Composite.\+h}}\item 
+\mbox{\hyperlink{_device_composite_8cpp}{Device\+Composite.\+cpp}}\end{DoxyCompactItemize}

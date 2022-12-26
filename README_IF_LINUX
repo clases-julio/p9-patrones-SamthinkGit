@@ -1,0 +1,10 @@
+##### README #####
+If you are using Linux distro it is possible that the library kb.h for detecting your keyboard is not working when
+executing make. If this is your case, you can fix your program by executing:
+
+-> chmod +x ./linux_patch.sh
+-> ./linux_patch.sh
+
+Note: Sudo permission is NOT necesary.
+
+Thank you for using JVH_Systems :D

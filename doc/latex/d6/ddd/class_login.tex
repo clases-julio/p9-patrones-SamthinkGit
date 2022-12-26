@@ -1,0 +1,234 @@
+\hypertarget{class_login}{}\doxysection{Login Class Reference}
+\label{class_login}\index{Login@{Login}}
+
+
+This class is the responsible for superimposing a login interface to make the user log in as user. This will be a graphical interface belonging to the \mbox{\hyperlink{class_user}{User}} class.  
+
+
+
+
+{\ttfamily \#include $<$Login.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_login_a4847f3e07e43b540d3339392346f87ff}{Login}} ()
+\begin{DoxyCompactList}\small\item\em Builds a logger. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_user}{User}} \mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{start\+Login}} ()
+\begin{DoxyCompactList}\small\item\em Creates a loop where the user must log in. It will never exit until the user input a valid password and user (data obtained from \mbox{\hyperlink{_user_8h}{User.\+h}} class) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}}
+\begin{DoxyCompactList}\small\item\em Current user entry. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}}
+\begin{DoxyCompactList}\small\item\em Current password entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_login_a80e7b8f4454820168eccc59d7eb0bfc2}{SLEEP\+\_\+\+TIME}} = 1
+\begin{DoxyCompactList}\small\item\em Time to sleep between bad inputs. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_login_a6da591322432c2c43dcacc541aaae0be}{EXIT\+\_\+\+REQUEST}} = -\/1
+\begin{DoxyCompactList}\small\item\em Value of exit request. -\/1 by default. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is the responsible for superimposing a login interface to make the user log in as user. This will be a graphical interface belonging to the \mbox{\hyperlink{class_user}{User}} class. 
+
+Programmer Info\+: Designed as a logger obj. for multiple and simultaneous logger interfaces. Isn\textquotesingle{}t any problem with changing to static functions. 
+
+Definition at line \mbox{\hyperlink{_login_8h_source_l00020}{20}} of file \mbox{\hyperlink{_login_8h_source}{Login.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_login_a4847f3e07e43b540d3339392346f87ff}\label{class_login_a4847f3e07e43b540d3339392346f87ff}} 
+\index{Login@{Login}!Login@{Login}}
+\index{Login@{Login}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily Login\+::\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Builds a logger. 
+
+\begin{DoxyNote}{Note}
+needed for use \mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{start\+Login()}} 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_login_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{_login_8cpp_source}{Login.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019 \{\};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_login_a63a7495fe1e36779668a01a8d848995e}\label{class_login_a63a7495fe1e36779668a01a8d848995e}} 
+\index{Login@{Login}!startLogin@{startLogin}}
+\index{startLogin@{startLogin}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{startLogin()}{startLogin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_user}{User}} Login\+::start\+Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a loop where the user must log in. It will never exit until the user input a valid password and user (data obtained from \mbox{\hyperlink{_user_8h}{User.\+h}} class) 
+
+\begin{DoxyReturn}{Returns}
+Valid \mbox{\hyperlink{class_user}{User}} 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_login_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{_login_8cpp_source}{Login.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024                        \{}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027     \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00028     \textcolor{keywordtype}{bool} badAccess = \textcolor{keyword}{false};          \textcolor{comment}{// Bool to detect if input is not correct.}}
+\DoxyCodeLine{00029 }
+\DoxyCodeLine{00030     \textcolor{comment}{// -\/-\/-\/-\/-\/ Logger Bucle -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00031     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033         \textcolor{comment}{//  Checking Bad Inputs}}
+\DoxyCodeLine{00034         \textcolor{keywordflow}{if} (badAccess) \{}
+\DoxyCodeLine{00035             \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Bad Access"{}});}
+\DoxyCodeLine{00036             sleep(\mbox{\hyperlink{class_login_a80e7b8f4454820168eccc59d7eb0bfc2}{SLEEP\_TIME}});}
+\DoxyCodeLine{00037         \}}
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00039         \textcolor{comment}{//  Reset Variables}}
+\DoxyCodeLine{00040         \mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}} = \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{User::INVALID\_USER}};}
+\DoxyCodeLine{00041         \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}} = \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}{User::INVALID\_PASS}};}
+\DoxyCodeLine{00042 }
+\DoxyCodeLine{00043         \textcolor{comment}{//  Prompt user}}
+\DoxyCodeLine{00044         \mbox{\hyperlink{class_simple_display_ab1d7ccdbdf671ce70c383332632ebbf7}{SimpleDisplay::printLoginInterface}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}}, \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{User::INVALID\_USER}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}{User::INVALID\_PASS}});}
+\DoxyCodeLine{00045         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)nKeyboard: "{}});}
+\DoxyCodeLine{00046         std::cin >> \mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}};}
+\DoxyCodeLine{00047 }
+\DoxyCodeLine{00048         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}} == \mbox{\hyperlink{class_login_a6da591322432c2c43dcacc541aaae0be}{EXIT\_REQUEST}}) raise(SIGINT);}
+\DoxyCodeLine{00049 }
+\DoxyCodeLine{00050         \textcolor{comment}{//  Prompt password}}
+\DoxyCodeLine{00051         \mbox{\hyperlink{class_simple_display_ab1d7ccdbdf671ce70c383332632ebbf7}{SimpleDisplay::printLoginInterface}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}}, \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{User::INVALID\_USER}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}{User::INVALID\_PASS}});}
+\DoxyCodeLine{00052         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)nKeyboard: "{}});}
+\DoxyCodeLine{00053         std::cin >> \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}};}
+\DoxyCodeLine{00054 }
+\DoxyCodeLine{00055         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}} == \mbox{\hyperlink{class_login_a6da591322432c2c43dcacc541aaae0be}{EXIT\_REQUEST}}) raise(SIGINT);}
+\DoxyCodeLine{00056 }
+\DoxyCodeLine{00057         \textcolor{comment}{//  Print checking interface}}
+\DoxyCodeLine{00058         \mbox{\hyperlink{class_simple_display_ab1d7ccdbdf671ce70c383332632ebbf7}{SimpleDisplay::printLoginInterface}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}}, \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{User::INVALID\_USER}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}{User::INVALID\_PASS}});}
+\DoxyCodeLine{00059         \mbox{\hyperlink{class_simple_display_aadc86b7c13f2c426981d118923b6fe29}{SimpleDisplay::printChecking}}();}
+\DoxyCodeLine{00060 }
+\DoxyCodeLine{00061         \textcolor{comment}{//  Prepare next logger (if needed)}}
+\DoxyCodeLine{00062         badAccess = \textcolor{keyword}{true};}
+\DoxyCodeLine{00063         sleep(\mbox{\hyperlink{class_login_a80e7b8f4454820168eccc59d7eb0bfc2}{SLEEP\_TIME}});}
+\DoxyCodeLine{00064 }
+\DoxyCodeLine{00065         \textcolor{comment}{//  Clear bad inputs}}
+\DoxyCodeLine{00066         std::cin.clear();}
+\DoxyCodeLine{00067         std::cin.ignore(std::numeric\_limits<std::streamsize>::max(), \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{00068 }
+\DoxyCodeLine{00069         \textcolor{comment}{//  Loop until the user and password are valid}}
+\DoxyCodeLine{00070     \} \textcolor{keywordflow}{while} (!\mbox{\hyperlink{class_user_a3dd5f61e8f0172573a6ab6f73505cb2c}{User::check}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}}, \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}}));}
+\DoxyCodeLine{00071 }
+\DoxyCodeLine{00072     \textcolor{comment}{// Return Admin (If needed)}}
+\DoxyCodeLine{00073     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_admin_a5a8f948cd91984ba4005ce9443776847}{Admin::adminStatus}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}}))}
+\DoxyCodeLine{00074         \textcolor{keywordflow}{return} \mbox{\hyperlink{class_admin}{Admin}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}});}
+\DoxyCodeLine{00075 }
+\DoxyCodeLine{00076     \textcolor{comment}{// -\/-\/-\/-\/-\/ Returning User -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00077     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_user}{User}}(\mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}});}
+\DoxyCodeLine{00078 \};}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_admin_a5a8f948cd91984ba4005ce9443776847}{Admin\+::admin\+Status()}}, \mbox{\hyperlink{class_user_a3dd5f61e8f0172573a6ab6f73505cb2c}{User\+::check()}}, \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{class_login_a6da591322432c2c43dcacc541aaae0be}{EXIT\+\_\+\+REQUEST}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}{User\+::\+INVALID\+\_\+\+PASS}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{User\+::\+INVALID\+\_\+\+USER}}, \mbox{\hyperlink{class_login_a255c4182161162eefee9800316b960e0}{pass}}, \mbox{\hyperlink{class_simple_display_aadc86b7c13f2c426981d118923b6fe29}{Simple\+Display\+::print\+Checking()}}, \mbox{\hyperlink{class_simple_display_ab1d7ccdbdf671ce70c383332632ebbf7}{Simple\+Display\+::print\+Login\+Interface()}}, \mbox{\hyperlink{class_login_a80e7b8f4454820168eccc59d7eb0bfc2}{SLEEP\+\_\+\+TIME}}, and \mbox{\hyperlink{class_login_a298a17fac9749b968d90914c2a6f3ec6}{user}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_login_a6da591322432c2c43dcacc541aaae0be}\label{class_login_a6da591322432c2c43dcacc541aaae0be}} 
+\index{Login@{Login}!EXIT\_REQUEST@{EXIT\_REQUEST}}
+\index{EXIT\_REQUEST@{EXIT\_REQUEST}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{EXIT\_REQUEST}{EXIT\_REQUEST}}
+{\footnotesize\ttfamily int Login\+::\+EXIT\+\_\+\+REQUEST = -\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Value of exit request. -\/1 by default. 
+
+
+
+Definition at line \mbox{\hyperlink{_login_8h_source_l00048}{48}} of file \mbox{\hyperlink{_login_8h_source}{Login.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{start\+Login()}}.
+
+\mbox{\Hypertarget{class_login_a255c4182161162eefee9800316b960e0}\label{class_login_a255c4182161162eefee9800316b960e0}} 
+\index{Login@{Login}!pass@{pass}}
+\index{pass@{pass}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{pass}{pass}}
+{\footnotesize\ttfamily int Login\+::pass\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current password entry. 
+
+
+
+Definition at line \mbox{\hyperlink{_login_8h_source_l00055}{55}} of file \mbox{\hyperlink{_login_8h_source}{Login.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{start\+Login()}}.
+
+\mbox{\Hypertarget{class_login_a80e7b8f4454820168eccc59d7eb0bfc2}\label{class_login_a80e7b8f4454820168eccc59d7eb0bfc2}} 
+\index{Login@{Login}!SLEEP\_TIME@{SLEEP\_TIME}}
+\index{SLEEP\_TIME@{SLEEP\_TIME}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{SLEEP\_TIME}{SLEEP\_TIME}}
+{\footnotesize\ttfamily int Login\+::\+SLEEP\+\_\+\+TIME = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Time to sleep between bad inputs. 
+
+
+
+Definition at line \mbox{\hyperlink{_login_8h_source_l00046}{46}} of file \mbox{\hyperlink{_login_8h_source}{Login.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{start\+Login()}}.
+
+\mbox{\Hypertarget{class_login_a298a17fac9749b968d90914c2a6f3ec6}\label{class_login_a298a17fac9749b968d90914c2a6f3ec6}} 
+\index{Login@{Login}!user@{user}}
+\index{user@{user}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{user}{user}}
+{\footnotesize\ttfamily int Login\+::user\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Current user entry. 
+
+
+
+Definition at line \mbox{\hyperlink{_login_8h_source_l00053}{53}} of file \mbox{\hyperlink{_login_8h_source}{Login.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{start\+Login()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_login_8h}{Login.\+h}}\item 
+\mbox{\hyperlink{_login_8cpp}{Login.\+cpp}}\end{DoxyCompactItemize}

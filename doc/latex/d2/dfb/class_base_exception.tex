@@ -1,0 +1,138 @@
+\hypertarget{class_base_exception}{}\doxysection{Base\+Exception Class Reference}
+\label{class_base_exception}\index{BaseException@{BaseException}}
+
+
+This class establishes a basic format for JVH exceptions.  
+
+
+
+
+{\ttfamily \#include $<$Base\+Exception.\+h$>$}
+
+Inheritance diagram for Base\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.379310cm]{d2/dfb/class_base_exception}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_base_exception_a675e42df7cdd795575bccf521f8ff930}{Base\+Exception}} ()
+\begin{DoxyCompactList}\small\item\em Builds a new \mbox{\hyperlink{class_base_exception}{Base\+Exception}}. \end{DoxyCompactList}\item 
+const char $\ast$ \mbox{\hyperlink{class_base_exception_a5133664c48aaeb3615510c09b1f4b745}{what}} ()
+\begin{DoxyCompactList}\small\item\em Prints the cause of the exception with the tag of the owner. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_base_exception_af14b74a53deb4b44663eb460380016ea}{tag}}
+\begin{DoxyCompactList}\small\item\em Owner/\+Causant of the exception. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_base_exception_a2cbaa444a164cfbf1bd95db0c4fa42bd}{exception}}
+\begin{DoxyCompactList}\small\item\em Description of the exception. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class establishes a basic format for JVH exceptions. 
+
+Definition at line \mbox{\hyperlink{_base_exception_8h_source_l00016}{16}} of file \mbox{\hyperlink{_base_exception_8h_source}{Base\+Exception.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_base_exception_a675e42df7cdd795575bccf521f8ff930}\label{class_base_exception_a675e42df7cdd795575bccf521f8ff930}} 
+\index{BaseException@{BaseException}!BaseException@{BaseException}}
+\index{BaseException@{BaseException}!BaseException@{BaseException}}
+\doxysubsubsection{\texorpdfstring{BaseException()}{BaseException()}}
+{\footnotesize\ttfamily Base\+Exception\+::\+Base\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Builds a new \mbox{\hyperlink{class_base_exception}{Base\+Exception}}. 
+
+
+
+Definition at line \mbox{\hyperlink{_base_exception_8cpp_source_l00002}{2}} of file \mbox{\hyperlink{_base_exception_8cpp_source}{Base\+Exception.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00002 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_base_exception_a5133664c48aaeb3615510c09b1f4b745}\label{class_base_exception_a5133664c48aaeb3615510c09b1f4b745}} 
+\index{BaseException@{BaseException}!what@{what}}
+\index{what@{what}!BaseException@{BaseException}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char $\ast$ Base\+Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the cause of the exception with the tag of the owner. 
+
+\begin{DoxyReturn}{Returns}
+Exception info 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_base_exception_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{_base_exception_8cpp_source}{Base\+Exception.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004                                 \{}
+\DoxyCodeLine{00005 }
+\DoxyCodeLine{00006     \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"{}["{}} + \mbox{\hyperlink{class_base_exception_af14b74a53deb4b44663eb460380016ea}{tag}} + \textcolor{stringliteral}{"{}] "{}} + \mbox{\hyperlink{class_base_exception_a2cbaa444a164cfbf1bd95db0c4fa42bd}{exception}}).c\_str();}
+\DoxyCodeLine{00007 }
+\DoxyCodeLine{00008 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_base_exception_a2cbaa444a164cfbf1bd95db0c4fa42bd}{exception}}, and \mbox{\hyperlink{class_base_exception_af14b74a53deb4b44663eb460380016ea}{tag}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_base_exception_a2cbaa444a164cfbf1bd95db0c4fa42bd}\label{class_base_exception_a2cbaa444a164cfbf1bd95db0c4fa42bd}} 
+\index{BaseException@{BaseException}!exception@{exception}}
+\index{exception@{exception}!BaseException@{BaseException}}
+\doxysubsubsection{\texorpdfstring{exception}{exception}}
+{\footnotesize\ttfamily std\+::string Base\+Exception\+::exception\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Description of the exception. 
+
+
+
+Definition at line \mbox{\hyperlink{_base_exception_8h_source_l00038}{38}} of file \mbox{\hyperlink{_base_exception_8h_source}{Base\+Exception.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_insufficient_permissions_exception_a0a82218c20e73679203df2ba3b43aac6}{Insufficient\+Permissions\+Exception\+::\+Insufficient\+Permissions\+Exception()}}, \mbox{\hyperlink{class_invalid_device_exception_a98af8a0cbdba0a81ba65a9c0e03ce03c}{Invalid\+Device\+Exception\+::\+Invalid\+Device\+Exception()}}, \mbox{\hyperlink{class_invalid_file_exception_a6913f1d1cf0866a382e9987a7290c991}{Invalid\+File\+Exception\+::\+Invalid\+File\+Exception()}}, \mbox{\hyperlink{class_invalid_skill_exception_a705f806533cd7597a2aef2f61a5c9f57}{Invalid\+Skill\+Exception\+::\+Invalid\+Skill\+Exception()}}, \mbox{\hyperlink{class_invalid_user_exception_a25219c92006fb758527fedea824ea73f}{Invalid\+User\+Exception\+::\+Invalid\+User\+Exception()}}, \mbox{\hyperlink{class_user_not_found_exception_a29292f5699f063fb43026b99dfef60c8}{User\+Not\+Found\+Exception\+::\+User\+Not\+Found\+Exception()}}, and \mbox{\hyperlink{class_base_exception_a5133664c48aaeb3615510c09b1f4b745}{what()}}.
+
+\mbox{\Hypertarget{class_base_exception_af14b74a53deb4b44663eb460380016ea}\label{class_base_exception_af14b74a53deb4b44663eb460380016ea}} 
+\index{BaseException@{BaseException}!tag@{tag}}
+\index{tag@{tag}!BaseException@{BaseException}}
+\doxysubsubsection{\texorpdfstring{tag}{tag}}
+{\footnotesize\ttfamily std\+::string Base\+Exception\+::tag\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Owner/\+Causant of the exception. 
+
+
+
+Definition at line \mbox{\hyperlink{_base_exception_8h_source_l00036}{36}} of file \mbox{\hyperlink{_base_exception_8h_source}{Base\+Exception.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_insufficient_permissions_exception_a0a82218c20e73679203df2ba3b43aac6}{Insufficient\+Permissions\+Exception\+::\+Insufficient\+Permissions\+Exception()}}, \mbox{\hyperlink{class_invalid_device_exception_a98af8a0cbdba0a81ba65a9c0e03ce03c}{Invalid\+Device\+Exception\+::\+Invalid\+Device\+Exception()}}, \mbox{\hyperlink{class_invalid_file_exception_a6913f1d1cf0866a382e9987a7290c991}{Invalid\+File\+Exception\+::\+Invalid\+File\+Exception()}}, \mbox{\hyperlink{class_invalid_skill_exception_a705f806533cd7597a2aef2f61a5c9f57}{Invalid\+Skill\+Exception\+::\+Invalid\+Skill\+Exception()}}, \mbox{\hyperlink{class_invalid_user_exception_a25219c92006fb758527fedea824ea73f}{Invalid\+User\+Exception\+::\+Invalid\+User\+Exception()}}, \mbox{\hyperlink{class_user_not_found_exception_a29292f5699f063fb43026b99dfef60c8}{User\+Not\+Found\+Exception\+::\+User\+Not\+Found\+Exception()}}, and \mbox{\hyperlink{class_base_exception_a5133664c48aaeb3615510c09b1f4b745}{what()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_base_exception_8h}{Base\+Exception.\+h}}\item 
+\mbox{\hyperlink{_base_exception_8cpp}{Base\+Exception.\+cpp}}\end{DoxyCompactItemize}

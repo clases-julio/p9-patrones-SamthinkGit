@@ -1,0 +1,809 @@
+\hypertarget{class_device_builder}{}\doxysection{Device\+Builder Class Reference}
+\label{class_device_builder}\index{DeviceBuilder@{DeviceBuilder}}
+
+
+This class lets a high-\/level programmer add easily more devices to the main program. You can use the implemented public functions wherever you need. For adding a new device you can follow this steps\+:  
+
+
+
+
+{\ttfamily \#include $<$Device\+Builder.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}{Device\+Builder}} (std\+::string \mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}}=\char`\"{}STD\+\_\+\+DEVICE\char`\"{})
+\begin{DoxyCompactList}\small\item\em Creates a temporal builder for specific device. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}{set\+Skill}} (void($\ast$skill)(), std\+::string skill\+Name)
+\begin{DoxyCompactList}\small\item\em Build one skill into the device Builder. All names and skills of each device will be ordered and used in kernel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_device_builder_a97e1c662cbee5e3e23b4b41b0d300a6f}{set\+Limit}} (int $\ast$new\+Limit)
+\begin{DoxyCompactList}\small\item\em Builds limits into the device Builder. All limits will be controlled and implemented in execution by the kernel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_device_builder_a54ac8bbaa057ca01a0067429b05ae01c}{set\+As\+Data\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Sets type of \mbox{\hyperlink{class_device}{Device}} as \mbox{\hyperlink{class_data_device}{Data\+Device}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_device_builder_a80c1e37a4f5ed9d6417d368f05f1e57d}{set\+As\+Kernel\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Sets type of \mbox{\hyperlink{class_device}{Device}} as \mbox{\hyperlink{class_kernel_device}{Kernel\+Device}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_device_builder_a660593f04dacdaecde2f1654c43eb646}{set\+Data\+Generator}} (int($\ast$\mbox{\hyperlink{class_device_builder_a89d07a87c64358f95a2679d150e876c7}{data\+Generator}})())
+\begin{DoxyCompactList}\small\item\em Sets the main data generator for Data\+Devices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_device_builder_ae090a3296c74c945a17595828e416c73}{set\+Security\+Generator}} (bool($\ast$\mbox{\hyperlink{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}{security\+Generator}})())
+\begin{DoxyCompactList}\small\item\em Sets the security generator for Kernel\+Devices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices}} ()
+\begin{DoxyCompactList}\small\item\em Builds every builder instances. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_simple_display}{Simple\+Display}} $\ast$ \mbox{\hyperlink{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}{build\+Display}} ()
+\begin{DoxyCompactList}\small\item\em Builds and returns a new \mbox{\hyperlink{class_simple_display}{Simple\+Display}} object with properties according to builder devices. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_device_builder_a5eb22cda3529194fb6e5adce9489ded1}{clear\+All}} ()
+\begin{DoxyCompactList}\small\item\em Kills every builder instances. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice}} ()
+\begin{DoxyCompactList}\small\item\em Builds selected device as data or kernel device into the kernel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}} = \char`\"{}STD Device\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of \mbox{\hyperlink{class_device}{Device}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ void($\ast$)()$>$ \mbox{\hyperlink{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}{skill\+Vector}}
+\begin{DoxyCompactList}\small\item\em Skills of the \mbox{\hyperlink{class_device}{Device}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_device_builder_a78f48ff40d5b4eadd7bbba9292c0e0e2}{skill\+Names\+Vector}}
+\begin{DoxyCompactList}\small\item\em Skill-\/names of each skill. \end{DoxyCompactList}\item 
+int($\ast$ \mbox{\hyperlink{class_device_builder_a89d07a87c64358f95a2679d150e876c7}{data\+Generator}} )()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_device}{Device}}\textquotesingle{}s function to generate data. \end{DoxyCompactList}\item 
+bool($\ast$ \mbox{\hyperlink{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}{security\+Generator}} )()
+\begin{DoxyCompactList}\small\item\em Kernel\textquotesingle{}s Devices function to check security. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_device_builder_aefe6c5cd8de0982beef7da176cf44425}{id}}
+\begin{DoxyCompactList}\small\item\em Identifier of \mbox{\hyperlink{class_device}{Device}}. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{class_device_builder_a7e756eacdd43c1f4034af34bec3b5e5c}{limit}} = nullptr
+\begin{DoxyCompactList}\small\item\em Limits of the \mbox{\hyperlink{class_device}{Device}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_device_builder_a3a4197871683ec63171c544177a122cb}{is\+Data\+Device}}
+\begin{DoxyCompactList}\small\item\em Type of device. (True) Data \mbox{\hyperlink{class_device}{Device}}. (False) Kernel \mbox{\hyperlink{class_device}{Device}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_device_builder}{Device\+Builder}} $\ast$ $>$ \mbox{\hyperlink{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}{all\+Builders}}
+\begin{DoxyCompactList}\small\item\em Vector with all builders instantiated. \end{DoxyCompactList}\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_device}{Device}} $>$ \mbox{\hyperlink{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}{all\+Devices}}
+\begin{DoxyCompactList}\small\item\em Vector with all Devices instantiated. \end{DoxyCompactList}\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_data_device}{Data\+Device}} $>$ \mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{all\+Data\+Devices}}
+\begin{DoxyCompactList}\small\item\em Vector with all Data Devices instantiated. \end{DoxyCompactList}\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_kernel_device}{Kernel\+Device}} $>$ \mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{all\+Kernel\+Devices}}
+\begin{DoxyCompactList}\small\item\em Vector with all Kernel Devices instantiated. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_device_builder_a6984754a6e92de4cd6ed1bad8c06a0aa}{device\+Counter}}
+\begin{DoxyCompactList}\small\item\em Number of devices detected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class lets a high-\/level programmer add easily more devices to the main program. You can use the implemented public functions wherever you need. For adding a new device you can follow this steps\+: 
+
+
+\begin{DoxyEnumerate}
+\item Instantiate a device\+Builder with \mbox{\hyperlink{class_device_builder}{Device\+Builder()}};
+\item Set the type of device with \mbox{\hyperlink{class_device_builder_a54ac8bbaa057ca01a0067429b05ae01c}{set\+As\+Data\+Device()}} or \mbox{\hyperlink{class_device_builder_a80c1e37a4f5ed9d6417d368f05f1e57d}{set\+As\+Kernel\+Device()}};
+\item Set the main generator (function where the device extracts data) with \mbox{\hyperlink{class_device_builder_a660593f04dacdaecde2f1654c43eb646}{set\+Data\+Generator()}} or \mbox{\hyperlink{class_device_builder_ae090a3296c74c945a17595828e416c73}{set\+Security\+Generator()}}
+\item (Optional) Add some skills (more functionalities) to your device with \mbox{\hyperlink{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}{set\+Skill()}}.
+\item (Optional) Set a warning if measurement surpasses a limit with \mbox{\hyperlink{class_device_builder_a97e1c662cbee5e3e23b4b41b0d300a6f}{set\+Limit()}}
+\item Repeat this process with as many devices as you need.
+\item Use \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}} to build every instance.
+\end{DoxyEnumerate}
+
+\begin{DoxyNote}{Note}
+This class must be inited by the main class and will configure 3 classes. First, the builder will set every input device into the main class and set their corresponding global commands. Then it will build every output device into the \mbox{\hyperlink{class_device}{Device}} class assigning the high-\/level functionalities and properties. Finally, the builder will assign \mbox{\hyperlink{class_a_i}{AI}} properties of devices into the \mbox{\hyperlink{class_a_i}{AI}} class if requested. When the relationships between high and low layer are established, the builder can be destroyed. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00034}{34}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}\label{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}} 
+\index{DeviceBuilder@{DeviceBuilder}!DeviceBuilder@{DeviceBuilder}}
+\index{DeviceBuilder@{DeviceBuilder}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{DeviceBuilder()}{DeviceBuilder()}}
+{\footnotesize\ttfamily Device\+Builder\+::\+Device\+Builder (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}STD\+\_\+DEVICE\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Creates a temporal builder for specific device. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name for the device. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+ID is assigned by kernel. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+\mbox{\hyperlink{class_device}{Device}} must be set as kernel or data device for being able to be built. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00096}{96}} of file \mbox{\hyperlink{_device_builder_8cpp_source}{Device\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00096                                            \{}
+\DoxyCodeLine{00097 }
+\DoxyCodeLine{00098     \textcolor{comment}{// -\/-\/-\/-\/-\/ Name Assign -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00099     std::cout << \textcolor{stringliteral}{"{}[BUILDER] Building "{}} << \mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}} << std::endl;}
+\DoxyCodeLine{00100     this-\/>\mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}} = \mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}};}
+\DoxyCodeLine{00101 }
+\DoxyCodeLine{00102     \textcolor{comment}{// -\/-\/-\/-\/-\/ Storing Builder Pointer-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00103     \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* devicePointer = \textcolor{keyword}{this};}
+\DoxyCodeLine{00104     \mbox{\hyperlink{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}{allBuilders}}.push\_back(devicePointer);}
+\DoxyCodeLine{00105 }
+\DoxyCodeLine{00106     \textcolor{comment}{// -\/-\/-\/-\/-\/ Settling Device ID -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00107     \textcolor{keyword}{enum} \{FANCY\_ID = 55324,FANCY\_SUM = 37\};}
+\DoxyCodeLine{00108     \textcolor{comment}{//Shhh.. It looks cooler with strange nums}}
+\DoxyCodeLine{00109     this-\/>\textcolor{keywordtype}{id} = \mbox{\hyperlink{class_device_builder_a6984754a6e92de4cd6ed1bad8c06a0aa}{deviceCounter}} + FANCY\_ID;}
+\DoxyCodeLine{00110     \mbox{\hyperlink{class_device_builder_a6984754a6e92de4cd6ed1bad8c06a0aa}{deviceCounter}} += FANCY\_SUM;}
+\DoxyCodeLine{00111 }
+\DoxyCodeLine{00112 \};}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}{all\+Builders}}, \mbox{\hyperlink{class_device_builder_a6984754a6e92de4cd6ed1bad8c06a0aa}{device\+Counter}}, and \mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}\label{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}} 
+\index{DeviceBuilder@{DeviceBuilder}!buildAllDevices@{buildAllDevices}}
+\index{buildAllDevices@{buildAllDevices}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{buildAllDevices()}{buildAllDevices()}}
+{\footnotesize\ttfamily void Device\+Builder\+::build\+All\+Devices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Builds every builder instances. 
+
+\begin{DoxyWarning}{Warning}
+This function should only be called before starting or resetting the main program. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{_device_builder_8cpp_source}{Device\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037                                     \{}
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00039     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00040     std::cout << \textcolor{stringliteral}{"{}[BUILDER] Sending "{}} << \mbox{\hyperlink{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}{allBuilders}}.size() << \textcolor{stringliteral}{"{} Devices to Kernel"{}} << std::endl;}
+\DoxyCodeLine{00041 }
+\DoxyCodeLine{00042     \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00043     std::string *deviceNames = \textcolor{keyword}{new} std::string[\mbox{\hyperlink{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}{allBuilders}}.size()]; \textcolor{comment}{// Array to Store Device names}}
+\DoxyCodeLine{00044     \textcolor{keywordtype}{int} numBuilders = \mbox{\hyperlink{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}{allBuilders}}.size();}
+\DoxyCodeLine{00045 }
+\DoxyCodeLine{00046     \textcolor{comment}{// -\/-\/-\/-\/-\/ Building All Devices Saved as Kernel or Data Device -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00047     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < numBuilders; i++)\{}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{00049         \textcolor{comment}{// Saving device name in array}}
+\DoxyCodeLine{00050         deviceNames[i] = (*\mbox{\hyperlink{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}{allBuilders}}[i]).\mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}};}
+\DoxyCodeLine{00051 }
+\DoxyCodeLine{00052         \textcolor{comment}{// Building as Data or Kernel Device}}
+\DoxyCodeLine{00053         (*\mbox{\hyperlink{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}{allBuilders}}[i]).\mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{buildDKDevice}}();}
+\DoxyCodeLine{00054     \}}
+\DoxyCodeLine{00055 }
+\DoxyCodeLine{00056     std::cout << \textcolor{stringliteral}{"{}[BUILDER] Optimizing property access"{}} << std::endl;}
+\DoxyCodeLine{00057     \textcolor{comment}{// -\/-\/-\/-\/-\/ All Devices Vector to Array -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00058     \mbox{\hyperlink{class_device}{Device}} *deviceArray = \textcolor{keyword}{new} \mbox{\hyperlink{class_device}{Device}}[\mbox{\hyperlink{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}{allDevices}}.size()];}
+\DoxyCodeLine{00059     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}{allDevices}}.size(); i++)\{}
+\DoxyCodeLine{00060         deviceArray[i] = \mbox{\hyperlink{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}{allDevices}}[i];}
+\DoxyCodeLine{00061     \}}
+\DoxyCodeLine{00062 }
+\DoxyCodeLine{00063     \textcolor{comment}{// -\/-\/-\/-\/-\/ All DataDevices Vector to Array -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00064     \mbox{\hyperlink{class_data_device}{DataDevice}} *dataDeviceArray = \textcolor{keyword}{new} \mbox{\hyperlink{class_data_device}{DataDevice}}[\mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{allDataDevices}}.size()];}
+\DoxyCodeLine{00065     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{allDataDevices}}.size(); i++)\{}
+\DoxyCodeLine{00066         dataDeviceArray[i] = \mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{allDataDevices}}[i];}
+\DoxyCodeLine{00067     \}}
+\DoxyCodeLine{00068 }
+\DoxyCodeLine{00069 }
+\DoxyCodeLine{00070     \textcolor{comment}{// -\/-\/-\/-\/-\/ All KernelDevices Vector to Array -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00071     \mbox{\hyperlink{class_kernel_device}{KernelDevice}} *kernelDeviceArray = \textcolor{keyword}{new} \mbox{\hyperlink{class_kernel_device}{KernelDevice}}[\mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{allKernelDevices}}.size()];}
+\DoxyCodeLine{00072     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{allKernelDevices}}.size(); i++)\{}
+\DoxyCodeLine{00073         kernelDeviceArray[i] = \mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{allKernelDevices}}[i];}
+\DoxyCodeLine{00074     \}}
+\DoxyCodeLine{00075 }
+\DoxyCodeLine{00076     \textcolor{comment}{// -\/-\/-\/-\/-\/ Storing Arrays -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00077     std::cout << \textcolor{stringliteral}{"{}[BUILDER] Storing General properties to Kernel..."{}} << std::endl;}
+\DoxyCodeLine{00078     \mbox{\hyperlink{class_device_a33d29d035c971f5c49e5a60d9720b201}{Device::setAllDevices}}(deviceArray, deviceNames,numBuilders);}
+\DoxyCodeLine{00079     \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{DataDevice::setAllDataDevices}}(dataDeviceArray);}
+\DoxyCodeLine{00080     \mbox{\hyperlink{class_kernel_device_a60b837caf6adf7b1003e469d921d0407}{KernelDevice::setAllKernelDevices}}(kernelDeviceArray);}
+\DoxyCodeLine{00081 }
+\DoxyCodeLine{00082 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}{all\+Builders}}, \mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{all\+Data\+Devices}}, \mbox{\hyperlink{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}{all\+Devices}}, \mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{all\+Kernel\+Devices}}, \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, \mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}}, \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{Data\+Device\+::set\+All\+Data\+Devices()}}, \mbox{\hyperlink{class_device_a33d29d035c971f5c49e5a60d9720b201}{Device\+::set\+All\+Devices()}}, and \mbox{\hyperlink{class_kernel_device_a60b837caf6adf7b1003e469d921d0407}{Kernel\+Device\+::set\+All\+Kernel\+Devices()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_aeafba0fc07e4e9672930aa3341619679}{AI\+::build\+Device()}}, and \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+\mbox{\Hypertarget{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}\label{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}} 
+\index{DeviceBuilder@{DeviceBuilder}!buildDisplay@{buildDisplay}}
+\index{buildDisplay@{buildDisplay}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{buildDisplay()}{buildDisplay()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_simple_display}{Simple\+Display}} $\ast$ Device\+Builder\+::build\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Builds and returns a new \mbox{\hyperlink{class_simple_display}{Simple\+Display}} object with properties according to builder devices. 
+
+\begin{DoxyReturn}{Returns}
+Display with properties 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Must be used after \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}} 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{_device_builder_8cpp_source}{Device\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024                                           \{}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00026     \mbox{\hyperlink{class_simple_display}{SimpleDisplay}}* display = \textcolor{keyword}{new} \mbox{\hyperlink{class_simple_display}{SimpleDisplay}}();}
+\DoxyCodeLine{00027     display-\/>\mbox{\hyperlink{class_simple_display_a6990b81b752ebc7b6894a3e3770db667}{setDataDevices}}(\mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{allDataDevices}}.size());}
+\DoxyCodeLine{00028     display-\/>\mbox{\hyperlink{class_simple_display_a2314ecf97aeef47e8ae9ba606e7e2586}{setKernelDevices}}(\mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{allKernelDevices}}.size());}
+\DoxyCodeLine{00029     display-\/>\mbox{\hyperlink{class_simple_display_af3347757fb1111a5360f064dd152390f}{setSecurityConnected}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{00030     display-\/>\mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{setSecurityStatus}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{00031     \textcolor{keywordflow}{return} display;}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{all\+Data\+Devices}}, \mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{all\+Kernel\+Devices}}, \mbox{\hyperlink{class_simple_display_a6990b81b752ebc7b6894a3e3770db667}{Simple\+Display\+::set\+Data\+Devices()}}, \mbox{\hyperlink{class_simple_display_a2314ecf97aeef47e8ae9ba606e7e2586}{Simple\+Display\+::set\+Kernel\+Devices()}}, \mbox{\hyperlink{class_simple_display_af3347757fb1111a5360f064dd152390f}{Simple\+Display\+::set\+Security\+Connected()}}, and \mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{Simple\+Display\+::set\+Security\+Status()}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+\mbox{\Hypertarget{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}\label{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}} 
+\index{DeviceBuilder@{DeviceBuilder}!buildDKDevice@{buildDKDevice}}
+\index{buildDKDevice@{buildDKDevice}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{buildDKDevice()}{buildDKDevice()}}
+{\footnotesize\ttfamily void Device\+Builder\+::build\+DKDevice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Builds selected device as data or kernel device into the kernel. 
+
+\begin{DoxyWarning}{Warning}
+This will NOT kill the builder. 
+
+All properties must be settled before using. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00153}{153}} of file \mbox{\hyperlink{_device_builder_8cpp_source}{Device\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00153                                   \{}
+\DoxyCodeLine{00154 }
+\DoxyCodeLine{00155     \textcolor{comment}{// -\/-\/-\/-\/-\/ Skills to Dynamic Vector (so it doesn't get deleted when builder dies) -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00156     std::vector<void(*)()>* dynamicSkillVector = \textcolor{keyword}{new} std::vector<\textcolor{keywordtype}{void}(*)()>;}
+\DoxyCodeLine{00157     dynamicSkillVector-\/>assign(\mbox{\hyperlink{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}{skillVector}}.begin(), \mbox{\hyperlink{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}{skillVector}}.end());}
+\DoxyCodeLine{00158 }
+\DoxyCodeLine{00159     \textcolor{comment}{// -\/-\/-\/-\/-\/ SkillNames to Array (Optimizing data) -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00160     std::string *skillNamesArray = \textcolor{keyword}{new} std::string[\mbox{\hyperlink{class_device_builder_a78f48ff40d5b4eadd7bbba9292c0e0e2}{skillNamesVector}}.size()];}
+\DoxyCodeLine{00161     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this-\/>\mbox{\hyperlink{class_device_builder_a78f48ff40d5b4eadd7bbba9292c0e0e2}{skillNamesVector}}.size(); i++)\{}
+\DoxyCodeLine{00162         skillNamesArray[i] = \mbox{\hyperlink{class_device_builder_a78f48ff40d5b4eadd7bbba9292c0e0e2}{skillNamesVector}}[i];}
+\DoxyCodeLine{00163     \}}
+\DoxyCodeLine{00164 }
+\DoxyCodeLine{00165     \textcolor{comment}{// -\/-\/-\/-\/-\/ Building DataDevice -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00166     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_device_builder_a3a4197871683ec63171c544177a122cb}{isDataDevice}}) \{}
+\DoxyCodeLine{00167         \mbox{\hyperlink{class_data_device}{DataDevice}} *dataDev = \textcolor{keyword}{new} \mbox{\hyperlink{class_data_device}{DataDevice}}(this-\/>\mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}}, this-\/>\textcolor{keywordtype}{id}, dynamicSkillVector, skillNamesArray);}
+\DoxyCodeLine{00168 }
+\DoxyCodeLine{00169         \textcolor{comment}{// Setting DataDevice limit (optional)}}
+\DoxyCodeLine{00170         \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{class_device_builder_a7e756eacdd43c1f4034af34bec3b5e5c}{limit}} != \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00171             (*dataDev).setLimit(this-\/>\mbox{\hyperlink{class_device_builder_a7e756eacdd43c1f4034af34bec3b5e5c}{limit}});}
+\DoxyCodeLine{00172 }
+\DoxyCodeLine{00173         (*dataDev).dataGenerator = this-\/>\mbox{\hyperlink{class_device_builder_a89d07a87c64358f95a2679d150e876c7}{dataGenerator}};}
+\DoxyCodeLine{00174 }
+\DoxyCodeLine{00175         \textcolor{comment}{// Saving Device Pointers}}
+\DoxyCodeLine{00176         \mbox{\hyperlink{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}{allDevices}}.push\_back(*dataDev);}
+\DoxyCodeLine{00177         \mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{allDataDevices}}.push\_back(*dataDev);}
+\DoxyCodeLine{00178 }
+\DoxyCodeLine{00179     \textcolor{comment}{// -\/-\/-\/-\/-\/ Building KernelDevice -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00180     \}\textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00181 }
+\DoxyCodeLine{00182         \mbox{\hyperlink{class_kernel_device}{KernelDevice}}* kernDev = \textcolor{keyword}{new} \mbox{\hyperlink{class_kernel_device}{KernelDevice}}(this-\/>\mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}}, this-\/>\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00183 }
+\DoxyCodeLine{00184         (*kernDev).securityGenerator = this-\/>\mbox{\hyperlink{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}{securityGenerator}};}
+\DoxyCodeLine{00185 }
+\DoxyCodeLine{00186         \textcolor{comment}{// Saving Device Pointers}}
+\DoxyCodeLine{00187         \mbox{\hyperlink{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}{allDevices}}.push\_back(*kernDev);}
+\DoxyCodeLine{00188         \mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{allKernelDevices}}.push\_back(*kernDev);}
+\DoxyCodeLine{00189     \}}
+\DoxyCodeLine{00190 }
+\DoxyCodeLine{00191 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{all\+Data\+Devices}}, \mbox{\hyperlink{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}{all\+Devices}}, \mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{all\+Kernel\+Devices}}, \mbox{\hyperlink{class_device_builder_a89d07a87c64358f95a2679d150e876c7}{data\+Generator}}, \mbox{\hyperlink{class_device_builder_a3a4197871683ec63171c544177a122cb}{is\+Data\+Device}}, \mbox{\hyperlink{class_device_builder_a7e756eacdd43c1f4034af34bec3b5e5c}{limit}}, \mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}}, \mbox{\hyperlink{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}{security\+Generator}}, \mbox{\hyperlink{class_device_builder_a78f48ff40d5b4eadd7bbba9292c0e0e2}{skill\+Names\+Vector}}, and \mbox{\hyperlink{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}{skill\+Vector}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}}.
+
+\mbox{\Hypertarget{class_device_builder_a5eb22cda3529194fb6e5adce9489ded1}\label{class_device_builder_a5eb22cda3529194fb6e5adce9489ded1}} 
+\index{DeviceBuilder@{DeviceBuilder}!clearAll@{clearAll}}
+\index{clearAll@{clearAll}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{clearAll()}{clearAll()}}
+{\footnotesize\ttfamily void Device\+Builder\+::clear\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Kills every builder instances. 
+
+\begin{DoxyWarning}{Warning}
+Builder\textquotesingle{}s will not work anymore after cleaning until built again. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00085}{85}} of file \mbox{\hyperlink{_device_builder_8cpp_source}{Device\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00085                             \{}
+\DoxyCodeLine{00086 }
+\DoxyCodeLine{00087     \textcolor{comment}{// -\/-\/-\/-\/-\/ Cleaning Vectors -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00088     std::cout << \textcolor{stringliteral}{"{}[BUILDER] Cleaning Builder..."{}} << std::endl;}
+\DoxyCodeLine{00089 }
+\DoxyCodeLine{00090     \mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{allDataDevices}}.clear();}
+\DoxyCodeLine{00091     \mbox{\hyperlink{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}{allDevices}}.clear();}
+\DoxyCodeLine{00092     \mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{allKernelDevices}}.clear();}
+\DoxyCodeLine{00093 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{all\+Data\+Devices}}, \mbox{\hyperlink{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}{all\+Devices}}, and \mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{all\+Kernel\+Devices}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_aeafba0fc07e4e9672930aa3341619679}{AI\+::build\+Device()}}.
+
+\mbox{\Hypertarget{class_device_builder_a54ac8bbaa057ca01a0067429b05ae01c}\label{class_device_builder_a54ac8bbaa057ca01a0067429b05ae01c}} 
+\index{DeviceBuilder@{DeviceBuilder}!setAsDataDevice@{setAsDataDevice}}
+\index{setAsDataDevice@{setAsDataDevice}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{setAsDataDevice()}{setAsDataDevice()}}
+{\footnotesize\ttfamily void Device\+Builder\+::set\+As\+Data\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets type of \mbox{\hyperlink{class_device}{Device}} as \mbox{\hyperlink{class_data_device}{Data\+Device}}. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00130}{130}} of file \mbox{\hyperlink{_device_builder_8cpp_source}{Device\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00130                                     \{}
+\DoxyCodeLine{00131     this-\/>\mbox{\hyperlink{class_device_builder_a3a4197871683ec63171c544177a122cb}{isDataDevice}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00132 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_builder_a3a4197871683ec63171c544177a122cb}{is\+Data\+Device}}.
+
+\mbox{\Hypertarget{class_device_builder_a80c1e37a4f5ed9d6417d368f05f1e57d}\label{class_device_builder_a80c1e37a4f5ed9d6417d368f05f1e57d}} 
+\index{DeviceBuilder@{DeviceBuilder}!setAsKernelDevice@{setAsKernelDevice}}
+\index{setAsKernelDevice@{setAsKernelDevice}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{setAsKernelDevice()}{setAsKernelDevice()}}
+{\footnotesize\ttfamily void Device\+Builder\+::set\+As\+Kernel\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets type of \mbox{\hyperlink{class_device}{Device}} as \mbox{\hyperlink{class_kernel_device}{Kernel\+Device}}. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00136}{136}} of file \mbox{\hyperlink{_device_builder_8cpp_source}{Device\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00136                                       \{}
+\DoxyCodeLine{00137     this-\/>\mbox{\hyperlink{class_device_builder_a3a4197871683ec63171c544177a122cb}{isDataDevice}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{00138 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_builder_a3a4197871683ec63171c544177a122cb}{is\+Data\+Device}}.
+
+\mbox{\Hypertarget{class_device_builder_a660593f04dacdaecde2f1654c43eb646}\label{class_device_builder_a660593f04dacdaecde2f1654c43eb646}} 
+\index{DeviceBuilder@{DeviceBuilder}!setDataGenerator@{setDataGenerator}}
+\index{setDataGenerator@{setDataGenerator}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{setDataGenerator()}{setDataGenerator()}}
+{\footnotesize\ttfamily void Device\+Builder\+::set\+Data\+Generator (\begin{DoxyParamCaption}\item[{int($\ast$)()}]{data\+Generator }\end{DoxyParamCaption})}
+
+
+
+Sets the main data generator for Data\+Devices. 
+
+\begin{DoxyWarning}{Warning}
+Data Devices could not work properly without generator. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+Generator must return an integer. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Generator} & Pointer to function (to generate data) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00140}{140}} of file \mbox{\hyperlink{_device_builder_8cpp_source}{Device\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00140                                                            \{}
+\DoxyCodeLine{00141     this-\/>\mbox{\hyperlink{class_device_builder_a89d07a87c64358f95a2679d150e876c7}{dataGenerator}} = \mbox{\hyperlink{class_device_builder_a89d07a87c64358f95a2679d150e876c7}{dataGenerator}};}
+\DoxyCodeLine{00142 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_builder_a89d07a87c64358f95a2679d150e876c7}{data\+Generator}}.
+
+\mbox{\Hypertarget{class_device_builder_a97e1c662cbee5e3e23b4b41b0d300a6f}\label{class_device_builder_a97e1c662cbee5e3e23b4b41b0d300a6f}} 
+\index{DeviceBuilder@{DeviceBuilder}!setLimit@{setLimit}}
+\index{setLimit@{setLimit}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{setLimit()}{setLimit()}}
+{\footnotesize\ttfamily void Device\+Builder\+::set\+Limit (\begin{DoxyParamCaption}\item[{int $\ast$}]{new\+Limit }\end{DoxyParamCaption})}
+
+
+
+Builds limits into the device Builder. All limits will be controlled and implemented in execution by the kernel. 
+
+\begin{DoxyWarning}{Warning}
+Kernel\+Devices can\textquotesingle{}t use limits. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Limit} & Array of ints to be checked \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00123}{123}} of file \mbox{\hyperlink{_device_builder_8cpp_source}{Device\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00123                                           \{}
+\DoxyCodeLine{00124 }
+\DoxyCodeLine{00125     \textcolor{comment}{// -\/-\/-\/-\/-\/ Settling Device Limit -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00126     this-\/>\mbox{\hyperlink{class_device_builder_a7e756eacdd43c1f4034af34bec3b5e5c}{limit}} = newLimit;}
+\DoxyCodeLine{00127 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_builder_a7e756eacdd43c1f4034af34bec3b5e5c}{limit}}.
+
+\mbox{\Hypertarget{class_device_builder_ae090a3296c74c945a17595828e416c73}\label{class_device_builder_ae090a3296c74c945a17595828e416c73}} 
+\index{DeviceBuilder@{DeviceBuilder}!setSecurityGenerator@{setSecurityGenerator}}
+\index{setSecurityGenerator@{setSecurityGenerator}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{setSecurityGenerator()}{setSecurityGenerator()}}
+{\footnotesize\ttfamily void Device\+Builder\+::set\+Security\+Generator (\begin{DoxyParamCaption}\item[{bool($\ast$)()}]{security\+Generator }\end{DoxyParamCaption})}
+
+
+
+Sets the security generator for Kernel\+Devices. 
+
+\begin{DoxyWarning}{Warning}
+Kernel Devices could not work properly without generator. 
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+Generator must return a boolean 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em security\+Generator} & Pointer to function (to generate data) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00144}{144}} of file \mbox{\hyperlink{_device_builder_8cpp_source}{Device\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00144                                                                     \{}
+\DoxyCodeLine{00145     this-\/>\mbox{\hyperlink{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}{securityGenerator}} = \mbox{\hyperlink{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}{securityGenerator}};}
+\DoxyCodeLine{00146 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}{security\+Generator}}.
+
+\mbox{\Hypertarget{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}\label{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}} 
+\index{DeviceBuilder@{DeviceBuilder}!setSkill@{setSkill}}
+\index{setSkill@{setSkill}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{setSkill()}{setSkill()}}
+{\footnotesize\ttfamily void Device\+Builder\+::set\+Skill (\begin{DoxyParamCaption}\item[{void($\ast$)()}]{skill,  }\item[{std\+::string}]{skill\+Name }\end{DoxyParamCaption})}
+
+
+
+Build one skill into the device Builder. All names and skills of each device will be ordered and used in kernel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Pointer} & to function (definition of skill) \\
+\hline
+{\em skill\+Name} & Name of skill (only for user) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00115}{115}} of file \mbox{\hyperlink{_device_builder_8cpp_source}{Device\+Builder.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00115                                                                 \{}
+\DoxyCodeLine{00116 }
+\DoxyCodeLine{00117     \textcolor{comment}{// -\/-\/-\/-\/-\/ Storing Device Skills -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00118     this-\/>\mbox{\hyperlink{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}{skillVector}}.push\_back(skill);}
+\DoxyCodeLine{00119     this-\/>\mbox{\hyperlink{class_device_builder_a78f48ff40d5b4eadd7bbba9292c0e0e2}{skillNamesVector}}.push\_back(skillName);}
+\DoxyCodeLine{00120 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_builder_a78f48ff40d5b4eadd7bbba9292c0e0e2}{skill\+Names\+Vector}}, and \mbox{\hyperlink{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}{skill\+Vector}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}\label{class_device_builder_ae45d21abf14389eb2b5c1eb400514fe2}} 
+\index{DeviceBuilder@{DeviceBuilder}!allBuilders@{allBuilders}}
+\index{allBuilders@{allBuilders}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{allBuilders}{allBuilders}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_device_builder}{Device\+Builder}} $\ast$ $>$ Device\+Builder\+::all\+Builders\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Vector with all builders instantiated. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00134}{134}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}}, and \mbox{\hyperlink{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}{Device\+Builder()}}.
+
+\mbox{\Hypertarget{class_device_builder_af38572c28a05fad3133863a794e7e6ff}\label{class_device_builder_af38572c28a05fad3133863a794e7e6ff}} 
+\index{DeviceBuilder@{DeviceBuilder}!allDataDevices@{allDataDevices}}
+\index{allDataDevices@{allDataDevices}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{allDataDevices}{allDataDevices}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_data_device}{Data\+Device}} $>$ Device\+Builder\+::all\+Data\+Devices\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Vector with all Data Devices instantiated. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00138}{138}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}}, \mbox{\hyperlink{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}{build\+Display()}}, \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_a5eb22cda3529194fb6e5adce9489ded1}{clear\+All()}}.
+
+\mbox{\Hypertarget{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}\label{class_device_builder_a045c2ab9e0f053df8ce767ad064d8803}} 
+\index{DeviceBuilder@{DeviceBuilder}!allDevices@{allDevices}}
+\index{allDevices@{allDevices}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{allDevices}{allDevices}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_device}{Device}} $>$ Device\+Builder\+::all\+Devices\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Vector with all Devices instantiated. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00136}{136}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}}, \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_a5eb22cda3529194fb6e5adce9489ded1}{clear\+All()}}.
+
+\mbox{\Hypertarget{class_device_builder_aa84b46135d1ca0205283e44d82a26588}\label{class_device_builder_aa84b46135d1ca0205283e44d82a26588}} 
+\index{DeviceBuilder@{DeviceBuilder}!allKernelDevices@{allKernelDevices}}
+\index{allKernelDevices@{allKernelDevices}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{allKernelDevices}{allKernelDevices}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_kernel_device}{Kernel\+Device}} $>$ Device\+Builder\+::all\+Kernel\+Devices\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Vector with all Kernel Devices instantiated. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00140}{140}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}}, \mbox{\hyperlink{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}{build\+Display()}}, \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_a5eb22cda3529194fb6e5adce9489ded1}{clear\+All()}}.
+
+\mbox{\Hypertarget{class_device_builder_a89d07a87c64358f95a2679d150e876c7}\label{class_device_builder_a89d07a87c64358f95a2679d150e876c7}} 
+\index{DeviceBuilder@{DeviceBuilder}!dataGenerator@{dataGenerator}}
+\index{dataGenerator@{dataGenerator}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{dataGenerator}{dataGenerator}}
+{\footnotesize\ttfamily int($\ast$ Device\+Builder\+::data\+Generator) ()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{class_device}{Device}}\textquotesingle{}s function to generate data. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00119}{119}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_a660593f04dacdaecde2f1654c43eb646}{set\+Data\+Generator()}}.
+
+\mbox{\Hypertarget{class_device_builder_a6984754a6e92de4cd6ed1bad8c06a0aa}\label{class_device_builder_a6984754a6e92de4cd6ed1bad8c06a0aa}} 
+\index{DeviceBuilder@{DeviceBuilder}!deviceCounter@{deviceCounter}}
+\index{deviceCounter@{deviceCounter}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{deviceCounter}{deviceCounter}}
+{\footnotesize\ttfamily int Device\+Builder\+::device\+Counter\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Number of devices detected. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00142}{142}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}{Device\+Builder()}}.
+
+\mbox{\Hypertarget{class_device_builder_aefe6c5cd8de0982beef7da176cf44425}\label{class_device_builder_aefe6c5cd8de0982beef7da176cf44425}} 
+\index{DeviceBuilder@{DeviceBuilder}!id@{id}}
+\index{id@{id}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int Device\+Builder\+::id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Identifier of \mbox{\hyperlink{class_device}{Device}}. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00123}{123}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+\mbox{\Hypertarget{class_device_builder_a3a4197871683ec63171c544177a122cb}\label{class_device_builder_a3a4197871683ec63171c544177a122cb}} 
+\index{DeviceBuilder@{DeviceBuilder}!isDataDevice@{isDataDevice}}
+\index{isDataDevice@{isDataDevice}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{isDataDevice}{isDataDevice}}
+{\footnotesize\ttfamily bool Device\+Builder\+::is\+Data\+Device\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Type of device. (True) Data \mbox{\hyperlink{class_device}{Device}}. (False) Kernel \mbox{\hyperlink{class_device}{Device}}. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00127}{127}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, \mbox{\hyperlink{class_device_builder_a54ac8bbaa057ca01a0067429b05ae01c}{set\+As\+Data\+Device()}}, and \mbox{\hyperlink{class_device_builder_a80c1e37a4f5ed9d6417d368f05f1e57d}{set\+As\+Kernel\+Device()}}.
+
+\mbox{\Hypertarget{class_device_builder_a7e756eacdd43c1f4034af34bec3b5e5c}\label{class_device_builder_a7e756eacdd43c1f4034af34bec3b5e5c}} 
+\index{DeviceBuilder@{DeviceBuilder}!limit@{limit}}
+\index{limit@{limit}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{limit}{limit}}
+{\footnotesize\ttfamily int$\ast$ Device\+Builder\+::limit = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Limits of the \mbox{\hyperlink{class_device}{Device}}. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00125}{125}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_a97e1c662cbee5e3e23b4b41b0d300a6f}{set\+Limit()}}.
+
+\mbox{\Hypertarget{class_device_builder_ababb29711eb2daae36d6270104365ee6}\label{class_device_builder_ababb29711eb2daae36d6270104365ee6}} 
+\index{DeviceBuilder@{DeviceBuilder}!name@{name}}
+\index{name@{name}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Device\+Builder\+::name = \char`\"{}STD Device\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Name of \mbox{\hyperlink{class_device}{Device}}. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00113}{113}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}}, \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}{Device\+Builder()}}.
+
+\mbox{\Hypertarget{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}\label{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}} 
+\index{DeviceBuilder@{DeviceBuilder}!securityGenerator@{securityGenerator}}
+\index{securityGenerator@{securityGenerator}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{securityGenerator}{securityGenerator}}
+{\footnotesize\ttfamily bool($\ast$ Device\+Builder\+::security\+Generator) ()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Kernel\textquotesingle{}s Devices function to check security. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00121}{121}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_ae090a3296c74c945a17595828e416c73}{set\+Security\+Generator()}}.
+
+\mbox{\Hypertarget{class_device_builder_a78f48ff40d5b4eadd7bbba9292c0e0e2}\label{class_device_builder_a78f48ff40d5b4eadd7bbba9292c0e0e2}} 
+\index{DeviceBuilder@{DeviceBuilder}!skillNamesVector@{skillNamesVector}}
+\index{skillNamesVector@{skillNamesVector}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{skillNamesVector}{skillNamesVector}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Device\+Builder\+::skill\+Names\+Vector\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skill-\/names of each skill. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00117}{117}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}{set\+Skill()}}.
+
+\mbox{\Hypertarget{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}\label{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}} 
+\index{DeviceBuilder@{DeviceBuilder}!skillVector@{skillVector}}
+\index{skillVector@{skillVector}!DeviceBuilder@{DeviceBuilder}}
+\doxysubsubsection{\texorpdfstring{skillVector}{skillVector}}
+{\footnotesize\ttfamily std\+::vector$<$void($\ast$)()$>$ Device\+Builder\+::skill\+Vector\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Skills of the \mbox{\hyperlink{class_device}{Device}}. 
+
+
+
+Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00115}{115}} of file \mbox{\hyperlink{_device_builder_8h_source}{Device\+Builder.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}{set\+Skill()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_device_builder_8h}{Device\+Builder.\+h}}\item 
+\mbox{\hyperlink{_device_builder_8cpp}{Device\+Builder.\+cpp}}\end{DoxyCompactItemize}

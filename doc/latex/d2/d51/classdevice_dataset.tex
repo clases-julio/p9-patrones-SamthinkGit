@@ -1,0 +1,112 @@
+\hypertarget{classdevice_dataset}{}\doxysection{device\+Dataset Class Reference}
+\label{classdevice_dataset}\index{deviceDataset@{deviceDataset}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classdevice_dataset_aeb0802ce7e16664f49e877d427702b4e}{init\+Dataset}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{device_dataset_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{device_dataset_8cpp_source}{device\+Dataset.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdevice_dataset_aeb0802ce7e16664f49e877d427702b4e}\label{classdevice_dataset_aeb0802ce7e16664f49e877d427702b4e}} 
+\index{deviceDataset@{deviceDataset}!initDataset@{initDataset}}
+\index{initDataset@{initDataset}!deviceDataset@{deviceDataset}}
+\doxysubsubsection{\texorpdfstring{initDataset()}{initDataset()}}
+{\footnotesize\ttfamily static void device\+Dataset\+::init\+Dataset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{device_dataset_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{device_dataset_8cpp_source}{device\+Dataset.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010                              \{}
+\DoxyCodeLine{00011 }
+\DoxyCodeLine{00012         \textcolor{comment}{// -\/-\/-\/-\/-\/ Building All Devices -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00013         std::cout << \textcolor{stringliteral}{"{}[BUILDER] Calling Default builders..."{}} << std::endl;}
+\DoxyCodeLine{00014         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* thermometer = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Thermometer"{}});}
+\DoxyCodeLine{00015         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* humiditySensor = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Humidity Sensor"{}});}
+\DoxyCodeLine{00016         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* airSensor = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Air Sensor"{}});}
+\DoxyCodeLine{00017         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* lightSensor = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Light Sensor"{}});}
+\DoxyCodeLine{00018         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* rgbCamera = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}RGB Camera"{}});}
+\DoxyCodeLine{00019         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* thermalCamera = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Thermal Camera"{}});}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00021         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* securityCamera1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Security Camera 1"{}});}
+\DoxyCodeLine{00022         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* securityCamera2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Security Camera 2"{}});}
+\DoxyCodeLine{00023         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* laserDetector = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Laser Detector"{}});}
+\DoxyCodeLine{00024 }
+\DoxyCodeLine{00025         \textcolor{comment}{// -\/-\/-\/-\/-\/ Building Device Skills -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00026         std::cout << \textcolor{stringliteral}{"{}[BUILDER] Building skills"{}} << std::endl;}
+\DoxyCodeLine{00027 }
+\DoxyCodeLine{00028         \textcolor{comment}{// -\/-\/-\/-\/-\/ Building Main Data Generator -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00029         (*thermometer).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{00030         (*humiditySensor).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{00031         (*airSensor).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{00032         (*lightSensor).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{00033         (*rgbCamera).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{00034         (*thermalCamera).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{00035 }
+\DoxyCodeLine{00036         (*securityCamera1).setSecurityGenerator(\mbox{\hyperlink{example_security_dataset_8cpp_aab06fa4565c1b10f5d1ea5f165340300}{exampleTest}});}
+\DoxyCodeLine{00037         (*securityCamera2).setSecurityGenerator(\mbox{\hyperlink{example_security_dataset_8cpp_aab06fa4565c1b10f5d1ea5f165340300}{exampleTest}});}
+\DoxyCodeLine{00038         (*laserDetector).setSecurityGenerator(\mbox{\hyperlink{example_security_dataset_8cpp_aab06fa4565c1b10f5d1ea5f165340300}{exampleTest}});}
+\DoxyCodeLine{00039 }
+\DoxyCodeLine{00040         \textcolor{comment}{// -\/-\/-\/-\/-\/ Building Skills (Only for DataDevices) -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00041         (*thermometer).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_a2c59b01bd7158b861b648030fea3e9c3}{exampleSkill1}}, \textcolor{stringliteral}{"{}calculate"{}});}
+\DoxyCodeLine{00042         (*thermometer).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_ac8b358b790785864cf9f69da350f5811}{exampleSkill2}}, \textcolor{stringliteral}{"{}set celsius"{}});}
+\DoxyCodeLine{00043 }
+\DoxyCodeLine{00044         (*humiditySensor).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_aa9af2c674063dc79e366286d6e4b1417}{exampleSkill3}},\textcolor{stringliteral}{"{}hum decrease"{}});}
+\DoxyCodeLine{00045         (*humiditySensor).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{exampleSkill4}},\textcolor{stringliteral}{"{}hum increase"{}});}
+\DoxyCodeLine{00046 }
+\DoxyCodeLine{00047         (*airSensor).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_aa9af2c674063dc79e366286d6e4b1417}{exampleSkill3}},\textcolor{stringliteral}{"{}air type -\/-\/british"{}});}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{00049         (*lightSensor).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{exampleSkill4}},\textcolor{stringliteral}{"{}setmode blind"{}});}
+\DoxyCodeLine{00050         (*lightSensor).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{exampleSkill4}},\textcolor{stringliteral}{"{}setmode colorful"{}});}
+\DoxyCodeLine{00051         (*lightSensor).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{exampleSkill4}},\textcolor{stringliteral}{"{}setmode hacker"{}});}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053         (*rgbCamera).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_aa9af2c674063dc79e366286d6e4b1417}{exampleSkill3}},\textcolor{stringliteral}{"{}print camera"{}});}
+\DoxyCodeLine{00054         (*rgbCamera).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{exampleSkill4}},\textcolor{stringliteral}{"{}lookfor -\/-\/myself"{}});}
+\DoxyCodeLine{00055 }
+\DoxyCodeLine{00056         (*thermalCamera).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_aa9af2c674063dc79e366286d6e4b1417}{exampleSkill3}},\textcolor{stringliteral}{"{}tcconfig up"{}});}
+\DoxyCodeLine{00057         (*thermalCamera).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{exampleSkill4}},\textcolor{stringliteral}{"{}tcconfig down"{}});}
+\DoxyCodeLine{00058 }
+\DoxyCodeLine{00059         \textcolor{comment}{// -\/-\/-\/-\/-\/ Building Device Limits (optional) -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00060         std::cout << \textcolor{stringliteral}{"{}[BUILDER] Building limits"{}} << std::endl;}
+\DoxyCodeLine{00061 }
+\DoxyCodeLine{00062     \textcolor{comment}{//    int lim[3] = \{1, 2, 3\};}}
+\DoxyCodeLine{00063     \textcolor{comment}{//    (*test).setLimit(lim);}}
+\DoxyCodeLine{00064 }
+\DoxyCodeLine{00065         \textcolor{comment}{// -\/-\/-\/-\/-\/ Setting Device Types [Data/Kernel]}}
+\DoxyCodeLine{00066         std::cout << \textcolor{stringliteral}{"{}[BUILDER] Settling Types"{}} << std::endl;}
+\DoxyCodeLine{00067         (*thermometer).setAsDataDevice();}
+\DoxyCodeLine{00068         (*humiditySensor).setAsDataDevice();}
+\DoxyCodeLine{00069         (*airSensor).setAsDataDevice();}
+\DoxyCodeLine{00070         (*lightSensor).setAsDataDevice();}
+\DoxyCodeLine{00071         (*rgbCamera).setAsDataDevice();}
+\DoxyCodeLine{00072         (*thermalCamera).setAsDataDevice();}
+\DoxyCodeLine{00073 }
+\DoxyCodeLine{00074         (*securityCamera1).setAsKernelDevice();}
+\DoxyCodeLine{00075         (*securityCamera2).setAsKernelDevice();}
+\DoxyCodeLine{00076         (*laserDetector).setAsKernelDevice();}
+\DoxyCodeLine{00077     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{example_skills_dataset_8cpp_a2c59b01bd7158b861b648030fea3e9c3}{example\+Skill1()}}, \mbox{\hyperlink{example_skills_dataset_8cpp_ac8b358b790785864cf9f69da350f5811}{example\+Skill2()}}, \mbox{\hyperlink{example_skills_dataset_8cpp_aa9af2c674063dc79e366286d6e4b1417}{example\+Skill3()}}, \mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{example\+Skill4()}}, \mbox{\hyperlink{example_security_dataset_8cpp_aab06fa4565c1b10f5d1ea5f165340300}{example\+Test()}}, and \mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generate\+Random\+Data()}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{device_dataset_8cpp}{device\+Dataset.\+cpp}}\end{DoxyCompactItemize}

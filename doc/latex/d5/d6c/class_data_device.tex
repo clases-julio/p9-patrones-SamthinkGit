@@ -1,0 +1,506 @@
+\hypertarget{class_data_device}{}\doxysection{Data\+Device Class Reference}
+\label{class_data_device}\index{DataDevice@{DataDevice}}
+
+
+This class will contain specific properties of output devices and a set of functionalities for managing and checking their data. It inherits properties from \mbox{\hyperlink{class_device}{Device}} class.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Device.\+h$>$}
+
+Inheritance diagram for Data\+Device\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d5/d6c/class_data_device}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_data_device_a462db6e238eaabb44993fcc14a033fe5}{Data\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Creates a New \mbox{\hyperlink{class_data_device}{Data\+Device}}. It uses invalid properties by default. Not recommended. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}{Data\+Device}} (std\+::string \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}}, int \mbox{\hyperlink{class_device_acba8d88e9870a9c9e034c4e438264655}{id}}, std\+::vector$<$ void($\ast$)()$>$ $\ast$skill, std\+::string $\ast$\mbox{\hyperlink{class_device_aaccdf897fbb200f562df5f9637a5ca6c}{skill\+Names}})
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{class_data_device}{Data\+Device}} and assign its basic properties. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{append\+New\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Collect new measurement from main data generator and saves it in data vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_data_device_a4499875b3c1a52ce8bbaf5f3c7de9e05}{get\+Num\+Sensors}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current number of Data\+Devices detected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_data_device}{Data\+Device}} $\ast$ \mbox{\hyperlink{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}{all\+Data\+Devices}}
+\begin{DoxyCompactList}\small\item\em Pointers to all Data Devices built. \end{DoxyCompactList}\item 
+static std\+::string $\ast$ \mbox{\hyperlink{class_data_device_af232c8f8d59cfe5712ed9ed2d96bb422}{all\+Data\+Device\+Names}}
+\begin{DoxyCompactList}\small\item\em Pointers to all Data \mbox{\hyperlink{class_device}{Device}} names. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_data_device_a3c8565dfbce1156504bf428bba8ff4ff}{set\+Limit}} (int $\ast$limit\+Array)
+\begin{DoxyCompactList}\small\item\em Sets a Warning limit for the device. This limit will be supervised by \mbox{\hyperlink{class_a_i}{AI}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{set\+All\+Data\+Devices}} (\mbox{\hyperlink{class_data_device}{Data\+Device}} $\ast$\mbox{\hyperlink{class_device_a48e91eea6919c638b7951e2246a738a0}{all\+Devices}})
+\begin{DoxyCompactList}\small\item\em Sets all pointers to Data\+Devices. Used for general Data \mbox{\hyperlink{class_device}{Device}} control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}{collected\+Data}}
+\begin{DoxyCompactList}\small\item\em vector with all measurements collected from the sensor \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_data_device_abd297afb59478d7f7e39825143be7b34}{collected\+Times}}
+\begin{DoxyCompactList}\small\item\em Vector with all time-\/stamps of the measurements. \end{DoxyCompactList}\item 
+int($\ast$ \mbox{\hyperlink{class_data_device_a5af69e554171fdd56bb7a7587daa4a9c}{data\+Generator}} )()
+\begin{DoxyCompactList}\small\item\em Main generator of measurements/data of the sensor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_data_device_a1971e83e62a138e0f4a6116426eaf09d}{needs\+Limit}} = false
+\begin{DoxyCompactList}\small\item\em Distinguish between Data Devices which uses or not Limits. \end{DoxyCompactList}\item 
+int $\ast$ \mbox{\hyperlink{class_data_device_a28f082686326623706c73deb24163cde}{limit}}
+\begin{DoxyCompactList}\small\item\em Limit to control by \mbox{\hyperlink{class_a_i}{AI}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{num\+Sensors}} = 0
+\begin{DoxyCompactList}\small\item\em Number of Data\+Devices stablished. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_data_device_a1f2b76696c193616e0705387e858ff49}{num\+Sensors\+Active}} = 0
+\begin{DoxyCompactList}\small\item\em Number of Data\+Devices turned on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_data_device_a8132d1c426012ad32810a5a191d8a8a2}{Device\+Builder}}
+\item 
+class \mbox{\hyperlink{class_data_device_a30f980cd5a3847c1fc8b9c49c84af74a}{AI}}
+\item 
+class \mbox{\hyperlink{class_data_device_ad4487c6c0c4eab52bf30d029d9194f53}{IODi}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class will contain specific properties of output devices and a set of functionalities for managing and checking their data. It inherits properties from \mbox{\hyperlink{class_device}{Device}} class. 
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00016}{16}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_data_device_a462db6e238eaabb44993fcc14a033fe5}\label{class_data_device_a462db6e238eaabb44993fcc14a033fe5}} 
+\index{DataDevice@{DataDevice}!DataDevice@{DataDevice}}
+\index{DataDevice@{DataDevice}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{DataDevice()}{DataDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Data\+Device\+::\+Data\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a New \mbox{\hyperlink{class_data_device}{Data\+Device}}. It uses invalid properties by default. Not recommended. 
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{_data_device_8cpp_source}{Data\+Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024                        \{}
+\DoxyCodeLine{00025     this-\/>\mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}} = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00026     this-\/>\textcolor{keywordtype}{id} = \mbox{\hyperlink{class_device_a19a8076136a46828cd8d033aa6484f62a0003173c43d43bad9adae885a4049437}{INVALID\_DEVICE}};}
+\DoxyCodeLine{00027     this-\/>\mbox{\hyperlink{class_device_ac4ed6d5c75b13d8095157c0c0a5e268c}{isDataDevice}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00028 }
+\DoxyCodeLine{00029 \};}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_a19a8076136a46828cd8d033aa6484f62a0003173c43d43bad9adae885a4049437}{Device\+::\+INVALID\+\_\+\+DEVICE}}, \mbox{\hyperlink{class_device_ac4ed6d5c75b13d8095157c0c0a5e268c}{Device\+::is\+Data\+Device}}, and \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{Device\+::name}}.
+
+\mbox{\Hypertarget{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}\label{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}} 
+\index{DataDevice@{DataDevice}!DataDevice@{DataDevice}}
+\index{DataDevice@{DataDevice}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{DataDevice()}{DataDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Data\+Device\+::\+Data\+Device (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{id,  }\item[{std\+::vector$<$ void($\ast$)()$>$ $\ast$}]{skill,  }\item[{std\+::string $\ast$}]{skill\+Names }\end{DoxyParamCaption})}
+
+
+
+Creates a new \mbox{\hyperlink{class_data_device}{Data\+Device}} and assign its basic properties. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & public name for user \\
+\hline
+{\em id} & private identifier for \mbox{\hyperlink{class_a_i}{AI}} \\
+\hline
+{\em skill\+Vector} & Vector with all skills implemented in the devices as pointers to functions \\
+\hline
+{\em skill\+Names} & Names for the skills implemented. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Skills and skill-\/names must be in the same order so the kernel can show them to the user. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_data_device_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{_data_device_8cpp_source}{Data\+Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032                                                                                                       \{}
+\DoxyCodeLine{00033 }
+\DoxyCodeLine{00034     \textcolor{comment}{// -\/-\/-\/-\/-\/ Counting Devices -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00035     std::cout << \textcolor{stringliteral}{"{}[DataDevice] New Device Detected: 0x"{}} << \textcolor{keywordtype}{id} << std::endl;}
+\DoxyCodeLine{00036     \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{numSensors}}++;}
+\DoxyCodeLine{00037 }
+\DoxyCodeLine{00038     \textcolor{comment}{// -\/-\/-\/-\/-\/ Property assignation -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00039     this-\/>\mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}} = \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}};}
+\DoxyCodeLine{00040     this-\/>\textcolor{keywordtype}{id} = \mbox{\hyperlink{class_device_acba8d88e9870a9c9e034c4e438264655}{id}};}
+\DoxyCodeLine{00041     this-\/>\mbox{\hyperlink{class_device_ac7f6e68d79802b6ea86735c70a92c4f7}{skills}} = skillVector;}
+\DoxyCodeLine{00042     this-\/>\mbox{\hyperlink{class_device_aaccdf897fbb200f562df5f9637a5ca6c}{skillNames}} = \mbox{\hyperlink{class_device_aaccdf897fbb200f562df5f9637a5ca6c}{skillNames}};}
+\DoxyCodeLine{00043     this-\/>\mbox{\hyperlink{class_device_ac4ed6d5c75b13d8095157c0c0a5e268c}{isDataDevice}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00044     this-\/>\mbox{\hyperlink{class_device_a530825dc9a5ac9b4491308d6e1ac9ffc}{numSkills}} = skillVector-\/>size();}
+\DoxyCodeLine{00045     this-\/>\mbox{\hyperlink{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}{isActive}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00046 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_acba8d88e9870a9c9e034c4e438264655}{Device\+::id}}, \mbox{\hyperlink{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}{Device\+::is\+Active}}, \mbox{\hyperlink{class_device_ac4ed6d5c75b13d8095157c0c0a5e268c}{Device\+::is\+Data\+Device}}, \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{Device\+::name}}, \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{num\+Sensors}}, \mbox{\hyperlink{class_device_a530825dc9a5ac9b4491308d6e1ac9ffc}{Device\+::num\+Skills}}, \mbox{\hyperlink{class_device_aaccdf897fbb200f562df5f9637a5ca6c}{Device\+::skill\+Names}}, and \mbox{\hyperlink{class_device_ac7f6e68d79802b6ea86735c70a92c4f7}{Device\+::skills}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}\label{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}} 
+\index{DataDevice@{DataDevice}!appendNewData@{appendNewData}}
+\index{appendNewData@{appendNewData}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{appendNewData()}{appendNewData()}}
+{\footnotesize\ttfamily void Data\+Device\+::append\+New\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Collect new measurement from main data generator and saves it in data vectors. 
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8cpp_source_l00055}{55}} of file \mbox{\hyperlink{_data_device_8cpp_source}{Data\+Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00055                                \{}
+\DoxyCodeLine{00056     \textcolor{keyword}{auto} clock = std::chrono::system\_clock::now();}
+\DoxyCodeLine{00057     time\_t time = std::chrono::system\_clock::to\_time\_t(clock);}
+\DoxyCodeLine{00058     std::string time\_stamp = std::ctime(\&time);}
+\DoxyCodeLine{00059     this-\/>\mbox{\hyperlink{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}{collectedData}}.push\_back(this-\/>\mbox{\hyperlink{class_data_device_a5af69e554171fdd56bb7a7587daa4a9c}{dataGenerator}}());}
+\DoxyCodeLine{00060     this-\/>\mbox{\hyperlink{class_data_device_abd297afb59478d7f7e39825143be7b34}{collectedTimes}}.push\_back(time\_stamp);}
+\DoxyCodeLine{00061 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}{collected\+Data}}, \mbox{\hyperlink{class_data_device_abd297afb59478d7f7e39825143be7b34}{collected\+Times}}, and \mbox{\hyperlink{class_data_device_a5af69e554171fdd56bb7a7587daa4a9c}{data\+Generator}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, and \mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{AI\+::start\+Collecting\+Data()}}.
+
+\mbox{\Hypertarget{class_data_device_a4499875b3c1a52ce8bbaf5f3c7de9e05}\label{class_data_device_a4499875b3c1a52ce8bbaf5f3c7de9e05}} 
+\index{DataDevice@{DataDevice}!getNumSensors@{getNumSensors}}
+\index{getNumSensors@{getNumSensors}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{getNumSensors()}{getNumSensors()}}
+{\footnotesize\ttfamily int Data\+Device\+::get\+Num\+Sensors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the current number of Data\+Devices detected. 
+
+\begin{DoxyReturn}{Returns}
+Number of detected Sensors 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_data_device_8cpp_source_l00049}{49}} of file \mbox{\hyperlink{_data_device_8cpp_source}{Data\+Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00049                              \{}
+\DoxyCodeLine{00050     \textcolor{keywordflow}{return} \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{numSensors}};}
+\DoxyCodeLine{00051 \};}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{num\+Sensors}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, \mbox{\hyperlink{class_i_o_di_a39477d835859b498b3853696bc1de2dc}{IODi\+::request\+Number\+Of\+Data\+Devices()}}, \mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{IODi\+::set\+Current\+Device()}}, and \mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{AI\+::start\+Collecting\+Data()}}.
+
+\mbox{\Hypertarget{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}\label{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}} 
+\index{DataDevice@{DataDevice}!setAllDataDevices@{setAllDataDevices}}
+\index{setAllDataDevices@{setAllDataDevices}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{setAllDataDevices()}{setAllDataDevices()}}
+{\footnotesize\ttfamily void Data\+Device\+::set\+All\+Data\+Devices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_data_device}{Data\+Device}} $\ast$}]{all\+Devices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Sets all pointers to Data\+Devices. Used for general Data \mbox{\hyperlink{class_device}{Device}} control. 
+
+\begin{DoxyWarning}{Warning}
+It can cause conflict with other processes, recommended only with builder implementation. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{_data_device_8cpp_source_l00076}{76}} of file \mbox{\hyperlink{_data_device_8cpp_source}{Data\+Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00076                                                         \{}
+\DoxyCodeLine{00077     \mbox{\hyperlink{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}{allDataDevices}} = \mbox{\hyperlink{class_device_a48e91eea6919c638b7951e2246a738a0}{allDevices}};}
+\DoxyCodeLine{00078     \mbox{\hyperlink{class_data_device_af232c8f8d59cfe5712ed9ed2d96bb422}{allDataDeviceNames}} = \textcolor{keyword}{new} std::string[\mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{numSensors}}];}
+\DoxyCodeLine{00079 }
+\DoxyCodeLine{00080     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{numSensors}}; i++)\{}
+\DoxyCodeLine{00081         \mbox{\hyperlink{class_data_device_af232c8f8d59cfe5712ed9ed2d96bb422}{allDataDeviceNames}}[i] = \mbox{\hyperlink{class_device_a48e91eea6919c638b7951e2246a738a0}{allDevices}}[i].\mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{getName}}();}
+\DoxyCodeLine{00082     \}}
+\DoxyCodeLine{00083 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_data_device_af232c8f8d59cfe5712ed9ed2d96bb422}{all\+Data\+Device\+Names}}, \mbox{\hyperlink{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}{all\+Data\+Devices}}, \mbox{\hyperlink{class_device_a48e91eea6919c638b7951e2246a738a0}{Device\+::all\+Devices}}, \mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{Device\+::get\+Name()}}, and \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{num\+Sensors}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{Device\+Builder\+::build\+All\+Devices()}}.
+
+\mbox{\Hypertarget{class_data_device_a3c8565dfbce1156504bf428bba8ff4ff}\label{class_data_device_a3c8565dfbce1156504bf428bba8ff4ff}} 
+\index{DataDevice@{DataDevice}!setLimit@{setLimit}}
+\index{setLimit@{setLimit}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{setLimit()}{setLimit()}}
+{\footnotesize\ttfamily void Data\+Device\+::set\+Limit (\begin{DoxyParamCaption}\item[{int $\ast$}]{limit\+Array }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets a Warning limit for the device. This limit will be supervised by \mbox{\hyperlink{class_a_i}{AI}}. 
+
+\begin{DoxyWarning}{Warning}
+It can cause conflict with other processes, recommended only with builder implementation 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em limit\+Array} & array of values to supervise. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_data_device_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{_data_device_8cpp_source}{Data\+Device.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00069                                          \{}
+\DoxyCodeLine{00070     this-\/>\mbox{\hyperlink{class_data_device_a28f082686326623706c73deb24163cde}{limit}} = limitArray;}
+\DoxyCodeLine{00071     this-\/>\mbox{\hyperlink{class_data_device_a1971e83e62a138e0f4a6116426eaf09d}{needsLimit}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00072 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_data_device_a28f082686326623706c73deb24163cde}{limit}}, and \mbox{\hyperlink{class_data_device_a1971e83e62a138e0f4a6116426eaf09d}{needs\+Limit}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_data_device_a30f980cd5a3847c1fc8b9c49c84af74a}\label{class_data_device_a30f980cd5a3847c1fc8b9c49c84af74a}} 
+\index{DataDevice@{DataDevice}!AI@{AI}}
+\index{AI@{AI}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{AI}{AI}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_a_i}{AI}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00020}{20}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+\mbox{\Hypertarget{class_data_device_a8132d1c426012ad32810a5a191d8a8a2}\label{class_data_device_a8132d1c426012ad32810a5a191d8a8a2}} 
+\index{DataDevice@{DataDevice}!DeviceBuilder@{DeviceBuilder}}
+\index{DeviceBuilder@{DeviceBuilder}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{DeviceBuilder}{DeviceBuilder}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_device_builder}{Device\+Builder}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00019}{19}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+\mbox{\Hypertarget{class_data_device_ad4487c6c0c4eab52bf30d029d9194f53}\label{class_data_device_ad4487c6c0c4eab52bf30d029d9194f53}} 
+\index{DataDevice@{DataDevice}!IODi@{IODi}}
+\index{IODi@{IODi}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{IODi}{IODi}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{class_i_o_di}{IODi}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00021}{21}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_data_device_af232c8f8d59cfe5712ed9ed2d96bb422}\label{class_data_device_af232c8f8d59cfe5712ed9ed2d96bb422}} 
+\index{DataDevice@{DataDevice}!allDataDeviceNames@{allDataDeviceNames}}
+\index{allDataDeviceNames@{allDataDeviceNames}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{allDataDeviceNames}{allDataDeviceNames}}
+{\footnotesize\ttfamily std\+::string $\ast$ Data\+Device\+::all\+Data\+Device\+Names\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pointers to all Data \mbox{\hyperlink{class_device}{Device}} names. 
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00059}{59}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_i_o_di_a2142cdf8cd8f6e33d8463ea86c514f3f}{IODi\+::request\+Device\+Names()}}, \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{set\+All\+Data\+Devices()}}, and \mbox{\hyperlink{class_i_o_di_a701d02ebac15affaad3e1e1c78989efa}{IODi\+::set\+Current\+Device()}}.
+
+\mbox{\Hypertarget{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}\label{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}} 
+\index{DataDevice@{DataDevice}!allDataDevices@{allDataDevices}}
+\index{allDataDevices@{allDataDevices}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{allDataDevices}{allDataDevices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_data_device}{Data\+Device}} $\ast$ Data\+Device\+::all\+Data\+Devices\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pointers to all Data Devices built. 
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00057}{57}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, \mbox{\hyperlink{class_i_o_di_ae8f0575dd0958aabfb7e41ae2165aaf5}{IODi\+::request\+All\+Status()}}, \mbox{\hyperlink{class_i_o_di_ae3d98013800c88fec47012ec3c814d8f}{IODi\+::request\+Device\+Skills()}}, \mbox{\hyperlink{class_i_o_di_ac3e76c3309b3b98e9e7125e6e2dce79a}{IODi\+::request\+Number\+Of\+Skills()}}, \mbox{\hyperlink{class_i_o_di_afd62f2fa9bdd4e4602c2a60456d4097d}{IODi\+::request\+Skill()}}, \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{set\+All\+Data\+Devices()}}, \mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{AI\+::start\+Collecting\+Data()}}, and \mbox{\hyperlink{class_a_i_a9722ff1c013e46c23bc3dd4b5af63bd6}{AI\+::turn\+Devices()}}.
+
+\mbox{\Hypertarget{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}\label{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}} 
+\index{DataDevice@{DataDevice}!collectedData@{collectedData}}
+\index{collectedData@{collectedData}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{collectedData}{collectedData}}
+{\footnotesize\ttfamily std\+::vector$<$int$>$ Data\+Device\+::collected\+Data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+vector with all measurements collected from the sensor 
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00087}{87}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{append\+New\+Data()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, and \mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{IODi\+::request\+Skill()}}.
+
+\mbox{\Hypertarget{class_data_device_abd297afb59478d7f7e39825143be7b34}\label{class_data_device_abd297afb59478d7f7e39825143be7b34}} 
+\index{DataDevice@{DataDevice}!collectedTimes@{collectedTimes}}
+\index{collectedTimes@{collectedTimes}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{collectedTimes}{collectedTimes}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Data\+Device\+::collected\+Times\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector with all time-\/stamps of the measurements. 
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00089}{89}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{append\+New\+Data()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, and \mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{IODi\+::request\+Skill()}}.
+
+\mbox{\Hypertarget{class_data_device_a5af69e554171fdd56bb7a7587daa4a9c}\label{class_data_device_a5af69e554171fdd56bb7a7587daa4a9c}} 
+\index{DataDevice@{DataDevice}!dataGenerator@{dataGenerator}}
+\index{dataGenerator@{dataGenerator}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{dataGenerator}{dataGenerator}}
+{\footnotesize\ttfamily int($\ast$ Data\+Device\+::data\+Generator) ()\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Main generator of measurements/data of the sensor. 
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00091}{91}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{append\+New\+Data()}}.
+
+\mbox{\Hypertarget{class_data_device_a28f082686326623706c73deb24163cde}\label{class_data_device_a28f082686326623706c73deb24163cde}} 
+\index{DataDevice@{DataDevice}!limit@{limit}}
+\index{limit@{limit}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{limit}{limit}}
+{\footnotesize\ttfamily int$\ast$ Data\+Device\+::limit\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Limit to control by \mbox{\hyperlink{class_a_i}{AI}}. 
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00095}{95}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_a3c8565dfbce1156504bf428bba8ff4ff}{set\+Limit()}}.
+
+\mbox{\Hypertarget{class_data_device_a1971e83e62a138e0f4a6116426eaf09d}\label{class_data_device_a1971e83e62a138e0f4a6116426eaf09d}} 
+\index{DataDevice@{DataDevice}!needsLimit@{needsLimit}}
+\index{needsLimit@{needsLimit}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{needsLimit}{needsLimit}}
+{\footnotesize\ttfamily bool Data\+Device\+::needs\+Limit = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Distinguish between Data Devices which uses or not Limits. 
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00093}{93}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_data_device_a3c8565dfbce1156504bf428bba8ff4ff}{set\+Limit()}}.
+
+\mbox{\Hypertarget{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}\label{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}} 
+\index{DataDevice@{DataDevice}!numSensors@{numSensors}}
+\index{numSensors@{numSensors}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{numSensors}{numSensors}}
+{\footnotesize\ttfamily int Data\+Device\+::num\+Sensors = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Number of Data\+Devices stablished. 
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00110}{110}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_aeafba0fc07e4e9672930aa3341619679}{AI\+::build\+Device()}}, \mbox{\hyperlink{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}{Data\+Device()}}, \mbox{\hyperlink{class_data_device_a4499875b3c1a52ce8bbaf5f3c7de9e05}{get\+Num\+Sensors()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, \mbox{\hyperlink{class_i_o_di_ae8f0575dd0958aabfb7e41ae2165aaf5}{IODi\+::request\+All\+Status()}}, \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{set\+All\+Data\+Devices()}}, and \mbox{\hyperlink{class_a_i_a9722ff1c013e46c23bc3dd4b5af63bd6}{AI\+::turn\+Devices()}}.
+
+\mbox{\Hypertarget{class_data_device_a1f2b76696c193616e0705387e858ff49}\label{class_data_device_a1f2b76696c193616e0705387e858ff49}} 
+\index{DataDevice@{DataDevice}!numSensorsActive@{numSensorsActive}}
+\index{numSensorsActive@{numSensorsActive}!DataDevice@{DataDevice}}
+\doxysubsubsection{\texorpdfstring{numSensorsActive}{numSensorsActive}}
+{\footnotesize\ttfamily int Data\+Device\+::num\+Sensors\+Active = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Number of Data\+Devices turned on. 
+
+
+
+Definition at line \mbox{\hyperlink{_data_device_8h_source_l00112}{112}} of file \mbox{\hyperlink{_data_device_8h_source}{Data\+Device.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_data_device_8h}{Data\+Device.\+h}}\item 
+\mbox{\hyperlink{_data_device_8cpp}{Data\+Device.\+cpp}}\end{DoxyCompactItemize}

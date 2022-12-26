@@ -1,0 +1,35 @@
+\hypertarget{kb_8cpp_source}{}\doxysection{kb.\+cpp}
+\label{kb_8cpp_source}\index{kb.cpp@{kb.cpp}}
+\mbox{\hyperlink{kb_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{kb_8h}{kb.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00003}\mbox{\hyperlink{classkb_ad0182e693d377352914210698936eccb}{00003}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classkb_ad0182e693d377352914210698936eccb}{kb::kbhit}}()\{}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00004}00004   \textcolor{keyword}{struct }termios oldt, newt;}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00005}00005   \textcolor{keywordtype}{int} ch;}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00006}00006   \textcolor{keywordtype}{int} oldf;}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00008}00008   tcgetattr(STDIN\_FILENO, \&oldt);}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00009}00009   newt = oldt;}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00010}00010   newt.c\_lflag \&= \string~(ICANON | ECHO);}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00011}00011   tcsetattr(STDIN\_FILENO, TCSANOW, \&newt);}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00012}00012   oldf = fcntl(STDIN\_FILENO, F\_GETFL, 0);}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00013}00013   fcntl(STDIN\_FILENO, F\_SETFL, oldf | O\_NONBLOCK);}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00015}00015   ch = getchar();}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00017}00017   tcsetattr(STDIN\_FILENO, TCSANOW, \&oldt);}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00018}00018   fcntl(STDIN\_FILENO, F\_SETFL, oldf);}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00020}00020   \textcolor{keywordflow}{if}(ch != EOF)\{}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00021}00021     ungetc(ch, stdin);}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00022}00022     \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00023}00023   \}}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00024}00024   }
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00025}00025   \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{kb_8cpp_source_l00029}00029 }
+
+\end{DoxyCode}

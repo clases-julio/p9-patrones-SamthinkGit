@@ -1,0 +1,26 @@
+var class_a_i =
+[
+    [ "AI", "d9/d64/class_a_i.html#a64ec60281e9eb8496f16525615db54b7", null ],
+    [ "addUser", "d9/d64/class_a_i.html#a2c5a9b991e7ac83f6a4c25f0e6c7b783", null ],
+    [ "buildDevice", "d9/d64/class_a_i.html#aeafba0fc07e4e9672930aa3341619679", null ],
+    [ "checkSecurity", "d9/d64/class_a_i.html#addd22a78b4ec596e5ae9554113c6a2d1", null ],
+    [ "ensureAdminAccess", "d9/d64/class_a_i.html#ab4f8a6efe1c0041a43cd670f707a77b7", null ],
+    [ "forceBadAlloc", "d9/d64/class_a_i.html#a50db01d117eb927ffad24144633e455b", null ],
+    [ "forceError", "d9/d64/class_a_i.html#a6984601bc3c2d65d1ef69c3b980ff8fa", null ],
+    [ "microphone", "d9/d64/class_a_i.html#a6c757fc5f3fbf43d6e512b4649479b16", null ],
+    [ "recoverSecurity", "d9/d64/class_a_i.html#ae5372e8b0787403f2b10c5cd54e90946", null ],
+    [ "refreshData", "d9/d64/class_a_i.html#a0efedc3d8f331d259f82b915f4ed5508", null ],
+    [ "removeUser", "d9/d64/class_a_i.html#a86fe75fab41d558922b6333ea27e682d", null ],
+    [ "requestOption", "d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a", null ],
+    [ "showAllUsers", "d9/d64/class_a_i.html#aa77cc82f290d4386e12c978dcff385ab", null ],
+    [ "signalHandler", "d9/d64/class_a_i.html#a15e235a4a50d15f6f1c73a4ec9569552", null ],
+    [ "startCollectingData", "d9/d64/class_a_i.html#a831d4f0c6bc669e749a64caf5bdba426", null ],
+    [ "throwDemon", "d9/d64/class_a_i.html#af0e91e54ac652671696c09468852fc0b", null ],
+    [ "turnDevices", "d9/d64/class_a_i.html#a9722ff1c013e46c23bc3dd4b5af63bd6", null ],
+    [ "turnSecurity", "d9/d64/class_a_i.html#aab98da3e33b41549ee49ba3d7a1acc43", null ],
+    [ "abort", "d9/d64/class_a_i.html#ad26945ece1d0c8f6268a945617363afd", null ],
+    [ "MAX_DATA", "d9/d64/class_a_i.html#a95004d1450551f0941957cecc95a1b04", null ],
+    [ "SLEEPTIME", "d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f", null ],
+    [ "TAG", "d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621", null ],
+    [ "time_counter", "d9/d64/class_a_i.html#a143cbb790ccc9ae52046f8d3c5a3298f", null ]
+];

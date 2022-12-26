@@ -1,0 +1,124 @@
+\hypertarget{class_admin}{}\doxysection{Admin Class Reference}
+\label{class_admin}\index{Admin@{Admin}}
+
+
+This class is the responsible for instantiating an \mbox{\hyperlink{class_admin}{Admin}} object to distinguish between Users and Admins.  
+
+
+
+
+{\ttfamily \#include $<$Admin.\+h$>$}
+
+Inheritance diagram for Admin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{da/ddc/class_admin}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_admin_aff017db99075f535aa0a42e94ec77163}{Admin}} (int \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}})
+\begin{DoxyCompactList}\small\item\em Builds a new \mbox{\hyperlink{class_admin}{Admin}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_admin_a5a8f948cd91984ba4005ce9443776847}{admin\+Status}} (int \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}})
+\begin{DoxyCompactList}\small\item\em Gets current object status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is the responsible for instantiating an \mbox{\hyperlink{class_admin}{Admin}} object to distinguish between Users and Admins. 
+
+Definition at line \mbox{\hyperlink{_admin_8h_source_l00017}{17}} of file \mbox{\hyperlink{_admin_8h_source}{Admin.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_admin_aff017db99075f535aa0a42e94ec77163}\label{class_admin_aff017db99075f535aa0a42e94ec77163}} 
+\index{Admin@{Admin}!Admin@{Admin}}
+\index{Admin@{Admin}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{Admin()}{Admin()}}
+{\footnotesize\ttfamily Admin\+::\+Admin (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Builds a new \mbox{\hyperlink{class_admin}{Admin}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \mbox{\hyperlink{class_admin}{Admin}} identificator \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_admin_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{_admin_8cpp_source}{Admin.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008                    : \mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{User}}(\textcolor{keywordtype}{id})\{}
+\DoxyCodeLine{00009 }
+\DoxyCodeLine{00010     this-\/>\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00011 }
+\DoxyCodeLine{00012 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{User\+::is\+Admin}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_admin_a5a8f948cd91984ba4005ce9443776847}\label{class_admin_a5a8f948cd91984ba4005ce9443776847}} 
+\index{Admin@{Admin}!adminStatus@{adminStatus}}
+\index{adminStatus@{adminStatus}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{adminStatus()}{adminStatus()}}
+{\footnotesize\ttfamily bool Admin\+::admin\+Status (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets current object status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \mbox{\hyperlink{class_user}{User}} Identifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(True) is \mbox{\hyperlink{class_admin}{Admin}}. (False) is Guest 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_admin_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{_admin_8cpp_source}{Admin.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00015                               \{}
+\DoxyCodeLine{00016 }
+\DoxyCodeLine{00017     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{00018         \textcolor{keywordtype}{int}* userData = \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00019         \textcolor{keywordflow}{return} (userData[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\_COLUMN}}] == \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa43960f9c6bdbdff4e01d8c642bb618ca}{ADMIN\_IDENTIFIER}});}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00021     \textcolor{comment}{// User not found}}
+\DoxyCodeLine{00022     \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_user_not_found_exception}{UserNotFoundException}} \&e)\{}
+\DoxyCodeLine{00023         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00024     \}}
+\DoxyCodeLine{00025 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{User\+::\+ADMIN\+\_\+\+COLUMN}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa43960f9c6bdbdff4e01d8c642bb618ca}{User\+::\+ADMIN\+\_\+\+IDENTIFIER}}, and \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{User\+::find()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{Login\+::start\+Login()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_admin_8h}{Admin.\+h}}\item 
+\mbox{\hyperlink{_admin_8cpp}{Admin.\+cpp}}\end{DoxyCompactItemize}

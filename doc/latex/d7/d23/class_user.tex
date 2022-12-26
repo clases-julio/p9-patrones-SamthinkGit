@@ -1,0 +1,780 @@
+\hypertarget{class_user}{}\doxysection{User Class Reference}
+\label{class_user}\index{User@{User}}
+
+
+This class will be the responsible for storing and managing the user\textquotesingle{}s data. Also is able to create an abstract user object to ease data access.  
+
+
+
+
+{\ttfamily \#include $<$User.\+h$>$}
+
+Inheritance diagram for User\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{d7/d23/class_user}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{INVALID\+\_\+\+USER}} = -\/2
+, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}{INVALID\+\_\+\+PASS}} = -\/2
+, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\+\_\+\+COLUMN}} = 0
+, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\+\_\+\+COLUMN}} = 1
+, \newline
+\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\+\_\+\+COLUMN}} = 2
+, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa43960f9c6bdbdff4e01d8c642bb618ca}{ADMIN\+\_\+\+IDENTIFIER}} = 1
+, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c}{TOTAL\+\_\+\+COLUMNS}} = 3
+, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}{DEVELOPER\+\_\+\+USER}} = -\/1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{User}} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor (not recommended) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_user_a6e84637389bc36a13300df82a7387bb0}{User}} (int \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}})
+\begin{DoxyCompactList}\small\item\em Build a new ACTIVE user. Only use to ease user information access. Auto sets the admin role according to data stored in file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_user_a19c51c10009a056caac5053717eb8b89}{get\+User}} ()
+\begin{DoxyCompactList}\small\item\em Returns \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s username. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_aa374b1065ea942d3d2d46085539c257e}{get\+Admin\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Returns \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s admin status. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_user_a3dd5f61e8f0172573a6ab6f73505cb2c}{check}} (int \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}}, int \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}})
+\begin{DoxyCompactList}\small\item\em Check if id and password are valid. Needs to access to datafile. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{update\+User\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Reads the datafile, then store users in a 2 dimensional array (all\+Users) setting each column according to the columns setted in \mbox{\hyperlink{_user_8h}{User.\+h}} class. Sorted by id for efficiency. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_user_abe917daaebdfb170900ae513c9289a66}{save\+User\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Saves all data saved in the set vector to a .dat file. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_user_a932abf8dc4bdbdef3dbd05c3d3852c99}{add\+User}} (int \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}}, int \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}}, bool \mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{is\+Admin}})
+\begin{DoxyCompactList}\small\item\em Adds new user to all\+Users. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_user_a68388c89a91732660b3fb4c602fa55c0}{rm\+User}} (int \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}})
+\begin{DoxyCompactList}\small\item\em Removes a user from all\+Users. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_user_aba09368b2af61c833490ff95aff4e9c2}{print\+Users}} ()
+\begin{DoxyCompactList}\small\item\em Prints all registered users. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int $\ast$ \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find}} (int \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}})
+\begin{DoxyCompactList}\small\item\em Finds a user by giving the id as a key . Maximum complexity of O(n). Returns the properties of the user as a pointer to array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_user}{User}} identifier (5-\/digit-\/int) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{is\+Admin}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_admin}{Admin}} Status. False by defect. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}}
+\begin{DoxyCompactList}\small\item\em Password to access the account. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static char \mbox{\hyperlink{class_user_a3d595223d88c86a28aecf557347a9d54}{SEPARATOR}} = \textquotesingle{},\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Character to separate tokens in file. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{TAG}} = \char`\"{}User\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of the Class (for exception calling) \end{DoxyCompactList}\item 
+static std\+::set$<$ int $\ast$ $>$ \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{all\+Users}}
+\begin{DoxyCompactList}\small\item\em Set of integers to store all users. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_user_ab167913883c55da15137eefedb6f0863}{DATAFILE}} = \char`\"{}data/userdata.\+txt\char`\"{}
+\begin{DoxyCompactList}\small\item\em \mbox{[}DEPRECATED\mbox{]} Path of userdata file \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_user_a942375334862b953b0471435b70f8fb7}{USERFILE}} = \char`\"{}data/userdata.\+dat\char`\"{}
+\begin{DoxyCompactList}\small\item\em Path to userdata file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class will be the responsible for storing and managing the user\textquotesingle{}s data. Also is able to create an abstract user object to ease data access. 
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00016}{16}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_user_a0764dfb49c8adb5b56ad076ba9c099ea}\label{class_user_a0764dfb49c8adb5b56ad076ba9c099ea}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVALID\_USER@{INVALID\_USER}!User@{User}}\index{User@{User}!INVALID\_USER@{INVALID\_USER}}}\mbox{\Hypertarget{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}\label{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}} 
+INVALID\+\_\+\+USER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INVALID\_PASS@{INVALID\_PASS}!User@{User}}\index{User@{User}!INVALID\_PASS@{INVALID\_PASS}}}\mbox{\Hypertarget{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}\label{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}} 
+INVALID\+\_\+\+PASS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{USER\_COLUMN@{USER\_COLUMN}!User@{User}}\index{User@{User}!USER\_COLUMN@{USER\_COLUMN}}}\mbox{\Hypertarget{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}\label{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}} 
+USER\+\_\+\+COLUMN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PASS\_COLUMN@{PASS\_COLUMN}!User@{User}}\index{User@{User}!PASS\_COLUMN@{PASS\_COLUMN}}}\mbox{\Hypertarget{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}\label{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}} 
+PASS\+\_\+\+COLUMN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADMIN\_COLUMN@{ADMIN\_COLUMN}!User@{User}}\index{User@{User}!ADMIN\_COLUMN@{ADMIN\_COLUMN}}}\mbox{\Hypertarget{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}\label{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}} 
+ADMIN\+\_\+\+COLUMN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADMIN\_IDENTIFIER@{ADMIN\_IDENTIFIER}!User@{User}}\index{User@{User}!ADMIN\_IDENTIFIER@{ADMIN\_IDENTIFIER}}}\mbox{\Hypertarget{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa43960f9c6bdbdff4e01d8c642bb618ca}\label{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa43960f9c6bdbdff4e01d8c642bb618ca}} 
+ADMIN\+\_\+\+IDENTIFIER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TOTAL\_COLUMNS@{TOTAL\_COLUMNS}!User@{User}}\index{User@{User}!TOTAL\_COLUMNS@{TOTAL\_COLUMNS}}}\mbox{\Hypertarget{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c}\label{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c}} 
+TOTAL\+\_\+\+COLUMNS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEVELOPER\_USER@{DEVELOPER\_USER}!User@{User}}\index{User@{User}!DEVELOPER\_USER@{DEVELOPER\_USER}}}\mbox{\Hypertarget{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}\label{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}} 
+DEVELOPER\+\_\+\+USER&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00024}{24}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024          \{}
+\DoxyCodeLine{00025         \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{INVALID\_USER}} = -\/2,}
+\DoxyCodeLine{00026         \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa192736849be3baa82b40cbd4dee5d14a}{INVALID\_PASS}} = -\/2,}
+\DoxyCodeLine{00027         \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\_COLUMN}} = 0,}
+\DoxyCodeLine{00028         \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\_COLUMN}} = 1,}
+\DoxyCodeLine{00029         \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\_COLUMN}} = 2,}
+\DoxyCodeLine{00030         \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa43960f9c6bdbdff4e01d8c642bb618ca}{ADMIN\_IDENTIFIER}} = 1,}
+\DoxyCodeLine{00031         \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c}{TOTAL\_COLUMNS}} = 3,}
+\DoxyCodeLine{00032         \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}{DEVELOPER\_USER}} = -\/1}
+\DoxyCodeLine{00033     \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_user_a4a0137053e591fbb79d9057dd7d2283d}\label{class_user_a4a0137053e591fbb79d9057dd7d2283d}} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty constructor (not recommended) 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024 : \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}}(\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{INVALID\_USER}}), \mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}}(\textcolor{keyword}{false}) \{\};}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{class_user_abe917daaebdfb170900ae513c9289a66}{save\+User\+Data()}}.
+
+\mbox{\Hypertarget{class_user_a6e84637389bc36a13300df82a7387bb0}\label{class_user_a6e84637389bc36a13300df82a7387bb0}} 
+\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily User\+::\+User (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Build a new ACTIVE user. Only use to ease user information access. Auto sets the admin role according to data stored in file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & user identification (5-\/digit num) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028                  : \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}}(\textcolor{keywordtype}{id})\{}
+\DoxyCodeLine{00029 }
+\DoxyCodeLine{00030     \textcolor{keywordflow}{if} (\textcolor{keywordtype}{id} == \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}{DEVELOPER\_USER}} )\{}
+\DoxyCodeLine{00031         this-\/>\mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}} = 0;}
+\DoxyCodeLine{00032         this-\/>\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00033         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00034     \}}
+\DoxyCodeLine{00035 }
+\DoxyCodeLine{00036     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing User info -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00037     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00039         \textcolor{comment}{//  Find and Set admin status from data}}
+\DoxyCodeLine{00040         \textcolor{keywordtype}{int}* userData = \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00041         this-\/>\mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}} = userData[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\_COLUMN}}];}
+\DoxyCodeLine{00042         this-\/>\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}} = userData[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\_COLUMN}}];}
+\DoxyCodeLine{00043 }
+\DoxyCodeLine{00044 }
+\DoxyCodeLine{00045     \textcolor{comment}{// -\/-\/-\/-\/-\/ Catching invalid users -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00046     \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_invalid_user_exception}{InvalidUserException}} \&e)\{}
+\DoxyCodeLine{00047 }
+\DoxyCodeLine{00048         this-\/>\textcolor{keywordtype}{id} = \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{INVALID\_USER}};}
+\DoxyCodeLine{00049         this-\/>\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}} = 0;}
+\DoxyCodeLine{00050 }
+\DoxyCodeLine{00051     \}}
+\DoxyCodeLine{00052 \};}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\+\_\+\+COLUMN}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}{DEVELOPER\+\_\+\+USER}}, \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find()}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947}{INVALID\+\_\+\+USER}}, \mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{is\+Admin}}, \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}}, and \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\+\_\+\+COLUMN}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_a932abf8dc4bdbdef3dbd05c3d3852c99}\label{class_user_a932abf8dc4bdbdef3dbd05c3d3852c99}} 
+\index{User@{User}!addUser@{addUser}}
+\index{addUser@{addUser}!User@{User}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily void User\+::add\+User (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{pass,  }\item[{bool}]{is\+Admin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds new user to all\+Users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & user identification (5-\/digit num) \\
+\hline
+{\em pass} & user password (8-\/digit num) \\
+\hline
+{\em is\+Admin} & \mbox{\hyperlink{class_admin}{Admin}} Status. (True) \mbox{\hyperlink{class_admin}{Admin}}. (False) Guest. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00182}{182}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00182                                                    \{}
+\DoxyCodeLine{00183 }
+\DoxyCodeLine{00184     \textcolor{keywordtype}{int}* newUser = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c}{TOTAL\_COLUMNS}}];}
+\DoxyCodeLine{00185     newUser[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\_COLUMN}}] = user;}
+\DoxyCodeLine{00186     newUser[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\_COLUMN}}] = \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}};}
+\DoxyCodeLine{00187     newUser[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\_COLUMN}}] = (\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}}) ? \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa43960f9c6bdbdff4e01d8c642bb618ca}{ADMIN\_IDENTIFIER}} : 0;}
+\DoxyCodeLine{00188 }
+\DoxyCodeLine{00189     \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.insert(newUser);}
+\DoxyCodeLine{00190 }
+\DoxyCodeLine{00191 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\+\_\+\+COLUMN}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa43960f9c6bdbdff4e01d8c642bb618ca}{ADMIN\+\_\+\+IDENTIFIER}}, \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{all\+Users}}, \mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{is\+Admin}}, \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\+\_\+\+COLUMN}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c}{TOTAL\+\_\+\+COLUMNS}}, and \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\+\_\+\+COLUMN}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a2c5a9b991e7ac83f6a4c25f0e6c7b783}{AI\+::add\+User()}}.
+
+\mbox{\Hypertarget{class_user_a3dd5f61e8f0172573a6ab6f73505cb2c}\label{class_user_a3dd5f61e8f0172573a6ab6f73505cb2c}} 
+\index{User@{User}!check@{check}}
+\index{check@{check}!User@{User}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily bool User\+::check (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if id and password are valid. Needs to access to datafile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & user identification (5-\/digit num) \\
+\hline
+{\em pass} & user password (8-\/digit num) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if id and pass are valid 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00068}{68}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00068                                 \{}
+\DoxyCodeLine{00069     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{00070         \textcolor{keywordtype}{int}* userData = \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00071         \textcolor{keywordflow}{return} (userData[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\_COLUMN}}] == \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}});}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073     \textcolor{comment}{// User not found}}
+\DoxyCodeLine{00074     \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_user_not_found_exception}{UserNotFoundException}} \&e)\{}
+\DoxyCodeLine{00075         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00076     \}}
+\DoxyCodeLine{00077 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find()}}, \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}}, and \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\+\_\+\+COLUMN}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{Login\+::start\+Login()}}.
+
+\mbox{\Hypertarget{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}\label{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}} 
+\index{User@{User}!find@{find}}
+\index{find@{find}!User@{User}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily int $\ast$ User\+::find (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Finds a user by giving the id as a key . Maximum complexity of O(n). Returns the properties of the user as a pointer to array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & key for searching user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Complexity of O(log(n)) is possible, not implemented yet. 
+\end{DoxyNote}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_user_not_found_exception}{User\+Not\+Found\+Exception}}} & \mbox{\hyperlink{class_user}{User}} not found \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00163}{163}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00163                      \{}
+\DoxyCodeLine{00164 }
+\DoxyCodeLine{00165     \textcolor{comment}{// -\/-\/-\/-\/-\/ Creates iterator}}
+\DoxyCodeLine{00166     std::set<int*>::iterator it;}
+\DoxyCodeLine{00167 }
+\DoxyCodeLine{00168     \textcolor{comment}{// -\/-\/-\/-\/-\/ Travel the set until find}}
+\DoxyCodeLine{00169     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} iterator = \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.begin(); iterator != \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.end(); ++iterator)\{}
+\DoxyCodeLine{00170 }
+\DoxyCodeLine{00171         \textcolor{keywordflow}{if} ((*iterator)[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\_COLUMN}}] == \textcolor{keywordtype}{id})}
+\DoxyCodeLine{00172             \textcolor{keywordflow}{return} *iterator;}
+\DoxyCodeLine{00173     \}}
+\DoxyCodeLine{00174 }
+\DoxyCodeLine{00175     \textcolor{comment}{// -\/-\/-\/-\/-\/ User not found, send error}}
+\DoxyCodeLine{00176 }
+\DoxyCodeLine{00177     \textcolor{comment}{// [DEPRECADTED] throw std::runtime\_error("{}User not Found"{});}}
+\DoxyCodeLine{00178     \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_user_not_found_exception}{UserNotFoundException}}(\mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{TAG}});}
+\DoxyCodeLine{00179 }
+\DoxyCodeLine{00180 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{all\+Users}}, \mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{TAG}}, and \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\+\_\+\+COLUMN}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_admin_a5a8f948cd91984ba4005ce9443776847}{Admin\+::admin\+Status()}}, \mbox{\hyperlink{class_user_a3dd5f61e8f0172573a6ab6f73505cb2c}{check()}}, \mbox{\hyperlink{class_user_a68388c89a91732660b3fb4c602fa55c0}{rm\+User()}}, and \mbox{\hyperlink{class_user_a6e84637389bc36a13300df82a7387bb0}{User()}}.
+
+\mbox{\Hypertarget{class_user_aa374b1065ea942d3d2d46085539c257e}\label{class_user_aa374b1065ea942d3d2d46085539c257e}} 
+\index{User@{User}!getAdminStatus@{getAdminStatus}}
+\index{getAdminStatus@{getAdminStatus}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getAdminStatus()}{getAdminStatus()}}
+{\footnotesize\ttfamily bool User\+::get\+Admin\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s admin status. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00062}{62}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00062                          \{}
+\DoxyCodeLine{00063     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}};}
+\DoxyCodeLine{00064 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{is\+Admin}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+\mbox{\Hypertarget{class_user_a19c51c10009a056caac5053717eb8b89}\label{class_user_a19c51c10009a056caac5053717eb8b89}} 
+\index{User@{User}!getUser@{getUser}}
+\index{getUser@{getUser}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily int User\+::get\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns \mbox{\hyperlink{class_user}{User}}\textquotesingle{}s username. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00057}{57}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00057                  \{}
+\DoxyCodeLine{00058     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}};}
+\DoxyCodeLine{00059 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+\mbox{\Hypertarget{class_user_aba09368b2af61c833490ff95aff4e9c2}\label{class_user_aba09368b2af61c833490ff95aff4e9c2}} 
+\index{User@{User}!printUsers@{printUsers}}
+\index{printUsers@{printUsers}!User@{User}}
+\doxysubsubsection{\texorpdfstring{printUsers()}{printUsers()}}
+{\footnotesize\ttfamily void User\+::print\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Prints all registered users. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00209}{209}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00209                       \{}
+\DoxyCodeLine{00210 }
+\DoxyCodeLine{00211     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} iterator = \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.begin(); iterator != \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.end(); ++iterator)\{}
+\DoxyCodeLine{00212 }
+\DoxyCodeLine{00213             std::cout << ((*iterator)[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\_COLUMN}}] == 0 ? \textcolor{stringliteral}{"{}User: "{}} : \textcolor{stringliteral}{"{}Admin: "{}});}
+\DoxyCodeLine{00214             std::cout << (*iterator)[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\_COLUMN}}] << std::endl;}
+\DoxyCodeLine{00215 }
+\DoxyCodeLine{00216     \}}
+\DoxyCodeLine{00217 }
+\DoxyCodeLine{00218 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\+\_\+\+COLUMN}}, \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{all\+Users}}, and \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\+\_\+\+COLUMN}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_aa77cc82f290d4386e12c978dcff385ab}{AI\+::show\+All\+Users()}}.
+
+\mbox{\Hypertarget{class_user_a68388c89a91732660b3fb4c602fa55c0}\label{class_user_a68388c89a91732660b3fb4c602fa55c0}} 
+\index{User@{User}!rmUser@{rmUser}}
+\index{rmUser@{rmUser}!User@{User}}
+\doxysubsubsection{\texorpdfstring{rmUser()}{rmUser()}}
+{\footnotesize\ttfamily void User\+::rm\+User (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Removes a user from all\+Users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & user identification \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00194}{194}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00194                         \{}
+\DoxyCodeLine{00195 }
+\DoxyCodeLine{00196     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00197 }
+\DoxyCodeLine{00198         \textcolor{keywordtype}{int} *user = \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find}}(\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00199         \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.erase(user);}
+\DoxyCodeLine{00200 }
+\DoxyCodeLine{00201     \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_invalid_user_exception}{InvalidUserException}} \&e)\{}
+\DoxyCodeLine{00202 }
+\DoxyCodeLine{00203         \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{00204 }
+\DoxyCodeLine{00205     \};}
+\DoxyCodeLine{00206 }
+\DoxyCodeLine{00207 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{all\+Users}}, and \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a86fe75fab41d558922b6333ea27e682d}{AI\+::remove\+User()}}.
+
+\mbox{\Hypertarget{class_user_abe917daaebdfb170900ae513c9289a66}\label{class_user_abe917daaebdfb170900ae513c9289a66}} 
+\index{User@{User}!saveUserData@{saveUserData}}
+\index{saveUserData@{saveUserData}!User@{User}}
+\doxysubsubsection{\texorpdfstring{saveUserData()}{saveUserData()}}
+{\footnotesize\ttfamily void User\+::save\+User\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Saves all data saved in the set vector to a .dat file. 
+
+\begin{DoxyNote}{Note}
+Path file can be changed with USERFILE 
+
+This function should be only called at the end of the program 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00220}{220}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00220                         \{}
+\DoxyCodeLine{00221 }
+\DoxyCodeLine{00222     \textcolor{comment}{// -\/-\/-\/-\/ Opening file -\/-\/-\/-\/}}
+\DoxyCodeLine{00223     std::ofstream file (\mbox{\hyperlink{class_user_a942375334862b953b0471435b70f8fb7}{USERFILE}});}
+\DoxyCodeLine{00224 }
+\DoxyCodeLine{00225     \textcolor{comment}{// -\/-\/-\/-\/ Testing if file is correct -\/-\/-\/-\/}}
+\DoxyCodeLine{00226     \textcolor{keywordflow}{if} (!file)}
+\DoxyCodeLine{00227         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_invalid_file_exception}{InvalidFileException}}(\mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{TAG}});}
+\DoxyCodeLine{00228 }
+\DoxyCodeLine{00229     \textcolor{comment}{// -\/-\/-\/-\/-\/ Creates iterator -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00230     std::set<int*>::iterator it;}
+\DoxyCodeLine{00231 }
+\DoxyCodeLine{00232     \textcolor{comment}{// -\/-\/-\/-\/-\/ Saves all user data in allUsers to file  -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00233     \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} iterator = \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.begin(); iterator != \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.end(); ++iterator)\{}
+\DoxyCodeLine{00234 }
+\DoxyCodeLine{00235         \mbox{\hyperlink{class_user}{User}} newUser = \mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{User}}((*iterator)[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\_COLUMN}}]);}
+\DoxyCodeLine{00236         file.write(\textcolor{keyword}{reinterpret\_cast <}\textcolor{keyword}{const }\textcolor{keywordtype}{char} *\textcolor{keyword}{>} (\&newUser),\textcolor{keyword}{sizeof} (\mbox{\hyperlink{class_user}{User}}));}
+\DoxyCodeLine{00237 }
+\DoxyCodeLine{00238     \}}
+\DoxyCodeLine{00239 }
+\DoxyCodeLine{00240     \textcolor{comment}{// -\/-\/-\/-\/-\/ Close the file -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00241     file.close();}
+\DoxyCodeLine{00242 }
+\DoxyCodeLine{00243 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{all\+Users}}, \mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{TAG}}, \mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{User()}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\+\_\+\+COLUMN}}, and \mbox{\hyperlink{class_user_a942375334862b953b0471435b70f8fb7}{USERFILE}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a15e235a4a50d15f6f1c73a4ec9569552}{AI\+::signal\+Handler()}}.
+
+\mbox{\Hypertarget{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}\label{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}} 
+\index{User@{User}!updateUserData@{updateUserData}}
+\index{updateUserData@{updateUserData}!User@{User}}
+\doxysubsubsection{\texorpdfstring{updateUserData()}{updateUserData()}}
+{\footnotesize\ttfamily void User\+::update\+User\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads the datafile, then store users in a 2 dimensional array (all\+Users) setting each column according to the columns setted in \mbox{\hyperlink{_user_8h}{User.\+h}} class. Sorted by id for efficiency. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_invalid_user_exception}{Invalid\+User\+Exception}}} & \mbox{\hyperlink{class_user}{User}} not valid/found \\
+\hline
+{\em \mbox{\hyperlink{class_invalid_file_exception}{Invalid\+File\+Exception}}} & File not valid/not Accessible \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_user_8cpp_source_l00079}{79}} of file \mbox{\hyperlink{_user_8cpp_source}{User.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00079                           \{}
+\DoxyCodeLine{00080 }
+\DoxyCodeLine{00081     \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00082     \mbox{\hyperlink{class_user}{User}} user;}
+\DoxyCodeLine{00083 }
+\DoxyCodeLine{00084     \textcolor{comment}{// -\/-\/-\/-\/ Opening file -\/-\/-\/-\/}}
+\DoxyCodeLine{00085     std::ifstream file (\mbox{\hyperlink{class_user_a942375334862b953b0471435b70f8fb7}{USERFILE}});}
+\DoxyCodeLine{00086 }
+\DoxyCodeLine{00087     \textcolor{comment}{// -\/-\/-\/-\/ Testing if file is correct -\/-\/-\/-\/}}
+\DoxyCodeLine{00088     \textcolor{keywordflow}{if} (!file)}
+\DoxyCodeLine{00089         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_invalid_file_exception}{InvalidFileException}}(\mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{TAG}});}
+\DoxyCodeLine{00090 }
+\DoxyCodeLine{00091     \textcolor{comment}{// -\/-\/-\/-\/-\/ Reading every user in file -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00092     \textcolor{keywordflow}{while} (file.read(\textcolor{keyword}{reinterpret\_cast <}\textcolor{keywordtype}{char} *\textcolor{keyword}{>}(\&user),sizeof (\mbox{\hyperlink{class_user}{User}})))\{}
+\DoxyCodeLine{00093 }
+\DoxyCodeLine{00094         \textcolor{keywordtype}{int}* newEntry = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c}{TOTAL\_COLUMNS}}];}
+\DoxyCodeLine{00095         newEntry[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\_COLUMN}}] = user.\mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}};}
+\DoxyCodeLine{00096         newEntry[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\_COLUMN}}] = user.\mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}};}
+\DoxyCodeLine{00097         newEntry[\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\_COLUMN}}] = user.\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}};}
+\DoxyCodeLine{00098 }
+\DoxyCodeLine{00099         \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}}.insert(newEntry);}
+\DoxyCodeLine{00100     \}}
+\DoxyCodeLine{00101     \textcolor{comment}{// -\/-\/-\/-\/-\/ Closing file -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00102     file.close();}
+\DoxyCodeLine{00103 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6}{ADMIN\+\_\+\+COLUMN}}, \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{all\+Users}}, \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}}, \mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{is\+Admin}}, \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a}{PASS\+\_\+\+COLUMN}}, \mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{TAG}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c}{TOTAL\+\_\+\+COLUMNS}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d}{USER\+\_\+\+COLUMN}}, and \mbox{\hyperlink{class_user_a942375334862b953b0471435b70f8fb7}{USERFILE}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_user_ab20712584fdd188aab2d9df5f66887d7}\label{class_user_ab20712584fdd188aab2d9df5f66887d7}} 
+\index{User@{User}!allUsers@{allUsers}}
+\index{allUsers@{allUsers}!User@{User}}
+\doxysubsubsection{\texorpdfstring{allUsers}{allUsers}}
+{\footnotesize\ttfamily std\+::set$<$ int $\ast$ $>$ User\+::all\+Users\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Set of integers to store all users. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00133}{133}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_user_a932abf8dc4bdbdef3dbd05c3d3852c99}{add\+User()}}, \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find()}}, \mbox{\hyperlink{class_user_aba09368b2af61c833490ff95aff4e9c2}{print\+Users()}}, \mbox{\hyperlink{class_user_a68388c89a91732660b3fb4c602fa55c0}{rm\+User()}}, \mbox{\hyperlink{class_user_abe917daaebdfb170900ae513c9289a66}{save\+User\+Data()}}, and \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{update\+User\+Data()}}.
+
+\mbox{\Hypertarget{class_user_ab167913883c55da15137eefedb6f0863}\label{class_user_ab167913883c55da15137eefedb6f0863}} 
+\index{User@{User}!DATAFILE@{DATAFILE}}
+\index{DATAFILE@{DATAFILE}!User@{User}}
+\doxysubsubsection{\texorpdfstring{DATAFILE}{DATAFILE}}
+{\footnotesize\ttfamily std\+::string User\+::\+DATAFILE = \char`\"{}data/userdata.\+txt\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+\mbox{[}DEPRECATED\mbox{]} Path of userdata file 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00135}{135}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+\mbox{\Hypertarget{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}\label{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}} 
+\index{User@{User}!id@{id}}
+\index{id@{id}!User@{User}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int User\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_user}{User}} identifier (5-\/digit-\/int) 
+
+\begin{DoxyNote}{Note}
+root and developer don\textquotesingle{}t need to use 5-\/digit numbers 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00105}{105}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_user_a19c51c10009a056caac5053717eb8b89}{get\+User()}}, and \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{update\+User\+Data()}}.
+
+\mbox{\Hypertarget{class_user_aa6f97f01f2b981aa9119727521959857}\label{class_user_aa6f97f01f2b981aa9119727521959857}} 
+\index{User@{User}!isAdmin@{isAdmin}}
+\index{isAdmin@{isAdmin}!User@{User}}
+\doxysubsubsection{\texorpdfstring{isAdmin}{isAdmin}}
+{\footnotesize\ttfamily bool User\+::is\+Admin\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{class_admin}{Admin}} Status. False by defect. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00107}{107}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_user_a932abf8dc4bdbdef3dbd05c3d3852c99}{add\+User()}}, \mbox{\hyperlink{class_admin_aff017db99075f535aa0a42e94ec77163}{Admin\+::\+Admin()}}, \mbox{\hyperlink{class_user_aa374b1065ea942d3d2d46085539c257e}{get\+Admin\+Status()}}, \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{update\+User\+Data()}}, and \mbox{\hyperlink{class_user_a6e84637389bc36a13300df82a7387bb0}{User()}}.
+
+\mbox{\Hypertarget{class_user_afebc8e231b943cb542f35e66eaec0cdb}\label{class_user_afebc8e231b943cb542f35e66eaec0cdb}} 
+\index{User@{User}!pass@{pass}}
+\index{pass@{pass}!User@{User}}
+\doxysubsubsection{\texorpdfstring{pass}{pass}}
+{\footnotesize\ttfamily int User\+::pass\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Password to access the account. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00109}{109}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_user_a932abf8dc4bdbdef3dbd05c3d3852c99}{add\+User()}}, \mbox{\hyperlink{class_user_a3dd5f61e8f0172573a6ab6f73505cb2c}{check()}}, \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{update\+User\+Data()}}, and \mbox{\hyperlink{class_user_a6e84637389bc36a13300df82a7387bb0}{User()}}.
+
+\mbox{\Hypertarget{class_user_a3d595223d88c86a28aecf557347a9d54}\label{class_user_a3d595223d88c86a28aecf557347a9d54}} 
+\index{User@{User}!SEPARATOR@{SEPARATOR}}
+\index{SEPARATOR@{SEPARATOR}!User@{User}}
+\doxysubsubsection{\texorpdfstring{SEPARATOR}{SEPARATOR}}
+{\footnotesize\ttfamily char User\+::\+SEPARATOR = \textquotesingle{},\textquotesingle{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Character to separate tokens in file. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00129}{129}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+\mbox{\Hypertarget{class_user_a6349e440b2ea71310a28469d4bdc98d4}\label{class_user_a6349e440b2ea71310a28469d4bdc98d4}} 
+\index{User@{User}!TAG@{TAG}}
+\index{TAG@{TAG}!User@{User}}
+\doxysubsubsection{\texorpdfstring{TAG}{TAG}}
+{\footnotesize\ttfamily std\+::string User\+::\+TAG = \char`\"{}User\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Name of the Class (for exception calling) 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00131}{131}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find()}}, \mbox{\hyperlink{class_user_abe917daaebdfb170900ae513c9289a66}{save\+User\+Data()}}, and \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{update\+User\+Data()}}.
+
+\mbox{\Hypertarget{class_user_a942375334862b953b0471435b70f8fb7}\label{class_user_a942375334862b953b0471435b70f8fb7}} 
+\index{User@{User}!USERFILE@{USERFILE}}
+\index{USERFILE@{USERFILE}!User@{User}}
+\doxysubsubsection{\texorpdfstring{USERFILE}{USERFILE}}
+{\footnotesize\ttfamily std\+::string User\+::\+USERFILE = \char`\"{}data/userdata.\+dat\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Path to userdata file. 
+
+
+
+Definition at line \mbox{\hyperlink{_user_8h_source_l00137}{137}} of file \mbox{\hyperlink{_user_8h_source}{User.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_user_abe917daaebdfb170900ae513c9289a66}{save\+User\+Data()}}, and \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{update\+User\+Data()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_user_8h}{User.\+h}}\item 
+\mbox{\hyperlink{_user_8cpp}{User.\+cpp}}\end{DoxyCompactItemize}

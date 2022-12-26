@@ -1,0 +1,1291 @@
+\hypertarget{class_a_i}{}\doxysection{AI Class Reference}
+\label{class_a_i}\index{AI@{AI}}
+
+
+This class will be the responsible for interpreting global commands requested from the main class and checking the proper functioning of the devices. Thus, it will be implemented by the main class and can\textquotesingle{}t live without \mbox{\hyperlink{class_device}{Device}} class. Will be settled by the builder.  
+
+
+
+
+{\ttfamily \#include $<$AI.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_i_a64ec60281e9eb8496f16525615db54b7}{AI}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new Automatic Interface ready for controlling device and main program status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{start\+Collecting\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Search for every \mbox{\hyperlink{class_data_device}{Data\+Device}} and fills all its data storage with measurements. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{refresh\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Refresh last data to every device built. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_a_i_af0e91e54ac652671696c09468852fc0b}{throw\+Demon}} ()
+\begin{DoxyCompactList}\small\item\em Throws a process-\/like demon, which will be updating the \mbox{\hyperlink{class_data_device}{Data\+Device}} measurements while waiting for key-\/interruption. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option}} (std\+::string opt, bool is\+Admin)
+\begin{DoxyCompactList}\small\item\em Requests an option from main settings interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+\mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aaffc8a08a3e6800f81274b492571a2b85}{TURNDEVICES}} = 1
+, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aacc4a7a1be2396dd1b0a48e25914b0340}{TURNSECURITY}} = 2
+, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa1101cdbeac60afa53571fe89f21206be}{CHECKSECURITY}} = 3
+, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa64bd4ef80b43028bace678901accc593}{MICROPHONE}} = 4
+, \newline
+\mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aad1b65f572b8e3c7a3883b294dd25988c}{FORCEERROR}} = 5
+, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa209622f88d7e3fc0fe2fa2ab06279a7c}{BUILDDEVICE}} = 6
+, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aae0bfbac80c8ccca565afe7cb46d34e43}{ADDUSER}} = 7
+, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aaf99665847d0f2cc4d777e38074c580f6}{REMOVEUSER}} = 8
+, \newline
+\mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa3232fa2a231f866016e3b0b95f08be22}{RETURNSECURITY}} = 9
+, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aada0270900a32c1c0cd2b3cb14f61d987}{FORCEBADALLOC}} = 10
+, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aae21507964d5d7a83729e7dda4b5b069a}{SHOWUSERS}} = 11
+, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aad5283fdef8c238fe3b05413e6a60dcf0}{MORE}} = 12
+, \newline
+\mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa9f3fbab34f44b8f55d57ad1bf6cb4809}{EXIT}} = -\/1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_a_i_a9722ff1c013e46c23bc3dd4b5af63bd6}{turn\+Devices}} ()
+\begin{DoxyCompactList}\small\item\em Turns all devices on/off. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_a_i_aab98da3e33b41549ee49ba3d7a1acc43}{turn\+Security}} ()
+\begin{DoxyCompactList}\small\item\em Turns all security on/off. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_a_i_addd22a78b4ec596e5ae9554113c6a2d1}{check\+Security}} ()
+\begin{DoxyCompactList}\small\item\em Checks and print current security status. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_a_i_a6c757fc5f3fbf43d6e512b4649479b16}{microphone}} ()
+\begin{DoxyCompactList}\small\item\em Sends a message using the microphone. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_a_i_a6984601bc3c2d65d1ef69c3b980ff8fa}{force\+Error}} ()
+\begin{DoxyCompactList}\small\item\em Forces an error in all Security devices. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_a_i_aeafba0fc07e4e9672930aa3341619679}{build\+Device}} ()
+\begin{DoxyCompactList}\small\item\em Calls the builder for starting a interface to build a new device in execution time. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_a_i_ae5372e8b0787403f2b10c5cd54e90946}{recover\+Security}} ()
+\begin{DoxyCompactList}\small\item\em Recover all security breaches to safe status. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_a_i_a2c5a9b991e7ac83f6a4c25f0e6c7b783}{add\+User}} ()
+\begin{DoxyCompactList}\small\item\em Calls \mbox{\hyperlink{class_user}{User}} class to add a new user. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_a_i_a86fe75fab41d558922b6333ea27e682d}{remove\+User}} ()
+\begin{DoxyCompactList}\small\item\em Calls \mbox{\hyperlink{class_user}{User}} class to remove a existing user. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_a_i_a50db01d117eb927ffad24144633e455b}{force\+Bad\+Alloc}} ()
+\begin{DoxyCompactList}\small\item\em Generates a bad\+\_\+alloc exception in a safe environment. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_a_i_aa77cc82f290d4386e12c978dcff385ab}{show\+All\+Users}} ()
+\begin{DoxyCompactList}\small\item\em Calls to print all users registered. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}{ensure\+Admin\+Access}} (bool is\+Admin)
+\item 
+static void \mbox{\hyperlink{class_a_i_a15e235a4a50d15f6f1c73a4ec9569552}{signal\+Handler}} (int signum)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_a_i_a143cbb790ccc9ae52046f8d3c5a3298f}{time\+\_\+counter}}
+\begin{DoxyCompactList}\small\item\em Used for counting number of time-\/stamps. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_a_i_a953a6cf9b2470503a8b09e1865052621}{TAG}} = \char`\"{}AI\char`\"{}
+\begin{DoxyCompactList}\small\item\em Name of class (for exception throwing) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_a_i_ad26945ece1d0c8f6268a945617363afd}{abort}} = false
+\begin{DoxyCompactList}\small\item\em Alerts if exit request has been detected. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_a_i_a95004d1450551f0941957cecc95a1b04}{MAX\+\_\+\+DATA}} = 30
+\begin{DoxyCompactList}\small\item\em Sets maximum of data/measurements collected from Data Devices. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}} = 1
+\begin{DoxyCompactList}\small\item\em Sets time to sleep between interactions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class will be the responsible for interpreting global commands requested from the main class and checking the proper functioning of the devices. Thus, it will be implemented by the main class and can\textquotesingle{}t live without \mbox{\hyperlink{class_device}{Device}} class. Will be settled by the builder. 
+
+Definition at line \mbox{\hyperlink{_a_i_8h_source_l00024}{24}} of file \mbox{\hyperlink{_a_i_8h_source}{AI.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798a}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798a}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum\hspace{0.3cm}{\ttfamily [private]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TURNDEVICES@{TURNDEVICES}!AI@{AI}}\index{AI@{AI}!TURNDEVICES@{TURNDEVICES}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aaffc8a08a3e6800f81274b492571a2b85}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aaffc8a08a3e6800f81274b492571a2b85}} 
+TURNDEVICES&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TURNSECURITY@{TURNSECURITY}!AI@{AI}}\index{AI@{AI}!TURNSECURITY@{TURNSECURITY}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aacc4a7a1be2396dd1b0a48e25914b0340}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aacc4a7a1be2396dd1b0a48e25914b0340}} 
+TURNSECURITY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHECKSECURITY@{CHECKSECURITY}!AI@{AI}}\index{AI@{AI}!CHECKSECURITY@{CHECKSECURITY}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa1101cdbeac60afa53571fe89f21206be}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa1101cdbeac60afa53571fe89f21206be}} 
+CHECKSECURITY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MICROPHONE@{MICROPHONE}!AI@{AI}}\index{AI@{AI}!MICROPHONE@{MICROPHONE}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa64bd4ef80b43028bace678901accc593}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa64bd4ef80b43028bace678901accc593}} 
+MICROPHONE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FORCEERROR@{FORCEERROR}!AI@{AI}}\index{AI@{AI}!FORCEERROR@{FORCEERROR}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aad1b65f572b8e3c7a3883b294dd25988c}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aad1b65f572b8e3c7a3883b294dd25988c}} 
+FORCEERROR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BUILDDEVICE@{BUILDDEVICE}!AI@{AI}}\index{AI@{AI}!BUILDDEVICE@{BUILDDEVICE}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa209622f88d7e3fc0fe2fa2ab06279a7c}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa209622f88d7e3fc0fe2fa2ab06279a7c}} 
+BUILDDEVICE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADDUSER@{ADDUSER}!AI@{AI}}\index{AI@{AI}!ADDUSER@{ADDUSER}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aae0bfbac80c8ccca565afe7cb46d34e43}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aae0bfbac80c8ccca565afe7cb46d34e43}} 
+ADDUSER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REMOVEUSER@{REMOVEUSER}!AI@{AI}}\index{AI@{AI}!REMOVEUSER@{REMOVEUSER}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aaf99665847d0f2cc4d777e38074c580f6}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aaf99665847d0f2cc4d777e38074c580f6}} 
+REMOVEUSER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RETURNSECURITY@{RETURNSECURITY}!AI@{AI}}\index{AI@{AI}!RETURNSECURITY@{RETURNSECURITY}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa3232fa2a231f866016e3b0b95f08be22}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa3232fa2a231f866016e3b0b95f08be22}} 
+RETURNSECURITY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FORCEBADALLOC@{FORCEBADALLOC}!AI@{AI}}\index{AI@{AI}!FORCEBADALLOC@{FORCEBADALLOC}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aada0270900a32c1c0cd2b3cb14f61d987}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aada0270900a32c1c0cd2b3cb14f61d987}} 
+FORCEBADALLOC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SHOWUSERS@{SHOWUSERS}!AI@{AI}}\index{AI@{AI}!SHOWUSERS@{SHOWUSERS}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aae21507964d5d7a83729e7dda4b5b069a}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aae21507964d5d7a83729e7dda4b5b069a}} 
+SHOWUSERS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MORE@{MORE}!AI@{AI}}\index{AI@{AI}!MORE@{MORE}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aad5283fdef8c238fe3b05413e6a60dcf0}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aad5283fdef8c238fe3b05413e6a60dcf0}} 
+MORE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXIT@{EXIT}!AI@{AI}}\index{AI@{AI}!EXIT@{EXIT}}}\mbox{\Hypertarget{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa9f3fbab34f44b8f55d57ad1bf6cb4809}\label{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa9f3fbab34f44b8f55d57ad1bf6cb4809}} 
+EXIT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_a_i_8h_source_l00066}{66}} of file \mbox{\hyperlink{_a_i_8h_source}{AI.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00066          \{}
+\DoxyCodeLine{00067         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aaffc8a08a3e6800f81274b492571a2b85}{TURNDEVICES}} = 1,}
+\DoxyCodeLine{00068         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aacc4a7a1be2396dd1b0a48e25914b0340}{TURNSECURITY}} = 2,}
+\DoxyCodeLine{00069         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa1101cdbeac60afa53571fe89f21206be}{CHECKSECURITY}} = 3,}
+\DoxyCodeLine{00070         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa64bd4ef80b43028bace678901accc593}{MICROPHONE}} = 4,}
+\DoxyCodeLine{00071         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aad1b65f572b8e3c7a3883b294dd25988c}{FORCEERROR}} = 5,}
+\DoxyCodeLine{00072         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa209622f88d7e3fc0fe2fa2ab06279a7c}{BUILDDEVICE}} = 6,}
+\DoxyCodeLine{00073         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aae0bfbac80c8ccca565afe7cb46d34e43}{ADDUSER}} = 7,}
+\DoxyCodeLine{00074         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aaf99665847d0f2cc4d777e38074c580f6}{REMOVEUSER}} = 8,}
+\DoxyCodeLine{00075         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa3232fa2a231f866016e3b0b95f08be22}{RETURNSECURITY}} = 9,}
+\DoxyCodeLine{00076         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aada0270900a32c1c0cd2b3cb14f61d987}{FORCEBADALLOC}} = 10,}
+\DoxyCodeLine{00077         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aae21507964d5d7a83729e7dda4b5b069a}{SHOWUSERS}} = 11,}
+\DoxyCodeLine{00078         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aad5283fdef8c238fe3b05413e6a60dcf0}{MORE}} = 12,}
+\DoxyCodeLine{00079         \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa9f3fbab34f44b8f55d57ad1bf6cb4809}{EXIT}} = -\/1}
+\DoxyCodeLine{00080     \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_a_i_a64ec60281e9eb8496f16525615db54b7}\label{class_a_i_a64ec60281e9eb8496f16525615db54b7}} 
+\index{AI@{AI}!AI@{AI}}
+\index{AI@{AI}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{AI()}{AI()}}
+{\footnotesize\ttfamily AI\+::\+AI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a new Automatic Interface ready for controlling device and main program status. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025        \{}
+\DoxyCodeLine{00026     this-\/>\mbox{\hyperlink{class_a_i_a143cbb790ccc9ae52046f8d3c5a3298f}{time\_counter}} = 0;}
+\DoxyCodeLine{00027     signal(SIGINT, \mbox{\hyperlink{class_a_i_a15e235a4a50d15f6f1c73a4ec9569552}{signalHandler}});}
+\DoxyCodeLine{00028 }
+\DoxyCodeLine{00029 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_a_i_a15e235a4a50d15f6f1c73a4ec9569552}{signal\+Handler()}}, and \mbox{\hyperlink{class_a_i_a143cbb790ccc9ae52046f8d3c5a3298f}{time\+\_\+counter}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_a_i_a2c5a9b991e7ac83f6a4c25f0e6c7b783}\label{class_a_i_a2c5a9b991e7ac83f6a4c25f0e6c7b783}} 
+\index{AI@{AI}!addUser@{addUser}}
+\index{addUser@{addUser}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily void AI\+::add\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Calls \mbox{\hyperlink{class_user}{User}} class to add a new user. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00455}{455}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00455                  \{}
+\DoxyCodeLine{00456 }
+\DoxyCodeLine{00457     \textcolor{keywordtype}{int} user, password;}
+\DoxyCodeLine{00458     \textcolor{keywordtype}{bool} isAdmin;}
+\DoxyCodeLine{00459     std::string entry;}
+\DoxyCodeLine{00460 }
+\DoxyCodeLine{00461     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[AI] Insert a NIF id: "{}});}
+\DoxyCodeLine{00462     std::getline(std::cin, entry);}
+\DoxyCodeLine{00463 }
+\DoxyCodeLine{00464     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00465         user = std::stoi(entry);}
+\DoxyCodeLine{00466     \}\textcolor{keywordflow}{catch} (std::exception e)\{}
+\DoxyCodeLine{00467         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[AI] Input not valid"{}});}
+\DoxyCodeLine{00468         sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00469         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00470     \}}
+\DoxyCodeLine{00471 }
+\DoxyCodeLine{00472     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[AI] Insert a password: "{}});}
+\DoxyCodeLine{00473 }
+\DoxyCodeLine{00474     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00475         password = std::stoi(entry);}
+\DoxyCodeLine{00476     \}\textcolor{keywordflow}{catch} (std::exception e) \{}
+\DoxyCodeLine{00477         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[AI] Input not valid"{}});}
+\DoxyCodeLine{00478         sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00479         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00480     \}}
+\DoxyCodeLine{00481 }
+\DoxyCodeLine{00482     std::getline(std::cin, entry);}
+\DoxyCodeLine{00483     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{00484         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[AI] Give the user Admin Status? [y/n]: "{}});}
+\DoxyCodeLine{00485         std::getline(std::cin, entry);}
+\DoxyCodeLine{00486     \}\textcolor{keywordflow}{while}(entry!= \textcolor{stringliteral}{"{}y"{}} \&\& entry!= \textcolor{stringliteral}{"{}n"{}});}
+\DoxyCodeLine{00487 }
+\DoxyCodeLine{00488     isAdmin = (entry == \textcolor{stringliteral}{"{}y"{}} ? 1 : 0);}
+\DoxyCodeLine{00489     \mbox{\hyperlink{class_user_a932abf8dc4bdbdef3dbd05c3d3852c99}{User::addUser}}(user,password,isAdmin);}
+\DoxyCodeLine{00490 }
+\DoxyCodeLine{00491 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_a932abf8dc4bdbdef3dbd05c3d3852c99}{User\+::add\+User()}}, \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, and \mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option()}}.
+
+\mbox{\Hypertarget{class_a_i_aeafba0fc07e4e9672930aa3341619679}\label{class_a_i_aeafba0fc07e4e9672930aa3341619679}} 
+\index{AI@{AI}!buildDevice@{buildDevice}}
+\index{buildDevice@{buildDevice}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{buildDevice()}{buildDevice()}}
+{\footnotesize\ttfamily void AI\+::build\+Device (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Calls the builder for starting a interface to build a new device in execution time. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00382}{382}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00382                     \{}
+\DoxyCodeLine{00383 }
+\DoxyCodeLine{00384     \mbox{\hyperlink{class_simple_display_a91da6e765d3f4349240194e2e268b1d0}{SimpleDisplay::execBuildName}}();}
+\DoxyCodeLine{00385     std::string name;}
+\DoxyCodeLine{00386     std::getline(std::cin,name);}
+\DoxyCodeLine{00387     \textcolor{keywordflow}{if} (name == \textcolor{stringliteral}{"{}EXIT"{}}) \{}
+\DoxyCodeLine{00388 }
+\DoxyCodeLine{00389         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)n[AI] Exit Request"{}});}
+\DoxyCodeLine{00390         sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00391         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00392     \}}
+\DoxyCodeLine{00393 }
+\DoxyCodeLine{00394     \mbox{\hyperlink{class_simple_display_a112ad45d06da44267343a37276f4aa17}{SimpleDisplay::execBuildType}}();}
+\DoxyCodeLine{00395     std::string type;}
+\DoxyCodeLine{00396     std::getline(std::cin,type);}
+\DoxyCodeLine{00397 }
+\DoxyCodeLine{00398     \textcolor{keywordflow}{if} (type != \textcolor{stringliteral}{"{}data"{}} \&\& type != \textcolor{stringliteral}{"{}kernel"{}})\{}
+\DoxyCodeLine{00399         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)n[AI] Exit Request"{}});}
+\DoxyCodeLine{00400         sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00401         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00402     \}}
+\DoxyCodeLine{00403 }
+\DoxyCodeLine{00404     std::string generator;}
+\DoxyCodeLine{00405     \textcolor{keywordflow}{if} (type == \textcolor{stringliteral}{"{}data"{}})\{}
+\DoxyCodeLine{00406         \mbox{\hyperlink{class_simple_display_a220e9af564e883034f02c3344d6321d0}{SimpleDisplay::execBuildGenerator}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{00407         std::getline(std::cin,generator);}
+\DoxyCodeLine{00408     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00409         \mbox{\hyperlink{class_simple_display_a220e9af564e883034f02c3344d6321d0}{SimpleDisplay::execBuildGenerator}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{00410         std::getline(std::cin,generator);}
+\DoxyCodeLine{00411     \}}
+\DoxyCodeLine{00412 }
+\DoxyCodeLine{00413     \mbox{\hyperlink{class_simple_display_ad1a76c9c3462a34f7b26ade30ccce0ec}{SimpleDisplay::execBuildFinish}}();}
+\DoxyCodeLine{00414     sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}*2);}
+\DoxyCodeLine{00415     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[AI] Testing Building...\(\backslash\)n"{}});}
+\DoxyCodeLine{00416     sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}*2);}
+\DoxyCodeLine{00417     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[AI] Testing Device...\(\backslash\)n"{}});}
+\DoxyCodeLine{00418     sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}*2);}
+\DoxyCodeLine{00419 }
+\DoxyCodeLine{00420     \mbox{\hyperlink{class_device_builder_a5eb22cda3529194fb6e5adce9489ded1}{DeviceBuilder::clearAll}}();}
+\DoxyCodeLine{00421     \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* newDevice = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(name);}
+\DoxyCodeLine{00422     \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{DataDevice::numSensors}} = 0;}
+\DoxyCodeLine{00423     \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{KernelDevice::numKerns}} = 0;}
+\DoxyCodeLine{00424     \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{Device::numDevices}} = 0;}
+\DoxyCodeLine{00425     \textcolor{keywordflow}{if} (type == \textcolor{stringliteral}{"{}data"{}})\{}
+\DoxyCodeLine{00426         (*newDevice).setAsDataDevice();}
+\DoxyCodeLine{00427         (*newDevice).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{00428         \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{DeviceBuilder::buildAllDevices}}();}
+\DoxyCodeLine{00429     \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00430         (*newDevice).setAsKernelDevice();}
+\DoxyCodeLine{00431         (*newDevice).setSecurityGenerator(\mbox{\hyperlink{example_security_dataset_8cpp_aab06fa4565c1b10f5d1ea5f165340300}{exampleTest}});}
+\DoxyCodeLine{00432         \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{DeviceBuilder::buildAllDevices}}();}
+\DoxyCodeLine{00433 }
+\DoxyCodeLine{00434     \}}
+\DoxyCodeLine{00435     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[AI] Building SUCCESS\(\backslash\)n"{}});}
+\DoxyCodeLine{00436     std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nPress ENTER to start"{}};}
+\DoxyCodeLine{00437     std::cin.get();}
+\DoxyCodeLine{00438     std::cin.clear();}
+\DoxyCodeLine{00439 }
+\DoxyCodeLine{00440 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{Device\+Builder\+::build\+All\+Devices()}}, \mbox{\hyperlink{class_device_builder_a5eb22cda3529194fb6e5adce9489ded1}{Device\+Builder\+::clear\+All()}}, \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{example_security_dataset_8cpp_aab06fa4565c1b10f5d1ea5f165340300}{example\+Test()}}, \mbox{\hyperlink{class_simple_display_ad1a76c9c3462a34f7b26ade30ccce0ec}{Simple\+Display\+::exec\+Build\+Finish()}}, \mbox{\hyperlink{class_simple_display_a220e9af564e883034f02c3344d6321d0}{Simple\+Display\+::exec\+Build\+Generator()}}, \mbox{\hyperlink{class_simple_display_a91da6e765d3f4349240194e2e268b1d0}{Simple\+Display\+::exec\+Build\+Name()}}, \mbox{\hyperlink{class_simple_display_a112ad45d06da44267343a37276f4aa17}{Simple\+Display\+::exec\+Build\+Type()}}, \mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generate\+Random\+Data()}}, \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{Device\+::num\+Devices}}, \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{Kernel\+Device\+::num\+Kerns}}, \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{Data\+Device\+::num\+Sensors}}, and \mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option()}}.
+
+\mbox{\Hypertarget{class_a_i_addd22a78b4ec596e5ae9554113c6a2d1}\label{class_a_i_addd22a78b4ec596e5ae9554113c6a2d1}} 
+\index{AI@{AI}!checkSecurity@{checkSecurity}}
+\index{checkSecurity@{checkSecurity}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{checkSecurity()}{checkSecurity()}}
+{\footnotesize\ttfamily void AI\+::check\+Security (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Checks and print current security status. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00319}{319}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00319                       \{}
+\DoxyCodeLine{00320 }
+\DoxyCodeLine{00321     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{KernelDevice::numKerns}}; i++) \{}
+\DoxyCodeLine{00322 }
+\DoxyCodeLine{00323         \textcolor{comment}{// Acessing Device}}
+\DoxyCodeLine{00324         \mbox{\hyperlink{class_kernel_device}{KernelDevice}}* k = \&\mbox{\hyperlink{class_kernel_device_a31294b124e12af14435dc0a2c5b8d168}{KernelDevice::allKernelDevices}}[i];}
+\DoxyCodeLine{00325 }
+\DoxyCodeLine{00326         \textcolor{comment}{// Displaying chart}}
+\DoxyCodeLine{00327         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[AI] ["{}} + k-\/>\mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{getName}}() + \textcolor{stringliteral}{"{}] "{}});}
+\DoxyCodeLine{00328 }
+\DoxyCodeLine{00329         \textcolor{keywordflow}{if} (\string~*(k))}
+\DoxyCodeLine{00330             \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[RUNNING]: "{}});}
+\DoxyCodeLine{00331         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00332             \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[DISCONNECTED]: "{}});}
+\DoxyCodeLine{00333 }
+\DoxyCodeLine{00334         \textcolor{keywordflow}{if} (!k-\/>\mbox{\hyperlink{class_kernel_device_abed622ff7f34cfef1084789717783382}{securityHasBeenBroken}})}
+\DoxyCodeLine{00335             \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Security status correct"{}});}
+\DoxyCodeLine{00336         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00337             \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[WARNING] Security FAILURE! Please check the logs."{}});}
+\DoxyCodeLine{00338 }
+\DoxyCodeLine{00339         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{00340 }
+\DoxyCodeLine{00341     \}}
+\DoxyCodeLine{00342     \textcolor{comment}{// -\/-\/-\/-\/-\/ Exiting... -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00343     std::string none;}
+\DoxyCodeLine{00344     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Press ENTER to continue"{}});}
+\DoxyCodeLine{00345     getline(std::cin,none);}
+\DoxyCodeLine{00346 }
+\DoxyCodeLine{00347 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_kernel_device_a31294b124e12af14435dc0a2c5b8d168}{Kernel\+Device\+::all\+Kernel\+Devices}}, \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{Device\+::get\+Name()}}, \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{Kernel\+Device\+::num\+Kerns}}, and \mbox{\hyperlink{class_kernel_device_abed622ff7f34cfef1084789717783382}{Kernel\+Device\+::security\+Has\+Been\+Broken}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option()}}.
+
+\mbox{\Hypertarget{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}\label{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}} 
+\index{AI@{AI}!ensureAdminAccess@{ensureAdminAccess}}
+\index{ensureAdminAccess@{ensureAdminAccess}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{ensureAdminAccess()}{ensureAdminAccess()}}
+{\footnotesize\ttfamily void AI\+::ensure\+Admin\+Access (\begin{DoxyParamCaption}\item[{bool}]{is\+Admin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Ensures Administrator Access to a function 
+\begin{DoxyParams}{Parameters}
+{\em is\+Admin} & previous status of user. (True) is \mbox{\hyperlink{class_admin}{Admin}}. False (is Guest). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{class_insufficient_permissions_exception}{Insufficient\+Permissions\+Exception}}} & Administrator Authentication Failed \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00240}{240}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00240                                        \{}
+\DoxyCodeLine{00241 }
+\DoxyCodeLine{00242     \textcolor{comment}{// -\/-\/-\/-\/-\/ Checking Admin Status -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00243     \textcolor{keywordflow}{if} (!isAdmin) \{}
+\DoxyCodeLine{00244         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}THIS ACTION REQUIRES ADMINISTRATOR ACCESS"{}});}
+\DoxyCodeLine{00245         sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}*2);}
+\DoxyCodeLine{00246         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_insufficient_permissions_exception}{InsufficientPermissionsException}}(\mbox{\hyperlink{class_a_i_a953a6cf9b2470503a8b09e1865052621}{TAG}});}
+\DoxyCodeLine{00247     \}}
+\DoxyCodeLine{00248 }
+\DoxyCodeLine{00249     \textcolor{comment}{// -\/-\/-\/-\/-\/ Entering a console and requesting password -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00250     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00251         std::string message;}
+\DoxyCodeLine{00252         \mbox{\hyperlink{class_simple_display_a8d7f14925d270c3e1d7ad5bbbdfc8d34}{SimpleDisplay::printRequestPassword}}();}
+\DoxyCodeLine{00253         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Keyboard: "{}});}
+\DoxyCodeLine{00254         std::getline(std::cin,message);}
+\DoxyCodeLine{00255 }
+\DoxyCodeLine{00256         \textcolor{comment}{// Checking input}}
+\DoxyCodeLine{00257         \textcolor{keywordflow}{if} (message != \textcolor{stringliteral}{"{}0"{}})}
+\DoxyCodeLine{00258             \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_insufficient_permissions_exception}{InsufficientPermissionsException}}(\mbox{\hyperlink{class_a_i_a953a6cf9b2470503a8b09e1865052621}{TAG}});}
+\DoxyCodeLine{00259 }
+\DoxyCodeLine{00260         \textcolor{comment}{// Invalid Input}}
+\DoxyCodeLine{00261         \}\textcolor{keywordflow}{catch}(std::exception e)\{}
+\DoxyCodeLine{00262 }
+\DoxyCodeLine{00263             \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}INVALID PASSWORD"{}});}
+\DoxyCodeLine{00264             sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00265             \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_insufficient_permissions_exception}{InsufficientPermissionsException}}(\mbox{\hyperlink{class_a_i_a953a6cf9b2470503a8b09e1865052621}{TAG}});}
+\DoxyCodeLine{00266         \}}
+\DoxyCodeLine{00267 }
+\DoxyCodeLine{00268 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{class_simple_display_a8d7f14925d270c3e1d7ad5bbbdfc8d34}{Simple\+Display\+::print\+Request\+Password()}}, \mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}, and \mbox{\hyperlink{class_a_i_a953a6cf9b2470503a8b09e1865052621}{TAG}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option()}}.
+
+\mbox{\Hypertarget{class_a_i_a50db01d117eb927ffad24144633e455b}\label{class_a_i_a50db01d117eb927ffad24144633e455b}} 
+\index{AI@{AI}!forceBadAlloc@{forceBadAlloc}}
+\index{forceBadAlloc@{forceBadAlloc}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{forceBadAlloc()}{forceBadAlloc()}}
+{\footnotesize\ttfamily void AI\+::force\+Bad\+Alloc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Generates a bad\+\_\+alloc exception in a safe environment. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00516}{516}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00516                        \{}
+\DoxyCodeLine{00517 }
+\DoxyCodeLine{00518     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)nBuilding Secure Environment..."{}});}
+\DoxyCodeLine{00519     sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00520     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)nGenerating Error..."{}});}
+\DoxyCodeLine{00521     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00522         std::vector<int> vector;}
+\DoxyCodeLine{00523         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i > -\/1; i++)}
+\DoxyCodeLine{00524             vector.push\_back(i);}
+\DoxyCodeLine{00525     \}\textcolor{keywordflow}{catch}(std::exception \&e) \{}
+\DoxyCodeLine{00526         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)n[WARNING] Environment Failure: \(\backslash\)n-\/> what(): "{}});}
+\DoxyCodeLine{00527         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(e.what());}
+\DoxyCodeLine{00528         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)nReturning..."{}});}
+\DoxyCodeLine{00529         sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}*4);}
+\DoxyCodeLine{00530     \}}
+\DoxyCodeLine{00531 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, and \mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option()}}.
+
+\mbox{\Hypertarget{class_a_i_a6984601bc3c2d65d1ef69c3b980ff8fa}\label{class_a_i_a6984601bc3c2d65d1ef69c3b980ff8fa}} 
+\index{AI@{AI}!forceError@{forceError}}
+\index{forceError@{forceError}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{forceError()}{forceError()}}
+{\footnotesize\ttfamily void AI\+::force\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Forces an error in all Security devices. 
+
+\begin{DoxyNote}{Note}
+Error can be restored with \mbox{\hyperlink{class_a_i_ae5372e8b0787403f2b10c5cd54e90946}{recover\+Security()}} 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00369}{369}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00369                    \{}
+\DoxyCodeLine{00370 }
+\DoxyCodeLine{00371     \mbox{\hyperlink{class_simple_display_af2b09a4dca2dd2e9c8162d7e74c9b529}{SimpleDisplay::printAIInterface}}();}
+\DoxyCodeLine{00372     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Forcing FAILURE in all security devices"{}});}
+\DoxyCodeLine{00373 }
+\DoxyCodeLine{00374     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{KernelDevice::numKerns}}; i++) \{}
+\DoxyCodeLine{00375         \mbox{\hyperlink{class_kernel_device_a31294b124e12af14435dc0a2c5b8d168}{KernelDevice::allKernelDevices}}[i].\mbox{\hyperlink{class_kernel_device_abed622ff7f34cfef1084789717783382}{securityHasBeenBroken}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00376     \}}
+\DoxyCodeLine{00377     \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{SimpleDisplay::currentDisplay}}-\/>\mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{setSecurityStatus}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{00378 }
+\DoxyCodeLine{00379     sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}*2);}
+\DoxyCodeLine{00380 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_kernel_device_a31294b124e12af14435dc0a2c5b8d168}{Kernel\+Device\+::all\+Kernel\+Devices}}, \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{Simple\+Display\+::current\+Display}}, \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{Kernel\+Device\+::num\+Kerns}}, \mbox{\hyperlink{class_simple_display_af2b09a4dca2dd2e9c8162d7e74c9b529}{Simple\+Display\+::print\+AIInterface()}}, \mbox{\hyperlink{class_kernel_device_abed622ff7f34cfef1084789717783382}{Kernel\+Device\+::security\+Has\+Been\+Broken}}, \mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{Simple\+Display\+::set\+Security\+Status()}}, and \mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option()}}.
+
+\mbox{\Hypertarget{class_a_i_a6c757fc5f3fbf43d6e512b4649479b16}\label{class_a_i_a6c757fc5f3fbf43d6e512b4649479b16}} 
+\index{AI@{AI}!microphone@{microphone}}
+\index{microphone@{microphone}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{microphone()}{microphone()}}
+{\footnotesize\ttfamily void AI\+::microphone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Sends a message using the microphone. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00349}{349}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00349                    \{}
+\DoxyCodeLine{00350 }
+\DoxyCodeLine{00351 }
+\DoxyCodeLine{00352     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00353         std::string message;}
+\DoxyCodeLine{00354 }
+\DoxyCodeLine{00355         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)nEnter a message: "{}});}
+\DoxyCodeLine{00356         getline(std::cin, message);}
+\DoxyCodeLine{00357 }
+\DoxyCodeLine{00358         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[AI] SENDING MESSAGE:\(\backslash\)n"{}});}
+\DoxyCodeLine{00359         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}|| -\/> "{}} + message);}
+\DoxyCodeLine{00360 }
+\DoxyCodeLine{00361         sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00362 }
+\DoxyCodeLine{00363     \}\textcolor{keywordflow}{catch} (std::exception \&e)\{}
+\DoxyCodeLine{00364         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Input not valid"{}});}
+\DoxyCodeLine{00365     \}}
+\DoxyCodeLine{00366 }
+\DoxyCodeLine{00367 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, and \mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option()}}.
+
+\mbox{\Hypertarget{class_a_i_ae5372e8b0787403f2b10c5cd54e90946}\label{class_a_i_ae5372e8b0787403f2b10c5cd54e90946}} 
+\index{AI@{AI}!recoverSecurity@{recoverSecurity}}
+\index{recoverSecurity@{recoverSecurity}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{recoverSecurity()}{recoverSecurity()}}
+{\footnotesize\ttfamily void AI\+::recover\+Security (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Recover all security breaches to safe status. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00442}{442}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00442                          \{}
+\DoxyCodeLine{00443 }
+\DoxyCodeLine{00444     \mbox{\hyperlink{class_simple_display_af2b09a4dca2dd2e9c8162d7e74c9b529}{SimpleDisplay::printAIInterface}}();}
+\DoxyCodeLine{00445     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Recovering all Devices to Secure Status..."{}});}
+\DoxyCodeLine{00446 }
+\DoxyCodeLine{00447     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{KernelDevice::numKerns}}; i++) \{}
+\DoxyCodeLine{00448         \mbox{\hyperlink{class_kernel_device_a31294b124e12af14435dc0a2c5b8d168}{KernelDevice::allKernelDevices}}[i].\mbox{\hyperlink{class_kernel_device_abed622ff7f34cfef1084789717783382}{securityHasBeenBroken}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{00449     \}}
+\DoxyCodeLine{00450     \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{SimpleDisplay::currentDisplay}}-\/>\mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{setSecurityStatus}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{00451 }
+\DoxyCodeLine{00452     sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}*2);}
+\DoxyCodeLine{00453 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_kernel_device_a31294b124e12af14435dc0a2c5b8d168}{Kernel\+Device\+::all\+Kernel\+Devices}}, \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{Simple\+Display\+::current\+Display}}, \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{Kernel\+Device\+::num\+Kerns}}, \mbox{\hyperlink{class_simple_display_af2b09a4dca2dd2e9c8162d7e74c9b529}{Simple\+Display\+::print\+AIInterface()}}, \mbox{\hyperlink{class_kernel_device_abed622ff7f34cfef1084789717783382}{Kernel\+Device\+::security\+Has\+Been\+Broken}}, \mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{Simple\+Display\+::set\+Security\+Status()}}, and \mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option()}}.
+
+\mbox{\Hypertarget{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}\label{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}} 
+\index{AI@{AI}!refreshData@{refreshData}}
+\index{refreshData@{refreshData}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{refreshData()}{refreshData()}}
+{\footnotesize\ttfamily void AI\+::refresh\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Refresh last data to every device built. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00052}{52}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00052                      \{}
+\DoxyCodeLine{00053 }
+\DoxyCodeLine{00054     \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00055     \textcolor{keywordtype}{int} numDevices = \mbox{\hyperlink{class_data_device_a4499875b3c1a52ce8bbaf5f3c7de9e05}{DataDevice::getNumSensors}}();}
+\DoxyCodeLine{00056 }
+\DoxyCodeLine{00057     \textcolor{comment}{// -\/-\/-\/-\/-\/ Refreshing every data device one time -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00058     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{DataDevice::numSensors}}; i++) \{}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{00060         \mbox{\hyperlink{class_data_device}{DataDevice}}* target = \&\mbox{\hyperlink{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}{DataDevice::allDataDevices}}[i];}
+\DoxyCodeLine{00061 }
+\DoxyCodeLine{00062         \textcolor{comment}{// Check if it's active}}
+\DoxyCodeLine{00063         \textcolor{keywordflow}{if} (!\string~(*target)) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00064 }
+\DoxyCodeLine{00065         \textcolor{comment}{// Check if it is full}}
+\DoxyCodeLine{00066         \textcolor{keywordflow}{if} (target-\/>\mbox{\hyperlink{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}{collectedData}}.size() >= \mbox{\hyperlink{class_a_i_a95004d1450551f0941957cecc95a1b04}{MAX\_DATA}}) \{}
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068             \textcolor{comment}{// Remove oldest measurement}}
+\DoxyCodeLine{00069             target-\/>\mbox{\hyperlink{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}{collectedData}}.erase(target-\/>\mbox{\hyperlink{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}{collectedData}}.begin());}
+\DoxyCodeLine{00070 }
+\DoxyCodeLine{00071             \textcolor{comment}{// Remove oldest time}}
+\DoxyCodeLine{00072             target-\/>\mbox{\hyperlink{class_data_device_abd297afb59478d7f7e39825143be7b34}{collectedTimes}}.erase(target-\/>\mbox{\hyperlink{class_data_device_abd297afb59478d7f7e39825143be7b34}{collectedTimes}}.begin());}
+\DoxyCodeLine{00073 }
+\DoxyCodeLine{00074         \}}
+\DoxyCodeLine{00075         \textcolor{comment}{// Append new measurement and time}}
+\DoxyCodeLine{00076         target-\/>\mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{appendNewData}}();}
+\DoxyCodeLine{00077     \}}
+\DoxyCodeLine{00078 }
+\DoxyCodeLine{00079     \textcolor{comment}{// -\/-\/-\/-\/-\/ Refreshing every kernel device one time -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00080     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{KernelDevice::numKerns}}; i++) \{}
+\DoxyCodeLine{00081 }
+\DoxyCodeLine{00082         \mbox{\hyperlink{class_kernel_device}{KernelDevice}}* k = \&\mbox{\hyperlink{class_kernel_device_a31294b124e12af14435dc0a2c5b8d168}{KernelDevice::allKernelDevices}}[i];}
+\DoxyCodeLine{00083         \textcolor{comment}{// Check if it's active}}
+\DoxyCodeLine{00084         \textcolor{keywordflow}{if} (!\string~(*k)) \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00085 }
+\DoxyCodeLine{00086         \textcolor{keywordflow}{if} (!(*k).securityGenerator() || k-\/>\mbox{\hyperlink{class_kernel_device_abed622ff7f34cfef1084789717783382}{securityHasBeenBroken}}) \{}
+\DoxyCodeLine{00087             k-\/>\mbox{\hyperlink{class_kernel_device_abed622ff7f34cfef1084789717783382}{securityHasBeenBroken}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00088             \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{SimpleDisplay::currentDisplay}}-\/>\mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{setSecurityStatus}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{00089         \}}
+\DoxyCodeLine{00090     \}}
+\DoxyCodeLine{00091 }
+\DoxyCodeLine{00092 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}{Data\+Device\+::all\+Data\+Devices}}, \mbox{\hyperlink{class_kernel_device_a31294b124e12af14435dc0a2c5b8d168}{Kernel\+Device\+::all\+Kernel\+Devices}}, \mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{Data\+Device\+::append\+New\+Data()}}, \mbox{\hyperlink{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}{Data\+Device\+::collected\+Data}}, \mbox{\hyperlink{class_data_device_abd297afb59478d7f7e39825143be7b34}{Data\+Device\+::collected\+Times}}, \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{Simple\+Display\+::current\+Display}}, \mbox{\hyperlink{class_data_device_a4499875b3c1a52ce8bbaf5f3c7de9e05}{Data\+Device\+::get\+Num\+Sensors()}}, \mbox{\hyperlink{class_a_i_a95004d1450551f0941957cecc95a1b04}{MAX\+\_\+\+DATA}}, \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{Kernel\+Device\+::num\+Kerns}}, \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{Data\+Device\+::num\+Sensors}}, \mbox{\hyperlink{class_kernel_device_abed622ff7f34cfef1084789717783382}{Kernel\+Device\+::security\+Has\+Been\+Broken}}, and \mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{Simple\+Display\+::set\+Security\+Status()}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}, and \mbox{\hyperlink{class_a_i_af0e91e54ac652671696c09468852fc0b}{throw\+Demon()}}.
+
+\mbox{\Hypertarget{class_a_i_a86fe75fab41d558922b6333ea27e682d}\label{class_a_i_a86fe75fab41d558922b6333ea27e682d}} 
+\index{AI@{AI}!removeUser@{removeUser}}
+\index{removeUser@{removeUser}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{removeUser()}{removeUser()}}
+{\footnotesize\ttfamily void AI\+::remove\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Calls \mbox{\hyperlink{class_user}{User}} class to remove a existing user. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00493}{493}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00493                     \{}
+\DoxyCodeLine{00494 }
+\DoxyCodeLine{00495     std::string id, confirmation;}
+\DoxyCodeLine{00496 }
+\DoxyCodeLine{00497     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}["{}} + \mbox{\hyperlink{class_a_i_a953a6cf9b2470503a8b09e1865052621}{TAG}} + \textcolor{stringliteral}{"{}] Insert the id of the user to be removed: "{}});}
+\DoxyCodeLine{00498     std::getline(std::cin,\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00499     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{00500         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}["{}} + \mbox{\hyperlink{class_a_i_a953a6cf9b2470503a8b09e1865052621}{TAG}} + \textcolor{stringliteral}{"{}] Are you sure to remove "{}} + \textcolor{keywordtype}{id}}
+\DoxyCodeLine{00501         + \textcolor{stringliteral}{"{} from the User list?\(\backslash\)nThis can't be undone [y/n]:"{}});}
+\DoxyCodeLine{00502         std::getline(std::cin,confirmation);}
+\DoxyCodeLine{00503     \}\textcolor{keywordflow}{while}(confirmation != \textcolor{stringliteral}{"{}y"{}} \&\& confirmation != \textcolor{stringliteral}{"{}n"{}});}
+\DoxyCodeLine{00504 }
+\DoxyCodeLine{00505     \textcolor{keywordflow}{if} (confirmation == \textcolor{stringliteral}{"{}y"{}}) \{}
+\DoxyCodeLine{00506         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00507             \mbox{\hyperlink{class_user_a68388c89a91732660b3fb4c602fa55c0}{User::rmUser}}(std::stoi(\textcolor{keywordtype}{id}));}
+\DoxyCodeLine{00508         \} \textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_invalid_user_exception}{InvalidUserException}} \&e) \{}
+\DoxyCodeLine{00509             \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}["{}} + \mbox{\hyperlink{class_a_i_a953a6cf9b2470503a8b09e1865052621}{TAG}} + \textcolor{stringliteral}{"{}] User requested not found"{}});}
+\DoxyCodeLine{00510         \}}
+\DoxyCodeLine{00511     \}}
+\DoxyCodeLine{00512     sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00513 }
+\DoxyCodeLine{00514 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{class_user_a68388c89a91732660b3fb4c602fa55c0}{User\+::rm\+User()}}, \mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}, and \mbox{\hyperlink{class_a_i_a953a6cf9b2470503a8b09e1865052621}{TAG}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option()}}.
+
+\mbox{\Hypertarget{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}\label{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}} 
+\index{AI@{AI}!requestOption@{requestOption}}
+\index{requestOption@{requestOption}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{requestOption()}{requestOption()}}
+{\footnotesize\ttfamily void AI\+::request\+Option (\begin{DoxyParamCaption}\item[{std\+::string}]{opt,  }\item[{bool}]{is\+Admin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Requests an option from main settings interface. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em opt} & Option to select \\
+\hline
+{\em is\+Admin} & \mbox{\hyperlink{class_admin}{Admin}} status of current user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00134}{134}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00134                                                   \{}
+\DoxyCodeLine{00135     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00136         \textcolor{keywordtype}{int} num = atoi(opt.c\_str());}
+\DoxyCodeLine{00137 }
+\DoxyCodeLine{00138         \textcolor{keywordflow}{switch} (num) \{}
+\DoxyCodeLine{00139 }
+\DoxyCodeLine{00140             \textcolor{keywordflow}{case} \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aaffc8a08a3e6800f81274b492571a2b85}{TURNDEVICES}}:}
+\DoxyCodeLine{00141                 \mbox{\hyperlink{class_a_i_a9722ff1c013e46c23bc3dd4b5af63bd6}{turnDevices}}();}
+\DoxyCodeLine{00142                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00143 }
+\DoxyCodeLine{00144             \textcolor{keywordflow}{case} \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aacc4a7a1be2396dd1b0a48e25914b0340}{TURNSECURITY}}:}
+\DoxyCodeLine{00145                 \mbox{\hyperlink{class_a_i_aab98da3e33b41549ee49ba3d7a1acc43}{turnSecurity}}();}
+\DoxyCodeLine{00146                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00147 }
+\DoxyCodeLine{00148             \textcolor{keywordflow}{case} \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa1101cdbeac60afa53571fe89f21206be}{CHECKSECURITY}}:}
+\DoxyCodeLine{00149                 \mbox{\hyperlink{class_a_i_addd22a78b4ec596e5ae9554113c6a2d1}{checkSecurity}}();}
+\DoxyCodeLine{00150                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00151 }
+\DoxyCodeLine{00152             \textcolor{keywordflow}{case} \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa64bd4ef80b43028bace678901accc593}{MICROPHONE}}:}
+\DoxyCodeLine{00153                 \mbox{\hyperlink{class_a_i_a6c757fc5f3fbf43d6e512b4649479b16}{microphone}}();}
+\DoxyCodeLine{00154                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00155 }
+\DoxyCodeLine{00156             \textcolor{keywordflow}{case} \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aad1b65f572b8e3c7a3883b294dd25988c}{FORCEERROR}}: \{}
+\DoxyCodeLine{00157                 \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00158                     \mbox{\hyperlink{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}{AI::ensureAdminAccess}}(isAdmin);}
+\DoxyCodeLine{00159                 \}\textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_insufficient_permissions_exception}{InsufficientPermissionsException}} \&e)\{}
+\DoxyCodeLine{00160                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00161                 \}}
+\DoxyCodeLine{00162 }
+\DoxyCodeLine{00163                 \mbox{\hyperlink{class_a_i_a6984601bc3c2d65d1ef69c3b980ff8fa}{forceError}}();}
+\DoxyCodeLine{00164                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00165             \}}
+\DoxyCodeLine{00166 }
+\DoxyCodeLine{00167             \textcolor{keywordflow}{case} \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa209622f88d7e3fc0fe2fa2ab06279a7c}{BUILDDEVICE}}:\{}
+\DoxyCodeLine{00168                 \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00169                     \mbox{\hyperlink{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}{AI::ensureAdminAccess}}(isAdmin);}
+\DoxyCodeLine{00170                 \}\textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_insufficient_permissions_exception}{InsufficientPermissionsException}} \&e)\{}
+\DoxyCodeLine{00171                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00172                 \}}
+\DoxyCodeLine{00173 }
+\DoxyCodeLine{00174                 \mbox{\hyperlink{class_a_i_aeafba0fc07e4e9672930aa3341619679}{buildDevice}}();}
+\DoxyCodeLine{00175                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00176             \}}
+\DoxyCodeLine{00177 }
+\DoxyCodeLine{00178             \textcolor{keywordflow}{case} \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aae0bfbac80c8ccca565afe7cb46d34e43}{ADDUSER}}:\{}
+\DoxyCodeLine{00179                 \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00180                     \mbox{\hyperlink{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}{AI::ensureAdminAccess}}(isAdmin);}
+\DoxyCodeLine{00181                 \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_insufficient_permissions_exception}{InsufficientPermissionsException}} \&e)\{}
+\DoxyCodeLine{00182                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00183                 \}}
+\DoxyCodeLine{00184                 \mbox{\hyperlink{class_a_i_a2c5a9b991e7ac83f6a4c25f0e6c7b783}{addUser}}();}
+\DoxyCodeLine{00185                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00186             \}}
+\DoxyCodeLine{00187 }
+\DoxyCodeLine{00188             \textcolor{keywordflow}{case} \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aaf99665847d0f2cc4d777e38074c580f6}{REMOVEUSER}}:\{}
+\DoxyCodeLine{00189                 \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{00190                     \mbox{\hyperlink{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}{AI::ensureAdminAccess}}(isAdmin);}
+\DoxyCodeLine{00191                 \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_insufficient_permissions_exception}{InsufficientPermissionsException}} \&e)\{}
+\DoxyCodeLine{00192                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00193                 \}}
+\DoxyCodeLine{00194                 \mbox{\hyperlink{class_a_i_a86fe75fab41d558922b6333ea27e682d}{removeUser}}();}
+\DoxyCodeLine{00195                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00196             \}}
+\DoxyCodeLine{00197 }
+\DoxyCodeLine{00198             \textcolor{keywordflow}{case} \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa3232fa2a231f866016e3b0b95f08be22}{RETURNSECURITY}}: \{}
+\DoxyCodeLine{00199                 \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00200                     \mbox{\hyperlink{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}{AI::ensureAdminAccess}}(isAdmin);}
+\DoxyCodeLine{00201                 \}\textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_insufficient_permissions_exception}{InsufficientPermissionsException}} \&e)\{}
+\DoxyCodeLine{00202                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00203                 \}}
+\DoxyCodeLine{00204                 \mbox{\hyperlink{class_a_i_ae5372e8b0787403f2b10c5cd54e90946}{recoverSecurity}}();}
+\DoxyCodeLine{00205                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00206             \}}
+\DoxyCodeLine{00207 }
+\DoxyCodeLine{00208             \textcolor{keywordflow}{case} \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aada0270900a32c1c0cd2b3cb14f61d987}{FORCEBADALLOC}}:\{}
+\DoxyCodeLine{00209                 \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00210                     \mbox{\hyperlink{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}{AI::ensureAdminAccess}}(isAdmin);}
+\DoxyCodeLine{00211                 \}\textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_insufficient_permissions_exception}{InsufficientPermissionsException}} \&e)\{}
+\DoxyCodeLine{00212                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00213                 \}}
+\DoxyCodeLine{00214                 \mbox{\hyperlink{class_a_i_a50db01d117eb927ffad24144633e455b}{forceBadAlloc}}();}
+\DoxyCodeLine{00215                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00216             \}}
+\DoxyCodeLine{00217 }
+\DoxyCodeLine{00218             \textcolor{keywordflow}{case} \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aae21507964d5d7a83729e7dda4b5b069a}{SHOWUSERS}}: \{}
+\DoxyCodeLine{00219                 \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00220                     \mbox{\hyperlink{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}{AI::ensureAdminAccess}}(isAdmin);}
+\DoxyCodeLine{00221                 \} \textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_insufficient_permissions_exception}{InsufficientPermissionsException}} \&e)\{}
+\DoxyCodeLine{00222                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00223                 \}}
+\DoxyCodeLine{00224                 \mbox{\hyperlink{class_a_i_aa77cc82f290d4386e12c978dcff385ab}{showAllUsers}}();}
+\DoxyCodeLine{00225                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00226             \}}
+\DoxyCodeLine{00227 }
+\DoxyCodeLine{00228             \textcolor{keywordflow}{case} \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa9f3fbab34f44b8f55d57ad1bf6cb4809}{EXIT}}:}
+\DoxyCodeLine{00229                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00230         \}}
+\DoxyCodeLine{00231 }
+\DoxyCodeLine{00232 }
+\DoxyCodeLine{00233     \}\textcolor{keywordflow}{catch} (std::exception \&e)\{}
+\DoxyCodeLine{00234         \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Option NOT valid"{}});}
+\DoxyCodeLine{00235         sleep(1);}
+\DoxyCodeLine{00236     \}}
+\DoxyCodeLine{00237 }
+\DoxyCodeLine{00238 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aae0bfbac80c8ccca565afe7cb46d34e43}{ADDUSER}}, \mbox{\hyperlink{class_a_i_a2c5a9b991e7ac83f6a4c25f0e6c7b783}{add\+User()}}, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa209622f88d7e3fc0fe2fa2ab06279a7c}{BUILDDEVICE}}, \mbox{\hyperlink{class_a_i_aeafba0fc07e4e9672930aa3341619679}{build\+Device()}}, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa1101cdbeac60afa53571fe89f21206be}{CHECKSECURITY}}, \mbox{\hyperlink{class_a_i_addd22a78b4ec596e5ae9554113c6a2d1}{check\+Security()}}, \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}{ensure\+Admin\+Access()}}, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa9f3fbab34f44b8f55d57ad1bf6cb4809}{EXIT}}, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aada0270900a32c1c0cd2b3cb14f61d987}{FORCEBADALLOC}}, \mbox{\hyperlink{class_a_i_a50db01d117eb927ffad24144633e455b}{force\+Bad\+Alloc()}}, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aad1b65f572b8e3c7a3883b294dd25988c}{FORCEERROR}}, \mbox{\hyperlink{class_a_i_a6984601bc3c2d65d1ef69c3b980ff8fa}{force\+Error()}}, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa64bd4ef80b43028bace678901accc593}{MICROPHONE}}, \mbox{\hyperlink{class_a_i_a6c757fc5f3fbf43d6e512b4649479b16}{microphone()}}, \mbox{\hyperlink{class_a_i_ae5372e8b0787403f2b10c5cd54e90946}{recover\+Security()}}, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aaf99665847d0f2cc4d777e38074c580f6}{REMOVEUSER}}, \mbox{\hyperlink{class_a_i_a86fe75fab41d558922b6333ea27e682d}{remove\+User()}}, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aa3232fa2a231f866016e3b0b95f08be22}{RETURNSECURITY}}, \mbox{\hyperlink{class_a_i_aa77cc82f290d4386e12c978dcff385ab}{show\+All\+Users()}}, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aae21507964d5d7a83729e7dda4b5b069a}{SHOWUSERS}}, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aaffc8a08a3e6800f81274b492571a2b85}{TURNDEVICES}}, \mbox{\hyperlink{class_a_i_a9722ff1c013e46c23bc3dd4b5af63bd6}{turn\+Devices()}}, \mbox{\hyperlink{class_a_i_a3b3c681ff340d10c3e3a5805d90c798aacc4a7a1be2396dd1b0a48e25914b0340}{TURNSECURITY}}, and \mbox{\hyperlink{class_a_i_aab98da3e33b41549ee49ba3d7a1acc43}{turn\+Security()}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+\mbox{\Hypertarget{class_a_i_aa77cc82f290d4386e12c978dcff385ab}\label{class_a_i_aa77cc82f290d4386e12c978dcff385ab}} 
+\index{AI@{AI}!showAllUsers@{showAllUsers}}
+\index{showAllUsers@{showAllUsers}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{showAllUsers()}{showAllUsers()}}
+{\footnotesize\ttfamily void AI\+::show\+All\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Calls to print all users registered. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00550}{550}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00550                       \{}
+\DoxyCodeLine{00551     \mbox{\hyperlink{class_user_aba09368b2af61c833490ff95aff4e9c2}{User::printUsers}}();}
+\DoxyCodeLine{00552 }
+\DoxyCodeLine{00553     std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nPress ENTER to return"{}};}
+\DoxyCodeLine{00554     std::cin.get();}
+\DoxyCodeLine{00555 }
+\DoxyCodeLine{00556     \textcolor{comment}{//  Clear bad inputs}}
+\DoxyCodeLine{00557     std::cin.clear();}
+\DoxyCodeLine{00558 }
+\DoxyCodeLine{00559 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_user_aba09368b2af61c833490ff95aff4e9c2}{User\+::print\+Users()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option()}}.
+
+\mbox{\Hypertarget{class_a_i_a15e235a4a50d15f6f1c73a4ec9569552}\label{class_a_i_a15e235a4a50d15f6f1c73a4ec9569552}} 
+\index{AI@{AI}!signalHandler@{signalHandler}}
+\index{signalHandler@{signalHandler}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{signalHandler()}{signalHandler()}}
+{\footnotesize\ttfamily void AI\+::signal\+Handler (\begin{DoxyParamCaption}\item[{int}]{signum }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Function to end the program if the exit call is raised 
+\begin{DoxyParams}{Parameters}
+{\em signum} & Exit call \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Function should not be used directly. Will be controlled by \mbox{\hyperlink{class_a_i}{AI}} 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00533}{533}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00533                                  \{}
+\DoxyCodeLine{00534 }
+\DoxyCodeLine{00535     \textcolor{comment}{// -\/-\/-\/-\/-\/ Save all data -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00536     \mbox{\hyperlink{class_user_abe917daaebdfb170900ae513c9289a66}{User::saveUserData}}();}
+\DoxyCodeLine{00537 }
+\DoxyCodeLine{00538     \textcolor{comment}{// -\/-\/-\/-\/-\/ Send abortation signal -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00539     \mbox{\hyperlink{class_a_i_ad26945ece1d0c8f6268a945617363afd}{abort}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00540     \mbox{\hyperlink{class_simple_display_a3bd71a4ae6085907d26b66e89032fd25}{SimpleDisplay::security\_abort}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{00541 }
+\DoxyCodeLine{00542     \textcolor{comment}{// -\/-\/-\/-\/-\/ Display EXIT CODE -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00543     std::cout << \textcolor{stringliteral}{"{}["{}} + \mbox{\hyperlink{class_a_i_a953a6cf9b2470503a8b09e1865052621}{TAG}} + \textcolor{stringliteral}{"{}] Exit call detected. Exiting JVH Systems..."{}};}
+\DoxyCodeLine{00544     sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00545     std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n["{}} + \mbox{\hyperlink{class_a_i_a953a6cf9b2470503a8b09e1865052621}{TAG}} + \textcolor{stringliteral}{"{}] Thank you for trusting us!\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{00546     exit(0);}
+\DoxyCodeLine{00547 }
+\DoxyCodeLine{00548 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_a_i_ad26945ece1d0c8f6268a945617363afd}{abort}}, \mbox{\hyperlink{class_user_abe917daaebdfb170900ae513c9289a66}{User\+::save\+User\+Data()}}, \mbox{\hyperlink{class_simple_display_a3bd71a4ae6085907d26b66e89032fd25}{Simple\+Display\+::security\+\_\+abort}}, \mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}, and \mbox{\hyperlink{class_a_i_a953a6cf9b2470503a8b09e1865052621}{TAG}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64ec60281e9eb8496f16525615db54b7}{AI()}}.
+
+\mbox{\Hypertarget{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}\label{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}} 
+\index{AI@{AI}!startCollectingData@{startCollectingData}}
+\index{startCollectingData@{startCollectingData}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{startCollectingData()}{startCollectingData()}}
+{\footnotesize\ttfamily void AI\+::start\+Collecting\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Search for every \mbox{\hyperlink{class_data_device}{Data\+Device}} and fills all its data storage with measurements. 
+
+\begin{DoxyWarning}{Warning}
+All devices must be built before using this function. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00032                              \{}
+\DoxyCodeLine{00033 }
+\DoxyCodeLine{00034     \textcolor{comment}{// -\/-\/-\/-\/-\/ Intializing -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00035     std::cout << \textcolor{stringliteral}{"{}[AI] Collecting Data"{}} << std::endl;}
+\DoxyCodeLine{00036     \textcolor{keywordtype}{int} dataCounter = 0;}
+\DoxyCodeLine{00037 }
+\DoxyCodeLine{00038     \textcolor{comment}{// -\/-\/-\/-\/-\/ Filling every device -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00039     \textcolor{keywordtype}{int} numDevices = \mbox{\hyperlink{class_data_device_a4499875b3c1a52ce8bbaf5f3c7de9e05}{DataDevice::getNumSensors}}();}
+\DoxyCodeLine{00040     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} device = 0; device < numDevices; device++)}
+\DoxyCodeLine{00041         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} data = 0; data < \mbox{\hyperlink{class_a_i_a95004d1450551f0941957cecc95a1b04}{MAX\_DATA}}; data++) \{}
+\DoxyCodeLine{00042             \mbox{\hyperlink{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}{DataDevice::allDataDevices}}[device].\mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{appendNewData}}();}
+\DoxyCodeLine{00043             dataCounter++;}
+\DoxyCodeLine{00044         \}}
+\DoxyCodeLine{00045 }
+\DoxyCodeLine{00046     \textcolor{comment}{// -\/-\/-\/-\/-\/ Sending Output -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00047     std::cout << \textcolor{stringliteral}{"{}[AI] Collected "{}} << dataCounter << \textcolor{stringliteral}{"{} measures"{}} << std::endl;}
+\DoxyCodeLine{00048 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}{Data\+Device\+::all\+Data\+Devices}}, \mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{Data\+Device\+::append\+New\+Data()}}, \mbox{\hyperlink{class_data_device_a4499875b3c1a52ce8bbaf5f3c7de9e05}{Data\+Device\+::get\+Num\+Sensors()}}, and \mbox{\hyperlink{class_a_i_a95004d1450551f0941957cecc95a1b04}{MAX\+\_\+\+DATA}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+\mbox{\Hypertarget{class_a_i_af0e91e54ac652671696c09468852fc0b}\label{class_a_i_af0e91e54ac652671696c09468852fc0b}} 
+\index{AI@{AI}!throwDemon@{throwDemon}}
+\index{throwDemon@{throwDemon}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{throwDemon()}{throwDemon()}}
+{\footnotesize\ttfamily void AI\+::throw\+Demon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Throws a process-\/like demon, which will be updating the \mbox{\hyperlink{class_data_device}{Data\+Device}} measurements while waiting for key-\/interruption. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00095}{95}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00095                     \{}
+\DoxyCodeLine{00096 }
+\DoxyCodeLine{00097 \textcolor{preprocessor}{\#ifdef \_WIN32}}
+\DoxyCodeLine{00098 }
+\DoxyCodeLine{00099     \textcolor{keywordflow}{while} (\textcolor{keyword}{true}) \{}
+\DoxyCodeLine{00100         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00101 }
+\DoxyCodeLine{00102             \textcolor{keywordflow}{if} (kbhit()) \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00103             \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_a_i_ad26945ece1d0c8f6268a945617363afd}{abort}})\{}
+\DoxyCodeLine{00104                 \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[WARNING] You should not exit directly from main menu. Use -\/1 instead.\(\backslash\)n"{}});}
+\DoxyCodeLine{00105                 exit(0);}
+\DoxyCodeLine{00106             \}}
+\DoxyCodeLine{00107             \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{refreshData}}();}
+\DoxyCodeLine{00108             sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00109 }
+\DoxyCodeLine{00110         \} \textcolor{keywordflow}{catch} (std::exception \&e) \{}
+\DoxyCodeLine{00111             sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00112             \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00113         \}}
+\DoxyCodeLine{00114     \}}
+\DoxyCodeLine{00115 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00116     \textcolor{keywordflow}{while} (\textcolor{keyword}{true})\{}
+\DoxyCodeLine{00117     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{00118 }
+\DoxyCodeLine{00119         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classkb_ad0182e693d377352914210698936eccb}{kb::kbhit}}()) \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00120         \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_a_i_ad26945ece1d0c8f6268a945617363afd}{abort}})\{}
+\DoxyCodeLine{00121             \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}[WARNING] You should not exit directly from main menu. Use -\/1 instead.\(\backslash\)n"{}});}
+\DoxyCodeLine{00122             exit(0);}
+\DoxyCodeLine{00123         \}}
+\DoxyCodeLine{00124         \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{refreshData}}();}
+\DoxyCodeLine{00125         sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00126 }
+\DoxyCodeLine{00127     \}\textcolor{keywordflow}{catch} (std::exception e)\{}
+\DoxyCodeLine{00128         sleep(\mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}});}
+\DoxyCodeLine{00129     \}}
+\DoxyCodeLine{00130 \}}
+\DoxyCodeLine{00131 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00132 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_a_i_ad26945ece1d0c8f6268a945617363afd}{abort}}, \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{classkb_ad0182e693d377352914210698936eccb}{kb\+::kbhit()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{refresh\+Data()}}, and \mbox{\hyperlink{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}{SLEEPTIME}}.
+
+
+
+Referenced by \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main()}}.
+
+\mbox{\Hypertarget{class_a_i_a9722ff1c013e46c23bc3dd4b5af63bd6}\label{class_a_i_a9722ff1c013e46c23bc3dd4b5af63bd6}} 
+\index{AI@{AI}!turnDevices@{turnDevices}}
+\index{turnDevices@{turnDevices}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{turnDevices()}{turnDevices()}}
+{\footnotesize\ttfamily void AI\+::turn\+Devices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Turns all devices on/off. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00270}{270}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00270                      \{}
+\DoxyCodeLine{00271 }
+\DoxyCodeLine{00272     \textcolor{comment}{// -\/-\/-\/-\/-\/ Instantiating IODi for easy device control -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00273     \mbox{\hyperlink{class_i_o_di}{IODi}} iodi;}
+\DoxyCodeLine{00274 }
+\DoxyCodeLine{00275     \textcolor{comment}{// -\/-\/-\/-\/-\/ Turning all Devices ON/OFF -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00276     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{DataDevice::numSensors}}; i++) \{}
+\DoxyCodeLine{00277         iodi.\mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{setCurrentDevice}}(i);}
+\DoxyCodeLine{00278 }
+\DoxyCodeLine{00279         \textcolor{keywordflow}{if} (\string~\mbox{\hyperlink{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}{DataDevice::allDataDevices}}[i])}
+\DoxyCodeLine{00280             iodi.\mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{requestSkill}}(\textcolor{stringliteral}{"{}turnoff"{}});}
+\DoxyCodeLine{00281         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00282             iodi.\mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{requestSkill}}(\textcolor{stringliteral}{"{}turnon"{}});}
+\DoxyCodeLine{00283 }
+\DoxyCodeLine{00284     \}}
+\DoxyCodeLine{00285 }
+\DoxyCodeLine{00286     \textcolor{comment}{// -\/-\/-\/-\/-\/ Exiting... -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00287     std::string none;}
+\DoxyCodeLine{00288     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Press ENTER to continue"{}});}
+\DoxyCodeLine{00289     getline(std::cin,none);}
+\DoxyCodeLine{00290 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}{Data\+Device\+::all\+Data\+Devices}}, \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}{Data\+Device\+::num\+Sensors}}, \mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{IODi\+::request\+Skill()}}, and \mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{IODi\+::set\+Current\+Device()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option()}}.
+
+\mbox{\Hypertarget{class_a_i_aab98da3e33b41549ee49ba3d7a1acc43}\label{class_a_i_aab98da3e33b41549ee49ba3d7a1acc43}} 
+\index{AI@{AI}!turnSecurity@{turnSecurity}}
+\index{turnSecurity@{turnSecurity}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{turnSecurity()}{turnSecurity()}}
+{\footnotesize\ttfamily void AI\+::turn\+Security (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Turns all security on/off. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8cpp_source_l00292}{292}} of file \mbox{\hyperlink{_a_i_8cpp_source}{AI.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00292                       \{}
+\DoxyCodeLine{00293 }
+\DoxyCodeLine{00294     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{KernelDevice::numKerns}}; i++) \{}
+\DoxyCodeLine{00295 }
+\DoxyCodeLine{00296         \textcolor{comment}{// Accessing Device}}
+\DoxyCodeLine{00297         \mbox{\hyperlink{class_kernel_device}{KernelDevice}} *k = \&\mbox{\hyperlink{class_kernel_device_a31294b124e12af14435dc0a2c5b8d168}{KernelDevice::allKernelDevices}}[i];}
+\DoxyCodeLine{00298 }
+\DoxyCodeLine{00299         \textcolor{comment}{// Checking Status}}
+\DoxyCodeLine{00300         k-\/>\mbox{\hyperlink{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}{isActive}} = !\string~(*k);}
+\DoxyCodeLine{00301 }
+\DoxyCodeLine{00302         \textcolor{comment}{// Turning ON/OFF}}
+\DoxyCodeLine{00303         \textcolor{keywordflow}{if} (\string~(*k)) \{}
+\DoxyCodeLine{00304             \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(k-\/>\mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{getName}}() + \textcolor{stringliteral}{"{} turned ON\(\backslash\)n"{}});}
+\DoxyCodeLine{00305             \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{SimpleDisplay::currentDisplay}}-\/>\mbox{\hyperlink{class_simple_display_af3347757fb1111a5360f064dd152390f}{setSecurityConnected}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{00306         \}}
+\DoxyCodeLine{00307         \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00308             \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(k-\/>\mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{getName}}() + \textcolor{stringliteral}{"{} turned OFF\(\backslash\)n"{}});}
+\DoxyCodeLine{00309             \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{SimpleDisplay::currentDisplay}}-\/>\mbox{\hyperlink{class_simple_display_af3347757fb1111a5360f064dd152390f}{setSecurityConnected}}(\textcolor{keyword}{false});}
+\DoxyCodeLine{00310         \}}
+\DoxyCodeLine{00311     \}}
+\DoxyCodeLine{00312 }
+\DoxyCodeLine{00313     \textcolor{comment}{// -\/-\/-\/-\/-\/ Exiting -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00314     std::string none;}
+\DoxyCodeLine{00315     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Press ENTER to continue"{}});}
+\DoxyCodeLine{00316     getline(std::cin,none);}
+\DoxyCodeLine{00317 \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_kernel_device_a31294b124e12af14435dc0a2c5b8d168}{Kernel\+Device\+::all\+Kernel\+Devices}}, \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{Simple\+Display\+::current\+Display}}, \mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{Device\+::get\+Name()}}, \mbox{\hyperlink{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}{Device\+::is\+Active}}, \mbox{\hyperlink{class_kernel_device_a35b214d14f5c719b042c01243e0c0e2e}{Kernel\+Device\+::num\+Kerns}}, and \mbox{\hyperlink{class_simple_display_af3347757fb1111a5360f064dd152390f}{Simple\+Display\+::set\+Security\+Connected()}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{request\+Option()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_i_ad26945ece1d0c8f6268a945617363afd}\label{class_a_i_ad26945ece1d0c8f6268a945617363afd}} 
+\index{AI@{AI}!abort@{abort}}
+\index{abort@{abort}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{abort}{abort}}
+{\footnotesize\ttfamily bool AI\+::abort = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Alerts if exit request has been detected. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8h_source_l00137}{137}} of file \mbox{\hyperlink{_a_i_8h_source}{AI.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a15e235a4a50d15f6f1c73a4ec9569552}{signal\+Handler()}}, and \mbox{\hyperlink{class_a_i_af0e91e54ac652671696c09468852fc0b}{throw\+Demon()}}.
+
+\mbox{\Hypertarget{class_a_i_a95004d1450551f0941957cecc95a1b04}\label{class_a_i_a95004d1450551f0941957cecc95a1b04}} 
+\index{AI@{AI}!MAX\_DATA@{MAX\_DATA}}
+\index{MAX\_DATA@{MAX\_DATA}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{MAX\_DATA}{MAX\_DATA}}
+{\footnotesize\ttfamily int AI\+::\+MAX\+\_\+\+DATA = 30\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Sets maximum of data/measurements collected from Data Devices. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8h_source_l00139}{139}} of file \mbox{\hyperlink{_a_i_8h_source}{AI.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{refresh\+Data()}}, and \mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{start\+Collecting\+Data()}}.
+
+\mbox{\Hypertarget{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}\label{class_a_i_a216116b600bdd980ee1332fd1ea3d43f}} 
+\index{AI@{AI}!SLEEPTIME@{SLEEPTIME}}
+\index{SLEEPTIME@{SLEEPTIME}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{SLEEPTIME}{SLEEPTIME}}
+{\footnotesize\ttfamily int AI\+::\+SLEEPTIME = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Sets time to sleep between interactions. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8h_source_l00141}{141}} of file \mbox{\hyperlink{_a_i_8h_source}{AI.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a2c5a9b991e7ac83f6a4c25f0e6c7b783}{add\+User()}}, \mbox{\hyperlink{class_a_i_aeafba0fc07e4e9672930aa3341619679}{build\+Device()}}, \mbox{\hyperlink{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}{ensure\+Admin\+Access()}}, \mbox{\hyperlink{class_a_i_a50db01d117eb927ffad24144633e455b}{force\+Bad\+Alloc()}}, \mbox{\hyperlink{class_a_i_a6984601bc3c2d65d1ef69c3b980ff8fa}{force\+Error()}}, \mbox{\hyperlink{class_a_i_a6c757fc5f3fbf43d6e512b4649479b16}{microphone()}}, \mbox{\hyperlink{class_a_i_ae5372e8b0787403f2b10c5cd54e90946}{recover\+Security()}}, \mbox{\hyperlink{class_a_i_a86fe75fab41d558922b6333ea27e682d}{remove\+User()}}, \mbox{\hyperlink{class_a_i_a15e235a4a50d15f6f1c73a4ec9569552}{signal\+Handler()}}, and \mbox{\hyperlink{class_a_i_af0e91e54ac652671696c09468852fc0b}{throw\+Demon()}}.
+
+\mbox{\Hypertarget{class_a_i_a953a6cf9b2470503a8b09e1865052621}\label{class_a_i_a953a6cf9b2470503a8b09e1865052621}} 
+\index{AI@{AI}!TAG@{TAG}}
+\index{TAG@{TAG}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{TAG}{TAG}}
+{\footnotesize\ttfamily std\+::string AI\+::\+TAG = \char`\"{}AI\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Name of class (for exception throwing) 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8h_source_l00135}{135}} of file \mbox{\hyperlink{_a_i_8h_source}{AI.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_ab4f8a6efe1c0041a43cd670f707a77b7}{ensure\+Admin\+Access()}}, \mbox{\hyperlink{class_a_i_a86fe75fab41d558922b6333ea27e682d}{remove\+User()}}, and \mbox{\hyperlink{class_a_i_a15e235a4a50d15f6f1c73a4ec9569552}{signal\+Handler()}}.
+
+\mbox{\Hypertarget{class_a_i_a143cbb790ccc9ae52046f8d3c5a3298f}\label{class_a_i_a143cbb790ccc9ae52046f8d3c5a3298f}} 
+\index{AI@{AI}!time\_counter@{time\_counter}}
+\index{time\_counter@{time\_counter}!AI@{AI}}
+\doxysubsubsection{\texorpdfstring{time\_counter}{time\_counter}}
+{\footnotesize\ttfamily int AI\+::time\+\_\+counter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Used for counting number of time-\/stamps. 
+
+
+
+Definition at line \mbox{\hyperlink{_a_i_8h_source_l00143}{143}} of file \mbox{\hyperlink{_a_i_8h_source}{AI.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{class_a_i_a64ec60281e9eb8496f16525615db54b7}{AI()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_a_i_8h}{AI.\+h}}\item 
+\mbox{\hyperlink{_a_i_8cpp}{AI.\+cpp}}\end{DoxyCompactItemize}

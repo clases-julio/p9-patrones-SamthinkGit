@@ -1,0 +1,70 @@
+\hypertarget{classkb}{}\doxysection{kb Class Reference}
+\label{classkb}\index{kb@{kb}}
+
+
+{\ttfamily \#include $<$kb.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classkb_ad0182e693d377352914210698936eccb}{kbhit}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{kb_8h_source_l00010}{10}} of file \mbox{\hyperlink{kb_8h_source}{kb.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classkb_ad0182e693d377352914210698936eccb}\label{classkb_ad0182e693d377352914210698936eccb}} 
+\index{kb@{kb}!kbhit@{kbhit}}
+\index{kbhit@{kbhit}!kb@{kb}}
+\doxysubsubsection{\texorpdfstring{kbhit()}{kbhit()}}
+{\footnotesize\ttfamily int kb\+::kbhit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{kb_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{kb_8cpp_source}{kb.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003              \{}
+\DoxyCodeLine{00004   \textcolor{keyword}{struct }termios oldt, newt;}
+\DoxyCodeLine{00005   \textcolor{keywordtype}{int} ch;}
+\DoxyCodeLine{00006   \textcolor{keywordtype}{int} oldf;}
+\DoxyCodeLine{00007 }
+\DoxyCodeLine{00008   tcgetattr(STDIN\_FILENO, \&oldt);}
+\DoxyCodeLine{00009   newt = oldt;}
+\DoxyCodeLine{00010   newt.c\_lflag \&= \string~(ICANON | ECHO);}
+\DoxyCodeLine{00011   tcsetattr(STDIN\_FILENO, TCSANOW, \&newt);}
+\DoxyCodeLine{00012   oldf = fcntl(STDIN\_FILENO, F\_GETFL, 0);}
+\DoxyCodeLine{00013   fcntl(STDIN\_FILENO, F\_SETFL, oldf | O\_NONBLOCK);}
+\DoxyCodeLine{00014 }
+\DoxyCodeLine{00015   ch = getchar();}
+\DoxyCodeLine{00016 }
+\DoxyCodeLine{00017   tcsetattr(STDIN\_FILENO, TCSANOW, \&oldt);}
+\DoxyCodeLine{00018   fcntl(STDIN\_FILENO, F\_SETFL, oldf);}
+\DoxyCodeLine{00019 }
+\DoxyCodeLine{00020   \textcolor{keywordflow}{if}(ch != EOF)\{}
+\DoxyCodeLine{00021     ungetc(ch, stdin);}
+\DoxyCodeLine{00022     \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{00023   \}}
+\DoxyCodeLine{00024   }
+\DoxyCodeLine{00025   \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027 \}}
+
+\end{DoxyCode}
+
+
+Referenced by \mbox{\hyperlink{class_a_i_af0e91e54ac652671696c09468852fc0b}{AI\+::throw\+Demon()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{kb_8h}{kb.\+h}}\item 
+\mbox{\hyperlink{kb_8cpp}{kb.\+cpp}}\end{DoxyCompactItemize}

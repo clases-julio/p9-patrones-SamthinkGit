@@ -1,0 +1,738 @@
+\begin{theindex}
+
+  \item {abort}
+    \subitem {AI}, \hyperpage{23}
+  \item {ADDUSER}
+    \subitem {AI}, \hyperpage{11}
+  \item {addUser}
+    \subitem {AI}, \hyperpage{12}
+    \subitem {User}, \hyperpage{104}
+  \item {Admin}, \hyperpage{7}
+    \subitem {Admin}, \hyperpage{8}
+    \subitem {adminStatus}, \hyperpage{8}
+  \item {Admin.cpp}, \hyperpage{139}
+  \item {Admin.h}, \hyperpage{116, 117}
+  \item {ADMIN\_COLUMN}
+    \subitem {User}, \hyperpage{103}
+  \item {ADMIN\_IDENTIFIER}
+    \subitem {User}, \hyperpage{103}
+  \item {adminStatus}
+    \subitem {Admin}, \hyperpage{8}
+  \item {AI}, \hyperpage{9}
+    \subitem {abort}, \hyperpage{23}
+    \subitem {ADDUSER}, \hyperpage{11}
+    \subitem {addUser}, \hyperpage{12}
+    \subitem {AI}, \hyperpage{11}
+    \subitem {BUILDDEVICE}, \hyperpage{11}
+    \subitem {buildDevice}, \hyperpage{12}
+    \subitem {CHECKSECURITY}, \hyperpage{11}
+    \subitem {checkSecurity}, \hyperpage{13}
+    \subitem {DataDevice}, \hyperpage{31}
+    \subitem {Device}, \hyperpage{39}
+    \subitem {ensureAdminAccess}, \hyperpage{14}
+    \subitem {EXIT}, \hyperpage{11}
+    \subitem {FORCEBADALLOC}, \hyperpage{11}
+    \subitem {forceBadAlloc}, \hyperpage{15}
+    \subitem {FORCEERROR}, \hyperpage{11}
+    \subitem {forceError}, \hyperpage{15}
+    \subitem {KernelDevice}, \hyperpage{76}
+    \subitem {MAX\_DATA}, \hyperpage{23}
+    \subitem {MICROPHONE}, \hyperpage{11}
+    \subitem {microphone}, \hyperpage{15}
+    \subitem {MORE}, \hyperpage{11}
+    \subitem {recoverSecurity}, \hyperpage{16}
+    \subitem {refreshData}, \hyperpage{16}
+    \subitem {REMOVEUSER}, \hyperpage{11}
+    \subitem {removeUser}, \hyperpage{17}
+    \subitem {requestOption}, \hyperpage{18}
+    \subitem {RETURNSECURITY}, \hyperpage{11}
+    \subitem {showAllUsers}, \hyperpage{19}
+    \subitem {SHOWUSERS}, \hyperpage{11}
+    \subitem {signalHandler}, \hyperpage{20}
+    \subitem {SLEEPTIME}, \hyperpage{23}
+    \subitem {startCollectingData}, \hyperpage{20}
+    \subitem {TAG}, \hyperpage{24}
+    \subitem {throwDemon}, \hyperpage{21}
+    \subitem {time\_counter}, \hyperpage{24}
+    \subitem {TURNDEVICES}, \hyperpage{11}
+    \subitem {turnDevices}, \hyperpage{22}
+    \subitem {TURNSECURITY}, \hyperpage{11}
+    \subitem {turnSecurity}, \hyperpage{22}
+  \item {AI.cpp}, \hyperpage{139, 140}
+  \item {AI.h}, \hyperpage{117, 118}
+  \item {allBuilders}
+    \subitem {DeviceBuilder}, \hyperpage{51}
+  \item {allDataDeviceNames}
+    \subitem {DataDevice}, \hyperpage{31}
+  \item {allDataDevices}
+    \subitem {DataDevice}, \hyperpage{31}
+    \subitem {DeviceBuilder}, \hyperpage{51}
+  \item {allDeviceNames}
+    \subitem {Device}, \hyperpage{40}
+  \item {allDevices}
+    \subitem {Device}, \hyperpage{40}
+    \subitem {DeviceBuilder}, \hyperpage{51}
+  \item {allKernelDevices}
+    \subitem {DeviceBuilder}, \hyperpage{51}
+    \subitem {KernelDevice}, \hyperpage{76}
+  \item {allUsers}
+    \subitem {User}, \hyperpage{109}
+  \item {appendNewData}
+    \subitem {DataDevice}, \hyperpage{29}
+
+  \indexspace
+
+  \item {BaseException}, \hyperpage{24}
+    \subitem {BaseException}, \hyperpage{25}
+    \subitem {exception}, \hyperpage{26}
+    \subitem {tag}, \hyperpage{26}
+    \subitem {what}, \hyperpage{25}
+  \item {BaseException.cpp}, \hyperpage{146}
+  \item {BaseException.h}, \hyperpage{124}
+  \item {buildAllDevices}
+    \subitem {DeviceBuilder}, \hyperpage{45}
+  \item {BUILDDEVICE}
+    \subitem {AI}, \hyperpage{11}
+  \item {buildDevice}
+    \subitem {AI}, \hyperpage{12}
+  \item {buildDisplay}
+    \subitem {DeviceBuilder}, \hyperpage{46}
+  \item {buildDKDevice}
+    \subitem {DeviceBuilder}, \hyperpage{47}
+
+  \indexspace
+
+  \item {check}
+    \subitem {User}, \hyperpage{105}
+  \item {checkAbortStatus}
+    \subitem {SimpleDisplay}, \hyperpage{83}
+  \item {CHECKSECURITY}
+    \subitem {AI}, \hyperpage{11}
+  \item {checkSecurity}
+    \subitem {AI}, \hyperpage{13}
+  \item {cleanDevi}
+    \subitem {SimpleDisplay}, \hyperpage{84}
+  \item {clearAll}
+    \subitem {DeviceBuilder}, \hyperpage{48}
+  \item {collectedData}
+    \subitem {DataDevice}, \hyperpage{32}
+  \item {collectedTimes}
+    \subitem {DataDevice}, \hyperpage{32}
+  \item {COLOR}
+    \subitem {SimpleDisplay}, \hyperpage{98}
+  \item {cout}
+    \subitem {SimpleDisplay}, \hyperpage{84}
+  \item {currentDeviceName}
+    \subitem {IODi}, \hyperpage{71}
+  \item {currentDevicePos}
+    \subitem {IODi}, \hyperpage{72}
+  \item {currentDisplay}
+    \subitem {SimpleDisplay}, \hyperpage{98}
+
+  \indexspace
+
+  \item {DataDevice}, \hyperpage{26}
+    \subitem {AI}, \hyperpage{31}
+    \subitem {allDataDeviceNames}, \hyperpage{31}
+    \subitem {allDataDevices}, \hyperpage{31}
+    \subitem {appendNewData}, \hyperpage{29}
+    \subitem {collectedData}, \hyperpage{32}
+    \subitem {collectedTimes}, \hyperpage{32}
+    \subitem {DataDevice}, \hyperpage{28}
+    \subitem {dataGenerator}, \hyperpage{32}
+    \subitem {DeviceBuilder}, \hyperpage{31}
+    \subitem {getNumSensors}, \hyperpage{29}
+    \subitem {IODi}, \hyperpage{31}
+    \subitem {limit}, \hyperpage{32}
+    \subitem {needsLimit}, \hyperpage{33}
+    \subitem {numSensors}, \hyperpage{33}
+    \subitem {numSensorsActive}, \hyperpage{33}
+    \subitem {setAllDataDevices}, \hyperpage{30}
+    \subitem {setLimit}, \hyperpage{30}
+  \item {DataDevice.cpp}, \hyperpage{146, 147}
+  \item {DataDevice.h}, \hyperpage{119}
+  \item {dataDevices}
+    \subitem {SimpleDisplay}, \hyperpage{98}
+  \item {DATAFILE}
+    \subitem {User}, \hyperpage{109}
+  \item {dataGenerator}
+    \subitem {DataDevice}, \hyperpage{32}
+    \subitem {DeviceBuilder}, \hyperpage{52}
+  \item {DEFAULT\_ID}
+    \subitem {IODi}, \hyperpage{65}
+  \item {DEVELOPER\_USER}
+    \subitem {User}, \hyperpage{103}
+  \item {Device}, \hyperpage{34}
+    \subitem {AI}, \hyperpage{39}
+    \subitem {allDeviceNames}, \hyperpage{40}
+    \subitem {allDevices}, \hyperpage{40}
+    \subitem {Device}, \hyperpage{36}
+    \subitem {DeviceBuilder}, \hyperpage{40}
+    \subitem {getName}, \hyperpage{36}
+    \subitem {getNumSkills}, \hyperpage{37}
+    \subitem {id}, \hyperpage{40}
+    \subitem {INVALID\_DEVICE}, \hyperpage{36}
+    \subitem {IODi}, \hyperpage{40}
+    \subitem {isActive}, \hyperpage{41}
+    \subitem {isDataDevice}, \hyperpage{41}
+    \subitem {name}, \hyperpage{41}
+    \subitem {numDevices}, \hyperpage{41}
+    \subitem {numSkills}, \hyperpage{42}
+    \subitem {operator$\sim$}, \hyperpage{38}
+    \subitem {operator[]}, \hyperpage{37, 38}
+    \subitem {setAllDevices}, \hyperpage{38}
+    \subitem {setDeviceCounter}, \hyperpage{39}
+    \subitem {skillNames}, \hyperpage{42}
+    \subitem {skills}, \hyperpage{42}
+    \subitem {TAG}, \hyperpage{42}
+  \item {Device.cpp}, \hyperpage{148}
+  \item {Device.h}, \hyperpage{120, 121}
+  \item {DEVICE\_DATASET}
+    \subitem {deviceDataset.cpp}, \hyperpage{152}
+  \item {DEVICE\_SCREEN}
+    \subitem {main.cpp}, \hyperpage{165}
+  \item {DeviceBuilder}, \hyperpage{43}
+    \subitem {allBuilders}, \hyperpage{51}
+    \subitem {allDataDevices}, \hyperpage{51}
+    \subitem {allDevices}, \hyperpage{51}
+    \subitem {allKernelDevices}, \hyperpage{51}
+    \subitem {buildAllDevices}, \hyperpage{45}
+    \subitem {buildDisplay}, \hyperpage{46}
+    \subitem {buildDKDevice}, \hyperpage{47}
+    \subitem {clearAll}, \hyperpage{48}
+    \subitem {DataDevice}, \hyperpage{31}
+    \subitem {dataGenerator}, \hyperpage{52}
+    \subitem {Device}, \hyperpage{40}
+    \subitem {DeviceBuilder}, \hyperpage{45}
+    \subitem {deviceCounter}, \hyperpage{52}
+    \subitem {id}, \hyperpage{52}
+    \subitem {isDataDevice}, \hyperpage{52}
+    \subitem {KernelDevice}, \hyperpage{76}
+    \subitem {limit}, \hyperpage{53}
+    \subitem {name}, \hyperpage{53}
+    \subitem {securityGenerator}, \hyperpage{53}
+    \subitem {setAsDataDevice}, \hyperpage{48}
+    \subitem {setAsKernelDevice}, \hyperpage{48}
+    \subitem {setDataGenerator}, \hyperpage{49}
+    \subitem {setLimit}, \hyperpage{49}
+    \subitem {setSecurityGenerator}, \hyperpage{50}
+    \subitem {setSkill}, \hyperpage{50}
+    \subitem {skillNamesVector}, \hyperpage{53}
+    \subitem {skillVector}, \hyperpage{54}
+  \item {DeviceBuilder.cpp}, \hyperpage{149, 150}
+  \item {DeviceBuilder.h}, \hyperpage{122, 123}
+  \item {deviceCounter}
+    \subitem {DeviceBuilder}, \hyperpage{52}
+  \item {deviceDataset}, \hyperpage{54}
+    \subitem {initDataset}, \hyperpage{54}
+  \item {deviceDataset.cpp}, \hyperpage{152, 153}
+    \subitem {DEVICE\_DATASET}, \hyperpage{152}
+  \item {deviCout}
+    \subitem {SimpleDisplay}, \hyperpage{84}
+  \item {deviPrintData}
+    \subitem {SimpleDisplay}, \hyperpage{85}
+
+  \indexspace
+
+  \item {ensureAdminAccess}
+    \subitem {AI}, \hyperpage{14}
+  \item {ERROR\_MESSAGE}
+    \subitem {InsufficientPermissionsException}, \hyperpage{57}
+    \subitem {InvalidDeviceException}, \hyperpage{58}
+    \subitem {InvalidFileException}, \hyperpage{60}
+    \subitem {InvalidSkillException}, \hyperpage{61}
+    \subitem {InvalidUserException}, \hyperpage{63}
+    \subitem {UserNotFoundException}, \hyperpage{112}
+  \item {EXAMPLE\_SECURITY}
+    \subitem {exampleSecurityDataset.cpp}, \hyperpage{154}
+  \item {EXAMPLE\_SKILLS}
+    \subitem {exampleSkillsDataset.cpp}, \hyperpage{155}
+  \item {exampleSecurityDataset.cpp}, \hyperpage{154}
+    \subitem {EXAMPLE\_SECURITY}, \hyperpage{154}
+    \subitem {exampleTest}, \hyperpage{154}
+  \item {exampleSkill1}
+    \subitem {exampleSkillsDataset.cpp}, \hyperpage{155}
+  \item {exampleSkill2}
+    \subitem {exampleSkillsDataset.cpp}, \hyperpage{155}
+  \item {exampleSkill3}
+    \subitem {exampleSkillsDataset.cpp}, \hyperpage{156}
+  \item {exampleSkill4}
+    \subitem {exampleSkillsDataset.cpp}, \hyperpage{156}
+  \item {exampleSkillsDataset.cpp}, \hyperpage{155}, \hyperpage{157}
+    \subitem {EXAMPLE\_SKILLS}, \hyperpage{155}
+    \subitem {exampleSkill1}, \hyperpage{155}
+    \subitem {exampleSkill2}, \hyperpage{155}
+    \subitem {exampleSkill3}, \hyperpage{156}
+    \subitem {exampleSkill4}, \hyperpage{156}
+    \subitem {generateRandomData}, \hyperpage{156}
+  \item {exampleTest}
+    \subitem {exampleSecurityDataset.cpp}, \hyperpage{154}
+  \item {exception}
+    \subitem {BaseException}, \hyperpage{26}
+  \item {exceptionsLib.h}, \hyperpage{130}
+  \item {execBuildFinish}
+    \subitem {SimpleDisplay}, \hyperpage{85}
+  \item {execBuildGenerator}
+    \subitem {SimpleDisplay}, \hyperpage{86}
+  \item {execBuildName}
+    \subitem {SimpleDisplay}, \hyperpage{87}
+  \item {execBuildType}
+    \subitem {SimpleDisplay}, \hyperpage{87}
+  \item {EXIT}
+    \subitem {AI}, \hyperpage{11}
+  \item {EXIT\_REQUEST}
+    \subitem {Login}, \hyperpage{80}
+
+  \indexspace
+
+  \item {find}
+    \subitem {User}, \hyperpage{106}
+  \item {FORCEBADALLOC}
+    \subitem {AI}, \hyperpage{11}
+  \item {forceBadAlloc}
+    \subitem {AI}, \hyperpage{15}
+  \item {FORCEERROR}
+    \subitem {AI}, \hyperpage{11}
+  \item {forceError}
+    \subitem {AI}, \hyperpage{15}
+
+  \indexspace
+
+  \item {generateRandomData}
+    \subitem {exampleSkillsDataset.cpp}, \hyperpage{156}
+  \item {getAdminStatus}
+    \subitem {User}, \hyperpage{106}
+  \item {getName}
+    \subitem {Device}, \hyperpage{36}
+  \item {getNumSensors}
+    \subitem {DataDevice}, \hyperpage{29}
+  \item {getNumSkills}
+    \subitem {Device}, \hyperpage{37}
+  \item {getUser}
+    \subitem {User}, \hyperpage{107}
+  \item {GREY\_COLOR}
+    \subitem {SimpleDisplay}, \hyperpage{99}
+  \item {group}
+    \subitem {SimpleDisplay}, \hyperpage{99}
+
+  \indexspace
+
+  \item {id}
+    \subitem {Device}, \hyperpage{40}
+    \subitem {DeviceBuilder}, \hyperpage{52}
+    \subitem {IODi}, \hyperpage{72}
+    \subitem {User}, \hyperpage{109}
+  \item {initDataset}
+    \subitem {deviceDataset}, \hyperpage{54}
+  \item {InsufficientPermissionsException}, \hyperpage{56}
+    \subitem {ERROR\_MESSAGE}, \hyperpage{57}
+    \subitem {InsufficientPermissionsException}, \hyperpage{56}
+  \item {InsufficientPermissionsException.cpp}, \hyperpage{157}
+  \item {InsufficientPermissionsException.h}, \hyperpage{124, 125}
+  \item {INVALID\_DEVICE}
+    \subitem {Device}, \hyperpage{36}
+  \item {INVALID\_PASS}
+    \subitem {User}, \hyperpage{103}
+  \item {INVALID\_USER}
+    \subitem {User}, \hyperpage{103}
+  \item {InvalidDeviceException}, \hyperpage{57}
+    \subitem {ERROR\_MESSAGE}, \hyperpage{58}
+    \subitem {InvalidDeviceException}, \hyperpage{58}
+  \item {InvalidDeviceException.cpp}, \hyperpage{157, 158}
+  \item {InvalidDeviceException.h}, \hyperpage{125, 126}
+  \item {InvalidFileException}, \hyperpage{59}
+    \subitem {ERROR\_MESSAGE}, \hyperpage{60}
+    \subitem {InvalidFileException}, \hyperpage{59}
+  \item {InvalidFileException.cpp}, \hyperpage{158}
+  \item {InvalidFileException.h}, \hyperpage{126, 127}
+  \item {InvalidSkillException}, \hyperpage{60}
+    \subitem {ERROR\_MESSAGE}, \hyperpage{61}
+    \subitem {InvalidSkillException}, \hyperpage{61}
+  \item {InvalidSkillException.cpp}, \hyperpage{158}
+  \item {InvalidSkillException.h}, \hyperpage{127, 128}
+  \item {InvalidUserException}, \hyperpage{62}
+    \subitem {ERROR\_MESSAGE}, \hyperpage{63}
+    \subitem {InvalidUserException}, \hyperpage{62}
+  \item {InvalidUserException.cpp}, \hyperpage{158, 159}
+  \item {InvalidUserException.h}, \hyperpage{128, 129}
+  \item {IODi}, \hyperpage{63}
+    \subitem {currentDeviceName}, \hyperpage{71}
+    \subitem {currentDevicePos}, \hyperpage{72}
+    \subitem {DataDevice}, \hyperpage{31}
+    \subitem {DEFAULT\_ID}, \hyperpage{65}
+    \subitem {Device}, \hyperpage{40}
+    \subitem {id}, \hyperpage{72}
+    \subitem {IODi}, \hyperpage{65}
+    \subitem {maxID}, \hyperpage{72}
+    \subitem {requestAllStatus}, \hyperpage{65}
+    \subitem {requestCurrentDeviceName}, \hyperpage{66}
+    \subitem {requestDeviceNames}, \hyperpage{66}
+    \subitem {requestDeviceSkills}, \hyperpage{66}
+    \subitem {requestNumberOfDataDevices}, \hyperpage{67}
+    \subitem {requestNumberOfSkills}, \hyperpage{67}
+    \subitem {requestSkill}, \hyperpage{67}, \hyperpage{69}
+    \subitem {setCurrentDevice}, \hyperpage{70, 71}
+    \subitem {TAG}, \hyperpage{72}
+  \item {IODi.cpp}, \hyperpage{159}
+  \item {IODi.h}, \hyperpage{131}
+  \item {isActive}
+    \subitem {Device}, \hyperpage{41}
+  \item {isAdmin}
+    \subitem {User}, \hyperpage{110}
+  \item {isDataDevice}
+    \subitem {Device}, \hyperpage{41}
+    \subitem {DeviceBuilder}, \hyperpage{52}
+
+  \indexspace
+
+  \item {jump}
+    \subitem {SimpleDisplay}, \hyperpage{87}
+
+  \indexspace
+
+  \item {kb}, \hyperpage{73}
+    \subitem {kbhit}, \hyperpage{73}
+  \item {kb.cpp}, \hyperpage{115}
+  \item {kb.h}, \hyperpage{115, 116}
+  \item {kbhit}
+    \subitem {kb}, \hyperpage{73}
+  \item {KernelDevice}, \hyperpage{74}
+    \subitem {AI}, \hyperpage{76}
+    \subitem {allKernelDevices}, \hyperpage{76}
+    \subitem {DeviceBuilder}, \hyperpage{76}
+    \subitem {KernelDevice}, \hyperpage{75}
+    \subitem {numKerns}, \hyperpage{77}
+    \subitem {securityGenerator}, \hyperpage{77}
+    \subitem {securityHasBeenBroken}, \hyperpage{77}
+    \subitem {setAllKernelDevices}, \hyperpage{76}
+  \item {KernelDevice.cpp}, \hyperpage{161, 162}
+  \item {KernelDevice.h}, \hyperpage{132, 133}
+  \item {kernelDevices}
+    \subitem {SimpleDisplay}, \hyperpage{99}
+
+  \indexspace
+
+  \item {lib.h}, \hyperpage{133, 134}
+  \item {limit}
+    \subitem {DataDevice}, \hyperpage{32}
+    \subitem {DeviceBuilder}, \hyperpage{53}
+  \item {Login}, \hyperpage{78}
+    \subitem {EXIT\_REQUEST}, \hyperpage{80}
+    \subitem {Login}, \hyperpage{78}
+    \subitem {pass}, \hyperpage{80}
+    \subitem {SLEEP\_TIME}, \hyperpage{80}
+    \subitem {startLogin}, \hyperpage{79}
+    \subitem {user}, \hyperpage{81}
+  \item {Login.cpp}, \hyperpage{162, 163}
+  \item {Login.h}, \hyperpage{134, 135}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{165}
+  \item {main.cpp}, \hyperpage{164}, \hyperpage{167}
+    \subitem {DEVICE\_SCREEN}, \hyperpage{165}
+    \subitem {main}, \hyperpage{165}
+    \subitem {MAIN\_SCREEN}, \hyperpage{165}
+    \subitem {SETTINGS\_SCREEN}, \hyperpage{165}
+  \item {MAIN\_SCREEN}
+    \subitem {main.cpp}, \hyperpage{165}
+  \item {MAX\_DATA}
+    \subitem {AI}, \hyperpage{23}
+  \item {maxID}
+    \subitem {IODi}, \hyperpage{72}
+  \item {MAXIMUM\_OPTIONS}
+    \subitem {SimpleDisplay}, \hyperpage{99}
+  \item {MICROPHONE}
+    \subitem {AI}, \hyperpage{11}
+  \item {microphone}
+    \subitem {AI}, \hyperpage{15}
+  \item {MORE}
+    \subitem {AI}, \hyperpage{11}
+
+  \indexspace
+
+  \item {name}
+    \subitem {Device}, \hyperpage{41}
+    \subitem {DeviceBuilder}, \hyperpage{53}
+  \item {needsLimit}
+    \subitem {DataDevice}, \hyperpage{33}
+  \item {numDevices}
+    \subitem {Device}, \hyperpage{41}
+  \item {numKerns}
+    \subitem {KernelDevice}, \hyperpage{77}
+  \item {numSensors}
+    \subitem {DataDevice}, \hyperpage{33}
+  \item {numSensorsActive}
+    \subitem {DataDevice}, \hyperpage{33}
+  \item {numSkills}
+    \subitem {Device}, \hyperpage{42}
+
+  \indexspace
+
+  \item {operator$<$$<$}
+    \subitem {SimpleDisplay}, \hyperpage{88}
+  \item {operator$\sim$}
+    \subitem {Device}, \hyperpage{38}
+  \item {operator[]}
+    \subitem {Device}, \hyperpage{37, 38}
+
+  \indexspace
+
+  \item {pass}
+    \subitem {Login}, \hyperpage{80}
+    \subitem {User}, \hyperpage{110}
+  \item {PASS\_COLUMN}
+    \subitem {User}, \hyperpage{103}
+  \item {printAIInterface}
+    \subitem {SimpleDisplay}, \hyperpage{88}
+  \item {printChecking}
+    \subitem {SimpleDisplay}, \hyperpage{89}
+  \item {printDeviHeader}
+    \subitem {SimpleDisplay}, \hyperpage{89}
+  \item {printDeviHelp}
+    \subitem {SimpleDisplay}, \hyperpage{90}
+  \item {printLoginInterface}
+    \subitem {SimpleDisplay}, \hyperpage{91}
+  \item {printMainInterface}
+    \subitem {SimpleDisplay}, \hyperpage{92}
+  \item {printPresentation}
+    \subitem {SimpleDisplay}, \hyperpage{93}
+  \item {printRequestPassword}
+    \subitem {SimpleDisplay}, \hyperpage{94}
+  \item {printSkillManual}
+    \subitem {SimpleDisplay}, \hyperpage{95}
+  \item {printUsers}
+    \subitem {User}, \hyperpage{107}
+
+  \indexspace
+
+  \item {recoverSecurity}
+    \subitem {AI}, \hyperpage{16}
+  \item {refreshData}
+    \subitem {AI}, \hyperpage{16}
+  \item {REMOVEUSER}
+    \subitem {AI}, \hyperpage{11}
+  \item {removeUser}
+    \subitem {AI}, \hyperpage{17}
+  \item {requestAllStatus}
+    \subitem {IODi}, \hyperpage{65}
+  \item {requestCurrentDeviceName}
+    \subitem {IODi}, \hyperpage{66}
+  \item {requestDeviceNames}
+    \subitem {IODi}, \hyperpage{66}
+  \item {requestDeviceSkills}
+    \subitem {IODi}, \hyperpage{66}
+  \item {requestNumberOfDataDevices}
+    \subitem {IODi}, \hyperpage{67}
+  \item {requestNumberOfSkills}
+    \subitem {IODi}, \hyperpage{67}
+  \item {requestOption}
+    \subitem {AI}, \hyperpage{18}
+  \item {requestSkill}
+    \subitem {IODi}, \hyperpage{67}, \hyperpage{69}
+  \item {RESET\_COLOR}
+    \subitem {SimpleDisplay}, \hyperpage{100}
+  \item {RETURNSECURITY}
+    \subitem {AI}, \hyperpage{11}
+  \item {rmUser}
+    \subitem {User}, \hyperpage{107}
+
+  \indexspace
+
+  \item {saveUserData}
+    \subitem {User}, \hyperpage{108}
+  \item {security\_abort}
+    \subitem {SimpleDisplay}, \hyperpage{100}
+  \item {securityConnected}
+    \subitem {SimpleDisplay}, \hyperpage{100}
+  \item {securityGenerator}
+    \subitem {DeviceBuilder}, \hyperpage{53}
+    \subitem {KernelDevice}, \hyperpage{77}
+  \item {securityHasBeenBroken}
+    \subitem {KernelDevice}, \hyperpage{77}
+  \item {securityStatus}
+    \subitem {SimpleDisplay}, \hyperpage{100}
+  \item {SEPARATOR}
+    \subitem {User}, \hyperpage{110}
+  \item {setAllDataDevices}
+    \subitem {DataDevice}, \hyperpage{30}
+  \item {setAllDevices}
+    \subitem {Device}, \hyperpage{38}
+  \item {setAllKernelDevices}
+    \subitem {KernelDevice}, \hyperpage{76}
+  \item {setAsDataDevice}
+    \subitem {DeviceBuilder}, \hyperpage{48}
+  \item {setAsKernelDevice}
+    \subitem {DeviceBuilder}, \hyperpage{48}
+  \item {setCurrentDevice}
+    \subitem {IODi}, \hyperpage{70, 71}
+  \item {setDataDevices}
+    \subitem {SimpleDisplay}, \hyperpage{95}
+  \item {setDataGenerator}
+    \subitem {DeviceBuilder}, \hyperpage{49}
+  \item {setDeviceCounter}
+    \subitem {Device}, \hyperpage{39}
+  \item {setGroup}
+    \subitem {SimpleDisplay}, \hyperpage{96}
+  \item {setKernelDevices}
+    \subitem {SimpleDisplay}, \hyperpage{96}
+  \item {setLimit}
+    \subitem {DataDevice}, \hyperpage{30}
+    \subitem {DeviceBuilder}, \hyperpage{49}
+  \item {setSecurityConnected}
+    \subitem {SimpleDisplay}, \hyperpage{97}
+  \item {setSecurityGenerator}
+    \subitem {DeviceBuilder}, \hyperpage{50}
+  \item {setSecurityStatus}
+    \subitem {SimpleDisplay}, \hyperpage{97}
+  \item {setSkill}
+    \subitem {DeviceBuilder}, \hyperpage{50}
+  \item {SETTINGS\_SCREEN}
+    \subitem {main.cpp}, \hyperpage{165}
+  \item {setUser}
+    \subitem {SimpleDisplay}, \hyperpage{98}
+  \item {showAllUsers}
+    \subitem {AI}, \hyperpage{19}
+  \item {SHOWUSERS}
+    \subitem {AI}, \hyperpage{11}
+  \item {signalHandler}
+    \subitem {AI}, \hyperpage{20}
+  \item {SimpleDisplay}, \hyperpage{81}
+    \subitem {checkAbortStatus}, \hyperpage{83}
+    \subitem {cleanDevi}, \hyperpage{84}
+    \subitem {COLOR}, \hyperpage{98}
+    \subitem {cout}, \hyperpage{84}
+    \subitem {currentDisplay}, \hyperpage{98}
+    \subitem {dataDevices}, \hyperpage{98}
+    \subitem {deviCout}, \hyperpage{84}
+    \subitem {deviPrintData}, \hyperpage{85}
+    \subitem {execBuildFinish}, \hyperpage{85}
+    \subitem {execBuildGenerator}, \hyperpage{86}
+    \subitem {execBuildName}, \hyperpage{87}
+    \subitem {execBuildType}, \hyperpage{87}
+    \subitem {GREY\_COLOR}, \hyperpage{99}
+    \subitem {group}, \hyperpage{99}
+    \subitem {jump}, \hyperpage{87}
+    \subitem {kernelDevices}, \hyperpage{99}
+    \subitem {MAXIMUM\_OPTIONS}, \hyperpage{99}
+    \subitem {operator$<$$<$}, \hyperpage{88}
+    \subitem {printAIInterface}, \hyperpage{88}
+    \subitem {printChecking}, \hyperpage{89}
+    \subitem {printDeviHeader}, \hyperpage{89}
+    \subitem {printDeviHelp}, \hyperpage{90}
+    \subitem {printLoginInterface}, \hyperpage{91}
+    \subitem {printMainInterface}, \hyperpage{92}
+    \subitem {printPresentation}, \hyperpage{93}
+    \subitem {printRequestPassword}, \hyperpage{94}
+    \subitem {printSkillManual}, \hyperpage{95}
+    \subitem {RESET\_COLOR}, \hyperpage{100}
+    \subitem {security\_abort}, \hyperpage{100}
+    \subitem {securityConnected}, \hyperpage{100}
+    \subitem {securityStatus}, \hyperpage{100}
+    \subitem {setDataDevices}, \hyperpage{95}
+    \subitem {setGroup}, \hyperpage{96}
+    \subitem {setKernelDevices}, \hyperpage{96}
+    \subitem {setSecurityConnected}, \hyperpage{97}
+    \subitem {setSecurityStatus}, \hyperpage{97}
+    \subitem {setUser}, \hyperpage{98}
+    \subitem {SimpleDisplay}, \hyperpage{83}
+    \subitem {user}, \hyperpage{101}
+    \subitem {WARNING\_COLOR}, \hyperpage{101}
+  \item {SimpleDisplay.cpp}, \hyperpage{170}
+  \item {SimpleDisplay.h}, \hyperpage{135, 136}
+  \item {skillNames}
+    \subitem {Device}, \hyperpage{42}
+  \item {skillNamesVector}
+    \subitem {DeviceBuilder}, \hyperpage{53}
+  \item {skills}
+    \subitem {Device}, \hyperpage{42}
+  \item {skillVector}
+    \subitem {DeviceBuilder}, \hyperpage{54}
+  \item {SLEEP\_TIME}
+    \subitem {Login}, \hyperpage{80}
+  \item {SLEEPTIME}
+    \subitem {AI}, \hyperpage{23}
+  \item {startCollectingData}
+    \subitem {AI}, \hyperpage{20}
+  \item {startLogin}
+    \subitem {Login}, \hyperpage{79}
+
+  \indexspace
+
+  \item {TAG}
+    \subitem {AI}, \hyperpage{24}
+    \subitem {Device}, \hyperpage{42}
+    \subitem {IODi}, \hyperpage{72}
+    \subitem {User}, \hyperpage{110}
+  \item {tag}
+    \subitem {BaseException}, \hyperpage{26}
+  \item {throwDemon}
+    \subitem {AI}, \hyperpage{21}
+  \item {time\_counter}
+    \subitem {AI}, \hyperpage{24}
+  \item {TOTAL\_COLUMNS}
+    \subitem {User}, \hyperpage{103}
+  \item {TURNDEVICES}
+    \subitem {AI}, \hyperpage{11}
+  \item {turnDevices}
+    \subitem {AI}, \hyperpage{22}
+  \item {TURNSECURITY}
+    \subitem {AI}, \hyperpage{11}
+  \item {turnSecurity}
+    \subitem {AI}, \hyperpage{22}
+
+  \indexspace
+
+  \item {updateUserData}
+    \subitem {User}, \hyperpage{108}
+  \item {User}, \hyperpage{101}
+    \subitem {addUser}, \hyperpage{104}
+    \subitem {ADMIN\_COLUMN}, \hyperpage{103}
+    \subitem {ADMIN\_IDENTIFIER}, \hyperpage{103}
+    \subitem {allUsers}, \hyperpage{109}
+    \subitem {check}, \hyperpage{105}
+    \subitem {DATAFILE}, \hyperpage{109}
+    \subitem {DEVELOPER\_USER}, \hyperpage{103}
+    \subitem {find}, \hyperpage{106}
+    \subitem {getAdminStatus}, \hyperpage{106}
+    \subitem {getUser}, \hyperpage{107}
+    \subitem {id}, \hyperpage{109}
+    \subitem {INVALID\_PASS}, \hyperpage{103}
+    \subitem {INVALID\_USER}, \hyperpage{103}
+    \subitem {isAdmin}, \hyperpage{110}
+    \subitem {pass}, \hyperpage{110}
+    \subitem {PASS\_COLUMN}, \hyperpage{103}
+    \subitem {printUsers}, \hyperpage{107}
+    \subitem {rmUser}, \hyperpage{107}
+    \subitem {saveUserData}, \hyperpage{108}
+    \subitem {SEPARATOR}, \hyperpage{110}
+    \subitem {TAG}, \hyperpage{110}
+    \subitem {TOTAL\_COLUMNS}, \hyperpage{103}
+    \subitem {updateUserData}, \hyperpage{108}
+    \subitem {User}, \hyperpage{104}
+    \subitem {USER\_COLUMN}, \hyperpage{103}
+    \subitem {USERFILE}, \hyperpage{111}
+  \item {user}
+    \subitem {Login}, \hyperpage{81}
+    \subitem {SimpleDisplay}, \hyperpage{101}
+  \item {User.cpp}, \hyperpage{178}
+  \item {User.h}, \hyperpage{137, 138}
+  \item {USER\_COLUMN}
+    \subitem {User}, \hyperpage{103}
+  \item {USERFILE}
+    \subitem {User}, \hyperpage{111}
+  \item {UserNotFoundException}, \hyperpage{111}
+    \subitem {ERROR\_MESSAGE}, \hyperpage{112}
+    \subitem {UserNotFoundException}, \hyperpage{112}
+  \item {UserNotFoundException.cpp}, \hyperpage{181}
+  \item {UserNotFoundException.h}, \hyperpage{129, 130}
+
+  \indexspace
+
+  \item {WARNING\_COLOR}
+    \subitem {SimpleDisplay}, \hyperpage{101}
+  \item {what}
+    \subitem {BaseException}, \hyperpage{25}
+
+\end{theindex}

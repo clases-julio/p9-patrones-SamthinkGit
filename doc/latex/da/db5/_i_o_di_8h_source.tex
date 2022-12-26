@@ -1,0 +1,70 @@
+\hypertarget{_i_o_di_8h_source}{}\doxysection{IODi.\+h}
+\label{_i_o_di_8h_source}\index{IODi.h@{IODi.h}}
+\mbox{\hyperlink{_i_o_di_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00001}00001 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ Input/Output Device Interface -\/ JVH Systems -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00008}00008 \textcolor{comment}{}\textcolor{preprocessor}{\#ifndef IODI\_H}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00009}00009 \textcolor{preprocessor}{\#define IODI\_H}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00010}00010 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_data_device_8h}{DataDevice.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00019}\mbox{\hyperlink{class_i_o_di}{00019}} \textcolor{keyword}{class }\mbox{\hyperlink{class_i_o_di}{IODi}} \{}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00021}00021 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00022}00022 \textcolor{comment}{//                    PUBLIC                     |}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00023}00023 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00024}00024 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00026}00026     \textcolor{keyword}{enum}\{}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00027}00027         \mbox{\hyperlink{class_i_o_di_a8c9c8bccbf0d454264343085d71df101a3fb5479468687f243d01734daa88f379}{DEFAULT\_ID}} = 33}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00028}\mbox{\hyperlink{class_i_o_di_a8c9c8bccbf0d454264343085d71df101a3fb5479468687f243d01734daa88f379}{00028}}     \};}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00030}00030     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  DYNAMIC  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00034}00034     \mbox{\hyperlink{class_i_o_di_ad18504787404ff5f6c70a46249c53db3}{IODi}}();}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00038}00038     std::string* \mbox{\hyperlink{class_i_o_di_a2142cdf8cd8f6e33d8463ea86c514f3f}{requestDeviceNames}}();}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00043}00043     std::string* \mbox{\hyperlink{class_i_o_di_ae3d98013800c88fec47012ec3c814d8f}{requestDeviceSkills}}();}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00047}00047     std::string \mbox{\hyperlink{class_i_o_di_a1292c16744331d5225087e55326c01ec}{requestCurrentDeviceName}}();}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00051}00051     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_i_o_di_a39477d835859b498b3853696bc1de2dc}{requestNumberOfDataDevices}}();}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00055}00055     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_i_o_di_ac3e76c3309b3b98e9e7125e6e2dce79a}{requestNumberOfSkills}}();}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00059}00059     \textcolor{keywordtype}{bool}* \mbox{\hyperlink{class_i_o_di_ae8f0575dd0958aabfb7e41ae2165aaf5}{requestAllStatus}}();}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00063}00063     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{requestSkill}}(std::string skill);}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00067}00067     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{requestSkill}}(\textcolor{keywordtype}{int} skill);}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00072}00072     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{setCurrentDevice}}(std::string name);}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00077}00077     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{setCurrentDevice}}(\textcolor{keywordtype}{int} pos);}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00079}00079 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00080}00080 \textcolor{comment}{//                   PRIVATE                     |}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00081}00081 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00082}00082 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00084}00084     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  DYNAMIC  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00086}00086     \textcolor{comment}{// [Variables]}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00089}\mbox{\hyperlink{class_i_o_di_a4bdb0207b3674718e1b15f10e20b6f4f}{00089}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_i_o_di_a4bdb0207b3674718e1b15f10e20b6f4f}{id}};}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00091}\mbox{\hyperlink{class_i_o_di_aa57cd3b2d02981f5b17052e1bc0bcc01}{00091}}     std::string \mbox{\hyperlink{class_i_o_di_aa57cd3b2d02981f5b17052e1bc0bcc01}{currentDeviceName}};}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00093}\mbox{\hyperlink{class_i_o_di_a7a4d701911082fc82b7bebed11099bae}{00093}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_i_o_di_a7a4d701911082fc82b7bebed11099bae}{currentDevicePos}};}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00095}00095     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  STATIC  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00096}00096 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00097}00097     \textcolor{comment}{// [Functions]}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00100}\mbox{\hyperlink{class_i_o_di_ac55b70e70c1294a1a01300b4e7173a3d}{00100}}     \textcolor{keyword}{static} std::string \mbox{\hyperlink{class_i_o_di_ac55b70e70c1294a1a01300b4e7173a3d}{TAG}};}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00102}\mbox{\hyperlink{class_i_o_di_acc5a39bae3961ba0bc34787e2f4b361f}{00102}}     \textcolor{keyword}{static} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_i_o_di_acc5a39bae3961ba0bc34787e2f4b361f}{maxID}};}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00104}00104 \};}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8h_source_l00107}00107 \textcolor{preprocessor}{\#endif}\textcolor{comment}{// IODI\_H}}
+
+\end{DoxyCode}

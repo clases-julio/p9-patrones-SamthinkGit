@@ -1,0 +1,93 @@
+\hypertarget{_device_8cpp_source}{}\doxysection{Device.\+cpp}
+\label{_device_8cpp_source}\index{Device.cpp@{Device.cpp}}
+\mbox{\hyperlink{_device_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00001}00001 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ Device -\/ JVH Systems -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00009}00009 \textcolor{comment}{}\textcolor{preprocessor}{\#include "{}../headers/Device.h"{}}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00011}00011 \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00012}00012 \textcolor{keywordtype}{int} \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{Device::numDevices}};}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00013}00013 \mbox{\hyperlink{class_device}{Device}}* \mbox{\hyperlink{class_device_a48e91eea6919c638b7951e2246a738a0}{Device::allDevices}};}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00014}00014 std::string* \mbox{\hyperlink{class_device_a736701986d6f35d72c9f4c60823234c1}{Device::allDeviceNames}};}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00015}00015 std::string \mbox{\hyperlink{class_device_aebd38e00abc6091626f986ab8c5697b7}{Device::TAG}} = \textcolor{stringliteral}{"{}Device"{}};}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00017}00017 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00018}00018 \textcolor{comment}{//                  PUBLIC FUNCTIONALITIES              |}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00019}00019 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00021}00021 \textcolor{comment}{// -\/-\/-\/ [Empty Constructor] Device -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00022}\mbox{\hyperlink{class_device_a64ba12dcc5f4267486c5d545d04dcf68}{00022}} \mbox{\hyperlink{class_device_a64ba12dcc5f4267486c5d545d04dcf68}{Device::Device}}() : name(\textcolor{stringliteral}{"{}"{}}),id(INVALID\_DEVICE)\{\};}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00024}00024 \textcolor{comment}{// -\/-\/-\/ [Constructor] Device -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00025}\mbox{\hyperlink{class_device_ad689f911c5f2395a1116a625113e5392}{00025}} \mbox{\hyperlink{class_device_a64ba12dcc5f4267486c5d545d04dcf68}{Device::Device}}(std::string deviceName, \textcolor{keywordtype}{int} deviceId): name(deviceName),id(deviceId)\{\}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00028}00028 \textcolor{comment}{// -\/-\/-\/ [Getter] getName -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00029}\mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{00029}} std::string \mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{Device::getName}}() \{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00030}00030     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}};}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00033}\mbox{\hyperlink{class_device_a3582cb23e9b9b33087f88385ef5eca27}{00033}} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_device_a3582cb23e9b9b33087f88385ef5eca27}{Device::getNumSkills}}()\{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00034}00034     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_device_a530825dc9a5ac9b4491308d6e1ac9ffc}{numSkills}};}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00035}00035 \}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00037}00037 \textcolor{comment}{// -\/-\/-\/ [Method] operator[] (int) -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00038}\mbox{\hyperlink{class_device_a24cdf263bfc82ebcdb63cb507d583f70}{00038}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_a24cdf263bfc82ebcdb63cb507d583f70}{Device::operator[]}}(\textcolor{keywordtype}{int} index)\{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00039}00039     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00040}00040         (*this-\/>\mbox{\hyperlink{class_device_ac7f6e68d79802b6ea86735c70a92c4f7}{skills}})[index]();}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00042}00042     \}\textcolor{keywordflow}{catch} (std::exception)\{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00043}00043         \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_invalid_skill_exception}{InvalidSkillException}}(\mbox{\hyperlink{class_device_aebd38e00abc6091626f986ab8c5697b7}{TAG}});}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00045}00045 \}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00047}00047 \textcolor{comment}{// -\/-\/-\/ [Method] operator[] (string) -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00048}\mbox{\hyperlink{class_device_ac98ecb9f1f9009e2d55c59d60942332f}{00048}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_a24cdf263bfc82ebcdb63cb507d583f70}{Device::operator[]}}(std::string skillName)\{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00049}00049     \textcolor{comment}{// -\/-\/-\/-\/-\/ Set number of skills -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00050}00050     \textcolor{keywordtype}{int} skillSize = this-\/>\mbox{\hyperlink{class_device_a530825dc9a5ac9b4491308d6e1ac9ffc}{numSkills}};}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00052}00052     \textcolor{comment}{// -\/-\/-\/-\/-\/ Find and use Skill -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00053}00053     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < skillSize; i++)\{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00054}00054         \textcolor{keywordflow}{if} (skillName == \mbox{\hyperlink{class_device_aaccdf897fbb200f562df5f9637a5ca6c}{skillNames}}[i])}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00055}00055             \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00056}00056                 (*this-\/>\mbox{\hyperlink{class_device_ac7f6e68d79802b6ea86735c70a92c4f7}{skills}})[i]();}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00057}00057                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00058}00058             \}\textcolor{keywordflow}{catch} (std::exception)\{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00059}00059                 \textcolor{keywordflow}{throw} \mbox{\hyperlink{class_invalid_skill_exception}{InvalidSkillException}}(\mbox{\hyperlink{class_device_aebd38e00abc6091626f986ab8c5697b7}{TAG}});}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00060}00060             \}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00062}00062     \}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00063}00063 \};}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00065}00065 \textcolor{comment}{// -\/-\/-\/ [Operator] \string~ -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00066}\mbox{\hyperlink{class_device_abc03a7e8cf8ed04b7906cf434510ec1b}{00066}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_device_abc03a7e8cf8ed04b7906cf434510ec1b}{Device::operator\string~}}() \{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00067}00067     \textcolor{keywordflow}{return} this-\/>\mbox{\hyperlink{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}{isActive}};}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00068}00068 \}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00070}00070 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00071}00071 \textcolor{comment}{//                  PRIVATE FUNCTIONALITIES             |}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00072}00072 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00074}00074 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00075}00075 \textcolor{comment}{// -\/-\/-\/ [Setter] setAllDevices -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00076}\mbox{\hyperlink{class_device_a33d29d035c971f5c49e5a60d9720b201}{00076}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_a33d29d035c971f5c49e5a60d9720b201}{Device::setAllDevices}}(\mbox{\hyperlink{class_device}{Device}}* allNewDevices, std::string* allNewDeviceNames, \textcolor{keywordtype}{int} numDevices) \{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00078}00078     \textcolor{comment}{// -\/-\/-\/-\/-\/ Setting Device pointers and names -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00079}00079     std::cout << \textcolor{stringliteral}{"{}[DEVICES] Collecting all devices: "{}} << std::endl;}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00080}00080     \mbox{\hyperlink{class_device_a48e91eea6919c638b7951e2246a738a0}{Device::allDevices}} = allNewDevices;}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00081}00081     \mbox{\hyperlink{class_device_a736701986d6f35d72c9f4c60823234c1}{Device::allDeviceNames}} = allNewDeviceNames;}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00082}00082     \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{Device::numDevices}} = \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{numDevices}};}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00084}00084     \textcolor{comment}{// -\/-\/-\/-\/-\/ Log Success Device -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00085}00085     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{numDevices}}; i++)\{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00086}00086         std::cout << \textcolor{stringliteral}{"{}-\/> (SUCCESS) "{}} << allNewDeviceNames[i] << std::endl;}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00087}00087     \}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00089}00089 \}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00091}00091 \textcolor{comment}{// -\/-\/-\/ [Setter] setDeviceCounter -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00092}\mbox{\hyperlink{class_device_ab9ed0324f1d481e7aca9cf14ead2c2f4}{00092}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_ab9ed0324f1d481e7aca9cf14ead2c2f4}{Device::setDeviceCounter}}(\textcolor{keywordtype}{int} num) \{}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00093}00093     \mbox{\hyperlink{class_device_a74302904617c3868c4aa9ad4b9958a9a}{Device::numDevices}} = num;}
+\DoxyCodeLine{\Hypertarget{_device_8cpp_source_l00094}00094 \}}
+
+\end{DoxyCode}

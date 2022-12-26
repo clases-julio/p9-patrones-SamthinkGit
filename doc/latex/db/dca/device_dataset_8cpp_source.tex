@@ -1,0 +1,86 @@
+\hypertarget{device_dataset_8cpp_source}{}\doxysection{device\+Dataset.\+cpp}
+\label{device_dataset_8cpp_source}\index{deviceDataset.cpp@{deviceDataset.cpp}}
+\mbox{\hyperlink{device_dataset_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#ifndef DEVICE\_DATASET}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00002}\mbox{\hyperlink{device_dataset_8cpp_a21def413aa90b8546fd2401144f8cdde}{00002}} \textcolor{preprocessor}{\#define DEVICE\_DATASET}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include "{}../headers/DeviceBuilder.h"{}}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{example_skills_dataset_8cpp}{exampleSkillsDataset.cpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{example_security_dataset_8cpp}{exampleSecurityDataset.cpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00007}\mbox{\hyperlink{classdevice_dataset}{00007}} \textcolor{keyword}{class }\mbox{\hyperlink{classdevice_dataset}{deviceDataset}} \{}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00008}00008 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00010}\mbox{\hyperlink{classdevice_dataset_aeb0802ce7e16664f49e877d427702b4e}{00010}}     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classdevice_dataset_aeb0802ce7e16664f49e877d427702b4e}{initDataset}}()\{}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00012}00012         \textcolor{comment}{// -\/-\/-\/-\/-\/ Building All Devices -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00013}00013         std::cout << \textcolor{stringliteral}{"{}[BUILDER] Calling Default builders..."{}} << std::endl;}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00014}00014         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* thermometer = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Thermometer"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00015}00015         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* humiditySensor = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Humidity Sensor"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00016}00016         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* airSensor = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Air Sensor"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00017}00017         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* lightSensor = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Light Sensor"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00018}00018         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* rgbCamera = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}RGB Camera"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00019}00019         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* thermalCamera = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Thermal Camera"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00021}00021         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* securityCamera1 = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Security Camera 1"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00022}00022         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* securityCamera2 = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Security Camera 2"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00023}00023         \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}* laserDetector = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_builder}{DeviceBuilder}}(\textcolor{stringliteral}{"{}Laser Detector"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00025}00025         \textcolor{comment}{// -\/-\/-\/-\/-\/ Building Device Skills -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00026}00026         std::cout << \textcolor{stringliteral}{"{}[BUILDER] Building skills"{}} << std::endl;}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00028}00028         \textcolor{comment}{// -\/-\/-\/-\/-\/ Building Main Data Generator -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00029}00029         (*thermometer).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00030}00030         (*humiditySensor).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00031}00031         (*airSensor).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00032}00032         (*lightSensor).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00033}00033         (*rgbCamera).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00034}00034         (*thermalCamera).setDataGenerator(\mbox{\hyperlink{example_skills_dataset_8cpp_afc75e794ea44220b6ab4a907d161a0a3}{generateRandomData}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00036}00036         (*securityCamera1).setSecurityGenerator(\mbox{\hyperlink{example_security_dataset_8cpp_aab06fa4565c1b10f5d1ea5f165340300}{exampleTest}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00037}00037         (*securityCamera2).setSecurityGenerator(\mbox{\hyperlink{example_security_dataset_8cpp_aab06fa4565c1b10f5d1ea5f165340300}{exampleTest}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00038}00038         (*laserDetector).setSecurityGenerator(\mbox{\hyperlink{example_security_dataset_8cpp_aab06fa4565c1b10f5d1ea5f165340300}{exampleTest}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00040}00040         \textcolor{comment}{// -\/-\/-\/-\/-\/ Building Skills (Only for DataDevices) -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00041}00041         (*thermometer).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_a2c59b01bd7158b861b648030fea3e9c3}{exampleSkill1}}, \textcolor{stringliteral}{"{}calculate"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00042}00042         (*thermometer).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_ac8b358b790785864cf9f69da350f5811}{exampleSkill2}}, \textcolor{stringliteral}{"{}set celsius"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00044}00044         (*humiditySensor).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_aa9af2c674063dc79e366286d6e4b1417}{exampleSkill3}},\textcolor{stringliteral}{"{}hum decrease"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00045}00045         (*humiditySensor).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{exampleSkill4}},\textcolor{stringliteral}{"{}hum increase"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00047}00047         (*airSensor).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_aa9af2c674063dc79e366286d6e4b1417}{exampleSkill3}},\textcolor{stringliteral}{"{}air type -\/-\/british"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00049}00049         (*lightSensor).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{exampleSkill4}},\textcolor{stringliteral}{"{}setmode blind"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00050}00050         (*lightSensor).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{exampleSkill4}},\textcolor{stringliteral}{"{}setmode colorful"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00051}00051         (*lightSensor).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{exampleSkill4}},\textcolor{stringliteral}{"{}setmode hacker"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00053}00053         (*rgbCamera).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_aa9af2c674063dc79e366286d6e4b1417}{exampleSkill3}},\textcolor{stringliteral}{"{}print camera"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00054}00054         (*rgbCamera).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{exampleSkill4}},\textcolor{stringliteral}{"{}lookfor -\/-\/myself"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00056}00056         (*thermalCamera).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_aa9af2c674063dc79e366286d6e4b1417}{exampleSkill3}},\textcolor{stringliteral}{"{}tcconfig up"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00057}00057         (*thermalCamera).setSkill(\mbox{\hyperlink{example_skills_dataset_8cpp_abb3e856a3d0bdababbb49ff1e0f824e2}{exampleSkill4}},\textcolor{stringliteral}{"{}tcconfig down"{}});}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00059}00059         \textcolor{comment}{// -\/-\/-\/-\/-\/ Building Device Limits (optional) -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00060}00060         std::cout << \textcolor{stringliteral}{"{}[BUILDER] Building limits"{}} << std::endl;}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00062}00062     \textcolor{comment}{//    int lim[3] = \{1, 2, 3\};}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00063}00063     \textcolor{comment}{//    (*test).setLimit(lim);}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00065}00065         \textcolor{comment}{// -\/-\/-\/-\/-\/ Setting Device Types [Data/Kernel]}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00066}00066         std::cout << \textcolor{stringliteral}{"{}[BUILDER] Settling Types"{}} << std::endl;}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00067}00067         (*thermometer).setAsDataDevice();}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00068}00068         (*humiditySensor).setAsDataDevice();}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00069}00069         (*airSensor).setAsDataDevice();}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00070}00070         (*lightSensor).setAsDataDevice();}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00071}00071         (*rgbCamera).setAsDataDevice();}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00072}00072         (*thermalCamera).setAsDataDevice();}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00074}00074         (*securityCamera1).setAsKernelDevice();}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00075}00075         (*securityCamera2).setAsKernelDevice();}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00076}00076         (*laserDetector).setAsKernelDevice();}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00077}00077     \}}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00078}00078 \};}
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{device_dataset_8cpp_source_l00080}00080 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
