@@ -9,7 +9,7 @@
   @brief This is the main Test Program, Running for testing snapshot
 
 */
-#include "../headers/DeviceComposite.h"
+#include "../include/DeviceComposite.h"
 /** Defining the different screens that the program can have. */
 enum{
     MAIN_SCREEN = 0,

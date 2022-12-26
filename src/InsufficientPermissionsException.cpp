@@ -1,4 +1,4 @@
-#include "../headers/except/InsufficientPermissionsException.h"
+#include "../include/except/InsufficientPermissionsException.h"
 std::string InsufficientPermissionsException::ERROR_MESSAGE = "Invalid User";
 
 InsufficientPermissionsException::InsufficientPermissionsException(std::string &tag) {

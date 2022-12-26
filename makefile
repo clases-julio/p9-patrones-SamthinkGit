@@ -27,6 +27,7 @@ SRC_DIR := ./src
 LINUX_DIR := ./ext
 OBJ_DIR := ./obj
 DATA_DIR := ./data
+OUTPUT_DIR := ./build
 
 SRC_FILES := $(wildcard $(SRC_DIR)/*.cpp)
 OBJ_FILES := $(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(SRC_FILES))
@@ -34,7 +35,7 @@ LDFLAGS += -std=c++0x -Wl,--no-as-needed
 CC = g++
 
 # MAIN COMPILER
-main.exe: $(OBJ_FILES)
+$(OUTPUT_DIR)/main.exe: $(OBJ_FILES)
 	g++ -g $(LDFLAGS) -o $@ $^ 
 
 # SRC COMPILER

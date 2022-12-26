@@ -1,6 +1,6 @@
 #ifndef EXAMPLE_SKILLS
 #define EXAMPLE_SKILLS
-#include "../headers/lib.h"
+#include "../include/lib.h"
 
 // --- [Function] exampleSkill ---
 // Usage: Example Skill for developer testing

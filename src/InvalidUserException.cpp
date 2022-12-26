@@ -1,4 +1,4 @@
-#include "../headers/except/InvalidUserException.h"
+#include "../include/except/InvalidUserException.h"
 
 std::string InvalidUserException::ERROR_MESSAGE = "Invalid User";
 

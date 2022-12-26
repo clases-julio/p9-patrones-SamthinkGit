@@ -6,7 +6,7 @@
   @grade Software Robotics (Software Design)
 
 */
-#include "../headers/Device.h"
+#include "../include/Device.h"
 
 // ----- Declarations ------
 int Device::numDevices;

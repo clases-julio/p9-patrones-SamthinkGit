@@ -6,7 +6,7 @@
   @grade Software Robotics (Software Design)
 
 */
-#include "../headers/KernelDevice.h"
+#include "../include/KernelDevice.h"
 
 
 // ----- Declarations ------

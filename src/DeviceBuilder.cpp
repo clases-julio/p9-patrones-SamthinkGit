@@ -6,7 +6,7 @@
   @grade Software Robotics (Software Design)
 
 */
-#include "../headers/DeviceBuilder.h"
+#include "../include/DeviceBuilder.h"
 
 
 // ----- Declarations ------

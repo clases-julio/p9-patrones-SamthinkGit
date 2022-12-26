@@ -1,6 +1,6 @@
 #ifndef DEVICE_DATASET
 #define DEVICE_DATASET
-#include "../headers/DeviceBuilder.h"
+#include "../include/DeviceBuilder.h"
 #include "exampleSkillsDataset.cpp"
 #include "exampleSecurityDataset.cpp"
 

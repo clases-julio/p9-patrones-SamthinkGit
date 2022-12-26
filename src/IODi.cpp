@@ -7,8 +7,8 @@
 
 */
 
-#include "../headers/IODi.h"
-#include "../headers/AI.h"
+#include "../include/IODi.h"
+#include "../include/AI.h"
 
 // ----- Declarations ------
 int IODi::maxID = 0;

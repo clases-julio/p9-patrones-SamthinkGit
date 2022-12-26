@@ -1,4 +1,4 @@
-#include "../headers/except/InvalidSkillException.h"
+#include "../include/except/InvalidSkillException.h"
 std::string InvalidSkillException::ERROR_MESSAGE = "Invalid File";
 
 InvalidSkillException::InvalidSkillException(std::string &tag) {

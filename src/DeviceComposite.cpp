@@ -1,4 +1,4 @@
-#include "../headers/DeviceComposite.h"
+#include "../include/DeviceComposite.h"
 // ----- Declarations -----
 std::string CALL_KEYWORD = "add";
 

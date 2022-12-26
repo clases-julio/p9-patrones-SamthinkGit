@@ -1,4 +1,4 @@
-#include "../headers/except/InvalidDeviceException.h"
+#include "../include/except/InvalidDeviceException.h"
 std::string InvalidDeviceException::ERROR_MESSAGE = "Invalid User";
 
 InvalidDeviceException::InvalidDeviceException(std::string &tag) {

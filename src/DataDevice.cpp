@@ -6,7 +6,7 @@
   @grade Software Robotics (Software Design)
 
 */
-#include "../headers/DataDevice.h"
+#include "../include/DataDevice.h"
 
 // ----- Declarations ------
 DataDevice* DataDevice::allDataDevices;

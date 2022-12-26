@@ -5,7 +5,7 @@
   @date 03/11/2022
   @grade Software Robotics (Software Design)
 */
-#include "../headers/SimpleDisplay.h"
+#include "../include/SimpleDisplay.h"
 
 int SimpleDisplay::MAXIMUM_OPTIONS = 12;
 std::string SimpleDisplay::COLOR = "\033[36m";

@@ -7,7 +7,7 @@
 
 */
 
-#include "../headers/AI.h"
+#include "../include/AI.h"
 
 // ----- Declarations ------
 int AI::MAX_DATA = 30;
