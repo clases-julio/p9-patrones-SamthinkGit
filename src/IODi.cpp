@@ -25,7 +25,7 @@ IODi::IODi(){
 };
 
 // --- [Setter] setCurrentDevice ---
-void IODi::setCurrentDevice(int pos) {
+void IODi::setCurrentDevice(const int pos) {
 
     // ----- If position is valid ------
     if (pos < IODi::requestNumberOfDataDevices()) {
@@ -44,7 +44,7 @@ void IODi::setCurrentDevice(int pos) {
 }
 
 // --- [Setter] setCurrentDevice ---
-void IODi::setCurrentDevice(std::string name) {
+void IODi::setCurrentDevice(const std::string& name) {
 
     // ----- Check type argument is not a number ------
     if (std::isdigit(name[0])){
@@ -114,7 +114,7 @@ bool* IODi::requestAllStatus() {
 };
 
 // --- [REQUEST] -> Uses a skill given the position in device array
-void IODi::requestSkill(int skill){
+void IODi::requestSkill(const int skill){
     try {
         DataDevice::allDataDevices[this->currentDevicePos][skill];
     }catch(InvalidSkillException &e){};
@@ -126,7 +126,7 @@ std::string IODi::requestCurrentDeviceName() {
 }
 
 // --- [REQUEST] -> Uses a skill given the keyword
-void IODi::requestSkill(std::string skill){
+void IODi::requestSkill(const std::string& skill){
 
     // ----- Obtaining current device -----
     DataDevice* target = &DataDevice::allDataDevices[this->currentDevicePos];
@@ -182,6 +182,12 @@ void IODi::requestSkill(std::string skill){
 
     else if (skill == "clear")
         SimpleDisplay::deviCout("[IODi] Suggestion: Maybe you are looking for -> :clean");
+
+    else if (skill == "clean")
+        SimpleDisplay::deviCout("[IODi] Suggestion: Maybe you are looking for -> :clean");
+
+    else if (skill == "dev")
+        SimpleDisplay::deviCout("[IODi] Suggestion: Maybe you are looking for -> :dev");
 
     else if (skill[0] == '\"' || skill[0] == '\'') {
         SimpleDisplay::deviCout("Are you trying to Inject SQL? Lol ok");

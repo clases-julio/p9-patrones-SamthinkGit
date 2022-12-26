@@ -41,7 +41,7 @@ public:
     * @param skillNames: Names for the skills implemented.
     * @note Skills and skill-names must be in the same order so the
     * kernel can show them to the user. */
-    DataDevice(std::string name, int id,std::vector<void(*)()>* skill, std::string* skillNames);
+    DataDevice(const std::string &name, int id,std::vector<void(*)()>* skill, std::string* skillNames);
 
     // [Variables]
 

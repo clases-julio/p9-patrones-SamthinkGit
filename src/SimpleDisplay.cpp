@@ -7,7 +7,7 @@
 */
 #include "../include/SimpleDisplay.h"
 
-int SimpleDisplay::MAXIMUM_OPTIONS = 12;
+const int SimpleDisplay::MAXIMUM_OPTIONS = 12;
 std::string SimpleDisplay::COLOR = "\033[36m";
 std::string SimpleDisplay::WARNING_COLOR = "\033[31m";
 std::string SimpleDisplay::RESET_COLOR = "\033[0m";
@@ -27,7 +27,7 @@ SimpleDisplay::SimpleDisplay() {
 // ------------------------------------------------------
 
 // --- [Static] printLoginInterface ---
-void SimpleDisplay::printLoginInterface(int user, int pass, int INVALID_USER, int INVALID_PASS){
+void SimpleDisplay::printLoginInterface(const int user, const int pass, const int INVALID_USER, const int INVALID_PASS){
 
     // ----- Declarations ------
 
@@ -84,7 +84,7 @@ void SimpleDisplay::printChecking(){
 
 
 // --- [Static] cout ---
-void SimpleDisplay::cout(std::string text){
+void SimpleDisplay::cout(const std::string& text){
     checkAbortStatus();
     std::cout << text;
 }
@@ -170,11 +170,11 @@ void SimpleDisplay::printPresentation() {
 
     jump();
 
-    printf("#==================================       JVH-Systems  V.0.4.0   ========================================#\n\n");
+    printf("#==================================       JVH-Systems  V.0.4.2   ========================================#\n\n");
     printf("       Bienvenido Software Developer                                                                        \n");
     printf("\n");
     printf("       Esta pantalla es puramente informativa y NO aparecera en la version FINAL del programa.\n");
-    printf("       A continuacion vas a acceder al programa JVH-Systems version V.0.3.1 Antes de lanzarte\n");
+    printf("       A continuacion vas a acceder al programa JVH-Systems version V.0.4.2 Antes de lanzarte\n");
     printf("       al programa te recomendamos que compruebes los siguientes parametros:\n");
     printf("\n");
     printf("    1. Comprueba que tu terminal es capaz de ver el recuadro en el que se encuentra incluido\n");
@@ -277,7 +277,7 @@ void SimpleDisplay::execBuildType(){
 }
 
 // --- [Function] execBuildGenerator()
-void SimpleDisplay::execBuildGenerator(bool isDataDevice){
+void SimpleDisplay::execBuildGenerator(const bool isDataDevice){
 
     checkAbortStatus();
     printf("%s",("\nif [ \"" + COLOR + "$EUID" + RESET_COLOR + "\" -ne 0 ]; then\n").c_str());
@@ -322,7 +322,7 @@ void SimpleDisplay::execBuildFinish(){
 
 
 // --- [Static] printDeviHeader ---
-void SimpleDisplay::printDeviHeader(std::string deviceName) {
+void SimpleDisplay::printDeviHeader(const std::string& deviceName) {
     jump();
     printf("#=================================================================================================#\n");
     printf("|                                          %-20s                                   |\n",deviceName.c_str());
@@ -393,7 +393,7 @@ void SimpleDisplay::printDeviHelp() {
 }
 
 // --- [Static] printSkillManual ---
-void SimpleDisplay::printSkillManual(std::string* skillnames, int count) {
+void SimpleDisplay::printSkillManual(const std::string* skillnames, const int count) {
 
     printf("~ -------- DEVi++ Self-Generated Skill Manual ---------\n");
     printf("~ Every device has its own commands, JVH implements a  \n");
@@ -429,7 +429,7 @@ void SimpleDisplay::printSkillManual(std::string* skillnames, int count) {
 }
 
 // --- [Static] cleanDevi ---
-void SimpleDisplay::cleanDevi(std::string deviceName) {
+void SimpleDisplay::cleanDevi(const std::string& deviceName) {
 
     jump();
     printf("#=================================================================================================#\n");
@@ -443,14 +443,14 @@ void SimpleDisplay::cleanDevi(std::string deviceName) {
 
 
 // --- [Static] deviCout ---
-void SimpleDisplay::deviCout(std::string text) {
+void SimpleDisplay::deviCout(const std::string& text) {
 
     checkAbortStatus();
     printf("%s", ("~ " + text + "\n").c_str());
 }
 
 // --- [Static] printDeviData ---
-void SimpleDisplay::deviPrintData(std::vector<int> data, std::vector<std::string> time) {
+void SimpleDisplay::deviPrintData(const std::vector<int>& data, const std::vector<std::string>& time) {
 
     int date_length = 19;
     int size = data.size();
@@ -468,23 +468,23 @@ void SimpleDisplay::deviPrintData(std::vector<int> data, std::vector<std::string
 //                         SETTERS                      |
 // ------------------------------------------------------
 // --- [Function] setSecurityConnected()
-void SimpleDisplay::setSecurityConnected(bool securityConnected) {
+void SimpleDisplay::setSecurityConnected(const bool securityConnected) {
     SimpleDisplay::securityConnected = securityConnected;
 }
 // --- [Function] setSecurityStatus()
-void SimpleDisplay::setSecurityStatus(bool securityStatus) {
+void SimpleDisplay::setSecurityStatus(const bool securityStatus) {
     SimpleDisplay::securityStatus = securityStatus;
 }
 // --- [Function] setKernelDevices()
-void SimpleDisplay::setKernelDevices(int kernelDevices) {
+void SimpleDisplay::setKernelDevices(const int kernelDevices) {
     SimpleDisplay::kernelDevices = kernelDevices;
 }
 // --- [Function] setDataDevices()
-void SimpleDisplay::setDataDevices(int dataDevices) {
+void SimpleDisplay::setDataDevices(const int dataDevices) {
     SimpleDisplay::dataDevices = dataDevices;
 }
 // --- [Function] setUser()
-void SimpleDisplay::setUser(int user) {
+void SimpleDisplay::setUser(const int user) {
     SimpleDisplay::user = user;
 }
 // --- [Function] setGroup()
@@ -492,7 +492,7 @@ void SimpleDisplay::setGroup(const std::string &group) {
     SimpleDisplay::group = group;
 }
 // --- [Function] operator()
-void SimpleDisplay::operator<<(SimpleDisplay display) {
+void SimpleDisplay::operator<<(const SimpleDisplay& display) {
 
     this->securityStatus = display.securityStatus;
     this->securityConnected = display.securityConnected;

@@ -22,7 +22,7 @@ public:
 
      /** @brief Throws main exception.
      * @param tag Founder of the exception */
-    explicit InvalidSkillException(std::string &tag);
+    explicit InvalidSkillException(const std::string &tag);
 
 // -----------------------------------------------
 //                   PRIVATE                     |

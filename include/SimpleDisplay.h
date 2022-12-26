@@ -37,23 +37,23 @@ public:
 
     /** @brief Sets the connection status of the alarms.
     * @param securityConnected Status of alarms: (True) Connected. (False) Disconnected */
-    void setSecurityConnected(bool securityConnected);
+    void setSecurityConnected(const bool securityConnected);
 
     /** @brief Sets the security status of the alarms.
     * @param securityStatus Status of alarms: (True) Secure. (False) Insecure */
-    void setSecurityStatus(bool securityStatus);
+    void setSecurityStatus(const bool securityStatus);
 
     /** @brief Sets number of Kernel Devices
     * @param kernelDevices */
-    void setKernelDevices(int kernelDevices);
+    void setKernelDevices(const int kernelDevices);
 
     /** @brief Sets number of Data Devices
     * @param dataDevices */
-    void setDataDevices(int dataDevices);
+    void setDataDevices(const int dataDevices);
 
     /** @brief Sets current user identificator
     * @param user */
-    void setUser(int user);
+    void setUser(const int user);
 
     /** @brief Sets current user group
     * @param group */
@@ -61,14 +61,14 @@ public:
 
     /** @brief Inherit configuration from other display.
     * @param display Display to be inherited from */
-    void operator<<(SimpleDisplay display);
+    void operator<<(const SimpleDisplay& display);
 
      /** @brief Prints the login interface (encrypted)
      * @param user username to be printed in screen
      * @param pass Password to encrypt and print in screen
      * @param INVALID_USER User to do NOT print user in screen. -1 as default.
      * @param INVALID_PASS Pass to do NOT print user in screen. -1 as default. */
-    static void printLoginInterface(int user, int pass, int INVALID_USER=-1, int INVALID_PASS=-1);
+    static void printLoginInterface(const int user, const int pass, const int INVALID_USER=-1, const int INVALID_PASS=-1);
 
     /** @brief Prints text "Checking..." */
     static void printChecking();
@@ -90,14 +90,14 @@ public:
 
     /** @brief Prints text to Screen using DEVi++ prefix
     * @param text String which contains the message to be printed. */
-    static void deviCout(std::string text);
+    static void deviCout(const std::string& text);
 
     /** @brief Prints Devi++ initial interface
     * @param deviceName Name of current device */
-    static void printDeviHeader(std::string deviceName);
+    static void printDeviHeader(const std::string& deviceName);
 
     /** @brief Prints Devi++ header without help information */
-    static void cleanDevi(std::string deviceName);
+    static void cleanDevi(const std::string& deviceName);
 
      /** @brief Prints Devi++ help manual */
     static void printDeviHelp();
@@ -105,13 +105,13 @@ public:
     /** @brief Prints a dataframe in screen using DEVi++ model
     * @param data array of integers collected
     * @param time array of prefixes to data. Generally time-stamps */
-    static void deviPrintData(std::vector<int> data ,std::vector<std::string> time);
+    static void deviPrintData(const std::vector<int>& data ,const std::vector<std::string>& time);
 
     /** @brief Prints a self-generated manual based in current
     * SimpleDisplay
     * @param skillnames array of names of current device skills
     * @param number of skills detected */
-    static void printSkillManual(std::string* skillnames, int count);
+    static void printSkillManual(const std::string* skillnames, const int count);
 
     // [STD]
 
@@ -119,7 +119,7 @@ public:
     static void jump();
 
     /** @brief Prints text to Screen */
-    static void cout(std::string text);
+    static void cout(const std::string& text);
 
     // [AI]
 
@@ -137,7 +137,7 @@ public:
 
     /** @brief Prints third section of ExecBuilding
     * @param isDataDevice Type of section. (True) Data. (False) Kernel */
-    static void execBuildGenerator(bool isDataDevice);
+    static void execBuildGenerator(const bool isDataDevice);
 
     /** @brief Prints final section of ExecBuilding */
     static void execBuildFinish();
@@ -181,7 +181,7 @@ private:
 
     /**  @brief Maximum options to display in main interface
     * @warning Display can make unestable if changing variable */
-    static int MAXIMUM_OPTIONS;
+    static const int MAXIMUM_OPTIONS;
 
     // -----------------  DYNAMIC  ----------------------
 

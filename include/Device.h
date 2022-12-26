@@ -39,19 +39,19 @@ public:
     /** @brief Creates a New Device and assign a identifier
     * @param name Public name for device
     * @param id Private identifier for device */
-    Device(std::string deviceName, int deviceId);
+    Device(const std::string& deviceName, const int deviceId);
 
     // [Operators]
 
     /** @brief Uses a built-in device-skill calling it by its name
     * @param skillName Name of the skill
     * @throw InvalidSkillException Skill-index not valid/found */
-    void operator[](int index);
+    void operator[](const int index);
 
     /** @brief  Uses a built-in device-skill calling it by its position
     * @param index Position of the skill (order of implementation)
     * @throw InvalidSkillException Skill-name not valid */
-    void operator[](std::string skillName);
+    void operator[](const std::string& skillName);
 
      /** @brief Checks if device is active
      * @return Status of the device. (True) Active. (False) Inactive. */
@@ -82,7 +82,7 @@ private:
     // [Functions]
 
     /**  @brief Name of class (for exception throwing) */
-    static std::string TAG;
+    static const std::string TAG;
     /**  @brief Pointers to every Device built */
     static std::string* allDeviceNames;
     /**  @brief Number of Devices built */

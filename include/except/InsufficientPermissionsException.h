@@ -22,7 +22,7 @@ public:
 
      /** @brief Throws main exception.
      * @param tag Founder of the exception */
-    explicit InsufficientPermissionsException(std::string &tag);
+    explicit InsufficientPermissionsException(const std::string &tag);
 
 // -----------------------------------------------
 //                   PRIVATE                     |

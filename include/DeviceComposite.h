@@ -27,7 +27,7 @@ public:
     /** @brief Adds a new device to composite
      * @param name Name of device to search
      * @throw InvalidDeviceException If device not found */
-    void add(std::string &name);
+    void add(const std::string &name);
 
     /** @brief Pops last device stacked */
     void pop();
@@ -35,7 +35,7 @@ public:
     /** @brief Request a skill to all devices appended to
      * the composite.
      * @param skill Name of skill to use; */
-     void requestSkill(std::string skill);
+     void requestSkill(const std::string& skill);
 
      /** @brief clears all devices inside the composite */
      void clear();
@@ -59,7 +59,7 @@ private:
 
     // [Variables]
     /** @brief Keyword for adding more devices */
-    static std::string CALL_KEYWORD;
+    static const std::string CALL_KEYWORD;
 
 };
 

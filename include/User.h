@@ -43,7 +43,7 @@ public:
     * information access. Auto sets the admin role according
     * to data stored in file.
     * @param id user identification (5-digit num) */
-    User(int id);
+    User(const int id);
 
     // [Variables]
 
@@ -62,7 +62,7 @@ public:
     * @param id user identification (5-digit num)
     * @param pass user password (8-digit num)
     * @return True if id and pass are valid */
-    static bool check(int id, int pass);
+    static bool check(const int id,const int pass);
 
     /** @brief Reads the datafile, then store users in a
     * 2 dimensional array (allUsers) setting each column
@@ -82,11 +82,11 @@ public:
      * @param id user identification (5-digit num)
      * @param pass user password (8-digit num)
      * @param isAdmin Admin Status. (True) Admin. (False) Guest. */
-    static void addUser(int id, int pass, bool isAdmin);
+    static void addUser(const int id, const int pass, const bool isAdmin);
 
     /** @brief Removes a user from allUsers
     * @param id user identification */
-    static void rmUser(int id);
+    static void rmUser(const int id);
 
     /** @brief Prints all registered users */
     static void printUsers();
@@ -129,16 +129,16 @@ protected:
 
     // [Variables]
 
-    /**  @brief Character to separate tokens in file */
+    /**  @brief [Deprecated] Character to separate tokens in file */
     static char SEPARATOR;
     /**  @brief Name of the Class (for exception calling) */
-    static std::string TAG;
+    static const std::string TAG;
     /**  @brief Set of integers to store all users. */
     static std::set<int*> allUsers;
     /** @brief [DEPRECATED] Path of userdata file */
-    static std::string DATAFILE;
+    static const std::string DATAFILE;
     /** @brief Path to userdata file */
-    static std::string USERFILE;
+    static const std::string USERFILE;
 };
 
 

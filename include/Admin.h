@@ -32,7 +32,7 @@ public:
      /** @brief Gets current object status
      * @param id User Identifier
      * @return (True) is Admin. (False) is Guest */
-    static bool adminStatus(int id);
+    static bool adminStatus(const int id);
 
 };
 

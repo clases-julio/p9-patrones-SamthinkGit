@@ -22,7 +22,7 @@ public:
 
      /** @brief Throws main exception.
      * @param tag Founder of the exception */
-    explicit UserNotFoundException(std::string &tag);
+    explicit UserNotFoundException(const std::string &tag);
 
 // -----------------------------------------------
 //                   PRIVATE                     |

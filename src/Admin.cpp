@@ -12,7 +12,7 @@ Admin::Admin(int id) : User(id){
 }
 
 // --- [Static] adminStatus() ---
-bool Admin::adminStatus(int id) {
+bool Admin::adminStatus(const int id) {
 
     try{
         int* userData = find(id);

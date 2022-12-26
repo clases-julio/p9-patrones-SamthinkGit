@@ -11,12 +11,12 @@
 // ----- Declarations ------
 std::set<int*> User::allUsers;
 char User::SEPARATOR = ',';
-std::string User::TAG = "User";
+const std::string User::TAG = "User";
 std::string User::EXECUTABLE_DIR;
 
 //File for retrieving user info.
-std::string User::DATAFILE = "data/userdata.txt";
-std::string User::USERFILE = "../data/userdata.dat";
+const std::string User::DATAFILE = "data/userdata.txt";
+const std::string User::USERFILE = "../data/userdata.dat";
 
 // ------------------------------------------------------
 //                  PUBLIC FUNCTIONALITIES              |
@@ -27,7 +27,7 @@ User::User() : id(INVALID_USER), isAdmin(false) {};
 
 
 // --- [Constructor] User() ---
-User::User(int id) : id(id){
+User::User(const int id) : id(id){
 
     if (id == DEVELOPER_USER ){
         this->pass = 0;
@@ -67,7 +67,7 @@ bool User::getAdminStatus(){
 
 
 // --- [Static] check() ---
-bool User::check(int id, int pass){
+bool User::check(const int id, const int pass){
     try{
         int* userData = find(id);
         return (userData[PASS_COLUMN] == pass);
@@ -184,7 +184,7 @@ int* User::find(int id){
 
 }
 // --- [Function] addUser()
-void User::addUser(int user, int pass, bool isAdmin) {
+void User::addUser(const int user, const int pass, const bool isAdmin) {
 
     int* newUser = new int[TOTAL_COLUMNS];
     newUser[USER_COLUMN] = user;
@@ -196,7 +196,7 @@ void User::addUser(int user, int pass, bool isAdmin) {
 }
 
 // --- [Function] rmUser()
-void User::rmUser(int id) {
+void User::rmUser(const int id) {
 
     try {
 

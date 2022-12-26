@@ -44,13 +44,13 @@ public:
     * @param name Name for the device.
     * @note ID is assigned by kernel.
     * @warning Device must be set as kernel or data device for being able to be built. */
-    DeviceBuilder(std::string name = "STD_DEVICE");
+    DeviceBuilder(const std::string& name = "STD_DEVICE");
 
     /** @brief Build one skill into the device Builder. All names and skills of
     * each device will be ordered and used in kernel.
     * @param Pointer to function (definition of skill)
     * @param skillName Name of skill (only for user) */
-    void setSkill(void(*skill)(), std::string skillName);
+    void setSkill(void(*skill)(), const std::string& skillName);
 
     /** @brief Builds limits into the device Builder. All limits will be
     * controlled and implemented in execution by the kernel.

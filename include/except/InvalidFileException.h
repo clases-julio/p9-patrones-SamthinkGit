@@ -22,7 +22,7 @@ public:
 
      /** @brief Throws main exception.
      * @param tag Founder of the exception */
-    explicit InvalidFileException(std::string &tag);
+    explicit InvalidFileException(const std::string &tag);
 
 // -----------------------------------------------
 //                   PRIVATE                     |

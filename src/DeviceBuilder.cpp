@@ -93,7 +93,7 @@ void DeviceBuilder::clearAll(){
 }
 
 // --- [Constructor] DeviceBuilder ---
-DeviceBuilder::DeviceBuilder(std::string name) {
+DeviceBuilder::DeviceBuilder(const std::string& name) {
 
     // ----- Name Assign ------
     std::cout << "[BUILDER] Building " << name << std::endl;
@@ -112,7 +112,7 @@ DeviceBuilder::DeviceBuilder(std::string name) {
 };
 
 // --- [Method] setSkill ---
-void DeviceBuilder::setSkill(void(*skill)(), std::string skillName) {
+void DeviceBuilder::setSkill(void(*skill)(), const std::string& skillName) {
 
     // ----- Storing Device Skills ------
     this->skillVector.push_back(skill);

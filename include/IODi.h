@@ -60,21 +60,21 @@ public:
 
     /** @brief Uses a skill from selected device
     * @param skill Name of skill */
-    void requestSkill(std::string skill);
+    void requestSkill(const std::string& skill);
 
     /** @brief Uses a skill from selected device
     * @param skill Position in SkillList of skill */
-    void requestSkill(int skill);
+    void requestSkill(const int skill);
 
     /** @brief Sets the id and position of current device inside IODi.
     * @param Name of device
     * @throw InvalidDeviceException Device settled not valid/built */
-    void setCurrentDevice(std::string name);
+    void setCurrentDevice(const std::string& name);
 
     /** @brief Sets the id and position of current device inside IODi.
     * @param Position of device in allDevices
     * @throw InvalidDeviceException Device settled not valid/built */
-    void setCurrentDevice(int pos);
+    void setCurrentDevice(const int pos);
 
 // -----------------------------------------------
 //                   PRIVATE                     |

@@ -5,7 +5,7 @@ std::string CALL_KEYWORD = "add";
 DeviceComposite::DeviceComposite() {}
 
 // --- [Method] add
-void DeviceComposite::add(std::string &name) {
+void DeviceComposite::add(const std::string &name) {
 
     // -----  Intantiating new IODi -----
     IODi iodi;
@@ -26,16 +26,19 @@ void DeviceComposite::pop() {
 }
 
 // --- [Method] requestSkill
-void DeviceComposite::requestSkill(std::string skill) {
+void DeviceComposite::requestSkill(const std::string& skill) {
 
     // -----  Check if skill is a keyword to add to composite -----
     if (skill == ::CALL_KEYWORD){
 
         std::string answer;
-        SimpleDisplay::deviCout("Device Name: ");
+        SimpleDisplay::deviCout("Write a Device name for adding it to the composite.");
+        SimpleDisplay::deviCout("Ex. <Thermometer>");
+        SimpleDisplay::cout("~ Device Name: ");
         std::getline(std::cin,answer);
         try{
             this->add(answer);
+            SimpleDisplay::deviCout("Device Succesfully added");
             return;
         }catch(InvalidDeviceException &e){
             SimpleDisplay::deviCout("Invalid Device");

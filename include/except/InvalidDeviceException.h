@@ -22,7 +22,7 @@ public:
 
      /** @brief Throws main exception.
      * @param tag Founder of the exception */
-    explicit InvalidDeviceException(std::string &tag);
+    explicit InvalidDeviceException(const std::string &tag);
 
 // -----------------------------------------------
 //                   PRIVATE                     |

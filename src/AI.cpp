@@ -131,7 +131,7 @@ void AI::throwDemon() {
 #endif
 }
 
-void AI::requestOption(std::string opt, bool isAdmin) {
+void AI::requestOption(const std::string &opt, bool isAdmin) {
     try {
         int num = atoi(opt.c_str());
 

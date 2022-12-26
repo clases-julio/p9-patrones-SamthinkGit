@@ -34,7 +34,7 @@ public:
     /** @brief Builds a new KernelDevice and assign its basic properties
     * @param name public name for user
     * @param id private identifier for AI */
-    KernelDevice(std::string name, int id);
+    KernelDevice(const std::string& name, const int id);
 
 // -----------------------------------------------
 //                   PRIVATE                     |

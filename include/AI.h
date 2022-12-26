@@ -56,7 +56,7 @@ public:
      /** @brief Requests an option from main settings interface.
      * @param opt Option to select
      * @param isAdmin Admin status of current user */
-    static void requestOption(std::string opt,bool isAdmin);
+    static void requestOption(const std::string &opt,bool isAdmin);
 
 // -----------------------------------------------
 //                   PRIVATE                     |

@@ -12,7 +12,7 @@
 int Device::numDevices;
 Device* Device::allDevices;
 std::string* Device::allDeviceNames;
-std::string Device::TAG = "Device";
+const std::string Device::TAG = "Device";
 
 // ------------------------------------------------------
 //                  PUBLIC FUNCTIONALITIES              |
@@ -22,7 +22,7 @@ std::string Device::TAG = "Device";
 Device::Device() : name(""),id(INVALID_DEVICE){};
 
 // --- [Constructor] Device ---
-Device::Device(std::string deviceName, int deviceId): name(deviceName),id(deviceId){}
+Device::Device(const std::string& deviceName, const int deviceId): name(deviceName),id(deviceId){}
 
 
 // --- [Getter] getName ---
@@ -35,7 +35,7 @@ int Device::getNumSkills(){
 }
 
 // --- [Method] operator[] (int) ---
-void Device::operator[](int index){
+void Device::operator[](const int index){
     try{
         (*this->skills)[index]();
 
@@ -45,7 +45,7 @@ void Device::operator[](int index){
 }
 
 // --- [Method] operator[] (string) ---
-void Device::operator[](std::string skillName){
+void Device::operator[](const std::string& skillName){
     // ----- Set number of skills ------
     int skillSize = this->numSkills;
 

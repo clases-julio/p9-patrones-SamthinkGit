@@ -27,7 +27,7 @@ KernelDevice::KernelDevice() {
 };
 
 // --- [Constructor] KernelDevice ---
-KernelDevice::KernelDevice(std::string name, int id) {
+KernelDevice::KernelDevice(const std::string& name, const int id) {
 
     std::cout << "[KernelDevice] New Device Detected: 0x" << id << std::endl;
 

@@ -29,7 +29,7 @@ DataDevice::DataDevice() {
 };
 
 // --- [Constructor] DataDevice ---
-DataDevice::DataDevice(std::string name, int id,std::vector<void(*)()>* skillVector, std::string* skillNames) {
+DataDevice::DataDevice(const std::string& name, int id, std::vector<void(*)()>* skillVector, std::string* skillNames) {
 
     // ----- Counting Devices ------
     std::cout << "[DataDevice] New Device Detected: 0x" << id << std::endl;
