@@ -55,6 +55,9 @@ int main(int argc, char** argv)  {
         }
     #endif
 
+    // ----- Getting current directory -----
+    std::string executablePath(argv[0]);
+    User::EXECUTABLE_DIR = executablePath.substr(0, executablePath.find_last_of("\\/"));
     // ----- Initializing Builder + Display ------
     std::cout << "-------- [STARTING BUILDING] --------" << std::endl;
     deviceDataset::initDataset();
@@ -81,6 +84,7 @@ int main(int argc, char** argv)  {
     }catch (InvalidFileException &e){
         std::cout << "\n[Login] There has been an error updating user file, exiting...";
         exit(1);
+        std::cout << "[HERE]";
     }catch (std::exception &e){
         std::cout << "\n[Login] There has been an error accessing the file, exiting...";
         exit(1);

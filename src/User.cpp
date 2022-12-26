@@ -5,16 +5,18 @@
   @date 03/11/2022
   @grade Software Robotics (Software Design)
 */
+#include <libgen.h>
 #include "../include/User.h"
 
 // ----- Declarations ------
 std::set<int*> User::allUsers;
 char User::SEPARATOR = ',';
 std::string User::TAG = "User";
+std::string User::EXECUTABLE_DIR;
 
 //File for retrieving user info.
 std::string User::DATAFILE = "data/userdata.txt";
-std::string User::USERFILE = "data/userdata.dat";
+std::string User::USERFILE = "../data/userdata.dat";
 
 // ------------------------------------------------------
 //                  PUBLIC FUNCTIONALITIES              |
@@ -81,8 +83,11 @@ void User::updateUserData() {
     // ----- Declarations -----
     User user;
 
+    // ----- Obtaining absolute_path -----
+    std::string absolute_path = EXECUTABLE_DIR + "/" + USERFILE;
+
     // ---- Opening file ----
-    std::ifstream file (USERFILE);
+    std::ifstream file (absolute_path);
 
     // ---- Testing if file is correct ----
     if (!file)
@@ -219,8 +224,11 @@ void User::printUsers() {
 
 void User::saveUserData() {
 
+    // ----- Obtaining absolute_path -----
+    std::string absolute_path = EXECUTABLE_DIR + "/" + USERFILE;
+
     // ---- Opening file ----
-    std::ofstream file (USERFILE);
+    std::ofstream file (absolute_path);
 
     // ---- Testing if file is correct ----
     if (!file)

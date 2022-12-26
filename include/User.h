@@ -91,6 +91,10 @@ public:
     /** @brief Prints all registered users */
     static void printUsers();
 
+    // [Variables]
+
+    static std::string EXECUTABLE_DIR;
+
 // -----------------------------------------------
 //                  PROTECTED                    |
 // -----------------------------------------------
