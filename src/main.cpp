@@ -132,7 +132,7 @@ int main(int argc, char** argv)  {
             // Request an entry
             SimpleDisplay::cout("Keyboard: ");
             ai->throwDemon(); // Update while not entry
-            std::cin >> answer;
+            std::getline(std::cin,answer);
 
             // Exit if requested
             if (answer == "exit" || answer == "-1") {
@@ -170,7 +170,6 @@ int main(int argc, char** argv)  {
 
             // Print heeader and request entry
             SimpleDisplay::printDeviHeader(iodi->requestCurrentDeviceName());
-            std::getline(std::cin,answer);
 
             // Don't exit the terminal until exit
             while (answer != ":wq") {

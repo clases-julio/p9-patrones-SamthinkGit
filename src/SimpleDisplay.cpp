@@ -151,12 +151,12 @@ void SimpleDisplay::printMainInterface(std::string* deviceNames, bool* deviceSta
     printf("| %-3s %-20s ||                                                                              |\n",option[6].c_str(),directory[6].c_str());
     printf("| %-3s %-20s ||       [Security Alarms]: %-12s      [Security Status]: %-8s       |\n",option[7].c_str(),directory[7].c_str(),conected.c_str(),secStatus.c_str());
     printf("| %-3s %-20s ||                                                                              |\n",option[8].c_str(),directory[8].c_str());
-    printf("| %-3s %-20s ||         Device 1:  %-11s                Device 7:  %-11s         |\n",option[9].c_str(),directory[9].c_str(),status[0].c_str(),status[6].c_str());
-    printf("| %-3s %-20s ||         Device 2:  %-11s                Device 8:  %-11s         |\n",option[10].c_str(),directory[10].c_str(),status[1].c_str(),status[7].c_str());
-    printf("| %-3s %-20s ||         Device 3:  %-11s                Device 9:  %-11s         |\n",option[11].c_str(),directory[11].c_str(),status[2].c_str(),status[8].c_str());
-    printf("|  %-23s ||         Device 4:  %-11s                Device 10: %-11s         |\n","",status[3].c_str(),status[9].c_str());
-    printf("|  %-23s ||         Device 5:  %-11s                Device 11: %-11s         |\n","",status[4].c_str(),status[10].c_str());
-    printf("|  %-23s ||         Device 6:  %-11s                Device 12: %-11s         |\n","",status[5].c_str(),status[11].c_str());
+    printf("| %-3s %-20s ||         Device 0:  %-11s                Device 6:  %-11s         |\n",option[9].c_str(),directory[9].c_str(),status[0].c_str(),status[6].c_str());
+    printf("| %-3s %-20s ||         Device 1:  %-11s                Device 7:  %-11s         |\n",option[10].c_str(),directory[10].c_str(),status[1].c_str(),status[7].c_str());
+    printf("| %-3s %-20s ||         Device 2:  %-11s                Device 8:  %-11s         |\n",option[11].c_str(),directory[11].c_str(),status[2].c_str(),status[8].c_str());
+    printf("|  %-23s ||         Device 3:  %-11s                Device 9:  %-11s         |\n","",status[3].c_str(),status[9].c_str());
+    printf("|  %-23s ||         Device 4:  %-11s                Device 10: %-11s         |\n","",status[4].c_str(),status[10].c_str());
+    printf("|  %-23s ||         Device 5:  %-11s                Device 11: %-11s         |\n","",status[5].c_str(),status[11].c_str());
     printf("|  %-23s ||                                                                              |\n","");
     printf("| %-2d) %-20s ||       [User]: %-5s                        [Kernel Devices]: %-2d              |\n",-1,"EXIT",username.c_str(),this->kernelDevices);
     printf("| %-2d) %-20s ||       [Group]: %-7s                     [Data Devices]: %-2d                |\n",-2,"SETTINGS",group.c_str(),this->dataDevices);
@@ -185,7 +185,7 @@ void SimpleDisplay::printPresentation() {
     printf("\n");
     printf("    3. Una vez hayas comprobado todo estaras listo para testear este programa adecuadamente.\n");
     printf("\n");
-    printf("       Hemos dejado a tu disposicion dos cuentas. Puedes agregar tras iniciar el programa:\n");
+    printf("       Hemos dejado a tu disposicion dos cuentas. Puedes agregar mas tras iniciar el programa:\n");
     printf("                                                                                                            \n");
     printf("                            root: 0                  GUEST: 99999\n");
     printf("                          Password: 0               Password: 99999999\n");
