@@ -3,8 +3,8 @@
 \mbox{\hyperlink{_i_o_di_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00001}00001 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ Input/Output Device Interface -\/ JVH Systems -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00010}00010 \textcolor{comment}{}\textcolor{preprocessor}{\#include "{}../headers/IODi.h"{}}}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00011}00011 \textcolor{preprocessor}{\#include "{}../headers/AI.h"{}}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00010}00010 \textcolor{comment}{}\textcolor{preprocessor}{\#include "{}../include/IODi.h"{}}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00011}00011 \textcolor{preprocessor}{\#include "{}../include/AI.h"{}}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00012}00012 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00013}00013 \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00014}00014 \textcolor{keywordtype}{int} \mbox{\hyperlink{class_i_o_di_acc5a39bae3961ba0bc34787e2f4b361f}{IODi::maxID}} = 0;}
@@ -21,7 +21,7 @@
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00025}00025 \};}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00026}00026 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00027}00027 \textcolor{comment}{// -\/-\/-\/ [Setter] setCurrentDevice -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00028}\mbox{\hyperlink{class_i_o_di_a701d02ebac15affaad3e1e1c78989efa}{00028}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{IODi::setCurrentDevice}}(\textcolor{keywordtype}{int} pos) \{}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00028}\mbox{\hyperlink{class_i_o_di_ab82c3ff627a2689e70e38d185a4a17b1}{00028}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_o_di_a87b788f3c16f7b9b4cea4e851eeb553a}{IODi::setCurrentDevice}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} pos) \{}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00029}00029 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00030}00030     \textcolor{comment}{// -\/-\/-\/-\/-\/ If position is valid -\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00031}00031     \textcolor{keywordflow}{if} (pos < \mbox{\hyperlink{class_i_o_di_a39477d835859b498b3853696bc1de2dc}{IODi::requestNumberOfDataDevices}}()) \{}
@@ -40,12 +40,12 @@
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00044}00044 \}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00045}00045 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00046}00046 \textcolor{comment}{// -\/-\/-\/ [Setter] setCurrentDevice -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00047}\mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{00047}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{IODi::setCurrentDevice}}(std::string name) \{}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00047}\mbox{\hyperlink{class_i_o_di_a87b788f3c16f7b9b4cea4e851eeb553a}{00047}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_o_di_a87b788f3c16f7b9b4cea4e851eeb553a}{IODi::setCurrentDevice}}(\textcolor{keyword}{const} std::string\& name) \{}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00048}00048 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00049}00049     \textcolor{comment}{// -\/-\/-\/-\/-\/ Check type argument is not a number -\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00050}00050     \textcolor{keywordflow}{if} (std::isdigit(name[0]))\{}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00051}00051 }
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00052}00052         this-\/>\mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{setCurrentDevice}}(std::stoi(name));}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00052}00052         this-\/>\mbox{\hyperlink{class_i_o_di_a87b788f3c16f7b9b4cea4e851eeb553a}{setCurrentDevice}}(std::stoi(name));}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00053}00053         \textcolor{keywordflow}{return};}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00054}00054     \}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00055}00055 }
@@ -110,7 +110,7 @@
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00114}00114 \};}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00115}00115 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00116}00116 \textcolor{comment}{// -\/-\/-\/ [REQUEST] -\/> Uses a skill given the position in device array}}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00117}\mbox{\hyperlink{class_i_o_di_afd62f2fa9bdd4e4602c2a60456d4097d}{00117}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{IODi::requestSkill}}(\textcolor{keywordtype}{int} skill)\{}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00117}\mbox{\hyperlink{class_i_o_di_abbf4589ba45153d63b8bfdad4becd11a}{00117}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_o_di_ad1db380c7d5211c6beda44d548807f60}{IODi::requestSkill}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} skill)\{}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00118}00118     \textcolor{keywordflow}{try} \{}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00119}00119         \mbox{\hyperlink{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}{DataDevice::allDataDevices}}[this-\/>\mbox{\hyperlink{class_i_o_di_a7a4d701911082fc82b7bebed11099bae}{currentDevicePos}}][skill];}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00120}00120     \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_invalid_skill_exception}{InvalidSkillException}} \&e)\{\};}
@@ -122,7 +122,7 @@
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00126}00126 \}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00127}00127 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00128}00128 \textcolor{comment}{// -\/-\/-\/ [REQUEST] -\/> Uses a skill given the keyword}}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00129}\mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{00129}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{IODi::requestSkill}}(std::string skill)\{}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00129}\mbox{\hyperlink{class_i_o_di_ad1db380c7d5211c6beda44d548807f60}{00129}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_i_o_di_ad1db380c7d5211c6beda44d548807f60}{IODi::requestSkill}}(\textcolor{keyword}{const} std::string\& skill)\{}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00130}00130 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00131}00131     \textcolor{comment}{// -\/-\/-\/-\/-\/ Obtaining current device -\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00132}00132     \mbox{\hyperlink{class_data_device}{DataDevice}}* target = \&\mbox{\hyperlink{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}{DataDevice::allDataDevices}}[this-\/>\mbox{\hyperlink{class_i_o_di_a7a4d701911082fc82b7bebed11099bae}{currentDevicePos}}];}
@@ -132,16 +132,16 @@
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00136}00136         \mbox{\hyperlink{class_simple_display_a0faa08c7f6802b3224de39568a350ee1}{SimpleDisplay::printDeviHelp}}();}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00137}00137 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00138}00138     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skill == \textcolor{stringliteral}{"{}:dev"{}})}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00139}00139         \mbox{\hyperlink{class_simple_display_a391ee4dc69bf819ebbe85beb0352d716}{SimpleDisplay::printSkillManual}}(target-\/>\mbox{\hyperlink{class_device_aaccdf897fbb200f562df5f9637a5ca6c}{skillNames}},\(\backslash\)}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00139}00139         \mbox{\hyperlink{class_simple_display_acdf68ec8b479fe369090d85fbb069206}{SimpleDisplay::printSkillManual}}(target-\/>\mbox{\hyperlink{class_device_aaccdf897fbb200f562df5f9637a5ca6c}{skillNames}},\(\backslash\)}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00140}00140                                         this-\/>requestNumberOfSkills());}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00141}00141                                         \textcolor{comment}{// -\/> Vector with the name of skills}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00142}00142                                         \textcolor{comment}{// -\/> Int with the number of skills}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00143}00143 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00144}00144     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skill == \textcolor{stringliteral}{"{}:clean"{}})}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00145}00145         \mbox{\hyperlink{class_simple_display_ac3342c506e4d805672563e1b7e7a4cb7}{SimpleDisplay::cleanDevi}}(this-\/>\mbox{\hyperlink{class_i_o_di_aa57cd3b2d02981f5b17052e1bc0bcc01}{currentDeviceName}});}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00145}00145         \mbox{\hyperlink{class_simple_display_affb8690f49152ebb247d2fffc589681d}{SimpleDisplay::cleanDevi}}(this-\/>\mbox{\hyperlink{class_i_o_di_aa57cd3b2d02981f5b17052e1bc0bcc01}{currentDeviceName}});}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00146}00146 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00147}00147     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skill == \textcolor{stringliteral}{"{}data"{}})}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00148}00148         \mbox{\hyperlink{class_simple_display_a0ed9bfa2b4796cefa022bd398368b68a}{SimpleDisplay::deviPrintData}}(target-\/>\mbox{\hyperlink{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}{collectedData}},\(\backslash\)}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00148}00148         \mbox{\hyperlink{class_simple_display_adaf78459c8543d68f59106e992e0978a}{SimpleDisplay::deviPrintData}}(target-\/>\mbox{\hyperlink{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}{collectedData}},\(\backslash\)}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00149}00149                                      target-\/>\mbox{\hyperlink{class_data_device_abd297afb59478d7f7e39825143be7b34}{collectedTimes}});}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00150}00150                                      \textcolor{comment}{// -\/> Vector with measurements}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00151}00151                                      \textcolor{comment}{// -\/> Vector with times of measurements}}
@@ -152,45 +152,51 @@
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00156}00156         target-\/>\mbox{\hyperlink{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}{collectedData}}[0] = 0;}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00157}00157         target-\/>\mbox{\hyperlink{class_data_device_abd297afb59478d7f7e39825143be7b34}{collectedTimes}}.resize(1);}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00158}00158         target-\/>\mbox{\hyperlink{class_data_device_abd297afb59478d7f7e39825143be7b34}{collectedTimes}}[0] = \textcolor{stringliteral}{"{}REBOOT"{}};}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00159}00159         \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[IODi] "{}} + target-\/>\mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{getName}}() + \textcolor{stringliteral}{"{} turned OFF"{}});}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00159}00159         \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[IODi] "{}} + target-\/>\mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{getName}}() + \textcolor{stringliteral}{"{} turned OFF"{}});}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00160}00160     \}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00161}00161 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00162}00162     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(skill == \textcolor{stringliteral}{"{}turnon"{}})\{}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00163}00163         target-\/>\mbox{\hyperlink{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}{isActive}} = \textcolor{keyword}{true};}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00164}00164         \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[IODi] "{}} + target-\/>\mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{getName}}() + \textcolor{stringliteral}{"{} turned ON"{}});}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00164}00164         \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[IODi] "{}} + target-\/>\mbox{\hyperlink{class_device_a7e27b36eae579176707a47b682d84a22}{getName}}() + \textcolor{stringliteral}{"{} turned ON"{}});}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00165}00165     \}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00166}00166 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00167}00167     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skill == \textcolor{stringliteral}{"{}reboot"{}})\{}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00168}00168         this-\/>\mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{requestSkill}}(\textcolor{stringliteral}{"{}turnoff"{}});}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00169}00169         this-\/>\mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{requestSkill}}(\textcolor{stringliteral}{"{}turnon"{}});}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00168}00168         this-\/>\mbox{\hyperlink{class_i_o_di_ad1db380c7d5211c6beda44d548807f60}{requestSkill}}(\textcolor{stringliteral}{"{}turnoff"{}});}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00169}00169         this-\/>\mbox{\hyperlink{class_i_o_di_ad1db380c7d5211c6beda44d548807f60}{requestSkill}}(\textcolor{stringliteral}{"{}turnon"{}});}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00170}00170     \}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00171}00171 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00172}00172     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skill == \textcolor{stringliteral}{"{}pwd"{}})}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00173}00173         \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}/home/devices/"{}} + std::to\_string(this-\/>\mbox{\hyperlink{class_i_o_di_a7a4d701911082fc82b7bebed11099bae}{currentDevicePos}}));}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00173}00173         \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}/home/devices/"{}} + std::to\_string(this-\/>\mbox{\hyperlink{class_i_o_di_a7a4d701911082fc82b7bebed11099bae}{currentDevicePos}}));}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00174}00174 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00175}00175     \textcolor{comment}{// -\/-\/-\/-\/-\/ Frequent Invalid Commands -\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00176}00176 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00177}00177     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skill == \textcolor{stringliteral}{"{}help"{}})}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00178}00178         \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[IODi] Suggestion: Maybe you are looking for -\/> :help"{}});}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00178}00178         \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[IODi] Suggestion: Maybe you are looking for -\/> :help"{}});}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00179}00179 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00180}00180     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skill == \textcolor{stringliteral}{"{}exit"{}})}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00181}00181         \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[IODi] Suggestion: Maybe you are looking for -\/> :wq"{}});}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00181}00181         \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[IODi] Suggestion: Maybe you are looking for -\/> :wq"{}});}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00182}00182 }
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00183}00183     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skill == \textcolor{stringliteral}{"{}clear"{}})}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00184}00184         \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[IODi] Suggestion: Maybe you are looking for -\/> :clean"{}});}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00184}00184         \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[IODi] Suggestion: Maybe you are looking for -\/> :clean"{}});}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00185}00185 }
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00186}00186     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skill[0] == \textcolor{charliteral}{'\(\backslash\)"{}'} || skill[0] == \textcolor{charliteral}{'\(\backslash\)''}) \{}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00187}00187         \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}Are you trying to Inject SQL? Lol ok"{}});}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00188}00188         \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[YOU HAVE BEEN BANNED]"{}});}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00189}00189         exit(1);}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00190}00190     \}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00186}00186     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skill == \textcolor{stringliteral}{"{}clean"{}})}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00187}00187         \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[IODi] Suggestion: Maybe you are looking for -\/> :clean"{}});}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00188}00188 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00189}00189     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skill == \textcolor{stringliteral}{"{}dev"{}})}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00190}00190         \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[IODi] Suggestion: Maybe you are looking for -\/> :dev"{}});}
 \DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00191}00191 }
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00192}00192     \textcolor{comment}{// -\/-\/-\/-\/-\/ Not Global command, request to current device -\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00193}00193     \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00194}00194         \textcolor{keywordflow}{try}\{}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00195}00195             (*target)[skill];}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00196}00196         \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_invalid_skill_exception}{InvalidSkillException}} \&e)\{\};}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00197}00197     \}}
-\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00198}00198 \}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00192}00192     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (skill[0] == \textcolor{charliteral}{'\(\backslash\)"{}'} || skill[0] == \textcolor{charliteral}{'\(\backslash\)''}) \{}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00193}00193         \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}Are you trying to Inject SQL? Lol ok"{}});}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00194}00194         \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[YOU HAVE BEEN BANNED]"{}});}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00195}00195         exit(1);}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00196}00196     \}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00197}00197 }
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00198}00198     \textcolor{comment}{// -\/-\/-\/-\/-\/ Not Global command, request to current device -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00199}00199     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00200}00200         \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00201}00201             (*target)[skill];}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00202}00202         \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_invalid_skill_exception}{InvalidSkillException}} \&e)\{\};}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00203}00203     \}}
+\DoxyCodeLine{\Hypertarget{_i_o_di_8cpp_source_l00204}00204 \}}
 
 \end{DoxyCode}

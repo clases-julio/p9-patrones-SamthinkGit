@@ -12,9 +12,9 @@ This class lets a high-\/level programmer add easily more devices to the main pr
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}{Device\+Builder}} (std\+::string \mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}}=\char`\"{}STD\+\_\+\+DEVICE\char`\"{})
+\mbox{\hyperlink{class_device_builder_a79df2b882b9494e9268005bb196c3c06}{Device\+Builder}} (const std\+::string \&\mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}}=\char`\"{}STD\+\_\+\+DEVICE\char`\"{})
 \begin{DoxyCompactList}\small\item\em Creates a temporal builder for specific device. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}{set\+Skill}} (void($\ast$skill)(), std\+::string skill\+Name)
+void \mbox{\hyperlink{class_device_builder_a4a948d9c57bb60369c01576c703504d3}{set\+Skill}} (void($\ast$skill)(), const std\+::string \&skill\+Name)
 \begin{DoxyCompactList}\small\item\em Build one skill into the device Builder. All names and skills of each device will be ordered and used in kernel. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_device_builder_a97e1c662cbee5e3e23b4b41b0d300a6f}{set\+Limit}} (int $\ast$new\+Limit)
 \begin{DoxyCompactList}\small\item\em Builds limits into the device Builder. All limits will be controlled and implemented in execution by the kernel. \end{DoxyCompactList}\item 
@@ -82,7 +82,7 @@ This class lets a high-\/level programmer add easily more devices to the main pr
 \item Instantiate a device\+Builder with \mbox{\hyperlink{class_device_builder}{Device\+Builder()}};
 \item Set the type of device with \mbox{\hyperlink{class_device_builder_a54ac8bbaa057ca01a0067429b05ae01c}{set\+As\+Data\+Device()}} or \mbox{\hyperlink{class_device_builder_a80c1e37a4f5ed9d6417d368f05f1e57d}{set\+As\+Kernel\+Device()}};
 \item Set the main generator (function where the device extracts data) with \mbox{\hyperlink{class_device_builder_a660593f04dacdaecde2f1654c43eb646}{set\+Data\+Generator()}} or \mbox{\hyperlink{class_device_builder_ae090a3296c74c945a17595828e416c73}{set\+Security\+Generator()}}
-\item (Optional) Add some skills (more functionalities) to your device with \mbox{\hyperlink{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}{set\+Skill()}}.
+\item (Optional) Add some skills (more functionalities) to your device with \mbox{\hyperlink{class_device_builder_a4a948d9c57bb60369c01576c703504d3}{set\+Skill()}}.
 \item (Optional) Set a warning if measurement surpasses a limit with \mbox{\hyperlink{class_device_builder_a97e1c662cbee5e3e23b4b41b0d300a6f}{set\+Limit()}}
 \item Repeat this process with as many devices as you need.
 \item Use \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}} to build every instance.
@@ -98,11 +98,11 @@ Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00034}{34}} of fi
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}\label{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}} 
+\mbox{\Hypertarget{class_device_builder_a79df2b882b9494e9268005bb196c3c06}\label{class_device_builder_a79df2b882b9494e9268005bb196c3c06}} 
 \index{DeviceBuilder@{DeviceBuilder}!DeviceBuilder@{DeviceBuilder}}
 \index{DeviceBuilder@{DeviceBuilder}!DeviceBuilder@{DeviceBuilder}}
 \doxysubsubsection{\texorpdfstring{DeviceBuilder()}{DeviceBuilder()}}
-{\footnotesize\ttfamily Device\+Builder\+::\+Device\+Builder (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}STD\+\_\+DEVICE\char`\"{}} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Device\+Builder\+::\+Device\+Builder (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}STD\+\_\+DEVICE\char`\"{}} }\end{DoxyParamCaption})}
 
 
 
@@ -125,7 +125,7 @@ Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00096}{96}} of 
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00096                                            \{}
+\DoxyCodeLine{00096                                                   \{}
 \DoxyCodeLine{00097 }
 \DoxyCodeLine{00098     \textcolor{comment}{// -\/-\/-\/-\/-\/ Name Assign -\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{00099     std::cout << \textcolor{stringliteral}{"{}[BUILDER] Building "{}} << \mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}} << std::endl;}
@@ -251,10 +251,10 @@ Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00024}{24}} of 
 \DoxyCodeLine{00024                                           \{}
 \DoxyCodeLine{00025 }
 \DoxyCodeLine{00026     \mbox{\hyperlink{class_simple_display}{SimpleDisplay}}* display = \textcolor{keyword}{new} \mbox{\hyperlink{class_simple_display}{SimpleDisplay}}();}
-\DoxyCodeLine{00027     display-\/>\mbox{\hyperlink{class_simple_display_a6990b81b752ebc7b6894a3e3770db667}{setDataDevices}}(\mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{allDataDevices}}.size());}
-\DoxyCodeLine{00028     display-\/>\mbox{\hyperlink{class_simple_display_a2314ecf97aeef47e8ae9ba606e7e2586}{setKernelDevices}}(\mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{allKernelDevices}}.size());}
-\DoxyCodeLine{00029     display-\/>\mbox{\hyperlink{class_simple_display_af3347757fb1111a5360f064dd152390f}{setSecurityConnected}}(\textcolor{keyword}{true});}
-\DoxyCodeLine{00030     display-\/>\mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{setSecurityStatus}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{00027     display-\/>\mbox{\hyperlink{class_simple_display_a9f73adee79aaf5ab59a8682e21a8e7e1}{setDataDevices}}(\mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{allDataDevices}}.size());}
+\DoxyCodeLine{00028     display-\/>\mbox{\hyperlink{class_simple_display_adff02c73839166aa975de36210e541b7}{setKernelDevices}}(\mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{allKernelDevices}}.size());}
+\DoxyCodeLine{00029     display-\/>\mbox{\hyperlink{class_simple_display_a8d4e1eabdf54c783e9d09b01880170c4}{setSecurityConnected}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{00030     display-\/>\mbox{\hyperlink{class_simple_display_a161e3a1ae1602c1325bf868e029016b7}{setSecurityStatus}}(\textcolor{keyword}{true});}
 \DoxyCodeLine{00031     \textcolor{keywordflow}{return} display;}
 \DoxyCodeLine{00032 }
 \DoxyCodeLine{00033 \}}
@@ -262,7 +262,7 @@ Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00024}{24}} of 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{all\+Data\+Devices}}, \mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{all\+Kernel\+Devices}}, \mbox{\hyperlink{class_simple_display_a6990b81b752ebc7b6894a3e3770db667}{Simple\+Display\+::set\+Data\+Devices()}}, \mbox{\hyperlink{class_simple_display_a2314ecf97aeef47e8ae9ba606e7e2586}{Simple\+Display\+::set\+Kernel\+Devices()}}, \mbox{\hyperlink{class_simple_display_af3347757fb1111a5360f064dd152390f}{Simple\+Display\+::set\+Security\+Connected()}}, and \mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{Simple\+Display\+::set\+Security\+Status()}}.
+References \mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{all\+Data\+Devices}}, \mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{all\+Kernel\+Devices}}, \mbox{\hyperlink{class_simple_display_a9f73adee79aaf5ab59a8682e21a8e7e1}{Simple\+Display\+::set\+Data\+Devices()}}, \mbox{\hyperlink{class_simple_display_adff02c73839166aa975de36210e541b7}{Simple\+Display\+::set\+Kernel\+Devices()}}, \mbox{\hyperlink{class_simple_display_a8d4e1eabdf54c783e9d09b01880170c4}{Simple\+Display\+::set\+Security\+Connected()}}, and \mbox{\hyperlink{class_simple_display_a161e3a1ae1602c1325bf868e029016b7}{Simple\+Display\+::set\+Security\+Status()}}.
 
 
 
@@ -533,11 +533,11 @@ Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00144}{144}} of
 
 References \mbox{\hyperlink{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}{security\+Generator}}.
 
-\mbox{\Hypertarget{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}\label{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}} 
+\mbox{\Hypertarget{class_device_builder_a4a948d9c57bb60369c01576c703504d3}\label{class_device_builder_a4a948d9c57bb60369c01576c703504d3}} 
 \index{DeviceBuilder@{DeviceBuilder}!setSkill@{setSkill}}
 \index{setSkill@{setSkill}!DeviceBuilder@{DeviceBuilder}}
 \doxysubsubsection{\texorpdfstring{setSkill()}{setSkill()}}
-{\footnotesize\ttfamily void Device\+Builder\+::set\+Skill (\begin{DoxyParamCaption}\item[{void($\ast$)()}]{skill,  }\item[{std\+::string}]{skill\+Name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Device\+Builder\+::set\+Skill (\begin{DoxyParamCaption}\item[{void($\ast$)()}]{skill,  }\item[{const std\+::string \&}]{skill\+Name }\end{DoxyParamCaption})}
 
 
 
@@ -556,7 +556,7 @@ Definition at line \mbox{\hyperlink{_device_builder_8cpp_source_l00115}{115}} of
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00115                                                                 \{}
+\DoxyCodeLine{00115                                                                        \{}
 \DoxyCodeLine{00116 }
 \DoxyCodeLine{00117     \textcolor{comment}{// -\/-\/-\/-\/-\/ Storing Device Skills -\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{00118     this-\/>\mbox{\hyperlink{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}{skillVector}}.push\_back(skill);}
@@ -587,7 +587,7 @@ Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00134}{134}} of f
 
 
 
-Referenced by \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}}, and \mbox{\hyperlink{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}{Device\+Builder()}}.
+Referenced by \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}}, and \mbox{\hyperlink{class_device_builder_a79df2b882b9494e9268005bb196c3c06}{Device\+Builder()}}.
 
 \mbox{\Hypertarget{class_device_builder_af38572c28a05fad3133863a794e7e6ff}\label{class_device_builder_af38572c28a05fad3133863a794e7e6ff}} 
 \index{DeviceBuilder@{DeviceBuilder}!allDataDevices@{allDataDevices}}
@@ -677,7 +677,7 @@ Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00142}{142}} of f
 
 
 
-Referenced by \mbox{\hyperlink{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}{Device\+Builder()}}.
+Referenced by \mbox{\hyperlink{class_device_builder_a79df2b882b9494e9268005bb196c3c06}{Device\+Builder()}}.
 
 \mbox{\Hypertarget{class_device_builder_aefe6c5cd8de0982beef7da176cf44425}\label{class_device_builder_aefe6c5cd8de0982beef7da176cf44425}} 
 \index{DeviceBuilder@{DeviceBuilder}!id@{id}}
@@ -745,7 +745,7 @@ Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00113}{113}} of f
 
 
 
-Referenced by \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}}, \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}{Device\+Builder()}}.
+Referenced by \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{build\+All\+Devices()}}, \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_a79df2b882b9494e9268005bb196c3c06}{Device\+Builder()}}.
 
 \mbox{\Hypertarget{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}\label{class_device_builder_abcda5dbd20551f7d9db39003d950c00a}} 
 \index{DeviceBuilder@{DeviceBuilder}!securityGenerator@{securityGenerator}}
@@ -781,7 +781,7 @@ Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00117}{117}} of f
 
 
 
-Referenced by \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}{set\+Skill()}}.
+Referenced by \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_a4a948d9c57bb60369c01576c703504d3}{set\+Skill()}}.
 
 \mbox{\Hypertarget{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}\label{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}} 
 \index{DeviceBuilder@{DeviceBuilder}!skillVector@{skillVector}}
@@ -799,7 +799,7 @@ Definition at line \mbox{\hyperlink{_device_builder_8h_source_l00115}{115}} of f
 
 
 
-Referenced by \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}{set\+Skill()}}.
+Referenced by \mbox{\hyperlink{class_device_builder_a1b6cae6df7456eea9027d92c1266c336}{build\+DKDevice()}}, and \mbox{\hyperlink{class_device_builder_a4a948d9c57bb60369c01576c703504d3}{set\+Skill()}}.
 
 
 

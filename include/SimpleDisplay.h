@@ -71,7 +71,7 @@ public:
     static void printLoginInterface(const int user, const int pass, const int INVALID_USER=-1, const int INVALID_PASS=-1);
 
     /** @brief Prints text "Checking..." */
-    inline static void printChecking();
+    static void printChecking();
 
      /** @brief Prints presentation text before main program */
     static void printPresentation();
@@ -90,7 +90,7 @@ public:
 
     /** @brief Prints text to Screen using DEVi++ prefix
     * @param text String which contains the message to be printed. */
-    inline static void deviCout(const std::string& text);
+    static void deviCout(const std::string& text);
 
     /** @brief Prints Devi++ initial interface
     * @param deviceName Name of current device */
@@ -98,6 +98,9 @@ public:
 
     /** @brief Prints Devi++ header without help information */
     static void cleanDevi(const std::string& deviceName);
+
+    /** @brief Prints information about the version and original designer */
+    static void printAboutUs();
 
      /** @brief Prints Devi++ help manual */
     static void printDeviHelp();

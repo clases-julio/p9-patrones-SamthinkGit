@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('d5/dfc/_data_device_8cpp_source.html',
 </div><!--header-->
 <div class="contents">
 <a href="../../d5/dfc/_data_device_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// ------------------- DataDevice - JVH Systems -------------------------------</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span><span class="preprocessor">#include &quot;../headers/DataDevice.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"></span><span class="preprocessor">#include &quot;../include/DataDevice.h&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">// ----- Declarations ------</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><a class="code hl_class" href="../../d5/d6c/class_data_device.html">DataDevice</a>* <a class="code hl_variable" href="../../d5/d6c/class_data_device.html#a8bc5e93fc1d214eecda51ef443b8f4a0">DataDevice::allDataDevices</a>;</div>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('d5/dfc/_data_device_8cpp_source.html',
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">// --- [Constructor] DataDevice ---</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d5/d6c/class_data_device.html#acf681a462dfc4ec298bbcb9fa71e31aa">   32</a></span><a class="code hl_function" href="../../d5/d6c/class_data_device.html#a462db6e238eaabb44993fcc14a033fe5">DataDevice::DataDevice</a>(std::string name, <span class="keywordtype">int</span> <span class="keywordtype">id</span>,std::vector&lt;<span class="keywordtype">void</span>(*)()&gt;* skillVector, std::string* skillNames) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d5/d6c/class_data_device.html#a5323b423e08f4b173152ca88c231893b">   32</a></span><a class="code hl_function" href="../../d5/d6c/class_data_device.html#a462db6e238eaabb44993fcc14a033fe5">DataDevice::DataDevice</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keywordtype">int</span> <span class="keywordtype">id</span>, std::vector&lt;<span class="keywordtype">void</span>(*)()&gt;* skillVector, std::string* skillNames) {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// ----- Counting Devices ------</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;[DataDevice] New Device Detected: 0x&quot;</span> &lt;&lt; <span class="keywordtype">id</span> &lt;&lt; std::endl;</div>

@@ -135,299 +135,321 @@
 \contentsline {subsubsection}{\numberline {4.6.4.11}securityGenerator}{53}{subsubsection.4.6.4.11}%
 \contentsline {subsubsection}{\numberline {4.6.4.12}skillNamesVector}{54}{subsubsection.4.6.4.12}%
 \contentsline {subsubsection}{\numberline {4.6.4.13}skillVector}{54}{subsubsection.4.6.4.13}%
-\contentsline {section}{\numberline {4.7}device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset Class Reference}{54}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{54}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Member Function Documentation}{54}{subsection.4.7.2}%
-\contentsline {subsubsection}{\numberline {4.7.2.1}initDataset()}{55}{subsubsection.4.7.2.1}%
-\contentsline {section}{\numberline {4.8}Insufficient\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Permissions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{56}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{56}{subsection.4.8.1}%
-\contentsline {subsection}{\numberline {4.8.2}Constructor \& Destructor Documentation}{56}{subsection.4.8.2}%
-\contentsline {subsubsection}{\numberline {4.8.2.1}InsufficientPermissionsException()}{56}{subsubsection.4.8.2.1}%
-\contentsline {subsection}{\numberline {4.8.3}Member Data Documentation}{57}{subsection.4.8.3}%
-\contentsline {subsubsection}{\numberline {4.8.3.1}ERROR\_MESSAGE}{57}{subsubsection.4.8.3.1}%
-\contentsline {section}{\numberline {4.9}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{57}{section.4.9}%
-\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{58}{subsection.4.9.1}%
-\contentsline {subsection}{\numberline {4.9.2}Constructor \& Destructor Documentation}{58}{subsection.4.9.2}%
-\contentsline {subsubsection}{\numberline {4.9.2.1}InvalidDeviceException()}{58}{subsubsection.4.9.2.1}%
-\contentsline {subsection}{\numberline {4.9.3}Member Data Documentation}{58}{subsection.4.9.3}%
-\contentsline {subsubsection}{\numberline {4.9.3.1}ERROR\_MESSAGE}{58}{subsubsection.4.9.3.1}%
-\contentsline {section}{\numberline {4.10}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{59}{section.4.10}%
-\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{59}{subsection.4.10.1}%
-\contentsline {subsection}{\numberline {4.10.2}Constructor \& Destructor Documentation}{59}{subsection.4.10.2}%
-\contentsline {subsubsection}{\numberline {4.10.2.1}InvalidFileException()}{59}{subsubsection.4.10.2.1}%
-\contentsline {subsection}{\numberline {4.10.3}Member Data Documentation}{60}{subsection.4.10.3}%
-\contentsline {subsubsection}{\numberline {4.10.3.1}ERROR\_MESSAGE}{60}{subsubsection.4.10.3.1}%
-\contentsline {section}{\numberline {4.11}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skill\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{60}{section.4.11}%
-\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{61}{subsection.4.11.1}%
-\contentsline {subsection}{\numberline {4.11.2}Constructor \& Destructor Documentation}{61}{subsection.4.11.2}%
-\contentsline {subsubsection}{\numberline {4.11.2.1}InvalidSkillException()}{61}{subsubsection.4.11.2.1}%
-\contentsline {subsection}{\numberline {4.11.3}Member Data Documentation}{61}{subsection.4.11.3}%
-\contentsline {subsubsection}{\numberline {4.11.3.1}ERROR\_MESSAGE}{61}{subsubsection.4.11.3.1}%
-\contentsline {section}{\numberline {4.12}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{62}{section.4.12}%
-\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{62}{subsection.4.12.1}%
-\contentsline {subsection}{\numberline {4.12.2}Constructor \& Destructor Documentation}{62}{subsection.4.12.2}%
-\contentsline {subsubsection}{\numberline {4.12.2.1}InvalidUserException()}{62}{subsubsection.4.12.2.1}%
-\contentsline {subsection}{\numberline {4.12.3}Member Data Documentation}{63}{subsection.4.12.3}%
-\contentsline {subsubsection}{\numberline {4.12.3.1}ERROR\_MESSAGE}{63}{subsubsection.4.12.3.1}%
-\contentsline {section}{\numberline {4.13}IODi Class Reference}{63}{section.4.13}%
-\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{64}{subsection.4.13.1}%
-\contentsline {subsection}{\numberline {4.13.2}Member Enumeration Documentation}{65}{subsection.4.13.2}%
-\contentsline {subsubsection}{\numberline {4.13.2.1}anonymous enum}{65}{subsubsection.4.13.2.1}%
-\contentsline {subsection}{\numberline {4.13.3}Constructor \& Destructor Documentation}{65}{subsection.4.13.3}%
-\contentsline {subsubsection}{\numberline {4.13.3.1}IODi()}{65}{subsubsection.4.13.3.1}%
-\contentsline {subsection}{\numberline {4.13.4}Member Function Documentation}{65}{subsection.4.13.4}%
-\contentsline {subsubsection}{\numberline {4.13.4.1}requestAllStatus()}{65}{subsubsection.4.13.4.1}%
-\contentsline {subsubsection}{\numberline {4.13.4.2}requestCurrentDeviceName()}{66}{subsubsection.4.13.4.2}%
-\contentsline {subsubsection}{\numberline {4.13.4.3}requestDeviceNames()}{66}{subsubsection.4.13.4.3}%
-\contentsline {subsubsection}{\numberline {4.13.4.4}requestDeviceSkills()}{67}{subsubsection.4.13.4.4}%
-\contentsline {subsubsection}{\numberline {4.13.4.5}requestNumberOfDataDevices()}{67}{subsubsection.4.13.4.5}%
-\contentsline {subsubsection}{\numberline {4.13.4.6}requestNumberOfSkills()}{67}{subsubsection.4.13.4.6}%
-\contentsline {subsubsection}{\numberline {4.13.4.7}requestSkill()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{68}{subsubsection.4.13.4.7}%
-\contentsline {subsubsection}{\numberline {4.13.4.8}requestSkill()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{69}{subsubsection.4.13.4.8}%
-\contentsline {subsubsection}{\numberline {4.13.4.9}setCurrentDevice()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{70}{subsubsection.4.13.4.9}%
-\contentsline {subsubsection}{\numberline {4.13.4.10}setCurrentDevice()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{71}{subsubsection.4.13.4.10}%
-\contentsline {subsection}{\numberline {4.13.5}Member Data Documentation}{71}{subsection.4.13.5}%
-\contentsline {subsubsection}{\numberline {4.13.5.1}currentDeviceName}{72}{subsubsection.4.13.5.1}%
-\contentsline {subsubsection}{\numberline {4.13.5.2}currentDevicePos}{72}{subsubsection.4.13.5.2}%
-\contentsline {subsubsection}{\numberline {4.13.5.3}id}{72}{subsubsection.4.13.5.3}%
-\contentsline {subsubsection}{\numberline {4.13.5.4}maxID}{72}{subsubsection.4.13.5.4}%
-\contentsline {subsubsection}{\numberline {4.13.5.5}TAG}{73}{subsubsection.4.13.5.5}%
-\contentsline {section}{\numberline {4.14}kb Class Reference}{73}{section.4.14}%
-\contentsline {subsection}{\numberline {4.14.1}Detailed Description}{73}{subsection.4.14.1}%
-\contentsline {subsection}{\numberline {4.14.2}Member Function Documentation}{73}{subsection.4.14.2}%
-\contentsline {subsubsection}{\numberline {4.14.2.1}kbhit()}{73}{subsubsection.4.14.2.1}%
-\contentsline {section}{\numberline {4.15}Kernel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device Class Reference}{74}{section.4.15}%
-\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{75}{subsection.4.15.1}%
-\contentsline {subsection}{\numberline {4.15.2}Constructor \& Destructor Documentation}{75}{subsection.4.15.2}%
-\contentsline {subsubsection}{\numberline {4.15.2.1}KernelDevice()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{75}{subsubsection.4.15.2.1}%
-\contentsline {subsubsection}{\numberline {4.15.2.2}KernelDevice()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{75}{subsubsection.4.15.2.2}%
-\contentsline {subsection}{\numberline {4.15.3}Member Function Documentation}{76}{subsection.4.15.3}%
-\contentsline {subsubsection}{\numberline {4.15.3.1}setAllKernelDevices()}{76}{subsubsection.4.15.3.1}%
-\contentsline {subsection}{\numberline {4.15.4}Friends And Related Function Documentation}{76}{subsection.4.15.4}%
-\contentsline {subsubsection}{\numberline {4.15.4.1}AI}{76}{subsubsection.4.15.4.1}%
-\contentsline {subsubsection}{\numberline {4.15.4.2}DeviceBuilder}{76}{subsubsection.4.15.4.2}%
-\contentsline {subsection}{\numberline {4.15.5}Member Data Documentation}{76}{subsection.4.15.5}%
-\contentsline {subsubsection}{\numberline {4.15.5.1}allKernelDevices}{77}{subsubsection.4.15.5.1}%
-\contentsline {subsubsection}{\numberline {4.15.5.2}numKerns}{77}{subsubsection.4.15.5.2}%
-\contentsline {subsubsection}{\numberline {4.15.5.3}securityGenerator}{77}{subsubsection.4.15.5.3}%
-\contentsline {subsubsection}{\numberline {4.15.5.4}securityHasBeenBroken}{77}{subsubsection.4.15.5.4}%
-\contentsline {section}{\numberline {4.16}Login Class Reference}{78}{section.4.16}%
-\contentsline {subsection}{\numberline {4.16.1}Detailed Description}{78}{subsection.4.16.1}%
-\contentsline {subsection}{\numberline {4.16.2}Constructor \& Destructor Documentation}{78}{subsection.4.16.2}%
-\contentsline {subsubsection}{\numberline {4.16.2.1}Login()}{79}{subsubsection.4.16.2.1}%
-\contentsline {subsection}{\numberline {4.16.3}Member Function Documentation}{79}{subsection.4.16.3}%
-\contentsline {subsubsection}{\numberline {4.16.3.1}startLogin()}{79}{subsubsection.4.16.3.1}%
-\contentsline {subsection}{\numberline {4.16.4}Member Data Documentation}{80}{subsection.4.16.4}%
-\contentsline {subsubsection}{\numberline {4.16.4.1}EXIT\_REQUEST}{80}{subsubsection.4.16.4.1}%
-\contentsline {subsubsection}{\numberline {4.16.4.2}pass}{80}{subsubsection.4.16.4.2}%
-\contentsline {subsubsection}{\numberline {4.16.4.3}SLEEP\_TIME}{81}{subsubsection.4.16.4.3}%
-\contentsline {subsubsection}{\numberline {4.16.4.4}user}{81}{subsubsection.4.16.4.4}%
-\contentsline {section}{\numberline {4.17}Simple\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Display Class Reference}{81}{section.4.17}%
-\contentsline {subsection}{\numberline {4.17.1}Detailed Description}{83}{subsection.4.17.1}%
-\contentsline {subsection}{\numberline {4.17.2}Constructor \& Destructor Documentation}{83}{subsection.4.17.2}%
-\contentsline {subsubsection}{\numberline {4.17.2.1}SimpleDisplay()}{83}{subsubsection.4.17.2.1}%
+\contentsline {section}{\numberline {4.7}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Composite Class Reference}{54}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{55}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Constructor \& Destructor Documentation}{55}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}DeviceComposite()}{55}{subsubsection.4.7.2.1}%
+\contentsline {subsection}{\numberline {4.7.3}Member Function Documentation}{55}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}add()}{55}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}clear()}{56}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}pop()}{56}{subsubsection.4.7.3.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.4}requestSkill()}{56}{subsubsection.4.7.3.4}%
+\contentsline {subsubsection}{\numberline {4.7.3.5}toString()}{57}{subsubsection.4.7.3.5}%
+\contentsline {subsection}{\numberline {4.7.4}Member Data Documentation}{58}{subsection.4.7.4}%
+\contentsline {subsubsection}{\numberline {4.7.4.1}allIODis}{58}{subsubsection.4.7.4.1}%
+\contentsline {subsubsection}{\numberline {4.7.4.2}CALL\_KEYWORD}{58}{subsubsection.4.7.4.2}%
+\contentsline {section}{\numberline {4.8}device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset Class Reference}{58}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{58}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Member Function Documentation}{58}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}initDataset()}{59}{subsubsection.4.8.2.1}%
+\contentsline {section}{\numberline {4.9}Insufficient\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Permissions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{60}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{60}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Constructor \& Destructor Documentation}{60}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}InsufficientPermissionsException()}{60}{subsubsection.4.9.2.1}%
+\contentsline {subsection}{\numberline {4.9.3}Member Data Documentation}{61}{subsection.4.9.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.1}ERROR\_MESSAGE}{61}{subsubsection.4.9.3.1}%
+\contentsline {section}{\numberline {4.10}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{61}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{62}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}Constructor \& Destructor Documentation}{62}{subsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.1}InvalidDeviceException()}{62}{subsubsection.4.10.2.1}%
+\contentsline {subsection}{\numberline {4.10.3}Member Data Documentation}{62}{subsection.4.10.3}%
+\contentsline {subsubsection}{\numberline {4.10.3.1}ERROR\_MESSAGE}{62}{subsubsection.4.10.3.1}%
+\contentsline {section}{\numberline {4.11}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{63}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{63}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Constructor \& Destructor Documentation}{63}{subsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.1}InvalidFileException()}{63}{subsubsection.4.11.2.1}%
+\contentsline {subsection}{\numberline {4.11.3}Member Data Documentation}{64}{subsection.4.11.3}%
+\contentsline {subsubsection}{\numberline {4.11.3.1}ERROR\_MESSAGE}{64}{subsubsection.4.11.3.1}%
+\contentsline {section}{\numberline {4.12}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skill\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{64}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{65}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Constructor \& Destructor Documentation}{65}{subsection.4.12.2}%
+\contentsline {subsubsection}{\numberline {4.12.2.1}InvalidSkillException()}{65}{subsubsection.4.12.2.1}%
+\contentsline {subsection}{\numberline {4.12.3}Member Data Documentation}{65}{subsection.4.12.3}%
+\contentsline {subsubsection}{\numberline {4.12.3.1}ERROR\_MESSAGE}{65}{subsubsection.4.12.3.1}%
+\contentsline {section}{\numberline {4.13}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{66}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{66}{subsection.4.13.1}%
+\contentsline {subsection}{\numberline {4.13.2}Constructor \& Destructor Documentation}{66}{subsection.4.13.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.1}InvalidUserException()}{66}{subsubsection.4.13.2.1}%
+\contentsline {subsection}{\numberline {4.13.3}Member Data Documentation}{67}{subsection.4.13.3}%
+\contentsline {subsubsection}{\numberline {4.13.3.1}ERROR\_MESSAGE}{67}{subsubsection.4.13.3.1}%
+\contentsline {section}{\numberline {4.14}IODi Class Reference}{67}{section.4.14}%
+\contentsline {subsection}{\numberline {4.14.1}Detailed Description}{68}{subsection.4.14.1}%
+\contentsline {subsection}{\numberline {4.14.2}Member Enumeration Documentation}{69}{subsection.4.14.2}%
+\contentsline {subsubsection}{\numberline {4.14.2.1}anonymous enum}{69}{subsubsection.4.14.2.1}%
+\contentsline {subsection}{\numberline {4.14.3}Constructor \& Destructor Documentation}{69}{subsection.4.14.3}%
+\contentsline {subsubsection}{\numberline {4.14.3.1}IODi()}{69}{subsubsection.4.14.3.1}%
+\contentsline {subsection}{\numberline {4.14.4}Member Function Documentation}{69}{subsection.4.14.4}%
+\contentsline {subsubsection}{\numberline {4.14.4.1}requestAllStatus()}{69}{subsubsection.4.14.4.1}%
+\contentsline {subsubsection}{\numberline {4.14.4.2}requestCurrentDeviceName()}{70}{subsubsection.4.14.4.2}%
+\contentsline {subsubsection}{\numberline {4.14.4.3}requestDeviceNames()}{70}{subsubsection.4.14.4.3}%
+\contentsline {subsubsection}{\numberline {4.14.4.4}requestDeviceSkills()}{71}{subsubsection.4.14.4.4}%
+\contentsline {subsubsection}{\numberline {4.14.4.5}requestNumberOfDataDevices()}{71}{subsubsection.4.14.4.5}%
+\contentsline {subsubsection}{\numberline {4.14.4.6}requestNumberOfSkills()}{71}{subsubsection.4.14.4.6}%
+\contentsline {subsubsection}{\numberline {4.14.4.7}requestSkill()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{72}{subsubsection.4.14.4.7}%
+\contentsline {subsubsection}{\numberline {4.14.4.8}requestSkill()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{73}{subsubsection.4.14.4.8}%
+\contentsline {subsubsection}{\numberline {4.14.4.9}setCurrentDevice()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{74}{subsubsection.4.14.4.9}%
+\contentsline {subsubsection}{\numberline {4.14.4.10}setCurrentDevice()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{75}{subsubsection.4.14.4.10}%
+\contentsline {subsection}{\numberline {4.14.5}Member Data Documentation}{76}{subsection.4.14.5}%
+\contentsline {subsubsection}{\numberline {4.14.5.1}currentDeviceName}{76}{subsubsection.4.14.5.1}%
+\contentsline {subsubsection}{\numberline {4.14.5.2}currentDevicePos}{76}{subsubsection.4.14.5.2}%
+\contentsline {subsubsection}{\numberline {4.14.5.3}id}{76}{subsubsection.4.14.5.3}%
+\contentsline {subsubsection}{\numberline {4.14.5.4}maxID}{76}{subsubsection.4.14.5.4}%
+\contentsline {subsubsection}{\numberline {4.14.5.5}TAG}{77}{subsubsection.4.14.5.5}%
+\contentsline {section}{\numberline {4.15}kb Class Reference}{77}{section.4.15}%
+\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{77}{subsection.4.15.1}%
+\contentsline {subsection}{\numberline {4.15.2}Member Function Documentation}{77}{subsection.4.15.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.1}kbhit()}{77}{subsubsection.4.15.2.1}%
+\contentsline {section}{\numberline {4.16}Kernel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device Class Reference}{78}{section.4.16}%
+\contentsline {subsection}{\numberline {4.16.1}Detailed Description}{79}{subsection.4.16.1}%
+\contentsline {subsection}{\numberline {4.16.2}Constructor \& Destructor Documentation}{79}{subsection.4.16.2}%
+\contentsline {subsubsection}{\numberline {4.16.2.1}KernelDevice()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{79}{subsubsection.4.16.2.1}%
+\contentsline {subsubsection}{\numberline {4.16.2.2}KernelDevice()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{79}{subsubsection.4.16.2.2}%
+\contentsline {subsection}{\numberline {4.16.3}Member Function Documentation}{80}{subsection.4.16.3}%
+\contentsline {subsubsection}{\numberline {4.16.3.1}setAllKernelDevices()}{80}{subsubsection.4.16.3.1}%
+\contentsline {subsection}{\numberline {4.16.4}Friends And Related Function Documentation}{80}{subsection.4.16.4}%
+\contentsline {subsubsection}{\numberline {4.16.4.1}AI}{80}{subsubsection.4.16.4.1}%
+\contentsline {subsubsection}{\numberline {4.16.4.2}DeviceBuilder}{80}{subsubsection.4.16.4.2}%
+\contentsline {subsection}{\numberline {4.16.5}Member Data Documentation}{80}{subsection.4.16.5}%
+\contentsline {subsubsection}{\numberline {4.16.5.1}allKernelDevices}{81}{subsubsection.4.16.5.1}%
+\contentsline {subsubsection}{\numberline {4.16.5.2}numKerns}{81}{subsubsection.4.16.5.2}%
+\contentsline {subsubsection}{\numberline {4.16.5.3}securityGenerator}{81}{subsubsection.4.16.5.3}%
+\contentsline {subsubsection}{\numberline {4.16.5.4}securityHasBeenBroken}{81}{subsubsection.4.16.5.4}%
+\contentsline {section}{\numberline {4.17}Login Class Reference}{82}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Detailed Description}{82}{subsection.4.17.1}%
+\contentsline {subsection}{\numberline {4.17.2}Constructor \& Destructor Documentation}{82}{subsection.4.17.2}%
+\contentsline {subsubsection}{\numberline {4.17.2.1}Login()}{83}{subsubsection.4.17.2.1}%
 \contentsline {subsection}{\numberline {4.17.3}Member Function Documentation}{83}{subsection.4.17.3}%
-\contentsline {subsubsection}{\numberline {4.17.3.1}checkAbortStatus()}{84}{subsubsection.4.17.3.1}%
-\contentsline {subsubsection}{\numberline {4.17.3.2}cleanDevi()}{84}{subsubsection.4.17.3.2}%
-\contentsline {subsubsection}{\numberline {4.17.3.3}cout()}{84}{subsubsection.4.17.3.3}%
-\contentsline {subsubsection}{\numberline {4.17.3.4}deviCout()}{85}{subsubsection.4.17.3.4}%
-\contentsline {subsubsection}{\numberline {4.17.3.5}deviPrintData()}{85}{subsubsection.4.17.3.5}%
-\contentsline {subsubsection}{\numberline {4.17.3.6}execBuildFinish()}{86}{subsubsection.4.17.3.6}%
-\contentsline {subsubsection}{\numberline {4.17.3.7}execBuildGenerator()}{86}{subsubsection.4.17.3.7}%
-\contentsline {subsubsection}{\numberline {4.17.3.8}execBuildName()}{87}{subsubsection.4.17.3.8}%
-\contentsline {subsubsection}{\numberline {4.17.3.9}execBuildType()}{87}{subsubsection.4.17.3.9}%
-\contentsline {subsubsection}{\numberline {4.17.3.10}jump()}{88}{subsubsection.4.17.3.10}%
-\contentsline {subsubsection}{\numberline {4.17.3.11}operator$<$$<$()}{88}{subsubsection.4.17.3.11}%
-\contentsline {subsubsection}{\numberline {4.17.3.12}printAIInterface()}{88}{subsubsection.4.17.3.12}%
-\contentsline {subsubsection}{\numberline {4.17.3.13}printChecking()}{89}{subsubsection.4.17.3.13}%
-\contentsline {subsubsection}{\numberline {4.17.3.14}printDeviHeader()}{89}{subsubsection.4.17.3.14}%
-\contentsline {subsubsection}{\numberline {4.17.3.15}printDeviHelp()}{90}{subsubsection.4.17.3.15}%
-\contentsline {subsubsection}{\numberline {4.17.3.16}printLoginInterface()}{91}{subsubsection.4.17.3.16}%
-\contentsline {subsubsection}{\numberline {4.17.3.17}printMainInterface()}{92}{subsubsection.4.17.3.17}%
-\contentsline {subsubsection}{\numberline {4.17.3.18}printPresentation()}{94}{subsubsection.4.17.3.18}%
-\contentsline {subsubsection}{\numberline {4.17.3.19}printRequestPassword()}{94}{subsubsection.4.17.3.19}%
-\contentsline {subsubsection}{\numberline {4.17.3.20}printSkillManual()}{95}{subsubsection.4.17.3.20}%
-\contentsline {subsubsection}{\numberline {4.17.3.21}setDataDevices()}{96}{subsubsection.4.17.3.21}%
-\contentsline {subsubsection}{\numberline {4.17.3.22}setGroup()}{96}{subsubsection.4.17.3.22}%
-\contentsline {subsubsection}{\numberline {4.17.3.23}setKernelDevices()}{96}{subsubsection.4.17.3.23}%
-\contentsline {subsubsection}{\numberline {4.17.3.24}setSecurityConnected()}{97}{subsubsection.4.17.3.24}%
-\contentsline {subsubsection}{\numberline {4.17.3.25}setSecurityStatus()}{97}{subsubsection.4.17.3.25}%
-\contentsline {subsubsection}{\numberline {4.17.3.26}setUser()}{98}{subsubsection.4.17.3.26}%
-\contentsline {subsection}{\numberline {4.17.4}Member Data Documentation}{98}{subsection.4.17.4}%
-\contentsline {subsubsection}{\numberline {4.17.4.1}COLOR}{98}{subsubsection.4.17.4.1}%
-\contentsline {subsubsection}{\numberline {4.17.4.2}currentDisplay}{98}{subsubsection.4.17.4.2}%
-\contentsline {subsubsection}{\numberline {4.17.4.3}dataDevices}{99}{subsubsection.4.17.4.3}%
-\contentsline {subsubsection}{\numberline {4.17.4.4}GREY\_COLOR}{99}{subsubsection.4.17.4.4}%
-\contentsline {subsubsection}{\numberline {4.17.4.5}group}{99}{subsubsection.4.17.4.5}%
-\contentsline {subsubsection}{\numberline {4.17.4.6}kernelDevices}{99}{subsubsection.4.17.4.6}%
-\contentsline {subsubsection}{\numberline {4.17.4.7}MAXIMUM\_OPTIONS}{100}{subsubsection.4.17.4.7}%
-\contentsline {subsubsection}{\numberline {4.17.4.8}RESET\_COLOR}{100}{subsubsection.4.17.4.8}%
-\contentsline {subsubsection}{\numberline {4.17.4.9}security\_abort}{100}{subsubsection.4.17.4.9}%
-\contentsline {subsubsection}{\numberline {4.17.4.10}securityConnected}{100}{subsubsection.4.17.4.10}%
-\contentsline {subsubsection}{\numberline {4.17.4.11}securityStatus}{101}{subsubsection.4.17.4.11}%
-\contentsline {subsubsection}{\numberline {4.17.4.12}user}{101}{subsubsection.4.17.4.12}%
-\contentsline {subsubsection}{\numberline {4.17.4.13}WARNING\_COLOR}{101}{subsubsection.4.17.4.13}%
-\contentsline {section}{\numberline {4.18}User Class Reference}{101}{section.4.18}%
-\contentsline {subsection}{\numberline {4.18.1}Detailed Description}{103}{subsection.4.18.1}%
-\contentsline {subsection}{\numberline {4.18.2}Member Enumeration Documentation}{103}{subsection.4.18.2}%
-\contentsline {subsubsection}{\numberline {4.18.2.1}anonymous enum}{103}{subsubsection.4.18.2.1}%
-\contentsline {subsection}{\numberline {4.18.3}Constructor \& Destructor Documentation}{104}{subsection.4.18.3}%
-\contentsline {subsubsection}{\numberline {4.18.3.1}User()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{104}{subsubsection.4.18.3.1}%
-\contentsline {subsubsection}{\numberline {4.18.3.2}User()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{104}{subsubsection.4.18.3.2}%
-\contentsline {subsection}{\numberline {4.18.4}Member Function Documentation}{104}{subsection.4.18.4}%
-\contentsline {subsubsection}{\numberline {4.18.4.1}addUser()}{105}{subsubsection.4.18.4.1}%
-\contentsline {subsubsection}{\numberline {4.18.4.2}check()}{105}{subsubsection.4.18.4.2}%
-\contentsline {subsubsection}{\numberline {4.18.4.3}find()}{106}{subsubsection.4.18.4.3}%
-\contentsline {subsubsection}{\numberline {4.18.4.4}getAdminStatus()}{107}{subsubsection.4.18.4.4}%
-\contentsline {subsubsection}{\numberline {4.18.4.5}getUser()}{107}{subsubsection.4.18.4.5}%
-\contentsline {subsubsection}{\numberline {4.18.4.6}printUsers()}{107}{subsubsection.4.18.4.6}%
-\contentsline {subsubsection}{\numberline {4.18.4.7}rmUser()}{107}{subsubsection.4.18.4.7}%
-\contentsline {subsubsection}{\numberline {4.18.4.8}saveUserData()}{108}{subsubsection.4.18.4.8}%
-\contentsline {subsubsection}{\numberline {4.18.4.9}updateUserData()}{108}{subsubsection.4.18.4.9}%
-\contentsline {subsection}{\numberline {4.18.5}Member Data Documentation}{109}{subsection.4.18.5}%
-\contentsline {subsubsection}{\numberline {4.18.5.1}allUsers}{109}{subsubsection.4.18.5.1}%
-\contentsline {subsubsection}{\numberline {4.18.5.2}DATAFILE}{109}{subsubsection.4.18.5.2}%
-\contentsline {subsubsection}{\numberline {4.18.5.3}id}{110}{subsubsection.4.18.5.3}%
-\contentsline {subsubsection}{\numberline {4.18.5.4}isAdmin}{110}{subsubsection.4.18.5.4}%
-\contentsline {subsubsection}{\numberline {4.18.5.5}pass}{110}{subsubsection.4.18.5.5}%
-\contentsline {subsubsection}{\numberline {4.18.5.6}SEPARATOR}{110}{subsubsection.4.18.5.6}%
-\contentsline {subsubsection}{\numberline {4.18.5.7}TAG}{111}{subsubsection.4.18.5.7}%
-\contentsline {subsubsection}{\numberline {4.18.5.8}USERFILE}{111}{subsubsection.4.18.5.8}%
-\contentsline {section}{\numberline {4.19}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{111}{section.4.19}%
-\contentsline {subsection}{\numberline {4.19.1}Detailed Description}{112}{subsection.4.19.1}%
-\contentsline {subsection}{\numberline {4.19.2}Constructor \& Destructor Documentation}{112}{subsection.4.19.2}%
-\contentsline {subsubsection}{\numberline {4.19.2.1}UserNotFoundException()}{112}{subsubsection.4.19.2.1}%
-\contentsline {subsection}{\numberline {4.19.3}Member Data Documentation}{112}{subsection.4.19.3}%
-\contentsline {subsubsection}{\numberline {4.19.3.1}ERROR\_MESSAGE}{112}{subsubsection.4.19.3.1}%
-\contentsline {chapter}{\numberline {5}File Documentation}{115}{chapter.5}%
-\contentsline {section}{\numberline {5.1}kb.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{115}{section.5.1}%
-\contentsline {section}{\numberline {5.2}kb.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{115}{section.5.2}%
-\contentsline {section}{\numberline {5.3}kb.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{115}{section.5.3}%
-\contentsline {section}{\numberline {5.4}kb.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{116}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Admin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{116}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{116}{subsection.5.5.1}%
-\contentsline {section}{\numberline {5.6}Admin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{117}{section.5.6}%
-\contentsline {section}{\numberline {5.7}AI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{117}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{117}{subsection.5.7.1}%
-\contentsline {section}{\numberline {5.8}AI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{118}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{119}{section.5.9}%
-\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{119}{subsection.5.9.1}%
-\contentsline {section}{\numberline {5.10}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{119}{section.5.10}%
-\contentsline {section}{\numberline {5.11}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{120}{section.5.11}%
-\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{121}{subsection.5.11.1}%
-\contentsline {section}{\numberline {5.12}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{121}{section.5.12}%
-\contentsline {section}{\numberline {5.13}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{122}{section.5.13}%
-\contentsline {subsection}{\numberline {5.13.1}Detailed Description}{122}{subsection.5.13.1}%
-\contentsline {section}{\numberline {5.14}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{123}{section.5.14}%
-\contentsline {section}{\numberline {5.15}Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{124}{section.5.15}%
-\contentsline {subsection}{\numberline {5.15.1}Detailed Description}{124}{subsection.5.15.1}%
-\contentsline {section}{\numberline {5.16}Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{124}{section.5.16}%
-\contentsline {section}{\numberline {5.17}Insufficient\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Permissions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{124}{section.5.17}%
-\contentsline {section}{\numberline {5.18}Insufficient\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Permissions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{125}{section.5.18}%
-\contentsline {section}{\numberline {5.19}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{125}{section.5.19}%
-\contentsline {subsection}{\numberline {5.19.1}Detailed Description}{125}{subsection.5.19.1}%
-\contentsline {section}{\numberline {5.20}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{126}{section.5.20}%
-\contentsline {section}{\numberline {5.21}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{126}{section.5.21}%
-\contentsline {subsection}{\numberline {5.21.1}Detailed Description}{126}{subsection.5.21.1}%
-\contentsline {section}{\numberline {5.22}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{127}{section.5.22}%
-\contentsline {section}{\numberline {5.23}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skill\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{127}{section.5.23}%
-\contentsline {subsection}{\numberline {5.23.1}Detailed Description}{127}{subsection.5.23.1}%
-\contentsline {section}{\numberline {5.24}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skill\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{128}{section.5.24}%
-\contentsline {section}{\numberline {5.25}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{128}{section.5.25}%
-\contentsline {subsection}{\numberline {5.25.1}Detailed Description}{128}{subsection.5.25.1}%
-\contentsline {section}{\numberline {5.26}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{129}{section.5.26}%
-\contentsline {section}{\numberline {5.27}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{129}{section.5.27}%
-\contentsline {subsection}{\numberline {5.27.1}Detailed Description}{129}{subsection.5.27.1}%
-\contentsline {section}{\numberline {5.28}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{130}{section.5.28}%
-\contentsline {section}{\numberline {5.29}exceptions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lib.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{130}{section.5.29}%
-\contentsline {subsection}{\numberline {5.29.1}Detailed Description}{130}{subsection.5.29.1}%
-\contentsline {section}{\numberline {5.30}exceptions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lib.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{130}{section.5.30}%
-\contentsline {section}{\numberline {5.31}IODi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{131}{section.5.31}%
-\contentsline {subsection}{\numberline {5.31.1}Detailed Description}{131}{subsection.5.31.1}%
-\contentsline {section}{\numberline {5.32}IODi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{131}{section.5.32}%
-\contentsline {section}{\numberline {5.33}Kernel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{132}{section.5.33}%
-\contentsline {subsection}{\numberline {5.33.1}Detailed Description}{132}{subsection.5.33.1}%
-\contentsline {section}{\numberline {5.34}Kernel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{133}{section.5.34}%
-\contentsline {section}{\numberline {5.35}lib.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{133}{section.5.35}%
-\contentsline {subsection}{\numberline {5.35.1}Detailed Description}{134}{subsection.5.35.1}%
-\contentsline {section}{\numberline {5.36}lib.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{134}{section.5.36}%
-\contentsline {section}{\numberline {5.37}Login.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{134}{section.5.37}%
-\contentsline {subsection}{\numberline {5.37.1}Detailed Description}{134}{subsection.5.37.1}%
-\contentsline {section}{\numberline {5.38}Login.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{135}{section.5.38}%
-\contentsline {section}{\numberline {5.39}Simple\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Display.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{135}{section.5.39}%
-\contentsline {subsection}{\numberline {5.39.1}Detailed Description}{135}{subsection.5.39.1}%
-\contentsline {section}{\numberline {5.40}Simple\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Display.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{136}{section.5.40}%
-\contentsline {section}{\numberline {5.41}User.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{137}{section.5.41}%
-\contentsline {subsection}{\numberline {5.41.1}Detailed Description}{137}{subsection.5.41.1}%
-\contentsline {section}{\numberline {5.42}User.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{138}{section.5.42}%
-\contentsline {section}{\numberline {5.43}Admin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{139}{section.5.43}%
-\contentsline {section}{\numberline {5.44}Admin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{139}{section.5.44}%
-\contentsline {section}{\numberline {5.45}AI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{139}{section.5.45}%
-\contentsline {subsection}{\numberline {5.45.1}Detailed Description}{139}{subsection.5.45.1}%
-\contentsline {section}{\numberline {5.46}AI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{140}{section.5.46}%
-\contentsline {section}{\numberline {5.47}Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{146}{section.5.47}%
-\contentsline {section}{\numberline {5.48}Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{146}{section.5.48}%
-\contentsline {section}{\numberline {5.49}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{146}{section.5.49}%
-\contentsline {subsection}{\numberline {5.49.1}Detailed Description}{147}{subsection.5.49.1}%
-\contentsline {section}{\numberline {5.50}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{147}{section.5.50}%
-\contentsline {section}{\numberline {5.51}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{148}{section.5.51}%
-\contentsline {subsection}{\numberline {5.51.1}Detailed Description}{148}{subsection.5.51.1}%
-\contentsline {section}{\numberline {5.52}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{148}{section.5.52}%
-\contentsline {section}{\numberline {5.53}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{149}{section.5.53}%
-\contentsline {subsection}{\numberline {5.53.1}Detailed Description}{149}{subsection.5.53.1}%
-\contentsline {section}{\numberline {5.54}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{150}{section.5.54}%
-\contentsline {section}{\numberline {5.55}device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{152}{section.5.55}%
-\contentsline {subsection}{\numberline {5.55.1}Macro Definition Documentation}{152}{subsection.5.55.1}%
-\contentsline {subsubsection}{\numberline {5.55.1.1}DEVICE\_DATASET}{152}{subsubsection.5.55.1.1}%
-\contentsline {section}{\numberline {5.56}device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{153}{section.5.56}%
-\contentsline {section}{\numberline {5.57}example\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Security\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{154}{section.5.57}%
-\contentsline {subsection}{\numberline {5.57.1}Macro Definition Documentation}{154}{subsection.5.57.1}%
-\contentsline {subsubsection}{\numberline {5.57.1.1}EXAMPLE\_SECURITY}{154}{subsubsection.5.57.1.1}%
-\contentsline {subsection}{\numberline {5.57.2}Function Documentation}{154}{subsection.5.57.2}%
-\contentsline {subsubsection}{\numberline {5.57.2.1}exampleTest()}{154}{subsubsection.5.57.2.1}%
-\contentsline {section}{\numberline {5.58}example\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Security\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{154}{section.5.58}%
-\contentsline {section}{\numberline {5.59}example\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skills\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{155}{section.5.59}%
-\contentsline {subsection}{\numberline {5.59.1}Macro Definition Documentation}{155}{subsection.5.59.1}%
-\contentsline {subsubsection}{\numberline {5.59.1.1}EXAMPLE\_SKILLS}{155}{subsubsection.5.59.1.1}%
-\contentsline {subsection}{\numberline {5.59.2}Function Documentation}{155}{subsection.5.59.2}%
-\contentsline {subsubsection}{\numberline {5.59.2.1}exampleSkill1()}{155}{subsubsection.5.59.2.1}%
-\contentsline {subsubsection}{\numberline {5.59.2.2}exampleSkill2()}{156}{subsubsection.5.59.2.2}%
-\contentsline {subsubsection}{\numberline {5.59.2.3}exampleSkill3()}{156}{subsubsection.5.59.2.3}%
-\contentsline {subsubsection}{\numberline {5.59.2.4}exampleSkill4()}{156}{subsubsection.5.59.2.4}%
-\contentsline {subsubsection}{\numberline {5.59.2.5}generateRandomData()}{156}{subsubsection.5.59.2.5}%
-\contentsline {section}{\numberline {5.60}example\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skills\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{157}{section.5.60}%
-\contentsline {section}{\numberline {5.61}Insufficient\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Permissions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{157}{section.5.61}%
-\contentsline {section}{\numberline {5.62}Insufficient\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Permissions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{157}{section.5.62}%
-\contentsline {section}{\numberline {5.63}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{157}{section.5.63}%
-\contentsline {section}{\numberline {5.64}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{158}{section.5.64}%
-\contentsline {section}{\numberline {5.65}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{158}{section.5.65}%
-\contentsline {section}{\numberline {5.66}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{158}{section.5.66}%
-\contentsline {section}{\numberline {5.67}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skill\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{158}{section.5.67}%
-\contentsline {section}{\numberline {5.68}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skill\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{158}{section.5.68}%
-\contentsline {section}{\numberline {5.69}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{158}{section.5.69}%
-\contentsline {section}{\numberline {5.70}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{159}{section.5.70}%
-\contentsline {section}{\numberline {5.71}IODi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{159}{section.5.71}%
-\contentsline {subsection}{\numberline {5.71.1}Detailed Description}{159}{subsection.5.71.1}%
-\contentsline {section}{\numberline {5.72}IODi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{159}{section.5.72}%
-\contentsline {section}{\numberline {5.73}Kernel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{161}{section.5.73}%
-\contentsline {subsection}{\numberline {5.73.1}Detailed Description}{162}{subsection.5.73.1}%
-\contentsline {section}{\numberline {5.74}Kernel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{162}{section.5.74}%
-\contentsline {section}{\numberline {5.75}Login.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{162}{section.5.75}%
-\contentsline {subsection}{\numberline {5.75.1}Detailed Description}{163}{subsection.5.75.1}%
-\contentsline {section}{\numberline {5.76}Login.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{163}{section.5.76}%
-\contentsline {section}{\numberline {5.77}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{164}{section.5.77}%
-\contentsline {subsection}{\numberline {5.77.1}Detailed Description}{164}{subsection.5.77.1}%
-\contentsline {subsection}{\numberline {5.77.2}Enumeration Type Documentation}{164}{subsection.5.77.2}%
-\contentsline {subsubsection}{\numberline {5.77.2.1}anonymous enum}{164}{subsubsection.5.77.2.1}%
-\contentsline {subsection}{\numberline {5.77.3}Function Documentation}{165}{subsection.5.77.3}%
-\contentsline {subsubsection}{\numberline {5.77.3.1}main()}{165}{subsubsection.5.77.3.1}%
-\contentsline {section}{\numberline {5.78}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{167}{section.5.78}%
-\contentsline {section}{\numberline {5.79}Simple\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Display.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{170}{section.5.79}%
+\contentsline {subsubsection}{\numberline {4.17.3.1}startLogin()}{83}{subsubsection.4.17.3.1}%
+\contentsline {subsection}{\numberline {4.17.4}Member Data Documentation}{84}{subsection.4.17.4}%
+\contentsline {subsubsection}{\numberline {4.17.4.1}EXIT\_REQUEST}{84}{subsubsection.4.17.4.1}%
+\contentsline {subsubsection}{\numberline {4.17.4.2}pass}{84}{subsubsection.4.17.4.2}%
+\contentsline {subsubsection}{\numberline {4.17.4.3}SLEEP\_TIME}{85}{subsubsection.4.17.4.3}%
+\contentsline {subsubsection}{\numberline {4.17.4.4}user}{85}{subsubsection.4.17.4.4}%
+\contentsline {section}{\numberline {4.18}Simple\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Display Class Reference}{85}{section.4.18}%
+\contentsline {subsection}{\numberline {4.18.1}Detailed Description}{87}{subsection.4.18.1}%
+\contentsline {subsection}{\numberline {4.18.2}Constructor \& Destructor Documentation}{87}{subsection.4.18.2}%
+\contentsline {subsubsection}{\numberline {4.18.2.1}SimpleDisplay()}{87}{subsubsection.4.18.2.1}%
+\contentsline {subsection}{\numberline {4.18.3}Member Function Documentation}{88}{subsection.4.18.3}%
+\contentsline {subsubsection}{\numberline {4.18.3.1}checkAbortStatus()}{88}{subsubsection.4.18.3.1}%
+\contentsline {subsubsection}{\numberline {4.18.3.2}cleanDevi()}{88}{subsubsection.4.18.3.2}%
+\contentsline {subsubsection}{\numberline {4.18.3.3}cout()}{89}{subsubsection.4.18.3.3}%
+\contentsline {subsubsection}{\numberline {4.18.3.4}deviCout()}{89}{subsubsection.4.18.3.4}%
+\contentsline {subsubsection}{\numberline {4.18.3.5}deviPrintData()}{89}{subsubsection.4.18.3.5}%
+\contentsline {subsubsection}{\numberline {4.18.3.6}execBuildFinish()}{90}{subsubsection.4.18.3.6}%
+\contentsline {subsubsection}{\numberline {4.18.3.7}execBuildGenerator()}{90}{subsubsection.4.18.3.7}%
+\contentsline {subsubsection}{\numberline {4.18.3.8}execBuildName()}{91}{subsubsection.4.18.3.8}%
+\contentsline {subsubsection}{\numberline {4.18.3.9}execBuildType()}{92}{subsubsection.4.18.3.9}%
+\contentsline {subsubsection}{\numberline {4.18.3.10}jump()}{92}{subsubsection.4.18.3.10}%
+\contentsline {subsubsection}{\numberline {4.18.3.11}operator$<$$<$()}{92}{subsubsection.4.18.3.11}%
+\contentsline {subsubsection}{\numberline {4.18.3.12}printAboutUs()}{93}{subsubsection.4.18.3.12}%
+\contentsline {subsubsection}{\numberline {4.18.3.13}printAIInterface()}{93}{subsubsection.4.18.3.13}%
+\contentsline {subsubsection}{\numberline {4.18.3.14}printChecking()}{94}{subsubsection.4.18.3.14}%
+\contentsline {subsubsection}{\numberline {4.18.3.15}printDeviHeader()}{94}{subsubsection.4.18.3.15}%
+\contentsline {subsubsection}{\numberline {4.18.3.16}printDeviHelp()}{95}{subsubsection.4.18.3.16}%
+\contentsline {subsubsection}{\numberline {4.18.3.17}printLoginInterface()}{96}{subsubsection.4.18.3.17}%
+\contentsline {subsubsection}{\numberline {4.18.3.18}printMainInterface()}{97}{subsubsection.4.18.3.18}%
+\contentsline {subsubsection}{\numberline {4.18.3.19}printPresentation()}{99}{subsubsection.4.18.3.19}%
+\contentsline {subsubsection}{\numberline {4.18.3.20}printRequestPassword()}{99}{subsubsection.4.18.3.20}%
+\contentsline {subsubsection}{\numberline {4.18.3.21}printSkillManual()}{100}{subsubsection.4.18.3.21}%
+\contentsline {subsubsection}{\numberline {4.18.3.22}setDataDevices()}{101}{subsubsection.4.18.3.22}%
+\contentsline {subsubsection}{\numberline {4.18.3.23}setGroup()}{101}{subsubsection.4.18.3.23}%
+\contentsline {subsubsection}{\numberline {4.18.3.24}setKernelDevices()}{101}{subsubsection.4.18.3.24}%
+\contentsline {subsubsection}{\numberline {4.18.3.25}setSecurityConnected()}{102}{subsubsection.4.18.3.25}%
+\contentsline {subsubsection}{\numberline {4.18.3.26}setSecurityStatus()}{102}{subsubsection.4.18.3.26}%
+\contentsline {subsubsection}{\numberline {4.18.3.27}setUser()}{103}{subsubsection.4.18.3.27}%
+\contentsline {subsection}{\numberline {4.18.4}Member Data Documentation}{103}{subsection.4.18.4}%
+\contentsline {subsubsection}{\numberline {4.18.4.1}COLOR}{103}{subsubsection.4.18.4.1}%
+\contentsline {subsubsection}{\numberline {4.18.4.2}currentDisplay}{103}{subsubsection.4.18.4.2}%
+\contentsline {subsubsection}{\numberline {4.18.4.3}dataDevices}{104}{subsubsection.4.18.4.3}%
+\contentsline {subsubsection}{\numberline {4.18.4.4}GREY\_COLOR}{104}{subsubsection.4.18.4.4}%
+\contentsline {subsubsection}{\numberline {4.18.4.5}group}{104}{subsubsection.4.18.4.5}%
+\contentsline {subsubsection}{\numberline {4.18.4.6}kernelDevices}{104}{subsubsection.4.18.4.6}%
+\contentsline {subsubsection}{\numberline {4.18.4.7}MAXIMUM\_OPTIONS}{105}{subsubsection.4.18.4.7}%
+\contentsline {subsubsection}{\numberline {4.18.4.8}RESET\_COLOR}{105}{subsubsection.4.18.4.8}%
+\contentsline {subsubsection}{\numberline {4.18.4.9}security\_abort}{105}{subsubsection.4.18.4.9}%
+\contentsline {subsubsection}{\numberline {4.18.4.10}securityConnected}{105}{subsubsection.4.18.4.10}%
+\contentsline {subsubsection}{\numberline {4.18.4.11}securityStatus}{106}{subsubsection.4.18.4.11}%
+\contentsline {subsubsection}{\numberline {4.18.4.12}user}{106}{subsubsection.4.18.4.12}%
+\contentsline {subsubsection}{\numberline {4.18.4.13}WARNING\_COLOR}{106}{subsubsection.4.18.4.13}%
+\contentsline {section}{\numberline {4.19}User Class Reference}{106}{section.4.19}%
+\contentsline {subsection}{\numberline {4.19.1}Detailed Description}{108}{subsection.4.19.1}%
+\contentsline {subsection}{\numberline {4.19.2}Member Enumeration Documentation}{108}{subsection.4.19.2}%
+\contentsline {subsubsection}{\numberline {4.19.2.1}anonymous enum}{108}{subsubsection.4.19.2.1}%
+\contentsline {subsection}{\numberline {4.19.3}Constructor \& Destructor Documentation}{109}{subsection.4.19.3}%
+\contentsline {subsubsection}{\numberline {4.19.3.1}User()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{109}{subsubsection.4.19.3.1}%
+\contentsline {subsubsection}{\numberline {4.19.3.2}User()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{109}{subsubsection.4.19.3.2}%
+\contentsline {subsection}{\numberline {4.19.4}Member Function Documentation}{109}{subsection.4.19.4}%
+\contentsline {subsubsection}{\numberline {4.19.4.1}addUser()}{110}{subsubsection.4.19.4.1}%
+\contentsline {subsubsection}{\numberline {4.19.4.2}check()}{110}{subsubsection.4.19.4.2}%
+\contentsline {subsubsection}{\numberline {4.19.4.3}find()}{111}{subsubsection.4.19.4.3}%
+\contentsline {subsubsection}{\numberline {4.19.4.4}getAdminStatus()}{112}{subsubsection.4.19.4.4}%
+\contentsline {subsubsection}{\numberline {4.19.4.5}getUser()}{112}{subsubsection.4.19.4.5}%
+\contentsline {subsubsection}{\numberline {4.19.4.6}printUsers()}{112}{subsubsection.4.19.4.6}%
+\contentsline {subsubsection}{\numberline {4.19.4.7}rmUser()}{112}{subsubsection.4.19.4.7}%
+\contentsline {subsubsection}{\numberline {4.19.4.8}saveUserData()}{113}{subsubsection.4.19.4.8}%
+\contentsline {subsubsection}{\numberline {4.19.4.9}updateUserData()}{114}{subsubsection.4.19.4.9}%
+\contentsline {subsection}{\numberline {4.19.5}Member Data Documentation}{114}{subsection.4.19.5}%
+\contentsline {subsubsection}{\numberline {4.19.5.1}allUsers}{114}{subsubsection.4.19.5.1}%
+\contentsline {subsubsection}{\numberline {4.19.5.2}DATAFILE}{115}{subsubsection.4.19.5.2}%
+\contentsline {subsubsection}{\numberline {4.19.5.3}EXECUTABLE\_DIR}{115}{subsubsection.4.19.5.3}%
+\contentsline {subsubsection}{\numberline {4.19.5.4}id}{115}{subsubsection.4.19.5.4}%
+\contentsline {subsubsection}{\numberline {4.19.5.5}isAdmin}{115}{subsubsection.4.19.5.5}%
+\contentsline {subsubsection}{\numberline {4.19.5.6}pass}{116}{subsubsection.4.19.5.6}%
+\contentsline {subsubsection}{\numberline {4.19.5.7}SEPARATOR}{116}{subsubsection.4.19.5.7}%
+\contentsline {subsubsection}{\numberline {4.19.5.8}TAG}{116}{subsubsection.4.19.5.8}%
+\contentsline {subsubsection}{\numberline {4.19.5.9}USERFILE}{116}{subsubsection.4.19.5.9}%
+\contentsline {section}{\numberline {4.20}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception Class Reference}{117}{section.4.20}%
+\contentsline {subsection}{\numberline {4.20.1}Detailed Description}{117}{subsection.4.20.1}%
+\contentsline {subsection}{\numberline {4.20.2}Constructor \& Destructor Documentation}{117}{subsection.4.20.2}%
+\contentsline {subsubsection}{\numberline {4.20.2.1}UserNotFoundException()}{117}{subsubsection.4.20.2.1}%
+\contentsline {subsection}{\numberline {4.20.3}Member Data Documentation}{118}{subsection.4.20.3}%
+\contentsline {subsubsection}{\numberline {4.20.3.1}ERROR\_MESSAGE}{118}{subsubsection.4.20.3.1}%
+\contentsline {chapter}{\numberline {5}File Documentation}{119}{chapter.5}%
+\contentsline {section}{\numberline {5.1}kb.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{119}{section.5.1}%
+\contentsline {section}{\numberline {5.2}kb.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{119}{section.5.2}%
+\contentsline {section}{\numberline {5.3}kb.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{119}{section.5.3}%
+\contentsline {section}{\numberline {5.4}kb.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{120}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Admin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{120}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{120}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.6}Admin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{121}{section.5.6}%
+\contentsline {section}{\numberline {5.7}AI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{121}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{121}{subsection.5.7.1}%
+\contentsline {section}{\numberline {5.8}AI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{122}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{123}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{123}{subsection.5.9.1}%
+\contentsline {section}{\numberline {5.10}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{123}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{124}{section.5.11}%
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{125}{subsection.5.11.1}%
+\contentsline {section}{\numberline {5.12}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{125}{section.5.12}%
+\contentsline {section}{\numberline {5.13}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{126}{section.5.13}%
+\contentsline {subsection}{\numberline {5.13.1}Detailed Description}{126}{subsection.5.13.1}%
+\contentsline {section}{\numberline {5.14}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{127}{section.5.14}%
+\contentsline {section}{\numberline {5.15}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Composite.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{128}{section.5.15}%
+\contentsline {subsection}{\numberline {5.15.1}Detailed Description}{128}{subsection.5.15.1}%
+\contentsline {section}{\numberline {5.16}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Composite.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{128}{section.5.16}%
+\contentsline {section}{\numberline {5.17}Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{129}{section.5.17}%
+\contentsline {subsection}{\numberline {5.17.1}Detailed Description}{129}{subsection.5.17.1}%
+\contentsline {section}{\numberline {5.18}Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{129}{section.5.18}%
+\contentsline {section}{\numberline {5.19}Insufficient\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Permissions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{129}{section.5.19}%
+\contentsline {section}{\numberline {5.20}Insufficient\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Permissions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{130}{section.5.20}%
+\contentsline {section}{\numberline {5.21}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{130}{section.5.21}%
+\contentsline {subsection}{\numberline {5.21.1}Detailed Description}{130}{subsection.5.21.1}%
+\contentsline {section}{\numberline {5.22}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{131}{section.5.22}%
+\contentsline {section}{\numberline {5.23}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{131}{section.5.23}%
+\contentsline {subsection}{\numberline {5.23.1}Detailed Description}{131}{subsection.5.23.1}%
+\contentsline {section}{\numberline {5.24}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{132}{section.5.24}%
+\contentsline {section}{\numberline {5.25}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skill\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{132}{section.5.25}%
+\contentsline {subsection}{\numberline {5.25.1}Detailed Description}{132}{subsection.5.25.1}%
+\contentsline {section}{\numberline {5.26}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skill\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{133}{section.5.26}%
+\contentsline {section}{\numberline {5.27}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{133}{section.5.27}%
+\contentsline {subsection}{\numberline {5.27.1}Detailed Description}{133}{subsection.5.27.1}%
+\contentsline {section}{\numberline {5.28}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{134}{section.5.28}%
+\contentsline {section}{\numberline {5.29}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{134}{section.5.29}%
+\contentsline {subsection}{\numberline {5.29.1}Detailed Description}{134}{subsection.5.29.1}%
+\contentsline {section}{\numberline {5.30}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{135}{section.5.30}%
+\contentsline {section}{\numberline {5.31}exceptions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lib.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{135}{section.5.31}%
+\contentsline {subsection}{\numberline {5.31.1}Detailed Description}{135}{subsection.5.31.1}%
+\contentsline {section}{\numberline {5.32}exceptions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lib.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{135}{section.5.32}%
+\contentsline {section}{\numberline {5.33}IODi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{136}{section.5.33}%
+\contentsline {subsection}{\numberline {5.33.1}Detailed Description}{136}{subsection.5.33.1}%
+\contentsline {section}{\numberline {5.34}IODi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{136}{section.5.34}%
+\contentsline {section}{\numberline {5.35}Kernel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{137}{section.5.35}%
+\contentsline {subsection}{\numberline {5.35.1}Detailed Description}{137}{subsection.5.35.1}%
+\contentsline {section}{\numberline {5.36}Kernel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{138}{section.5.36}%
+\contentsline {section}{\numberline {5.37}lib.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{138}{section.5.37}%
+\contentsline {subsection}{\numberline {5.37.1}Detailed Description}{139}{subsection.5.37.1}%
+\contentsline {section}{\numberline {5.38}lib.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{139}{section.5.38}%
+\contentsline {section}{\numberline {5.39}Login.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{139}{section.5.39}%
+\contentsline {subsection}{\numberline {5.39.1}Detailed Description}{140}{subsection.5.39.1}%
+\contentsline {section}{\numberline {5.40}Login.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{140}{section.5.40}%
+\contentsline {section}{\numberline {5.41}Simple\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Display.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{140}{section.5.41}%
+\contentsline {subsection}{\numberline {5.41.1}Detailed Description}{141}{subsection.5.41.1}%
+\contentsline {section}{\numberline {5.42}Simple\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Display.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{141}{section.5.42}%
+\contentsline {section}{\numberline {5.43}User.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{143}{section.5.43}%
+\contentsline {subsection}{\numberline {5.43.1}Detailed Description}{143}{subsection.5.43.1}%
+\contentsline {section}{\numberline {5.44}User.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{143}{section.5.44}%
+\contentsline {section}{\numberline {5.45}Admin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{144}{section.5.45}%
+\contentsline {section}{\numberline {5.46}Admin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{144}{section.5.46}%
+\contentsline {section}{\numberline {5.47}AI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{145}{section.5.47}%
+\contentsline {subsection}{\numberline {5.47.1}Detailed Description}{145}{subsection.5.47.1}%
+\contentsline {section}{\numberline {5.48}AI.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{145}{section.5.48}%
+\contentsline {section}{\numberline {5.49}Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{152}{section.5.49}%
+\contentsline {section}{\numberline {5.50}Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{152}{section.5.50}%
+\contentsline {section}{\numberline {5.51}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{152}{section.5.51}%
+\contentsline {subsection}{\numberline {5.51.1}Detailed Description}{152}{subsection.5.51.1}%
+\contentsline {section}{\numberline {5.52}Data\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{153}{section.5.52}%
+\contentsline {section}{\numberline {5.53}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{154}{section.5.53}%
+\contentsline {subsection}{\numberline {5.53.1}Detailed Description}{154}{subsection.5.53.1}%
+\contentsline {section}{\numberline {5.54}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{154}{section.5.54}%
+\contentsline {section}{\numberline {5.55}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{155}{section.5.55}%
+\contentsline {subsection}{\numberline {5.55.1}Detailed Description}{155}{subsection.5.55.1}%
+\contentsline {section}{\numberline {5.56}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Builder.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{155}{section.5.56}%
+\contentsline {section}{\numberline {5.57}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Composite.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{158}{section.5.57}%
+\contentsline {subsection}{\numberline {5.57.1}Variable Documentation}{158}{subsection.5.57.1}%
+\contentsline {subsubsection}{\numberline {5.57.1.1}CALL\_KEYWORD}{158}{subsubsection.5.57.1.1}%
+\contentsline {section}{\numberline {5.58}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Composite.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{158}{section.5.58}%
+\contentsline {section}{\numberline {5.59}device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{159}{section.5.59}%
+\contentsline {subsection}{\numberline {5.59.1}Macro Definition Documentation}{159}{subsection.5.59.1}%
+\contentsline {subsubsection}{\numberline {5.59.1.1}DEVICE\_DATASET}{160}{subsubsection.5.59.1.1}%
+\contentsline {section}{\numberline {5.60}device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{160}{section.5.60}%
+\contentsline {section}{\numberline {5.61}example\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Security\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{161}{section.5.61}%
+\contentsline {subsection}{\numberline {5.61.1}Macro Definition Documentation}{161}{subsection.5.61.1}%
+\contentsline {subsubsection}{\numberline {5.61.1.1}EXAMPLE\_SECURITY}{161}{subsubsection.5.61.1.1}%
+\contentsline {subsection}{\numberline {5.61.2}Function Documentation}{161}{subsection.5.61.2}%
+\contentsline {subsubsection}{\numberline {5.61.2.1}exampleTest()}{161}{subsubsection.5.61.2.1}%
+\contentsline {section}{\numberline {5.62}example\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Security\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{162}{section.5.62}%
+\contentsline {section}{\numberline {5.63}example\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skills\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{162}{section.5.63}%
+\contentsline {subsection}{\numberline {5.63.1}Macro Definition Documentation}{162}{subsection.5.63.1}%
+\contentsline {subsubsection}{\numberline {5.63.1.1}EXAMPLE\_SKILLS}{162}{subsubsection.5.63.1.1}%
+\contentsline {subsection}{\numberline {5.63.2}Function Documentation}{162}{subsection.5.63.2}%
+\contentsline {subsubsection}{\numberline {5.63.2.1}exampleSkill1()}{163}{subsubsection.5.63.2.1}%
+\contentsline {subsubsection}{\numberline {5.63.2.2}exampleSkill2()}{163}{subsubsection.5.63.2.2}%
+\contentsline {subsubsection}{\numberline {5.63.2.3}exampleSkill3()}{163}{subsubsection.5.63.2.3}%
+\contentsline {subsubsection}{\numberline {5.63.2.4}exampleSkill4()}{163}{subsubsection.5.63.2.4}%
+\contentsline {subsubsection}{\numberline {5.63.2.5}generateRandomData()}{164}{subsubsection.5.63.2.5}%
+\contentsline {section}{\numberline {5.64}example\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skills\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dataset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{164}{section.5.64}%
+\contentsline {section}{\numberline {5.65}Insufficient\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Permissions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{164}{section.5.65}%
+\contentsline {section}{\numberline {5.66}Insufficient\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Permissions\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{164}{section.5.66}%
+\contentsline {section}{\numberline {5.67}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{165}{section.5.67}%
+\contentsline {section}{\numberline {5.68}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{165}{section.5.68}%
+\contentsline {section}{\numberline {5.69}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{165}{section.5.69}%
+\contentsline {section}{\numberline {5.70}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}File\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{165}{section.5.70}%
+\contentsline {section}{\numberline {5.71}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skill\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{165}{section.5.71}%
+\contentsline {section}{\numberline {5.72}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Skill\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{165}{section.5.72}%
+\contentsline {section}{\numberline {5.73}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{166}{section.5.73}%
+\contentsline {section}{\numberline {5.74}Invalid\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{166}{section.5.74}%
+\contentsline {section}{\numberline {5.75}IODi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{166}{section.5.75}%
+\contentsline {subsection}{\numberline {5.75.1}Detailed Description}{166}{subsection.5.75.1}%
+\contentsline {section}{\numberline {5.76}IODi.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{166}{section.5.76}%
+\contentsline {section}{\numberline {5.77}Kernel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{169}{section.5.77}%
+\contentsline {subsection}{\numberline {5.77.1}Detailed Description}{169}{subsection.5.77.1}%
+\contentsline {section}{\numberline {5.78}Kernel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Device.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{169}{section.5.78}%
+\contentsline {section}{\numberline {5.79}Login.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{170}{section.5.79}%
 \contentsline {subsection}{\numberline {5.79.1}Detailed Description}{170}{subsection.5.79.1}%
-\contentsline {section}{\numberline {5.80}Simple\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Display.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{170}{section.5.80}%
-\contentsline {section}{\numberline {5.81}User.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{178}{section.5.81}%
-\contentsline {subsection}{\numberline {5.81.1}Detailed Description}{178}{subsection.5.81.1}%
-\contentsline {section}{\numberline {5.82}User.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{178}{section.5.82}%
-\contentsline {section}{\numberline {5.83}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{181}{section.5.83}%
-\contentsline {section}{\numberline {5.84}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{181}{section.5.84}%
-\contentsline {chapter}{Index}{183}{section*.114}%
+\contentsline {section}{\numberline {5.80}Login.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{170}{section.5.80}%
+\contentsline {section}{\numberline {5.81}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{171}{section.5.81}%
+\contentsline {subsection}{\numberline {5.81.1}Detailed Description}{171}{subsection.5.81.1}%
+\contentsline {subsection}{\numberline {5.81.2}Enumeration Type Documentation}{172}{subsection.5.81.2}%
+\contentsline {subsubsection}{\numberline {5.81.2.1}anonymous enum}{172}{subsubsection.5.81.2.1}%
+\contentsline {subsection}{\numberline {5.81.3}Function Documentation}{173}{subsection.5.81.3}%
+\contentsline {subsubsection}{\numberline {5.81.3.1}main()}{173}{subsubsection.5.81.3.1}%
+\contentsline {section}{\numberline {5.82}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{176}{section.5.82}%
+\contentsline {section}{\numberline {5.83}Simple\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Display.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{178}{section.5.83}%
+\contentsline {subsection}{\numberline {5.83.1}Detailed Description}{178}{subsection.5.83.1}%
+\contentsline {section}{\numberline {5.84}Simple\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Display.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{179}{section.5.84}%
+\contentsline {section}{\numberline {5.85}User.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{186}{section.5.85}%
+\contentsline {subsection}{\numberline {5.85.1}Detailed Description}{186}{subsection.5.85.1}%
+\contentsline {section}{\numberline {5.86}User.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{187}{section.5.86}%
+\contentsline {section}{\numberline {5.87}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{190}{section.5.87}%
+\contentsline {section}{\numberline {5.88}User\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Not\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Found\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Exception.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{190}{section.5.88}%
+\contentsline {chapter}{Index}{191}{section*.120}%

@@ -3,7 +3,7 @@
 \mbox{\hyperlink{_data_device_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00001}00001 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ DataDevice -\/ JVH Systems -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00009}00009 \textcolor{comment}{}\textcolor{preprocessor}{\#include "{}../headers/DataDevice.h"{}}}
+\DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00009}00009 \textcolor{comment}{}\textcolor{preprocessor}{\#include "{}../include/DataDevice.h"{}}}
 \DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00010}00010 }
 \DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00011}00011 \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00012}00012 \mbox{\hyperlink{class_data_device}{DataDevice}}* \mbox{\hyperlink{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}{DataDevice::allDataDevices}};}
@@ -26,7 +26,7 @@
 \DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00029}00029 \};}
 \DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00030}00030 }
 \DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00031}00031 \textcolor{comment}{// -\/-\/-\/ [Constructor] DataDevice -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00032}\mbox{\hyperlink{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}{00032}} \mbox{\hyperlink{class_data_device_a462db6e238eaabb44993fcc14a033fe5}{DataDevice::DataDevice}}(std::string name, \textcolor{keywordtype}{int} \textcolor{keywordtype}{id},std::vector<\textcolor{keywordtype}{void}(*)()>* skillVector, std::string* skillNames) \{}
+\DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00032}\mbox{\hyperlink{class_data_device_a5323b423e08f4b173152ca88c231893b}{00032}} \mbox{\hyperlink{class_data_device_a462db6e238eaabb44993fcc14a033fe5}{DataDevice::DataDevice}}(\textcolor{keyword}{const} std::string\& name, \textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, std::vector<\textcolor{keywordtype}{void}(*)()>* skillVector, std::string* skillNames) \{}
 \DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00033}00033 }
 \DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00034}00034     \textcolor{comment}{// -\/-\/-\/-\/-\/ Counting Devices -\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_data_device_8cpp_source_l00035}00035     std::cout << \textcolor{stringliteral}{"{}[DataDevice] New Device Detected: 0x"{}} << \textcolor{keywordtype}{id} << std::endl;}

@@ -1,6 +1,6 @@
 var class_device_builder =
 [
-    [ "DeviceBuilder", "d3/d4e/class_device_builder.html#a7d93f91ef8f8c02ce50fbeace9876f4a", null ],
+    [ "DeviceBuilder", "d3/d4e/class_device_builder.html#a79df2b882b9494e9268005bb196c3c06", null ],
     [ "buildAllDevices", "d3/d4e/class_device_builder.html#a019aad6467d0508effef62ff0a6a4b63", null ],
     [ "buildDisplay", "d3/d4e/class_device_builder.html#acc6dd4bfd881ae2c8c390036aec4dedd", null ],
     [ "buildDKDevice", "d3/d4e/class_device_builder.html#a1b6cae6df7456eea9027d92c1266c336", null ],
@@ -10,7 +10,7 @@ var class_device_builder =
     [ "setDataGenerator", "d3/d4e/class_device_builder.html#a660593f04dacdaecde2f1654c43eb646", null ],
     [ "setLimit", "d3/d4e/class_device_builder.html#a97e1c662cbee5e3e23b4b41b0d300a6f", null ],
     [ "setSecurityGenerator", "d3/d4e/class_device_builder.html#ae090a3296c74c945a17595828e416c73", null ],
-    [ "setSkill", "d3/d4e/class_device_builder.html#ac77b5836b06caace168fa1bbbf2e7ab2", null ],
+    [ "setSkill", "d3/d4e/class_device_builder.html#a4a948d9c57bb60369c01576c703504d3", null ],
     [ "allBuilders", "d3/d4e/class_device_builder.html#ae45d21abf14389eb2b5c1eb400514fe2", null ],
     [ "allDataDevices", "d3/d4e/class_device_builder.html#af38572c28a05fad3133863a794e7e6ff", null ],
     [ "allDevices", "d3/d4e/class_device_builder.html#a045c2ab9e0f053df8ce767ad064d8803", null ],

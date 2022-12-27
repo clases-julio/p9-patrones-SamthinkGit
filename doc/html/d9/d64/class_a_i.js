@@ -11,7 +11,7 @@ var class_a_i =
     [ "recoverSecurity", "d9/d64/class_a_i.html#ae5372e8b0787403f2b10c5cd54e90946", null ],
     [ "refreshData", "d9/d64/class_a_i.html#a0efedc3d8f331d259f82b915f4ed5508", null ],
     [ "removeUser", "d9/d64/class_a_i.html#a86fe75fab41d558922b6333ea27e682d", null ],
-    [ "requestOption", "d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a", null ],
+    [ "requestOption", "d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b", null ],
     [ "showAllUsers", "d9/d64/class_a_i.html#aa77cc82f290d4386e12c978dcff385ab", null ],
     [ "signalHandler", "d9/d64/class_a_i.html#a15e235a4a50d15f6f1c73a4ec9569552", null ],
     [ "startCollectingData", "d9/d64/class_a_i.html#a831d4f0c6bc669e749a64caf5bdba426", null ],

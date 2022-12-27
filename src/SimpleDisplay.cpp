@@ -170,11 +170,11 @@ void SimpleDisplay::printPresentation() {
 
     jump();
 
-    printf("#==================================       JVH-Systems  V.0.4.2   ========================================#\n\n");
+    printf("#==================================       JVH-Systems  V.1.0.0   ========================================#\n\n");
     printf("       Bienvenido Software Developer                                                                        \n");
     printf("\n");
     printf("       Esta pantalla es puramente informativa y NO aparecera en la version FINAL del programa.\n");
-    printf("       A continuacion vas a acceder al programa JVH-Systems version V.0.4.2 Antes de lanzarte\n");
+    printf("       A continuacion vas a acceder al programa JVH-Systems version V.1.0.0 Antes de lanzarte\n");
     printf("       al programa te recomendamos que compruebes los siguientes parametros:\n");
     printf("\n");
     printf("    1. Comprueba que tu terminal es capaz de ver el recuadro en el que se encuentra incluido\n");
@@ -253,7 +253,7 @@ void SimpleDisplay::execBuildName(){
     printf("%s",(GREY_COLOR + "# more devices to JVH_Systems without modifying the program. This tool is experimental\n").c_str());
     printf("%s",(GREY_COLOR + "# can cause SEVERAL DAMAGE to your program. Please, if you have any doubt about the \n").c_str());
     printf("%s",(GREY_COLOR + "# building process, type EXIT (anytime) and read more in our github:\n").c_str());
-    printf("%s",(GREY_COLOR + "# https://github.com/clases-julio/p6-setstl-usuarios-SamthinkGit\n\n" + RESET_COLOR).c_str());
+    printf("%s",(GREY_COLOR + "# https://github.com/clases-julio/p9-patrones-SamthinkGit/wiki\n\n" + RESET_COLOR).c_str());
     printf("%s",("cd " + COLOR + "$HOME" + RESET_COLOR + "/src/deviceDataset.cpp\n").c_str());
     printf("%s",("slot=find("+COLOR+"\'DeviceNameSlot\'"+RESET_COLOR+")\n\n").c_str());
     printf("if [ slot == \"VALID_SLOT\" ]; then\n\n");
@@ -329,7 +329,7 @@ void SimpleDisplay::printDeviHeader(const std::string& deviceName) {
     printf("#=================================================================================================#\n\n");
     printf("~                               DEVi++ - Device VIM Based Terminal                                          \n");
     printf("~                                                                                                           \n");
-    printf("~                                         version %-9s                                             \n","DEV.0.2");
+    printf("~                                         version %-9s                                             \n","DEV.1.0");
     printf("~                                    by Sebastian Mayorquin                                                 \n");
     printf("~                                                                                                           \n");
     printf("~              	                   Sponsor DEVi++ Development!                                              \n");
@@ -392,6 +392,27 @@ void SimpleDisplay::printDeviHelp() {
     printf("~ -----------------------------------------------------\n");
 }
 
+void SimpleDisplay::printAboutUs() {
+    jump();
+    cleanDevi("About Us");
+    deviCout("MIT License");
+    deviCout("");
+    deviCout("Copyright (c) 10 years by SamthinkGit");
+    deviCout("");
+    deviCout("Permission is hereby granted, free of charge, to any person obtaining a copy");
+    deviCout("of this software and associated documentation files (JVH Systems), to deal");
+    deviCout("in the Software without restriction, including without limitation the rights");
+    deviCout("to use, copy, modify, merge, publish, distribute, sublicense, and/or sell");
+    deviCout("copies of the Software, and to permit persons to whom the Software is");
+    deviCout("furnished to do so, subject to the following conditions:");
+    deviCout("");
+    deviCout("The above copyright notice and this permission notice shall be included in all");
+    deviCout("copies or substantial portions of the Software.");
+    SimpleDisplay::cout("\n Press <ENTER> to return.");
+    std::string trash;
+    std::getline(std::cin, trash);
+}
+
 // --- [Static] printSkillManual ---
 void SimpleDisplay::printSkillManual(const std::string* skillnames, const int count) {
 
@@ -407,7 +428,7 @@ void SimpleDisplay::printSkillManual(const std::string* skillnames, const int co
     printf("~ selected device, for more help, you can search in\n");
     printf("~ our wiki: \n");
     printf("~ \n");
-    printf("%s", ("~ " + COLOR +  "https://github.com/clases-julio/p4-implclases-SamthinkGit" + RESET_COLOR + "\n").c_str());
+    printf("%s", ("~ " + COLOR +  "https://github.com/clases-julio/p9-patrones-SamthinkGit/wiki" + RESET_COLOR + "\n").c_str());
     printf("~ \n");
     printf("~ [DEVi++] Searching Skills...\n");
     printf("%s", ("~ [DEVi++] " + std::to_string(count+5) + " skills detected.\n").c_str());
@@ -516,5 +537,6 @@ void SimpleDisplay::checkAbortStatus() {
         exit(1);
     }
 }
+
 
 

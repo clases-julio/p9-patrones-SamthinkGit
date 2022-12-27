@@ -3,7 +3,7 @@
 \mbox{\hyperlink{_device_builder_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00001}00001 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ DeviceBuilder -\/ JVH Systems -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00009}00009 \textcolor{comment}{}\textcolor{preprocessor}{\#include "{}../headers/DeviceBuilder.h"{}}}
+\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00009}00009 \textcolor{comment}{}\textcolor{preprocessor}{\#include "{}../include/DeviceBuilder.h"{}}}
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00010}00010 }
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00011}00011 }
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00012}00012 \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
@@ -21,10 +21,10 @@
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00024}\mbox{\hyperlink{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}{00024}} \mbox{\hyperlink{class_simple_display}{SimpleDisplay}}* \mbox{\hyperlink{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}{DeviceBuilder::buildDisplay}}()\{}
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00025}00025 }
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00026}00026     \mbox{\hyperlink{class_simple_display}{SimpleDisplay}}* display = \textcolor{keyword}{new} \mbox{\hyperlink{class_simple_display}{SimpleDisplay}}();}
-\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00027}00027     display-\/>\mbox{\hyperlink{class_simple_display_a6990b81b752ebc7b6894a3e3770db667}{setDataDevices}}(\mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{allDataDevices}}.size());}
-\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00028}00028     display-\/>\mbox{\hyperlink{class_simple_display_a2314ecf97aeef47e8ae9ba606e7e2586}{setKernelDevices}}(\mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{allKernelDevices}}.size());}
-\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00029}00029     display-\/>\mbox{\hyperlink{class_simple_display_af3347757fb1111a5360f064dd152390f}{setSecurityConnected}}(\textcolor{keyword}{true});}
-\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00030}00030     display-\/>\mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{setSecurityStatus}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00027}00027     display-\/>\mbox{\hyperlink{class_simple_display_a9f73adee79aaf5ab59a8682e21a8e7e1}{setDataDevices}}(\mbox{\hyperlink{class_device_builder_af38572c28a05fad3133863a794e7e6ff}{allDataDevices}}.size());}
+\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00028}00028     display-\/>\mbox{\hyperlink{class_simple_display_adff02c73839166aa975de36210e541b7}{setKernelDevices}}(\mbox{\hyperlink{class_device_builder_aa84b46135d1ca0205283e44d82a26588}{allKernelDevices}}.size());}
+\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00029}00029     display-\/>\mbox{\hyperlink{class_simple_display_a8d4e1eabdf54c783e9d09b01880170c4}{setSecurityConnected}}(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00030}00030     display-\/>\mbox{\hyperlink{class_simple_display_a161e3a1ae1602c1325bf868e029016b7}{setSecurityStatus}}(\textcolor{keyword}{true});}
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00031}00031     \textcolor{keywordflow}{return} display;}
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00032}00032 }
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00033}00033 \}}
@@ -90,7 +90,7 @@
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00093}00093 \}}
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00094}00094 }
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00095}00095 \textcolor{comment}{// -\/-\/-\/ [Constructor] DeviceBuilder -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00096}\mbox{\hyperlink{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}{00096}} \mbox{\hyperlink{class_device_builder_a7d93f91ef8f8c02ce50fbeace9876f4a}{DeviceBuilder::DeviceBuilder}}(std::string name) \{}
+\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00096}\mbox{\hyperlink{class_device_builder_a79df2b882b9494e9268005bb196c3c06}{00096}} \mbox{\hyperlink{class_device_builder_a79df2b882b9494e9268005bb196c3c06}{DeviceBuilder::DeviceBuilder}}(\textcolor{keyword}{const} std::string\& name) \{}
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00097}00097 }
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00098}00098     \textcolor{comment}{// -\/-\/-\/-\/-\/ Name Assign -\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00099}00099     std::cout << \textcolor{stringliteral}{"{}[BUILDER] Building "{}} << \mbox{\hyperlink{class_device_builder_ababb29711eb2daae36d6270104365ee6}{name}} << std::endl;}
@@ -109,7 +109,7 @@
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00112}00112 \};}
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00113}00113 }
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00114}00114 \textcolor{comment}{// -\/-\/-\/ [Method] setSkill -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00115}\mbox{\hyperlink{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}{00115}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_builder_ac77b5836b06caace168fa1bbbf2e7ab2}{DeviceBuilder::setSkill}}(\textcolor{keywordtype}{void}(*skill)(), std::string skillName) \{}
+\DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00115}\mbox{\hyperlink{class_device_builder_a4a948d9c57bb60369c01576c703504d3}{00115}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_builder_a4a948d9c57bb60369c01576c703504d3}{DeviceBuilder::setSkill}}(\textcolor{keywordtype}{void}(*skill)(), \textcolor{keyword}{const} std::string\& skillName) \{}
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00116}00116 }
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00117}00117     \textcolor{comment}{// -\/-\/-\/-\/-\/ Storing Device Skills -\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_device_builder_8cpp_source_l00118}00118     this-\/>\mbox{\hyperlink{class_device_builder_ae5bf17f5c45c4037012fd980cd6056cc}{skillVector}}.push\_back(skill);}

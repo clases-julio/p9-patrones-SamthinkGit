@@ -224,6 +224,10 @@ void AI::requestOption(const std::string &opt, bool isAdmin) {
                 showAllUsers();
                 break;
             }
+            case MORE:{
+                SimpleDisplay::printAboutUs();
+                break;
+            }
 
             case EXIT:
                 break;

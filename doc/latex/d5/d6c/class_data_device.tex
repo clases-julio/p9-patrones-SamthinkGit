@@ -20,7 +20,7 @@ Inheritance diagram for Data\+Device\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{class_data_device_a462db6e238eaabb44993fcc14a033fe5}{Data\+Device}} ()
 \begin{DoxyCompactList}\small\item\em Creates a New \mbox{\hyperlink{class_data_device}{Data\+Device}}. It uses invalid properties by default. Not recommended. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}{Data\+Device}} (std\+::string \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}}, int \mbox{\hyperlink{class_device_acba8d88e9870a9c9e034c4e438264655}{id}}, std\+::vector$<$ void($\ast$)()$>$ $\ast$skill, std\+::string $\ast$\mbox{\hyperlink{class_device_aaccdf897fbb200f562df5f9637a5ca6c}{skill\+Names}})
+\mbox{\hyperlink{class_data_device_a5323b423e08f4b173152ca88c231893b}{Data\+Device}} (const std\+::string \&\mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}}, int \mbox{\hyperlink{class_device_acba8d88e9870a9c9e034c4e438264655}{id}}, std\+::vector$<$ void($\ast$)()$>$ $\ast$skill, std\+::string $\ast$\mbox{\hyperlink{class_device_aaccdf897fbb200f562df5f9637a5ca6c}{skill\+Names}})
 \begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{class_data_device}{Data\+Device}} and assign its basic properties. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{append\+New\+Data}} ()
 \begin{DoxyCompactList}\small\item\em Collect new measurement from main data generator and saves it in data vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -114,11 +114,11 @@ Definition at line \mbox{\hyperlink{_data_device_8cpp_source_l00024}{24}} of fil
 
 References \mbox{\hyperlink{class_device_a19a8076136a46828cd8d033aa6484f62a0003173c43d43bad9adae885a4049437}{Device\+::\+INVALID\+\_\+\+DEVICE}}, \mbox{\hyperlink{class_device_ac4ed6d5c75b13d8095157c0c0a5e268c}{Device\+::is\+Data\+Device}}, and \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{Device\+::name}}.
 
-\mbox{\Hypertarget{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}\label{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}} 
+\mbox{\Hypertarget{class_data_device_a5323b423e08f4b173152ca88c231893b}\label{class_data_device_a5323b423e08f4b173152ca88c231893b}} 
 \index{DataDevice@{DataDevice}!DataDevice@{DataDevice}}
 \index{DataDevice@{DataDevice}!DataDevice@{DataDevice}}
 \doxysubsubsection{\texorpdfstring{DataDevice()}{DataDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Data\+Device\+::\+Data\+Device (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{id,  }\item[{std\+::vector$<$ void($\ast$)()$>$ $\ast$}]{skill,  }\item[{std\+::string $\ast$}]{skill\+Names }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Data\+Device\+::\+Data\+Device (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{id,  }\item[{std\+::vector$<$ void($\ast$)()$>$ $\ast$}]{skill,  }\item[{std\+::string $\ast$}]{skill\+Names }\end{DoxyParamCaption})}
 
 
 
@@ -144,7 +144,7 @@ Definition at line \mbox{\hyperlink{_data_device_8cpp_source_l00032}{32}} of fil
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00032                                                                                                       \{}
+\DoxyCodeLine{00032                                                                                                               \{}
 \DoxyCodeLine{00033 }
 \DoxyCodeLine{00034     \textcolor{comment}{// -\/-\/-\/-\/-\/ Counting Devices -\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{00035     std::cout << \textcolor{stringliteral}{"{}[DataDevice] New Device Detected: 0x"{}} << \textcolor{keywordtype}{id} << std::endl;}
@@ -231,7 +231,7 @@ References \mbox{\hyperlink{class_data_device_a2115c7d518db7acbc9b8e685cb0e5481}
 
 
 
-Referenced by \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, \mbox{\hyperlink{class_i_o_di_a39477d835859b498b3853696bc1de2dc}{IODi\+::request\+Number\+Of\+Data\+Devices()}}, \mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{IODi\+::set\+Current\+Device()}}, and \mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{AI\+::start\+Collecting\+Data()}}.
+Referenced by \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, \mbox{\hyperlink{class_i_o_di_a39477d835859b498b3853696bc1de2dc}{IODi\+::request\+Number\+Of\+Data\+Devices()}}, \mbox{\hyperlink{class_i_o_di_a87b788f3c16f7b9b4cea4e851eeb553a}{IODi\+::set\+Current\+Device()}}, and \mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{AI\+::start\+Collecting\+Data()}}.
 
 \mbox{\Hypertarget{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}\label{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}} 
 \index{DataDevice@{DataDevice}!setAllDataDevices@{setAllDataDevices}}
@@ -356,7 +356,7 @@ Definition at line \mbox{\hyperlink{_data_device_8h_source_l00059}{59}} of file 
 
 
 
-Referenced by \mbox{\hyperlink{class_i_o_di_a2142cdf8cd8f6e33d8463ea86c514f3f}{IODi\+::request\+Device\+Names()}}, \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{set\+All\+Data\+Devices()}}, and \mbox{\hyperlink{class_i_o_di_a701d02ebac15affaad3e1e1c78989efa}{IODi\+::set\+Current\+Device()}}.
+Referenced by \mbox{\hyperlink{class_i_o_di_a2142cdf8cd8f6e33d8463ea86c514f3f}{IODi\+::request\+Device\+Names()}}, \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{set\+All\+Data\+Devices()}}, and \mbox{\hyperlink{class_i_o_di_ab82c3ff627a2689e70e38d185a4a17b1}{IODi\+::set\+Current\+Device()}}.
 
 \mbox{\Hypertarget{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}\label{class_data_device_a8bc5e93fc1d214eecda51ef443b8f4a0}} 
 \index{DataDevice@{DataDevice}!allDataDevices@{allDataDevices}}
@@ -374,7 +374,7 @@ Definition at line \mbox{\hyperlink{_data_device_8h_source_l00057}{57}} of file 
 
 
 
-Referenced by \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, \mbox{\hyperlink{class_i_o_di_ae8f0575dd0958aabfb7e41ae2165aaf5}{IODi\+::request\+All\+Status()}}, \mbox{\hyperlink{class_i_o_di_ae3d98013800c88fec47012ec3c814d8f}{IODi\+::request\+Device\+Skills()}}, \mbox{\hyperlink{class_i_o_di_ac3e76c3309b3b98e9e7125e6e2dce79a}{IODi\+::request\+Number\+Of\+Skills()}}, \mbox{\hyperlink{class_i_o_di_afd62f2fa9bdd4e4602c2a60456d4097d}{IODi\+::request\+Skill()}}, \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{set\+All\+Data\+Devices()}}, \mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{AI\+::start\+Collecting\+Data()}}, and \mbox{\hyperlink{class_a_i_a9722ff1c013e46c23bc3dd4b5af63bd6}{AI\+::turn\+Devices()}}.
+Referenced by \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, \mbox{\hyperlink{class_i_o_di_ae8f0575dd0958aabfb7e41ae2165aaf5}{IODi\+::request\+All\+Status()}}, \mbox{\hyperlink{class_i_o_di_ae3d98013800c88fec47012ec3c814d8f}{IODi\+::request\+Device\+Skills()}}, \mbox{\hyperlink{class_i_o_di_ac3e76c3309b3b98e9e7125e6e2dce79a}{IODi\+::request\+Number\+Of\+Skills()}}, \mbox{\hyperlink{class_i_o_di_abbf4589ba45153d63b8bfdad4becd11a}{IODi\+::request\+Skill()}}, \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{set\+All\+Data\+Devices()}}, \mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{AI\+::start\+Collecting\+Data()}}, and \mbox{\hyperlink{class_a_i_a9722ff1c013e46c23bc3dd4b5af63bd6}{AI\+::turn\+Devices()}}.
 
 \mbox{\Hypertarget{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}\label{class_data_device_a7e54d3b48e7e2f7cb4481929e28809aa}} 
 \index{DataDevice@{DataDevice}!collectedData@{collectedData}}
@@ -392,7 +392,7 @@ Definition at line \mbox{\hyperlink{_data_device_8h_source_l00087}{87}} of file 
 
 
 
-Referenced by \mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{append\+New\+Data()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, and \mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{IODi\+::request\+Skill()}}.
+Referenced by \mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{append\+New\+Data()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, and \mbox{\hyperlink{class_i_o_di_ad1db380c7d5211c6beda44d548807f60}{IODi\+::request\+Skill()}}.
 
 \mbox{\Hypertarget{class_data_device_abd297afb59478d7f7e39825143be7b34}\label{class_data_device_abd297afb59478d7f7e39825143be7b34}} 
 \index{DataDevice@{DataDevice}!collectedTimes@{collectedTimes}}
@@ -410,7 +410,7 @@ Definition at line \mbox{\hyperlink{_data_device_8h_source_l00089}{89}} of file 
 
 
 
-Referenced by \mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{append\+New\+Data()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, and \mbox{\hyperlink{class_i_o_di_a0a2439bd26bae2ebd86d65feb6fc95ad}{IODi\+::request\+Skill()}}.
+Referenced by \mbox{\hyperlink{class_data_device_a85f84c66617b0d6becbdd40d742b8d33}{append\+New\+Data()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, and \mbox{\hyperlink{class_i_o_di_ad1db380c7d5211c6beda44d548807f60}{IODi\+::request\+Skill()}}.
 
 \mbox{\Hypertarget{class_data_device_a5af69e554171fdd56bb7a7587daa4a9c}\label{class_data_device_a5af69e554171fdd56bb7a7587daa4a9c}} 
 \index{DataDevice@{DataDevice}!dataGenerator@{dataGenerator}}
@@ -482,7 +482,7 @@ Definition at line \mbox{\hyperlink{_data_device_8h_source_l00110}{110}} of file
 
 
 
-Referenced by \mbox{\hyperlink{class_a_i_aeafba0fc07e4e9672930aa3341619679}{AI\+::build\+Device()}}, \mbox{\hyperlink{class_data_device_acf681a462dfc4ec298bbcb9fa71e31aa}{Data\+Device()}}, \mbox{\hyperlink{class_data_device_a4499875b3c1a52ce8bbaf5f3c7de9e05}{get\+Num\+Sensors()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, \mbox{\hyperlink{class_i_o_di_ae8f0575dd0958aabfb7e41ae2165aaf5}{IODi\+::request\+All\+Status()}}, \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{set\+All\+Data\+Devices()}}, and \mbox{\hyperlink{class_a_i_a9722ff1c013e46c23bc3dd4b5af63bd6}{AI\+::turn\+Devices()}}.
+Referenced by \mbox{\hyperlink{class_a_i_aeafba0fc07e4e9672930aa3341619679}{AI\+::build\+Device()}}, \mbox{\hyperlink{class_data_device_a5323b423e08f4b173152ca88c231893b}{Data\+Device()}}, \mbox{\hyperlink{class_data_device_a4499875b3c1a52ce8bbaf5f3c7de9e05}{get\+Num\+Sensors()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, \mbox{\hyperlink{class_i_o_di_ae8f0575dd0958aabfb7e41ae2165aaf5}{IODi\+::request\+All\+Status()}}, \mbox{\hyperlink{class_data_device_a7ccc44a600f337b8cd6419e096b2468b}{set\+All\+Data\+Devices()}}, and \mbox{\hyperlink{class_a_i_a9722ff1c013e46c23bc3dd4b5af63bd6}{AI\+::turn\+Devices()}}.
 
 \mbox{\Hypertarget{class_data_device_a1f2b76696c193616e0705387e858ff49}\label{class_data_device_a1f2b76696c193616e0705387e858ff49}} 
 \index{DataDevice@{DataDevice}!numSensorsActive@{numSensorsActive}}

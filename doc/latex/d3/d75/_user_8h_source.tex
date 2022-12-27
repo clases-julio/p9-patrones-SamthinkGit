@@ -5,7 +5,7 @@
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00001}00001 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ User -\/ JVH Systems -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00007}00007 \textcolor{comment}{}\textcolor{preprocessor}{\#ifndef USER\_H}}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00008}00008 \textcolor{preprocessor}{\#define USER\_H}}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00009}00009 \textcolor{preprocessor}{\#include "{}../headers/lib.h"{}}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00009}00009 \textcolor{preprocessor}{\#include "{}../include/lib.h"{}}}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00010}00010 }
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00016}\mbox{\hyperlink{class_user}{00016}} \textcolor{keyword}{class }\mbox{\hyperlink{class_user}{User}} \{}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00017}00017 }
@@ -32,7 +32,7 @@
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00038}00038 }
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00040}00040     \mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{User}}();}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00041}00041 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00046}00046     \mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{User}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00046}00046     \mbox{\hyperlink{class_user_a4a0137053e591fbb79d9057dd7d2283d}{User}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00047}00047 }
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00048}00048     \textcolor{comment}{// [Variables]}}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00049}00049 }
@@ -44,49 +44,53 @@
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00057}00057 }
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00058}00058     \textcolor{comment}{// [Functions]}}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00059}00059 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00065}00065     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_user_a3dd5f61e8f0172573a6ab6f73505cb2c}{check}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}});}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00065}00065     \textcolor{keyword}{static} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_user_a02162a910960fb36bbea183c40503a36}{check}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \textcolor{keywordtype}{id},\textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}});}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00066}00066 }
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00074}00074     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{updateUserData}}();}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00075}00075 }
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00079}00079     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_abe917daaebdfb170900ae513c9289a66}{saveUserData}}();}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00080}00080 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00085}00085     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_a932abf8dc4bdbdef3dbd05c3d3852c99}{addUser}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, \textcolor{keywordtype}{int} \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}}, \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}});}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00085}00085     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_a73997967efdab04e0f6c5ddd4c0c7ebf}{addUser}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \textcolor{keywordtype}{id}, \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}}, \textcolor{keyword}{const} \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}});}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00086}00086 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00089}00089     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_a68388c89a91732660b3fb4c602fa55c0}{rmUser}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00089}00089     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_a7a04a3eb5095eec17c24f3f48880497e}{rmUser}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00090}00090 }
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00092}00092     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_user_aba09368b2af61c833490ff95aff4e9c2}{printUsers}}();}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00093}00093 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00094}00094 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00095}00095 \textcolor{comment}{//                  PROTECTED                    |}}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00096}00096 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00097}00097 \textcolor{keyword}{protected}:}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00098}00098 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00099}00099     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  DYNAMIC  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00100}00100 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00101}00101     \textcolor{comment}{// [Variables]}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00094}00094     \textcolor{comment}{// [Variables]}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00096}\mbox{\hyperlink{class_user_ad1e613a622e5067058e2fed421a319a2}{00096}}     \textcolor{keyword}{static} std::string \mbox{\hyperlink{class_user_ad1e613a622e5067058e2fed421a319a2}{EXECUTABLE\_DIR}};}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00098}00098 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00099}00099 \textcolor{comment}{//                  PROTECTED                    |}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00100}00100 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00101}00101 \textcolor{keyword}{protected}:}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00102}00102 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00105}\mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{00105}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}};}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00107}\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{00107}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}};}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00109}\mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{00109}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}};}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00110}00110 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00111}00111     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  STATIC  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00112}00112 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00113}00113     \textcolor{comment}{// [Functions]}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00103}00103     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  DYNAMIC  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00104}00104 }
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00105}00105     \textcolor{comment}{// [Variables]}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00109}\mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{00109}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_user_aa7e6e39b43020bbe9c3a196b3689b0f7}{id}};}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00111}\mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{00111}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_user_aa6f97f01f2b981aa9119727521959857}{isAdmin}};}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00113}\mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{00113}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_user_afebc8e231b943cb542f35e66eaec0cdb}{pass}};}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00114}00114 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00122}00122     \textcolor{keyword}{static} \textcolor{keywordtype}{int}* \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00123}00123 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00124}00124     \textcolor{comment}{// [DEPRECATED] static std::vector<int> find(int id);}}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00125}00125 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00126}00126     \textcolor{comment}{// [Variables]}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00115}00115     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  STATIC  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00116}00116 }
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00117}00117     \textcolor{comment}{// [Functions]}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00126}00126     \textcolor{keyword}{static} \textcolor{keywordtype}{int}* \mbox{\hyperlink{class_user_ae81edcf9a7e23f36d91fe10dc510f7d5}{find}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
 \DoxyCodeLine{\Hypertarget{_user_8h_source_l00127}00127 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00129}\mbox{\hyperlink{class_user_a3d595223d88c86a28aecf557347a9d54}{00129}}     \textcolor{keyword}{static} \textcolor{keywordtype}{char} \mbox{\hyperlink{class_user_a3d595223d88c86a28aecf557347a9d54}{SEPARATOR}};}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00131}\mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{00131}}     \textcolor{keyword}{static} std::string \mbox{\hyperlink{class_user_a6349e440b2ea71310a28469d4bdc98d4}{TAG}};}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00133}\mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{00133}}     \textcolor{keyword}{static} std::set<int*> \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}};}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00135}\mbox{\hyperlink{class_user_ab167913883c55da15137eefedb6f0863}{00135}}     \textcolor{keyword}{static} std::string \mbox{\hyperlink{class_user_ab167913883c55da15137eefedb6f0863}{DATAFILE}};}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00137}\mbox{\hyperlink{class_user_a942375334862b953b0471435b70f8fb7}{00137}}     \textcolor{keyword}{static} std::string \mbox{\hyperlink{class_user_a942375334862b953b0471435b70f8fb7}{USERFILE}};}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00138}00138 \};}
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00139}00139 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00140}00140 }
-\DoxyCodeLine{\Hypertarget{_user_8h_source_l00141}00141 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//USER\_H}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00128}00128     \textcolor{comment}{// [DEPRECATED] static std::vector<int> find(int id);}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00129}00129 }
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00130}00130     \textcolor{comment}{// [Variables]}}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00133}\mbox{\hyperlink{class_user_a3d595223d88c86a28aecf557347a9d54}{00133}}     \textcolor{keyword}{static} \textcolor{keywordtype}{char} \mbox{\hyperlink{class_user_a3d595223d88c86a28aecf557347a9d54}{SEPARATOR}};}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00135}\mbox{\hyperlink{class_user_a9e11eb9ee8554e2f615ac67d7e00f298}{00135}}     \textcolor{keyword}{static} \textcolor{keyword}{const} std::string \mbox{\hyperlink{class_user_a9e11eb9ee8554e2f615ac67d7e00f298}{TAG}};}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00137}\mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{00137}}     \textcolor{keyword}{static} std::set<int*> \mbox{\hyperlink{class_user_ab20712584fdd188aab2d9df5f66887d7}{allUsers}};}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00139}\mbox{\hyperlink{class_user_a21f4bdaa72d55672a7dbe3af8eb5f903}{00139}}     \textcolor{keyword}{static} \textcolor{keyword}{const} std::string \mbox{\hyperlink{class_user_a21f4bdaa72d55672a7dbe3af8eb5f903}{DATAFILE}};}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00141}\mbox{\hyperlink{class_user_a1a0c374f8da9519dd25ee07aada09025}{00141}}     \textcolor{keyword}{static} \textcolor{keyword}{const} std::string \mbox{\hyperlink{class_user_a1a0c374f8da9519dd25ee07aada09025}{USERFILE}};}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00142}00142 \};}
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00144}00144 }
+\DoxyCodeLine{\Hypertarget{_user_8h_source_l00145}00145 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//USER\_H}}
 
 \end{DoxyCode}

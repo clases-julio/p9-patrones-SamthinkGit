@@ -124,9 +124,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a64b7ffd10cca70b802dcb4ba1fb1c92a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption</a> (std::string opt, bool isAdmin)</td></tr>
-<tr class="memdesc:a64b7ffd10cca70b802dcb4ba1fb1c92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests an option from main settings interface.  <a href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">More...</a><br /></td></tr>
-<tr class="separator:a64b7ffd10cca70b802dcb4ba1fb1c92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5906fc706ef49159f1a70296174c8b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption</a> (const std::string &amp;opt, bool isAdmin)</td></tr>
+<tr class="memdesc:a2e5906fc706ef49159f1a70296174c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests an option from main settings interface.  <a href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">More...</a><br /></td></tr>
+<tr class="separator:a2e5906fc706ef49159f1a70296174c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
 Private Types</h2></td></tr>
@@ -309,7 +309,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   28</span> </div>
 <div class="line"><span class="lineno">   29</span>}</div>
 <div class="ttc" id="aclass_a_i_html_a143cbb790ccc9ae52046f8d3c5a3298f"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a143cbb790ccc9ae52046f8d3c5a3298f">AI::time_counter</a></div><div class="ttdeci">int time_counter</div><div class="ttdoc">Used for counting number of time-stamps.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6f/_a_i_8h_source.html#l00143">AI.h:143</a></div></div>
-<div class="ttc" id="aclass_a_i_html_a15e235a4a50d15f6f1c73a4ec9569552"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a15e235a4a50d15f6f1c73a4ec9569552">AI::signalHandler</a></div><div class="ttdeci">static void signalHandler(int signum)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00533">AI.cpp:533</a></div></div>
+<div class="ttc" id="aclass_a_i_html_a15e235a4a50d15f6f1c73a4ec9569552"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a15e235a4a50d15f6f1c73a4ec9569552">AI::signalHandler</a></div><div class="ttdeci">static void signalHandler(int signum)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00537">AI.cpp:537</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d9/d64/class_a_i.html#a15e235a4a50d15f6f1c73a4ec9569552">signalHandler()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a143cbb790ccc9ae52046f8d3c5a3298f">time_counter</a>.</p>
 
@@ -341,51 +341,51 @@ Static Private Attributes</h2></td></tr>
 
 <p>Calls <a class="el" href="../../d7/d23/class_user.html" title="This class will be the responsible for storing and managing the user&#39;s data. Also is able to create a...">User</a> class to add a new user. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00455">455</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  455</span>                 {</div>
-<div class="line"><span class="lineno">  456</span> </div>
-<div class="line"><span class="lineno">  457</span>    <span class="keywordtype">int</span> user, password;</div>
-<div class="line"><span class="lineno">  458</span>    <span class="keywordtype">bool</span> isAdmin;</div>
-<div class="line"><span class="lineno">  459</span>    std::string entry;</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00459">459</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  459</span>                 {</div>
 <div class="line"><span class="lineno">  460</span> </div>
-<div class="line"><span class="lineno">  461</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Insert a NIF id: &quot;</span>);</div>
-<div class="line"><span class="lineno">  462</span>    std::getline(std::cin, entry);</div>
-<div class="line"><span class="lineno">  463</span> </div>
-<div class="line"><span class="lineno">  464</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  465</span>        user = std::stoi(entry);</div>
-<div class="line"><span class="lineno">  466</span>    }<span class="keywordflow">catch</span> (std::exception e){</div>
-<div class="line"><span class="lineno">  467</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Input not valid&quot;</span>);</div>
-<div class="line"><span class="lineno">  468</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
-<div class="line"><span class="lineno">  469</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  470</span>    }</div>
-<div class="line"><span class="lineno">  471</span> </div>
-<div class="line"><span class="lineno">  472</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Insert a password: &quot;</span>);</div>
-<div class="line"><span class="lineno">  473</span> </div>
-<div class="line"><span class="lineno">  474</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  475</span>        password = std::stoi(entry);</div>
-<div class="line"><span class="lineno">  476</span>    }<span class="keywordflow">catch</span> (std::exception e) {</div>
-<div class="line"><span class="lineno">  477</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Input not valid&quot;</span>);</div>
-<div class="line"><span class="lineno">  478</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
-<div class="line"><span class="lineno">  479</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  480</span>    }</div>
-<div class="line"><span class="lineno">  481</span> </div>
-<div class="line"><span class="lineno">  482</span>    std::getline(std::cin, entry);</div>
-<div class="line"><span class="lineno">  483</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">  484</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Give the user Admin Status? [y/n]: &quot;</span>);</div>
-<div class="line"><span class="lineno">  485</span>        std::getline(std::cin, entry);</div>
-<div class="line"><span class="lineno">  486</span>    }<span class="keywordflow">while</span>(entry!= <span class="stringliteral">&quot;y&quot;</span> &amp;&amp; entry!= <span class="stringliteral">&quot;n&quot;</span>);</div>
-<div class="line"><span class="lineno">  487</span> </div>
-<div class="line"><span class="lineno">  488</span>    isAdmin = (entry == <span class="stringliteral">&quot;y&quot;</span> ? 1 : 0);</div>
-<div class="line"><span class="lineno">  489</span>    <a class="code hl_function" href="../../d7/d23/class_user.html#a932abf8dc4bdbdef3dbd05c3d3852c99">User::addUser</a>(user,password,isAdmin);</div>
-<div class="line"><span class="lineno">  490</span> </div>
-<div class="line"><span class="lineno">  491</span>}</div>
+<div class="line"><span class="lineno">  461</span>    <span class="keywordtype">int</span> user, password;</div>
+<div class="line"><span class="lineno">  462</span>    <span class="keywordtype">bool</span> isAdmin;</div>
+<div class="line"><span class="lineno">  463</span>    std::string entry;</div>
+<div class="line"><span class="lineno">  464</span> </div>
+<div class="line"><span class="lineno">  465</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Insert a NIF id: &quot;</span>);</div>
+<div class="line"><span class="lineno">  466</span>    std::getline(std::cin, entry);</div>
+<div class="line"><span class="lineno">  467</span> </div>
+<div class="line"><span class="lineno">  468</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  469</span>        user = std::stoi(entry);</div>
+<div class="line"><span class="lineno">  470</span>    }<span class="keywordflow">catch</span> (std::exception e){</div>
+<div class="line"><span class="lineno">  471</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Input not valid&quot;</span>);</div>
+<div class="line"><span class="lineno">  472</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
+<div class="line"><span class="lineno">  473</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  474</span>    }</div>
+<div class="line"><span class="lineno">  475</span> </div>
+<div class="line"><span class="lineno">  476</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Insert a password: &quot;</span>);</div>
+<div class="line"><span class="lineno">  477</span> </div>
+<div class="line"><span class="lineno">  478</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  479</span>        password = std::stoi(entry);</div>
+<div class="line"><span class="lineno">  480</span>    }<span class="keywordflow">catch</span> (std::exception e) {</div>
+<div class="line"><span class="lineno">  481</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Input not valid&quot;</span>);</div>
+<div class="line"><span class="lineno">  482</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
+<div class="line"><span class="lineno">  483</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  484</span>    }</div>
+<div class="line"><span class="lineno">  485</span> </div>
+<div class="line"><span class="lineno">  486</span>    std::getline(std::cin, entry);</div>
+<div class="line"><span class="lineno">  487</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">  488</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Give the user Admin Status? [y/n]: &quot;</span>);</div>
+<div class="line"><span class="lineno">  489</span>        std::getline(std::cin, entry);</div>
+<div class="line"><span class="lineno">  490</span>    }<span class="keywordflow">while</span>(entry!= <span class="stringliteral">&quot;y&quot;</span> &amp;&amp; entry!= <span class="stringliteral">&quot;n&quot;</span>);</div>
+<div class="line"><span class="lineno">  491</span> </div>
+<div class="line"><span class="lineno">  492</span>    isAdmin = (entry == <span class="stringliteral">&quot;y&quot;</span> ? 1 : 0);</div>
+<div class="line"><span class="lineno">  493</span>    <a class="code hl_function" href="../../d7/d23/class_user.html#a73997967efdab04e0f6c5ddd4c0c7ebf">User::addUser</a>(user,password,isAdmin);</div>
+<div class="line"><span class="lineno">  494</span> </div>
+<div class="line"><span class="lineno">  495</span>}</div>
 <div class="ttc" id="aclass_a_i_html_a216116b600bdd980ee1332fd1ea3d43f"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">AI::SLEEPTIME</a></div><div class="ttdeci">static int SLEEPTIME</div><div class="ttdoc">Sets time to sleep between interactions.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6f/_a_i_8h_source.html#l00141">AI.h:141</a></div></div>
-<div class="ttc" id="aclass_simple_display_html_a022eab221671583a329e067d6af18035"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a></div><div class="ttdeci">static void cout(std::string text)</div><div class="ttdoc">Prints text to Screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00087">SimpleDisplay.cpp:87</a></div></div>
-<div class="ttc" id="aclass_user_html_a932abf8dc4bdbdef3dbd05c3d3852c99"><div class="ttname"><a href="../../d7/d23/class_user.html#a932abf8dc4bdbdef3dbd05c3d3852c99">User::addUser</a></div><div class="ttdeci">static void addUser(int id, int pass, bool isAdmin)</div><div class="ttdoc">Adds new user to allUsers.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_user_8cpp_source.html#l00182">User.cpp:182</a></div></div>
+<div class="ttc" id="aclass_simple_display_html_ab93019861da9b9bc4f55cb9a590cea68"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a></div><div class="ttdeci">static void cout(const std::string &amp;text)</div><div class="ttdoc">Prints text to Screen.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00087">SimpleDisplay.cpp:87</a></div></div>
+<div class="ttc" id="aclass_user_html_a73997967efdab04e0f6c5ddd4c0c7ebf"><div class="ttname"><a href="../../d7/d23/class_user.html#a73997967efdab04e0f6c5ddd4c0c7ebf">User::addUser</a></div><div class="ttdeci">static void addUser(const int id, const int pass, const bool isAdmin)</div><div class="ttdoc">Adds new user to allUsers.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_user_8cpp_source.html#l00187">User.cpp:187</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/d23/class_user.html#a932abf8dc4bdbdef3dbd05c3d3852c99">User::addUser()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d23/class_user.html#a73997967efdab04e0f6c5ddd4c0c7ebf">User::addUser()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption()</a>.</p>
 
 </div>
 </div>
@@ -414,66 +414,66 @@ Static Private Attributes</h2></td></tr>
 
 <p>Calls the builder for starting a interface to build a new device in execution time. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00382">382</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  382</span>                    {</div>
-<div class="line"><span class="lineno">  383</span> </div>
-<div class="line"><span class="lineno">  384</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a91da6e765d3f4349240194e2e268b1d0">SimpleDisplay::execBuildName</a>();</div>
-<div class="line"><span class="lineno">  385</span>    std::string name;</div>
-<div class="line"><span class="lineno">  386</span>    std::getline(std::cin,name);</div>
-<div class="line"><span class="lineno">  387</span>    <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;EXIT&quot;</span>) {</div>
-<div class="line"><span class="lineno">  388</span> </div>
-<div class="line"><span class="lineno">  389</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\n[AI] Exit Request&quot;</span>);</div>
-<div class="line"><span class="lineno">  390</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
-<div class="line"><span class="lineno">  391</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  392</span>    }</div>
-<div class="line"><span class="lineno">  393</span> </div>
-<div class="line"><span class="lineno">  394</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a112ad45d06da44267343a37276f4aa17">SimpleDisplay::execBuildType</a>();</div>
-<div class="line"><span class="lineno">  395</span>    std::string type;</div>
-<div class="line"><span class="lineno">  396</span>    std::getline(std::cin,type);</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00386">386</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  386</span>                    {</div>
+<div class="line"><span class="lineno">  387</span> </div>
+<div class="line"><span class="lineno">  388</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a91da6e765d3f4349240194e2e268b1d0">SimpleDisplay::execBuildName</a>();</div>
+<div class="line"><span class="lineno">  389</span>    std::string name;</div>
+<div class="line"><span class="lineno">  390</span>    std::getline(std::cin,name);</div>
+<div class="line"><span class="lineno">  391</span>    <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;EXIT&quot;</span>) {</div>
+<div class="line"><span class="lineno">  392</span> </div>
+<div class="line"><span class="lineno">  393</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\n[AI] Exit Request&quot;</span>);</div>
+<div class="line"><span class="lineno">  394</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
+<div class="line"><span class="lineno">  395</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  396</span>    }</div>
 <div class="line"><span class="lineno">  397</span> </div>
-<div class="line"><span class="lineno">  398</span>    <span class="keywordflow">if</span> (type != <span class="stringliteral">&quot;data&quot;</span> &amp;&amp; type != <span class="stringliteral">&quot;kernel&quot;</span>){</div>
-<div class="line"><span class="lineno">  399</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\n[AI] Exit Request&quot;</span>);</div>
-<div class="line"><span class="lineno">  400</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
-<div class="line"><span class="lineno">  401</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  402</span>    }</div>
-<div class="line"><span class="lineno">  403</span> </div>
-<div class="line"><span class="lineno">  404</span>    std::string generator;</div>
-<div class="line"><span class="lineno">  405</span>    <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;data&quot;</span>){</div>
-<div class="line"><span class="lineno">  406</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a220e9af564e883034f02c3344d6321d0">SimpleDisplay::execBuildGenerator</a>(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  407</span>        std::getline(std::cin,generator);</div>
-<div class="line"><span class="lineno">  408</span>    }<span class="keywordflow">else</span>{</div>
-<div class="line"><span class="lineno">  409</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a220e9af564e883034f02c3344d6321d0">SimpleDisplay::execBuildGenerator</a>(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  410</span>        std::getline(std::cin,generator);</div>
-<div class="line"><span class="lineno">  411</span>    }</div>
-<div class="line"><span class="lineno">  412</span> </div>
-<div class="line"><span class="lineno">  413</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ad1a76c9c3462a34f7b26ade30ccce0ec">SimpleDisplay::execBuildFinish</a>();</div>
-<div class="line"><span class="lineno">  414</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*2);</div>
-<div class="line"><span class="lineno">  415</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Testing Building...\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  416</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*2);</div>
-<div class="line"><span class="lineno">  417</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Testing Device...\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  398</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a112ad45d06da44267343a37276f4aa17">SimpleDisplay::execBuildType</a>();</div>
+<div class="line"><span class="lineno">  399</span>    std::string type;</div>
+<div class="line"><span class="lineno">  400</span>    std::getline(std::cin,type);</div>
+<div class="line"><span class="lineno">  401</span> </div>
+<div class="line"><span class="lineno">  402</span>    <span class="keywordflow">if</span> (type != <span class="stringliteral">&quot;data&quot;</span> &amp;&amp; type != <span class="stringliteral">&quot;kernel&quot;</span>){</div>
+<div class="line"><span class="lineno">  403</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\n[AI] Exit Request&quot;</span>);</div>
+<div class="line"><span class="lineno">  404</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
+<div class="line"><span class="lineno">  405</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">  406</span>    }</div>
+<div class="line"><span class="lineno">  407</span> </div>
+<div class="line"><span class="lineno">  408</span>    std::string generator;</div>
+<div class="line"><span class="lineno">  409</span>    <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;data&quot;</span>){</div>
+<div class="line"><span class="lineno">  410</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#acf0368f5c8af8ebb95f822489335a8c0">SimpleDisplay::execBuildGenerator</a>(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  411</span>        std::getline(std::cin,generator);</div>
+<div class="line"><span class="lineno">  412</span>    }<span class="keywordflow">else</span>{</div>
+<div class="line"><span class="lineno">  413</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#acf0368f5c8af8ebb95f822489335a8c0">SimpleDisplay::execBuildGenerator</a>(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  414</span>        std::getline(std::cin,generator);</div>
+<div class="line"><span class="lineno">  415</span>    }</div>
+<div class="line"><span class="lineno">  416</span> </div>
+<div class="line"><span class="lineno">  417</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ad1a76c9c3462a34f7b26ade30ccce0ec">SimpleDisplay::execBuildFinish</a>();</div>
 <div class="line"><span class="lineno">  418</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*2);</div>
-<div class="line"><span class="lineno">  419</span> </div>
-<div class="line"><span class="lineno">  420</span>    <a class="code hl_function" href="../../d3/d4e/class_device_builder.html#a5eb22cda3529194fb6e5adce9489ded1">DeviceBuilder::clearAll</a>();</div>
-<div class="line"><span class="lineno">  421</span>    <a class="code hl_class" href="../../d3/d4e/class_device_builder.html">DeviceBuilder</a>* newDevice = <span class="keyword">new</span> <a class="code hl_class" href="../../d3/d4e/class_device_builder.html">DeviceBuilder</a>(name);</div>
-<div class="line"><span class="lineno">  422</span>    <a class="code hl_variable" href="../../d5/d6c/class_data_device.html#a2115c7d518db7acbc9b8e685cb0e5481">DataDevice::numSensors</a> = 0;</div>
-<div class="line"><span class="lineno">  423</span>    <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a> = 0;</div>
-<div class="line"><span class="lineno">  424</span>    <a class="code hl_variable" href="../../df/dd8/class_device.html#a74302904617c3868c4aa9ad4b9958a9a">Device::numDevices</a> = 0;</div>
-<div class="line"><span class="lineno">  425</span>    <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;data&quot;</span>){</div>
-<div class="line"><span class="lineno">  426</span>        (*newDevice).setAsDataDevice();</div>
-<div class="line"><span class="lineno">  427</span>        (*newDevice).setDataGenerator(<a class="code hl_function" href="../../d4/d4e/example_skills_dataset_8cpp.html#afc75e794ea44220b6ab4a907d161a0a3">generateRandomData</a>);</div>
-<div class="line"><span class="lineno">  428</span>        <a class="code hl_function" href="../../d3/d4e/class_device_builder.html#a019aad6467d0508effef62ff0a6a4b63">DeviceBuilder::buildAllDevices</a>();</div>
-<div class="line"><span class="lineno">  429</span>    }<span class="keywordflow">else</span>{</div>
-<div class="line"><span class="lineno">  430</span>        (*newDevice).setAsKernelDevice();</div>
-<div class="line"><span class="lineno">  431</span>        (*newDevice).setSecurityGenerator(<a class="code hl_function" href="../../df/d96/example_security_dataset_8cpp.html#aab06fa4565c1b10f5d1ea5f165340300">exampleTest</a>);</div>
+<div class="line"><span class="lineno">  419</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Testing Building...\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  420</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*2);</div>
+<div class="line"><span class="lineno">  421</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Testing Device...\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  422</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*2);</div>
+<div class="line"><span class="lineno">  423</span> </div>
+<div class="line"><span class="lineno">  424</span>    <a class="code hl_function" href="../../d3/d4e/class_device_builder.html#a5eb22cda3529194fb6e5adce9489ded1">DeviceBuilder::clearAll</a>();</div>
+<div class="line"><span class="lineno">  425</span>    <a class="code hl_class" href="../../d3/d4e/class_device_builder.html">DeviceBuilder</a>* newDevice = <span class="keyword">new</span> <a class="code hl_class" href="../../d3/d4e/class_device_builder.html">DeviceBuilder</a>(name);</div>
+<div class="line"><span class="lineno">  426</span>    <a class="code hl_variable" href="../../d5/d6c/class_data_device.html#a2115c7d518db7acbc9b8e685cb0e5481">DataDevice::numSensors</a> = 0;</div>
+<div class="line"><span class="lineno">  427</span>    <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a> = 0;</div>
+<div class="line"><span class="lineno">  428</span>    <a class="code hl_variable" href="../../df/dd8/class_device.html#a74302904617c3868c4aa9ad4b9958a9a">Device::numDevices</a> = 0;</div>
+<div class="line"><span class="lineno">  429</span>    <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;data&quot;</span>){</div>
+<div class="line"><span class="lineno">  430</span>        (*newDevice).setAsDataDevice();</div>
+<div class="line"><span class="lineno">  431</span>        (*newDevice).setDataGenerator(<a class="code hl_function" href="../../d4/d4e/example_skills_dataset_8cpp.html#afc75e794ea44220b6ab4a907d161a0a3">generateRandomData</a>);</div>
 <div class="line"><span class="lineno">  432</span>        <a class="code hl_function" href="../../d3/d4e/class_device_builder.html#a019aad6467d0508effef62ff0a6a4b63">DeviceBuilder::buildAllDevices</a>();</div>
-<div class="line"><span class="lineno">  433</span> </div>
-<div class="line"><span class="lineno">  434</span>    }</div>
-<div class="line"><span class="lineno">  435</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Building SUCCESS\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  436</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nPress ENTER to start&quot;</span>;</div>
-<div class="line"><span class="lineno">  437</span>    std::cin.get();</div>
-<div class="line"><span class="lineno">  438</span>    std::cin.clear();</div>
-<div class="line"><span class="lineno">  439</span> </div>
-<div class="line"><span class="lineno">  440</span>}</div>
+<div class="line"><span class="lineno">  433</span>    }<span class="keywordflow">else</span>{</div>
+<div class="line"><span class="lineno">  434</span>        (*newDevice).setAsKernelDevice();</div>
+<div class="line"><span class="lineno">  435</span>        (*newDevice).setSecurityGenerator(<a class="code hl_function" href="../../df/d96/example_security_dataset_8cpp.html#aab06fa4565c1b10f5d1ea5f165340300">exampleTest</a>);</div>
+<div class="line"><span class="lineno">  436</span>        <a class="code hl_function" href="../../d3/d4e/class_device_builder.html#a019aad6467d0508effef62ff0a6a4b63">DeviceBuilder::buildAllDevices</a>();</div>
+<div class="line"><span class="lineno">  437</span> </div>
+<div class="line"><span class="lineno">  438</span>    }</div>
+<div class="line"><span class="lineno">  439</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] Building SUCCESS\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  440</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nPress ENTER to start&quot;</span>;</div>
+<div class="line"><span class="lineno">  441</span>    std::cin.get();</div>
+<div class="line"><span class="lineno">  442</span>    std::cin.clear();</div>
+<div class="line"><span class="lineno">  443</span> </div>
+<div class="line"><span class="lineno">  444</span>}</div>
 <div class="ttc" id="aclass_data_device_html_a2115c7d518db7acbc9b8e685cb0e5481"><div class="ttname"><a href="../../d5/d6c/class_data_device.html#a2115c7d518db7acbc9b8e685cb0e5481">DataDevice::numSensors</a></div><div class="ttdeci">static int numSensors</div><div class="ttdoc">Number of DataDevices stablished.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d9c/_data_device_8h_source.html#l00110">DataDevice.h:110</a></div></div>
 <div class="ttc" id="aclass_device_builder_html"><div class="ttname"><a href="../../d3/d4e/class_device_builder.html">DeviceBuilder</a></div><div class="ttdoc">This class lets a high-level programmer add easily more devices to the main program....</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d03/_device_builder_8h_source.html#l00034">DeviceBuilder.h:34</a></div></div>
 <div class="ttc" id="aclass_device_builder_html_a019aad6467d0508effef62ff0a6a4b63"><div class="ttname"><a href="../../d3/d4e/class_device_builder.html#a019aad6467d0508effef62ff0a6a4b63">DeviceBuilder::buildAllDevices</a></div><div class="ttdeci">static void buildAllDevices()</div><div class="ttdoc">Builds every builder instances.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d3e/_device_builder_8cpp_source.html#l00037">DeviceBuilder.cpp:37</a></div></div>
@@ -481,15 +481,15 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="aclass_device_html_a74302904617c3868c4aa9ad4b9958a9a"><div class="ttname"><a href="../../df/dd8/class_device.html#a74302904617c3868c4aa9ad4b9958a9a">Device::numDevices</a></div><div class="ttdeci">static int numDevices</div><div class="ttdoc">Number of Devices built.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8b/_device_8h_source.html#l00089">Device.h:89</a></div></div>
 <div class="ttc" id="aclass_kernel_device_html_a35b214d14f5c719b042c01243e0c0e2e"><div class="ttname"><a href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a></div><div class="ttdeci">static int numKerns</div><div class="ttdoc">number of detected Kernel Devices</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df7/_kernel_device_8h_source.html#l00060">KernelDevice.h:60</a></div></div>
 <div class="ttc" id="aclass_simple_display_html_a112ad45d06da44267343a37276f4aa17"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a112ad45d06da44267343a37276f4aa17">SimpleDisplay::execBuildType</a></div><div class="ttdeci">static void execBuildType()</div><div class="ttdoc">Prints second section of ExecBuilding.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00267">SimpleDisplay.cpp:267</a></div></div>
-<div class="ttc" id="aclass_simple_display_html_a220e9af564e883034f02c3344d6321d0"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a220e9af564e883034f02c3344d6321d0">SimpleDisplay::execBuildGenerator</a></div><div class="ttdeci">static void execBuildGenerator(bool isDataDevice)</div><div class="ttdoc">Prints third section of ExecBuilding.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00280">SimpleDisplay.cpp:280</a></div></div>
 <div class="ttc" id="aclass_simple_display_html_a91da6e765d3f4349240194e2e268b1d0"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a91da6e765d3f4349240194e2e268b1d0">SimpleDisplay::execBuildName</a></div><div class="ttdeci">static void execBuildName()</div><div class="ttdoc">Prints first section of ExecBuilding.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00247">SimpleDisplay.cpp:247</a></div></div>
+<div class="ttc" id="aclass_simple_display_html_acf0368f5c8af8ebb95f822489335a8c0"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#acf0368f5c8af8ebb95f822489335a8c0">SimpleDisplay::execBuildGenerator</a></div><div class="ttdeci">static void execBuildGenerator(const bool isDataDevice)</div><div class="ttdoc">Prints third section of ExecBuilding.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00280">SimpleDisplay.cpp:280</a></div></div>
 <div class="ttc" id="aclass_simple_display_html_ad1a76c9c3462a34f7b26ade30ccce0ec"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#ad1a76c9c3462a34f7b26ade30ccce0ec">SimpleDisplay::execBuildFinish</a></div><div class="ttdeci">static void execBuildFinish()</div><div class="ttdoc">Prints final section of ExecBuilding.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00309">SimpleDisplay.cpp:309</a></div></div>
 <div class="ttc" id="aexample_security_dataset_8cpp_html_aab06fa4565c1b10f5d1ea5f165340300"><div class="ttname"><a href="../../df/d96/example_security_dataset_8cpp.html#aab06fa4565c1b10f5d1ea5f165340300">exampleTest</a></div><div class="ttdeci">static bool exampleTest()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d96/example_security_dataset_8cpp_source.html#l00007">exampleSecurityDataset.cpp:7</a></div></div>
 <div class="ttc" id="aexample_skills_dataset_8cpp_html_afc75e794ea44220b6ab4a907d161a0a3"><div class="ttname"><a href="../../d4/d4e/example_skills_dataset_8cpp.html#afc75e794ea44220b6ab4a907d161a0a3">generateRandomData</a></div><div class="ttdeci">static int generateRandomData()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d4e/example_skills_dataset_8cpp_source.html#l00030">exampleSkillsDataset.cpp:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d4e/class_device_builder.html#a019aad6467d0508effef62ff0a6a4b63">DeviceBuilder::buildAllDevices()</a>, <a class="el" href="../../d3/d4e/class_device_builder.html#a5eb22cda3529194fb6e5adce9489ded1">DeviceBuilder::clearAll()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, <a class="el" href="../../df/d96/example_security_dataset_8cpp.html#aab06fa4565c1b10f5d1ea5f165340300">exampleTest()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#ad1a76c9c3462a34f7b26ade30ccce0ec">SimpleDisplay::execBuildFinish()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a220e9af564e883034f02c3344d6321d0">SimpleDisplay::execBuildGenerator()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a91da6e765d3f4349240194e2e268b1d0">SimpleDisplay::execBuildName()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a112ad45d06da44267343a37276f4aa17">SimpleDisplay::execBuildType()</a>, <a class="el" href="../../d4/d4e/example_skills_dataset_8cpp.html#afc75e794ea44220b6ab4a907d161a0a3">generateRandomData()</a>, <a class="el" href="../../df/dd8/class_device.html#a74302904617c3868c4aa9ad4b9958a9a">Device::numDevices</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>, <a class="el" href="../../d5/d6c/class_data_device.html#a2115c7d518db7acbc9b8e685cb0e5481">DataDevice::numSensors</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/d4e/class_device_builder.html#a019aad6467d0508effef62ff0a6a4b63">DeviceBuilder::buildAllDevices()</a>, <a class="el" href="../../d3/d4e/class_device_builder.html#a5eb22cda3529194fb6e5adce9489ded1">DeviceBuilder::clearAll()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, <a class="el" href="../../df/d96/example_security_dataset_8cpp.html#aab06fa4565c1b10f5d1ea5f165340300">exampleTest()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#ad1a76c9c3462a34f7b26ade30ccce0ec">SimpleDisplay::execBuildFinish()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#acf0368f5c8af8ebb95f822489335a8c0">SimpleDisplay::execBuildGenerator()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a91da6e765d3f4349240194e2e268b1d0">SimpleDisplay::execBuildName()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a112ad45d06da44267343a37276f4aa17">SimpleDisplay::execBuildType()</a>, <a class="el" href="../../d4/d4e/example_skills_dataset_8cpp.html#afc75e794ea44220b6ab4a907d161a0a3">generateRandomData()</a>, <a class="el" href="../../df/dd8/class_device.html#a74302904617c3868c4aa9ad4b9958a9a">Device::numDevices</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>, <a class="el" href="../../d5/d6c/class_data_device.html#a2115c7d518db7acbc9b8e685cb0e5481">DataDevice::numSensors</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption()</a>.</p>
 
 </div>
 </div>
@@ -518,44 +518,44 @@ Static Private Attributes</h2></td></tr>
 
 <p>Checks and print current security status. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00319">319</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  319</span>                      {</div>
-<div class="line"><span class="lineno">  320</span> </div>
-<div class="line"><span class="lineno">  321</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>; i++) {</div>
-<div class="line"><span class="lineno">  322</span> </div>
-<div class="line"><span class="lineno">  323</span>        <span class="comment">// Acessing Device</span></div>
-<div class="line"><span class="lineno">  324</span>        <a class="code hl_class" href="../../df/db2/class_kernel_device.html">KernelDevice</a>* k = &amp;<a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>[i];</div>
-<div class="line"><span class="lineno">  325</span> </div>
-<div class="line"><span class="lineno">  326</span>        <span class="comment">// Displaying chart</span></div>
-<div class="line"><span class="lineno">  327</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] [&quot;</span> + k-&gt;<a class="code hl_function" href="../../df/dd8/class_device.html#a7e27b36eae579176707a47b682d84a22">getName</a>() + <span class="stringliteral">&quot;] &quot;</span>);</div>
-<div class="line"><span class="lineno">  328</span> </div>
-<div class="line"><span class="lineno">  329</span>        <span class="keywordflow">if</span> (~*(k))</div>
-<div class="line"><span class="lineno">  330</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[RUNNING]: &quot;</span>);</div>
-<div class="line"><span class="lineno">  331</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  332</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[DISCONNECTED]: &quot;</span>);</div>
-<div class="line"><span class="lineno">  333</span> </div>
-<div class="line"><span class="lineno">  334</span>        <span class="keywordflow">if</span> (!k-&gt;<a class="code hl_variable" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">securityHasBeenBroken</a>)</div>
-<div class="line"><span class="lineno">  335</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Security status correct&quot;</span>);</div>
-<div class="line"><span class="lineno">  336</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  337</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[WARNING] Security FAILURE! Please check the logs.&quot;</span>);</div>
-<div class="line"><span class="lineno">  338</span> </div>
-<div class="line"><span class="lineno">  339</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  340</span> </div>
-<div class="line"><span class="lineno">  341</span>    }</div>
-<div class="line"><span class="lineno">  342</span>    <span class="comment">// ----- Exiting... -----</span></div>
-<div class="line"><span class="lineno">  343</span>    std::string none;</div>
-<div class="line"><span class="lineno">  344</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Press ENTER to continue&quot;</span>);</div>
-<div class="line"><span class="lineno">  345</span>    getline(std::cin,none);</div>
-<div class="line"><span class="lineno">  346</span> </div>
-<div class="line"><span class="lineno">  347</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00323">323</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  323</span>                      {</div>
+<div class="line"><span class="lineno">  324</span> </div>
+<div class="line"><span class="lineno">  325</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>; i++) {</div>
+<div class="line"><span class="lineno">  326</span> </div>
+<div class="line"><span class="lineno">  327</span>        <span class="comment">// Acessing Device</span></div>
+<div class="line"><span class="lineno">  328</span>        <a class="code hl_class" href="../../df/db2/class_kernel_device.html">KernelDevice</a>* k = &amp;<a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>[i];</div>
+<div class="line"><span class="lineno">  329</span> </div>
+<div class="line"><span class="lineno">  330</span>        <span class="comment">// Displaying chart</span></div>
+<div class="line"><span class="lineno">  331</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] [&quot;</span> + k-&gt;<a class="code hl_function" href="../../df/dd8/class_device.html#a7e27b36eae579176707a47b682d84a22">getName</a>() + <span class="stringliteral">&quot;] &quot;</span>);</div>
+<div class="line"><span class="lineno">  332</span> </div>
+<div class="line"><span class="lineno">  333</span>        <span class="keywordflow">if</span> (~*(k))</div>
+<div class="line"><span class="lineno">  334</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[RUNNING]: &quot;</span>);</div>
+<div class="line"><span class="lineno">  335</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  336</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[DISCONNECTED]: &quot;</span>);</div>
+<div class="line"><span class="lineno">  337</span> </div>
+<div class="line"><span class="lineno">  338</span>        <span class="keywordflow">if</span> (!k-&gt;<a class="code hl_variable" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">securityHasBeenBroken</a>)</div>
+<div class="line"><span class="lineno">  339</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Security status correct&quot;</span>);</div>
+<div class="line"><span class="lineno">  340</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  341</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[WARNING] Security FAILURE! Please check the logs.&quot;</span>);</div>
+<div class="line"><span class="lineno">  342</span> </div>
+<div class="line"><span class="lineno">  343</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  344</span> </div>
+<div class="line"><span class="lineno">  345</span>    }</div>
+<div class="line"><span class="lineno">  346</span>    <span class="comment">// ----- Exiting... -----</span></div>
+<div class="line"><span class="lineno">  347</span>    std::string none;</div>
+<div class="line"><span class="lineno">  348</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Press ENTER to continue&quot;</span>);</div>
+<div class="line"><span class="lineno">  349</span>    getline(std::cin,none);</div>
+<div class="line"><span class="lineno">  350</span> </div>
+<div class="line"><span class="lineno">  351</span>}</div>
 <div class="ttc" id="aclass_device_html_a7e27b36eae579176707a47b682d84a22"><div class="ttname"><a href="../../df/dd8/class_device.html#a7e27b36eae579176707a47b682d84a22">Device::getName</a></div><div class="ttdeci">std::string getName()</div><div class="ttdoc">Returns the name of the device.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d90/_device_8cpp_source.html#l00029">Device.cpp:29</a></div></div>
 <div class="ttc" id="aclass_kernel_device_html"><div class="ttname"><a href="../../df/db2/class_kernel_device.html">KernelDevice</a></div><div class="ttdoc">This class will contain specific properties of only kernel interacting devices and a set of functiona...</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df7/_kernel_device_8h_source.html#l00017">KernelDevice.h:17</a></div></div>
 <div class="ttc" id="aclass_kernel_device_html_a31294b124e12af14435dc0a2c5b8d168"><div class="ttname"><a href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a></div><div class="ttdeci">static KernelDevice * allKernelDevices</div><div class="ttdoc">Pointer to array with all Kernel Devices.</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df7/_kernel_device_8h_source.html#l00058">KernelDevice.h:58</a></div></div>
 <div class="ttc" id="aclass_kernel_device_html_abed622ff7f34cfef1084789717783382"><div class="ttname"><a href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">KernelDevice::securityHasBeenBroken</a></div><div class="ttdeci">bool securityHasBeenBroken</div><div class="ttdoc">Pointer to function to check security status.</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df7/_kernel_device_8h_source.html#l00051">KernelDevice.h:51</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, <a class="el" href="../../df/dd8/class_device.html#a7e27b36eae579176707a47b682d84a22">Device::getName()</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>, and <a class="el" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">KernelDevice::securityHasBeenBroken</a>.</p>
+<p class="reference">References <a class="el" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, <a class="el" href="../../df/dd8/class_device.html#a7e27b36eae579176707a47b682d84a22">Device::getName()</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>, and <a class="el" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">KernelDevice::securityHasBeenBroken</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption()</a>.</p>
 
 </div>
 </div>
@@ -595,43 +595,43 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00240">240</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  240</span>                                       {</div>
-<div class="line"><span class="lineno">  241</span> </div>
-<div class="line"><span class="lineno">  242</span>    <span class="comment">// ----- Checking Admin Status -----</span></div>
-<div class="line"><span class="lineno">  243</span>    <span class="keywordflow">if</span> (!isAdmin) {</div>
-<div class="line"><span class="lineno">  244</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;THIS ACTION REQUIRES ADMINISTRATOR ACCESS&quot;</span>);</div>
-<div class="line"><span class="lineno">  245</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*2);</div>
-<div class="line"><span class="lineno">  246</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="../../da/dd4/class_insufficient_permissions_exception.html">InsufficientPermissionsException</a>(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a>);</div>
-<div class="line"><span class="lineno">  247</span>    }</div>
-<div class="line"><span class="lineno">  248</span> </div>
-<div class="line"><span class="lineno">  249</span>    <span class="comment">// ----- Entering a console and requesting password -----</span></div>
-<div class="line"><span class="lineno">  250</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  251</span>        std::string message;</div>
-<div class="line"><span class="lineno">  252</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a8d7f14925d270c3e1d7ad5bbbdfc8d34">SimpleDisplay::printRequestPassword</a>();</div>
-<div class="line"><span class="lineno">  253</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Keyboard: &quot;</span>);</div>
-<div class="line"><span class="lineno">  254</span>        std::getline(std::cin,message);</div>
-<div class="line"><span class="lineno">  255</span> </div>
-<div class="line"><span class="lineno">  256</span>        <span class="comment">// Checking input</span></div>
-<div class="line"><span class="lineno">  257</span>        <span class="keywordflow">if</span> (message != <span class="stringliteral">&quot;0&quot;</span>)</div>
-<div class="line"><span class="lineno">  258</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="../../da/dd4/class_insufficient_permissions_exception.html">InsufficientPermissionsException</a>(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a>);</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00244">244</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  244</span>                                       {</div>
+<div class="line"><span class="lineno">  245</span> </div>
+<div class="line"><span class="lineno">  246</span>    <span class="comment">// ----- Checking Admin Status -----</span></div>
+<div class="line"><span class="lineno">  247</span>    <span class="keywordflow">if</span> (!isAdmin) {</div>
+<div class="line"><span class="lineno">  248</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;THIS ACTION REQUIRES ADMINISTRATOR ACCESS&quot;</span>);</div>
+<div class="line"><span class="lineno">  249</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*2);</div>
+<div class="line"><span class="lineno">  250</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="../../da/dd4/class_insufficient_permissions_exception.html">InsufficientPermissionsException</a>(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a>);</div>
+<div class="line"><span class="lineno">  251</span>    }</div>
+<div class="line"><span class="lineno">  252</span> </div>
+<div class="line"><span class="lineno">  253</span>    <span class="comment">// ----- Entering a console and requesting password -----</span></div>
+<div class="line"><span class="lineno">  254</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  255</span>        std::string message;</div>
+<div class="line"><span class="lineno">  256</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a8d7f14925d270c3e1d7ad5bbbdfc8d34">SimpleDisplay::printRequestPassword</a>();</div>
+<div class="line"><span class="lineno">  257</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Keyboard: &quot;</span>);</div>
+<div class="line"><span class="lineno">  258</span>        std::getline(std::cin,message);</div>
 <div class="line"><span class="lineno">  259</span> </div>
-<div class="line"><span class="lineno">  260</span>        <span class="comment">// Invalid Input</span></div>
-<div class="line"><span class="lineno">  261</span>        }<span class="keywordflow">catch</span>(std::exception e){</div>
-<div class="line"><span class="lineno">  262</span> </div>
-<div class="line"><span class="lineno">  263</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;INVALID PASSWORD&quot;</span>);</div>
-<div class="line"><span class="lineno">  264</span>            sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
-<div class="line"><span class="lineno">  265</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="../../da/dd4/class_insufficient_permissions_exception.html">InsufficientPermissionsException</a>(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a>);</div>
-<div class="line"><span class="lineno">  266</span>        }</div>
-<div class="line"><span class="lineno">  267</span> </div>
-<div class="line"><span class="lineno">  268</span>}</div>
+<div class="line"><span class="lineno">  260</span>        <span class="comment">// Checking input</span></div>
+<div class="line"><span class="lineno">  261</span>        <span class="keywordflow">if</span> (message != <span class="stringliteral">&quot;0&quot;</span>)</div>
+<div class="line"><span class="lineno">  262</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="../../da/dd4/class_insufficient_permissions_exception.html">InsufficientPermissionsException</a>(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a>);</div>
+<div class="line"><span class="lineno">  263</span> </div>
+<div class="line"><span class="lineno">  264</span>        <span class="comment">// Invalid Input</span></div>
+<div class="line"><span class="lineno">  265</span>        }<span class="keywordflow">catch</span>(std::exception e){</div>
+<div class="line"><span class="lineno">  266</span> </div>
+<div class="line"><span class="lineno">  267</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;INVALID PASSWORD&quot;</span>);</div>
+<div class="line"><span class="lineno">  268</span>            sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
+<div class="line"><span class="lineno">  269</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="../../da/dd4/class_insufficient_permissions_exception.html">InsufficientPermissionsException</a>(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a>);</div>
+<div class="line"><span class="lineno">  270</span>        }</div>
+<div class="line"><span class="lineno">  271</span> </div>
+<div class="line"><span class="lineno">  272</span>}</div>
 <div class="ttc" id="aclass_a_i_html_a953a6cf9b2470503a8b09e1865052621"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">AI::TAG</a></div><div class="ttdeci">static std::string TAG</div><div class="ttdoc">Name of class (for exception throwing)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6f/_a_i_8h_source.html#l00135">AI.h:135</a></div></div>
 <div class="ttc" id="aclass_insufficient_permissions_exception_html"><div class="ttname"><a href="../../da/dd4/class_insufficient_permissions_exception.html">InsufficientPermissionsException</a></div><div class="ttdoc">This class lets the program throw an exception when the permissions of the user are not valid.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d2a/_insufficient_permissions_exception_8h_source.html#l00016">InsufficientPermissionsException.h:16</a></div></div>
 <div class="ttc" id="aclass_simple_display_html_a8d7f14925d270c3e1d7ad5bbbdfc8d34"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a8d7f14925d270c3e1d7ad5bbbdfc8d34">SimpleDisplay::printRequestPassword</a></div><div class="ttdeci">static void printRequestPassword()</div><div class="ttdoc">Prints Authentication Screen from AI.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00235">SimpleDisplay.cpp:235</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a8d7f14925d270c3e1d7ad5bbbdfc8d34">SimpleDisplay::printRequestPassword()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a8d7f14925d270c3e1d7ad5bbbdfc8d34">SimpleDisplay::printRequestPassword()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption()</a>.</p>
 
 </div>
 </div>
@@ -660,27 +660,27 @@ Static Private Attributes</h2></td></tr>
 
 <p>Generates a bad_alloc exception in a safe environment. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00516">516</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  516</span>                       {</div>
-<div class="line"><span class="lineno">  517</span> </div>
-<div class="line"><span class="lineno">  518</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\nBuilding Secure Environment...&quot;</span>);</div>
-<div class="line"><span class="lineno">  519</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
-<div class="line"><span class="lineno">  520</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\nGenerating Error...&quot;</span>);</div>
-<div class="line"><span class="lineno">  521</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  522</span>        std::vector&lt;int&gt; vector;</div>
-<div class="line"><span class="lineno">  523</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &gt; -1; i++)</div>
-<div class="line"><span class="lineno">  524</span>            vector.push_back(i);</div>
-<div class="line"><span class="lineno">  525</span>    }<span class="keywordflow">catch</span>(std::exception &amp;e) {</div>
-<div class="line"><span class="lineno">  526</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\n[WARNING] Environment Failure: \n-&gt; what(): &quot;</span>);</div>
-<div class="line"><span class="lineno">  527</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(e.what());</div>
-<div class="line"><span class="lineno">  528</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\nReturning...&quot;</span>);</div>
-<div class="line"><span class="lineno">  529</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*4);</div>
-<div class="line"><span class="lineno">  530</span>    }</div>
-<div class="line"><span class="lineno">  531</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00520">520</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  520</span>                       {</div>
+<div class="line"><span class="lineno">  521</span> </div>
+<div class="line"><span class="lineno">  522</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\nBuilding Secure Environment...&quot;</span>);</div>
+<div class="line"><span class="lineno">  523</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
+<div class="line"><span class="lineno">  524</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\nGenerating Error...&quot;</span>);</div>
+<div class="line"><span class="lineno">  525</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  526</span>        std::vector&lt;int&gt; vector;</div>
+<div class="line"><span class="lineno">  527</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &gt; -1; i++)</div>
+<div class="line"><span class="lineno">  528</span>            vector.push_back(i);</div>
+<div class="line"><span class="lineno">  529</span>    }<span class="keywordflow">catch</span>(std::exception &amp;e) {</div>
+<div class="line"><span class="lineno">  530</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\n[WARNING] Environment Failure: \n-&gt; what(): &quot;</span>);</div>
+<div class="line"><span class="lineno">  531</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(e.what());</div>
+<div class="line"><span class="lineno">  532</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\nReturning...&quot;</span>);</div>
+<div class="line"><span class="lineno">  533</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*4);</div>
+<div class="line"><span class="lineno">  534</span>    }</div>
+<div class="line"><span class="lineno">  535</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption()</a>.</p>
 
 </div>
 </div>
@@ -710,26 +710,26 @@ Static Private Attributes</h2></td></tr>
 <p>Forces an error in all Security devices. </p>
 <dl class="section note"><dt>Note</dt><dd>Error can be restored with <a class="el" href="../../d9/d64/class_a_i.html#ae5372e8b0787403f2b10c5cd54e90946" title="Recover all security breaches to safe status.">recoverSecurity()</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00369">369</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  369</span>                   {</div>
-<div class="line"><span class="lineno">  370</span> </div>
-<div class="line"><span class="lineno">  371</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#af2b09a4dca2dd2e9c8162d7e74c9b529">SimpleDisplay::printAIInterface</a>();</div>
-<div class="line"><span class="lineno">  372</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Forcing FAILURE in all security devices&quot;</span>);</div>
-<div class="line"><span class="lineno">  373</span> </div>
-<div class="line"><span class="lineno">  374</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>; i++) {</div>
-<div class="line"><span class="lineno">  375</span>        <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>[i].<a class="code hl_variable" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">securityHasBeenBroken</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  376</span>    }</div>
-<div class="line"><span class="lineno">  377</span>    <a class="code hl_variable" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>-&gt;<a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a0fa9a88bf97d0f35a2e7147bdbb0f0f0">setSecurityStatus</a>(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">  378</span> </div>
-<div class="line"><span class="lineno">  379</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*2);</div>
-<div class="line"><span class="lineno">  380</span>}</div>
-<div class="ttc" id="aclass_simple_display_html_a0eb6a5ee328ba2c8fbfce97cd7f503c8"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a></div><div class="ttdeci">static SimpleDisplay * currentDisplay</div><div class="ttdoc">Pointer to current Display.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc7/_simple_display_8h_source.html#l00170">SimpleDisplay.h:170</a></div></div>
-<div class="ttc" id="aclass_simple_display_html_a0fa9a88bf97d0f35a2e7147bdbb0f0f0"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a0fa9a88bf97d0f35a2e7147bdbb0f0f0">SimpleDisplay::setSecurityStatus</a></div><div class="ttdeci">void setSecurityStatus(bool securityStatus)</div><div class="ttdoc">Sets the security status of the alarms.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00475">SimpleDisplay.cpp:475</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00373">373</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  373</span>                   {</div>
+<div class="line"><span class="lineno">  374</span> </div>
+<div class="line"><span class="lineno">  375</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#af2b09a4dca2dd2e9c8162d7e74c9b529">SimpleDisplay::printAIInterface</a>();</div>
+<div class="line"><span class="lineno">  376</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Forcing FAILURE in all security devices&quot;</span>);</div>
+<div class="line"><span class="lineno">  377</span> </div>
+<div class="line"><span class="lineno">  378</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>; i++) {</div>
+<div class="line"><span class="lineno">  379</span>        <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>[i].<a class="code hl_variable" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">securityHasBeenBroken</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  380</span>    }</div>
+<div class="line"><span class="lineno">  381</span>    <a class="code hl_variable" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>-&gt;<a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a161e3a1ae1602c1325bf868e029016b7">setSecurityStatus</a>(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  382</span> </div>
+<div class="line"><span class="lineno">  383</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*2);</div>
+<div class="line"><span class="lineno">  384</span>}</div>
+<div class="ttc" id="aclass_simple_display_html_a0eb6a5ee328ba2c8fbfce97cd7f503c8"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a></div><div class="ttdeci">static SimpleDisplay * currentDisplay</div><div class="ttdoc">Pointer to current Display.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc7/_simple_display_8h_source.html#l00173">SimpleDisplay.h:173</a></div></div>
+<div class="ttc" id="aclass_simple_display_html_a161e3a1ae1602c1325bf868e029016b7"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a161e3a1ae1602c1325bf868e029016b7">SimpleDisplay::setSecurityStatus</a></div><div class="ttdeci">void setSecurityStatus(const bool securityStatus)</div><div class="ttdoc">Sets the security status of the alarms.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00496">SimpleDisplay.cpp:496</a></div></div>
 <div class="ttc" id="aclass_simple_display_html_af2b09a4dca2dd2e9c8162d7e74c9b529"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#af2b09a4dca2dd2e9c8162d7e74c9b529">SimpleDisplay::printAIInterface</a></div><div class="ttdeci">static void printAIInterface()</div><div class="ttdoc">Prints AI interface.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00206">SimpleDisplay.cpp:206</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#af2b09a4dca2dd2e9c8162d7e74c9b529">SimpleDisplay::printAIInterface()</a>, <a class="el" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">KernelDevice::securityHasBeenBroken</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a0fa9a88bf97d0f35a2e7147bdbb0f0f0">SimpleDisplay::setSecurityStatus()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
+<p class="reference">References <a class="el" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#af2b09a4dca2dd2e9c8162d7e74c9b529">SimpleDisplay::printAIInterface()</a>, <a class="el" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">KernelDevice::securityHasBeenBroken</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a161e3a1ae1602c1325bf868e029016b7">SimpleDisplay::setSecurityStatus()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption()</a>.</p>
 
 </div>
 </div>
@@ -758,30 +758,30 @@ Static Private Attributes</h2></td></tr>
 
 <p>Sends a message using the microphone. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00349">349</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  349</span>                   {</div>
-<div class="line"><span class="lineno">  350</span> </div>
-<div class="line"><span class="lineno">  351</span> </div>
-<div class="line"><span class="lineno">  352</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  353</span>        std::string message;</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00353">353</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  353</span>                   {</div>
 <div class="line"><span class="lineno">  354</span> </div>
-<div class="line"><span class="lineno">  355</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\nEnter a message: &quot;</span>);</div>
-<div class="line"><span class="lineno">  356</span>        getline(std::cin, message);</div>
-<div class="line"><span class="lineno">  357</span> </div>
-<div class="line"><span class="lineno">  358</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] SENDING MESSAGE:\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  359</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;|| -&gt; &quot;</span> + message);</div>
-<div class="line"><span class="lineno">  360</span> </div>
-<div class="line"><span class="lineno">  361</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
-<div class="line"><span class="lineno">  362</span> </div>
-<div class="line"><span class="lineno">  363</span>    }<span class="keywordflow">catch</span> (std::exception &amp;e){</div>
-<div class="line"><span class="lineno">  364</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Input not valid&quot;</span>);</div>
-<div class="line"><span class="lineno">  365</span>    }</div>
+<div class="line"><span class="lineno">  355</span> </div>
+<div class="line"><span class="lineno">  356</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  357</span>        std::string message;</div>
+<div class="line"><span class="lineno">  358</span> </div>
+<div class="line"><span class="lineno">  359</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;\nEnter a message: &quot;</span>);</div>
+<div class="line"><span class="lineno">  360</span>        getline(std::cin, message);</div>
+<div class="line"><span class="lineno">  361</span> </div>
+<div class="line"><span class="lineno">  362</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[AI] SENDING MESSAGE:\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  363</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;|| -&gt; &quot;</span> + message);</div>
+<div class="line"><span class="lineno">  364</span> </div>
+<div class="line"><span class="lineno">  365</span>        sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
 <div class="line"><span class="lineno">  366</span> </div>
-<div class="line"><span class="lineno">  367</span>}</div>
+<div class="line"><span class="lineno">  367</span>    }<span class="keywordflow">catch</span> (std::exception &amp;e){</div>
+<div class="line"><span class="lineno">  368</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Input not valid&quot;</span>);</div>
+<div class="line"><span class="lineno">  369</span>    }</div>
+<div class="line"><span class="lineno">  370</span> </div>
+<div class="line"><span class="lineno">  371</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption()</a>.</p>
 
 </div>
 </div>
@@ -810,23 +810,23 @@ Static Private Attributes</h2></td></tr>
 
 <p>Recover all security breaches to safe status. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00442">442</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  442</span>                         {</div>
-<div class="line"><span class="lineno">  443</span> </div>
-<div class="line"><span class="lineno">  444</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#af2b09a4dca2dd2e9c8162d7e74c9b529">SimpleDisplay::printAIInterface</a>();</div>
-<div class="line"><span class="lineno">  445</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Recovering all Devices to Secure Status...&quot;</span>);</div>
-<div class="line"><span class="lineno">  446</span> </div>
-<div class="line"><span class="lineno">  447</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>; i++) {</div>
-<div class="line"><span class="lineno">  448</span>        <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>[i].<a class="code hl_variable" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">securityHasBeenBroken</a> = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">  449</span>    }</div>
-<div class="line"><span class="lineno">  450</span>    <a class="code hl_variable" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>-&gt;<a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a0fa9a88bf97d0f35a2e7147bdbb0f0f0">setSecurityStatus</a>(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  451</span> </div>
-<div class="line"><span class="lineno">  452</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*2);</div>
-<div class="line"><span class="lineno">  453</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00446">446</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  446</span>                         {</div>
+<div class="line"><span class="lineno">  447</span> </div>
+<div class="line"><span class="lineno">  448</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#af2b09a4dca2dd2e9c8162d7e74c9b529">SimpleDisplay::printAIInterface</a>();</div>
+<div class="line"><span class="lineno">  449</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Recovering all Devices to Secure Status...&quot;</span>);</div>
+<div class="line"><span class="lineno">  450</span> </div>
+<div class="line"><span class="lineno">  451</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>; i++) {</div>
+<div class="line"><span class="lineno">  452</span>        <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>[i].<a class="code hl_variable" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">securityHasBeenBroken</a> = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">  453</span>    }</div>
+<div class="line"><span class="lineno">  454</span>    <a class="code hl_variable" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>-&gt;<a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a161e3a1ae1602c1325bf868e029016b7">setSecurityStatus</a>(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  455</span> </div>
+<div class="line"><span class="lineno">  456</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>*2);</div>
+<div class="line"><span class="lineno">  457</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#af2b09a4dca2dd2e9c8162d7e74c9b529">SimpleDisplay::printAIInterface()</a>, <a class="el" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">KernelDevice::securityHasBeenBroken</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a0fa9a88bf97d0f35a2e7147bdbb0f0f0">SimpleDisplay::setSecurityStatus()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
+<p class="reference">References <a class="el" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#af2b09a4dca2dd2e9c8162d7e74c9b529">SimpleDisplay::printAIInterface()</a>, <a class="el" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">KernelDevice::securityHasBeenBroken</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a161e3a1ae1602c1325bf868e029016b7">SimpleDisplay::setSecurityStatus()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption()</a>.</p>
 
 </div>
 </div>
@@ -884,7 +884,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   85</span> </div>
 <div class="line"><span class="lineno">   86</span>        <span class="keywordflow">if</span> (!(*k).securityGenerator() || k-&gt;<a class="code hl_variable" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">securityHasBeenBroken</a>) {</div>
 <div class="line"><span class="lineno">   87</span>            k-&gt;<a class="code hl_variable" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">securityHasBeenBroken</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   88</span>            <a class="code hl_variable" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>-&gt;<a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a0fa9a88bf97d0f35a2e7147bdbb0f0f0">setSecurityStatus</a>(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   88</span>            <a class="code hl_variable" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>-&gt;<a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a161e3a1ae1602c1325bf868e029016b7">setSecurityStatus</a>(<span class="keyword">false</span>);</div>
 <div class="line"><span class="lineno">   89</span>        }</div>
 <div class="line"><span class="lineno">   90</span>    }</div>
 <div class="line"><span class="lineno">   91</span> </div>
@@ -897,7 +897,7 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="aclass_data_device_html_a8bc5e93fc1d214eecda51ef443b8f4a0"><div class="ttname"><a href="../../d5/d6c/class_data_device.html#a8bc5e93fc1d214eecda51ef443b8f4a0">DataDevice::allDataDevices</a></div><div class="ttdeci">static DataDevice * allDataDevices</div><div class="ttdoc">Pointers to all Data Devices built.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d9c/_data_device_8h_source.html#l00057">DataDevice.h:57</a></div></div>
 <div class="ttc" id="aclass_data_device_html_abd297afb59478d7f7e39825143be7b34"><div class="ttname"><a href="../../d5/d6c/class_data_device.html#abd297afb59478d7f7e39825143be7b34">DataDevice::collectedTimes</a></div><div class="ttdeci">std::vector&lt; std::string &gt; collectedTimes</div><div class="ttdoc">Vector with all time-stamps of the measurements.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d9c/_data_device_8h_source.html#l00089">DataDevice.h:89</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d6c/class_data_device.html#a8bc5e93fc1d214eecda51ef443b8f4a0">DataDevice::allDataDevices</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>, <a class="el" href="../../d5/d6c/class_data_device.html#a85f84c66617b0d6becbdd40d742b8d33">DataDevice::appendNewData()</a>, <a class="el" href="../../d5/d6c/class_data_device.html#a7e54d3b48e7e2f7cb4481929e28809aa">DataDevice::collectedData</a>, <a class="el" href="../../d5/d6c/class_data_device.html#abd297afb59478d7f7e39825143be7b34">DataDevice::collectedTimes</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>, <a class="el" href="../../d5/d6c/class_data_device.html#a4499875b3c1a52ce8bbaf5f3c7de9e05">DataDevice::getNumSensors()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a95004d1450551f0941957cecc95a1b04">MAX_DATA</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>, <a class="el" href="../../d5/d6c/class_data_device.html#a2115c7d518db7acbc9b8e685cb0e5481">DataDevice::numSensors</a>, <a class="el" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">KernelDevice::securityHasBeenBroken</a>, and <a class="el" href="../../d5/d2e/class_simple_display.html#a0fa9a88bf97d0f35a2e7147bdbb0f0f0">SimpleDisplay::setSecurityStatus()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d6c/class_data_device.html#a8bc5e93fc1d214eecda51ef443b8f4a0">DataDevice::allDataDevices</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>, <a class="el" href="../../d5/d6c/class_data_device.html#a85f84c66617b0d6becbdd40d742b8d33">DataDevice::appendNewData()</a>, <a class="el" href="../../d5/d6c/class_data_device.html#a7e54d3b48e7e2f7cb4481929e28809aa">DataDevice::collectedData</a>, <a class="el" href="../../d5/d6c/class_data_device.html#abd297afb59478d7f7e39825143be7b34">DataDevice::collectedTimes</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>, <a class="el" href="../../d5/d6c/class_data_device.html#a4499875b3c1a52ce8bbaf5f3c7de9e05">DataDevice::getNumSensors()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a95004d1450551f0941957cecc95a1b04">MAX_DATA</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>, <a class="el" href="../../d5/d6c/class_data_device.html#a2115c7d518db7acbc9b8e685cb0e5481">DataDevice::numSensors</a>, <a class="el" href="../../df/db2/class_kernel_device.html#abed622ff7f34cfef1084789717783382">KernelDevice::securityHasBeenBroken</a>, and <a class="el" href="../../d5/d2e/class_simple_display.html#a161e3a1ae1602c1325bf868e029016b7">SimpleDisplay::setSecurityStatus()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#af0e91e54ac652671696c09468852fc0b">throwDemon()</a>.</p>
 
@@ -928,40 +928,40 @@ Static Private Attributes</h2></td></tr>
 
 <p>Calls <a class="el" href="../../d7/d23/class_user.html" title="This class will be the responsible for storing and managing the user&#39;s data. Also is able to create a...">User</a> class to remove a existing user. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00493">493</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  493</span>                    {</div>
-<div class="line"><span class="lineno">  494</span> </div>
-<div class="line"><span class="lineno">  495</span>    std::string id, confirmation;</div>
-<div class="line"><span class="lineno">  496</span> </div>
-<div class="line"><span class="lineno">  497</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[&quot;</span> + <a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a> + <span class="stringliteral">&quot;] Insert the id of the user to be removed: &quot;</span>);</div>
-<div class="line"><span class="lineno">  498</span>    std::getline(std::cin,<span class="keywordtype">id</span>);</div>
-<div class="line"><span class="lineno">  499</span>    <span class="keywordflow">do</span> {</div>
-<div class="line"><span class="lineno">  500</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[&quot;</span> + <a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a> + <span class="stringliteral">&quot;] Are you sure to remove &quot;</span> + <span class="keywordtype">id</span></div>
-<div class="line"><span class="lineno">  501</span>        + <span class="stringliteral">&quot; from the User list?\nThis can&#39;t be undone [y/n]:&quot;</span>);</div>
-<div class="line"><span class="lineno">  502</span>        std::getline(std::cin,confirmation);</div>
-<div class="line"><span class="lineno">  503</span>    }<span class="keywordflow">while</span>(confirmation != <span class="stringliteral">&quot;y&quot;</span> &amp;&amp; confirmation != <span class="stringliteral">&quot;n&quot;</span>);</div>
-<div class="line"><span class="lineno">  504</span> </div>
-<div class="line"><span class="lineno">  505</span>    <span class="keywordflow">if</span> (confirmation == <span class="stringliteral">&quot;y&quot;</span>) {</div>
-<div class="line"><span class="lineno">  506</span>        <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  507</span>            <a class="code hl_function" href="../../d7/d23/class_user.html#a68388c89a91732660b3fb4c602fa55c0">User::rmUser</a>(std::stoi(<span class="keywordtype">id</span>));</div>
-<div class="line"><span class="lineno">  508</span>        } <span class="keywordflow">catch</span> (<a class="code hl_class" href="../../db/d8e/class_invalid_user_exception.html">InvalidUserException</a> &amp;e) {</div>
-<div class="line"><span class="lineno">  509</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[&quot;</span> + <a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a> + <span class="stringliteral">&quot;] User requested not found&quot;</span>);</div>
-<div class="line"><span class="lineno">  510</span>        }</div>
-<div class="line"><span class="lineno">  511</span>    }</div>
-<div class="line"><span class="lineno">  512</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
-<div class="line"><span class="lineno">  513</span> </div>
-<div class="line"><span class="lineno">  514</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00497">497</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  497</span>                    {</div>
+<div class="line"><span class="lineno">  498</span> </div>
+<div class="line"><span class="lineno">  499</span>    std::string id, confirmation;</div>
+<div class="line"><span class="lineno">  500</span> </div>
+<div class="line"><span class="lineno">  501</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[&quot;</span> + <a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a> + <span class="stringliteral">&quot;] Insert the id of the user to be removed: &quot;</span>);</div>
+<div class="line"><span class="lineno">  502</span>    std::getline(std::cin,<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  503</span>    <span class="keywordflow">do</span> {</div>
+<div class="line"><span class="lineno">  504</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[&quot;</span> + <a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a> + <span class="stringliteral">&quot;] Are you sure to remove &quot;</span> + <span class="keywordtype">id</span></div>
+<div class="line"><span class="lineno">  505</span>        + <span class="stringliteral">&quot; from the User list?\nThis can&#39;t be undone [y/n]:&quot;</span>);</div>
+<div class="line"><span class="lineno">  506</span>        std::getline(std::cin,confirmation);</div>
+<div class="line"><span class="lineno">  507</span>    }<span class="keywordflow">while</span>(confirmation != <span class="stringliteral">&quot;y&quot;</span> &amp;&amp; confirmation != <span class="stringliteral">&quot;n&quot;</span>);</div>
+<div class="line"><span class="lineno">  508</span> </div>
+<div class="line"><span class="lineno">  509</span>    <span class="keywordflow">if</span> (confirmation == <span class="stringliteral">&quot;y&quot;</span>) {</div>
+<div class="line"><span class="lineno">  510</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  511</span>            <a class="code hl_function" href="../../d7/d23/class_user.html#a7a04a3eb5095eec17c24f3f48880497e">User::rmUser</a>(std::stoi(<span class="keywordtype">id</span>));</div>
+<div class="line"><span class="lineno">  512</span>        } <span class="keywordflow">catch</span> (<a class="code hl_class" href="../../db/d8e/class_invalid_user_exception.html">InvalidUserException</a> &amp;e) {</div>
+<div class="line"><span class="lineno">  513</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[&quot;</span> + <a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a> + <span class="stringliteral">&quot;] User requested not found&quot;</span>);</div>
+<div class="line"><span class="lineno">  514</span>        }</div>
+<div class="line"><span class="lineno">  515</span>    }</div>
+<div class="line"><span class="lineno">  516</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
+<div class="line"><span class="lineno">  517</span> </div>
+<div class="line"><span class="lineno">  518</span>}</div>
 <div class="ttc" id="aclass_invalid_user_exception_html"><div class="ttname"><a href="../../db/d8e/class_invalid_user_exception.html">InvalidUserException</a></div><div class="ttdoc">This class lets the program throw an exception when the selected user is not valid.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/_invalid_user_exception_8h_source.html#l00016">InvalidUserException.h:16</a></div></div>
-<div class="ttc" id="aclass_user_html_a68388c89a91732660b3fb4c602fa55c0"><div class="ttname"><a href="../../d7/d23/class_user.html#a68388c89a91732660b3fb4c602fa55c0">User::rmUser</a></div><div class="ttdeci">static void rmUser(int id)</div><div class="ttdoc">Removes a user from allUsers.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_user_8cpp_source.html#l00194">User.cpp:194</a></div></div>
+<div class="ttc" id="aclass_user_html_a7a04a3eb5095eec17c24f3f48880497e"><div class="ttname"><a href="../../d7/d23/class_user.html#a7a04a3eb5095eec17c24f3f48880497e">User::rmUser</a></div><div class="ttdeci">static void rmUser(const int id)</div><div class="ttdoc">Removes a user from allUsers.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_user_8cpp_source.html#l00199">User.cpp:199</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, <a class="el" href="../../d7/d23/class_user.html#a68388c89a91732660b3fb4c602fa55c0">User::rmUser()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, <a class="el" href="../../d7/d23/class_user.html#a7a04a3eb5095eec17c24f3f48880497e">User::rmUser()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption()</a>.</p>
 
 </div>
 </div>
-<a id="a64b7ffd10cca70b802dcb4ba1fb1c92a" name="a64b7ffd10cca70b802dcb4ba1fb1c92a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64b7ffd10cca70b802dcb4ba1fb1c92a">&#9670;&#160;</a></span>requestOption()</h2>
+<a id="a2e5906fc706ef49159f1a70296174c8b" name="a2e5906fc706ef49159f1a70296174c8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e5906fc706ef49159f1a70296174c8b">&#9670;&#160;</a></span>requestOption()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -972,7 +972,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void AI::requestOption </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>opt</em>, </td>
         </tr>
         <tr>
@@ -1004,7 +1004,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00134">134</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  134</span>                                                  {</div>
+<div class="fragment"><div class="line"><span class="lineno">  134</span>                                                         {</div>
 <div class="line"><span class="lineno">  135</span>    <span class="keywordflow">try</span> {</div>
 <div class="line"><span class="lineno">  136</span>        <span class="keywordtype">int</span> num = atoi(opt.c_str());</div>
 <div class="line"><span class="lineno">  137</span> </div>
@@ -1097,32 +1097,37 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  224</span>                <a class="code hl_function" href="../../d9/d64/class_a_i.html#aa77cc82f290d4386e12c978dcff385ab">showAllUsers</a>();</div>
 <div class="line"><span class="lineno">  225</span>                <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  226</span>            }</div>
-<div class="line"><span class="lineno">  227</span> </div>
-<div class="line"><span class="lineno">  228</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aa9f3fbab34f44b8f55d57ad1bf6cb4809">EXIT</a>:</div>
+<div class="line"><span class="lineno">  227</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aad5283fdef8c238fe3b05413e6a60dcf0">MORE</a>:{</div>
+<div class="line"><span class="lineno">  228</span>                <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a02b20fd95534d2965054fe05ef092cd4">SimpleDisplay::printAboutUs</a>();</div>
 <div class="line"><span class="lineno">  229</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  230</span>        }</div>
+<div class="line"><span class="lineno">  230</span>            }</div>
 <div class="line"><span class="lineno">  231</span> </div>
-<div class="line"><span class="lineno">  232</span> </div>
-<div class="line"><span class="lineno">  233</span>    }<span class="keywordflow">catch</span> (std::exception &amp;e){</div>
-<div class="line"><span class="lineno">  234</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Option NOT valid&quot;</span>);</div>
-<div class="line"><span class="lineno">  235</span>        sleep(1);</div>
-<div class="line"><span class="lineno">  236</span>    }</div>
-<div class="line"><span class="lineno">  237</span> </div>
-<div class="line"><span class="lineno">  238</span>}</div>
-<div class="ttc" id="aclass_a_i_html_a2c5a9b991e7ac83f6a4c25f0e6c7b783"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a2c5a9b991e7ac83f6a4c25f0e6c7b783">AI::addUser</a></div><div class="ttdeci">static void addUser()</div><div class="ttdoc">Calls User class to add a new user.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00455">AI.cpp:455</a></div></div>
-<div class="ttc" id="aclass_a_i_html_a50db01d117eb927ffad24144633e455b"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a50db01d117eb927ffad24144633e455b">AI::forceBadAlloc</a></div><div class="ttdeci">static void forceBadAlloc()</div><div class="ttdoc">Generates a bad_alloc exception in a safe environment.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00516">AI.cpp:516</a></div></div>
-<div class="ttc" id="aclass_a_i_html_a6984601bc3c2d65d1ef69c3b980ff8fa"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a6984601bc3c2d65d1ef69c3b980ff8fa">AI::forceError</a></div><div class="ttdeci">static void forceError()</div><div class="ttdoc">Forces an error in all Security devices.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00369">AI.cpp:369</a></div></div>
-<div class="ttc" id="aclass_a_i_html_a6c757fc5f3fbf43d6e512b4649479b16"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a6c757fc5f3fbf43d6e512b4649479b16">AI::microphone</a></div><div class="ttdeci">static void microphone()</div><div class="ttdoc">Sends a message using the microphone.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00349">AI.cpp:349</a></div></div>
-<div class="ttc" id="aclass_a_i_html_a86fe75fab41d558922b6333ea27e682d"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a86fe75fab41d558922b6333ea27e682d">AI::removeUser</a></div><div class="ttdeci">static void removeUser()</div><div class="ttdoc">Calls User class to remove a existing user.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00493">AI.cpp:493</a></div></div>
-<div class="ttc" id="aclass_a_i_html_a9722ff1c013e46c23bc3dd4b5af63bd6"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a9722ff1c013e46c23bc3dd4b5af63bd6">AI::turnDevices</a></div><div class="ttdeci">static void turnDevices()</div><div class="ttdoc">Turns all devices on/off.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00270">AI.cpp:270</a></div></div>
-<div class="ttc" id="aclass_a_i_html_aa77cc82f290d4386e12c978dcff385ab"><div class="ttname"><a href="../../d9/d64/class_a_i.html#aa77cc82f290d4386e12c978dcff385ab">AI::showAllUsers</a></div><div class="ttdeci">static void showAllUsers()</div><div class="ttdoc">Calls to print all users registered.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00550">AI.cpp:550</a></div></div>
-<div class="ttc" id="aclass_a_i_html_aab98da3e33b41549ee49ba3d7a1acc43"><div class="ttname"><a href="../../d9/d64/class_a_i.html#aab98da3e33b41549ee49ba3d7a1acc43">AI::turnSecurity</a></div><div class="ttdeci">static void turnSecurity()</div><div class="ttdoc">Turns all security on/off.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00292">AI.cpp:292</a></div></div>
-<div class="ttc" id="aclass_a_i_html_ab4f8a6efe1c0041a43cd670f707a77b7"><div class="ttname"><a href="../../d9/d64/class_a_i.html#ab4f8a6efe1c0041a43cd670f707a77b7">AI::ensureAdminAccess</a></div><div class="ttdeci">static void ensureAdminAccess(bool isAdmin)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00240">AI.cpp:240</a></div></div>
-<div class="ttc" id="aclass_a_i_html_addd22a78b4ec596e5ae9554113c6a2d1"><div class="ttname"><a href="../../d9/d64/class_a_i.html#addd22a78b4ec596e5ae9554113c6a2d1">AI::checkSecurity</a></div><div class="ttdeci">static void checkSecurity()</div><div class="ttdoc">Checks and print current security status.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00319">AI.cpp:319</a></div></div>
-<div class="ttc" id="aclass_a_i_html_ae5372e8b0787403f2b10c5cd54e90946"><div class="ttname"><a href="../../d9/d64/class_a_i.html#ae5372e8b0787403f2b10c5cd54e90946">AI::recoverSecurity</a></div><div class="ttdeci">static void recoverSecurity()</div><div class="ttdoc">Recover all security breaches to safe status.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00442">AI.cpp:442</a></div></div>
-<div class="ttc" id="aclass_a_i_html_aeafba0fc07e4e9672930aa3341619679"><div class="ttname"><a href="../../d9/d64/class_a_i.html#aeafba0fc07e4e9672930aa3341619679">AI::buildDevice</a></div><div class="ttdeci">static void buildDevice()</div><div class="ttdoc">Calls the builder for starting a interface to build a new device in execution time.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00382">AI.cpp:382</a></div></div>
+<div class="line"><span class="lineno">  232</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aa9f3fbab34f44b8f55d57ad1bf6cb4809">EXIT</a>:</div>
+<div class="line"><span class="lineno">  233</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  234</span>        }</div>
+<div class="line"><span class="lineno">  235</span> </div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span>    }<span class="keywordflow">catch</span> (std::exception &amp;e){</div>
+<div class="line"><span class="lineno">  238</span>        <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Option NOT valid&quot;</span>);</div>
+<div class="line"><span class="lineno">  239</span>        sleep(1);</div>
+<div class="line"><span class="lineno">  240</span>    }</div>
+<div class="line"><span class="lineno">  241</span> </div>
+<div class="line"><span class="lineno">  242</span>}</div>
+<div class="ttc" id="aclass_a_i_html_a2c5a9b991e7ac83f6a4c25f0e6c7b783"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a2c5a9b991e7ac83f6a4c25f0e6c7b783">AI::addUser</a></div><div class="ttdeci">static void addUser()</div><div class="ttdoc">Calls User class to add a new user.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00459">AI.cpp:459</a></div></div>
+<div class="ttc" id="aclass_a_i_html_a50db01d117eb927ffad24144633e455b"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a50db01d117eb927ffad24144633e455b">AI::forceBadAlloc</a></div><div class="ttdeci">static void forceBadAlloc()</div><div class="ttdoc">Generates a bad_alloc exception in a safe environment.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00520">AI.cpp:520</a></div></div>
+<div class="ttc" id="aclass_a_i_html_a6984601bc3c2d65d1ef69c3b980ff8fa"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a6984601bc3c2d65d1ef69c3b980ff8fa">AI::forceError</a></div><div class="ttdeci">static void forceError()</div><div class="ttdoc">Forces an error in all Security devices.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00373">AI.cpp:373</a></div></div>
+<div class="ttc" id="aclass_a_i_html_a6c757fc5f3fbf43d6e512b4649479b16"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a6c757fc5f3fbf43d6e512b4649479b16">AI::microphone</a></div><div class="ttdeci">static void microphone()</div><div class="ttdoc">Sends a message using the microphone.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00353">AI.cpp:353</a></div></div>
+<div class="ttc" id="aclass_a_i_html_a86fe75fab41d558922b6333ea27e682d"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a86fe75fab41d558922b6333ea27e682d">AI::removeUser</a></div><div class="ttdeci">static void removeUser()</div><div class="ttdoc">Calls User class to remove a existing user.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00497">AI.cpp:497</a></div></div>
+<div class="ttc" id="aclass_a_i_html_a9722ff1c013e46c23bc3dd4b5af63bd6"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a9722ff1c013e46c23bc3dd4b5af63bd6">AI::turnDevices</a></div><div class="ttdeci">static void turnDevices()</div><div class="ttdoc">Turns all devices on/off.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00274">AI.cpp:274</a></div></div>
+<div class="ttc" id="aclass_a_i_html_aa77cc82f290d4386e12c978dcff385ab"><div class="ttname"><a href="../../d9/d64/class_a_i.html#aa77cc82f290d4386e12c978dcff385ab">AI::showAllUsers</a></div><div class="ttdeci">static void showAllUsers()</div><div class="ttdoc">Calls to print all users registered.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00554">AI.cpp:554</a></div></div>
+<div class="ttc" id="aclass_a_i_html_aab98da3e33b41549ee49ba3d7a1acc43"><div class="ttname"><a href="../../d9/d64/class_a_i.html#aab98da3e33b41549ee49ba3d7a1acc43">AI::turnSecurity</a></div><div class="ttdeci">static void turnSecurity()</div><div class="ttdoc">Turns all security on/off.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00296">AI.cpp:296</a></div></div>
+<div class="ttc" id="aclass_a_i_html_ab4f8a6efe1c0041a43cd670f707a77b7"><div class="ttname"><a href="../../d9/d64/class_a_i.html#ab4f8a6efe1c0041a43cd670f707a77b7">AI::ensureAdminAccess</a></div><div class="ttdeci">static void ensureAdminAccess(bool isAdmin)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00244">AI.cpp:244</a></div></div>
+<div class="ttc" id="aclass_a_i_html_addd22a78b4ec596e5ae9554113c6a2d1"><div class="ttname"><a href="../../d9/d64/class_a_i.html#addd22a78b4ec596e5ae9554113c6a2d1">AI::checkSecurity</a></div><div class="ttdeci">static void checkSecurity()</div><div class="ttdoc">Checks and print current security status.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00323">AI.cpp:323</a></div></div>
+<div class="ttc" id="aclass_a_i_html_ae5372e8b0787403f2b10c5cd54e90946"><div class="ttname"><a href="../../d9/d64/class_a_i.html#ae5372e8b0787403f2b10c5cd54e90946">AI::recoverSecurity</a></div><div class="ttdeci">static void recoverSecurity()</div><div class="ttdoc">Recover all security breaches to safe status.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00446">AI.cpp:446</a></div></div>
+<div class="ttc" id="aclass_a_i_html_aeafba0fc07e4e9672930aa3341619679"><div class="ttname"><a href="../../d9/d64/class_a_i.html#aeafba0fc07e4e9672930aa3341619679">AI::buildDevice</a></div><div class="ttdeci">static void buildDevice()</div><div class="ttdoc">Calls the builder for starting a interface to build a new device in execution time.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00386">AI.cpp:386</a></div></div>
+<div class="ttc" id="aclass_simple_display_html_a02b20fd95534d2965054fe05ef092cd4"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a02b20fd95534d2965054fe05ef092cd4">SimpleDisplay::printAboutUs</a></div><div class="ttdeci">static void printAboutUs()</div><div class="ttdoc">Prints information about the version and original designer.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00395">SimpleDisplay.cpp:395</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aae0bfbac80c8ccca565afe7cb46d34e43">ADDUSER</a>, <a class="el" href="../../d9/d64/class_a_i.html#a2c5a9b991e7ac83f6a4c25f0e6c7b783">addUser()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aa209622f88d7e3fc0fe2fa2ab06279a7c">BUILDDEVICE</a>, <a class="el" href="../../d9/d64/class_a_i.html#aeafba0fc07e4e9672930aa3341619679">buildDevice()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aa1101cdbeac60afa53571fe89f21206be">CHECKSECURITY</a>, <a class="el" href="../../d9/d64/class_a_i.html#addd22a78b4ec596e5ae9554113c6a2d1">checkSecurity()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, <a class="el" href="../../d9/d64/class_a_i.html#ab4f8a6efe1c0041a43cd670f707a77b7">ensureAdminAccess()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aa9f3fbab34f44b8f55d57ad1bf6cb4809">EXIT</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aada0270900a32c1c0cd2b3cb14f61d987">FORCEBADALLOC</a>, <a class="el" href="../../d9/d64/class_a_i.html#a50db01d117eb927ffad24144633e455b">forceBadAlloc()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aad1b65f572b8e3c7a3883b294dd25988c">FORCEERROR</a>, <a class="el" href="../../d9/d64/class_a_i.html#a6984601bc3c2d65d1ef69c3b980ff8fa">forceError()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aa64bd4ef80b43028bace678901accc593">MICROPHONE</a>, <a class="el" href="../../d9/d64/class_a_i.html#a6c757fc5f3fbf43d6e512b4649479b16">microphone()</a>, <a class="el" href="../../d9/d64/class_a_i.html#ae5372e8b0787403f2b10c5cd54e90946">recoverSecurity()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aaf99665847d0f2cc4d777e38074c580f6">REMOVEUSER</a>, <a class="el" href="../../d9/d64/class_a_i.html#a86fe75fab41d558922b6333ea27e682d">removeUser()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aa3232fa2a231f866016e3b0b95f08be22">RETURNSECURITY</a>, <a class="el" href="../../d9/d64/class_a_i.html#aa77cc82f290d4386e12c978dcff385ab">showAllUsers()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aae21507964d5d7a83729e7dda4b5b069a">SHOWUSERS</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aaffc8a08a3e6800f81274b492571a2b85">TURNDEVICES</a>, <a class="el" href="../../d9/d64/class_a_i.html#a9722ff1c013e46c23bc3dd4b5af63bd6">turnDevices()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aacc4a7a1be2396dd1b0a48e25914b0340">TURNSECURITY</a>, and <a class="el" href="../../d9/d64/class_a_i.html#aab98da3e33b41549ee49ba3d7a1acc43">turnSecurity()</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aae0bfbac80c8ccca565afe7cb46d34e43">ADDUSER</a>, <a class="el" href="../../d9/d64/class_a_i.html#a2c5a9b991e7ac83f6a4c25f0e6c7b783">addUser()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aa209622f88d7e3fc0fe2fa2ab06279a7c">BUILDDEVICE</a>, <a class="el" href="../../d9/d64/class_a_i.html#aeafba0fc07e4e9672930aa3341619679">buildDevice()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aa1101cdbeac60afa53571fe89f21206be">CHECKSECURITY</a>, <a class="el" href="../../d9/d64/class_a_i.html#addd22a78b4ec596e5ae9554113c6a2d1">checkSecurity()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, <a class="el" href="../../d9/d64/class_a_i.html#ab4f8a6efe1c0041a43cd670f707a77b7">ensureAdminAccess()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aa9f3fbab34f44b8f55d57ad1bf6cb4809">EXIT</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aada0270900a32c1c0cd2b3cb14f61d987">FORCEBADALLOC</a>, <a class="el" href="../../d9/d64/class_a_i.html#a50db01d117eb927ffad24144633e455b">forceBadAlloc()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aad1b65f572b8e3c7a3883b294dd25988c">FORCEERROR</a>, <a class="el" href="../../d9/d64/class_a_i.html#a6984601bc3c2d65d1ef69c3b980ff8fa">forceError()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aa64bd4ef80b43028bace678901accc593">MICROPHONE</a>, <a class="el" href="../../d9/d64/class_a_i.html#a6c757fc5f3fbf43d6e512b4649479b16">microphone()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aad5283fdef8c238fe3b05413e6a60dcf0">MORE</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a02b20fd95534d2965054fe05ef092cd4">SimpleDisplay::printAboutUs()</a>, <a class="el" href="../../d9/d64/class_a_i.html#ae5372e8b0787403f2b10c5cd54e90946">recoverSecurity()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aaf99665847d0f2cc4d777e38074c580f6">REMOVEUSER</a>, <a class="el" href="../../d9/d64/class_a_i.html#a86fe75fab41d558922b6333ea27e682d">removeUser()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aa3232fa2a231f866016e3b0b95f08be22">RETURNSECURITY</a>, <a class="el" href="../../d9/d64/class_a_i.html#aa77cc82f290d4386e12c978dcff385ab">showAllUsers()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aae21507964d5d7a83729e7dda4b5b069a">SHOWUSERS</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aaffc8a08a3e6800f81274b492571a2b85">TURNDEVICES</a>, <a class="el" href="../../d9/d64/class_a_i.html#a9722ff1c013e46c23bc3dd4b5af63bd6">turnDevices()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a3b3c681ff340d10c3e3a5805d90c798aacc4a7a1be2396dd1b0a48e25914b0340">TURNSECURITY</a>, and <a class="el" href="../../d9/d64/class_a_i.html#aab98da3e33b41549ee49ba3d7a1acc43">turnSecurity()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>.</p>
 
@@ -1153,22 +1158,22 @@ Static Private Attributes</h2></td></tr>
 
 <p>Calls to print all users registered. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00550">550</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  550</span>                      {</div>
-<div class="line"><span class="lineno">  551</span>    <a class="code hl_function" href="../../d7/d23/class_user.html#aba09368b2af61c833490ff95aff4e9c2">User::printUsers</a>();</div>
-<div class="line"><span class="lineno">  552</span> </div>
-<div class="line"><span class="lineno">  553</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nPress ENTER to return&quot;</span>;</div>
-<div class="line"><span class="lineno">  554</span>    std::cin.get();</div>
-<div class="line"><span class="lineno">  555</span> </div>
-<div class="line"><span class="lineno">  556</span>    <span class="comment">//  Clear bad inputs</span></div>
-<div class="line"><span class="lineno">  557</span>    std::cin.clear();</div>
-<div class="line"><span class="lineno">  558</span> </div>
-<div class="line"><span class="lineno">  559</span>}</div>
-<div class="ttc" id="aclass_user_html_aba09368b2af61c833490ff95aff4e9c2"><div class="ttname"><a href="../../d7/d23/class_user.html#aba09368b2af61c833490ff95aff4e9c2">User::printUsers</a></div><div class="ttdeci">static void printUsers()</div><div class="ttdoc">Prints all registered users.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_user_8cpp_source.html#l00209">User.cpp:209</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00554">554</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  554</span>                      {</div>
+<div class="line"><span class="lineno">  555</span>    <a class="code hl_function" href="../../d7/d23/class_user.html#aba09368b2af61c833490ff95aff4e9c2">User::printUsers</a>();</div>
+<div class="line"><span class="lineno">  556</span> </div>
+<div class="line"><span class="lineno">  557</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\nPress ENTER to return&quot;</span>;</div>
+<div class="line"><span class="lineno">  558</span>    std::cin.get();</div>
+<div class="line"><span class="lineno">  559</span> </div>
+<div class="line"><span class="lineno">  560</span>    <span class="comment">//  Clear bad inputs</span></div>
+<div class="line"><span class="lineno">  561</span>    std::cin.clear();</div>
+<div class="line"><span class="lineno">  562</span> </div>
+<div class="line"><span class="lineno">  563</span>}</div>
+<div class="ttc" id="aclass_user_html_aba09368b2af61c833490ff95aff4e9c2"><div class="ttname"><a href="../../d7/d23/class_user.html#aba09368b2af61c833490ff95aff4e9c2">User::printUsers</a></div><div class="ttdeci">static void printUsers()</div><div class="ttdoc">Prints all registered users.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_user_8cpp_source.html#l00214">User.cpp:214</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/d23/class_user.html#aba09368b2af61c833490ff95aff4e9c2">User::printUsers()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption()</a>.</p>
 
 </div>
 </div>
@@ -1203,26 +1208,26 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="section warning"><dt>Warning</dt><dd>Function should not be used directly. Will be controlled by <a class="el" href="../../d9/d64/class_a_i.html" title="This class will be the responsible for interpreting global commands requested from the main class and...">AI</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00533">533</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  533</span>                                 {</div>
-<div class="line"><span class="lineno">  534</span> </div>
-<div class="line"><span class="lineno">  535</span>    <span class="comment">// ----- Save all data -----</span></div>
-<div class="line"><span class="lineno">  536</span>    <a class="code hl_function" href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">User::saveUserData</a>();</div>
-<div class="line"><span class="lineno">  537</span> </div>
-<div class="line"><span class="lineno">  538</span>    <span class="comment">// ----- Send abortation signal -----</span></div>
-<div class="line"><span class="lineno">  539</span>    <a class="code hl_variable" href="../../d9/d64/class_a_i.html#ad26945ece1d0c8f6268a945617363afd">abort</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">  540</span>    <a class="code hl_variable" href="../../d5/d2e/class_simple_display.html#a3bd71a4ae6085907d26b66e89032fd25">SimpleDisplay::security_abort</a> = <span class="keyword">true</span>;</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00537">537</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  537</span>                                 {</div>
+<div class="line"><span class="lineno">  538</span> </div>
+<div class="line"><span class="lineno">  539</span>    <span class="comment">// ----- Save all data -----</span></div>
+<div class="line"><span class="lineno">  540</span>    <a class="code hl_function" href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">User::saveUserData</a>();</div>
 <div class="line"><span class="lineno">  541</span> </div>
-<div class="line"><span class="lineno">  542</span>    <span class="comment">// ----- Display EXIT CODE -----</span></div>
-<div class="line"><span class="lineno">  543</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> + <a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a> + <span class="stringliteral">&quot;] Exit call detected. Exiting JVH Systems...&quot;</span>;</div>
-<div class="line"><span class="lineno">  544</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
-<div class="line"><span class="lineno">  545</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\n[&quot;</span> + <a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a> + <span class="stringliteral">&quot;] Thank you for trusting us!\n\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  546</span>    exit(0);</div>
-<div class="line"><span class="lineno">  547</span> </div>
-<div class="line"><span class="lineno">  548</span>}</div>
+<div class="line"><span class="lineno">  542</span>    <span class="comment">// ----- Send abortation signal -----</span></div>
+<div class="line"><span class="lineno">  543</span>    <a class="code hl_variable" href="../../d9/d64/class_a_i.html#ad26945ece1d0c8f6268a945617363afd">abort</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  544</span>    <a class="code hl_variable" href="../../d5/d2e/class_simple_display.html#a3bd71a4ae6085907d26b66e89032fd25">SimpleDisplay::security_abort</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">  545</span> </div>
+<div class="line"><span class="lineno">  546</span>    <span class="comment">// ----- Display EXIT CODE -----</span></div>
+<div class="line"><span class="lineno">  547</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> + <a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a> + <span class="stringliteral">&quot;] Exit call detected. Exiting JVH Systems...&quot;</span>;</div>
+<div class="line"><span class="lineno">  548</span>    sleep(<a class="code hl_variable" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>);</div>
+<div class="line"><span class="lineno">  549</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;\n[&quot;</span> + <a class="code hl_variable" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a> + <span class="stringliteral">&quot;] Thank you for trusting us!\n\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  550</span>    exit(0);</div>
+<div class="line"><span class="lineno">  551</span> </div>
+<div class="line"><span class="lineno">  552</span>}</div>
 <div class="ttc" id="aclass_a_i_html_ad26945ece1d0c8f6268a945617363afd"><div class="ttname"><a href="../../d9/d64/class_a_i.html#ad26945ece1d0c8f6268a945617363afd">AI::abort</a></div><div class="ttdeci">static bool abort</div><div class="ttdoc">Alerts if exit request has been detected.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d6f/_a_i_8h_source.html#l00137">AI.h:137</a></div></div>
-<div class="ttc" id="aclass_simple_display_html_a3bd71a4ae6085907d26b66e89032fd25"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a3bd71a4ae6085907d26b66e89032fd25">SimpleDisplay::security_abort</a></div><div class="ttdeci">static bool security_abort</div><div class="ttdoc">Variable to jump if program fail. Default in False.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc7/_simple_display_8h_source.html#l00173">SimpleDisplay.h:173</a></div></div>
-<div class="ttc" id="aclass_user_html_abe917daaebdfb170900ae513c9289a66"><div class="ttname"><a href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">User::saveUserData</a></div><div class="ttdeci">static void saveUserData()</div><div class="ttdoc">Saves all data saved in the set vector to a .dat file.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_user_8cpp_source.html#l00220">User.cpp:220</a></div></div>
+<div class="ttc" id="aclass_simple_display_html_a3bd71a4ae6085907d26b66e89032fd25"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a3bd71a4ae6085907d26b66e89032fd25">SimpleDisplay::security_abort</a></div><div class="ttdeci">static bool security_abort</div><div class="ttdoc">Variable to jump if program fail. Default in False.</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc7/_simple_display_8h_source.html#l00176">SimpleDisplay.h:176</a></div></div>
+<div class="ttc" id="aclass_user_html_abe917daaebdfb170900ae513c9289a66"><div class="ttname"><a href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">User::saveUserData</a></div><div class="ttdeci">static void saveUserData()</div><div class="ttdoc">Saves all data saved in the set vector to a .dat file.</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_user_8cpp_source.html#l00225">User.cpp:225</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d9/d64/class_a_i.html#ad26945ece1d0c8f6268a945617363afd">abort</a>, <a class="el" href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">User::saveUserData()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a3bd71a4ae6085907d26b66e89032fd25">SimpleDisplay::security_abort</a>, <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a953a6cf9b2470503a8b09e1865052621">TAG</a>.</p>
 
@@ -1300,7 +1305,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  101</span> </div>
 <div class="line"><span class="lineno">  102</span>            <span class="keywordflow">if</span> (kbhit()) <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  103</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/d64/class_a_i.html#ad26945ece1d0c8f6268a945617363afd">abort</a>){</div>
-<div class="line"><span class="lineno">  104</span>                <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[WARNING] You should not exit directly from main menu. Use -1 instead.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  104</span>                <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[WARNING] You should not exit directly from main menu. Use -1 instead.\n&quot;</span>);</div>
 <div class="line"><span class="lineno">  105</span>                exit(0);</div>
 <div class="line"><span class="lineno">  106</span>            }</div>
 <div class="line"><span class="lineno">  107</span>            <a class="code hl_function" href="../../d9/d64/class_a_i.html#a0efedc3d8f331d259f82b915f4ed5508">refreshData</a>();</div>
@@ -1317,7 +1322,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  118</span> </div>
 <div class="line"><span class="lineno">  119</span>        <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d6/d67/classkb.html#ad0182e693d377352914210698936eccb">kb::kbhit</a>()) <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="lineno">  120</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d9/d64/class_a_i.html#ad26945ece1d0c8f6268a945617363afd">abort</a>){</div>
-<div class="line"><span class="lineno">  121</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[WARNING] You should not exit directly from main menu. Use -1 instead.\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  121</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;[WARNING] You should not exit directly from main menu. Use -1 instead.\n&quot;</span>);</div>
 <div class="line"><span class="lineno">  122</span>            exit(0);</div>
 <div class="line"><span class="lineno">  123</span>        }</div>
 <div class="line"><span class="lineno">  124</span>        <a class="code hl_function" href="../../d9/d64/class_a_i.html#a0efedc3d8f331d259f82b915f4ed5508">refreshData</a>();</div>
@@ -1332,7 +1337,7 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="aclass_a_i_html_a0efedc3d8f331d259f82b915f4ed5508"><div class="ttname"><a href="../../d9/d64/class_a_i.html#a0efedc3d8f331d259f82b915f4ed5508">AI::refreshData</a></div><div class="ttdeci">void refreshData()</div><div class="ttdoc">Refresh last data to every device built.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dfb/_a_i_8cpp_source.html#l00052">AI.cpp:52</a></div></div>
 <div class="ttc" id="aclasskb_html_ad0182e693d377352914210698936eccb"><div class="ttname"><a href="../../d6/d67/classkb.html#ad0182e693d377352914210698936eccb">kb::kbhit</a></div><div class="ttdeci">static int kbhit()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/de1/kb_8cpp_source.html#l00003">kb.cpp:3</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d9/d64/class_a_i.html#ad26945ece1d0c8f6268a945617363afd">abort</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, <a class="el" href="../../d6/d67/classkb.html#ad0182e693d377352914210698936eccb">kb::kbhit()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a0efedc3d8f331d259f82b915f4ed5508">refreshData()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d64/class_a_i.html#ad26945ece1d0c8f6268a945617363afd">abort</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, <a class="el" href="../../d6/d67/classkb.html#ad0182e693d377352914210698936eccb">kb::kbhit()</a>, <a class="el" href="../../d9/d64/class_a_i.html#a0efedc3d8f331d259f82b915f4ed5508">refreshData()</a>, and <a class="el" href="../../d9/d64/class_a_i.html#a216116b600bdd980ee1332fd1ea3d43f">SLEEPTIME</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>.</p>
 
@@ -1363,35 +1368,35 @@ Static Private Attributes</h2></td></tr>
 
 <p>Turns all devices on/off. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00270">270</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  270</span>                     {</div>
-<div class="line"><span class="lineno">  271</span> </div>
-<div class="line"><span class="lineno">  272</span>    <span class="comment">// ----- Instantiating IODi for easy device control -----</span></div>
-<div class="line"><span class="lineno">  273</span>    <a class="code hl_class" href="../../d2/d59/class_i_o_di.html">IODi</a> iodi;</div>
-<div class="line"><span class="lineno">  274</span> </div>
-<div class="line"><span class="lineno">  275</span>    <span class="comment">// ----- Turning all Devices ON/OFF -----</span></div>
-<div class="line"><span class="lineno">  276</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../d5/d6c/class_data_device.html#a2115c7d518db7acbc9b8e685cb0e5481">DataDevice::numSensors</a>; i++) {</div>
-<div class="line"><span class="lineno">  277</span>        iodi.<a class="code hl_function" href="../../d2/d59/class_i_o_di.html#a2d62a813488c601c0131745e7a41a5cd">setCurrentDevice</a>(i);</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00274">274</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  274</span>                     {</div>
+<div class="line"><span class="lineno">  275</span> </div>
+<div class="line"><span class="lineno">  276</span>    <span class="comment">// ----- Instantiating IODi for easy device control -----</span></div>
+<div class="line"><span class="lineno">  277</span>    <a class="code hl_class" href="../../d2/d59/class_i_o_di.html">IODi</a> iodi;</div>
 <div class="line"><span class="lineno">  278</span> </div>
-<div class="line"><span class="lineno">  279</span>        <span class="keywordflow">if</span> (~<a class="code hl_variable" href="../../d5/d6c/class_data_device.html#a8bc5e93fc1d214eecda51ef443b8f4a0">DataDevice::allDataDevices</a>[i])</div>
-<div class="line"><span class="lineno">  280</span>            iodi.<a class="code hl_function" href="../../d2/d59/class_i_o_di.html#a0a2439bd26bae2ebd86d65feb6fc95ad">requestSkill</a>(<span class="stringliteral">&quot;turnoff&quot;</span>);</div>
-<div class="line"><span class="lineno">  281</span>        <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  282</span>            iodi.<a class="code hl_function" href="../../d2/d59/class_i_o_di.html#a0a2439bd26bae2ebd86d65feb6fc95ad">requestSkill</a>(<span class="stringliteral">&quot;turnon&quot;</span>);</div>
-<div class="line"><span class="lineno">  283</span> </div>
-<div class="line"><span class="lineno">  284</span>    }</div>
-<div class="line"><span class="lineno">  285</span> </div>
-<div class="line"><span class="lineno">  286</span>    <span class="comment">// ----- Exiting... -----</span></div>
-<div class="line"><span class="lineno">  287</span>    std::string none;</div>
-<div class="line"><span class="lineno">  288</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Press ENTER to continue&quot;</span>);</div>
-<div class="line"><span class="lineno">  289</span>    getline(std::cin,none);</div>
-<div class="line"><span class="lineno">  290</span>}</div>
+<div class="line"><span class="lineno">  279</span>    <span class="comment">// ----- Turning all Devices ON/OFF -----</span></div>
+<div class="line"><span class="lineno">  280</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../d5/d6c/class_data_device.html#a2115c7d518db7acbc9b8e685cb0e5481">DataDevice::numSensors</a>; i++) {</div>
+<div class="line"><span class="lineno">  281</span>        iodi.<a class="code hl_function" href="../../d2/d59/class_i_o_di.html#a87b788f3c16f7b9b4cea4e851eeb553a">setCurrentDevice</a>(i);</div>
+<div class="line"><span class="lineno">  282</span> </div>
+<div class="line"><span class="lineno">  283</span>        <span class="keywordflow">if</span> (~<a class="code hl_variable" href="../../d5/d6c/class_data_device.html#a8bc5e93fc1d214eecda51ef443b8f4a0">DataDevice::allDataDevices</a>[i])</div>
+<div class="line"><span class="lineno">  284</span>            iodi.<a class="code hl_function" href="../../d2/d59/class_i_o_di.html#ad1db380c7d5211c6beda44d548807f60">requestSkill</a>(<span class="stringliteral">&quot;turnoff&quot;</span>);</div>
+<div class="line"><span class="lineno">  285</span>        <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  286</span>            iodi.<a class="code hl_function" href="../../d2/d59/class_i_o_di.html#ad1db380c7d5211c6beda44d548807f60">requestSkill</a>(<span class="stringliteral">&quot;turnon&quot;</span>);</div>
+<div class="line"><span class="lineno">  287</span> </div>
+<div class="line"><span class="lineno">  288</span>    }</div>
+<div class="line"><span class="lineno">  289</span> </div>
+<div class="line"><span class="lineno">  290</span>    <span class="comment">// ----- Exiting... -----</span></div>
+<div class="line"><span class="lineno">  291</span>    std::string none;</div>
+<div class="line"><span class="lineno">  292</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Press ENTER to continue&quot;</span>);</div>
+<div class="line"><span class="lineno">  293</span>    getline(std::cin,none);</div>
+<div class="line"><span class="lineno">  294</span>}</div>
 <div class="ttc" id="aclass_i_o_di_html"><div class="ttname"><a href="../../d2/d59/class_i_o_di.html">IODi</a></div><div class="ttdoc">This class will be the responsible for interpreting the status of the devices and sending proper info...</div><div class="ttdef"><b>Definition:</b> <a href="../../da/db5/_i_o_di_8h_source.html#l00019">IODi.h:19</a></div></div>
-<div class="ttc" id="aclass_i_o_di_html_a0a2439bd26bae2ebd86d65feb6fc95ad"><div class="ttname"><a href="../../d2/d59/class_i_o_di.html#a0a2439bd26bae2ebd86d65feb6fc95ad">IODi::requestSkill</a></div><div class="ttdeci">void requestSkill(std::string skill)</div><div class="ttdoc">Uses a skill from selected device.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2c/_i_o_di_8cpp_source.html#l00129">IODi.cpp:129</a></div></div>
-<div class="ttc" id="aclass_i_o_di_html_a2d62a813488c601c0131745e7a41a5cd"><div class="ttname"><a href="../../d2/d59/class_i_o_di.html#a2d62a813488c601c0131745e7a41a5cd">IODi::setCurrentDevice</a></div><div class="ttdeci">void setCurrentDevice(std::string name)</div><div class="ttdoc">Sets the id and position of current device inside IODi.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2c/_i_o_di_8cpp_source.html#l00047">IODi.cpp:47</a></div></div>
+<div class="ttc" id="aclass_i_o_di_html_a87b788f3c16f7b9b4cea4e851eeb553a"><div class="ttname"><a href="../../d2/d59/class_i_o_di.html#a87b788f3c16f7b9b4cea4e851eeb553a">IODi::setCurrentDevice</a></div><div class="ttdeci">void setCurrentDevice(const std::string &amp;name)</div><div class="ttdoc">Sets the id and position of current device inside IODi.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2c/_i_o_di_8cpp_source.html#l00047">IODi.cpp:47</a></div></div>
+<div class="ttc" id="aclass_i_o_di_html_ad1db380c7d5211c6beda44d548807f60"><div class="ttname"><a href="../../d2/d59/class_i_o_di.html#ad1db380c7d5211c6beda44d548807f60">IODi::requestSkill</a></div><div class="ttdeci">void requestSkill(const std::string &amp;skill)</div><div class="ttdoc">Uses a skill from selected device.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2c/_i_o_di_8cpp_source.html#l00129">IODi.cpp:129</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d6c/class_data_device.html#a8bc5e93fc1d214eecda51ef443b8f4a0">DataDevice::allDataDevices</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, <a class="el" href="../../d5/d6c/class_data_device.html#a2115c7d518db7acbc9b8e685cb0e5481">DataDevice::numSensors</a>, <a class="el" href="../../d2/d59/class_i_o_di.html#a0a2439bd26bae2ebd86d65feb6fc95ad">IODi::requestSkill()</a>, and <a class="el" href="../../d2/d59/class_i_o_di.html#a2d62a813488c601c0131745e7a41a5cd">IODi::setCurrentDevice()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d6c/class_data_device.html#a8bc5e93fc1d214eecda51ef443b8f4a0">DataDevice::allDataDevices</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, <a class="el" href="../../d5/d6c/class_data_device.html#a2115c7d518db7acbc9b8e685cb0e5481">DataDevice::numSensors</a>, <a class="el" href="../../d2/d59/class_i_o_di.html#ad1db380c7d5211c6beda44d548807f60">IODi::requestSkill()</a>, and <a class="el" href="../../d2/d59/class_i_o_di.html#a87b788f3c16f7b9b4cea4e851eeb553a">IODi::setCurrentDevice()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption()</a>.</p>
 
 </div>
 </div>
@@ -1420,39 +1425,39 @@ Static Private Attributes</h2></td></tr>
 
 <p>Turns all security on/off. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00292">292</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  292</span>                      {</div>
-<div class="line"><span class="lineno">  293</span> </div>
-<div class="line"><span class="lineno">  294</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>; i++) {</div>
-<div class="line"><span class="lineno">  295</span> </div>
-<div class="line"><span class="lineno">  296</span>        <span class="comment">// Accessing Device</span></div>
-<div class="line"><span class="lineno">  297</span>        <a class="code hl_class" href="../../df/db2/class_kernel_device.html">KernelDevice</a> *k = &amp;<a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>[i];</div>
-<div class="line"><span class="lineno">  298</span> </div>
-<div class="line"><span class="lineno">  299</span>        <span class="comment">// Checking Status</span></div>
-<div class="line"><span class="lineno">  300</span>        k-&gt;<a class="code hl_variable" href="../../df/dd8/class_device.html#a5a26b44c35d67c0819a5ed969ca95ca0">isActive</a> = !~(*k);</div>
-<div class="line"><span class="lineno">  301</span> </div>
-<div class="line"><span class="lineno">  302</span>        <span class="comment">// Turning ON/OFF</span></div>
-<div class="line"><span class="lineno">  303</span>        <span class="keywordflow">if</span> (~(*k)) {</div>
-<div class="line"><span class="lineno">  304</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(k-&gt;<a class="code hl_function" href="../../df/dd8/class_device.html#a7e27b36eae579176707a47b682d84a22">getName</a>() + <span class="stringliteral">&quot; turned ON\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  305</span>            <a class="code hl_variable" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>-&gt;<a class="code hl_function" href="../../d5/d2e/class_simple_display.html#af3347757fb1111a5360f064dd152390f">setSecurityConnected</a>(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">  306</span>        }</div>
-<div class="line"><span class="lineno">  307</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">  308</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(k-&gt;<a class="code hl_function" href="../../df/dd8/class_device.html#a7e27b36eae579176707a47b682d84a22">getName</a>() + <span class="stringliteral">&quot; turned OFF\n&quot;</span>);</div>
-<div class="line"><span class="lineno">  309</span>            <a class="code hl_variable" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>-&gt;<a class="code hl_function" href="../../d5/d2e/class_simple_display.html#af3347757fb1111a5360f064dd152390f">setSecurityConnected</a>(<span class="keyword">false</span>);</div>
+<p class="definition">Definition at line <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html#l00296">296</a> of file <a class="el" href="../../d0/dfb/_a_i_8cpp_source.html">AI.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  296</span>                      {</div>
+<div class="line"><span class="lineno">  297</span> </div>
+<div class="line"><span class="lineno">  298</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>; i++) {</div>
+<div class="line"><span class="lineno">  299</span> </div>
+<div class="line"><span class="lineno">  300</span>        <span class="comment">// Accessing Device</span></div>
+<div class="line"><span class="lineno">  301</span>        <a class="code hl_class" href="../../df/db2/class_kernel_device.html">KernelDevice</a> *k = &amp;<a class="code hl_variable" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>[i];</div>
+<div class="line"><span class="lineno">  302</span> </div>
+<div class="line"><span class="lineno">  303</span>        <span class="comment">// Checking Status</span></div>
+<div class="line"><span class="lineno">  304</span>        k-&gt;<a class="code hl_variable" href="../../df/dd8/class_device.html#a5a26b44c35d67c0819a5ed969ca95ca0">isActive</a> = !~(*k);</div>
+<div class="line"><span class="lineno">  305</span> </div>
+<div class="line"><span class="lineno">  306</span>        <span class="comment">// Turning ON/OFF</span></div>
+<div class="line"><span class="lineno">  307</span>        <span class="keywordflow">if</span> (~(*k)) {</div>
+<div class="line"><span class="lineno">  308</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(k-&gt;<a class="code hl_function" href="../../df/dd8/class_device.html#a7e27b36eae579176707a47b682d84a22">getName</a>() + <span class="stringliteral">&quot; turned ON\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  309</span>            <a class="code hl_variable" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>-&gt;<a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a8d4e1eabdf54c783e9d09b01880170c4">setSecurityConnected</a>(<span class="keyword">true</span>);</div>
 <div class="line"><span class="lineno">  310</span>        }</div>
-<div class="line"><span class="lineno">  311</span>    }</div>
-<div class="line"><span class="lineno">  312</span> </div>
-<div class="line"><span class="lineno">  313</span>    <span class="comment">// ----- Exiting -----</span></div>
-<div class="line"><span class="lineno">  314</span>    std::string none;</div>
-<div class="line"><span class="lineno">  315</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Press ENTER to continue&quot;</span>);</div>
-<div class="line"><span class="lineno">  316</span>    getline(std::cin,none);</div>
-<div class="line"><span class="lineno">  317</span>}</div>
+<div class="line"><span class="lineno">  311</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  312</span>            <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(k-&gt;<a class="code hl_function" href="../../df/dd8/class_device.html#a7e27b36eae579176707a47b682d84a22">getName</a>() + <span class="stringliteral">&quot; turned OFF\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  313</span>            <a class="code hl_variable" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>-&gt;<a class="code hl_function" href="../../d5/d2e/class_simple_display.html#a8d4e1eabdf54c783e9d09b01880170c4">setSecurityConnected</a>(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">  314</span>        }</div>
+<div class="line"><span class="lineno">  315</span>    }</div>
+<div class="line"><span class="lineno">  316</span> </div>
+<div class="line"><span class="lineno">  317</span>    <span class="comment">// ----- Exiting -----</span></div>
+<div class="line"><span class="lineno">  318</span>    std::string none;</div>
+<div class="line"><span class="lineno">  319</span>    <a class="code hl_function" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout</a>(<span class="stringliteral">&quot;Press ENTER to continue&quot;</span>);</div>
+<div class="line"><span class="lineno">  320</span>    getline(std::cin,none);</div>
+<div class="line"><span class="lineno">  321</span>}</div>
 <div class="ttc" id="aclass_device_html_a5a26b44c35d67c0819a5ed969ca95ca0"><div class="ttname"><a href="../../df/dd8/class_device.html#a5a26b44c35d67c0819a5ed969ca95ca0">Device::isActive</a></div><div class="ttdeci">bool isActive</div><div class="ttdoc">(True). Is turned ON. (False). Is turned OFF.</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d8b/_device_8h_source.html#l00121">Device.h:121</a></div></div>
-<div class="ttc" id="aclass_simple_display_html_af3347757fb1111a5360f064dd152390f"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#af3347757fb1111a5360f064dd152390f">SimpleDisplay::setSecurityConnected</a></div><div class="ttdeci">void setSecurityConnected(bool securityConnected)</div><div class="ttdoc">Sets the connection status of the alarms.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00471">SimpleDisplay.cpp:471</a></div></div>
+<div class="ttc" id="aclass_simple_display_html_a8d4e1eabdf54c783e9d09b01880170c4"><div class="ttname"><a href="../../d5/d2e/class_simple_display.html#a8d4e1eabdf54c783e9d09b01880170c4">SimpleDisplay::setSecurityConnected</a></div><div class="ttdeci">void setSecurityConnected(const bool securityConnected)</div><div class="ttdoc">Sets the connection status of the alarms.</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/df7/_simple_display_8cpp_source.html#l00492">SimpleDisplay.cpp:492</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a022eab221671583a329e067d6af18035">SimpleDisplay::cout()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>, <a class="el" href="../../df/dd8/class_device.html#a7e27b36eae579176707a47b682d84a22">Device::getName()</a>, <a class="el" href="../../df/dd8/class_device.html#a5a26b44c35d67c0819a5ed969ca95ca0">Device::isActive</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>, and <a class="el" href="../../d5/d2e/class_simple_display.html#af3347757fb1111a5360f064dd152390f">SimpleDisplay::setSecurityConnected()</a>.</p>
+<p class="reference">References <a class="el" href="../../df/db2/class_kernel_device.html#a31294b124e12af14435dc0a2c5b8d168">KernelDevice::allKernelDevices</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#ab93019861da9b9bc4f55cb9a590cea68">SimpleDisplay::cout()</a>, <a class="el" href="../../d5/d2e/class_simple_display.html#a0eb6a5ee328ba2c8fbfce97cd7f503c8">SimpleDisplay::currentDisplay</a>, <a class="el" href="../../df/dd8/class_device.html#a7e27b36eae579176707a47b682d84a22">Device::getName()</a>, <a class="el" href="../../df/dd8/class_device.html#a5a26b44c35d67c0819a5ed969ca95ca0">Device::isActive</a>, <a class="el" href="../../df/db2/class_kernel_device.html#a35b214d14f5c719b042c01243e0c0e2e">KernelDevice::numKerns</a>, and <a class="el" href="../../d5/d2e/class_simple_display.html#a8d4e1eabdf54c783e9d09b01880170c4">SimpleDisplay::setSecurityConnected()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a64b7ffd10cca70b802dcb4ba1fb1c92a">requestOption()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a2e5906fc706ef49159f1a70296174c8b">requestOption()</a>.</p>
 
 </div>
 </div>

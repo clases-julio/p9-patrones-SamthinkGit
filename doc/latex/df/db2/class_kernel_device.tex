@@ -20,7 +20,7 @@ Inheritance diagram for Kernel\+Device\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{class_kernel_device_ae5e577dcdaece5f904780eae1d171ba3}{Kernel\+Device}} ()
 \begin{DoxyCompactList}\small\item\em Creates a New \mbox{\hyperlink{class_kernel_device}{Kernel\+Device}}. It uses invalid properties by default. Not recommended. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_kernel_device_aa74483987a8e2e50ef32840556759fbc}{Kernel\+Device}} (std\+::string \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}}, int \mbox{\hyperlink{class_device_acba8d88e9870a9c9e034c4e438264655}{id}})
+\mbox{\hyperlink{class_kernel_device_aacfca1a4501e98262eb3274fda08844f}{Kernel\+Device}} (const std\+::string \&\mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{name}}, const int \mbox{\hyperlink{class_device_acba8d88e9870a9c9e034c4e438264655}{id}})
 \begin{DoxyCompactList}\small\item\em Builds a new \mbox{\hyperlink{class_kernel_device}{Kernel\+Device}} and assign its basic properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Private Member Functions}
 \begin{DoxyCompactItemize}
@@ -88,11 +88,11 @@ Definition at line \mbox{\hyperlink{_kernel_device_8cpp_source_l00021}{21}} of f
 
 References \mbox{\hyperlink{class_device_a19a8076136a46828cd8d033aa6484f62a0003173c43d43bad9adae885a4049437}{Device\+::\+INVALID\+\_\+\+DEVICE}}, \mbox{\hyperlink{class_device_a5a26b44c35d67c0819a5ed969ca95ca0}{Device\+::is\+Active}}, \mbox{\hyperlink{class_device_ac4ed6d5c75b13d8095157c0c0a5e268c}{Device\+::is\+Data\+Device}}, \mbox{\hyperlink{class_device_ae779f5ee618677629b71287f3f77f8e8}{Device\+::name}}, and \mbox{\hyperlink{class_kernel_device_abed622ff7f34cfef1084789717783382}{security\+Has\+Been\+Broken}}.
 
-\mbox{\Hypertarget{class_kernel_device_aa74483987a8e2e50ef32840556759fbc}\label{class_kernel_device_aa74483987a8e2e50ef32840556759fbc}} 
+\mbox{\Hypertarget{class_kernel_device_aacfca1a4501e98262eb3274fda08844f}\label{class_kernel_device_aacfca1a4501e98262eb3274fda08844f}} 
 \index{KernelDevice@{KernelDevice}!KernelDevice@{KernelDevice}}
 \index{KernelDevice@{KernelDevice}!KernelDevice@{KernelDevice}}
 \doxysubsubsection{\texorpdfstring{KernelDevice()}{KernelDevice()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Kernel\+Device\+::\+Kernel\+Device (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{int}]{id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Kernel\+Device\+::\+Kernel\+Device (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const int}]{id }\end{DoxyParamCaption})}
 
 
 
@@ -111,7 +111,7 @@ Definition at line \mbox{\hyperlink{_kernel_device_8cpp_source_l00030}{30}} of f
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00030                                                  \{}
+\DoxyCodeLine{00030                                                               \{}
 \DoxyCodeLine{00031 }
 \DoxyCodeLine{00032     std::cout << \textcolor{stringliteral}{"{}[KernelDevice] New Device Detected: 0x"{}} << \textcolor{keywordtype}{id} << std::endl;}
 \DoxyCodeLine{00033 }
@@ -221,7 +221,7 @@ Definition at line \mbox{\hyperlink{_kernel_device_8h_source_l00060}{60}} of fil
 
 
 
-Referenced by \mbox{\hyperlink{class_a_i_aeafba0fc07e4e9672930aa3341619679}{AI\+::build\+Device()}}, \mbox{\hyperlink{class_a_i_addd22a78b4ec596e5ae9554113c6a2d1}{AI\+::check\+Security()}}, \mbox{\hyperlink{class_a_i_a6984601bc3c2d65d1ef69c3b980ff8fa}{AI\+::force\+Error()}}, \mbox{\hyperlink{class_kernel_device_aa74483987a8e2e50ef32840556759fbc}{Kernel\+Device()}}, \mbox{\hyperlink{class_a_i_ae5372e8b0787403f2b10c5cd54e90946}{AI\+::recover\+Security()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, and \mbox{\hyperlink{class_a_i_aab98da3e33b41549ee49ba3d7a1acc43}{AI\+::turn\+Security()}}.
+Referenced by \mbox{\hyperlink{class_a_i_aeafba0fc07e4e9672930aa3341619679}{AI\+::build\+Device()}}, \mbox{\hyperlink{class_a_i_addd22a78b4ec596e5ae9554113c6a2d1}{AI\+::check\+Security()}}, \mbox{\hyperlink{class_a_i_a6984601bc3c2d65d1ef69c3b980ff8fa}{AI\+::force\+Error()}}, \mbox{\hyperlink{class_kernel_device_aacfca1a4501e98262eb3274fda08844f}{Kernel\+Device()}}, \mbox{\hyperlink{class_a_i_ae5372e8b0787403f2b10c5cd54e90946}{AI\+::recover\+Security()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, and \mbox{\hyperlink{class_a_i_aab98da3e33b41549ee49ba3d7a1acc43}{AI\+::turn\+Security()}}.
 
 \mbox{\Hypertarget{class_kernel_device_ad6e98575508ef1c3000fd1b3607a4b4f}\label{class_kernel_device_ad6e98575508ef1c3000fd1b3607a4b4f}} 
 \index{KernelDevice@{KernelDevice}!securityGenerator@{securityGenerator}}

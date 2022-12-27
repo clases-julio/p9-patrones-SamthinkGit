@@ -1,7 +1,7 @@
 var class_data_device =
 [
     [ "DataDevice", "d5/d6c/class_data_device.html#a462db6e238eaabb44993fcc14a033fe5", null ],
-    [ "DataDevice", "d5/d6c/class_data_device.html#acf681a462dfc4ec298bbcb9fa71e31aa", null ],
+    [ "DataDevice", "d5/d6c/class_data_device.html#a5323b423e08f4b173152ca88c231893b", null ],
     [ "appendNewData", "d5/d6c/class_data_device.html#a85f84c66617b0d6becbdd40d742b8d33", null ],
     [ "getNumSensors", "d5/d6c/class_data_device.html#a4499875b3c1a52ce8bbaf5f3c7de9e05", null ],
     [ "setAllDataDevices", "d5/d6c/class_data_device.html#a7ccc44a600f337b8cd6419e096b2468b", null ],

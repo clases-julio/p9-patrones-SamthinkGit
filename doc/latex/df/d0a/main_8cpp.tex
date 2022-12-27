@@ -5,7 +5,7 @@
 This is the main Test Program, Running for testing snapshot.  
 
 
-{\ttfamily \#include \char`\"{}../headers/\+Device\+Composite.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Device\+Composite.\+h\char`\"{}}\newline
 \doxysubsection*{main}
 \begin{DoxyAuthor}{Author}
 Sebastian Mayorquin 
@@ -125,177 +125,180 @@ Definition at line \mbox{\hyperlink{main_8cpp_source_l00027}{27}} of file \mbox{
 \DoxyCodeLine{00055         \}}
 \DoxyCodeLine{00056 \textcolor{preprocessor}{    \#endif}}
 \DoxyCodeLine{00057 }
-\DoxyCodeLine{00058     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing Builder + Display -\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00059     std::cout << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/ [STARTING BUILDING] -\/-\/-\/-\/-\/-\/-\/-\/"{}} << std::endl;}
-\DoxyCodeLine{00060     \mbox{\hyperlink{classdevice_dataset_aeb0802ce7e16664f49e877d427702b4e}{deviceDataset::initDataset}}();}
-\DoxyCodeLine{00061     \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{DeviceBuilder::buildAllDevices}}();}
-\DoxyCodeLine{00062     \mbox{\hyperlink{class_simple_display}{SimpleDisplay}}* display = \mbox{\hyperlink{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}{DeviceBuilder::buildDisplay}}();}
-\DoxyCodeLine{00063 }
-\DoxyCodeLine{00064     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing AI-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00065     \mbox{\hyperlink{class_a_i}{AI}}* ai = \textcolor{keyword}{new} \mbox{\hyperlink{class_a_i}{AI}}();}
-\DoxyCodeLine{00066     ai-\/>\mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{startCollectingData}}();}
-\DoxyCodeLine{00067 }
-\DoxyCodeLine{00068     std::cout << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/ [BUILDING SUCCESS] -\/-\/-\/-\/-\/-\/-\/-\/"{}} << std::endl;}
-\DoxyCodeLine{00069 }
-\DoxyCodeLine{00070     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing IODi -\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00071     \textcolor{keywordtype}{int} screen\_status = \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06caa8837eaf5f57386a2cd20e077fb840bf}{MAIN\_SCREEN}};}
-\DoxyCodeLine{00072     std::string answer = \textcolor{stringliteral}{"{}"{}};}
-\DoxyCodeLine{00073     \mbox{\hyperlink{class_i_o_di}{IODi}}* iodi = \textcolor{keyword}{new} \mbox{\hyperlink{class_i_o_di}{IODi}}();}
-\DoxyCodeLine{00074 }
-\DoxyCodeLine{00075     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializig composite -\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00076     \mbox{\hyperlink{class_device_composite}{DeviceComposite}}* composite = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_composite}{DeviceComposite}};}
+\DoxyCodeLine{00058     \textcolor{comment}{// -\/-\/-\/-\/-\/ Getting current directory -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00059     std::string executablePath(argv[0]);}
+\DoxyCodeLine{00060     \mbox{\hyperlink{class_user_ad1e613a622e5067058e2fed421a319a2}{User::EXECUTABLE\_DIR}} = executablePath.substr(0, executablePath.find\_last\_of(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)/"{}}));}
+\DoxyCodeLine{00061     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing Builder + Display -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00062     std::cout << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/ [STARTING BUILDING] -\/-\/-\/-\/-\/-\/-\/-\/"{}} << std::endl;}
+\DoxyCodeLine{00063     \mbox{\hyperlink{classdevice_dataset_aeb0802ce7e16664f49e877d427702b4e}{deviceDataset::initDataset}}();}
+\DoxyCodeLine{00064     \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{DeviceBuilder::buildAllDevices}}();}
+\DoxyCodeLine{00065     \mbox{\hyperlink{class_simple_display}{SimpleDisplay}}* display = \mbox{\hyperlink{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}{DeviceBuilder::buildDisplay}}();}
+\DoxyCodeLine{00066 }
+\DoxyCodeLine{00067     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing AI-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00068     \mbox{\hyperlink{class_a_i}{AI}}* ai = \textcolor{keyword}{new} \mbox{\hyperlink{class_a_i}{AI}}();}
+\DoxyCodeLine{00069     ai-\/>\mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{startCollectingData}}();}
+\DoxyCodeLine{00070 }
+\DoxyCodeLine{00071     std::cout << \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/ [BUILDING SUCCESS] -\/-\/-\/-\/-\/-\/-\/-\/"{}} << std::endl;}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing IODi -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00074     \textcolor{keywordtype}{int} screen\_status = \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06caa8837eaf5f57386a2cd20e077fb840bf}{MAIN\_SCREEN}};}
+\DoxyCodeLine{00075     std::string answer = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{00076     \mbox{\hyperlink{class_i_o_di}{IODi}}* iodi = \textcolor{keyword}{new} \mbox{\hyperlink{class_i_o_di}{IODi}}();}
 \DoxyCodeLine{00077 }
-\DoxyCodeLine{00078     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing User Data-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00079     \textcolor{keywordflow}{try} \{}
-\DoxyCodeLine{00080         \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{User::updateUserData}}();}
-\DoxyCodeLine{00081     \}\textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_invalid_file_exception}{InvalidFileException}} \&e)\{}
-\DoxyCodeLine{00082         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n[Login] There has been an error updating user file, exiting..."{}};}
-\DoxyCodeLine{00083         exit(1);}
-\DoxyCodeLine{00084     \}\textcolor{keywordflow}{catch} (std::exception \&e)\{}
-\DoxyCodeLine{00085         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n[Login] There has been an error accessing the file, exiting..."{}};}
+\DoxyCodeLine{00078     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializig composite -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00079     \mbox{\hyperlink{class_device_composite}{DeviceComposite}}* composite = \textcolor{keyword}{new} \mbox{\hyperlink{class_device_composite}{DeviceComposite}};}
+\DoxyCodeLine{00080 }
+\DoxyCodeLine{00081     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing User Data-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00082     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00083         \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{User::updateUserData}}();}
+\DoxyCodeLine{00084     \}\textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_invalid_file_exception}{InvalidFileException}} \&e)\{}
+\DoxyCodeLine{00085         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n[Login] There has been an error updating user file, exiting..."{}};}
 \DoxyCodeLine{00086         exit(1);}
-\DoxyCodeLine{00087     \}}
-\DoxyCodeLine{00088     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing Login -\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00089     \mbox{\hyperlink{class_login}{Login}}* l = \textcolor{keyword}{new} \mbox{\hyperlink{class_login}{Login}}();}
-\DoxyCodeLine{00090 }
-\DoxyCodeLine{00091     std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nPress ENTER to start"{}};}
-\DoxyCodeLine{00092     std::cin.get();}
-\DoxyCodeLine{00093 }
-\DoxyCodeLine{00094     \textcolor{comment}{//  Clear bad inputs}}
-\DoxyCodeLine{00095     std::cin.clear();}
-\DoxyCodeLine{00096 }
-\DoxyCodeLine{00097     \textcolor{comment}{// -\/-\/-\/-\/-\/ Checking Developer Status -\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00098     \textcolor{keywordflow}{if} (!IS\_DEVELOPER) \{}
-\DoxyCodeLine{00099         \mbox{\hyperlink{class_simple_display_aeabda5fb7b33348d08e818b8bd4d80de}{SimpleDisplay::printPresentation}}();}
-\DoxyCodeLine{00100         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nPress ENTER to start"{}};}
-\DoxyCodeLine{00101         std::cin.get();}
-\DoxyCodeLine{00102     \}}
-\DoxyCodeLine{00103 }
-\DoxyCodeLine{00104     \textcolor{comment}{//  Clear bad inputs}}
-\DoxyCodeLine{00105     std::cin.clear();}
-\DoxyCodeLine{00106 }
-\DoxyCodeLine{00107     \textcolor{comment}{// -\/-\/-\/-\/-\/ Sending to Logger -\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00108     \mbox{\hyperlink{class_user}{User}} user;}
-\DoxyCodeLine{00109     \textcolor{keywordflow}{if} (!IS\_DEVELOPER)}
-\DoxyCodeLine{00110         user = l-\/>\mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{startLogin}}();}
-\DoxyCodeLine{00111     \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{00112         user = \mbox{\hyperlink{class_user}{User}}(\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}{User::DEVELOPER\_USER}});}
-\DoxyCodeLine{00113     \}}
-\DoxyCodeLine{00114     \textcolor{comment}{// -\/-\/-\/-\/-\/ Setting User -\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00115     display-\/>\mbox{\hyperlink{class_simple_display_af70bf795d69386a4d6c42aa18fc9a67d}{setUser}}(IS\_DEVELOPER ? \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}{User::DEVELOPER\_USER}} : user.\mbox{\hyperlink{class_user_a19c51c10009a056caac5053717eb8b89}{getUser}}());}
-\DoxyCodeLine{00116     display-\/>\mbox{\hyperlink{class_simple_display_a427ece0206cfe9ab5128f8cb057022b9}{setGroup}}((user.\mbox{\hyperlink{class_user_aa374b1065ea942d3d2d46085539c257e}{getAdminStatus}}() ? \textcolor{stringliteral}{"{}ADMIN"{}} : \textcolor{stringliteral}{"{}GUEST"{}}));}
-\DoxyCodeLine{00117 }
-\DoxyCodeLine{00118     \textcolor{comment}{// -\/-\/-\/-\/-\/ [MAIN BUCLE] -\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00119     \textcolor{keywordflow}{while}(\textcolor{keyword}{true})\{}
-\DoxyCodeLine{00120 }
-\DoxyCodeLine{00121         \textcolor{comment}{// -\/-\/-\/-\/-\/ MAIN SCREEN -\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00122         \textcolor{keywordflow}{if} (screen\_status == \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06caa8837eaf5f57386a2cd20e077fb840bf}{MAIN\_SCREEN}}) \{}
-\DoxyCodeLine{00123 }
-\DoxyCodeLine{00124             \textcolor{comment}{// Print Display}}
-\DoxyCodeLine{00125             std::string *deviceNames = iodi-\/>\mbox{\hyperlink{class_i_o_di_a2142cdf8cd8f6e33d8463ea86c514f3f}{requestDeviceNames}}();}
-\DoxyCodeLine{00126             display-\/>\mbox{\hyperlink{class_simple_display_a92871124832f3d169fc288fc1d84c9ba}{printMainInterface}}(deviceNames,iodi-\/>\mbox{\hyperlink{class_i_o_di_ae8f0575dd0958aabfb7e41ae2165aaf5}{requestAllStatus}}());}
+\DoxyCodeLine{00087         std::cout << \textcolor{stringliteral}{"{}[HERE]"{}};}
+\DoxyCodeLine{00088     \}\textcolor{keywordflow}{catch} (std::exception \&e)\{}
+\DoxyCodeLine{00089         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n[Login] There has been an error accessing the file, exiting..."{}};}
+\DoxyCodeLine{00090         exit(1);}
+\DoxyCodeLine{00091     \}}
+\DoxyCodeLine{00092     \textcolor{comment}{// -\/-\/-\/-\/-\/ Initializing Login -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00093     \mbox{\hyperlink{class_login}{Login}}* l = \textcolor{keyword}{new} \mbox{\hyperlink{class_login}{Login}}();}
+\DoxyCodeLine{00094 }
+\DoxyCodeLine{00095     std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nPress ENTER to start"{}};}
+\DoxyCodeLine{00096     std::cin.get();}
+\DoxyCodeLine{00097 }
+\DoxyCodeLine{00098     \textcolor{comment}{//  Clear bad inputs}}
+\DoxyCodeLine{00099     std::cin.clear();}
+\DoxyCodeLine{00100 }
+\DoxyCodeLine{00101     \textcolor{comment}{// -\/-\/-\/-\/-\/ Checking Developer Status -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00102     \textcolor{keywordflow}{if} (!IS\_DEVELOPER) \{}
+\DoxyCodeLine{00103         \mbox{\hyperlink{class_simple_display_aeabda5fb7b33348d08e818b8bd4d80de}{SimpleDisplay::printPresentation}}();}
+\DoxyCodeLine{00104         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)nPress ENTER to start"{}};}
+\DoxyCodeLine{00105         std::cin.get();}
+\DoxyCodeLine{00106     \}}
+\DoxyCodeLine{00107 }
+\DoxyCodeLine{00108     \textcolor{comment}{//  Clear bad inputs}}
+\DoxyCodeLine{00109     std::cin.clear();}
+\DoxyCodeLine{00110 }
+\DoxyCodeLine{00111     \textcolor{comment}{// -\/-\/-\/-\/-\/ Sending to Logger -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00112     \mbox{\hyperlink{class_user}{User}} user;}
+\DoxyCodeLine{00113     \textcolor{keywordflow}{if} (!IS\_DEVELOPER)}
+\DoxyCodeLine{00114         user = l-\/>\mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{startLogin}}();}
+\DoxyCodeLine{00115     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00116         user = \mbox{\hyperlink{class_user}{User}}(\mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}{User::DEVELOPER\_USER}});}
+\DoxyCodeLine{00117     \}}
+\DoxyCodeLine{00118     \textcolor{comment}{// -\/-\/-\/-\/-\/ Setting User -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00119     display-\/>\mbox{\hyperlink{class_simple_display_a47254abb80e2d0414e5a88f2977112af}{setUser}}(IS\_DEVELOPER ? \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}{User::DEVELOPER\_USER}} : user.\mbox{\hyperlink{class_user_a19c51c10009a056caac5053717eb8b89}{getUser}}());}
+\DoxyCodeLine{00120     display-\/>\mbox{\hyperlink{class_simple_display_a427ece0206cfe9ab5128f8cb057022b9}{setGroup}}((user.\mbox{\hyperlink{class_user_aa374b1065ea942d3d2d46085539c257e}{getAdminStatus}}() ? \textcolor{stringliteral}{"{}ADMIN"{}} : \textcolor{stringliteral}{"{}GUEST"{}}));}
+\DoxyCodeLine{00121 }
+\DoxyCodeLine{00122     \textcolor{comment}{// -\/-\/-\/-\/-\/ [MAIN BUCLE] -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00123     \textcolor{keywordflow}{while}(\textcolor{keyword}{true})\{}
+\DoxyCodeLine{00124 }
+\DoxyCodeLine{00125         \textcolor{comment}{// -\/-\/-\/-\/-\/ MAIN SCREEN -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00126         \textcolor{keywordflow}{if} (screen\_status == \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06caa8837eaf5f57386a2cd20e077fb840bf}{MAIN\_SCREEN}}) \{}
 \DoxyCodeLine{00127 }
-\DoxyCodeLine{00128             \textcolor{comment}{// Request an entry}}
-\DoxyCodeLine{00129             \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Keyboard: "{}});}
-\DoxyCodeLine{00130             ai-\/>\mbox{\hyperlink{class_a_i_af0e91e54ac652671696c09468852fc0b}{throwDemon}}(); \textcolor{comment}{// Update while not entry}}
-\DoxyCodeLine{00131             std::cin >> answer;}
-\DoxyCodeLine{00132 }
-\DoxyCodeLine{00133             \textcolor{comment}{// Exit if requested}}
-\DoxyCodeLine{00134             \textcolor{keywordflow}{if} (answer == \textcolor{stringliteral}{"{}exit"{}} || answer == \textcolor{stringliteral}{"{}-\/1"{}}) \{}
-\DoxyCodeLine{00135 }
-\DoxyCodeLine{00136                 \textcolor{comment}{// Generating Logger}}
-\DoxyCodeLine{00137                 user = l-\/>\mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{startLogin}}();}
-\DoxyCodeLine{00138                 display-\/>\mbox{\hyperlink{class_simple_display_af70bf795d69386a4d6c42aa18fc9a67d}{setUser}}(user.\mbox{\hyperlink{class_user_a19c51c10009a056caac5053717eb8b89}{getUser}}());}
-\DoxyCodeLine{00139                 display-\/>\mbox{\hyperlink{class_simple_display_a427ece0206cfe9ab5128f8cb057022b9}{setGroup}}((user.\mbox{\hyperlink{class_user_aa374b1065ea942d3d2d46085539c257e}{getAdminStatus}}() ? \textcolor{stringliteral}{"{}ADMIN"{}} : \textcolor{stringliteral}{"{}GUEST"{}}));}
-\DoxyCodeLine{00140 }
-\DoxyCodeLine{00141             \}}
-\DoxyCodeLine{00142 }
-\DoxyCodeLine{00143             \textcolor{comment}{// Go to Settings if requested}}
-\DoxyCodeLine{00144             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (answer == \textcolor{stringliteral}{"{}settings"{}} || answer == \textcolor{stringliteral}{"{}-\/2"{}}) \{}
-\DoxyCodeLine{00145                 screen\_status = \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06cab48901185c75a3b81724defec1092fc5}{SETTINGS\_SCREEN}};}
-\DoxyCodeLine{00146             \}}
-\DoxyCodeLine{00147 }
-\DoxyCodeLine{00148             \textcolor{comment}{// Entry not recognized, sending to IODi}}
-\DoxyCodeLine{00149             \textcolor{keywordflow}{else}}
-\DoxyCodeLine{00150                 \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00128             \textcolor{comment}{// Print Display}}
+\DoxyCodeLine{00129             std::string *deviceNames = iodi-\/>\mbox{\hyperlink{class_i_o_di_a2142cdf8cd8f6e33d8463ea86c514f3f}{requestDeviceNames}}();}
+\DoxyCodeLine{00130             display-\/>\mbox{\hyperlink{class_simple_display_a92871124832f3d169fc288fc1d84c9ba}{printMainInterface}}(deviceNames,iodi-\/>\mbox{\hyperlink{class_i_o_di_ae8f0575dd0958aabfb7e41ae2165aaf5}{requestAllStatus}}());}
+\DoxyCodeLine{00131 }
+\DoxyCodeLine{00132             \textcolor{comment}{// Request an entry}}
+\DoxyCodeLine{00133             \mbox{\hyperlink{class_simple_display_ab93019861da9b9bc4f55cb9a590cea68}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Keyboard: "{}});}
+\DoxyCodeLine{00134             ai-\/>\mbox{\hyperlink{class_a_i_af0e91e54ac652671696c09468852fc0b}{throwDemon}}(); \textcolor{comment}{// Update while not entry}}
+\DoxyCodeLine{00135             std::getline(std::cin,answer);}
+\DoxyCodeLine{00136 }
+\DoxyCodeLine{00137             \textcolor{comment}{// Exit if requested}}
+\DoxyCodeLine{00138             \textcolor{keywordflow}{if} (answer == \textcolor{stringliteral}{"{}exit"{}} || answer == \textcolor{stringliteral}{"{}-\/1"{}}) \{}
+\DoxyCodeLine{00139 }
+\DoxyCodeLine{00140                 \textcolor{comment}{// Generating Logger}}
+\DoxyCodeLine{00141                 user = l-\/>\mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{startLogin}}();}
+\DoxyCodeLine{00142                 display-\/>\mbox{\hyperlink{class_simple_display_a47254abb80e2d0414e5a88f2977112af}{setUser}}(user.\mbox{\hyperlink{class_user_a19c51c10009a056caac5053717eb8b89}{getUser}}());}
+\DoxyCodeLine{00143                 display-\/>\mbox{\hyperlink{class_simple_display_a427ece0206cfe9ab5128f8cb057022b9}{setGroup}}((user.\mbox{\hyperlink{class_user_aa374b1065ea942d3d2d46085539c257e}{getAdminStatus}}() ? \textcolor{stringliteral}{"{}ADMIN"{}} : \textcolor{stringliteral}{"{}GUEST"{}}));}
+\DoxyCodeLine{00144 }
+\DoxyCodeLine{00145             \}}
+\DoxyCodeLine{00146 }
+\DoxyCodeLine{00147             \textcolor{comment}{// Go to Settings if requested}}
+\DoxyCodeLine{00148             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (answer == \textcolor{stringliteral}{"{}settings"{}} || answer == \textcolor{stringliteral}{"{}-\/2"{}}) \{}
+\DoxyCodeLine{00149                 screen\_status = \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06cab48901185c75a3b81724defec1092fc5}{SETTINGS\_SCREEN}};}
+\DoxyCodeLine{00150             \}}
 \DoxyCodeLine{00151 }
-\DoxyCodeLine{00152                     \textcolor{comment}{// Send to IODi and switch screen}}
-\DoxyCodeLine{00153                     composite-\/>\mbox{\hyperlink{class_device_composite_a91ccb722e7b877b19fedc54c74ff590b}{add}}(answer);}
-\DoxyCodeLine{00154                     iodi-\/>\mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{setCurrentDevice}}(answer);}
-\DoxyCodeLine{00155                     screen\_status = \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06ca7cc5ac55610914e502aad28ff9bfcfca}{DEVICE\_SCREEN}};}
-\DoxyCodeLine{00156 }
-\DoxyCodeLine{00157                 \}\textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_invalid_device_exception}{InvalidDeviceException}} \&e)\{}
-\DoxyCodeLine{00158 }
-\DoxyCodeLine{00159                     \textcolor{comment}{//IODi hadn't found valid option, reset}}
-\DoxyCodeLine{00160                     \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}INVALID OPTION"{}});}
-\DoxyCodeLine{00161                     sleep(1);}
-\DoxyCodeLine{00162                 \}}
-\DoxyCodeLine{00163 }
-\DoxyCodeLine{00164         \textcolor{comment}{// -\/-\/-\/-\/-\/ DEVi++ Terminal -\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{00165         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (screen\_status == \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06ca7cc5ac55610914e502aad28ff9bfcfca}{DEVICE\_SCREEN}})\{}
-\DoxyCodeLine{00166 }
-\DoxyCodeLine{00167             \textcolor{comment}{// Print heeader and request entry}}
-\DoxyCodeLine{00168             \mbox{\hyperlink{class_simple_display_a0ecc0b47ab352f65c75d137aeffd9b1a}{SimpleDisplay::printDeviHeader}}(iodi-\/>\mbox{\hyperlink{class_i_o_di_a1292c16744331d5225087e55326c01ec}{requestCurrentDeviceName}}());}
-\DoxyCodeLine{00169             std::getline(std::cin,answer);}
+\DoxyCodeLine{00152             \textcolor{comment}{// Entry not recognized, sending to IODi}}
+\DoxyCodeLine{00153             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00154                 \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00155 }
+\DoxyCodeLine{00156                     \textcolor{comment}{// Send to IODi and switch screen}}
+\DoxyCodeLine{00157                     composite-\/>\mbox{\hyperlink{class_device_composite_a6ed907783550f32c4229a9666b0526eb}{add}}(answer);}
+\DoxyCodeLine{00158                     iodi-\/>\mbox{\hyperlink{class_i_o_di_a87b788f3c16f7b9b4cea4e851eeb553a}{setCurrentDevice}}(answer);}
+\DoxyCodeLine{00159                     screen\_status = \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06ca7cc5ac55610914e502aad28ff9bfcfca}{DEVICE\_SCREEN}};}
+\DoxyCodeLine{00160 }
+\DoxyCodeLine{00161                 \}\textcolor{keywordflow}{catch} (\mbox{\hyperlink{class_invalid_device_exception}{InvalidDeviceException}} \&e)\{}
+\DoxyCodeLine{00162 }
+\DoxyCodeLine{00163                     \textcolor{comment}{//IODi hadn't found valid option, reset}}
+\DoxyCodeLine{00164                     \mbox{\hyperlink{class_simple_display_ab93019861da9b9bc4f55cb9a590cea68}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}INVALID OPTION"{}});}
+\DoxyCodeLine{00165                     sleep(1);}
+\DoxyCodeLine{00166                 \}}
+\DoxyCodeLine{00167 }
+\DoxyCodeLine{00168         \textcolor{comment}{// -\/-\/-\/-\/-\/ DEVi++ Terminal -\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{00169         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (screen\_status == \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06ca7cc5ac55610914e502aad28ff9bfcfca}{DEVICE\_SCREEN}})\{}
 \DoxyCodeLine{00170 }
-\DoxyCodeLine{00171             \textcolor{comment}{// Don't exit the terminal until exit}}
-\DoxyCodeLine{00172             \textcolor{keywordflow}{while} (answer != \textcolor{stringliteral}{"{}:wq"{}}) \{}
+\DoxyCodeLine{00171             \textcolor{comment}{// Print heeader and request entry}}
+\DoxyCodeLine{00172             \mbox{\hyperlink{class_simple_display_a8b707f54df50fd14a62402cef0f19a14}{SimpleDisplay::printDeviHeader}}(iodi-\/>\mbox{\hyperlink{class_i_o_di_a1292c16744331d5225087e55326c01ec}{requestCurrentDeviceName}}());}
 \DoxyCodeLine{00173 }
-\DoxyCodeLine{00174                 \textcolor{comment}{// Request an entry}}
-\DoxyCodeLine{00175                 \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\string~ "{}});}
-\DoxyCodeLine{00176                 std::getline(std::cin, answer);}
-\DoxyCodeLine{00177 }
-\DoxyCodeLine{00178                 \textcolor{comment}{// Force refresh the devices if requested}}
-\DoxyCodeLine{00179                 \textcolor{keywordflow}{if} (answer == \textcolor{stringliteral}{"{}forceref"{}}) \{}
-\DoxyCodeLine{00180                     ai-\/>\mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{refreshData}}();}
-\DoxyCodeLine{00181                     \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[AI] Forced current Device to Refresh"{}});}
-\DoxyCodeLine{00182                 \}}
-\DoxyCodeLine{00183 }
-\DoxyCodeLine{00184                 \textcolor{comment}{// Show the user if requested}}
-\DoxyCodeLine{00185                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (answer == \textcolor{stringliteral}{"{}who"{}})\{}
-\DoxyCodeLine{00186                     \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(std::to\_string(user.\mbox{\hyperlink{class_user_a19c51c10009a056caac5053717eb8b89}{getUser}}()));}
-\DoxyCodeLine{00187                 \}}
-\DoxyCodeLine{00188 }
-\DoxyCodeLine{00189                 \textcolor{comment}{// Show the composite status}}
-\DoxyCodeLine{00190                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (answer == \textcolor{stringliteral}{"{}comp"{}})}
-\DoxyCodeLine{00191                     \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(composite-\/>\mbox{\hyperlink{class_device_composite_a7c08e19a008f322c07503e6e885854fb}{toString}}());}
-\DoxyCodeLine{00192 }
-\DoxyCodeLine{00193                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (answer == \textcolor{stringliteral}{"{}pop"{}}) \{}
-\DoxyCodeLine{00194                     composite-\/>\mbox{\hyperlink{class_device_composite_a2a2a36e184e1a4c55166bd5482f4a807}{pop}}();}
-\DoxyCodeLine{00195                     \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}Last Device removed from composite"{}});}
-\DoxyCodeLine{00196                 \}}
-\DoxyCodeLine{00197 }
-\DoxyCodeLine{00198                 \textcolor{comment}{// Command not recognized, sending to IODi}}
-\DoxyCodeLine{00199                 \textcolor{keywordflow}{else}}
-\DoxyCodeLine{00200                     composite-\/>\mbox{\hyperlink{class_device_composite_af488cef31a43646732d6b8565a532088}{requestSkill}}(answer);}
-\DoxyCodeLine{00201             \}}
-\DoxyCodeLine{00202 }
-\DoxyCodeLine{00203             \textcolor{comment}{// When DEVi++ finish, switch to main screen}}
-\DoxyCodeLine{00204             composite-\/>\mbox{\hyperlink{class_device_composite_af0cdd8b375cdfe71ca37b1fc5aa8f8fb}{clear}}();}
-\DoxyCodeLine{00205             screen\_status = \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06caa8837eaf5f57386a2cd20e077fb840bf}{MAIN\_SCREEN}};}
-\DoxyCodeLine{00206 }
-\DoxyCodeLine{00207         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (screen\_status == \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06cab48901185c75a3b81724defec1092fc5}{SETTINGS\_SCREEN}})\{}
-\DoxyCodeLine{00208 }
-\DoxyCodeLine{00209             \textcolor{keywordflow}{while} (answer != \textcolor{stringliteral}{"{}-\/1"{}}) \{}
-\DoxyCodeLine{00210 }
-\DoxyCodeLine{00211                 \mbox{\hyperlink{class_simple_display_af2b09a4dca2dd2e9c8162d7e74c9b529}{SimpleDisplay::printAIInterface}}();}
-\DoxyCodeLine{00212                 \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Keyboard: "{}});}
-\DoxyCodeLine{00213                 std::getline(std::cin, answer);}
-\DoxyCodeLine{00214                 \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{AI::requestOption}}(answer,user.\mbox{\hyperlink{class_user_aa374b1065ea942d3d2d46085539c257e}{getAdminStatus}}());}
-\DoxyCodeLine{00215             \}}
-\DoxyCodeLine{00216             \mbox{\hyperlink{class_simple_display}{SimpleDisplay}} copy = *display;}
-\DoxyCodeLine{00217             display = \mbox{\hyperlink{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}{DeviceBuilder::buildDisplay}}();}
-\DoxyCodeLine{00218             *display << copy;}
-\DoxyCodeLine{00219 }
-\DoxyCodeLine{00220             \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{SimpleDisplay::currentDisplay}} = display;}
-\DoxyCodeLine{00221             screen\_status = \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06caa8837eaf5f57386a2cd20e077fb840bf}{MAIN\_SCREEN}};}
+\DoxyCodeLine{00174             \textcolor{comment}{// Don't exit the terminal until exit}}
+\DoxyCodeLine{00175             \textcolor{keywordflow}{while} (answer != \textcolor{stringliteral}{"{}:wq"{}}) \{}
+\DoxyCodeLine{00176 }
+\DoxyCodeLine{00177                 \textcolor{comment}{// Request an entry}}
+\DoxyCodeLine{00178                 \mbox{\hyperlink{class_simple_display_ab93019861da9b9bc4f55cb9a590cea68}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\string~ "{}});}
+\DoxyCodeLine{00179                 std::getline(std::cin, answer);}
+\DoxyCodeLine{00180 }
+\DoxyCodeLine{00181                 \textcolor{comment}{// Force refresh the devices if requested}}
+\DoxyCodeLine{00182                 \textcolor{keywordflow}{if} (answer == \textcolor{stringliteral}{"{}forceref"{}}) \{}
+\DoxyCodeLine{00183                     ai-\/>\mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{refreshData}}();}
+\DoxyCodeLine{00184                     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}[AI] Forced current Device to Refresh"{}});}
+\DoxyCodeLine{00185                 \}}
+\DoxyCodeLine{00186 }
+\DoxyCodeLine{00187                 \textcolor{comment}{// Show the user if requested}}
+\DoxyCodeLine{00188                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (answer == \textcolor{stringliteral}{"{}who"{}})\{}
+\DoxyCodeLine{00189                     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(std::to\_string(user.\mbox{\hyperlink{class_user_a19c51c10009a056caac5053717eb8b89}{getUser}}()));}
+\DoxyCodeLine{00190                 \}}
+\DoxyCodeLine{00191 }
+\DoxyCodeLine{00192                 \textcolor{comment}{// Show the composite status}}
+\DoxyCodeLine{00193                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (answer == \textcolor{stringliteral}{"{}comp"{}})}
+\DoxyCodeLine{00194                     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(composite-\/>\mbox{\hyperlink{class_device_composite_a7c08e19a008f322c07503e6e885854fb}{toString}}());}
+\DoxyCodeLine{00195 }
+\DoxyCodeLine{00196                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (answer == \textcolor{stringliteral}{"{}pop"{}}) \{}
+\DoxyCodeLine{00197                     composite-\/>\mbox{\hyperlink{class_device_composite_a2a2a36e184e1a4c55166bd5482f4a807}{pop}}();}
+\DoxyCodeLine{00198                     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}Last Device removed from composite"{}});}
+\DoxyCodeLine{00199                 \}}
+\DoxyCodeLine{00200 }
+\DoxyCodeLine{00201                 \textcolor{comment}{// Command not recognized, sending to IODi}}
+\DoxyCodeLine{00202                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00203                     composite-\/>\mbox{\hyperlink{class_device_composite_a04c9a801f57f51a25904f5b859de65d1}{requestSkill}}(answer);}
+\DoxyCodeLine{00204             \}}
+\DoxyCodeLine{00205 }
+\DoxyCodeLine{00206             \textcolor{comment}{// When DEVi++ finish, switch to main screen}}
+\DoxyCodeLine{00207             composite-\/>\mbox{\hyperlink{class_device_composite_af0cdd8b375cdfe71ca37b1fc5aa8f8fb}{clear}}();}
+\DoxyCodeLine{00208             screen\_status = \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06caa8837eaf5f57386a2cd20e077fb840bf}{MAIN\_SCREEN}};}
+\DoxyCodeLine{00209 }
+\DoxyCodeLine{00210         \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (screen\_status == \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06cab48901185c75a3b81724defec1092fc5}{SETTINGS\_SCREEN}})\{}
+\DoxyCodeLine{00211 }
+\DoxyCodeLine{00212             \textcolor{keywordflow}{while} (answer != \textcolor{stringliteral}{"{}-\/1"{}}) \{}
+\DoxyCodeLine{00213 }
+\DoxyCodeLine{00214                 \mbox{\hyperlink{class_simple_display_af2b09a4dca2dd2e9c8162d7e74c9b529}{SimpleDisplay::printAIInterface}}();}
+\DoxyCodeLine{00215                 \mbox{\hyperlink{class_simple_display_ab93019861da9b9bc4f55cb9a590cea68}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}Keyboard: "{}});}
+\DoxyCodeLine{00216                 std::getline(std::cin, answer);}
+\DoxyCodeLine{00217                 \mbox{\hyperlink{class_a_i_a2e5906fc706ef49159f1a70296174c8b}{AI::requestOption}}(answer,user.\mbox{\hyperlink{class_user_aa374b1065ea942d3d2d46085539c257e}{getAdminStatus}}());}
+\DoxyCodeLine{00218             \}}
+\DoxyCodeLine{00219             \mbox{\hyperlink{class_simple_display}{SimpleDisplay}} copy = *display;}
+\DoxyCodeLine{00220             display = \mbox{\hyperlink{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}{DeviceBuilder::buildDisplay}}();}
+\DoxyCodeLine{00221             *display << copy;}
 \DoxyCodeLine{00222 }
-\DoxyCodeLine{00223         \}}
-\DoxyCodeLine{00224     \}}
-\DoxyCodeLine{00225 \}}
+\DoxyCodeLine{00223             \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{SimpleDisplay::currentDisplay}} = display;}
+\DoxyCodeLine{00224             screen\_status = \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06caa8837eaf5f57386a2cd20e077fb840bf}{MAIN\_SCREEN}};}
+\DoxyCodeLine{00225 }
+\DoxyCodeLine{00226         \}}
+\DoxyCodeLine{00227     \}}
+\DoxyCodeLine{00228 \}}
 
 \end{DoxyCode}
 
 
-References \mbox{\hyperlink{class_device_composite_a91ccb722e7b877b19fedc54c74ff590b}{Device\+Composite\+::add()}}, \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{Device\+Builder\+::build\+All\+Devices()}}, \mbox{\hyperlink{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}{Device\+Builder\+::build\+Display()}}, \mbox{\hyperlink{class_device_composite_af0cdd8b375cdfe71ca37b1fc5aa8f8fb}{Device\+Composite\+::clear()}}, \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{Simple\+Display\+::\+COLOR}}, \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{Simple\+Display\+::current\+Display}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}{User\+::\+DEVELOPER\+\_\+\+USER}}, \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06ca7cc5ac55610914e502aad28ff9bfcfca}{DEVICE\+\_\+\+SCREEN}}, \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{Simple\+Display\+::devi\+Cout()}}, \mbox{\hyperlink{class_user_aa374b1065ea942d3d2d46085539c257e}{User\+::get\+Admin\+Status()}}, \mbox{\hyperlink{class_user_a19c51c10009a056caac5053717eb8b89}{User\+::get\+User()}}, \mbox{\hyperlink{class_simple_display_a527b662d6cf85fe3443111ee78532fe4}{Simple\+Display\+::\+GREY\+\_\+\+COLOR}}, \mbox{\hyperlink{classdevice_dataset_aeb0802ce7e16664f49e877d427702b4e}{device\+Dataset\+::init\+Dataset()}}, \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06caa8837eaf5f57386a2cd20e077fb840bf}{MAIN\+\_\+\+SCREEN}}, \mbox{\hyperlink{class_device_composite_a2a2a36e184e1a4c55166bd5482f4a807}{Device\+Composite\+::pop()}}, \mbox{\hyperlink{class_simple_display_af2b09a4dca2dd2e9c8162d7e74c9b529}{Simple\+Display\+::print\+AIInterface()}}, \mbox{\hyperlink{class_simple_display_a0ecc0b47ab352f65c75d137aeffd9b1a}{Simple\+Display\+::print\+Devi\+Header()}}, \mbox{\hyperlink{class_simple_display_a92871124832f3d169fc288fc1d84c9ba}{Simple\+Display\+::print\+Main\+Interface()}}, \mbox{\hyperlink{class_simple_display_aeabda5fb7b33348d08e818b8bd4d80de}{Simple\+Display\+::print\+Presentation()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, \mbox{\hyperlink{class_i_o_di_ae8f0575dd0958aabfb7e41ae2165aaf5}{IODi\+::request\+All\+Status()}}, \mbox{\hyperlink{class_i_o_di_a1292c16744331d5225087e55326c01ec}{IODi\+::request\+Current\+Device\+Name()}}, \mbox{\hyperlink{class_i_o_di_a2142cdf8cd8f6e33d8463ea86c514f3f}{IODi\+::request\+Device\+Names()}}, \mbox{\hyperlink{class_a_i_a64b7ffd10cca70b802dcb4ba1fb1c92a}{AI\+::request\+Option()}}, \mbox{\hyperlink{class_device_composite_af488cef31a43646732d6b8565a532088}{Device\+Composite\+::request\+Skill()}}, \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{Simple\+Display\+::\+RESET\+\_\+\+COLOR}}, \mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{IODi\+::set\+Current\+Device()}}, \mbox{\hyperlink{class_simple_display_a427ece0206cfe9ab5128f8cb057022b9}{Simple\+Display\+::set\+Group()}}, \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06cab48901185c75a3b81724defec1092fc5}{SETTINGS\+\_\+\+SCREEN}}, \mbox{\hyperlink{class_simple_display_af70bf795d69386a4d6c42aa18fc9a67d}{Simple\+Display\+::set\+User()}}, \mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{AI\+::start\+Collecting\+Data()}}, \mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{Login\+::start\+Login()}}, \mbox{\hyperlink{class_a_i_af0e91e54ac652671696c09468852fc0b}{AI\+::throw\+Demon()}}, \mbox{\hyperlink{class_device_composite_a7c08e19a008f322c07503e6e885854fb}{Device\+Composite\+::to\+String()}}, \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{User\+::update\+User\+Data()}}, and \mbox{\hyperlink{class_simple_display_a624b5b59d1651f79a43ec052406c2c0e}{Simple\+Display\+::\+WARNING\+\_\+\+COLOR}}.
+References \mbox{\hyperlink{class_device_composite_a6ed907783550f32c4229a9666b0526eb}{Device\+Composite\+::add()}}, \mbox{\hyperlink{class_device_builder_a019aad6467d0508effef62ff0a6a4b63}{Device\+Builder\+::build\+All\+Devices()}}, \mbox{\hyperlink{class_device_builder_acc6dd4bfd881ae2c8c390036aec4dedd}{Device\+Builder\+::build\+Display()}}, \mbox{\hyperlink{class_device_composite_af0cdd8b375cdfe71ca37b1fc5aa8f8fb}{Device\+Composite\+::clear()}}, \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{Simple\+Display\+::\+COLOR}}, \mbox{\hyperlink{class_simple_display_ab93019861da9b9bc4f55cb9a590cea68}{Simple\+Display\+::cout()}}, \mbox{\hyperlink{class_simple_display_a0eb6a5ee328ba2c8fbfce97cd7f503c8}{Simple\+Display\+::current\+Display}}, \mbox{\hyperlink{class_user_a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59}{User\+::\+DEVELOPER\+\_\+\+USER}}, \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06ca7cc5ac55610914e502aad28ff9bfcfca}{DEVICE\+\_\+\+SCREEN}}, \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{Simple\+Display\+::devi\+Cout()}}, \mbox{\hyperlink{class_user_ad1e613a622e5067058e2fed421a319a2}{User\+::\+EXECUTABLE\+\_\+\+DIR}}, \mbox{\hyperlink{class_user_aa374b1065ea942d3d2d46085539c257e}{User\+::get\+Admin\+Status()}}, \mbox{\hyperlink{class_user_a19c51c10009a056caac5053717eb8b89}{User\+::get\+User()}}, \mbox{\hyperlink{class_simple_display_a527b662d6cf85fe3443111ee78532fe4}{Simple\+Display\+::\+GREY\+\_\+\+COLOR}}, \mbox{\hyperlink{classdevice_dataset_aeb0802ce7e16664f49e877d427702b4e}{device\+Dataset\+::init\+Dataset()}}, \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06caa8837eaf5f57386a2cd20e077fb840bf}{MAIN\+\_\+\+SCREEN}}, \mbox{\hyperlink{class_device_composite_a2a2a36e184e1a4c55166bd5482f4a807}{Device\+Composite\+::pop()}}, \mbox{\hyperlink{class_simple_display_af2b09a4dca2dd2e9c8162d7e74c9b529}{Simple\+Display\+::print\+AIInterface()}}, \mbox{\hyperlink{class_simple_display_a8b707f54df50fd14a62402cef0f19a14}{Simple\+Display\+::print\+Devi\+Header()}}, \mbox{\hyperlink{class_simple_display_a92871124832f3d169fc288fc1d84c9ba}{Simple\+Display\+::print\+Main\+Interface()}}, \mbox{\hyperlink{class_simple_display_aeabda5fb7b33348d08e818b8bd4d80de}{Simple\+Display\+::print\+Presentation()}}, \mbox{\hyperlink{class_a_i_a0efedc3d8f331d259f82b915f4ed5508}{AI\+::refresh\+Data()}}, \mbox{\hyperlink{class_i_o_di_ae8f0575dd0958aabfb7e41ae2165aaf5}{IODi\+::request\+All\+Status()}}, \mbox{\hyperlink{class_i_o_di_a1292c16744331d5225087e55326c01ec}{IODi\+::request\+Current\+Device\+Name()}}, \mbox{\hyperlink{class_i_o_di_a2142cdf8cd8f6e33d8463ea86c514f3f}{IODi\+::request\+Device\+Names()}}, \mbox{\hyperlink{class_a_i_a2e5906fc706ef49159f1a70296174c8b}{AI\+::request\+Option()}}, \mbox{\hyperlink{class_device_composite_a04c9a801f57f51a25904f5b859de65d1}{Device\+Composite\+::request\+Skill()}}, \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{Simple\+Display\+::\+RESET\+\_\+\+COLOR}}, \mbox{\hyperlink{class_i_o_di_a87b788f3c16f7b9b4cea4e851eeb553a}{IODi\+::set\+Current\+Device()}}, \mbox{\hyperlink{class_simple_display_a427ece0206cfe9ab5128f8cb057022b9}{Simple\+Display\+::set\+Group()}}, \mbox{\hyperlink{main_8cpp_adc29c2ff13d900c2f185ee95427fb06cab48901185c75a3b81724defec1092fc5}{SETTINGS\+\_\+\+SCREEN}}, \mbox{\hyperlink{class_simple_display_a47254abb80e2d0414e5a88f2977112af}{Simple\+Display\+::set\+User()}}, \mbox{\hyperlink{class_a_i_a831d4f0c6bc669e749a64caf5bdba426}{AI\+::start\+Collecting\+Data()}}, \mbox{\hyperlink{class_login_a63a7495fe1e36779668a01a8d848995e}{Login\+::start\+Login()}}, \mbox{\hyperlink{class_a_i_af0e91e54ac652671696c09468852fc0b}{AI\+::throw\+Demon()}}, \mbox{\hyperlink{class_device_composite_a7c08e19a008f322c07503e6e885854fb}{Device\+Composite\+::to\+String()}}, \mbox{\hyperlink{class_user_ade2c6984efefd3a1abca0d727e8d7ecf}{User\+::update\+User\+Data()}}, and \mbox{\hyperlink{class_simple_display_a624b5b59d1651f79a43ec052406c2c0e}{Simple\+Display\+::\+WARNING\+\_\+\+COLOR}}.
 

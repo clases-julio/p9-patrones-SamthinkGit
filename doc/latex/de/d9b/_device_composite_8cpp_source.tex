@@ -2,21 +2,21 @@
 \label{_device_composite_8cpp_source}\index{DeviceComposite.cpp@{DeviceComposite.cpp}}
 \mbox{\hyperlink{_device_composite_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}../headers/DeviceComposite.h"{}}}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}../include/DeviceComposite.h"{}}}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00002}00002 \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00003}\mbox{\hyperlink{_device_composite_8cpp_ae56f0f2d9b36fda01a4fd77af500f75a}{00003}} std::string \mbox{\hyperlink{_device_composite_8cpp_ae56f0f2d9b36fda01a4fd77af500f75a}{CALL\_KEYWORD}} = \textcolor{stringliteral}{"{}add"{}};}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00004}00004 }
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00005}\mbox{\hyperlink{class_device_composite_a13527510f33f2ed9a1b8e113d0c39a88}{00005}} \mbox{\hyperlink{class_device_composite_a13527510f33f2ed9a1b8e113d0c39a88}{DeviceComposite::DeviceComposite}}() \{\}}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00006}00006 }
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00007}00007 \textcolor{comment}{// -\/-\/-\/ [Method] add}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00008}\mbox{\hyperlink{class_device_composite_a91ccb722e7b877b19fedc54c74ff590b}{00008}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_composite_a91ccb722e7b877b19fedc54c74ff590b}{DeviceComposite::add}}(std::string \&name) \{}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00008}\mbox{\hyperlink{class_device_composite_a6ed907783550f32c4229a9666b0526eb}{00008}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_composite_a6ed907783550f32c4229a9666b0526eb}{DeviceComposite::add}}(\textcolor{keyword}{const} std::string \&name) \{}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00009}00009 }
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00010}00010     \textcolor{comment}{// -\/-\/-\/-\/-\/  Intantiating new IODi -\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00011}00011     \mbox{\hyperlink{class_i_o_di}{IODi}} iodi;}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00012}00012 }
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00013}00013     \textcolor{comment}{// -\/-\/-\/-\/-\/  Adding device to IODi -\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00014}00014     \textcolor{keywordflow}{try}\{}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00015}00015         iodi.\mbox{\hyperlink{class_i_o_di_a2d62a813488c601c0131745e7a41a5cd}{setCurrentDevice}}(name);}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00015}00015         iodi.\mbox{\hyperlink{class_i_o_di_a87b788f3c16f7b9b4cea4e851eeb553a}{setCurrentDevice}}(name);}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00016}00016     \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_invalid_device_exception}{InvalidDeviceException}} \&e)\{}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00017}00017         \textcolor{keywordflow}{throw};}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00018}00018         \textcolor{keywordflow}{return};}
@@ -30,53 +30,56 @@
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00026}00026 \}}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00027}00027 }
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00028}00028 \textcolor{comment}{// -\/-\/-\/ [Method] requestSkill}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00029}\mbox{\hyperlink{class_device_composite_af488cef31a43646732d6b8565a532088}{00029}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_composite_af488cef31a43646732d6b8565a532088}{DeviceComposite::requestSkill}}(std::string skill) \{}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00029}\mbox{\hyperlink{class_device_composite_a04c9a801f57f51a25904f5b859de65d1}{00029}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_composite_a04c9a801f57f51a25904f5b859de65d1}{DeviceComposite::requestSkill}}(\textcolor{keyword}{const} std::string\& skill) \{}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00030}00030 }
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00031}00031     \textcolor{comment}{// -\/-\/-\/-\/-\/  Check if skill is a keyword to add to composite -\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00032}00032     \textcolor{keywordflow}{if} (skill == \mbox{\hyperlink{class_device_composite_aaa3c6765de954494133621c5260a06c6}{::CALL\_KEYWORD}})\{}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00032}00032     \textcolor{keywordflow}{if} (skill == \mbox{\hyperlink{class_device_composite_adb4219d50a73b4bd03e53388c0b4fe2a}{::CALL\_KEYWORD}})\{}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00033}00033 }
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00034}00034         std::string answer;}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00035}00035         \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}Device Name: "{}});}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00036}00036         std::getline(std::cin,answer);}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00037}00037         \textcolor{keywordflow}{try}\{}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00038}00038             this-\/>\mbox{\hyperlink{class_device_composite_a91ccb722e7b877b19fedc54c74ff590b}{add}}(answer);}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00039}00039             \textcolor{keywordflow}{return};}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00040}00040         \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_invalid_device_exception}{InvalidDeviceException}} \&e)\{}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00041}00041             \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}Invalid Device"{}});}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00035}00035         \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}Write a Device name for adding it to the composite."{}});}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00036}00036         \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}Ex. <Thermometer>"{}});}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00037}00037         \mbox{\hyperlink{class_simple_display_ab93019861da9b9bc4f55cb9a590cea68}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\string~ Device Name: "{}});}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00038}00038         std::getline(std::cin,answer);}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00039}00039         \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00040}00040             this-\/>\mbox{\hyperlink{class_device_composite_a6ed907783550f32c4229a9666b0526eb}{add}}(answer);}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00041}00041             \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}Device Succesfully added"{}});}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00042}00042             \textcolor{keywordflow}{return};}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00043}00043         \}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00044}00044     \}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00045}00045 }
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00046}00046     \textcolor{comment}{// -\/-\/-\/-\/-\/  Else the keyword is for IODIs -\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00047}00047     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}.size(); i++)}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00048}00048         this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}[i].\mbox{\hyperlink{class_device_composite_af488cef31a43646732d6b8565a532088}{requestSkill}}(skill);}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00049}00049 \}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00050}00050 }
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00051}00051 \textcolor{comment}{// -\/-\/-\/ [Method] clear}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00052}\mbox{\hyperlink{class_device_composite_af0cdd8b375cdfe71ca37b1fc5aa8f8fb}{00052}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_composite_af0cdd8b375cdfe71ca37b1fc5aa8f8fb}{DeviceComposite::clear}}() \{}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00043}00043         \}\textcolor{keywordflow}{catch}(\mbox{\hyperlink{class_invalid_device_exception}{InvalidDeviceException}} \&e)\{}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00044}00044             \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{stringliteral}{"{}Invalid Device"{}});}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00045}00045             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00046}00046         \}}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00047}00047     \}}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00049}00049     \textcolor{comment}{// -\/-\/-\/-\/-\/  Else the keyword is for IODIs -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00050}00050     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}.size(); i++)}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00051}00051         this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}[i].\mbox{\hyperlink{class_device_composite_a04c9a801f57f51a25904f5b859de65d1}{requestSkill}}(skill);}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00052}00052 \}}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00053}00053 }
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00054}00054     this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}.clear();}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00055}00055 }
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00056}00056 \}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00057}00057 }
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00058}\mbox{\hyperlink{class_device_composite_a7c08e19a008f322c07503e6e885854fb}{00058}} std::string \mbox{\hyperlink{class_device_composite_a7c08e19a008f322c07503e6e885854fb}{DeviceComposite::toString}}() \{}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00059}00059 }
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00060}00060     \textcolor{comment}{// -\/-\/-\/-\/-\/  Declarations -\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00061}00061     std::string stringBuilder = \textcolor{stringliteral}{"{}[ "{}};}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00054}00054 \textcolor{comment}{// -\/-\/-\/ [Method] clear}}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00055}\mbox{\hyperlink{class_device_composite_af0cdd8b375cdfe71ca37b1fc5aa8f8fb}{00055}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_device_composite_af0cdd8b375cdfe71ca37b1fc5aa8f8fb}{DeviceComposite::clear}}() \{}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00057}00057     this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}.clear();}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00059}00059 \}}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00060}00060 }
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00061}\mbox{\hyperlink{class_device_composite_a7c08e19a008f322c07503e6e885854fb}{00061}} std::string \mbox{\hyperlink{class_device_composite_a7c08e19a008f322c07503e6e885854fb}{DeviceComposite::toString}}() \{}
 \DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00062}00062 }
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00063}00063     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}.size(); i++)\{}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00064}00064 }
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00065}00065         \textcolor{comment}{// -\/-\/-\/-\/-\/  Replacing name spaces with underscores. -\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00066}00066         std::string name = \mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}[i].requestCurrentDeviceName();}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00067}00067         std::replace(name.begin(), name.end(), \textcolor{charliteral}{' '}, \textcolor{charliteral}{'\_'});}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00068}00068 }
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00069}00069         \textcolor{comment}{// -\/-\/-\/-\/-\/  Appending name -\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00070}00070         stringBuilder += name + \textcolor{stringliteral}{"{} "{}};}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00071}00071     \}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00072}00072 }
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00073}00073     \textcolor{comment}{// -\/-\/-\/-\/-\/  Finishing string -\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00074}00074     stringBuilder += \textcolor{stringliteral}{"{}]"{}};}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00075}00075     \textcolor{keywordflow}{return} stringBuilder;}
-\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00076}00076 \}}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00063}00063     \textcolor{comment}{// -\/-\/-\/-\/-\/  Declarations -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00064}00064     std::string stringBuilder = \textcolor{stringliteral}{"{}[ "{}};}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00066}00066     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this-\/>\mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}.size(); i++)\{}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00068}00068         \textcolor{comment}{// -\/-\/-\/-\/-\/  Replacing name spaces with underscores. -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00069}00069         std::string name = \mbox{\hyperlink{class_device_composite_a813b7260904087e57f68f72835a34f26}{allIODis}}[i].requestCurrentDeviceName();}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00070}00070         std::replace(name.begin(), name.end(), \textcolor{charliteral}{' '}, \textcolor{charliteral}{'\_'});}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00072}00072         \textcolor{comment}{// -\/-\/-\/-\/-\/  Appending name -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00073}00073         stringBuilder += name + \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00074}00074     \}}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00076}00076     \textcolor{comment}{// -\/-\/-\/-\/-\/  Finishing string -\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00077}00077     stringBuilder += \textcolor{stringliteral}{"{}]"{}};}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00078}00078     \textcolor{keywordflow}{return} stringBuilder;}
+\DoxyCodeLine{\Hypertarget{_device_composite_8cpp_source_l00079}00079 \}}
 
 \end{DoxyCode}

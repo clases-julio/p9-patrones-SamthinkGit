@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.21)  23 DEC 2022 18:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.21)  28 DEC 2022 00:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,7 +935,7 @@ Chapter 3.
 ]) [6]
 Chapter 4.
 (./da/ddc/class_admin.tex <./da/ddc/class_admin.pdf>
-<da/ddc/class_admin.pdf, id=2466, 501.875pt x 729.99728pt>
+<da/ddc/class_admin.pdf, id=2587, 501.875pt x 729.99728pt>
 File: da/ddc/class_admin.pdf Graphic file (type pdf)
 <use da/ddc/class_admin.pdf>
 Package pdftex.def Info: da/ddc/class_admin.pdf  used on input line 15.
@@ -1011,37 +1011,42 @@ Underfull \hbox (badness 1655) in paragraph at lines 710--711
  []
 
 [17] [18]
-Underfull \hbox (badness 6944) in paragraph at lines 896--897
+Underfull \hbox (badness 6944) in paragraph at lines 900--901
 []\T1/phv/m/n/10 References [], [], [], [], [], [],
  []
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 896--897
+Underfull \hbox (badness 3557) in paragraph at lines 900--901
 []\T1/phv/m/n/10 , [], [], [], [], [],
  []
 
+
+Overfull \hbox (19.61711pt too wide) in paragraph at lines 900--901
+[]\T1/phv/m/n/10 , [], [], [], [], [], [],
+ []
+
 [19]
-Underfull \hbox (badness 10000) detected at line 949
+Underfull \hbox (badness 10000) detected at line 953
 [][][]
  []
 
 [20]
-Underfull \hbox (badness 10000) detected at line 994
+Underfull \hbox (badness 10000) detected at line 998
 [][][]
  []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 1024--1025
+Underfull \hbox (badness 2277) in paragraph at lines 1028--1029
 []\T1/phv/m/n/10 References [], [], [], and
  []
 
 [21] [22]
-Underfull \hbox (badness 1057) in paragraph at lines 1248--1249
+Underfull \hbox (badness 1057) in paragraph at lines 1252--1253
 []\T1/phv/m/n/10 Referenced by [], [], [], [], [], [],
  []
 
 [23]) (./d2/dfb/class_base_exception.tex <./d2/dfb/class_base_exception.pdf>
-<d2/dfb/class_base_exception.pdf, id=3179, 501.875pt x 49.44472pt>
+<d2/dfb/class_base_exception.pdf, id=3304, 501.875pt x 49.44472pt>
 File: d2/dfb/class_base_exception.pdf Graphic file (type pdf)
 <use d2/dfb/class_base_exception.pdf>
 Package pdftex.def Info: d2/dfb/class_base_exception.pdf  used on input line 15
@@ -1074,7 +1079,7 @@ Overfull \hbox (80.03339pt too wide) in paragraph at lines 131--132
  []
 
 ) (./d5/d6c/class_data_device.tex <./d5/d6c/class_data_device.pdf>
-<d5/d6c/class_data_device.pdf, id=3245, 501.875pt x 466.8642pt>
+<d5/d6c/class_data_device.pdf, id=3371, 501.875pt x 466.8642pt>
 File: d5/d6c/class_data_device.pdf Graphic file (type pdf)
 <use d5/d6c/class_data_device.pdf>
 Package pdftex.def Info: d5/d6c/class_data_device.pdf  used on input line 15.
@@ -1114,7 +1119,7 @@ Underfull \hbox (badness 1033) in paragraph at lines 485--486
  []
 
 ) (./df/dd8/class_device.tex <./df/dd8/class_device.pdf>
-<df/dd8/class_device.pdf, id=3518, 501.875pt x 206.96321pt>
+<df/dd8/class_device.pdf, id=3643, 501.875pt x 206.96321pt>
 File: df/dd8/class_device.pdf Graphic file (type pdf)
 <use df/dd8/class_device.pdf>
 Package pdftex.def Info: df/dd8/class_device.pdf  used on input line 15.
@@ -1221,14 +1226,19 @@ Underfull \hbox (badness 10000) detected at line 513
 [][][]
  []
 
-[50] [51] [52] [53]) (./d2/d51/classdevice_dataset.tex [54]
+[50] [51] [52] [53]) (./dc/d50/class_device_composite.tex [54] [55] [56]
+Underfull \hbox (badness 10000) detected at line 246
+[][][]
+ []
+
+[57]) (./d2/d51/classdevice_dataset.tex [58]
 Overfull \hbox (30.01836pt too wide) in paragraph at lines 102--103
 []\T1/phv/m/n/10 References [], [], [], [], [], and []. 
  []
 
-) (./da/dd4/class_insufficient_permissions_exception.tex [55] <./da/dd4/class_i
+) (./da/dd4/class_insufficient_permissions_exception.tex [59] <./da/dd4/class_i
 nsufficient_permissions_exception.pdf>
-<da/dd4/class_insufficient_permissions_exception.pdf, id=4267, 501.875pt x 197.
+<da/dd4/class_insufficient_permissions_exception.pdf, id=4517, 501.875pt x 197.
 7789pt>
 File: da/dd4/class_insufficient_permissions_exception.pdf Graphic file (type pd
 f)
@@ -1240,45 +1250,45 @@ sed on input line 15.
 Overfull \vbox (1.82738pt too high) has occurred while \output is active []
 
 
-[56]) (./d3/d01/class_invalid_device_exception.tex <./d3/d01/class_invalid_devi
+[60]) (./d3/d01/class_invalid_device_exception.tex <./d3/d01/class_invalid_devi
 ce_exception.pdf>
-<d3/d01/class_invalid_device_exception.pdf, id=4305, 501.875pt x 396.22026pt>
+<d3/d01/class_invalid_device_exception.pdf, id=4555, 501.875pt x 396.22026pt>
 File: d3/d01/class_invalid_device_exception.pdf Graphic file (type pdf)
 <use d3/d01/class_invalid_device_exception.pdf>
 Package pdftex.def Info: d3/d01/class_invalid_device_exception.pdf  used on inp
 ut line 15.
 (pdftex.def)             Requested size: 108.11543pt x 85.35826pt.
- [57] [58]) (./d1/deb/class_invalid_file_exception.tex <./d1/deb/class_invalid_
+ [61] [62]) (./d1/deb/class_invalid_file_exception.tex <./d1/deb/class_invalid_
 file_exception.pdf>
-<d1/deb/class_invalid_file_exception.pdf, id=4354, 501.875pt x 301.8778pt>
+<d1/deb/class_invalid_file_exception.pdf, id=4604, 501.875pt x 301.8778pt>
 File: d1/deb/class_invalid_file_exception.pdf Graphic file (type pdf)
 <use d1/deb/class_invalid_file_exception.pdf>
 Package pdftex.def Info: d1/deb/class_invalid_file_exception.pdf  used on input
  line 15.
 (pdftex.def)             Requested size: 94.59909pt x 56.9055pt.
- [59])
+ [63])
 (./d6/d1f/class_invalid_skill_exception.tex <./d6/d1f/class_invalid_skill_excep
 tion.pdf>
-<d6/d1f/class_invalid_skill_exception.pdf, id=4392, 501.875pt x 297.41112pt>
+<d6/d1f/class_invalid_skill_exception.pdf, id=4641, 501.875pt x 297.41112pt>
 File: d6/d1f/class_invalid_skill_exception.pdf Graphic file (type pdf)
 <use d6/d1f/class_invalid_skill_exception.pdf>
 Package pdftex.def Info: d6/d1f/class_invalid_skill_exception.pdf  used on inpu
 t line 15.
 (pdftex.def)             Requested size: 96.02348pt x 56.9055pt.
- [60] [61]) (./db/d8e/class_invalid_user_exception.tex <./db/d8e/class_invalid_
+ [64] [65]) (./db/d8e/class_invalid_user_exception.tex <./db/d8e/class_invalid_
 user_exception.pdf>
-<db/d8e/class_invalid_user_exception.pdf, id=4442, 501.875pt x 290.94696pt>
+<db/d8e/class_invalid_user_exception.pdf, id=4692, 501.875pt x 290.94696pt>
 File: db/d8e/class_invalid_user_exception.pdf Graphic file (type pdf)
 <use db/d8e/class_invalid_user_exception.pdf>
 Package pdftex.def Info: db/d8e/class_invalid_user_exception.pdf  used on input
  line 15.
 (pdftex.def)             Requested size: 98.16005pt x 56.9055pt.
- [62]) (./d2/d59/class_i_o_di.tex [63] [64]
+ [66]) (./d2/d59/class_i_o_di.tex [67] [68]
 Underfull \hbox (badness 10000) detected at line 132
 [][][]
  []
 
-[65]
+[69]
 Underfull \hbox (badness 10000) detected at line 170
 [][][]
  []
@@ -1293,7 +1303,7 @@ Underfull \hbox (badness 10000) detected at line 234
 [][][]
  []
 
-[66]
+[70]
 Underfull \hbox (badness 10000) detected at line 270
 [][][]
  []
@@ -1303,201 +1313,201 @@ Underfull \hbox (badness 10000) detected at line 302
 [][][]
  []
 
-[67] [68] [69]
-Overfull \hbox (43.47871pt too wide) in paragraph at lines 447--448
+[71] [72] [73]
+Overfull \hbox (43.47871pt too wide) in paragraph at lines 453--454
 []\T1/phv/m/n/10 References [], [], [], [],
  []
 
 
-Overfull \hbox (26.44327pt too wide) in paragraph at lines 447--448
+Overfull \hbox (26.44327pt too wide) in paragraph at lines 453--454
 []\T1/phv/m/n/10 , [], [], [], and []. 
  []
 
-
-Overfull \hbox (21.28531pt too wide) in paragraph at lines 500--501
+[74]
+Overfull \hbox (21.28531pt too wide) in paragraph at lines 506--507
 []\T1/phv/m/n/10 References [], [], [], [],
  []
 
-[70] [71]) (./d6/d67/classkb.tex [72]) (./df/db2/class_kernel_device.tex
-[73] <./df/db2/class_kernel_device.pdf>
-<df/db2/class_kernel_device.pdf, id=4797, 501.875pt x 413.91638pt>
+[75]) (./d6/d67/classkb.tex [76]) (./df/db2/class_kernel_device.tex [77] <./df/
+db2/class_kernel_device.pdf>
+<df/db2/class_kernel_device.pdf, id=5048, 501.875pt x 413.91638pt>
 File: df/db2/class_kernel_device.pdf Graphic file (type pdf)
 <use df/db2/class_kernel_device.pdf>
 Package pdftex.def Info: df/db2/class_kernel_device.pdf  used on input line 15.
 
 (pdftex.def)             Requested size: 68.99078pt x 56.9055pt.
- [74]
+ [78]
 Overfull \hbox (34.21062pt too wide) in paragraph at lines 89--90
 []\T1/phv/m/n/10 References [], [], [], [], and []. 
  []
 
-[75] [76]
+[79] [80]
 Underfull \hbox (badness 2591) in paragraph at lines 224--225
 []\T1/phv/m/n/10 Referenced by [], [], [], [], [],
  []
 
-) (./d6/ddd/class_login.tex [77]
+) (./d6/ddd/class_login.tex [81]
 Underfull \hbox (badness 10000) detected at line 55
 [][][]
  []
 
-[78]
+[82]
 Underfull \hbox (badness 10000) detected at line 80
 [][][]
  []
 
-[79] [80]) (./d5/d2e/class_simple_display.tex [81] [82] [83]
-Overfull \hbox (40.25276pt too wide) in paragraph at lines 202--202
+[83] [84]) (./d5/d2e/class_simple_display.tex [85] [86] [87]
+Overfull \hbox (40.25276pt too wide) in paragraph at lines 204--204
 \T1/pcr/m/n/7 printf([]"#======================================================
 ===========================================#$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n"
 []);  
  []
 
 
-Overfull \hbox (48.54999pt too wide) in paragraph at lines 204--204
+Overfull \hbox (48.54999pt too wide) in paragraph at lines 206--206
 \T1/pcr/m/n/7 printf([]"#======================================================
 ===========================================#$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n$
 \OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n"[]);  
- []
-
-
-Overfull \hbox (24.53725pt too wide) in paragraph at lines 248--249
-[]\T1/phv/m/n/10 , [], [], [], [], [], [],
- []
-
-[84] [85] [86] [87]
-Underfull \hbox (badness 5711) in paragraph at lines 532--533
-[]\T1/phv/m/n/10 Referenced by [], [], [], [], [],
- []
-
-
-Overfull \hbox (40.25276pt too wide) in paragraph at lines 589--589
-\T1/pcr/m/n/7 printf([]"#======================================================
-===========================================#$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n"
-[]);  
  []
 
 [88]
-Overfull \hbox (40.25276pt too wide) in paragraph at lines 609--609
+Underfull \hbox (badness 2662) in paragraph at lines 286--287
+[]\T1/phv/m/n/10 Referenced by [], [], [], [], [], [],
+ []
+
+[89] [90] [91]
+Overfull \hbox (19.29845pt too wide) in paragraph at lines 534--535
+[]\T1/phv/m/n/10 Referenced by [], [], [], [], [], [],
+ []
+
+[92]
+Overfull \hbox (40.25276pt too wide) in paragraph at lines 637--637
 \T1/pcr/m/n/7 printf([]"#======================================================
 ===========================================#$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n"
 []);  
  []
 
-[89]
-Overfull \hbox (40.25276pt too wide) in paragraph at lines 670--670
+[93]
+Overfull \hbox (40.25276pt too wide) in paragraph at lines 657--657
+\T1/pcr/m/n/7 printf([]"#======================================================
+===========================================#$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n"
+[]);  
+ []
+
+[94]
+Overfull \hbox (40.25276pt too wide) in paragraph at lines 718--718
 \T1/pcr/m/n/7 printf([]"#======================================================
 ===========================================#$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n"
 []);  
  []
 
 
-Overfull \hbox (48.54999pt too wide) in paragraph at lines 672--672
+Overfull \hbox (48.54999pt too wide) in paragraph at lines 720--720
 \T1/pcr/m/n/7 printf([]"#======================================================
 ===========================================#$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n$
 \OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n"[]);  
  []
 
-[90] [91] [92]
-Overfull \hbox (78.05273pt too wide) in paragraph at lines 911--911
+[95] [96] [97]
+Overfull \hbox (78.05273pt too wide) in paragraph at lines 962--962
 \T1/pcr/m/n/7 printf([]"#==========================##==========================
 ====================================================#$\OMS/cmsy/m/n/7 n$\T1/pcr
 /m/n/7 n"[]);  
  []
 
 
-Overfull \hbox (78.05273pt too wide) in paragraph at lines 932--932
+Overfull \hbox (78.05273pt too wide) in paragraph at lines 983--983
 \T1/pcr/m/n/7 printf([]"#==========================##==========================
 ====================================================#$\OMS/cmsy/m/n/7 n$\T1/pcr
 /m/n/7 n"[]);  
  []
 
-[93]
-Overfull \hbox (78.05273pt too wide) in paragraph at lines 991--991
+[98]
+Overfull \hbox (78.05273pt too wide) in paragraph at lines 1042--1042
 \T1/pcr/m/n/7 printf([]"#======================================================
 ====================================================#$\OMS/cmsy/m/n/7 n$\T1/pcr
 /m/n/7 n"[]);  
  []
 
-[94] [95] [96] [97]
-Underfull \hbox (badness 10000) detected at line 1324
+[99] [100] [101] [102]
+Underfull \hbox (badness 10000) detected at line 1375
 [][][]
  []
 
-[98]
-Underfull \hbox (badness 10000) detected at line 1381
+[103]
+Underfull \hbox (badness 10000) detected at line 1432
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 1438
+Underfull \hbox (badness 10000) detected at line 1489
 [][][]
  []
 
-[99]
-Underfull \hbox (badness 10000) detected at line 1459
-[][][]
- []
-
-[100]
-Underfull \hbox (badness 10000) detected at line 1552
-[][][]
- []
-
-) (./d7/d23/class_user.tex <./d7/d23/class_user.pdf>
-<d7/d23/class_user.pdf, id=5699, 501.875pt x 729.99728pt>
-File: d7/d23/class_user.pdf Graphic file (type pdf)
-<use d7/d23/class_user.pdf>
-Package pdftex.def Info: d7/d23/class_user.pdf  used on input line 15.
-(pdftex.def)             Requested size: 39.11699pt x 56.9055pt.
- [101] [102] [103] [104]
-Underfull \hbox (badness 10000) detected at line 295
+[104]
+Underfull \hbox (badness 10000) detected at line 1510
 [][][]
  []
 
 [105]
-Underfull \hbox (badness 10000) detected at line 339
+Underfull \hbox (badness 10000) detected at line 1603
 [][][]
  []
 
-[106] [107]
-Underfull \hbox (badness 10000) detected at line 530
+) (./d7/d23/class_user.tex <./d7/d23/class_user.pdf>
+<d7/d23/class_user.pdf, id=5991, 501.875pt x 729.99728pt>
+File: d7/d23/class_user.pdf Graphic file (type pdf)
+<use d7/d23/class_user.pdf>
+Package pdftex.def Info: d7/d23/class_user.pdf  used on input line 15.
+(pdftex.def)             Requested size: 39.11699pt x 56.9055pt.
+ [106] [107] [108] [109]
+Underfull \hbox (badness 10000) detected at line 300
 [][][]
  []
 
-[108]
-Underfull \hbox (badness 2875) in paragraph at lines 627--628
+[110]
+Underfull \hbox (badness 10000) detected at line 344
+[][][]
+ []
+
+[111] [112]
+Underfull \hbox (badness 10000) detected at line 535
+[][][]
+ []
+
+[113]
+Underfull \hbox (badness 2556) in paragraph at lines 638--639
 []\T1/phv/m/n/10 References [], [], [], [], [], [], [], [],
  []
 
-[109]
-Underfull \hbox (badness 10000) detected at line 678
+[114]
+Underfull \hbox (badness 10000) detected at line 703
 [][][]
  []
 
 LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 7
-29.
+54.
 (d:/texlive/2022/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [110])
+) [115])
 (./d7/d1b/class_user_not_found_exception.tex <./d7/d1b/class_user_not_found_exc
 eption.pdf>
-<d7/d1b/class_user_not_found_exception.pdf, id=6063, 501.875pt x 386.06232pt>
+<d7/d1b/class_user_not_found_exception.pdf, id=6366, 501.875pt x 386.06232pt>
 File: d7/d1b/class_user_not_found_exception.pdf Graphic file (type pdf)
 <use d7/d1b/class_user_not_found_exception.pdf>
 Package pdftex.def Info: d7/d1b/class_user_not_found_exception.pdf  used on inp
 ut line 15.
 (pdftex.def)             Requested size: 110.9642pt x 85.35826pt.
- [111] [112]) [113] [114
-
-]
+ [116] [117]) [118]
 Chapter 5.
 (./d3/de1/kb_8cpp.tex) (./d3/de1/kb_8cpp_source.tex) (./d4/d6d/kb_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-[115]) (./d4/d6d/kb_8h_source.tex) (./d8/dfd/_admin_8h.tex
+[119
+
+]) (./d4/d6d/kb_8h_source.tex) (./d8/dfd/_admin_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -1512,7 +1522,7 @@ Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
-) (./d8/dfd/_admin_8h_source.tex [116]) (./d5/d6f/_a_i_8h.tex
+) (./d8/dfd/_admin_8h_source.tex [120]) (./d5/d6f/_a_i_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--9
 
  []
@@ -1527,7 +1537,7 @@ Underfull \hbox (badness 10000) detected at line 20
 [][][]
  []
 
-) (./d5/d6f/_a_i_8h_source.tex [117] [118]) (./d0/d9c/_data_device_8h.tex
+) (./d5/d6f/_a_i_8h_source.tex [121] [122]) (./d0/d9c/_data_device_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -1542,12 +1552,12 @@ Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
-) (./d0/d9c/_data_device_8h_source.tex [119]) (./d7/d8b/_device_8h.tex
+) (./d0/d9c/_data_device_8h_source.tex [123]) (./d7/d8b/_device_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[120]
+[124]
 Underfull \hbox (badness 10000) detected at line 12
 [][][]
  []
@@ -1557,7 +1567,7 @@ Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
-) (./d7/d8b/_device_8h_source.tex [121]) (./d6/d03/_device_builder_8h.tex
+) (./d7/d8b/_device_8h_source.tex [125]) (./d6/d03/_device_builder_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
@@ -1572,13 +1582,28 @@ Underfull \hbox (badness 10000) detected at line 17
 [][][]
  []
 
-) (./d6/d03/_device_builder_8h_source.tex [122])
-(./dc/d1b/_base_exception_8h.tex
+) (./d6/d03/_device_builder_8h_source.tex [126])
+(./d8/d60/_device_composite_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+[127]
+Underfull \hbox (badness 10000) detected at line 12
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 15
+[][][]
+ []
+
+) (./d8/d60/_device_composite_8h_source.tex) (./dc/d1b/_base_exception_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-[123]
+[128]
 Underfull \hbox (badness 10000) detected at line 13
 [][][]
  []
@@ -1594,7 +1619,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) (./db/d2a/_insufficient_permissions_exception_8h_source.tex [124])
+) (./db/d2a/_insufficient_permissions_exception_8h_source.tex [129])
 (./de/d41/_invalid_device_exception_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
@@ -1610,7 +1635,7 @@ Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
-) (./de/d41/_invalid_device_exception_8h_source.tex [125])
+) (./de/d41/_invalid_device_exception_8h_source.tex [130])
 (./d5/d09/_invalid_file_exception_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
@@ -1626,7 +1651,7 @@ Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
-) (./d5/d09/_invalid_file_exception_8h_source.tex [126])
+) (./d5/d09/_invalid_file_exception_8h_source.tex [131])
 (./de/d50/_invalid_skill_exception_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
@@ -1642,7 +1667,7 @@ Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
-) (./de/d50/_invalid_skill_exception_8h_source.tex [127])
+) (./de/d50/_invalid_skill_exception_8h_source.tex [132])
 (./d3/d00/_invalid_user_exception_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
@@ -1658,7 +1683,7 @@ Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
-) (./d3/d00/_invalid_user_exception_8h_source.tex [128])
+) (./d3/d00/_invalid_user_exception_8h_source.tex [133])
 (./d9/d91/_user_not_found_exception_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
@@ -1674,7 +1699,7 @@ Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
-) (./d9/d91/_user_not_found_exception_8h_source.tex [129])
+) (./d9/d91/_user_not_found_exception_8h_source.tex [134])
 (./d9/dc0/exceptions_lib_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--10
 
@@ -1695,7 +1720,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[130]
+[135]
 Underfull \hbox (badness 10000) detected at line 12
 [][][]
  []
@@ -1705,7 +1730,7 @@ Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
-) (./da/db5/_i_o_di_8h_source.tex [131]) (./da/df7/_kernel_device_8h.tex
+) (./da/db5/_i_o_di_8h_source.tex [136]) (./da/df7/_kernel_device_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -1720,18 +1745,18 @@ Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
-) (./da/df7/_kernel_device_8h_source.tex [132]) (./de/d14/lib_8h.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--15
+) (./da/df7/_kernel_device_8h_source.tex [137]) (./de/d14/lib_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--16
 
  []
 
-[133]
-Underfull \hbox (badness 10000) detected at line 18
+[138]
+Underfull \hbox (badness 10000) detected at line 19
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 21
+Underfull \hbox (badness 10000) detected at line 22
 [][][]
  []
 
@@ -1750,12 +1775,12 @@ Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
-) (./d0/d3e/_login_8h_source.tex [134]) (./df/dc7/_simple_display_8h.tex
+) (./d0/d3e/_login_8h_source.tex [139]) (./df/dc7/_simple_display_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--8
 
  []
 
-
+[140]
 Underfull \hbox (badness 10000) detected at line 16
 [][][]
  []
@@ -1765,12 +1790,12 @@ Underfull \hbox (badness 10000) detected at line 19
 [][][]
  []
 
-) (./df/dc7/_simple_display_8h_source.tex [135] [136]) (./d3/d75/_user_8h.tex
+) (./df/dc7/_simple_display_8h_source.tex [141]) (./d3/d75/_user_8h.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-
+[142]
 Underfull \hbox (badness 10000) detected at line 12
 [][][]
  []
@@ -1780,8 +1805,8 @@ Underfull \hbox (badness 10000) detected at line 15
 [][][]
  []
 
-) (./d3/d75/_user_8h_source.tex [137] [138]) (./d3/db4/_admin_8cpp.tex)
-(./d3/db4/_admin_8cpp_source.tex) (./d0/dfb/_a_i_8cpp.tex
+) (./d3/d75/_user_8h_source.tex [143]) (./d3/db4/_admin_8cpp.tex)
+(./d3/db4/_admin_8cpp_source.tex [144]) (./d0/dfb/_a_i_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -1796,7 +1821,7 @@ Underfull \hbox (badness 10000) detected at line 10
 [][][]
  []
 
-) (./d0/dfb/_a_i_8cpp_source.tex [139] [140] [141] [142] [143] [144] [145])
+) (./d0/dfb/_a_i_8cpp_source.tex [145] [146] [147] [148] [149] [150] [151])
 (./dc/d73/_base_exception_8cpp.tex) (./dc/d73/_base_exception_8cpp_source.tex)
 (./d5/dfc/_data_device_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1808,12 +1833,27 @@ Underfull \hbox (badness 10000) detected at line 7
 [][][]
  []
 
-[146]
+
 Underfull \hbox (badness 10000) detected at line 10
 [][][]
  []
 
-) (./d5/dfc/_data_device_8cpp_source.tex [147]) (./dc/d90/_device_8cpp.tex
+) (./d5/dfc/_data_device_8cpp_source.tex [152]) (./dc/d90/_device_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+[153]
+Underfull \hbox (badness 10000) detected at line 7
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 10
+[][][]
+ []
+
+) (./dc/d90/_device_8cpp_source.tex [154]) (./d7/d3e/_device_builder_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -1828,50 +1868,41 @@ Underfull \hbox (badness 10000) detected at line 10
 [][][]
  []
 
-) (./dc/d90/_device_8cpp_source.tex [148]) (./d7/d3e/_device_builder_8cpp.tex
+) (./d7/d3e/_device_builder_8cpp_source.tex [155] [156] [157])
+(./de/d9b/_device_composite_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-
-Underfull \hbox (badness 10000) detected at line 7
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 10
-[][][]
- []
-
-) (./d7/d3e/_device_builder_8cpp_source.tex [149] [150] [151])
+) (./de/d9b/_device_composite_8cpp_source.tex [158])
 (./db/dca/device_dataset_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--6
 
  []
 
-) (./db/dca/device_dataset_8cpp_source.tex [152])
+[159]) (./db/dca/device_dataset_8cpp_source.tex [160])
 (./df/d96/example_security_dataset_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[153]) (./df/d96/example_security_dataset_8cpp_source.tex)
+) (./df/d96/example_security_dataset_8cpp_source.tex [161])
 (./d4/d4e/example_skills_dataset_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[154] [155]) (./d4/d4e/example_skills_dataset_8cpp_source.tex [156])
+[162]) (./d4/d4e/example_skills_dataset_8cpp_source.tex [163])
 (./df/d8e/_insufficient_permissions_exception_8cpp.tex)
 (./df/d8e/_insufficient_permissions_exception_8cpp_source.tex)
 (./dd/dc8/_invalid_device_exception_8cpp.tex)
-(./dd/dc8/_invalid_device_exception_8cpp_source.tex [157])
+(./dd/dc8/_invalid_device_exception_8cpp_source.tex [164])
 (./d7/d58/_invalid_file_exception_8cpp.tex)
 (./d7/d58/_invalid_file_exception_8cpp_source.tex)
 (./de/d05/_invalid_skill_exception_8cpp.tex)
 (./de/d05/_invalid_skill_exception_8cpp_source.tex)
 (./d2/d08/_invalid_user_exception_8cpp.tex)
-(./d2/d08/_invalid_user_exception_8cpp_source.tex [158])
+(./d2/d08/_invalid_user_exception_8cpp_source.tex [165])
 (./dd/d2c/_i_o_di_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
@@ -1887,13 +1918,13 @@ Underfull \hbox (badness 10000) detected at line 11
 [][][]
  []
 
-) (./dd/d2c/_i_o_di_8cpp_source.tex [159] [160])
+) (./dd/d2c/_i_o_di_8cpp_source.tex [166] [167] [168])
 (./da/dac/_kernel_device_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[161]
+
 Underfull \hbox (badness 10000) detected at line 7
 [][][]
  []
@@ -1908,17 +1939,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-
+[169]
 Underfull \hbox (badness 10000) detected at line 7
 [][][]
  []
 
-[162]
+
 Underfull \hbox (badness 10000) detected at line 10
 [][][]
  []
 
-) (./dc/de9/_login_8cpp_source.tex [163]) (./df/d0a/main_8cpp.tex
+) (./dc/de9/_login_8cpp_source.tex [170]) (./df/d0a/main_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
@@ -1938,37 +1969,37 @@ Underfull \hbox (badness 10000) detected at line 30
 [][][]
  []
 
-[164] [165] [166]
-Overfull \hbox (28.0799pt too wide) in paragraph at lines 287--288
+[171] [172] [173] [174]
+Overfull \hbox (46.5926pt too wide) in paragraph at lines 303--304
 []\T1/phv/m/n/10 References [], [], [], [],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
 []\T1/phv/m/n/10 , [], [], [],
  []
 
 
-Overfull \hbox (19.92696pt too wide) in paragraph at lines 287--288
+Overfull \hbox (89.7747pt too wide) in paragraph at lines 303--304
 []\T1/phv/m/n/10 , [], [], [], [],
  []
 
 
-Overfull \hbox (97.60217pt too wide) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 303--304
+[]\T1/phv/m/n/10 , [], [],
+ []
+
+
+Underfull \hbox (badness 5787) in paragraph at lines 303--304
 []\T1/phv/m/n/10 , [], [], [],
  []
 
 
-Underfull \hbox (badness 5787) in paragraph at lines 287--288
-[]\T1/phv/m/n/10 , [], [], [],
- []
-
-
-Overfull \hbox (48.65417pt too wide) in paragraph at lines 287--288
+Overfull \hbox (25.1465pt too wide) in paragraph at lines 303--304
 []\T1/phv/m/n/10 , [], [], [], [],
  []
 
-) (./df/d0a/main_8cpp_source.tex [167] [168] [169])
+[175]) (./df/d0a/main_8cpp_source.tex [176] [177])
 (./dd/df7/_simple_display_8cpp.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
@@ -1984,21 +2015,21 @@ Underfull \hbox (badness 10000) detected at line 10
 [][][]
  []
 
-) (./dd/df7/_simple_display_8cpp_source.tex [170] [171]
+) (./dd/df7/_simple_display_8cpp_source.tex [178] [179]
 Overfull \hbox (78.05273pt too wide) in paragraph at lines 141--141
 \T1/pcr/m/n/7 printf([]"#==========================##==========================
 ====================================================#$\OMS/cmsy/m/n/7 n$\T1/pcr
 /m/n/7 n"[]);  
  []
 
-
+[180]
 Overfull \hbox (78.05273pt too wide) in paragraph at lines 162--162
 \T1/pcr/m/n/7 printf([]"#==========================##==========================
 ====================================================#$\OMS/cmsy/m/n/7 n$\T1/pcr
 /m/n/7 n"[]);  
  []
 
-[172]
+
 Overfull \hbox (78.05273pt too wide) in paragraph at lines 197--197
 \T1/pcr/m/n/7 printf([]"#======================================================
 ====================================================#$\OMS/cmsy/m/n/7 n$\T1/pcr
@@ -2012,14 +2043,14 @@ Overfull \hbox (40.25276pt too wide) in paragraph at lines 208--208
 []);  
  []
 
-[173]
+[181]
 Overfull \hbox (40.25276pt too wide) in paragraph at lines 228--228
 \T1/pcr/m/n/7 printf([]"#======================================================
 ===========================================#$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n"
 []);  
  []
 
-[174]
+[182]
 Overfull \hbox (40.25276pt too wide) in paragraph at lines 325--325
 \T1/pcr/m/n/7 printf([]"#======================================================
 ===========================================#$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n"
@@ -2033,57 +2064,56 @@ Overfull \hbox (48.54999pt too wide) in paragraph at lines 327--327
 \OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n"[]);  
  []
 
-[175]
-Overfull \hbox (40.25276pt too wide) in paragraph at lines 430--430
+[183] [184]
+Overfull \hbox (40.25276pt too wide) in paragraph at lines 454--454
 \T1/pcr/m/n/7 printf([]"#======================================================
 ===========================================#$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n"
 []);  
  []
 
 
-Overfull \hbox (48.54999pt too wide) in paragraph at lines 432--432
+Overfull \hbox (48.54999pt too wide) in paragraph at lines 456--456
 \T1/pcr/m/n/7 printf([]"#======================================================
 ===========================================#$\OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n$
 \OMS/cmsy/m/n/7 n$\T1/pcr/m/n/7 n"[]);  
  []
 
-[176]) (./dc/d89/_user_8cpp.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
+[185]) (./dc/d89/_user_8cpp.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
-[177]
-Underfull \hbox (badness 10000) detected at line 7
+
+Underfull \hbox (badness 10000) detected at line 8
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 10
+Underfull \hbox (badness 10000) detected at line 11
 [][][]
  []
 
-) (./dc/d89/_user_8cpp_source.tex [178] [179] [180])
+) (./dc/d89/_user_8cpp_source.tex [186] [187] [188] [189])
 (./d3/dee/_user_not_found_exception_8cpp.tex)
-(./d3/dee/_user_not_found_exception_8cpp_source.tex) [181] [182
-
-] (./refman.ind
-[183
+(./d3/dee/_user_not_found_exception_8cpp_source.tex) [190] (./refman.ind
+[191
 
 
-] [184] [185] [186] [187] [188] [189
+
+] [192] [193] [194] [195] [196] [197
 
 ]) (./refman.aux)
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 4EE5EE1161A24A642EAAF0347CF713D2;88206.
+(rerunfilecheck)             Checksum: FFACB512FBC7A93A8A995753FAC178CE;92686.
  ) 
 Here is how much of TeX's memory you used:
- 23882 strings out of 476093
- 456092 string characters out of 5795582
- 1879787 words of memory out of 5000000
- 39111 multiletter control sequences out of 15000+600000
+ 24196 strings out of 476093
+ 465805 string characters out of 5795582
+ 1877787 words of memory out of 5000000
+ 39167 multiletter control sequences out of 15000+600000
  572797 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,117p,3580b,740s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,16n,117p,4130b,740s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {d:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/texlive/2022/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2022/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2022/texmf-dist/fonts/type1/
@@ -2095,10 +2125,10 @@ xlive/2022/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb><d:/texlive/2022/texmf
 e1/urw/helvetic/uhvb8a.pfb><d:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic
 /uhvb8ac.pfb><d:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d
 :/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (203 pages, 814632 bytes).
+Output written on refman.pdf (211 pages, 851193 bytes).
 PDF statistics:
- 12980 PDF objects out of 15390 (max. 8388607)
- 12557 compressed objects within 126 object streams
- 4540 named destinations out of 5155 (max. 500000)
- 3517 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13663 PDF objects out of 15390 (max. 8388607)
+ 13223 compressed objects within 133 object streams
+ 4785 named destinations out of 5155 (max. 500000)
+ 3693 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,9 +3,9 @@
 \mbox{\hyperlink{_simple_display_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00001}00001 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ SimpleDisplay -\/ JVH Systems -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00008}00008 \textcolor{comment}{}\textcolor{preprocessor}{\#include "{}../headers/SimpleDisplay.h"{}}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00008}00008 \textcolor{comment}{}\textcolor{preprocessor}{\#include "{}../include/SimpleDisplay.h"{}}}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00009}00009 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00010}00010 \textcolor{keywordtype}{int} \mbox{\hyperlink{class_simple_display_ab9f6d87641534456d6b348d425deca7e}{SimpleDisplay::MAXIMUM\_OPTIONS}} = 12;}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00010}00010 \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_simple_display_a3980068c1c8cc4ff9d77e3e0480b9395}{SimpleDisplay::MAXIMUM\_OPTIONS}} = 12;}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00011}00011 std::string \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{SimpleDisplay::COLOR}} = \textcolor{stringliteral}{"{}\(\backslash\)033[36m"{}};}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00012}00012 std::string \mbox{\hyperlink{class_simple_display_a624b5b59d1651f79a43ec052406c2c0e}{SimpleDisplay::WARNING\_COLOR}} = \textcolor{stringliteral}{"{}\(\backslash\)033[31m"{}};}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00013}00013 std::string \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{SimpleDisplay::RESET\_COLOR}} = \textcolor{stringliteral}{"{}\(\backslash\)033[0m"{}};}
@@ -25,7 +25,7 @@
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00027}00027 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00028}00028 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00029}00029 \textcolor{comment}{// -\/-\/-\/ [Static] printLoginInterface -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00030}\mbox{\hyperlink{class_simple_display_ab1d7ccdbdf671ce70c383332632ebbf7}{00030}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_ab1d7ccdbdf671ce70c383332632ebbf7}{SimpleDisplay::printLoginInterface}}(\textcolor{keywordtype}{int} user, \textcolor{keywordtype}{int} pass, \textcolor{keywordtype}{int} INVALID\_USER, \textcolor{keywordtype}{int} INVALID\_PASS)\{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00030}\mbox{\hyperlink{class_simple_display_afcacaaa76d7922376065489b9a325836}{00030}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_afcacaaa76d7922376065489b9a325836}{SimpleDisplay::printLoginInterface}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} user, \textcolor{keyword}{const} \textcolor{keywordtype}{int} pass, \textcolor{keyword}{const} \textcolor{keywordtype}{int} INVALID\_USER, \textcolor{keyword}{const} \textcolor{keywordtype}{int} INVALID\_PASS)\{}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00031}00031 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00032}00032     \textcolor{comment}{// -\/-\/-\/-\/-\/ Declarations -\/-\/-\/-\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00033}00033 }
@@ -82,7 +82,7 @@
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00084}00084 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00085}00085 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00086}00086 \textcolor{comment}{// -\/-\/-\/ [Static] cout -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00087}\mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{00087}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a022eab221671583a329e067d6af18035}{SimpleDisplay::cout}}(std::string text)\{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00087}\mbox{\hyperlink{class_simple_display_ab93019861da9b9bc4f55cb9a590cea68}{00087}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_ab93019861da9b9bc4f55cb9a590cea68}{SimpleDisplay::cout}}(\textcolor{keyword}{const} std::string\& text)\{}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00088}00088     \mbox{\hyperlink{class_simple_display_a04be0c6902dd0650f4489d9014e26a9a}{checkAbortStatus}}();}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00089}00089     std::cout << text;}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00090}00090 \}}
@@ -101,9 +101,9 @@
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00103}00103 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00104}00104 \textcolor{comment}{// -\/-\/-\/ [Static] printMainInterface -\/-\/-\/}}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00105}\mbox{\hyperlink{class_simple_display_a92871124832f3d169fc288fc1d84c9ba}{00105}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a92871124832f3d169fc288fc1d84c9ba}{SimpleDisplay::printMainInterface}}(std::string* deviceNames, \textcolor{keywordtype}{bool}* deviceStatus) \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00106}00106     std::string directory[\mbox{\hyperlink{class_simple_display_ab9f6d87641534456d6b348d425deca7e}{SimpleDisplay::MAXIMUM\_OPTIONS}}];}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00107}00107     std::string option[\mbox{\hyperlink{class_simple_display_ab9f6d87641534456d6b348d425deca7e}{SimpleDisplay::MAXIMUM\_OPTIONS}}];}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00108}00108     std::string status[\mbox{\hyperlink{class_simple_display_ab9f6d87641534456d6b348d425deca7e}{SimpleDisplay::MAXIMUM\_OPTIONS}}];}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00106}00106     std::string directory[\mbox{\hyperlink{class_simple_display_a3980068c1c8cc4ff9d77e3e0480b9395}{SimpleDisplay::MAXIMUM\_OPTIONS}}];}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00107}00107     std::string option[\mbox{\hyperlink{class_simple_display_a3980068c1c8cc4ff9d77e3e0480b9395}{SimpleDisplay::MAXIMUM\_OPTIONS}}];}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00108}00108     std::string status[\mbox{\hyperlink{class_simple_display_a3980068c1c8cc4ff9d77e3e0480b9395}{SimpleDisplay::MAXIMUM\_OPTIONS}}];}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00109}00109 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00110}00110 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00111}00111     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < this-\/>\mbox{\hyperlink{class_simple_display_a3273aa7c4e3c913f546eca665a92c904}{dataDevices}}; i++) \{}
@@ -116,7 +116,7 @@
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00118}00118     \}}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00119}00119 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00120}00120 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00121}00121     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = this-\/>dataDevices; i < \mbox{\hyperlink{class_simple_display_ab9f6d87641534456d6b348d425deca7e}{SimpleDisplay::MAXIMUM\_OPTIONS}}; i++) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00121}00121     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = this-\/>dataDevices; i < \mbox{\hyperlink{class_simple_display_a3980068c1c8cc4ff9d77e3e0480b9395}{SimpleDisplay::MAXIMUM\_OPTIONS}}; i++) \{}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00122}00122         directory[i] = \textcolor{stringliteral}{"{}"{}};}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00123}00123         option[i] = \textcolor{stringliteral}{"{}"{}};}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00124}00124         status[i] = \textcolor{stringliteral}{"{}-\/"{}};}
@@ -149,12 +149,12 @@
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00151}00151     printf(\textcolor{stringliteral}{"{}| \%-\/3s \%-\/20s ||                                                                              |\(\backslash\)n"{}},option[6].c\_str(),directory[6].c\_str());}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00152}00152     printf(\textcolor{stringliteral}{"{}| \%-\/3s \%-\/20s ||       [Security Alarms]: \%-\/12s      [Security Status]: \%-\/8s       |\(\backslash\)n"{}},option[7].c\_str(),directory[7].c\_str(),conected.c\_str(),secStatus.c\_str());}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00153}00153     printf(\textcolor{stringliteral}{"{}| \%-\/3s \%-\/20s ||                                                                              |\(\backslash\)n"{}},option[8].c\_str(),directory[8].c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00154}00154     printf(\textcolor{stringliteral}{"{}| \%-\/3s \%-\/20s ||         Device 1:  \%-\/11s                Device 7:  \%-\/11s         |\(\backslash\)n"{}},option[9].c\_str(),directory[9].c\_str(),status[0].c\_str(),status[6].c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00155}00155     printf(\textcolor{stringliteral}{"{}| \%-\/3s \%-\/20s ||         Device 2:  \%-\/11s                Device 8:  \%-\/11s         |\(\backslash\)n"{}},option[10].c\_str(),directory[10].c\_str(),status[1].c\_str(),status[7].c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00156}00156     printf(\textcolor{stringliteral}{"{}| \%-\/3s \%-\/20s ||         Device 3:  \%-\/11s                Device 9:  \%-\/11s         |\(\backslash\)n"{}},option[11].c\_str(),directory[11].c\_str(),status[2].c\_str(),status[8].c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00157}00157     printf(\textcolor{stringliteral}{"{}|  \%-\/23s ||         Device 4:  \%-\/11s                Device 10: \%-\/11s         |\(\backslash\)n"{}},\textcolor{stringliteral}{"{}"{}},status[3].c\_str(),status[9].c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00158}00158     printf(\textcolor{stringliteral}{"{}|  \%-\/23s ||         Device 5:  \%-\/11s                Device 11: \%-\/11s         |\(\backslash\)n"{}},\textcolor{stringliteral}{"{}"{}},status[4].c\_str(),status[10].c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00159}00159     printf(\textcolor{stringliteral}{"{}|  \%-\/23s ||         Device 6:  \%-\/11s                Device 12: \%-\/11s         |\(\backslash\)n"{}},\textcolor{stringliteral}{"{}"{}},status[5].c\_str(),status[11].c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00154}00154     printf(\textcolor{stringliteral}{"{}| \%-\/3s \%-\/20s ||         Device 0:  \%-\/11s                Device 6:  \%-\/11s         |\(\backslash\)n"{}},option[9].c\_str(),directory[9].c\_str(),status[0].c\_str(),status[6].c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00155}00155     printf(\textcolor{stringliteral}{"{}| \%-\/3s \%-\/20s ||         Device 1:  \%-\/11s                Device 7:  \%-\/11s         |\(\backslash\)n"{}},option[10].c\_str(),directory[10].c\_str(),status[1].c\_str(),status[7].c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00156}00156     printf(\textcolor{stringliteral}{"{}| \%-\/3s \%-\/20s ||         Device 2:  \%-\/11s                Device 8:  \%-\/11s         |\(\backslash\)n"{}},option[11].c\_str(),directory[11].c\_str(),status[2].c\_str(),status[8].c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00157}00157     printf(\textcolor{stringliteral}{"{}|  \%-\/23s ||         Device 3:  \%-\/11s                Device 9:  \%-\/11s         |\(\backslash\)n"{}},\textcolor{stringliteral}{"{}"{}},status[3].c\_str(),status[9].c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00158}00158     printf(\textcolor{stringliteral}{"{}|  \%-\/23s ||         Device 4:  \%-\/11s                Device 10: \%-\/11s         |\(\backslash\)n"{}},\textcolor{stringliteral}{"{}"{}},status[4].c\_str(),status[10].c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00159}00159     printf(\textcolor{stringliteral}{"{}|  \%-\/23s ||         Device 5:  \%-\/11s                Device 11: \%-\/11s         |\(\backslash\)n"{}},\textcolor{stringliteral}{"{}"{}},status[5].c\_str(),status[11].c\_str());}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00160}00160     printf(\textcolor{stringliteral}{"{}|  \%-\/23s ||                                                                              |\(\backslash\)n"{}},\textcolor{stringliteral}{"{}"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00161}00161     printf(\textcolor{stringliteral}{"{}| \%-\/2d) \%-\/20s ||       [User]: \%-\/5s                        [Kernel Devices]: \%-\/2d              |\(\backslash\)n"{}},-\/1,\textcolor{stringliteral}{"{}EXIT"{}},username.c\_str(),this-\/>kernelDevices);}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00162}00162     printf(\textcolor{stringliteral}{"{}| \%-\/2d) \%-\/20s ||       [Group]: \%-\/7s                     [Data Devices]: \%-\/2d                |\(\backslash\)n"{}},-\/2,\textcolor{stringliteral}{"{}SETTINGS"{}},\mbox{\hyperlink{class_simple_display_aae2869e2a3a190d268e99a07f9efa804}{group}}.c\_str(),this-\/>dataDevices);}
@@ -168,11 +168,11 @@
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00170}00170 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00171}00171     \mbox{\hyperlink{class_simple_display_a510f38e87a8ceaca48402013d14360a1}{jump}}();}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00172}00172 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00173}00173     printf(\textcolor{stringliteral}{"{}\#==================================       JVH-\/Systems  V.0.4.0   ========================================\#\(\backslash\)n\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00173}00173     printf(\textcolor{stringliteral}{"{}\#==================================       JVH-\/Systems  V.1.0.0   ========================================\#\(\backslash\)n\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00174}00174     printf(\textcolor{stringliteral}{"{}       Bienvenido Software Developer                                                                        \(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00175}00175     printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00176}00176     printf(\textcolor{stringliteral}{"{}       Esta pantalla es puramente informativa y NO aparecera en la version FINAL del programa.\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00177}00177     printf(\textcolor{stringliteral}{"{}       A continuacion vas a acceder al programa JVH-\/Systems version V.0.3.1 Antes de lanzarte\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00177}00177     printf(\textcolor{stringliteral}{"{}       A continuacion vas a acceder al programa JVH-\/Systems version V.1.0.0 Antes de lanzarte\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00178}00178     printf(\textcolor{stringliteral}{"{}       al programa te recomendamos que compruebes los siguientes parametros:\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00179}00179     printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00180}00180     printf(\textcolor{stringliteral}{"{}    1. Comprueba que tu terminal es capaz de ver el recuadro en el que se encuentra incluido\(\backslash\)n"{}});}
@@ -183,7 +183,7 @@
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00185}00185     printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00186}00186     printf(\textcolor{stringliteral}{"{}    3. Una vez hayas comprobado todo estaras listo para testear este programa adecuadamente.\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00187}00187     printf(\textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00188}00188     printf(\textcolor{stringliteral}{"{}       Hemos dejado a tu disposicion dos cuentas. Puedes agregar tras iniciar el programa:\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00188}00188     printf(\textcolor{stringliteral}{"{}       Hemos dejado a tu disposicion dos cuentas. Puedes agregar mas tras iniciar el programa:\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00189}00189     printf(\textcolor{stringliteral}{"{}                                                                                                            \(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00190}00190     printf(\textcolor{stringliteral}{"{}                            root: 0                  GUEST: 99999\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00191}00191     printf(\textcolor{stringliteral}{"{}                          Password: 0               Password: 99999999\(\backslash\)n"{}});}
@@ -251,7 +251,7 @@
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00253}00253     printf(\textcolor{stringliteral}{"{}\%s"{}},(\mbox{\hyperlink{class_simple_display_a527b662d6cf85fe3443111ee78532fe4}{GREY\_COLOR}} + \textcolor{stringliteral}{"{}\# more devices to JVH\_Systems without modifying the program. This tool is experimental\(\backslash\)n"{}}).c\_str());}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00254}00254     printf(\textcolor{stringliteral}{"{}\%s"{}},(\mbox{\hyperlink{class_simple_display_a527b662d6cf85fe3443111ee78532fe4}{GREY\_COLOR}} + \textcolor{stringliteral}{"{}\# can cause SEVERAL DAMAGE to your program. Please, if you have any doubt about the \(\backslash\)n"{}}).c\_str());}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00255}00255     printf(\textcolor{stringliteral}{"{}\%s"{}},(\mbox{\hyperlink{class_simple_display_a527b662d6cf85fe3443111ee78532fe4}{GREY\_COLOR}} + \textcolor{stringliteral}{"{}\# building process, type EXIT (anytime) and read more in our github:\(\backslash\)n"{}}).c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00256}00256     printf(\textcolor{stringliteral}{"{}\%s"{}},(\mbox{\hyperlink{class_simple_display_a527b662d6cf85fe3443111ee78532fe4}{GREY\_COLOR}} + \textcolor{stringliteral}{"{}\# https://github.com/clases-\/julio/p6-\/setstl-\/usuarios-\/SamthinkGit\(\backslash\)n\(\backslash\)n"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00256}00256     printf(\textcolor{stringliteral}{"{}\%s"{}},(\mbox{\hyperlink{class_simple_display_a527b662d6cf85fe3443111ee78532fe4}{GREY\_COLOR}} + \textcolor{stringliteral}{"{}\# https://github.com/clases-\/julio/p9-\/patrones-\/SamthinkGit/wiki\(\backslash\)n\(\backslash\)n"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}}).c\_str());}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00257}00257     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}cd "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}\$HOME"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}/src/deviceDataset.cpp\(\backslash\)n"{}}).c\_str());}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00258}00258     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}slot=find("{}}+\mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}}+\textcolor{stringliteral}{"{}\(\backslash\)'DeviceNameSlot\(\backslash\)'"{}}+\mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}}+\textcolor{stringliteral}{"{})\(\backslash\)n\(\backslash\)n"{}}).c\_str());}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00259}00259     printf(\textcolor{stringliteral}{"{}if [ slot == \(\backslash\)"{}VALID\_SLOT\(\backslash\)"{} ]; then\(\backslash\)n\(\backslash\)n"{}});}
@@ -275,7 +275,7 @@
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00277}00277 \}}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00278}00278 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00279}00279 \textcolor{comment}{// -\/-\/-\/ [Function] execBuildGenerator()}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00280}\mbox{\hyperlink{class_simple_display_a220e9af564e883034f02c3344d6321d0}{00280}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a220e9af564e883034f02c3344d6321d0}{SimpleDisplay::execBuildGenerator}}(\textcolor{keywordtype}{bool} isDataDevice)\{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00280}\mbox{\hyperlink{class_simple_display_acf0368f5c8af8ebb95f822489335a8c0}{00280}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_acf0368f5c8af8ebb95f822489335a8c0}{SimpleDisplay::execBuildGenerator}}(\textcolor{keyword}{const} \textcolor{keywordtype}{bool} isDataDevice)\{}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00281}00281 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00282}00282     \mbox{\hyperlink{class_simple_display_a04be0c6902dd0650f4489d9014e26a9a}{checkAbortStatus}}();}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00283}00283     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\(\backslash\)nif [ \(\backslash\)"{}"{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}\$EUID"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)"{} -\/ne 0 ]; then\(\backslash\)n"{}}).c\_str());}
@@ -320,14 +320,14 @@
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00322}00322 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00323}00323 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00324}00324 \textcolor{comment}{// -\/-\/-\/ [Static] printDeviHeader -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00325}\mbox{\hyperlink{class_simple_display_a0ecc0b47ab352f65c75d137aeffd9b1a}{00325}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a0ecc0b47ab352f65c75d137aeffd9b1a}{SimpleDisplay::printDeviHeader}}(std::string deviceName) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00325}\mbox{\hyperlink{class_simple_display_a8b707f54df50fd14a62402cef0f19a14}{00325}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a8b707f54df50fd14a62402cef0f19a14}{SimpleDisplay::printDeviHeader}}(\textcolor{keyword}{const} std::string\& deviceName) \{}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00326}00326     \mbox{\hyperlink{class_simple_display_a510f38e87a8ceaca48402013d14360a1}{jump}}();}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00327}00327     printf(\textcolor{stringliteral}{"{}\#=================================================================================================\#\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00328}00328     printf(\textcolor{stringliteral}{"{}|                                          \%-\/20s                                   |\(\backslash\)n"{}},deviceName.c\_str());}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00329}00329     printf(\textcolor{stringliteral}{"{}\#=================================================================================================\#\(\backslash\)n\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00330}00330     printf(\textcolor{stringliteral}{"{}\string~                               DEVi++ -\/ Device VIM Based Terminal                                          \(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00331}00331     printf(\textcolor{stringliteral}{"{}\string~                                                                                                           \(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00332}00332     printf(\textcolor{stringliteral}{"{}\string~                                         version \%-\/9s                                             \(\backslash\)n"{}},\textcolor{stringliteral}{"{}DEV.0.2"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00332}00332     printf(\textcolor{stringliteral}{"{}\string~                                         version \%-\/9s                                             \(\backslash\)n"{}},\textcolor{stringliteral}{"{}DEV.1.0"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00333}00333     printf(\textcolor{stringliteral}{"{}\string~                                    by Sebastian Mayorquin                                                 \(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00334}00334     printf(\textcolor{stringliteral}{"{}\string~                                                                                                           \(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00335}00335     printf(\textcolor{stringliteral}{"{}\string~                                  Sponsor DEVi++ Development!                                              \(\backslash\)n"{}});}
@@ -390,131 +390,153 @@
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00392}00392     printf(\textcolor{stringliteral}{"{}\string~ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00393}00393 \}}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00394}00394 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00395}00395 \textcolor{comment}{// -\/-\/-\/ [Static] printSkillManual -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00396}\mbox{\hyperlink{class_simple_display_a391ee4dc69bf819ebbe85beb0352d716}{00396}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a391ee4dc69bf819ebbe85beb0352d716}{SimpleDisplay::printSkillManual}}(std::string* skillnames, \textcolor{keywordtype}{int} count) \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00397}00397 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00398}00398     printf(\textcolor{stringliteral}{"{}\string~ -\/-\/-\/-\/-\/-\/-\/-\/ DEVi++ Self-\/Generated Skill Manual -\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00399}00399     printf(\textcolor{stringliteral}{"{}\string~ Every device has its own commands, JVH implements a  \(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00400}00400     printf(\textcolor{stringliteral}{"{}\string~ builder to install high-\/level functions into the     \(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00401}00401     printf(\textcolor{stringliteral}{"{}\string~ interface. This device functionalities are called    \(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00402}00402     printf(\textcolor{stringliteral}{"{}\%s"{}}, (\textcolor{stringliteral}{"{}\string~ "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}skills"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}. In this version, we only allow high-\/level    \(\backslash\)n"{}}).c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00403}00403     printf(\textcolor{stringliteral}{"{}\string~ developers to integrate the name of the skill without  \(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00404}00404     printf(\textcolor{stringliteral}{"{}\string~ description.\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00405}00405     printf(\textcolor{stringliteral}{"{}\string~ \(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00406}00406     printf(\textcolor{stringliteral}{"{}\string~ This manual will show all skills detected for the\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00407}00407     printf(\textcolor{stringliteral}{"{}\string~ selected device, for more help, you can search in\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00408}00408     printf(\textcolor{stringliteral}{"{}\string~ our wiki: \(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00409}00409     printf(\textcolor{stringliteral}{"{}\string~ \(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00410}00410     printf(\textcolor{stringliteral}{"{}\%s"{}}, (\textcolor{stringliteral}{"{}\string~ "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} +  \textcolor{stringliteral}{"{}https://github.com/clases-\/julio/p4-\/implclases-\/SamthinkGit"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00411}00411     printf(\textcolor{stringliteral}{"{}\string~ \(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00412}00412     printf(\textcolor{stringliteral}{"{}\string~ [DEVi++] Searching Skills...\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00413}00413     printf(\textcolor{stringliteral}{"{}\%s"{}}, (\textcolor{stringliteral}{"{}\string~ [DEVi++] "{}} + std::to\_string(count+5) + \textcolor{stringliteral}{"{} skills detected.\(\backslash\)n"{}}).c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00414}00414     printf(\textcolor{stringliteral}{"{}\string~ [DEVi++] Generating Manual:\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00415}00415     printf(\textcolor{stringliteral}{"{}\string~ \(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00416}00416     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ [GLOBAL] -\/> "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}data"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00417}00417     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ [GLOBAL] -\/> "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}forceref"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00418}00418     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ [GLOBAL] -\/> "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}turnon"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00419}00419     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ [GLOBAL] -\/> "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}turnoff"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00420}00420     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ [GLOBAL] -\/> "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}reboot"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00421}00421 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00422}00422 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00423}00423     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < count; i++)\{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00424}00424         printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ [DETECTED] -\/> "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + skillnames[i] + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00425}00425     \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00395}\mbox{\hyperlink{class_simple_display_a02b20fd95534d2965054fe05ef092cd4}{00395}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a02b20fd95534d2965054fe05ef092cd4}{SimpleDisplay::printAboutUs}}() \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00396}00396     \mbox{\hyperlink{class_simple_display_a510f38e87a8ceaca48402013d14360a1}{jump}}();}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00397}00397     \mbox{\hyperlink{class_simple_display_affb8690f49152ebb247d2fffc589681d}{cleanDevi}}(\textcolor{stringliteral}{"{}About Us"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00398}00398     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}MIT License"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00399}00399     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00400}00400     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}Copyright (c) 10 years by SamthinkGit"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00401}00401     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00402}00402     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}Permission is hereby granted, free of charge, to any person obtaining a copy"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00403}00403     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}of this software and associated documentation files (JVH Systems), to deal"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00404}00404     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}in the Software without restriction, including without limitation the rights"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00405}00405     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}to use, copy, modify, merge, publish, distribute, sublicense, and/or sell"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00406}00406     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}copies of the Software, and to permit persons to whom the Software is"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00407}00407     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}furnished to do so, subject to the following conditions:"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00408}00408     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00409}00409     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}The above copyright notice and this permission notice shall be included in all"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00410}00410     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}copies or substantial portions of the Software."{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00411}00411     \mbox{\hyperlink{class_simple_display_ab93019861da9b9bc4f55cb9a590cea68}{SimpleDisplay::cout}}(\textcolor{stringliteral}{"{}\(\backslash\)n Press <ENTER> to return."{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00412}00412     std::string trash;}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00413}00413     std::getline(std::cin, trash);}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00414}00414 \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00415}00415 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00416}00416 \textcolor{comment}{// -\/-\/-\/ [Static] printSkillManual -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00417}\mbox{\hyperlink{class_simple_display_acdf68ec8b479fe369090d85fbb069206}{00417}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_acdf68ec8b479fe369090d85fbb069206}{SimpleDisplay::printSkillManual}}(\textcolor{keyword}{const} std::string* skillnames, \textcolor{keyword}{const} \textcolor{keywordtype}{int} count) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00418}00418 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00419}00419     printf(\textcolor{stringliteral}{"{}\string~ -\/-\/-\/-\/-\/-\/-\/-\/ DEVi++ Self-\/Generated Skill Manual -\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00420}00420     printf(\textcolor{stringliteral}{"{}\string~ Every device has its own commands, JVH implements a  \(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00421}00421     printf(\textcolor{stringliteral}{"{}\string~ builder to install high-\/level functions into the     \(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00422}00422     printf(\textcolor{stringliteral}{"{}\string~ interface. This device functionalities are called    \(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00423}00423     printf(\textcolor{stringliteral}{"{}\%s"{}}, (\textcolor{stringliteral}{"{}\string~ "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}skills"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}. In this version, we only allow high-\/level    \(\backslash\)n"{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00424}00424     printf(\textcolor{stringliteral}{"{}\string~ developers to integrate the name of the skill without  \(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00425}00425     printf(\textcolor{stringliteral}{"{}\string~ description.\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00426}00426     printf(\textcolor{stringliteral}{"{}\string~ \(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00427}00427     printf(\textcolor{stringliteral}{"{}\string~ NOTE: For using skills only type the name in DEVi++ and press <ENTER>\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00428}00428     printf(\textcolor{stringliteral}{"{}\string~ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00429}00429 \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00430}00430 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00431}00431 \textcolor{comment}{// -\/-\/-\/ [Static] cleanDevi -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00432}\mbox{\hyperlink{class_simple_display_ac3342c506e4d805672563e1b7e7a4cb7}{00432}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_ac3342c506e4d805672563e1b7e7a4cb7}{SimpleDisplay::cleanDevi}}(std::string deviceName) \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00433}00433 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00434}00434     \mbox{\hyperlink{class_simple_display_a510f38e87a8ceaca48402013d14360a1}{jump}}();}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00435}00435     printf(\textcolor{stringliteral}{"{}\#=================================================================================================\#\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00436}00436     printf(\textcolor{stringliteral}{"{}|                                          \%-\/20s                                   |\(\backslash\)n"{}},deviceName.c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00437}00437     printf(\textcolor{stringliteral}{"{}\#=================================================================================================\#\(\backslash\)n\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00438}00438     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 20;i++)\{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00439}00439         printf(\textcolor{stringliteral}{"{}\string~\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00440}00440     \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00441}00441 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00442}00442 \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00427}00427     printf(\textcolor{stringliteral}{"{}\string~ This manual will show all skills detected for the\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00428}00428     printf(\textcolor{stringliteral}{"{}\string~ selected device, for more help, you can search in\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00429}00429     printf(\textcolor{stringliteral}{"{}\string~ our wiki: \(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00430}00430     printf(\textcolor{stringliteral}{"{}\string~ \(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00431}00431     printf(\textcolor{stringliteral}{"{}\%s"{}}, (\textcolor{stringliteral}{"{}\string~ "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} +  \textcolor{stringliteral}{"{}https://github.com/clases-\/julio/p9-\/patrones-\/SamthinkGit/wiki"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00432}00432     printf(\textcolor{stringliteral}{"{}\string~ \(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00433}00433     printf(\textcolor{stringliteral}{"{}\string~ [DEVi++] Searching Skills...\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00434}00434     printf(\textcolor{stringliteral}{"{}\%s"{}}, (\textcolor{stringliteral}{"{}\string~ [DEVi++] "{}} + std::to\_string(count+5) + \textcolor{stringliteral}{"{} skills detected.\(\backslash\)n"{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00435}00435     printf(\textcolor{stringliteral}{"{}\string~ [DEVi++] Generating Manual:\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00436}00436     printf(\textcolor{stringliteral}{"{}\string~ \(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00437}00437     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ [GLOBAL] -\/> "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}data"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00438}00438     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ [GLOBAL] -\/> "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}forceref"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00439}00439     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ [GLOBAL] -\/> "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}turnon"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00440}00440     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ [GLOBAL] -\/> "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}turnoff"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00441}00441     printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ [GLOBAL] -\/> "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}reboot"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00442}00442 }
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00443}00443 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00444}00444 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00445}00445 \textcolor{comment}{// -\/-\/-\/ [Static] deviCout -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00446}\mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{00446}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{SimpleDisplay::deviCout}}(std::string text) \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00447}00447 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00448}00448     \mbox{\hyperlink{class_simple_display_a04be0c6902dd0650f4489d9014e26a9a}{checkAbortStatus}}();}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00449}00449     printf(\textcolor{stringliteral}{"{}\%s"{}}, (\textcolor{stringliteral}{"{}\string~ "{}} + text + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00444}00444     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < count; i++)\{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00445}00445         printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ [DETECTED] -\/> "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + skillnames[i] + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00446}00446     \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00447}00447     printf(\textcolor{stringliteral}{"{}\string~ \(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00448}00448     printf(\textcolor{stringliteral}{"{}\string~ NOTE: For using skills only type the name in DEVi++ and press <ENTER>\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00449}00449     printf(\textcolor{stringliteral}{"{}\string~ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00450}00450 \}}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00451}00451 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00452}00452 \textcolor{comment}{// -\/-\/-\/ [Static] printDeviData -\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00453}\mbox{\hyperlink{class_simple_display_a0ed9bfa2b4796cefa022bd398368b68a}{00453}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a0ed9bfa2b4796cefa022bd398368b68a}{SimpleDisplay::deviPrintData}}(std::vector<int> data, std::vector<std::string> time) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00452}00452 \textcolor{comment}{// -\/-\/-\/ [Static] cleanDevi -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00453}\mbox{\hyperlink{class_simple_display_affb8690f49152ebb247d2fffc589681d}{00453}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_affb8690f49152ebb247d2fffc589681d}{SimpleDisplay::cleanDevi}}(\textcolor{keyword}{const} std::string\& deviceName) \{}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00454}00454 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00455}00455     \textcolor{keywordtype}{int} date\_length = 19;}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00456}00456     \textcolor{keywordtype}{int} size = data.size();}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00457}00457     \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{deviCout}}(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  Collected Data  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00458}00458     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; i++)\{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00459}00459         printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}["{}}).c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00460}00460         printf(\textcolor{stringliteral}{"{}\%.*s"{}}, date\_length, time[i].c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00461}00461         printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}]"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}: "{}} + std::to\_string(data[i]) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00462}00462     \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00463}00463     \mbox{\hyperlink{class_simple_display_a0747b751c886b0aa0dbb00ce546c1b6e}{deviCout}}(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00455}00455     \mbox{\hyperlink{class_simple_display_a510f38e87a8ceaca48402013d14360a1}{jump}}();}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00456}00456     printf(\textcolor{stringliteral}{"{}\#=================================================================================================\#\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00457}00457     printf(\textcolor{stringliteral}{"{}|                                          \%-\/20s                                   |\(\backslash\)n"{}},deviceName.c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00458}00458     printf(\textcolor{stringliteral}{"{}\#=================================================================================================\#\(\backslash\)n\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00459}00459     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 20;i++)\{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00460}00460         printf(\textcolor{stringliteral}{"{}\string~\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00461}00461     \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00462}00462 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00463}00463 \}}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00464}00464 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00465}00465 \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00466}00466 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00467}00467 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00468}00468 \textcolor{comment}{//                         SETTERS                      |}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00469}00469 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00470}00470 \textcolor{comment}{// -\/-\/-\/ [Function] setSecurityConnected()}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00471}\mbox{\hyperlink{class_simple_display_af3347757fb1111a5360f064dd152390f}{00471}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_af3347757fb1111a5360f064dd152390f}{SimpleDisplay::setSecurityConnected}}(\textcolor{keywordtype}{bool} securityConnected) \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00472}00472     \mbox{\hyperlink{class_simple_display_a2187f9b8194cfeb7a0a5c100dc7ed23d}{SimpleDisplay::securityConnected}} = \mbox{\hyperlink{class_simple_display_a2187f9b8194cfeb7a0a5c100dc7ed23d}{securityConnected}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00473}00473 \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00474}00474 \textcolor{comment}{// -\/-\/-\/ [Function] setSecurityStatus()}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00475}\mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{00475}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a0fa9a88bf97d0f35a2e7147bdbb0f0f0}{SimpleDisplay::setSecurityStatus}}(\textcolor{keywordtype}{bool} securityStatus) \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00476}00476     \mbox{\hyperlink{class_simple_display_a241ca284b969cd20153a6c2372c83d34}{SimpleDisplay::securityStatus}} = \mbox{\hyperlink{class_simple_display_a241ca284b969cd20153a6c2372c83d34}{securityStatus}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00477}00477 \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00478}00478 \textcolor{comment}{// -\/-\/-\/ [Function] setKernelDevices()}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00479}\mbox{\hyperlink{class_simple_display_a2314ecf97aeef47e8ae9ba606e7e2586}{00479}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a2314ecf97aeef47e8ae9ba606e7e2586}{SimpleDisplay::setKernelDevices}}(\textcolor{keywordtype}{int} kernelDevices) \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00480}00480     \mbox{\hyperlink{class_simple_display_a1050d363dcea91e399df0357998a5212}{SimpleDisplay::kernelDevices}} = \mbox{\hyperlink{class_simple_display_a1050d363dcea91e399df0357998a5212}{kernelDevices}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00481}00481 \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00482}00482 \textcolor{comment}{// -\/-\/-\/ [Function] setDataDevices()}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00483}\mbox{\hyperlink{class_simple_display_a6990b81b752ebc7b6894a3e3770db667}{00483}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a6990b81b752ebc7b6894a3e3770db667}{SimpleDisplay::setDataDevices}}(\textcolor{keywordtype}{int} dataDevices) \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00484}00484     \mbox{\hyperlink{class_simple_display_a3273aa7c4e3c913f546eca665a92c904}{SimpleDisplay::dataDevices}} = \mbox{\hyperlink{class_simple_display_a3273aa7c4e3c913f546eca665a92c904}{dataDevices}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00485}00485 \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00486}00486 \textcolor{comment}{// -\/-\/-\/ [Function] setUser()}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00487}\mbox{\hyperlink{class_simple_display_af70bf795d69386a4d6c42aa18fc9a67d}{00487}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_af70bf795d69386a4d6c42aa18fc9a67d}{SimpleDisplay::setUser}}(\textcolor{keywordtype}{int} user) \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00488}00488     \mbox{\hyperlink{class_simple_display_a643490b0bfd0f84a95ae5cd0e52737ae}{SimpleDisplay::user}} = \mbox{\hyperlink{class_simple_display_a643490b0bfd0f84a95ae5cd0e52737ae}{user}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00489}00489 \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00490}00490 \textcolor{comment}{// -\/-\/-\/ [Function] setGroup()}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00491}\mbox{\hyperlink{class_simple_display_a427ece0206cfe9ab5128f8cb057022b9}{00491}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a427ece0206cfe9ab5128f8cb057022b9}{SimpleDisplay::setGroup}}(\textcolor{keyword}{const} std::string \&group) \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00492}00492     \mbox{\hyperlink{class_simple_display_aae2869e2a3a190d268e99a07f9efa804}{SimpleDisplay::group}} = \mbox{\hyperlink{class_simple_display_aae2869e2a3a190d268e99a07f9efa804}{group}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00493}00493 \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00494}00494 \textcolor{comment}{// -\/-\/-\/ [Function] operator()}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00495}\mbox{\hyperlink{class_simple_display_a9c36fd9a456b0e637dec52a78aeef939}{00495}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a9c36fd9a456b0e637dec52a78aeef939}{SimpleDisplay::operator<<}}(\mbox{\hyperlink{class_simple_display}{SimpleDisplay}} display) \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00496}00496 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00497}00497     this-\/>\mbox{\hyperlink{class_simple_display_a241ca284b969cd20153a6c2372c83d34}{securityStatus}} = display.\mbox{\hyperlink{class_simple_display_a241ca284b969cd20153a6c2372c83d34}{securityStatus}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00498}00498     this-\/>\mbox{\hyperlink{class_simple_display_a2187f9b8194cfeb7a0a5c100dc7ed23d}{securityConnected}} = display.\mbox{\hyperlink{class_simple_display_a2187f9b8194cfeb7a0a5c100dc7ed23d}{securityConnected}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00499}00499     this-\/>\mbox{\hyperlink{class_simple_display_a643490b0bfd0f84a95ae5cd0e52737ae}{user}} = display.\mbox{\hyperlink{class_simple_display_a643490b0bfd0f84a95ae5cd0e52737ae}{user}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00500}00500     this-\/>\mbox{\hyperlink{class_simple_display_aae2869e2a3a190d268e99a07f9efa804}{group}} = display.\mbox{\hyperlink{class_simple_display_aae2869e2a3a190d268e99a07f9efa804}{group}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00501}00501 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00465}00465 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00466}00466 \textcolor{comment}{// -\/-\/-\/ [Static] deviCout -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00467}\mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{00467}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{SimpleDisplay::deviCout}}(\textcolor{keyword}{const} std::string\& text) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00468}00468 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00469}00469     \mbox{\hyperlink{class_simple_display_a04be0c6902dd0650f4489d9014e26a9a}{checkAbortStatus}}();}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00470}00470     printf(\textcolor{stringliteral}{"{}\%s"{}}, (\textcolor{stringliteral}{"{}\string~ "{}} + text + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00471}00471 \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00472}00472 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00473}00473 \textcolor{comment}{// -\/-\/-\/ [Static] printDeviData -\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00474}\mbox{\hyperlink{class_simple_display_adaf78459c8543d68f59106e992e0978a}{00474}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_adaf78459c8543d68f59106e992e0978a}{SimpleDisplay::deviPrintData}}(\textcolor{keyword}{const} std::vector<int>\& data, \textcolor{keyword}{const} std::vector<std::string>\& time) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00475}00475 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00476}00476     \textcolor{keywordtype}{int} date\_length = 19;}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00477}00477     \textcolor{keywordtype}{int} size = data.size();}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00478}00478     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  Collected Data  -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00479}00479     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < size; i++)\{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00480}00480         printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}\string~ "{}} + \mbox{\hyperlink{class_simple_display_a09a5e120f190269dea7d95df5c71fec4}{COLOR}} + \textcolor{stringliteral}{"{}["{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00481}00481         printf(\textcolor{stringliteral}{"{}\%.*s"{}}, date\_length, time[i].c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00482}00482         printf(\textcolor{stringliteral}{"{}\%s"{}},(\textcolor{stringliteral}{"{}]"{}} + \mbox{\hyperlink{class_simple_display_ab81d52da9c8aac64ffdcc6dd4e881c1a}{RESET\_COLOR}} + \textcolor{stringliteral}{"{}: "{}} + std::to\_string(data[i]) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}}).c\_str());}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00483}00483     \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00484}00484     \mbox{\hyperlink{class_simple_display_a4fe0844977148211511fdc2e11fa7c57}{deviCout}}(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}});}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00485}00485 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00486}00486 \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00487}00487 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00488}00488 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00489}00489 \textcolor{comment}{//                         SETTERS                      |}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00490}00490 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00491}00491 \textcolor{comment}{// -\/-\/-\/ [Function] setSecurityConnected()}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00492}\mbox{\hyperlink{class_simple_display_a8d4e1eabdf54c783e9d09b01880170c4}{00492}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a8d4e1eabdf54c783e9d09b01880170c4}{SimpleDisplay::setSecurityConnected}}(\textcolor{keyword}{const} \textcolor{keywordtype}{bool} securityConnected) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00493}00493     \mbox{\hyperlink{class_simple_display_a2187f9b8194cfeb7a0a5c100dc7ed23d}{SimpleDisplay::securityConnected}} = \mbox{\hyperlink{class_simple_display_a2187f9b8194cfeb7a0a5c100dc7ed23d}{securityConnected}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00494}00494 \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00495}00495 \textcolor{comment}{// -\/-\/-\/ [Function] setSecurityStatus()}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00496}\mbox{\hyperlink{class_simple_display_a161e3a1ae1602c1325bf868e029016b7}{00496}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a161e3a1ae1602c1325bf868e029016b7}{SimpleDisplay::setSecurityStatus}}(\textcolor{keyword}{const} \textcolor{keywordtype}{bool} securityStatus) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00497}00497     \mbox{\hyperlink{class_simple_display_a241ca284b969cd20153a6c2372c83d34}{SimpleDisplay::securityStatus}} = \mbox{\hyperlink{class_simple_display_a241ca284b969cd20153a6c2372c83d34}{securityStatus}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00498}00498 \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00499}00499 \textcolor{comment}{// -\/-\/-\/ [Function] setKernelDevices()}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00500}\mbox{\hyperlink{class_simple_display_adff02c73839166aa975de36210e541b7}{00500}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_adff02c73839166aa975de36210e541b7}{SimpleDisplay::setKernelDevices}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} kernelDevices) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00501}00501     \mbox{\hyperlink{class_simple_display_a1050d363dcea91e399df0357998a5212}{SimpleDisplay::kernelDevices}} = \mbox{\hyperlink{class_simple_display_a1050d363dcea91e399df0357998a5212}{kernelDevices}};}
 \DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00502}00502 \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00503}00503 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00504}00504 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00505}00505 \textcolor{comment}{//                         SECURITY                     |}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00506}00506 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00507}00507 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00508}00508 \textcolor{comment}{// -\/-\/-\/ [Function] checkAbortStatus()}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00509}\mbox{\hyperlink{class_simple_display_a04be0c6902dd0650f4489d9014e26a9a}{00509}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a04be0c6902dd0650f4489d9014e26a9a}{SimpleDisplay::checkAbortStatus}}() \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00510}00510 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00511}00511     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_simple_display_a3bd71a4ae6085907d26b66e89032fd25}{security\_abort}}) \{}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00512}00512         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ [RESCUE PROTOCOL THREAD] -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00513}00513         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n[WARNING] Abort signal called from insecure process, if you are trying to\(\backslash\)n"{}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00514}00514         std::cout << \textcolor{stringliteral}{"{}exit the program, please use -\/1 to return to login interface.\(\backslash\)n"{}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00515}00515         std::cout << \textcolor{stringliteral}{"{}[AI] Executing Secure Exit..."{}};}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00516}00516         exit(1);}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00517}00517     \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00518}00518 \}}
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00519}00519 }
-\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00520}00520 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00503}00503 \textcolor{comment}{// -\/-\/-\/ [Function] setDataDevices()}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00504}\mbox{\hyperlink{class_simple_display_a9f73adee79aaf5ab59a8682e21a8e7e1}{00504}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a9f73adee79aaf5ab59a8682e21a8e7e1}{SimpleDisplay::setDataDevices}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} dataDevices) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00505}00505     \mbox{\hyperlink{class_simple_display_a3273aa7c4e3c913f546eca665a92c904}{SimpleDisplay::dataDevices}} = \mbox{\hyperlink{class_simple_display_a3273aa7c4e3c913f546eca665a92c904}{dataDevices}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00506}00506 \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00507}00507 \textcolor{comment}{// -\/-\/-\/ [Function] setUser()}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00508}\mbox{\hyperlink{class_simple_display_a47254abb80e2d0414e5a88f2977112af}{00508}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a47254abb80e2d0414e5a88f2977112af}{SimpleDisplay::setUser}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} user) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00509}00509     \mbox{\hyperlink{class_simple_display_a643490b0bfd0f84a95ae5cd0e52737ae}{SimpleDisplay::user}} = \mbox{\hyperlink{class_simple_display_a643490b0bfd0f84a95ae5cd0e52737ae}{user}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00510}00510 \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00511}00511 \textcolor{comment}{// -\/-\/-\/ [Function] setGroup()}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00512}\mbox{\hyperlink{class_simple_display_a427ece0206cfe9ab5128f8cb057022b9}{00512}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a427ece0206cfe9ab5128f8cb057022b9}{SimpleDisplay::setGroup}}(\textcolor{keyword}{const} std::string \&group) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00513}00513     \mbox{\hyperlink{class_simple_display_aae2869e2a3a190d268e99a07f9efa804}{SimpleDisplay::group}} = \mbox{\hyperlink{class_simple_display_aae2869e2a3a190d268e99a07f9efa804}{group}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00514}00514 \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00515}00515 \textcolor{comment}{// -\/-\/-\/ [Function] operator()}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00516}\mbox{\hyperlink{class_simple_display_a6b2291d12e0861004426a21495e73f63}{00516}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a6b2291d12e0861004426a21495e73f63}{SimpleDisplay::operator<<}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_simple_display}{SimpleDisplay}}\& display) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00517}00517 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00518}00518     this-\/>\mbox{\hyperlink{class_simple_display_a241ca284b969cd20153a6c2372c83d34}{securityStatus}} = display.\mbox{\hyperlink{class_simple_display_a241ca284b969cd20153a6c2372c83d34}{securityStatus}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00519}00519     this-\/>\mbox{\hyperlink{class_simple_display_a2187f9b8194cfeb7a0a5c100dc7ed23d}{securityConnected}} = display.\mbox{\hyperlink{class_simple_display_a2187f9b8194cfeb7a0a5c100dc7ed23d}{securityConnected}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00520}00520     this-\/>\mbox{\hyperlink{class_simple_display_a643490b0bfd0f84a95ae5cd0e52737ae}{user}} = display.\mbox{\hyperlink{class_simple_display_a643490b0bfd0f84a95ae5cd0e52737ae}{user}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00521}00521     this-\/>\mbox{\hyperlink{class_simple_display_aae2869e2a3a190d268e99a07f9efa804}{group}} = display.\mbox{\hyperlink{class_simple_display_aae2869e2a3a190d268e99a07f9efa804}{group}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00522}00522 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00523}00523 \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00524}00524 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00525}00525 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00526}00526 \textcolor{comment}{//                         SECURITY                     |}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00527}00527 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00528}00528 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00529}00529 \textcolor{comment}{// -\/-\/-\/ [Function] checkAbortStatus()}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00530}\mbox{\hyperlink{class_simple_display_a04be0c6902dd0650f4489d9014e26a9a}{00530}} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_simple_display_a04be0c6902dd0650f4489d9014e26a9a}{SimpleDisplay::checkAbortStatus}}() \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00531}00531 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00532}00532     \textcolor{keywordflow}{if} (\mbox{\hyperlink{class_simple_display_a3bd71a4ae6085907d26b66e89032fd25}{security\_abort}}) \{}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00533}00533         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ [RESCUE PROTOCOL THREAD] -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00534}00534         std::cout << \textcolor{stringliteral}{"{}\(\backslash\)n[WARNING] Abort signal called from insecure process, if you are trying to\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00535}00535         std::cout << \textcolor{stringliteral}{"{}exit the program, please use -\/1 to return to login interface.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00536}00536         std::cout << \textcolor{stringliteral}{"{}[AI] Executing Secure Exit..."{}};}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00537}00537         exit(1);}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00538}00538     \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00539}00539 \}}
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00540}00540 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00541}00541 }
+\DoxyCodeLine{\Hypertarget{_simple_display_8cpp_source_l00542}00542 }
 
 \end{DoxyCode}

@@ -1,7 +1,7 @@
 var class_kernel_device =
 [
     [ "KernelDevice", "df/db2/class_kernel_device.html#ae5e577dcdaece5f904780eae1d171ba3", null ],
-    [ "KernelDevice", "df/db2/class_kernel_device.html#aa74483987a8e2e50ef32840556759fbc", null ],
+    [ "KernelDevice", "df/db2/class_kernel_device.html#aacfca1a4501e98262eb3274fda08844f", null ],
     [ "setAllKernelDevices", "df/db2/class_kernel_device.html#a60b837caf6adf7b1003e469d921d0407", null ],
     [ "AI", "df/db2/class_kernel_device.html#a30f980cd5a3847c1fc8b9c49c84af74a", null ],
     [ "DeviceBuilder", "df/db2/class_kernel_device.html#a8132d1c426012ad32810a5a191d8a8a2", null ],

@@ -1,11 +1,11 @@
 var class_device =
 [
     [ "Device", "df/dd8/class_device.html#a64ba12dcc5f4267486c5d545d04dcf68", null ],
-    [ "Device", "df/dd8/class_device.html#ad689f911c5f2395a1116a625113e5392", null ],
+    [ "Device", "df/dd8/class_device.html#ac3a626702c879a8cf55167d93572d3d8", null ],
     [ "getName", "df/dd8/class_device.html#a7e27b36eae579176707a47b682d84a22", null ],
     [ "getNumSkills", "df/dd8/class_device.html#a3582cb23e9b9b33087f88385ef5eca27", null ],
-    [ "operator[]", "df/dd8/class_device.html#a24cdf263bfc82ebcdb63cb507d583f70", null ],
-    [ "operator[]", "df/dd8/class_device.html#ac98ecb9f1f9009e2d55c59d60942332f", null ],
+    [ "operator[]", "df/dd8/class_device.html#a7f96619e7d19131267e873a69953baa5", null ],
+    [ "operator[]", "df/dd8/class_device.html#ac81950721243a00ce6f753f5f5c1f056", null ],
     [ "operator~", "df/dd8/class_device.html#abc03a7e8cf8ed04b7906cf434510ec1b", null ],
     [ "setAllDevices", "df/dd8/class_device.html#a33d29d035c971f5c49e5a60d9720b201", null ],
     [ "setDeviceCounter", "df/dd8/class_device.html#ab9ed0324f1d481e7aca9cf14ead2c2f4", null ],
@@ -22,5 +22,5 @@ var class_device =
     [ "numSkills", "df/dd8/class_device.html#a530825dc9a5ac9b4491308d6e1ac9ffc", null ],
     [ "skillNames", "df/dd8/class_device.html#aaccdf897fbb200f562df5f9637a5ca6c", null ],
     [ "skills", "df/dd8/class_device.html#ac7f6e68d79802b6ea86735c70a92c4f7", null ],
-    [ "TAG", "df/dd8/class_device.html#aebd38e00abc6091626f986ab8c5697b7", null ]
+    [ "TAG", "df/dd8/class_device.html#a3b8b33fd61092ae5ea38ef767f6bbf62", null ]
 ];

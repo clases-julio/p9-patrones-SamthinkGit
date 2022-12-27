@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('d7/d23/class_user.html','../../'); ini
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
@@ -137,9 +138,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a0137053e591fbb79d9057dd7d2283d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User</a> ()</td></tr>
 <tr class="memdesc:a4a0137053e591fbb79d9057dd7d2283d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty constructor (not recommended)  <a href="../../d7/d23/class_user.html#a4a0137053e591fbb79d9057dd7d2283d">More...</a><br /></td></tr>
 <tr class="separator:a4a0137053e591fbb79d9057dd7d2283d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e84637389bc36a13300df82a7387bb0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a6e84637389bc36a13300df82a7387bb0">User</a> (int <a class="el" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>)</td></tr>
-<tr class="memdesc:a6e84637389bc36a13300df82a7387bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a new ACTIVE user. Only use to ease user information access. Auto sets the admin role according to data stored in file.  <a href="../../d7/d23/class_user.html#a6e84637389bc36a13300df82a7387bb0">More...</a><br /></td></tr>
-<tr class="separator:a6e84637389bc36a13300df82a7387bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d458f231acfa6bd0da683f38f8261a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a5d458f231acfa6bd0da683f38f8261a8">User</a> (const int <a class="el" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>)</td></tr>
+<tr class="memdesc:a5d458f231acfa6bd0da683f38f8261a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a new ACTIVE user. Only use to ease user information access. Auto sets the admin role according to data stored in file.  <a href="../../d7/d23/class_user.html#a5d458f231acfa6bd0da683f38f8261a8">More...</a><br /></td></tr>
+<tr class="separator:a5d458f231acfa6bd0da683f38f8261a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19c51c10009a056caac5053717eb8b89"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a19c51c10009a056caac5053717eb8b89">getUser</a> ()</td></tr>
 <tr class="memdesc:a19c51c10009a056caac5053717eb8b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns <a class="el" href="../../d7/d23/class_user.html" title="This class will be the responsible for storing and managing the user&#39;s data. Also is able to create a...">User</a>'s username.  <a href="../../d7/d23/class_user.html#a19c51c10009a056caac5053717eb8b89">More...</a><br /></td></tr>
 <tr class="separator:a19c51c10009a056caac5053717eb8b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,24 +150,29 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3dd5f61e8f0172573a6ab6f73505cb2c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a3dd5f61e8f0172573a6ab6f73505cb2c">check</a> (int <a class="el" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>, int <a class="el" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>)</td></tr>
-<tr class="memdesc:a3dd5f61e8f0172573a6ab6f73505cb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if id and password are valid. Needs to access to datafile.  <a href="../../d7/d23/class_user.html#a3dd5f61e8f0172573a6ab6f73505cb2c">More...</a><br /></td></tr>
-<tr class="separator:a3dd5f61e8f0172573a6ab6f73505cb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02162a910960fb36bbea183c40503a36"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a02162a910960fb36bbea183c40503a36">check</a> (const int <a class="el" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>, const int <a class="el" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>)</td></tr>
+<tr class="memdesc:a02162a910960fb36bbea183c40503a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if id and password are valid. Needs to access to datafile.  <a href="../../d7/d23/class_user.html#a02162a910960fb36bbea183c40503a36">More...</a><br /></td></tr>
+<tr class="separator:a02162a910960fb36bbea183c40503a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade2c6984efefd3a1abca0d727e8d7ecf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#ade2c6984efefd3a1abca0d727e8d7ecf">updateUserData</a> ()</td></tr>
 <tr class="memdesc:ade2c6984efefd3a1abca0d727e8d7ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the datafile, then store users in a 2 dimensional array (allUsers) setting each column according to the columns setted in <a class="el" href="../../d3/d75/_user_8h.html">User.h</a> class. Sorted by id for efficiency.  <a href="../../d7/d23/class_user.html#ade2c6984efefd3a1abca0d727e8d7ecf">More...</a><br /></td></tr>
 <tr class="separator:ade2c6984efefd3a1abca0d727e8d7ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe917daaebdfb170900ae513c9289a66"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">saveUserData</a> ()</td></tr>
 <tr class="memdesc:abe917daaebdfb170900ae513c9289a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves all data saved in the set vector to a .dat file.  <a href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">More...</a><br /></td></tr>
 <tr class="separator:abe917daaebdfb170900ae513c9289a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a932abf8dc4bdbdef3dbd05c3d3852c99"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a932abf8dc4bdbdef3dbd05c3d3852c99">addUser</a> (int <a class="el" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>, int <a class="el" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>, bool <a class="el" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>)</td></tr>
-<tr class="memdesc:a932abf8dc4bdbdef3dbd05c3d3852c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds new user to allUsers.  <a href="../../d7/d23/class_user.html#a932abf8dc4bdbdef3dbd05c3d3852c99">More...</a><br /></td></tr>
-<tr class="separator:a932abf8dc4bdbdef3dbd05c3d3852c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68388c89a91732660b3fb4c602fa55c0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a68388c89a91732660b3fb4c602fa55c0">rmUser</a> (int <a class="el" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>)</td></tr>
-<tr class="memdesc:a68388c89a91732660b3fb4c602fa55c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a user from allUsers.  <a href="../../d7/d23/class_user.html#a68388c89a91732660b3fb4c602fa55c0">More...</a><br /></td></tr>
-<tr class="separator:a68388c89a91732660b3fb4c602fa55c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73997967efdab04e0f6c5ddd4c0c7ebf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a73997967efdab04e0f6c5ddd4c0c7ebf">addUser</a> (const int <a class="el" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>, const int <a class="el" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>, const bool <a class="el" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>)</td></tr>
+<tr class="memdesc:a73997967efdab04e0f6c5ddd4c0c7ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds new user to allUsers.  <a href="../../d7/d23/class_user.html#a73997967efdab04e0f6c5ddd4c0c7ebf">More...</a><br /></td></tr>
+<tr class="separator:a73997967efdab04e0f6c5ddd4c0c7ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a04a3eb5095eec17c24f3f48880497e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a7a04a3eb5095eec17c24f3f48880497e">rmUser</a> (const int <a class="el" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>)</td></tr>
+<tr class="memdesc:a7a04a3eb5095eec17c24f3f48880497e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a user from allUsers.  <a href="../../d7/d23/class_user.html#a7a04a3eb5095eec17c24f3f48880497e">More...</a><br /></td></tr>
+<tr class="separator:a7a04a3eb5095eec17c24f3f48880497e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba09368b2af61c833490ff95aff4e9c2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#aba09368b2af61c833490ff95aff4e9c2">printUsers</a> ()</td></tr>
 <tr class="memdesc:aba09368b2af61c833490ff95aff4e9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all registered users.  <a href="../../d7/d23/class_user.html#aba09368b2af61c833490ff95aff4e9c2">More...</a><br /></td></tr>
 <tr class="separator:aba09368b2af61c833490ff95aff4e9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ad1e613a622e5067058e2fed421a319a2"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#ad1e613a622e5067058e2fed421a319a2">EXECUTABLE_DIR</a></td></tr>
+<tr class="separator:ad1e613a622e5067058e2fed421a319a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -189,20 +195,20 @@ Protected Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
 <tr class="memitem:a3d595223d88c86a28aecf557347a9d54"><td class="memItemLeft" align="right" valign="top">static char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a3d595223d88c86a28aecf557347a9d54">SEPARATOR</a> = ','</td></tr>
-<tr class="memdesc:a3d595223d88c86a28aecf557347a9d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Character to separate tokens in file.  <a href="../../d7/d23/class_user.html#a3d595223d88c86a28aecf557347a9d54">More...</a><br /></td></tr>
+<tr class="memdesc:a3d595223d88c86a28aecf557347a9d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Deprecated] Character to separate tokens in file  <a href="../../d7/d23/class_user.html#a3d595223d88c86a28aecf557347a9d54">More...</a><br /></td></tr>
 <tr class="separator:a3d595223d88c86a28aecf557347a9d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6349e440b2ea71310a28469d4bdc98d4"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a6349e440b2ea71310a28469d4bdc98d4">TAG</a> = &quot;User&quot;</td></tr>
-<tr class="memdesc:a6349e440b2ea71310a28469d4bdc98d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the Class (for exception calling)  <a href="../../d7/d23/class_user.html#a6349e440b2ea71310a28469d4bdc98d4">More...</a><br /></td></tr>
-<tr class="separator:a6349e440b2ea71310a28469d4bdc98d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e11eb9ee8554e2f615ac67d7e00f298"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a9e11eb9ee8554e2f615ac67d7e00f298">TAG</a> = &quot;User&quot;</td></tr>
+<tr class="memdesc:a9e11eb9ee8554e2f615ac67d7e00f298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the Class (for exception calling)  <a href="../../d7/d23/class_user.html#a9e11eb9ee8554e2f615ac67d7e00f298">More...</a><br /></td></tr>
+<tr class="separator:a9e11eb9ee8554e2f615ac67d7e00f298"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab20712584fdd188aab2d9df5f66887d7"><td class="memItemLeft" align="right" valign="top">static std::set&lt; int * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a></td></tr>
 <tr class="memdesc:ab20712584fdd188aab2d9df5f66887d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of integers to store all users.  <a href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">More...</a><br /></td></tr>
 <tr class="separator:ab20712584fdd188aab2d9df5f66887d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab167913883c55da15137eefedb6f0863"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#ab167913883c55da15137eefedb6f0863">DATAFILE</a> = &quot;data/userdata.txt&quot;</td></tr>
-<tr class="memdesc:ab167913883c55da15137eefedb6f0863"><td class="mdescLeft">&#160;</td><td class="mdescRight">[DEPRECATED] Path of userdata file  <a href="../../d7/d23/class_user.html#ab167913883c55da15137eefedb6f0863">More...</a><br /></td></tr>
-<tr class="separator:ab167913883c55da15137eefedb6f0863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a942375334862b953b0471435b70f8fb7"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a942375334862b953b0471435b70f8fb7">USERFILE</a> = &quot;data/userdata.dat&quot;</td></tr>
-<tr class="memdesc:a942375334862b953b0471435b70f8fb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to userdata file.  <a href="../../d7/d23/class_user.html#a942375334862b953b0471435b70f8fb7">More...</a><br /></td></tr>
-<tr class="separator:a942375334862b953b0471435b70f8fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f4bdaa72d55672a7dbe3af8eb5f903"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a21f4bdaa72d55672a7dbe3af8eb5f903">DATAFILE</a> = &quot;data/userdata.txt&quot;</td></tr>
+<tr class="memdesc:a21f4bdaa72d55672a7dbe3af8eb5f903"><td class="mdescLeft">&#160;</td><td class="mdescRight">[DEPRECATED] Path of userdata file  <a href="../../d7/d23/class_user.html#a21f4bdaa72d55672a7dbe3af8eb5f903">More...</a><br /></td></tr>
+<tr class="separator:a21f4bdaa72d55672a7dbe3af8eb5f903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a0c374f8da9519dd25ee07aada09025"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d23/class_user.html#a1a0c374f8da9519dd25ee07aada09025">USERFILE</a> = &quot;../data/userdata.dat&quot;</td></tr>
+<tr class="memdesc:a1a0c374f8da9519dd25ee07aada09025"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path to userdata file.  <a href="../../d7/d23/class_user.html#a1a0c374f8da9519dd25ee07aada09025">More...</a><br /></td></tr>
+<tr class="separator:a1a0c374f8da9519dd25ee07aada09025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This class will be the responsible for storing and managing the user's data. Also is able to create an abstract user object to ease data access. </p>
@@ -271,17 +277,17 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Empty constructor (not recommended) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00024">24</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>: <a class="code hl_variable" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>(<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947">INVALID_USER</a>), <a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>(<span class="keyword">false</span>) {};</div>
-<div class="ttc" id="aclass_user_html_aa6f97f01f2b981aa9119727521959857"><div class="ttname"><a href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">User::isAdmin</a></div><div class="ttdeci">bool isAdmin</div><div class="ttdoc">Admin Status. False by defect.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00107">User.h:107</a></div></div>
-<div class="ttc" id="aclass_user_html_aa7e6e39b43020bbe9c3a196b3689b0f7"><div class="ttname"><a href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">User::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">User identifier (5-digit-int)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00105">User.h:105</a></div></div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>: <a class="code hl_variable" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>(<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947">INVALID_USER</a>), <a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>(<span class="keyword">false</span>) {};</div>
+<div class="ttc" id="aclass_user_html_aa6f97f01f2b981aa9119727521959857"><div class="ttname"><a href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">User::isAdmin</a></div><div class="ttdeci">bool isAdmin</div><div class="ttdoc">Admin Status. False by defect.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00111">User.h:111</a></div></div>
+<div class="ttc" id="aclass_user_html_aa7e6e39b43020bbe9c3a196b3689b0f7"><div class="ttname"><a href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">User::id</a></div><div class="ttdeci">int id</div><div class="ttdoc">User identifier (5-digit-int)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00109">User.h:109</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">saveUserData()</a>.</p>
 
 </div>
 </div>
-<a id="a6e84637389bc36a13300df82a7387bb0" name="a6e84637389bc36a13300df82a7387bb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e84637389bc36a13300df82a7387bb0">&#9670;&#160;</a></span>User() <span class="overload">[2/2]</span></h2>
+<a id="a5d458f231acfa6bd0da683f38f8261a8" name="a5d458f231acfa6bd0da683f38f8261a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d458f231acfa6bd0da683f38f8261a8">&#9670;&#160;</a></span>User() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,7 +295,7 @@ Static Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">User::User </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -304,43 +310,43 @@ Static Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>                 : <a class="code hl_variable" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>(<span class="keywordtype">id</span>){</div>
-<div class="line"><span class="lineno">   29</span> </div>
-<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == <a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59">DEVELOPER_USER</a> ){</div>
-<div class="line"><span class="lineno">   31</span>        this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a> = 0;</div>
-<div class="line"><span class="lineno">   32</span>        this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a> = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   34</span>    }</div>
-<div class="line"><span class="lineno">   35</span> </div>
-<div class="line"><span class="lineno">   36</span>    <span class="comment">// ----- Initializing User info ------</span></div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>        <span class="comment">//  Find and Set admin status from data</span></div>
-<div class="line"><span class="lineno">   40</span>        <span class="keywordtype">int</span>* userData = <a class="code hl_function" href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">find</a>(<span class="keywordtype">id</span>);</div>
-<div class="line"><span class="lineno">   41</span>        this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a> = userData[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>];</div>
-<div class="line"><span class="lineno">   42</span>        this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a> = userData[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>];</div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span> </div>
-<div class="line"><span class="lineno">   45</span>    <span class="comment">// ----- Catching invalid users ------</span></div>
-<div class="line"><span class="lineno">   46</span>    }<span class="keywordflow">catch</span>(<a class="code hl_class" href="../../db/d8e/class_invalid_user_exception.html">InvalidUserException</a> &amp;e){</div>
-<div class="line"><span class="lineno">   47</span> </div>
-<div class="line"><span class="lineno">   48</span>        this-&gt;<span class="keywordtype">id</span> = <a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947">INVALID_USER</a>;</div>
-<div class="line"><span class="lineno">   49</span>        this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a> = 0;</div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>    }</div>
-<div class="line"><span class="lineno">   52</span>};</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00030">30</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>                       : <a class="code hl_variable" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>(<span class="keywordtype">id</span>){</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">if</span> (<span class="keywordtype">id</span> == <a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59">DEVELOPER_USER</a> ){</div>
+<div class="line"><span class="lineno">   33</span>        this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a> = 0;</div>
+<div class="line"><span class="lineno">   34</span>        this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a> = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   35</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   36</span>    }</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>    <span class="comment">// ----- Initializing User info ------</span></div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>        <span class="comment">//  Find and Set admin status from data</span></div>
+<div class="line"><span class="lineno">   42</span>        <span class="keywordtype">int</span>* userData = <a class="code hl_function" href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">find</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">   43</span>        this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a> = userData[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>];</div>
+<div class="line"><span class="lineno">   44</span>        this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a> = userData[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>];</div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>    <span class="comment">// ----- Catching invalid users ------</span></div>
+<div class="line"><span class="lineno">   48</span>    }<span class="keywordflow">catch</span>(<a class="code hl_class" href="../../db/d8e/class_invalid_user_exception.html">InvalidUserException</a> &amp;e){</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>        this-&gt;<span class="keywordtype">id</span> = <a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947">INVALID_USER</a>;</div>
+<div class="line"><span class="lineno">   51</span>        this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a> = 0;</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="line"><span class="lineno">   54</span>};</div>
 <div class="ttc" id="aclass_invalid_user_exception_html"><div class="ttname"><a href="../../db/d8e/class_invalid_user_exception.html">InvalidUserException</a></div><div class="ttdoc">This class lets the program throw an exception when the selected user is not valid.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d00/_invalid_user_exception_8h_source.html#l00016">InvalidUserException.h:16</a></div></div>
-<div class="ttc" id="aclass_user_html_ae81edcf9a7e23f36d91fe10dc510f7d5"><div class="ttname"><a href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">User::find</a></div><div class="ttdeci">static int * find(int id)</div><div class="ttdoc">Finds a user by giving the id as a key . Maximum complexity of O(n). Returns the properties of the us...</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_user_8cpp_source.html#l00163">User.cpp:163</a></div></div>
-<div class="ttc" id="aclass_user_html_afebc8e231b943cb542f35e66eaec0cdb"><div class="ttname"><a href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">User::pass</a></div><div class="ttdeci">int pass</div><div class="ttdoc">Password to access the account.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00109">User.h:109</a></div></div>
+<div class="ttc" id="aclass_user_html_ae81edcf9a7e23f36d91fe10dc510f7d5"><div class="ttname"><a href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">User::find</a></div><div class="ttdeci">static int * find(int id)</div><div class="ttdoc">Finds a user by giving the id as a key . Maximum complexity of O(n). Returns the properties of the us...</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_user_8cpp_source.html#l00168">User.cpp:168</a></div></div>
+<div class="ttc" id="aclass_user_html_afebc8e231b943cb542f35e66eaec0cdb"><div class="ttname"><a href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">User::pass</a></div><div class="ttdeci">int pass</div><div class="ttdoc">Password to access the account.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00113">User.h:113</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa6b57eb706da657df0dc56f27c7a83a59">DEVELOPER_USER</a>, <a class="el" href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">find()</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa709dc373a0e0123a0b06762ea8c69947">INVALID_USER</a>, <a class="el" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>, <a class="el" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>, and <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a932abf8dc4bdbdef3dbd05c3d3852c99" name="a932abf8dc4bdbdef3dbd05c3d3852c99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a932abf8dc4bdbdef3dbd05c3d3852c99">&#9670;&#160;</a></span>addUser()</h2>
+<a id="a73997967efdab04e0f6c5ddd4c0c7ebf" name="a73997967efdab04e0f6c5ddd4c0c7ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73997967efdab04e0f6c5ddd4c0c7ebf">&#9670;&#160;</a></span>addUser()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,19 +357,19 @@ Static Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void User::addUser </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>pass</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype">const bool&#160;</td>
           <td class="paramname"><em>isAdmin</em>&#160;</td>
         </tr>
         <tr>
@@ -389,18 +395,18 @@ Static Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00182">182</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  182</span>                                                   {</div>
-<div class="line"><span class="lineno">  183</span> </div>
-<div class="line"><span class="lineno">  184</span>    <span class="keywordtype">int</span>* newUser = <span class="keyword">new</span> <span class="keywordtype">int</span>[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c">TOTAL_COLUMNS</a>];</div>
-<div class="line"><span class="lineno">  185</span>    newUser[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>] = user;</div>
-<div class="line"><span class="lineno">  186</span>    newUser[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>] = <a class="code hl_variable" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>;</div>
-<div class="line"><span class="lineno">  187</span>    newUser[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>] = (<a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>) ? <a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa43960f9c6bdbdff4e01d8c642bb618ca">ADMIN_IDENTIFIER</a> : 0;</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00187">187</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  187</span>                                                                     {</div>
 <div class="line"><span class="lineno">  188</span> </div>
-<div class="line"><span class="lineno">  189</span>    <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.insert(newUser);</div>
-<div class="line"><span class="lineno">  190</span> </div>
-<div class="line"><span class="lineno">  191</span>}</div>
-<div class="ttc" id="aclass_user_html_ab20712584fdd188aab2d9df5f66887d7"><div class="ttname"><a href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">User::allUsers</a></div><div class="ttdeci">static std::set&lt; int * &gt; allUsers</div><div class="ttdoc">Set of integers to store all users.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00133">User.h:133</a></div></div>
+<div class="line"><span class="lineno">  189</span>    <span class="keywordtype">int</span>* newUser = <span class="keyword">new</span> <span class="keywordtype">int</span>[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c">TOTAL_COLUMNS</a>];</div>
+<div class="line"><span class="lineno">  190</span>    newUser[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>] = user;</div>
+<div class="line"><span class="lineno">  191</span>    newUser[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>] = <a class="code hl_variable" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>;</div>
+<div class="line"><span class="lineno">  192</span>    newUser[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>] = (<a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>) ? <a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa43960f9c6bdbdff4e01d8c642bb618ca">ADMIN_IDENTIFIER</a> : 0;</div>
+<div class="line"><span class="lineno">  193</span> </div>
+<div class="line"><span class="lineno">  194</span>    <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.insert(newUser);</div>
+<div class="line"><span class="lineno">  195</span> </div>
+<div class="line"><span class="lineno">  196</span>}</div>
+<div class="ttc" id="aclass_user_html_ab20712584fdd188aab2d9df5f66887d7"><div class="ttname"><a href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">User::allUsers</a></div><div class="ttdeci">static std::set&lt; int * &gt; allUsers</div><div class="ttdoc">Set of integers to store all users.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00137">User.h:137</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa43960f9c6bdbdff4e01d8c642bb618ca">ADMIN_IDENTIFIER</a>, <a class="el" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>, <a class="el" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>, <a class="el" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c">TOTAL_COLUMNS</a>, and <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>.</p>
 
@@ -408,8 +414,8 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3dd5f61e8f0172573a6ab6f73505cb2c" name="a3dd5f61e8f0172573a6ab6f73505cb2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dd5f61e8f0172573a6ab6f73505cb2c">&#9670;&#160;</a></span>check()</h2>
+<a id="a02162a910960fb36bbea183c40503a36" name="a02162a910960fb36bbea183c40503a36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02162a910960fb36bbea183c40503a36">&#9670;&#160;</a></span>check()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,13 +426,13 @@ Static Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">bool User::check </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>pass</em>&#160;</td>
         </tr>
         <tr>
@@ -452,17 +458,17 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if id and pass are valid </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00068">68</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   68</span>                                {</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">try</span>{</div>
-<div class="line"><span class="lineno">   70</span>        <span class="keywordtype">int</span>* userData = <a class="code hl_function" href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">find</a>(<span class="keywordtype">id</span>);</div>
-<div class="line"><span class="lineno">   71</span>        <span class="keywordflow">return</span> (userData[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>] == <a class="code hl_variable" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>);</div>
-<div class="line"><span class="lineno">   72</span> </div>
-<div class="line"><span class="lineno">   73</span>    <span class="comment">// User not found</span></div>
-<div class="line"><span class="lineno">   74</span>    }<span class="keywordflow">catch</span>(<a class="code hl_class" href="../../d7/d1b/class_user_not_found_exception.html">UserNotFoundException</a> &amp;e){</div>
-<div class="line"><span class="lineno">   75</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   76</span>    }</div>
-<div class="line"><span class="lineno">   77</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00070">70</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>                                            {</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">try</span>{</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordtype">int</span>* userData = <a class="code hl_function" href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">find</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">return</span> (userData[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>] == <a class="code hl_variable" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>);</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>    <span class="comment">// User not found</span></div>
+<div class="line"><span class="lineno">   76</span>    }<span class="keywordflow">catch</span>(<a class="code hl_class" href="../../d7/d1b/class_user_not_found_exception.html">UserNotFoundException</a> &amp;e){</div>
+<div class="line"><span class="lineno">   77</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   78</span>    }</div>
+<div class="line"><span class="lineno">   79</span>}</div>
 <div class="ttc" id="aclass_user_not_found_exception_html"><div class="ttname"><a href="../../d7/d1b/class_user_not_found_exception.html">UserNotFoundException</a></div><div class="ttdoc">This class lets the program throw an exception when the selected user has not been found.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d91/_user_not_found_exception_8h_source.html#l00016">UserNotFoundException.h:16</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">find()</a>, <a class="el" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>, and <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>.</p>
@@ -510,30 +516,30 @@ Static Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00163">163</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  163</span>                     {</div>
-<div class="line"><span class="lineno">  164</span> </div>
-<div class="line"><span class="lineno">  165</span>    <span class="comment">// ----- Creates iterator</span></div>
-<div class="line"><span class="lineno">  166</span>    std::set&lt;int*&gt;::iterator it;</div>
-<div class="line"><span class="lineno">  167</span> </div>
-<div class="line"><span class="lineno">  168</span>    <span class="comment">// ----- Travel the set until find</span></div>
-<div class="line"><span class="lineno">  169</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iterator = <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.begin(); iterator != <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.end(); ++iterator){</div>
-<div class="line"><span class="lineno">  170</span> </div>
-<div class="line"><span class="lineno">  171</span>        <span class="keywordflow">if</span> ((*iterator)[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>] == <span class="keywordtype">id</span>)</div>
-<div class="line"><span class="lineno">  172</span>            <span class="keywordflow">return</span> *iterator;</div>
-<div class="line"><span class="lineno">  173</span>    }</div>
-<div class="line"><span class="lineno">  174</span> </div>
-<div class="line"><span class="lineno">  175</span>    <span class="comment">// ----- User not found, send error</span></div>
-<div class="line"><span class="lineno">  176</span> </div>
-<div class="line"><span class="lineno">  177</span>    <span class="comment">// [DEPRECADTED] throw std::runtime_error(&quot;User not Found&quot;);</span></div>
-<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">throw</span> <a class="code hl_class" href="../../d7/d1b/class_user_not_found_exception.html">UserNotFoundException</a>(<a class="code hl_variable" href="../../d7/d23/class_user.html#a6349e440b2ea71310a28469d4bdc98d4">TAG</a>);</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00168">168</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  168</span>                     {</div>
+<div class="line"><span class="lineno">  169</span> </div>
+<div class="line"><span class="lineno">  170</span>    <span class="comment">// ----- Creates iterator</span></div>
+<div class="line"><span class="lineno">  171</span>    std::set&lt;int*&gt;::iterator it;</div>
+<div class="line"><span class="lineno">  172</span> </div>
+<div class="line"><span class="lineno">  173</span>    <span class="comment">// ----- Travel the set until find</span></div>
+<div class="line"><span class="lineno">  174</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iterator = <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.begin(); iterator != <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.end(); ++iterator){</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">if</span> ((*iterator)[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>] == <span class="keywordtype">id</span>)</div>
+<div class="line"><span class="lineno">  177</span>            <span class="keywordflow">return</span> *iterator;</div>
+<div class="line"><span class="lineno">  178</span>    }</div>
 <div class="line"><span class="lineno">  179</span> </div>
-<div class="line"><span class="lineno">  180</span>}</div>
-<div class="ttc" id="aclass_user_html_a6349e440b2ea71310a28469d4bdc98d4"><div class="ttname"><a href="../../d7/d23/class_user.html#a6349e440b2ea71310a28469d4bdc98d4">User::TAG</a></div><div class="ttdeci">static std::string TAG</div><div class="ttdoc">Name of the Class (for exception calling)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00131">User.h:131</a></div></div>
+<div class="line"><span class="lineno">  180</span>    <span class="comment">// ----- User not found, send error</span></div>
+<div class="line"><span class="lineno">  181</span> </div>
+<div class="line"><span class="lineno">  182</span>    <span class="comment">// [DEPRECADTED] throw std::runtime_error(&quot;User not Found&quot;);</span></div>
+<div class="line"><span class="lineno">  183</span>    <span class="keywordflow">throw</span> <a class="code hl_class" href="../../d7/d1b/class_user_not_found_exception.html">UserNotFoundException</a>(<a class="code hl_variable" href="../../d7/d23/class_user.html#a9e11eb9ee8554e2f615ac67d7e00f298">TAG</a>);</div>
+<div class="line"><span class="lineno">  184</span> </div>
+<div class="line"><span class="lineno">  185</span>}</div>
+<div class="ttc" id="aclass_user_html_a9e11eb9ee8554e2f615ac67d7e00f298"><div class="ttname"><a href="../../d7/d23/class_user.html#a9e11eb9ee8554e2f615ac67d7e00f298">User::TAG</a></div><div class="ttdeci">static const std::string TAG</div><div class="ttdoc">Name of the Class (for exception calling)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00135">User.h:135</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>, <a class="el" href="../../d7/d23/class_user.html#a6349e440b2ea71310a28469d4bdc98d4">TAG</a>, and <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>, <a class="el" href="../../d7/d23/class_user.html#a9e11eb9ee8554e2f615ac67d7e00f298">TAG</a>, and <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/ddc/class_admin.html#a5a8f948cd91984ba4005ce9443776847">Admin::adminStatus()</a>, <a class="el" href="../../d7/d23/class_user.html#a3dd5f61e8f0172573a6ab6f73505cb2c">check()</a>, <a class="el" href="../../d7/d23/class_user.html#a68388c89a91732660b3fb4c602fa55c0">rmUser()</a>, and <a class="el" href="../../d7/d23/class_user.html#a6e84637389bc36a13300df82a7387bb0">User()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/ddc/class_admin.html#a8ed4b7325e3d98474d56db02fd33f979">Admin::adminStatus()</a>, <a class="el" href="../../d7/d23/class_user.html#a02162a910960fb36bbea183c40503a36">check()</a>, <a class="el" href="../../d7/d23/class_user.html#a7a04a3eb5095eec17c24f3f48880497e">rmUser()</a>, and <a class="el" href="../../d7/d23/class_user.html#a5d458f231acfa6bd0da683f38f8261a8">User()</a>.</p>
 
 </div>
 </div>
@@ -554,10 +560,10 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Returns <a class="el" href="../../d7/d23/class_user.html" title="This class will be the responsible for storing and managing the user&#39;s data. Also is able to create a...">User</a>'s admin status. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00062">62</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>                         {</div>
-<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>;</div>
-<div class="line"><span class="lineno">   64</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00064">64</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   64</span>                         {</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>;</div>
+<div class="line"><span class="lineno">   66</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>.</p>
 
@@ -582,10 +588,10 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Returns <a class="el" href="../../d7/d23/class_user.html" title="This class will be the responsible for storing and managing the user&#39;s data. Also is able to create a...">User</a>'s username. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00057">57</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>                 {</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>;</div>
-<div class="line"><span class="lineno">   59</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00059">59</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   59</span>                 {</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>;</div>
+<div class="line"><span class="lineno">   61</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>.</p>
 
@@ -618,17 +624,17 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Prints all registered users. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00209">209</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  209</span>                      {</div>
-<div class="line"><span class="lineno">  210</span> </div>
-<div class="line"><span class="lineno">  211</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iterator = <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.begin(); iterator != <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.end(); ++iterator){</div>
-<div class="line"><span class="lineno">  212</span> </div>
-<div class="line"><span class="lineno">  213</span>            std::cout &lt;&lt; ((*iterator)[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>] == 0 ? <span class="stringliteral">&quot;User: &quot;</span> : <span class="stringliteral">&quot;Admin: &quot;</span>);</div>
-<div class="line"><span class="lineno">  214</span>            std::cout &lt;&lt; (*iterator)[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>] &lt;&lt; std::endl;</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00214">214</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  214</span>                      {</div>
 <div class="line"><span class="lineno">  215</span> </div>
-<div class="line"><span class="lineno">  216</span>    }</div>
+<div class="line"><span class="lineno">  216</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iterator = <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.begin(); iterator != <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.end(); ++iterator){</div>
 <div class="line"><span class="lineno">  217</span> </div>
-<div class="line"><span class="lineno">  218</span>}</div>
+<div class="line"><span class="lineno">  218</span>            std::cout &lt;&lt; ((*iterator)[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>] == 0 ? <span class="stringliteral">&quot;User: &quot;</span> : <span class="stringliteral">&quot;Admin: &quot;</span>);</div>
+<div class="line"><span class="lineno">  219</span>            std::cout &lt;&lt; (*iterator)[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>] &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  220</span> </div>
+<div class="line"><span class="lineno">  221</span>    }</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>, <a class="el" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>, and <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>.</p>
 
@@ -636,8 +642,8 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a68388c89a91732660b3fb4c602fa55c0" name="a68388c89a91732660b3fb4c602fa55c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68388c89a91732660b3fb4c602fa55c0">&#9670;&#160;</a></span>rmUser()</h2>
+<a id="a7a04a3eb5095eec17c24f3f48880497e" name="a7a04a3eb5095eec17c24f3f48880497e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a04a3eb5095eec17c24f3f48880497e">&#9670;&#160;</a></span>rmUser()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -648,7 +654,7 @@ Static Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void User::rmUser </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
@@ -668,21 +674,21 @@ Static Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00194">194</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  194</span>                        {</div>
-<div class="line"><span class="lineno">  195</span> </div>
-<div class="line"><span class="lineno">  196</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">  197</span> </div>
-<div class="line"><span class="lineno">  198</span>        <span class="keywordtype">int</span> *user = <a class="code hl_function" href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">find</a>(<span class="keywordtype">id</span>);</div>
-<div class="line"><span class="lineno">  199</span>        <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.erase(user);</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00199">199</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  199</span>                              {</div>
 <div class="line"><span class="lineno">  200</span> </div>
-<div class="line"><span class="lineno">  201</span>    }<span class="keywordflow">catch</span>(<a class="code hl_class" href="../../db/d8e/class_invalid_user_exception.html">InvalidUserException</a> &amp;e){</div>
+<div class="line"><span class="lineno">  201</span>    <span class="keywordflow">try</span> {</div>
 <div class="line"><span class="lineno">  202</span> </div>
-<div class="line"><span class="lineno">  203</span>        <span class="keywordflow">throw</span>;</div>
-<div class="line"><span class="lineno">  204</span> </div>
-<div class="line"><span class="lineno">  205</span>    };</div>
-<div class="line"><span class="lineno">  206</span> </div>
-<div class="line"><span class="lineno">  207</span>}</div>
+<div class="line"><span class="lineno">  203</span>        <span class="keywordtype">int</span> *user = <a class="code hl_function" href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">find</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><span class="lineno">  204</span>        <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.erase(user);</div>
+<div class="line"><span class="lineno">  205</span> </div>
+<div class="line"><span class="lineno">  206</span>    }<span class="keywordflow">catch</span>(<a class="code hl_class" href="../../db/d8e/class_invalid_user_exception.html">InvalidUserException</a> &amp;e){</div>
+<div class="line"><span class="lineno">  207</span> </div>
+<div class="line"><span class="lineno">  208</span>        <span class="keywordflow">throw</span>;</div>
+<div class="line"><span class="lineno">  209</span> </div>
+<div class="line"><span class="lineno">  210</span>    };</div>
+<div class="line"><span class="lineno">  211</span> </div>
+<div class="line"><span class="lineno">  212</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>, and <a class="el" href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">find()</a>.</p>
 
@@ -718,37 +724,41 @@ Static Protected Attributes</h2></td></tr>
 <dd>
 This function should be only called at the end of the program </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00220">220</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  220</span>                        {</div>
-<div class="line"><span class="lineno">  221</span> </div>
-<div class="line"><span class="lineno">  222</span>    <span class="comment">// ---- Opening file ----</span></div>
-<div class="line"><span class="lineno">  223</span>    std::ofstream file (<a class="code hl_variable" href="../../d7/d23/class_user.html#a942375334862b953b0471435b70f8fb7">USERFILE</a>);</div>
-<div class="line"><span class="lineno">  224</span> </div>
-<div class="line"><span class="lineno">  225</span>    <span class="comment">// ---- Testing if file is correct ----</span></div>
-<div class="line"><span class="lineno">  226</span>    <span class="keywordflow">if</span> (!file)</div>
-<div class="line"><span class="lineno">  227</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="../../d1/deb/class_invalid_file_exception.html">InvalidFileException</a>(<a class="code hl_variable" href="../../d7/d23/class_user.html#a6349e440b2ea71310a28469d4bdc98d4">TAG</a>);</div>
-<div class="line"><span class="lineno">  228</span> </div>
-<div class="line"><span class="lineno">  229</span>    <span class="comment">// ----- Creates iterator -----</span></div>
-<div class="line"><span class="lineno">  230</span>    std::set&lt;int*&gt;::iterator it;</div>
-<div class="line"><span class="lineno">  231</span> </div>
-<div class="line"><span class="lineno">  232</span>    <span class="comment">// ----- Saves all user data in allUsers to file  -----</span></div>
-<div class="line"><span class="lineno">  233</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iterator = <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.begin(); iterator != <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.end(); ++iterator){</div>
-<div class="line"><span class="lineno">  234</span> </div>
-<div class="line"><span class="lineno">  235</span>        <a class="code hl_class" href="../../d7/d23/class_user.html">User</a> newUser = <a class="code hl_function" href="../../d7/d23/class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User</a>((*iterator)[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>]);</div>
-<div class="line"><span class="lineno">  236</span>        file.write(<span class="keyword">reinterpret_cast &lt;</span><span class="keyword">const </span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span> (&amp;newUser),<span class="keyword">sizeof</span> (<a class="code hl_class" href="../../d7/d23/class_user.html">User</a>));</div>
-<div class="line"><span class="lineno">  237</span> </div>
-<div class="line"><span class="lineno">  238</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00225">225</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  225</span>                        {</div>
+<div class="line"><span class="lineno">  226</span> </div>
+<div class="line"><span class="lineno">  227</span>    <span class="comment">// ----- Obtaining absolute_path -----</span></div>
+<div class="line"><span class="lineno">  228</span>    std::string absolute_path = <a class="code hl_variable" href="../../d7/d23/class_user.html#ad1e613a622e5067058e2fed421a319a2">EXECUTABLE_DIR</a> + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_variable" href="../../d7/d23/class_user.html#a1a0c374f8da9519dd25ee07aada09025">USERFILE</a>;</div>
+<div class="line"><span class="lineno">  229</span> </div>
+<div class="line"><span class="lineno">  230</span>    <span class="comment">// ---- Opening file ----</span></div>
+<div class="line"><span class="lineno">  231</span>    std::ofstream file (absolute_path);</div>
+<div class="line"><span class="lineno">  232</span> </div>
+<div class="line"><span class="lineno">  233</span>    <span class="comment">// ---- Testing if file is correct ----</span></div>
+<div class="line"><span class="lineno">  234</span>    <span class="keywordflow">if</span> (!file)</div>
+<div class="line"><span class="lineno">  235</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="../../d1/deb/class_invalid_file_exception.html">InvalidFileException</a>(<a class="code hl_variable" href="../../d7/d23/class_user.html#a9e11eb9ee8554e2f615ac67d7e00f298">TAG</a>);</div>
+<div class="line"><span class="lineno">  236</span> </div>
+<div class="line"><span class="lineno">  237</span>    <span class="comment">// ----- Creates iterator -----</span></div>
+<div class="line"><span class="lineno">  238</span>    std::set&lt;int*&gt;::iterator it;</div>
 <div class="line"><span class="lineno">  239</span> </div>
-<div class="line"><span class="lineno">  240</span>    <span class="comment">// ----- Close the file -----</span></div>
-<div class="line"><span class="lineno">  241</span>    file.close();</div>
+<div class="line"><span class="lineno">  240</span>    <span class="comment">// ----- Saves all user data in allUsers to file  -----</span></div>
+<div class="line"><span class="lineno">  241</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> iterator = <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.begin(); iterator != <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.end(); ++iterator){</div>
 <div class="line"><span class="lineno">  242</span> </div>
-<div class="line"><span class="lineno">  243</span>}</div>
+<div class="line"><span class="lineno">  243</span>        <a class="code hl_class" href="../../d7/d23/class_user.html">User</a> newUser = <a class="code hl_function" href="../../d7/d23/class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User</a>((*iterator)[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>]);</div>
+<div class="line"><span class="lineno">  244</span>        file.write(<span class="keyword">reinterpret_cast &lt;</span><span class="keyword">const </span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span> (&amp;newUser),<span class="keyword">sizeof</span> (<a class="code hl_class" href="../../d7/d23/class_user.html">User</a>));</div>
+<div class="line"><span class="lineno">  245</span> </div>
+<div class="line"><span class="lineno">  246</span>    }</div>
+<div class="line"><span class="lineno">  247</span> </div>
+<div class="line"><span class="lineno">  248</span>    <span class="comment">// ----- Close the file -----</span></div>
+<div class="line"><span class="lineno">  249</span>    file.close();</div>
+<div class="line"><span class="lineno">  250</span> </div>
+<div class="line"><span class="lineno">  251</span>}</div>
 <div class="ttc" id="aclass_invalid_file_exception_html"><div class="ttname"><a href="../../d1/deb/class_invalid_file_exception.html">InvalidFileException</a></div><div class="ttdoc">This class lets the program throw an exception when the File to be read is not valid.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d09/_invalid_file_exception_8h_source.html#l00016">InvalidFileException.h:16</a></div></div>
 <div class="ttc" id="aclass_user_html"><div class="ttname"><a href="../../d7/d23/class_user.html">User</a></div><div class="ttdoc">This class will be the responsible for storing and managing the user's data. Also is able to create a...</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00016">User.h:16</a></div></div>
-<div class="ttc" id="aclass_user_html_a4a0137053e591fbb79d9057dd7d2283d"><div class="ttname"><a href="../../d7/d23/class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User::User</a></div><div class="ttdeci">User()</div><div class="ttdoc">Empty constructor (not recommended)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_user_8cpp_source.html#l00024">User.cpp:24</a></div></div>
-<div class="ttc" id="aclass_user_html_a942375334862b953b0471435b70f8fb7"><div class="ttname"><a href="../../d7/d23/class_user.html#a942375334862b953b0471435b70f8fb7">User::USERFILE</a></div><div class="ttdeci">static std::string USERFILE</div><div class="ttdoc">Path to userdata file.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00137">User.h:137</a></div></div>
+<div class="ttc" id="aclass_user_html_a1a0c374f8da9519dd25ee07aada09025"><div class="ttname"><a href="../../d7/d23/class_user.html#a1a0c374f8da9519dd25ee07aada09025">User::USERFILE</a></div><div class="ttdeci">static const std::string USERFILE</div><div class="ttdoc">Path to userdata file.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00141">User.h:141</a></div></div>
+<div class="ttc" id="aclass_user_html_a4a0137053e591fbb79d9057dd7d2283d"><div class="ttname"><a href="../../d7/d23/class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User::User</a></div><div class="ttdeci">User()</div><div class="ttdoc">Empty constructor (not recommended)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d89/_user_8cpp_source.html#l00026">User.cpp:26</a></div></div>
+<div class="ttc" id="aclass_user_html_ad1e613a622e5067058e2fed421a319a2"><div class="ttname"><a href="../../d7/d23/class_user.html#ad1e613a622e5067058e2fed421a319a2">User::EXECUTABLE_DIR</a></div><div class="ttdeci">static std::string EXECUTABLE_DIR</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_user_8h_source.html#l00096">User.h:96</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>, <a class="el" href="../../d7/d23/class_user.html#a6349e440b2ea71310a28469d4bdc98d4">TAG</a>, <a class="el" href="../../d7/d23/class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User()</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>, and <a class="el" href="../../d7/d23/class_user.html#a942375334862b953b0471435b70f8fb7">USERFILE</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>, <a class="el" href="../../d7/d23/class_user.html#ad1e613a622e5067058e2fed421a319a2">EXECUTABLE_DIR</a>, <a class="el" href="../../d7/d23/class_user.html#a9e11eb9ee8554e2f615ac67d7e00f298">TAG</a>, <a class="el" href="../../d7/d23/class_user.html#a4a0137053e591fbb79d9057dd7d2283d">User()</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>, and <a class="el" href="../../d7/d23/class_user.html#a1a0c374f8da9519dd25ee07aada09025">USERFILE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d64/class_a_i.html#a15e235a4a50d15f6f1c73a4ec9569552">AI::signalHandler()</a>.</p>
 
@@ -786,34 +796,37 @@ This function should be only called at the end of the program </dd></dl>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00079">79</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   79</span>                          {</div>
-<div class="line"><span class="lineno">   80</span> </div>
-<div class="line"><span class="lineno">   81</span>    <span class="comment">// ----- Declarations -----</span></div>
-<div class="line"><span class="lineno">   82</span>    <a class="code hl_class" href="../../d7/d23/class_user.html">User</a> user;</div>
-<div class="line"><span class="lineno">   83</span> </div>
-<div class="line"><span class="lineno">   84</span>    <span class="comment">// ---- Opening file ----</span></div>
-<div class="line"><span class="lineno">   85</span>    std::ifstream file (<a class="code hl_variable" href="../../d7/d23/class_user.html#a942375334862b953b0471435b70f8fb7">USERFILE</a>);</div>
-<div class="line"><span class="lineno">   86</span> </div>
-<div class="line"><span class="lineno">   87</span>    <span class="comment">// ---- Testing if file is correct ----</span></div>
-<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">if</span> (!file)</div>
-<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="../../d1/deb/class_invalid_file_exception.html">InvalidFileException</a>(<a class="code hl_variable" href="../../d7/d23/class_user.html#a6349e440b2ea71310a28469d4bdc98d4">TAG</a>);</div>
-<div class="line"><span class="lineno">   90</span> </div>
-<div class="line"><span class="lineno">   91</span>    <span class="comment">// ----- Reading every user in file -----</span></div>
-<div class="line"><span class="lineno">   92</span>    <span class="keywordflow">while</span> (file.read(<span class="keyword">reinterpret_cast &lt;</span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(&amp;user),sizeof (<a class="code hl_class" href="../../d7/d23/class_user.html">User</a>))){</div>
-<div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>        <span class="keywordtype">int</span>* newEntry = <span class="keyword">new</span> <span class="keywordtype">int</span>[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c">TOTAL_COLUMNS</a>];</div>
-<div class="line"><span class="lineno">   95</span>        newEntry[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>] = user.<a class="code hl_variable" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>;</div>
-<div class="line"><span class="lineno">   96</span>        newEntry[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>] = user.<a class="code hl_variable" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>;</div>
-<div class="line"><span class="lineno">   97</span>        newEntry[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>] = user.<a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>;</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d89/_user_8cpp_source.html#l00081">81</a> of file <a class="el" href="../../dc/d89/_user_8cpp_source.html">User.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>                          {</div>
+<div class="line"><span class="lineno">   82</span> </div>
+<div class="line"><span class="lineno">   83</span>    <span class="comment">// ----- Declarations -----</span></div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_class" href="../../d7/d23/class_user.html">User</a> user;</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>    <span class="comment">// ----- Obtaining absolute_path -----</span></div>
+<div class="line"><span class="lineno">   87</span>    std::string absolute_path = <a class="code hl_variable" href="../../d7/d23/class_user.html#ad1e613a622e5067058e2fed421a319a2">EXECUTABLE_DIR</a> + <span class="stringliteral">&quot;/&quot;</span> + <a class="code hl_variable" href="../../d7/d23/class_user.html#a1a0c374f8da9519dd25ee07aada09025">USERFILE</a>;</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <span class="comment">// ---- Opening file ----</span></div>
+<div class="line"><span class="lineno">   90</span>    std::ifstream file (absolute_path);</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>    <span class="comment">// ---- Testing if file is correct ----</span></div>
+<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">if</span> (!file)</div>
+<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="../../d1/deb/class_invalid_file_exception.html">InvalidFileException</a>(<a class="code hl_variable" href="../../d7/d23/class_user.html#a9e11eb9ee8554e2f615ac67d7e00f298">TAG</a>);</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>    <span class="comment">// ----- Reading every user in file -----</span></div>
+<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">while</span> (file.read(<span class="keyword">reinterpret_cast &lt;</span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(&amp;user),sizeof (<a class="code hl_class" href="../../d7/d23/class_user.html">User</a>))){</div>
 <div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>        <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.insert(newEntry);</div>
-<div class="line"><span class="lineno">  100</span>    }</div>
-<div class="line"><span class="lineno">  101</span>    <span class="comment">// ----- Closing file -----</span></div>
-<div class="line"><span class="lineno">  102</span>    file.close();</div>
-<div class="line"><span class="lineno">  103</span>}</div>
+<div class="line"><span class="lineno">   99</span>        <span class="keywordtype">int</span>* newEntry = <span class="keyword">new</span> <span class="keywordtype">int</span>[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c">TOTAL_COLUMNS</a>];</div>
+<div class="line"><span class="lineno">  100</span>        newEntry[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>] = user.<a class="code hl_variable" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>;</div>
+<div class="line"><span class="lineno">  101</span>        newEntry[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>] = user.<a class="code hl_variable" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>;</div>
+<div class="line"><span class="lineno">  102</span>        newEntry[<a class="code hl_enumvalue" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>] = user.<a class="code hl_variable" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>;</div>
+<div class="line"><span class="lineno">  103</span> </div>
+<div class="line"><span class="lineno">  104</span>        <a class="code hl_variable" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>.insert(newEntry);</div>
+<div class="line"><span class="lineno">  105</span>    }</div>
+<div class="line"><span class="lineno">  106</span>    <span class="comment">// ----- Closing file -----</span></div>
+<div class="line"><span class="lineno">  107</span>    file.close();</div>
+<div class="line"><span class="lineno">  108</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>, <a class="el" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>, <a class="el" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>, <a class="el" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>, <a class="el" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>, <a class="el" href="../../d7/d23/class_user.html#a6349e440b2ea71310a28469d4bdc98d4">TAG</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c">TOTAL_COLUMNS</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>, and <a class="el" href="../../d7/d23/class_user.html#a942375334862b953b0471435b70f8fb7">USERFILE</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaaf237ff03a695779392664639d24c01d6">ADMIN_COLUMN</a>, <a class="el" href="../../d7/d23/class_user.html#ab20712584fdd188aab2d9df5f66887d7">allUsers</a>, <a class="el" href="../../d7/d23/class_user.html#ad1e613a622e5067058e2fed421a319a2">EXECUTABLE_DIR</a>, <a class="el" href="../../d7/d23/class_user.html#aa7e6e39b43020bbe9c3a196b3689b0f7">id</a>, <a class="el" href="../../d7/d23/class_user.html#aa6f97f01f2b981aa9119727521959857">isAdmin</a>, <a class="el" href="../../d7/d23/class_user.html#afebc8e231b943cb542f35e66eaec0cdb">pass</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa7b210974e801cf35a7be3d8a2431db5a">PASS_COLUMN</a>, <a class="el" href="../../d7/d23/class_user.html#a9e11eb9ee8554e2f615ac67d7e00f298">TAG</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaa09261c12d40e0c60f0d150029500cf9c">TOTAL_COLUMNS</a>, <a class="el" href="../../d7/d23/class_user.html#a0764dfb49c8adb5b56ad076ba9c099eaab150c8173fa4c4495674d1f524625c1d">USER_COLUMN</a>, and <a class="el" href="../../d7/d23/class_user.html#a1a0c374f8da9519dd25ee07aada09025">USERFILE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>.</p>
 
@@ -842,14 +855,14 @@ This function should be only called at the end of the program </dd></dl>
 
 <p>Set of integers to store all users. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00133">133</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00137">137</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d23/class_user.html#a932abf8dc4bdbdef3dbd05c3d3852c99">addUser()</a>, <a class="el" href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">find()</a>, <a class="el" href="../../d7/d23/class_user.html#aba09368b2af61c833490ff95aff4e9c2">printUsers()</a>, <a class="el" href="../../d7/d23/class_user.html#a68388c89a91732660b3fb4c602fa55c0">rmUser()</a>, <a class="el" href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">saveUserData()</a>, and <a class="el" href="../../d7/d23/class_user.html#ade2c6984efefd3a1abca0d727e8d7ecf">updateUserData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d23/class_user.html#a73997967efdab04e0f6c5ddd4c0c7ebf">addUser()</a>, <a class="el" href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">find()</a>, <a class="el" href="../../d7/d23/class_user.html#aba09368b2af61c833490ff95aff4e9c2">printUsers()</a>, <a class="el" href="../../d7/d23/class_user.html#a7a04a3eb5095eec17c24f3f48880497e">rmUser()</a>, <a class="el" href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">saveUserData()</a>, and <a class="el" href="../../d7/d23/class_user.html#ade2c6984efefd3a1abca0d727e8d7ecf">updateUserData()</a>.</p>
 
 </div>
 </div>
-<a id="ab167913883c55da15137eefedb6f0863" name="ab167913883c55da15137eefedb6f0863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab167913883c55da15137eefedb6f0863">&#9670;&#160;</a></span>DATAFILE</h2>
+<a id="a21f4bdaa72d55672a7dbe3af8eb5f903" name="a21f4bdaa72d55672a7dbe3af8eb5f903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f4bdaa72d55672a7dbe3af8eb5f903">&#9670;&#160;</a></span>DATAFILE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -858,7 +871,7 @@ This function should be only called at the end of the program </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string User::DATAFILE = &quot;data/userdata.txt&quot;</td>
+          <td class="memname">const std::string User::DATAFILE = &quot;data/userdata.txt&quot;</td>
         </tr>
       </table>
   </td>
@@ -870,7 +883,33 @@ This function should be only called at the end of the program </dd></dl>
 
 <p>[DEPRECATED] Path of userdata file </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00135">135</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00139">139</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
+
+</div>
+</div>
+<a id="ad1e613a622e5067058e2fed421a319a2" name="ad1e613a622e5067058e2fed421a319a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e613a622e5067058e2fed421a319a2">&#9670;&#160;</a></span>EXECUTABLE_DIR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string User::EXECUTABLE_DIR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00096">96</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main()</a>, <a class="el" href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">saveUserData()</a>, and <a class="el" href="../../d7/d23/class_user.html#ade2c6984efefd3a1abca0d727e8d7ecf">updateUserData()</a>.</p>
 
 </div>
 </div>
@@ -897,7 +936,7 @@ This function should be only called at the end of the program </dd></dl>
 <p><a class="el" href="../../d7/d23/class_user.html" title="This class will be the responsible for storing and managing the user&#39;s data. Also is able to create a...">User</a> identifier (5-digit-int) </p>
 <dl class="section note"><dt>Note</dt><dd>root and developer don't need to use 5-digit numbers </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00105">105</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00109">109</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d23/class_user.html#a19c51c10009a056caac5053717eb8b89">getUser()</a>, and <a class="el" href="../../d7/d23/class_user.html#ade2c6984efefd3a1abca0d727e8d7ecf">updateUserData()</a>.</p>
 
@@ -925,9 +964,9 @@ This function should be only called at the end of the program </dd></dl>
 
 <p><a class="el" href="../../da/ddc/class_admin.html" title="This class is the responsible for instantiating an Admin object to distinguish between Users and Admi...">Admin</a> Status. False by defect. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00107">107</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00111">111</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d23/class_user.html#a932abf8dc4bdbdef3dbd05c3d3852c99">addUser()</a>, <a class="el" href="../../da/ddc/class_admin.html#aff017db99075f535aa0a42e94ec77163">Admin::Admin()</a>, <a class="el" href="../../d7/d23/class_user.html#aa374b1065ea942d3d2d46085539c257e">getAdminStatus()</a>, <a class="el" href="../../d7/d23/class_user.html#ade2c6984efefd3a1abca0d727e8d7ecf">updateUserData()</a>, and <a class="el" href="../../d7/d23/class_user.html#a6e84637389bc36a13300df82a7387bb0">User()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d23/class_user.html#a73997967efdab04e0f6c5ddd4c0c7ebf">addUser()</a>, <a class="el" href="../../da/ddc/class_admin.html#aff017db99075f535aa0a42e94ec77163">Admin::Admin()</a>, <a class="el" href="../../d7/d23/class_user.html#aa374b1065ea942d3d2d46085539c257e">getAdminStatus()</a>, <a class="el" href="../../d7/d23/class_user.html#ade2c6984efefd3a1abca0d727e8d7ecf">updateUserData()</a>, and <a class="el" href="../../d7/d23/class_user.html#a5d458f231acfa6bd0da683f38f8261a8">User()</a>.</p>
 
 </div>
 </div>
@@ -953,9 +992,9 @@ This function should be only called at the end of the program </dd></dl>
 
 <p>Password to access the account. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00109">109</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00113">113</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d7/d23/class_user.html#a932abf8dc4bdbdef3dbd05c3d3852c99">addUser()</a>, <a class="el" href="../../d7/d23/class_user.html#a3dd5f61e8f0172573a6ab6f73505cb2c">check()</a>, <a class="el" href="../../d7/d23/class_user.html#ade2c6984efefd3a1abca0d727e8d7ecf">updateUserData()</a>, and <a class="el" href="../../d7/d23/class_user.html#a6e84637389bc36a13300df82a7387bb0">User()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d7/d23/class_user.html#a73997967efdab04e0f6c5ddd4c0c7ebf">addUser()</a>, <a class="el" href="../../d7/d23/class_user.html#a02162a910960fb36bbea183c40503a36">check()</a>, <a class="el" href="../../d7/d23/class_user.html#ade2c6984efefd3a1abca0d727e8d7ecf">updateUserData()</a>, and <a class="el" href="../../d7/d23/class_user.html#a5d458f231acfa6bd0da683f38f8261a8">User()</a>.</p>
 
 </div>
 </div>
@@ -979,14 +1018,14 @@ This function should be only called at the end of the program </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Character to separate tokens in file. </p>
+<p>[Deprecated] Character to separate tokens in file </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00129">129</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00133">133</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
 
 </div>
 </div>
-<a id="a6349e440b2ea71310a28469d4bdc98d4" name="a6349e440b2ea71310a28469d4bdc98d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6349e440b2ea71310a28469d4bdc98d4">&#9670;&#160;</a></span>TAG</h2>
+<a id="a9e11eb9ee8554e2f615ac67d7e00f298" name="a9e11eb9ee8554e2f615ac67d7e00f298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e11eb9ee8554e2f615ac67d7e00f298">&#9670;&#160;</a></span>TAG</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -995,7 +1034,7 @@ This function should be only called at the end of the program </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string User::TAG = &quot;User&quot;</td>
+          <td class="memname">const std::string User::TAG = &quot;User&quot;</td>
         </tr>
       </table>
   </td>
@@ -1007,14 +1046,14 @@ This function should be only called at the end of the program </dd></dl>
 
 <p>Name of the Class (for exception calling) </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00131">131</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00135">135</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d23/class_user.html#ae81edcf9a7e23f36d91fe10dc510f7d5">find()</a>, <a class="el" href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">saveUserData()</a>, and <a class="el" href="../../d7/d23/class_user.html#ade2c6984efefd3a1abca0d727e8d7ecf">updateUserData()</a>.</p>
 
 </div>
 </div>
-<a id="a942375334862b953b0471435b70f8fb7" name="a942375334862b953b0471435b70f8fb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a942375334862b953b0471435b70f8fb7">&#9670;&#160;</a></span>USERFILE</h2>
+<a id="a1a0c374f8da9519dd25ee07aada09025" name="a1a0c374f8da9519dd25ee07aada09025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a0c374f8da9519dd25ee07aada09025">&#9670;&#160;</a></span>USERFILE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1023,7 +1062,7 @@ This function should be only called at the end of the program </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string User::USERFILE = &quot;data/userdata.dat&quot;</td>
+          <td class="memname">const std::string User::USERFILE = &quot;../data/userdata.dat&quot;</td>
         </tr>
       </table>
   </td>
@@ -1035,7 +1074,7 @@ This function should be only called at the end of the program </dd></dl>
 
 <p>Path to userdata file. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00137">137</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d75/_user_8h_source.html#l00141">141</a> of file <a class="el" href="../../d3/d75/_user_8h_source.html">User.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d7/d23/class_user.html#abe917daaebdfb170900ae513c9289a66">saveUserData()</a>, and <a class="el" href="../../d7/d23/class_user.html#ade2c6984efefd3a1abca0d727e8d7ecf">updateUserData()</a>.</p>
 
