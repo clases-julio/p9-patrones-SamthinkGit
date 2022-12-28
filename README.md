@@ -68,6 +68,11 @@ Finally, the Graphical Library section contains the class responsible for displa
 
 With this structure, JVH System is able to manage and control a wide variety of devices in a scalable and customizable way. Additional information on the specific functions and capabilities of each class can be found in the Doxygen documentation which includes documentation about every function or variable implemented in those classes.
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/92941012/209743264-bda4d2ea-2bc9-4ad5-865b-bab06554d8c6.png" width="900"/>
+</p>
+
+
 ## Design Pattern: Device Composite
 
 The DeviceComposite class is based on the Composite design pattern, which is a structural design pattern that allows representing a group of objects as a single object.
