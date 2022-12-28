@@ -95,10 +95,11 @@ Once the DeviceComposite is installed in JVH we can manage multiple devices like
   composite.useSkill("reboot");
 ```
 ```bash
+# Output:
 [ ]
 [ Thermometer RGB_Camera ]
 
-// Note that we control all simultaneously
+# Note that we control multiple IODi interfaces simultaneusly
 [IODi] Thermometer rebooted
 [IODi] RGB Camera rebooted
 ```
